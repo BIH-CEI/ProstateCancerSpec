@@ -1,5 +1,119 @@
 # ProstateCancerSpec - Aktueller Entwicklungsstand
 
+## Datum: 2026-01-13 - IG-Menüstruktur und Prostatectomy Vervollständigung
+
+### ✅ Abgeschlossene Arbeiten
+
+#### 1. Prostatectomy Diagnostic Conclusion vollständig implementiert
+- **Datei**: `input/fsh/examples/prostatectomy/diagnostic-conclusion.fsh`
+- **Erstellt**: 26 diagnostische Findings für radikale Prostatektomie
+- **Klinisches Szenario**: Günstiger Fall - Gleason 3+4=7, R0, pT2c pN0
+- **Findings umfassen**:
+  - Gleason Grading (Primary: 3, Secondary: 4, Total: 7, ISUP Grade Group 2)
+  - Tumorcharakteristika (Volumen: 2.8 cm³, 25% Gewebebeteiligung)
+  - Invasion/Extension (alle negativ: Extraprostatic Extension, Seminal Vesicle, Bladder Neck, Lymphovascular, Perineural)
+  - Margins & Lymphknoten (R0, 12 LK untersucht, 0 positiv)
+  - TNM Staging (pT2c, pN0)
+
+#### 2. IG-Menüstruktur erstellt
+- **Datei**: `sushi-config.yaml`
+- **Struktur**: 4 Hauptmenüpunkte (Biopsy, Prostatectomy, TUR Enucleation, TUR Resection)
+- **Tabs pro Beispiel**:
+  - ServiceRequest
+  - Specimens (Markdown-Seite mit hierarchischer Liste)
+  - MacroscopyGrouper
+  - MicroscopyGrouper (nur Biopsy)
+  - DiagnosticConclusionGrouper
+  - DiagnosticReport
+  - Composition
+- **Direktverlinkung**: Einzelinstanzen verlinken direkt auf generierte FHIR-Ressourcen (z.B. `ServiceRequest-ProstateStandardBiopsyRequest.html`)
+
+#### 3. Markdown-Seiten erstellt
+**Erstellt (ursprünglich 28 Dateien):**
+- **Biopsy**: 7 Markdown-Seiten mit vollständiger Dokumentation
+- **Prostatectomy**: 6 Markdown-Seiten (keine Microscopy)
+- **TUR Enucleation**: 6 Markdown-Seiten
+- **TUR Resection**: 6 Markdown-Seiten
+
+**Bereinigt auf 5 Dateien:**
+- `index.md` (aktualisiert mit vollständiger Beschreibung aller Szenarien)
+- `biopsy-specimens.md`
+- `prostatectomy-specimens.md`
+- `tur-enucleation-specimens.md`
+- `tur-resection-specimens.md`
+
+**Begründung**: Einzelinstanzen werden direkt in sushi-config.yaml verlinkt, nur Specimens benötigen Markdown-Seiten wegen multipler Instanzen
+
+#### 4. index.md vollständig überarbeitet
+- **Neue Struktur**: Fokus auf Pathologie-Workflows und konkrete Beispielszenarien
+- **Example Scenarios**: Detaillierte Beschreibung aller 4 Beispiele mit klinischen Kontexten
+  - Biopsy: 12-Kern-Biopsie mit Mikroskopie
+  - Prostatectomy: Günstiger Fall (Gleason 3+4=7, R0)
+  - TUR Enucleation: Aggressiver Fall (Gleason 4+5=9, extensive Infiltration)
+  - TUR Resection: Inzidentelles Karzinom
+- **Resource Organization**: 7-Tab-Struktur erklärt
+- **Dependencies**: Aktualisierte MII-Module-Versionen (2026.0.0)
+- **Key Features**: Gruppierungsmuster, vollständige Specimen-Hierarchien, progressive Schweregrade
+
+#### 5. TUR Procedures korrigiert
+**TUR Enucleation (`tur-enucleation/procedure.fsh`):**
+- OPS Code korrigiert: `5-604` → `5-603` "Enukleation der Prostata"
+- note.text erweitert: Histopathologischer Befund (Gleason 4+5=9) hinzugefügt
+
+**TUR Resection (`tur-resection/procedure.fsh`):**
+- note.text erweitert: Histopathologischer Befund (Gleason 4+5=9) hinzugefügt
+
+**Konsistenz**: Procedures stimmen jetzt mit den aggressiven Befunden in den DiagnosticReports überein
+
+### 🔧 Technische Verbesserungen
+
+#### Jekyll Include-Fehler behoben
+- **Problem**: `{% include instance-example.html %}` existierte nicht
+- **Lösung**: Direkte Markdown-Links zu generierten FHIR-Ressourcen
+- **Format**: `[InstanceName](ResourceType-InstanceName.html)`
+
+#### Optimierte Menüstruktur
+- **Direktverlinkung**: Einzelinstanzen → direkte FHIR-Ressourcen-Links
+- **Markdown-Seiten**: Nur für Collections (Specimens mit Parts/Blocks/Slides)
+- **Beispiele**:
+  - `ServiceRequest: ServiceRequest-ProstateStandardBiopsyRequest.html`
+  - `Specimens: biopsy-specimens.html` (Liste mit allen 36 Specimen-Links)
+
+### 📊 Beispielszenarien - Übersicht
+
+| Szenario | Gleason Score | ISUP Grade | Specimens | Microscopy | Klinischer Kontext |
+|----------|---------------|------------|-----------|------------|-------------------|
+| **Biopsy** | 4+3=7 | Grade 3 | 12 Parts, 12 Blocks, 12 Slides | ✅ Ja | Diagnostische 12-Kern-Biopsie |
+| **Prostatectomy** | 3+4=7 | Grade 2 | 1 Part, 3 Blocks, 6 Slides | ❌ Nein | Günstiger Fall, R0, pT2c pN0 |
+| **TUR Enucleation** | 4+5=9 | Grade 5 | 1 Part, 5 Blocks, 10 Slides | ❌ Nein | Aggressiver inzidenteller Tumor |
+| **TUR Resection** | 4+5=9 | Grade 5 | 1 Part, 5 Blocks, 10 Slides | ❌ Nein | Inzidentelles Karzinom bei TUR-P |
+
+### 📁 Aktuelle Dateistruktur
+
+```
+input/
+├── fsh/examples/
+│   ├── biopsy/               ✅ Vollständig
+│   ├── prostatectomy/        ✅ Vollständig (diagnostic-conclusion heute implementiert)
+│   ├── tur-enucleation/      ✅ Vollständig (procedure korrigiert)
+│   └── tur-resection/        ✅ Vollständig (procedure korrigiert)
+└── pagecontent/
+    ├── index.md              ✅ Vollständig überarbeitet
+    ├── biopsy-specimens.md   ✅ Liste mit 36 Specimens
+    ├── prostatectomy-specimens.md  ✅ Liste mit 10 Specimens
+    ├── tur-enucleation-specimens.md  ✅ Liste mit 16 Specimens
+    └── tur-resection-specimens.md    ✅ Liste mit 16 Specimens
+```
+
+### 🎯 Nächste Schritte
+
+1. **IG Build testen**: Vollständigen IG-Publisher-Build durchführen
+2. **Menünavigation prüfen**: Alle Links in der generierten HTML überprüfen
+3. **Weitere Beispielszenarien**: Optional weitere klinische Variationen hinzufügen
+4. **Dokumentation**: Möglicherweise zusätzliche Narrative-Seiten für Guidance
+
+---
+
 ## Datum: 2025-01-02 - Update 2
 
 ## ✅ Abgeschlossene Arbeiten

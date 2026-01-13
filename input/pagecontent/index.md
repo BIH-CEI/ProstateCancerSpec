@@ -1,49 +1,91 @@
 # Prostate Cancer Specification (ProstateCancerSpec)
 
-This Implementation Guide defines FHIR profiles for prostate cancer care based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
+This Implementation Guide defines FHIR profiles and examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
 ## Scope and Purpose
 
-This IG provides structured data models for:
+This IG provides structured data models and comprehensive examples for prostate cancer pathology workflows, including:
 
-- **Patient Management**: Demographics and identification for prostate cancer patients
-- **Diagnosis**: Primary prostate cancer diagnosis coding
-- **Pathology**: Gleason scoring, PSA levels, and histological findings  
-- **Staging**: TNM classification for prostate cancer
-- **Treatment**: Surgery, radiation therapy, and systemic therapy options
-- **Outcomes**: Treatment responses and complications
+- **Diagnostic Procedures**: Biopsy, TUR-P resection, enucleation, and radical prostatectomy
+- **Specimen Management**: Complete specimen hierarchies from parts to blocks to slides
+- **Macroscopic Findings**: Tissue measurements, weight, and visual characteristics
+- **Microscopic Findings**: Detailed histological observations (biopsy only)
+- **Diagnostic Conclusions**: Gleason scoring, ISUP grading, tumor quantification, invasion patterns
+- **Structured Reports**: DiagnosticReport and Composition resources for complete pathology reports
 
-## Profile Overview
+## Example Scenarios
 
-### Core Profiles
+This IG includes four comprehensive example scenarios representing different clinical contexts:
 
-- **ProstateCancerPatient**: Male patients with prostate cancer diagnosis
-- **ProstateCancerDiagnosis**: Primary diagnosis with ICD-10 coding
-- **GleasonScore**: Pathological grading using Gleason scoring system
-- **PSALevel**: Prostate-specific antigen measurements
+### 1. Prostate Biopsy
+Complete 12-core prostate biopsy with:
+- 12 specimen locations (Part → Block → Slide for each)
+- Macroscopic findings (length, cylinder count, laterality per core)
+- Microscopic findings (detailed histological observations per core)
+- Diagnostic conclusion with Gleason scoring and quantification
 
-### TNM Staging Profiles
+**Access via**: Biopsy menu (7 tabs: ServiceRequest, Specimens, MacroscopyGrouper, MicroscopyGrouper, DiagnosticConclusionGrouper, DiagnosticReport, Composition)
 
-- **ProstateTNM_T**: Tumor extent classification
-- **ProstateTNM_N**: Regional lymph node involvement
-- **ProstateTNM_M**: Distant metastasis status
+### 2. Radical Prostatectomy
+Complete prostate specimen from radical prostatectomy showing:
+- Favorable cancer case: Gleason 3+4=7 (ISUP Grade Group 2)
+- Complete prostate specimen with 3 blocks and 6 slides
+- Macroscopic findings including organ dimensions and seminal vesicles
+- Diagnostic conclusion with negative margins (R0), no extraprostatic extension
+- TNM staging: pT2c pN0
 
-### Treatment Profiles
+**Access via**: Prostatectomy menu (6 tabs)
 
-- **ProstateSystemicTherapy**: Hormone therapy and chemotherapy
-- **ProstateSurgery**: Surgical procedures including radical prostatectomy
-- **ProstateRadiationTherapy**: External beam and brachytherapy
+### 3. TUR Enucleation
+Prostate enucleation (simple prostatectomy) with incidental aggressive cancer:
+- High-grade cancer: Gleason 4+5=9 (ISUP Grade Group 5)
+- 5 blocks and 10 slides from enucleated tissue
+- Extensive tumor involvement (60% of tissue)
+- Present: intraductal carcinoma, invasive cribriform carcinoma, extraprostatic extension, seminal vesicle invasion
+
+**Access via**: TUR Enucleation menu (6 tabs)
+
+### 4. TUR Resection
+Transurethral resection (TUR-P) with incidental cancer:
+- 5 blocks and 10 slides from TUR chips
+- Diagnostic findings from resection tissue
+
+**Access via**: TUR Resection menu (6 tabs)
+
+## Resource Organization
+
+Each example scenario is organized with the following structure:
+
+1. **ServiceRequest**: Initial pathology request
+2. **Specimens**: Complete specimen hierarchy (Part → Blocks → Slides)
+3. **MacroscopyGrouper**: Grouper observation referencing all macroscopic findings
+4. **MicroscopyGrouper**: Grouper observation for microscopic findings (biopsy only)
+5. **DiagnosticConclusionGrouper**: Grouper observation referencing all diagnostic conclusion findings
+6. **DiagnosticReport**: Complete pathology report tying together all observations
+7. **Composition**: FHIR document structure for the complete report
 
 ## Dependencies
 
 This IG builds upon:
 
-- **MII Oncology Module** (de.medizininformatikinitiative.kerndatensatz.onkologie): TNM staging, treatments
-- **MII Pathology Module** (de.medizininformatikinitiative.kerndatensatz.patho): Pathological findings
+- **MII Pathology Module** (de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0): Base profiles for pathology observations, specimens, and reports
+- **MII Oncology Module** (de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0-rc.10): TNM staging, Gleason grading profiles
+- **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0): Core patient and procedure profiles
+- **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0): Specimen management
 
 ## Standards Compliance
 
-- FHIR R4
-- LOINC codes for laboratory values and staging
-- SNOMED CT for clinical terminology
-- ICD-10-GM for diagnoses
+- **FHIR R4** (4.0.1)
+- **LOINC** codes for laboratory values, pathology observations, and Gleason scoring
+- **SNOMED CT** for clinical terminology, histological findings, and anatomical locations
+- **ICD-O-3** for histological tumor type classification
+- **ICD-10-GM** for diagnoses
+- **TNM Classification** for cancer staging
+
+## Key Features
+
+- **Complete Specimen Hierarchies**: All examples include complete specimen traceability from tissue parts through blocks to individual slides
+- **Grouper Pattern**: Uses MII Pathology Grouper pattern to organize findings into macroscopic, microscopic (where applicable), and diagnostic conclusion sections
+- **Comprehensive Coding**: All observations include appropriate LOINC and SNOMED CT codes
+- **Real-world Scenarios**: Examples represent actual clinical workflows and findings
+- **Progressive Severity**: Examples range from favorable (prostatectomy) to aggressive (enucleation) cancer presentations

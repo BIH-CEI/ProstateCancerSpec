@@ -12,4 +12,4 @@ Description: "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperpla
 * code.coding[sct] = $sct#176258007 "Transurethral resection of prostate (procedure)"
 * subject = Reference(ProstatePatientBiopsy)
 * performedDateTime = "2024-04-10T10:30:00+01:00"
-* note.text = "Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. Komplikationsloser Verlauf."
+* note.text = "Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."

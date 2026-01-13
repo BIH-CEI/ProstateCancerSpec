@@ -78,6 +78,35 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  Biopsy:
+    ServiceRequest: ServiceRequest-ProstateStandardBiopsyRequest.html
+    Specimens: biopsy-specimens.html
+    MacroscopyGrouper: Observation-MacroscopicFindingsGrouper.html
+    MicroscopyGrouper: Observation-MicroscopicFindingsGrouper.html
+    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperBiopsy.html
+    DiagnosticReport: DiagnosticReport-ProstateBiopsyReport.html
+    Composition: Composition-ProstateBiopsyComposition.html
+  Prostatectomy:
+    ServiceRequest: ServiceRequest-ProstatectomyServiceRequest.html
+    Specimens: prostatectomy-specimens.html
+    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperProstatectomy.html
+    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperProstatectomy.html
+    DiagnosticReport: DiagnosticReport-ProstatectomyPathologyReport.html
+    Composition: Composition-ProstatectomyComposition.html
+  TUR Enucleation:
+    ServiceRequest: ServiceRequest-EnucleationServiceRequest.html
+    Specimens: tur-enucleation-specimens.html
+    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperEnucleation.html
+    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperEnucleation.html
+    DiagnosticReport: DiagnosticReport-EnucleationPathologyReport.html
+    Composition: Composition-EnucleationComposition.html
+  TUR Resection:
+    ServiceRequest: ServiceRequest-TURServiceRequest.html
+    Specimens: tur-resection-specimens.html
+    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperTUR.html
+    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperTUR.html
+    DiagnosticReport: DiagnosticReport-TURPathologyReport.html
+    Composition: Composition-TURComposition.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
