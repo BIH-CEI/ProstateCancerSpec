@@ -1,32 +1,29 @@
-# Prostate Cancer Specification (ProstateCancerSpec)
-
 This Implementation Guide defines FHIR profiles and examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
-## Scope and Purpose
+### Scope and Purpose
 
 This IG provides structured data models and comprehensive examples for prostate cancer pathology workflows, including:
 
-- **Diagnostic Procedures**: Biopsy, TUR-P resection, enucleation, and radical prostatectomy
+- **Diagnostic Procedures**: Core Needle Biopsy, TUR-P resection, enucleation, and radical prostatectomy
 - **Specimen Management**: Complete specimen hierarchies from parts to blocks to slides
 - **Macroscopic Findings**: Tissue measurements, weight, and visual characteristics
 - **Microscopic Findings**: Detailed histological observations (biopsy only)
 - **Diagnostic Conclusions**: Gleason scoring, ISUP grading, tumor quantification, invasion patterns
 - **Structured Reports**: DiagnosticReport and Composition resources for complete pathology reports
 
-## Example Scenarios
+### Example Scenarios
 
 This IG includes four comprehensive example scenarios representing different clinical contexts:
 
-### 1. Prostate Biopsy
+#### Core Needle Biopsy
 Complete 12-core prostate biopsy with:
 - 12 specimen locations (Part → Block → Slide for each)
 - Macroscopic findings (length, cylinder count, laterality per core)
 - Microscopic findings (detailed histological observations per core)
 - Diagnostic conclusion with Gleason scoring and quantification
 
-**Access via**: Biopsy menu (7 tabs: ServiceRequest, Specimens, MacroscopyGrouper, MicroscopyGrouper, DiagnosticConclusionGrouper, DiagnosticReport, Composition)
 
-### 2. Radical Prostatectomy
+#### Radical Prostatectomy
 Complete prostate specimen from radical prostatectomy showing:
 - Favorable cancer case: Gleason 3+4=7 (ISUP Grade Group 2)
 - Complete prostate specimen with 3 blocks and 6 slides
@@ -34,25 +31,20 @@ Complete prostate specimen from radical prostatectomy showing:
 - Diagnostic conclusion with negative margins (R0), no extraprostatic extension
 - TNM staging: pT2c pN0
 
-**Access via**: Prostatectomy menu (6 tabs)
 
-### 3. TUR Enucleation
+#### Transurethral Enucleation
 Prostate enucleation (simple prostatectomy) with incidental aggressive cancer:
 - High-grade cancer: Gleason 4+5=9 (ISUP Grade Group 5)
 - 5 blocks and 10 slides from enucleated tissue
 - Extensive tumor involvement (60% of tissue)
 - Present: intraductal carcinoma, invasive cribriform carcinoma, extraprostatic extension, seminal vesicle invasion
 
-**Access via**: TUR Enucleation menu (6 tabs)
-
-### 4. TUR Resection
+#### Transurethral Resection
 Transurethral resection (TUR-P) with incidental cancer:
 - 5 blocks and 10 slides from TUR chips
 - Diagnostic findings from resection tissue
 
-**Access via**: TUR Resection menu (6 tabs)
-
-## Resource Organization
+### Resource Organization
 
 Each example scenario is organized with the following structure:
 
@@ -64,16 +56,18 @@ Each example scenario is organized with the following structure:
 6. **DiagnosticReport**: Complete pathology report tying together all observations
 7. **Composition**: FHIR document structure for the complete report
 
-## Dependencies
+#### Dependencies
 
 This IG builds upon:
 
-- **MII Pathology Module** (de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0): Base profiles for pathology observations, specimens, and reports
-- **MII Oncology Module** (de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0-rc.10): TNM staging, Gleason grading profiles
-- **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0): Core patient and procedure profiles
-- **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0): Specimen management
+- **MII Pathology Module** [de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0): Grouper and Finding Observations, ServiceRequests and DiagnosticReports
 
-## Standards Compliance
+and also asures the compatibility to: 
+- **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles
+- **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base]: Core patient and procedure profiles
+- **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank]: Specimen management
+
+#### Standards Compliance
 
 - **FHIR R4** (4.0.1)
 - **LOINC** codes for laboratory values, pathology observations, and Gleason scoring
@@ -82,7 +76,7 @@ This IG builds upon:
 - **ICD-10-GM** for diagnoses
 - **TNM Classification** for cancer staging
 
-## Key Features
+#### Key Features
 
 - **Complete Specimen Hierarchies**: All examples include complete specimen traceability from tissue parts through blocks to individual slides
 - **Grouper Pattern**: Uses MII Pathology Grouper pattern to organize findings into macroscopic, microscopic (where applicable), and diagnostic conclusion sections

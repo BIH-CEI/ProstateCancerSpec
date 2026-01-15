@@ -3,19 +3,19 @@ This page shows all specimen instances for the radical prostatectomy example. Th
 ### Specimen Hierarchy
 
 #### Prostatectomy Specimen Part
-- [ProstatectomySpecimenPart](Specimen-ProstatectomySpecimenPart.html) - Complete prostate specimen
+- [RadicalProstatectomySpecimenPart](Specimen-RadicalProstatectomySpecimenPart.html) - Complete prostate specimen
 
 #### Block 01 and Slides
-- [ProstatectomySpecimenBlock01](Specimen-ProstatectomySpecimenBlock01.html) - Block 01
-- [ProstatectomySpecimenSlide01A](Specimen-ProstatectomySpecimenSlide01A.html) - Slide 01A
-- [ProstatectomySpecimenSlide01B](Specimen-ProstatectomySpecimenSlide01B.html) - Slide 01B
+- [RadicalProstatectomySpecimenBlock01](Specimen-RadicalProstatectomySpecimenBlock01.html) - Block 01
+- [RadicalProstatectomySpecimenSlide01A](Specimen-RadicalProstatectomySpecimenSlide01A.html) - Slide 01A
+- [RadicalProstatectomySpecimenSlide01B](Specimen-RadicalProstatectomySpecimenSlide01B.html) - Slide 01B
 
 #### Block 02 and Slides
-- [ProstatectomySpecimenBlock02](Specimen-ProstatectomySpecimenBlock02.html) - Block 02
-- [ProstatectomySpecimenSlide02A](Specimen-ProstatectomySpecimenSlide02A.html) - Slide 02A
-- [ProstatectomySpecimenSlide02B](Specimen-ProstatectomySpecimenSlide02B.html) - Slide 02B
+- [RadicalProstatectomySpecimenBlock02](Specimen-RadicalProstatectomySpecimenBlock02.html) - Block 02
+- [RadicalProstatectomySpecimenSlide02A](Specimen-RadicalProstatectomySpecimenSlide02A.html) - Slide 02A
+- [RadicalProstatectomySpecimenSlide02B](Specimen-RadicalProstatectomySpecimenSlide02B.html) - Slide 02B
 
 #### Block 03 and Slides
-- [ProstatectomySpecimenBlock03](Specimen-ProstatectomySpecimenBlock03.html) - Block 03
-- [ProstatectomySpecimenSlide03A](Specimen-ProstatectomySpecimenSlide03A.html) - Slide 03A
-- [ProstatectomySpecimenSlide03B](Specimen-ProstatectomySpecimenSlide03B.html) - Slide 03B
+- [RadicalProstatectomySpecimenBlock03](Specimen-RadicalProstatectomySpecimenBlock03.html) - Block 03
+- [RadicalProstatectomySpecimenSlide03A](Specimen-RadicalProstatectomySpecimenSlide03A.html) - Slide 03A
+- [RadicalProstatectomySpecimenSlide03B](Specimen-RadicalProstatectomySpecimenSlide03B.html) - Slide 03B

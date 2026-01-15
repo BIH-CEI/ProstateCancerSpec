@@ -25,7 +25,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.0-rc.10
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.0
   de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.0
   de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
   de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.0
@@ -77,36 +77,37 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Clinical Context: clinical-context.html
   Artifacts: artifacts.html
-  Biopsy:
-    ServiceRequest: ServiceRequest-ProstateStandardBiopsyRequest.html
+  Core Needle Biopsy:
+    ServiceRequest: ServiceRequest-CoreNeedleBiopsyRequest.html
     Specimens: biopsy-specimens.html
-    MacroscopyGrouper: Observation-MacroscopicFindingsGrouper.html
-    MicroscopyGrouper: Observation-MicroscopicFindingsGrouper.html
-    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperBiopsy.html
-    DiagnosticReport: DiagnosticReport-ProstateBiopsyReport.html
-    Composition: Composition-ProstateBiopsyComposition.html
+    MacroscopyGrouper: Observation-CoreNeedleBiopsyMacroscopicGrouper.html
+    MicroscopyGrouper: Observation-CoreNeedleBiopsyMicroscopicGrouper.html
+    DiagnosticConclusionGrouper: Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html
+    DiagnosticReport: DiagnosticReport-CoreNeedleBiopsyReport.html
+    Composition: Composition-CoreNeedleBiopsyComposition.html
   Prostatectomy:
-    ServiceRequest: ServiceRequest-ProstatectomyServiceRequest.html
+    ServiceRequest: ServiceRequest-RadicalProstatectomyServiceRequest.html
     Specimens: prostatectomy-specimens.html
-    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperProstatectomy.html
-    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperProstatectomy.html
-    DiagnosticReport: DiagnosticReport-ProstatectomyPathologyReport.html
-    Composition: Composition-ProstatectomyComposition.html
+    MacroscopyGrouper: Observation-RadicalProstatectomyMacroscopicGrouper.html
+    DiagnosticConclusionGrouper: Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html
+    DiagnosticReport: DiagnosticReport-RadicalProstatectomyReport.html
+    Composition: Composition-RadicalProstatectomyComposition.html
   TUR Enucleation:
-    ServiceRequest: ServiceRequest-EnucleationServiceRequest.html
+    ServiceRequest: ServiceRequest-TransurethralEnucleationServiceRequest.html
     Specimens: tur-enucleation-specimens.html
-    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperEnucleation.html
-    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperEnucleation.html
-    DiagnosticReport: DiagnosticReport-EnucleationPathologyReport.html
-    Composition: Composition-EnucleationComposition.html
+    MacroscopyGrouper: Observation-TransurethralEnucleationMacroscopicGrouper.html
+    DiagnosticConclusionGrouper: Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html
+    DiagnosticReport: DiagnosticReport-TransurethralEnucleationReport.html
+    Composition: Composition-TransurethralEnucleationComposition.html
   TUR Resection:
-    ServiceRequest: ServiceRequest-TURServiceRequest.html
+    ServiceRequest: ServiceRequest-TransurethralResectionServiceRequest.html
     Specimens: tur-resection-specimens.html
-    MacroscopyGrouper: Observation-MacroscopicFindingsGrouperTUR.html
-    DiagnosticConclusionGrouper: Observation-DiagnosticConclusionGrouperTUR.html
-    DiagnosticReport: DiagnosticReport-TURPathologyReport.html
-    Composition: Composition-TURComposition.html
+    MacroscopyGrouper: Observation-TransurethralResectionMacroscopicGrouper.html
+    DiagnosticConclusionGrouper: Observation-TransurethralResectionDiagnosticConclusionGrouper.html
+    DiagnosticReport: DiagnosticReport-TransurethralResectionReport.html
+    Composition: Composition-TransurethralResectionComposition.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

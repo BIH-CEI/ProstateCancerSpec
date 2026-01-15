@@ -3,61 +3,61 @@ This page shows all specimen instances for the prostate biopsy example. The biop
 ### Specimen Hierarchy
 
 #### Specimen 01
-- [ProstateBiopsySpecimen01Part](Specimen-ProstateBiopsySpecimen01Part.html) - Part
-- [ProstateBiopsySpecimen01Block](Specimen-ProstateBiopsySpecimen01Block.html) - Block
-- [ProstateBiopsySpecimen01Slide](Specimen-ProstateBiopsySpecimen01Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen01Part](Specimen-CoreNeedleBiopsySpecimen01Part.html) - Part
+- [CoreNeedleBiopsySpecimen01Block](Specimen-CoreNeedleBiopsySpecimen01Block.html) - Block
+- [CoreNeedleBiopsySpecimen01Slide](Specimen-CoreNeedleBiopsySpecimen01Slide.html) - Slide
 
 #### Specimen 02
-- [ProstateBiopsySpecimen02Part](Specimen-ProstateBiopsySpecimen02Part.html) - Part
-- [ProstateBiopsySpecimen02Block](Specimen-ProstateBiopsySpecimen02Block.html) - Block
-- [ProstateBiopsySpecimen02Slide](Specimen-ProstateBiopsySpecimen02Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen02Part](Specimen-CoreNeedleBiopsySpecimen02Part.html) - Part
+- [CoreNeedleBiopsySpecimen02Block](Specimen-CoreNeedleBiopsySpecimen02Block.html) - Block
+- [CoreNeedleBiopsySpecimen02Slide](Specimen-CoreNeedleBiopsySpecimen02Slide.html) - Slide
 
 #### Specimen 03
-- [ProstateBiopsySpecimen03Part](Specimen-ProstateBiopsySpecimen03Part.html) - Part
-- [ProstateBiopsySpecimen03Block](Specimen-ProstateBiopsySpecimen03Block.html) - Block
-- [ProstateBiopsySpecimen03Slide](Specimen-ProstateBiopsySpecimen03Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen03Part](Specimen-CoreNeedleBiopsySpecimen03Part.html) - Part
+- [CoreNeedleBiopsySpecimen03Block](Specimen-CoreNeedleBiopsySpecimen03Block.html) - Block
+- [CoreNeedleBiopsySpecimen03Slide](Specimen-CoreNeedleBiopsySpecimen03Slide.html) - Slide
 
 #### Specimen 04
-- [ProstateBiopsySpecimen04Part](Specimen-ProstateBiopsySpecimen04Part.html) - Part
-- [ProstateBiopsySpecimen04Block](Specimen-ProstateBiopsySpecimen04Block.html) - Block
-- [ProstateBiopsySpecimen04Slide](Specimen-ProstateBiopsySpecimen04Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen04Part](Specimen-CoreNeedleBiopsySpecimen04Part.html) - Part
+- [CoreNeedleBiopsySpecimen04Block](Specimen-CoreNeedleBiopsySpecimen04Block.html) - Block
+- [CoreNeedleBiopsySpecimen04Slide](Specimen-CoreNeedleBiopsySpecimen04Slide.html) - Slide
 
 #### Specimen 05
-- [ProstateBiopsySpecimen05Part](Specimen-ProstateBiopsySpecimen05Part.html) - Part
-- [ProstateBiopsySpecimen05Block](Specimen-ProstateBiopsySpecimen05Block.html) - Block
-- [ProstateBiopsySpecimen05Slide](Specimen-ProstateBiopsySpecimen05Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen05Part](Specimen-CoreNeedleBiopsySpecimen05Part.html) - Part
+- [CoreNeedleBiopsySpecimen05Block](Specimen-CoreNeedleBiopsySpecimen05Block.html) - Block
+- [CoreNeedleBiopsySpecimen05Slide](Specimen-CoreNeedleBiopsySpecimen05Slide.html) - Slide
 
 #### Specimen 06
-- [ProstateBiopsySpecimen06Part](Specimen-ProstateBiopsySpecimen06Part.html) - Part
-- [ProstateBiopsySpecimen06Block](Specimen-ProstateBiopsySpecimen06Block.html) - Block
-- [ProstateBiopsySpecimen06Slide](Specimen-ProstateBiopsySpecimen06Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen06Part](Specimen-CoreNeedleBiopsySpecimen06Part.html) - Part
+- [CoreNeedleBiopsySpecimen06Block](Specimen-CoreNeedleBiopsySpecimen06Block.html) - Block
+- [CoreNeedleBiopsySpecimen06Slide](Specimen-CoreNeedleBiopsySpecimen06Slide.html) - Slide
 
 #### Specimen 07
-- [ProstateBiopsySpecimen07Part](Specimen-ProstateBiopsySpecimen07Part.html) - Part
-- [ProstateBiopsySpecimen07Block](Specimen-ProstateBiopsySpecimen07Block.html) - Block
-- [ProstateBiopsySpecimen07Slide](Specimen-ProstateBiopsySpecimen07Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen07Part](Specimen-CoreNeedleBiopsySpecimen07Part.html) - Part
+- [CoreNeedleBiopsySpecimen07Block](Specimen-CoreNeedleBiopsySpecimen07Block.html) - Block
+- [CoreNeedleBiopsySpecimen07Slide](Specimen-CoreNeedleBiopsySpecimen07Slide.html) - Slide
 
 #### Specimen 08
-- [ProstateBiopsySpecimen08Part](Specimen-ProstateBiopsySpecimen08Part.html) - Part
-- [ProstateBiopsySpecimen08Block](Specimen-ProstateBiopsySpecimen08Block.html) - Block
-- [ProstateBiopsySpecimen08Slide](Specimen-ProstateBiopsySpecimen08Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen08Part](Specimen-CoreNeedleBiopsySpecimen08Part.html) - Part
+- [CoreNeedleBiopsySpecimen08Block](Specimen-CoreNeedleBiopsySpecimen08Block.html) - Block
+- [CoreNeedleBiopsySpecimen08Slide](Specimen-CoreNeedleBiopsySpecimen08Slide.html) - Slide
 
 #### Specimen 09
-- [ProstateBiopsySpecimen09Part](Specimen-ProstateBiopsySpecimen09Part.html) - Part
-- [ProstateBiopsySpecimen09Block](Specimen-ProstateBiopsySpecimen09Block.html) - Block
-- [ProstateBiopsySpecimen09Slide](Specimen-ProstateBiopsySpecimen09Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen09Part](Specimen-CoreNeedleBiopsySpecimen09Part.html) - Part
+- [CoreNeedleBiopsySpecimen09Block](Specimen-CoreNeedleBiopsySpecimen09Block.html) - Block
+- [CoreNeedleBiopsySpecimen09Slide](Specimen-CoreNeedleBiopsySpecimen09Slide.html) - Slide
 
 #### Specimen 10
-- [ProstateBiopsySpecimen10Part](Specimen-ProstateBiopsySpecimen10Part.html) - Part
-- [ProstateBiopsySpecimen10Block](Specimen-ProstateBiopsySpecimen10Block.html) - Block
-- [ProstateBiopsySpecimen10Slide](Specimen-ProstateBiopsySpecimen10Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen10Part](Specimen-CoreNeedleBiopsySpecimen10Part.html) - Part
+- [CoreNeedleBiopsySpecimen10Block](Specimen-CoreNeedleBiopsySpecimen10Block.html) - Block
+- [CoreNeedleBiopsySpecimen10Slide](Specimen-CoreNeedleBiopsySpecimen10Slide.html) - Slide
 
 #### Specimen 11
-- [ProstateBiopsySpecimen11Part](Specimen-ProstateBiopsySpecimen11Part.html) - Part
-- [ProstateBiopsySpecimen11Block](Specimen-ProstateBiopsySpecimen11Block.html) - Block
-- [ProstateBiopsySpecimen11Slide](Specimen-ProstateBiopsySpecimen11Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen11Part](Specimen-CoreNeedleBiopsySpecimen11Part.html) - Part
+- [CoreNeedleBiopsySpecimen11Block](Specimen-CoreNeedleBiopsySpecimen11Block.html) - Block
+- [CoreNeedleBiopsySpecimen11Slide](Specimen-CoreNeedleBiopsySpecimen11Slide.html) - Slide
 
 #### Specimen 12
-- [ProstateBiopsySpecimen12Part](Specimen-ProstateBiopsySpecimen12Part.html) - Part
-- [ProstateBiopsySpecimen12Block](Specimen-ProstateBiopsySpecimen12Block.html) - Block
-- [ProstateBiopsySpecimen12Slide](Specimen-ProstateBiopsySpecimen12Slide.html) - Slide
+- [CoreNeedleBiopsySpecimen12Part](Specimen-CoreNeedleBiopsySpecimen12Part.html) - Part
+- [CoreNeedleBiopsySpecimen12Block](Specimen-CoreNeedleBiopsySpecimen12Block.html) - Block
+- [CoreNeedleBiopsySpecimen12Slide](Specimen-CoreNeedleBiopsySpecimen12Slide.html) - Slide
