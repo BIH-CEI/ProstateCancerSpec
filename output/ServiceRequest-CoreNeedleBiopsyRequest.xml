@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="CoreNeedleBiopsyRequest"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest CoreNeedleBiopsyRequest</b></p><a name="CoreNeedleBiopsyRequest"> </a><a name="hcCoreNeedleBiopsyRequest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request">MII PR Patho Service Requestversion: null2026.0.0)</a></p></div><p><b>identifier</b>: Placer ID/PATH-RPT-2024-001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 726007}">Pathology consultation, comprehensive, records and specimen with report (procedure)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 301759007}">Tru-cut biopsy of prostate (procedure)</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href="Encounter-CoreNeedleBiopsyEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#PATH-2024; status = finished; class = IMB (IMB)</a></p><p><b>requester</b>: <a href="Practitioner-UrologistPractitioner.html">Practitioner Andreas Weber </a></p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 162568004}">Raised prostate specific antigen</span></p><p><b>supportingInfo</b>: </p><ul><li><a href="Observation-PSAPreCoreNeedleBiopsy.html">Observation Prostate specific antigen [Mass/volume] in Serum or Plasma</a></li><li><a href="Condition-CoreNeedleBiopsyDiagnosisSuspicion.html">Condition Bösartige Neubildung der Prostata</a></li></ul><p><b>specimen</b>: </p><ul><li><a href="Specimen-CoreNeedleBiopsySpecimen01Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen02Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen03Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen04Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen05Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen06Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen07Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen08Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen09Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen10Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen11Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href="Specimen-CoreNeedleBiopsySpecimen12Part.html">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li></ul></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+        <display value="Placer ID"/>
+      </coding>
+    </type>
+    <system value="http://example.hospital.de/serviceRequest"/>
+    <value value="PATH-RPT-2024-001"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="726007"/>
+      <display value="Pathology consultation, comprehensive, records and specimen with report (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="301759007"/>
+      <display value="Tru-cut biopsy of prostate (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/CoreNeedleBiopsyEncounter"/>
+  </encounter>
+  <requester>
+    <reference value="Practitioner/UrologistPractitioner"/>
+  </requester>
+  <performer>
+    <reference value="Practitioner/PathologistPractitioner"/>
+  </performer>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="162568004"/>
+      <display value="Raised prostate specific antigen"/>
+    </coding>
+  </reasonCode>
+  <supportingInfo>
+    <reference value="Observation/PSAPreCoreNeedleBiopsy"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="Condition/CoreNeedleBiopsyDiagnosisSuspicion"/>
+  </supportingInfo>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen01Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen02Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen03Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen04Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen05Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen06Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen07Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen08Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen09Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen10Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen11Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen12Part"/>
+  </specimen>
+</ServiceRequest>

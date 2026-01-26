@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TransurethralResectionMacroscopicWeight"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation TransurethralResectionMacroscopicWeight</b></p><a name="TransurethralResectionMacroscopicWeight"> </a><a name="hcTransurethralResectionMacroscopicWeight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding">MII PR Patho Findingversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>, <span title="Codes:{http://loinc.org 22634-0}">Pathology report gross observation Narrative</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 371506001}">Specimen weight (observable entity)</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-04-11 14:10:00+0100</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>value</b>: 25 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p><p><b>note</b>: </p><blockquote><div><p>TUR-Prostata Gewicht 25g</p>
+</div></blockquote><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span></p><p><b>specimen</b>: <a href="Specimen-TransurethralResectionSpecimenPart.html">Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_003; status = available; type = Surgical specimen</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="22634-0"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="371506001"/>
+      <display value="Specimen weight (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <effectiveDateTime value="2024-04-11T14:10:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/PathologistPractitioner"/>
+  </performer>
+  <valueQuantity>
+    <value value="25"/>
+    <unit value="g"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="g"/>
+  </valueQuantity>
+  <note>
+    <text value="TUR-Prostata Gewicht 25g"/>
+  </note>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="41216001"/>
+      <display value="Prostatic structure (body structure)"/>
+    </coding>
+  </bodySite>
+  <specimen>
+    <reference value="Specimen/TransurethralResectionSpecimenPart"/>
+  </specimen>
+</Observation>

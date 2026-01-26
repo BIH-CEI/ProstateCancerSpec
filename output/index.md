@@ -1,0 +1,6295 @@
+# Home - Prostate Cancer Specification v0.1.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
+| Draft as of 2026-01-26 | *Computable Name*:ProstateCancerSpec |
+
+This Implementation Guide defines FHIR profiles and examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
+
+### Scope and Purpose
+
+This IG provides structured data models and comprehensive examples for prostate cancer pathology workflows, including:
+
+* **Diagnostic Procedures**: Core Needle Biopsy, TUR-P resection, enucleation, and radical prostatectomy
+* **Specimen Management**: Complete specimen hierarchies from parts to blocks to slides
+* **Macroscopic Findings**: Tissue measurements, weight, and visual characteristics
+* **Microscopic Findings**: Detailed histological observations (biopsy only)
+* **Diagnostic Conclusions**: Gleason scoring, ISUP grading, tumor quantification, invasion patterns
+* **Structured Reports**: DiagnosticReport and Composition resources for complete pathology reports
+
+### Example Scenarios
+
+This IG includes four comprehensive example scenarios representing different clinical contexts:
+
+#### Core Needle Biopsy
+
+Complete 12-core prostate biopsy with:
+
+* 12 specimen locations (Part → Block → Slide for each)
+* Macroscopic findings (length, cylinder count, laterality per core)
+* Microscopic findings (detailed histological observations per core)
+* Diagnostic conclusion with Gleason scoring and quantification
+
+#### Radical Prostatectomy
+
+Complete prostate specimen from radical prostatectomy showing:
+
+* Favorable cancer case: Gleason 3+4=7 (ISUP Grade Group 2)
+* Complete prostate specimen with 3 blocks and 6 slides
+* Macroscopic findings including organ dimensions and seminal vesicles
+* Diagnostic conclusion with negative margins (R0), no extraprostatic extension
+* TNM staging: pT2c pN0
+
+#### Transurethral Enucleation
+
+Prostate enucleation (simple prostatectomy) with incidental aggressive cancer:
+
+* High-grade cancer: Gleason 4+5=9 (ISUP Grade Group 5)
+* 5 blocks and 10 slides from enucleated tissue
+* Extensive tumor involvement (60% of tissue)
+* Present: intraductal carcinoma, invasive cribriform carcinoma, extraprostatic extension, seminal vesicle invasion
+
+#### Transurethral Resection
+
+Transurethral resection (TUR-P) with incidental cancer:
+
+* 5 blocks and 10 slides from TUR chips
+* Diagnostic findings from resection tissue
+
+### Resource Organization
+
+Each example scenario is organized with the following structure:
+
+1. **ServiceRequest**: Initial pathology request
+1. **Specimens**: Complete specimen hierarchy (Part → Blocks → Slides)
+1. **MacroscopyGrouper**: Grouper observation referencing all macroscopic findings
+1. **MicroscopyGrouper**: Grouper observation for microscopic findings (biopsy only)
+1. **DiagnosticConclusionGrouper**: Grouper observation referencing all diagnostic conclusion findings
+1. **DiagnosticReport**: Complete pathology report tying together all observations
+1. **Composition**: FHIR document structure for the complete report
+
+#### Dependencies
+
+This IG builds upon:
+
+* **MII Pathology Module** [de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0): Grouper and Finding Observations, ServiceRequests and DiagnosticReports
+
+and also asures the compatibility to:
+
+* **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles
+* **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base]: Core patient and procedure profiles
+* **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank]: Specimen management
+
+#### Standards Compliance
+
+* **FHIR R4** (4.0.1)
+* **LOINC** codes for laboratory values, pathology observations, and Gleason scoring
+* **SNOMED CT** for clinical terminology, histological findings, and anatomical locations
+* **ICD-O-3** for histological tumor type classification
+* **ICD-10-GM** for diagnoses
+* **TNM Classification** for cancer staging
+
+#### Key Features
+
+* **Complete Specimen Hierarchies**: All examples include complete specimen traceability from tissue parts through blocks to individual slides
+* **Grouper Pattern**: Uses MII Pathology Grouper pattern to organize findings into macroscopic, microscopic (where applicable), and diagnostic conclusion sections
+* **Comprehensive Coding**: All observations include appropriate LOINC and SNOMED CT codes
+* **Real-world Scenarios**: Examples represent actual clinical workflows and findings
+* **Progressive Severity**: Examples range from favorable (prostatectomy) to aggressive (enucleation) cancer presentations
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "prostatecancerspec",
+  "url" : "http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec",
+  "version" : "0.1.0",
+  "name" : "ProstateCancerSpec",
+  "title" : "Prostate Cancer Specification",
+  "status" : "draft",
+  "date" : "2026-01-26T12:53:42+01:00",
+  "publisher" : "BIH CEI",
+  "contact" : [
+    {
+      "name" : "BIH CEI",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description" : "FHIR Implementation Guide for Prostate Cancer based on MII specifications",
+  "packageId" : "prostatecancerspec",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [
+    {
+      "id" : "hl7tx",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
+      "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId" : "hl7.terminology.r4",
+      "version" : "7.0.1"
+    },
+    {
+      "id" : "hl7ext",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+        }
+      ],
+      "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "packageId" : "hl7.fhir.uv.extensions.r4",
+      "version" : "5.2.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_onkologie",
+      "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version" : "2026.0.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_patho",
+      "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.patho",
+      "version" : "2026.0.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_base",
+      "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.base",
+      "version" : "2026.0.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_biobank",
+      "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.biobank",
+      "version" : "2026.0.0"
+    }
+  ],
+  "definition" : {
+    "extension" : [
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2025+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://prostatecancerspec.org/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2025+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://prostatecancerspec.org/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource" : [
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount01"
+        },
+        "name" : "Anzahl Zylinder Stanze 01",
+        "description" : "Anzahl der Stanzzylinder in Specimen 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount02"
+        },
+        "name" : "Anzahl Zylinder Stanze 02",
+        "description" : "Anzahl der Stanzzylinder in Specimen 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount03"
+        },
+        "name" : "Anzahl Zylinder Stanze 03",
+        "description" : "Anzahl der Stanzzylinder in Specimen 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount04"
+        },
+        "name" : "Anzahl Zylinder Stanze 04",
+        "description" : "Anzahl der Stanzzylinder in Specimen 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount05"
+        },
+        "name" : "Anzahl Zylinder Stanze 05",
+        "description" : "Anzahl der Stanzzylinder in Specimen 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount06"
+        },
+        "name" : "Anzahl Zylinder Stanze 06",
+        "description" : "Anzahl der Stanzzylinder in Specimen 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount07"
+        },
+        "name" : "Anzahl Zylinder Stanze 07",
+        "description" : "Anzahl der Stanzzylinder in Specimen 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount08"
+        },
+        "name" : "Anzahl Zylinder Stanze 08",
+        "description" : "Anzahl der Stanzzylinder in Specimen 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount09"
+        },
+        "name" : "Anzahl Zylinder Stanze 09",
+        "description" : "Anzahl der Stanzzylinder in Specimen 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount10"
+        },
+        "name" : "Anzahl Zylinder Stanze 10",
+        "description" : "Anzahl der Stanzzylinder in Specimen 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount11"
+        },
+        "name" : "Anzahl Zylinder Stanze 11",
+        "description" : "Anzahl der Stanzzylinder in Specimen 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount12"
+        },
+        "name" : "Anzahl Zylinder Stanze 12",
+        "description" : "Anzahl der Stanzzylinder in Specimen 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP01"
+        },
+        "name" : "ASAP Stanze 01",
+        "description" : "ASAP für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP02"
+        },
+        "name" : "ASAP Stanze 02",
+        "description" : "ASAP für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP04"
+        },
+        "name" : "ASAP Stanze 04",
+        "description" : "ASAP für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP06"
+        },
+        "name" : "ASAP Stanze 06",
+        "description" : "ASAP für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP07"
+        },
+        "name" : "ASAP Stanze 07",
+        "description" : "ASAP für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP09"
+        },
+        "name" : "ASAP Stanze 09",
+        "description" : "ASAP für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP11"
+        },
+        "name" : "ASAP Stanze 11",
+        "description" : "ASAP für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyASAP"
+        },
+        "name" : "Atypical Small Acinar Proliferation (ASAP) - Biopsy",
+        "description" : "Presence of atypical small acinar proliferation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyBladderNeckInvasion"
+        },
+        "name" : "Bladder Neck Invasion - Prostatectomy",
+        "description" : "Microscopic urinary bladder neck invasion",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/TransurethralEnucleationDiagnosisBPH"
+        },
+        "name" : "BPH-Diagnose vor Enukleation",
+        "description" : "Symptomatische benigne Prostatahyperplasie als Indikation zur Enukleation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/TransurethralResectionDiagnosisBPH"
+        },
+        "name" : "BPH-Diagnose vor TUR-P",
+        "description" : "Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"
+        },
+        "name" : "Diagnostic Conclusion Grouper - Biopsy",
+        "description" : "Grouper for all diagnostic conclusion findings in biopsy specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationDiagnosticConclusionGrouper"
+        },
+        "name" : "Diagnostic Conclusion Grouper - Prostata Enucleation",
+        "description" : "Grouper for all diagnostic conclusion findings in Prostata Enucleation specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyDiagnosticConclusionGrouper"
+        },
+        "name" : "Diagnostic Conclusion Grouper - Prostatectomy",
+        "description" : "Grouper for all diagnostic conclusion findings in prostatectomy specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionDiagnosticConclusionGrouper"
+        },
+        "name" : "Diagnostic Conclusion Grouper - TUR-Prostata",
+        "description" : "Grouper for all diagnostic conclusion findings in TUR-Prostata specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/CoreNeedleBiopsyEncounter"
+        },
+        "name" : "Encounter für Pathologie",
+        "description" : "Encounter für pathologische Befunde",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/TransurethralEnucleationEncounter"
+        },
+        "name" : "Encounter für Prostata Enucleation",
+        "description" : "Encounter für Prostata Enucleation-Beispiel",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/RadicalProstatectomyEncounter"
+        },
+        "name" : "Encounter für Prostatektomie",
+        "description" : "Encounter für Prostatektomie-Beispiel",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/TransurethralResectionEncounter"
+        },
+        "name" : "Encounter für TUR-Prostata",
+        "description" : "Encounter für TUR-Prostata-Beispiel",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Composition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Composition/TransurethralEnucleationComposition"
+        },
+        "name" : "Enucleation Pathology Report Composition",
+        "description" : "FHIR Composition for structured TUR pathology report",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationExtraprostaticExtension"
+        },
+        "name" : "Extraprostatic Extension - Enucleation",
+        "description" : "Presence of extraprostatic extension",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyExtraprostaticExtension"
+        },
+        "name" : "Extraprostatic Extension - Prostatectomy",
+        "description" : "Presence of extraprostatic extension",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionExtraprostaticExtension"
+        },
+        "name" : "Extraprostatic Extension - TUR",
+        "description" : "Presence of extraprostatic extension",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/CoreNeedleBiopsyDiagnosisConfirmed"
+        },
+        "name" : "Gesicherte Prostatakarzinom-Diagnose nach Biopsie",
+        "description" : "Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGradingGroupISUP"
+        },
+        "name" : "Grading Group according to ISUP 2014/WHO 2016 - Biopsy",
+        "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationGradingGroupISUP"
+        },
+        "name" : "Grading Group according to ISUP 2014/WHO 2016 - Enucleation",
+        "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyGradingGroupISUP"
+        },
+        "name" : "Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy",
+        "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionGradingGroupISUP"
+        },
+        "name" : "Grading Group according to ISUP 2014/WHO 2016 - TUR",
+        "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading01"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 01",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading02"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 02",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading04"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 04",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading06"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 06",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading07"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 07",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading09"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 09",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonGrading11"
+        },
+        "name" : "Gradinggruppe ISUP Stanze 11",
+        "description" : "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatousProstatiti"
+        },
+        "name" : "Granulomatous Prostatitis - Biopsy",
+        "description" : "Presence of granulomatous prostatitis",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis01"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 01",
+        "description" : "Granulomatöse Prostatitis für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis02"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 02",
+        "description" : "Granulomatöse Prostatitis für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis04"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 04",
+        "description" : "Granulomatöse Prostatitis für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis06"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 06",
+        "description" : "Granulomatöse Prostatitis für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis07"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 07",
+        "description" : "Granulomatöse Prostatitis für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis09"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 09",
+        "description" : "Granulomatöse Prostatitis für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis11"
+        },
+        "name" : "Granulomatöse Prostatitis Stanze 11",
+        "description" : "Granulomatöse Prostatitis für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide01A"
+        },
+        "name" : "HE-Schnitt 01A Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide01A"
+        },
+        "name" : "HE-Schnitt 01A Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
+        },
+        "name" : "HE-Schnitt 01A TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide01B"
+        },
+        "name" : "HE-Schnitt 01B Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide01B"
+        },
+        "name" : "HE-Schnitt 01B Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide01B"
+        },
+        "name" : "HE-Schnitt 01B TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide02A"
+        },
+        "name" : "HE-Schnitt 02A Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide02A"
+        },
+        "name" : "HE-Schnitt 02A Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide02A"
+        },
+        "name" : "HE-Schnitt 02A TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide02B"
+        },
+        "name" : "HE-Schnitt 02B Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide02B"
+        },
+        "name" : "HE-Schnitt 02B Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide02B"
+        },
+        "name" : "HE-Schnitt 02B TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide03A"
+        },
+        "name" : "HE-Schnitt 03A Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide03A"
+        },
+        "name" : "HE-Schnitt 03A Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide03A"
+        },
+        "name" : "HE-Schnitt 03A TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide03B"
+        },
+        "name" : "HE-Schnitt 03B Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenSlide03B"
+        },
+        "name" : "HE-Schnitt 03B Prostatektomie",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide03B"
+        },
+        "name" : "HE-Schnitt 03B TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide04A"
+        },
+        "name" : "HE-Schnitt 04A Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 04A des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide04A"
+        },
+        "name" : "HE-Schnitt 04A TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide04B"
+        },
+        "name" : "HE-Schnitt 04B Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 04B des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide04B"
+        },
+        "name" : "HE-Schnitt 04B TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide05A"
+        },
+        "name" : "HE-Schnitt 05A Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 05A des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide05A"
+        },
+        "name" : "HE-Schnitt 05A TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenSlide05B"
+        },
+        "name" : "HE-Schnitt 05B Prostata Enucleation",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 05B des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenSlide05B"
+        },
+        "name" : "HE-Schnitt 05B TUR-Prostata",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
+        },
+        "name" : "HE-Schnitt Stanze 01",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen02Slide"
+        },
+        "name" : "HE-Schnitt Stanze 02",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen03Slide"
+        },
+        "name" : "HE-Schnitt Stanze 03",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen04Slide"
+        },
+        "name" : "HE-Schnitt Stanze 04",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen05Slide"
+        },
+        "name" : "HE-Schnitt Stanze 05",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen06Slide"
+        },
+        "name" : "HE-Schnitt Stanze 06",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen07Slide"
+        },
+        "name" : "HE-Schnitt Stanze 07",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen08Slide"
+        },
+        "name" : "HE-Schnitt Stanze 08",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen09Slide"
+        },
+        "name" : "HE-Schnitt Stanze 09",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen10Slide"
+        },
+        "name" : "HE-Schnitt Stanze 10",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen11Slide"
+        },
+        "name" : "HE-Schnitt Stanze 11",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen12Slide"
+        },
+        "name" : "HE-Schnitt Stanze 12",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN01"
+        },
+        "name" : "High-grade PIN Stanze 01",
+        "description" : "Begleitende High-grade-PIN für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN02"
+        },
+        "name" : "High-grade PIN Stanze 02",
+        "description" : "Begleitende High-grade-PIN für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN04"
+        },
+        "name" : "High-grade PIN Stanze 04",
+        "description" : "Begleitende High-grade-PIN für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN06"
+        },
+        "name" : "High-grade PIN Stanze 06",
+        "description" : "Begleitende High-grade-PIN für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN07"
+        },
+        "name" : "High-grade PIN Stanze 07",
+        "description" : "Begleitende High-grade-PIN für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN09"
+        },
+        "name" : "High-grade PIN Stanze 09",
+        "description" : "Begleitende High-grade-PIN für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN11"
+        },
+        "name" : "High-grade PIN Stanze 11",
+        "description" : "Begleitende High-grade-PIN für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHighGradePIN"
+        },
+        "name" : "High-grade Prostatic Intraepithelial Neoplasia - Biopsy",
+        "description" : "Presence of high-grade prostatic intraepithelial neoplasia",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistologicalGradeWHO"
+        },
+        "name" : "Histological Differentiation Grade WHO - Biopsy",
+        "description" : "Histological differentiation grade according to WHO",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistologicalTypeICDO3"
+        },
+        "name" : "Histological Type ICD-O-3 - Biopsy",
+        "description" : "Histological type according to ICD-O-3 classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationHistologicalTypeICDO3"
+        },
+        "name" : "Histological Type ICD-O-3 - Prostata Enucleation",
+        "description" : "Histological type according to ICD-O-3 classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyHistologicalTypeICDO3"
+        },
+        "name" : "Histological Type ICD-O-3 - Prostatectomy",
+        "description" : "Histological type according to ICD-O-3 classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionHistologicalTypeICDO3"
+        },
+        "name" : "Histological Type ICD-O-3 - TUR-Prostata",
+        "description" : "Histological type according to ICD-O-3 classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp01"
+        },
+        "name" : "Histologischer Typ Stanze 01",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp02"
+        },
+        "name" : "Histologischer Typ Stanze 02",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp03"
+        },
+        "name" : "Histologischer Typ Stanze 03",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp04"
+        },
+        "name" : "Histologischer Typ Stanze 04",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp05"
+        },
+        "name" : "Histologischer Typ Stanze 05",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp06"
+        },
+        "name" : "Histologischer Typ Stanze 06",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp07"
+        },
+        "name" : "Histologischer Typ Stanze 07",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp08"
+        },
+        "name" : "Histologischer Typ Stanze 08",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp09"
+        },
+        "name" : "Histologischer Typ Stanze 09",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp10"
+        },
+        "name" : "Histologischer Typ Stanze 10",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp11"
+        },
+        "name" : "Histologischer Typ Stanze 11",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyHistoTyp12"
+        },
+        "name" : "Histologischer Typ Stanze 12",
+        "description" : "Histologischer Typ ICD-O-3 für Stanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyICDOVersion"
+        },
+        "name" : "ICD-O Version - Biopsy",
+        "description" : "Version of ICD-O classification used",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyICDOVersion"
+        },
+        "name" : "ICD-O Version - Prostatectomy",
+        "description" : "Version of ICD-O classification used",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraductalCarcinoma"
+        },
+        "name" : "Intraductal Carcinoma - Biopsy",
+        "description" : "Presence of intraductal carcinoma",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationIntraductalCarcinoma"
+        },
+        "name" : "Intraductal Carcinoma - Enucleation",
+        "description" : "Presence of intraductal carcinoma of the prostate",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyIntraductalCarcinoma"
+        },
+        "name" : "Intraductal Carcinoma - Prostatectomy",
+        "description" : "Presence of intraductal carcinoma of the prostate",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionIntraductalCarcinoma"
+        },
+        "name" : "Intraductal Carcinoma - TUR",
+        "description" : "Presence of intraductal carcinoma of the prostate",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom01"
+        },
+        "name" : "Intraduktales Karzinom Stanze 01",
+        "description" : "Intraduktales Karzinom für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom02"
+        },
+        "name" : "Intraduktales Karzinom Stanze 02",
+        "description" : "Intraduktales Karzinom für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom04"
+        },
+        "name" : "Intraduktales Karzinom Stanze 04",
+        "description" : "Intraduktales Karzinom für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom06"
+        },
+        "name" : "Intraduktales Karzinom Stanze 06",
+        "description" : "Intraduktales Karzinom für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom07"
+        },
+        "name" : "Intraduktales Karzinom Stanze 07",
+        "description" : "Intraduktales Karzinom für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom09"
+        },
+        "name" : "Intraduktales Karzinom Stanze 09",
+        "description" : "Intraduktales Karzinom für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom11"
+        },
+        "name" : "Intraduktales Karzinom Stanze 11",
+        "description" : "Intraduktales Karzinom für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"
+        },
+        "name" : "Invasive Cribriform Carcinoma - Enucleation",
+        "description" : "Presence of invasive cribriform carcinoma",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
+        },
+        "name" : "Invasive Cribriform Carcinoma - Prostatectomy",
+        "description" : "Presence of invasive cribriform carcinoma",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionInvasiveCribriformCarcinoma"
+        },
+        "name" : "Invasive Cribriform Carcinoma - TUR",
+        "description" : "Presence of invasive cribriform carcinoma",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/TransurethralEnucleationDiagnosisPCa"
+        },
+        "name" : "Inzidentelles Prostatakarzinom nach Enukleation",
+        "description" : "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/TransurethralResectionDiagnosisPCa"
+        },
+        "name" : "Inzidentelles Prostatakarzinom nach TUR-P",
+        "description" : "Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyClinicalMStaging"
+        },
+        "name" : "Klinisches M-Staging",
+        "description" : "Klinische M-Kategorie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyClinicalNStaging"
+        },
+        "name" : "Klinisches N-Staging",
+        "description" : "Klinische N-Kategorie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyClinicalTStaging"
+        },
+        "name" : "Klinisches T-Staging",
+        "description" : "Klinische T-Kategorie nach Biopsie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality"
+        },
+        "name" : "Lateralität der Lymphknoten",
+        "description" : "Seitenangabe der Lymphknoten im Prostatektomiepräparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation"
+        },
+        "name" : "Location of Extraprostatic Extension - Biopsy",
+        "description" : "Anatomical location of extraprostatic tumor extension (typically not assessable in biopsy)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyLymphNodesExamined"
+        },
+        "name" : "Lymph Nodes Examined - Prostatectomy",
+        "description" : "Number of lymph nodes examined",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyLymphNodesPositive"
+        },
+        "name" : "Lymph Nodes Positive - Prostatectomy",
+        "description" : "Number of lymph nodes with tumor involvement",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicLymphNodesPresent"
+        },
+        "name" : "Lymphknoten im Resektat",
+        "description" : "Vorhandensein von Lymphknoten im Prostatektomiepräparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicLymphNodeDissection"
+        },
+        "name" : "Lymphknoten-Dissektion im Enucleation-Resektat",
+        "description" : "Vorhandensein von Lymphknoten-Dissektion im Prostata Enucleation Präparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionMacroscopicLymphNodeDissection"
+        },
+        "name" : "Lymphknoten-Dissektion im TUR-Resektat",
+        "description" : "Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovascularInvasion"
+        },
+        "name" : "Lymphovascular Invasion - Biopsy",
+        "description" : "Lymphatic and vascular invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationLymphovascularInvasion"
+        },
+        "name" : "Lymphovascular Invasion - Enucleation",
+        "description" : "Lymphatic and vascular invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyLymphovascularInvasion"
+        },
+        "name" : "Lymphovascular Invasion - Prostatectomy",
+        "description" : "Lymphatic and vascular invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionLymphovascularInvasion"
+        },
+        "name" : "Lymphovascular Invasion - TUR",
+        "description" : "Lymphatic and vascular invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion01"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 01",
+        "description" : "Lymphovaskuläre Invasion für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion02"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 02",
+        "description" : "Lymphovaskuläre Invasion für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion04"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 04",
+        "description" : "Lymphovaskuläre Invasion für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion06"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 06",
+        "description" : "Lymphovaskuläre Invasion für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion07"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 07",
+        "description" : "Lymphovaskuläre Invasion für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion09"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 09",
+        "description" : "Lymphovaskuläre Invasion für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion11"
+        },
+        "name" : "Lymphovaskuläre Invasion Stanze 11",
+        "description" : "Lymphovaskuläre Invasion für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicGrouper"
+        },
+        "name" : "Makroskopische Befunde Grouper",
+        "description" : "Gruppierung aller makroskopischen Messungen der Prostatastanzen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicGrouper"
+        },
+        "name" : "Makroskopische Befunde Grouper Prostata Enucleation",
+        "description" : "Gruppierung aller makroskopischen Messungen des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicGrouper"
+        },
+        "name" : "Makroskopische Befunde Grouper Prostatektomie",
+        "description" : "Gruppierung aller makroskopischen Messungen des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionMacroscopicGrouper"
+        },
+        "name" : "Makroskopische Befunde Grouper TUR-Prostata",
+        "description" : "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength01"
+        },
+        "name" : "Makroskopische Länge Stanze 01",
+        "description" : "Längenmessung der Prostatastanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength02"
+        },
+        "name" : "Makroskopische Länge Stanze 02",
+        "description" : "Längenmessung der Prostatastanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength03"
+        },
+        "name" : "Makroskopische Länge Stanze 03",
+        "description" : "Längenmessung der Prostatastanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength04"
+        },
+        "name" : "Makroskopische Länge Stanze 04",
+        "description" : "Längenmessung der Prostatastanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength05"
+        },
+        "name" : "Makroskopische Länge Stanze 05",
+        "description" : "Längenmessung der Prostatastanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength06"
+        },
+        "name" : "Makroskopische Länge Stanze 06",
+        "description" : "Längenmessung der Prostatastanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength07"
+        },
+        "name" : "Makroskopische Länge Stanze 07",
+        "description" : "Längenmessung der Prostatastanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength08"
+        },
+        "name" : "Makroskopische Länge Stanze 08",
+        "description" : "Längenmessung der Prostatastanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength09"
+        },
+        "name" : "Makroskopische Länge Stanze 09",
+        "description" : "Längenmessung der Prostatastanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength10"
+        },
+        "name" : "Makroskopische Länge Stanze 10",
+        "description" : "Längenmessung der Prostatastanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength11"
+        },
+        "name" : "Makroskopische Länge Stanze 11",
+        "description" : "Längenmessung der Prostatastanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength12"
+        },
+        "name" : "Makroskopische Länge Stanze 12",
+        "description" : "Längenmessung der Prostatastanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMarginStatus"
+        },
+        "name" : "Margin Status - Prostatectomy",
+        "description" : "Status of surgical resection margins",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMicroscopicGrouper"
+        },
+        "name" : "Mikroskopische Befunde Grouper",
+        "description" : "Gruppierung aller mikroskopischen Befunde der Prostatastanzen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText01"
+        },
+        "name" : "Morphologie Freitext Stanze 01",
+        "description" : "Morphologie Freitext für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText02"
+        },
+        "name" : "Morphologie Freitext Stanze 02",
+        "description" : "Morphologie Freitext für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText03"
+        },
+        "name" : "Morphologie Freitext Stanze 03",
+        "description" : "Morphologie Freitext für Stanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText04"
+        },
+        "name" : "Morphologie Freitext Stanze 04",
+        "description" : "Morphologie Freitext für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText05"
+        },
+        "name" : "Morphologie Freitext Stanze 05",
+        "description" : "Morphologie Freitext für Stanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText06"
+        },
+        "name" : "Morphologie Freitext Stanze 06",
+        "description" : "Morphologie Freitext für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText07"
+        },
+        "name" : "Morphologie Freitext Stanze 07",
+        "description" : "Morphologie Freitext für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText08"
+        },
+        "name" : "Morphologie Freitext Stanze 08",
+        "description" : "Morphologie Freitext für Stanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText09"
+        },
+        "name" : "Morphologie Freitext Stanze 09",
+        "description" : "Morphologie Freitext für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText10"
+        },
+        "name" : "Morphologie Freitext Stanze 10",
+        "description" : "Morphologie Freitext für Stanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText11"
+        },
+        "name" : "Morphologie Freitext Stanze 11",
+        "description" : "Morphologie Freitext für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphText12"
+        },
+        "name" : "Morphologie Freitext Stanze 12",
+        "description" : "Morphologie Freitext für Stanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMorphologyFreeText"
+        },
+        "name" : "Morphology Free Text Description - Biopsy",
+        "description" : "Free text description of tumor morphology",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMorphologyFreeText"
+        },
+        "name" : "Morphology Free Text Description - Prostata Enucleation",
+        "description" : "Free text description of tissue morphology",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMorphologyFreeText"
+        },
+        "name" : "Morphology Free Text Description - Prostatectomy",
+        "description" : "Free text description of tumor morphology",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionMorphologyFreeText"
+        },
+        "name" : "Morphology Free Text Description - TUR-Prostata",
+        "description" : "Free text description of tissue morphology",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPositiveCoresLeft"
+        },
+        "name" : "Number of Positive Cores Left Side - Biopsy",
+        "description" : "Number of tissue cores positive for carcinoma on the left side",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPositiveCoresRight"
+        },
+        "name" : "Number of Positive Cores Right Side - Biopsy",
+        "description" : "Number of tissue cores positive for carcinoma on the right side",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenBlock01"
+        },
+        "name" : "Paraffinblock 01 Prostata Enucleation",
+        "description" : "Paraffineinbettung des Prostata Enucleation Präparats Block 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenBlock01"
+        },
+        "name" : "Paraffinblock 01 Prostatektomie",
+        "description" : "Paraffineinbettung des Prostatektomiepräparats Block 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenBlock01"
+        },
+        "name" : "Paraffinblock 01 TUR-Prostata",
+        "description" : "Paraffineinbettung des TUR-Prostata Präparats Block 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenBlock02"
+        },
+        "name" : "Paraffinblock 02 Prostata Enucleation",
+        "description" : "Paraffineinbettung des Prostata Enucleation Präparats Block 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenBlock02"
+        },
+        "name" : "Paraffinblock 02 Prostatektomie",
+        "description" : "Paraffineinbettung des Prostatektomiepräparats Block 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenBlock02"
+        },
+        "name" : "Paraffinblock 02 TUR-Prostata",
+        "description" : "Paraffineinbettung des TUR-Prostata Präparats Block 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenBlock03"
+        },
+        "name" : "Paraffinblock 03 Prostata Enucleation",
+        "description" : "Paraffineinbettung des Prostata Enucleation Präparats Block 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenBlock03"
+        },
+        "name" : "Paraffinblock 03 Prostatektomie",
+        "description" : "Paraffineinbettung des Prostatektomiepräparats Block 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenBlock03"
+        },
+        "name" : "Paraffinblock 03 TUR-Prostata",
+        "description" : "Paraffineinbettung des TUR-Prostata Präparats Block 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenBlock04"
+        },
+        "name" : "Paraffinblock 04 Prostata Enucleation",
+        "description" : "Paraffineinbettung des Prostata Enucleation Präparats Block 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenBlock04"
+        },
+        "name" : "Paraffinblock 04 TUR-Prostata",
+        "description" : "Paraffineinbettung des TUR-Prostata Präparats Block 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenBlock05"
+        },
+        "name" : "Paraffinblock 05 Prostata Enucleation",
+        "description" : "Paraffineinbettung des Prostata Enucleation Präparats Block 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenBlock05"
+        },
+        "name" : "Paraffinblock 05 TUR-Prostata",
+        "description" : "Paraffineinbettung des TUR-Prostata Präparats Block 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen01Block"
+        },
+        "name" : "Paraffinblock Stanze 01",
+        "description" : "Paraffineinbettung der Prostatastanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen02Block"
+        },
+        "name" : "Paraffinblock Stanze 02",
+        "description" : "Paraffineinbettung der Prostatastanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen03Block"
+        },
+        "name" : "Paraffinblock Stanze 03",
+        "description" : "Paraffineinbettung der Prostatastanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen04Block"
+        },
+        "name" : "Paraffinblock Stanze 04",
+        "description" : "Paraffineinbettung der Prostatastanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen05Block"
+        },
+        "name" : "Paraffinblock Stanze 05",
+        "description" : "Paraffineinbettung der Prostatastanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen06Block"
+        },
+        "name" : "Paraffinblock Stanze 06",
+        "description" : "Paraffineinbettung der Prostatastanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen07Block"
+        },
+        "name" : "Paraffinblock Stanze 07",
+        "description" : "Paraffineinbettung der Prostatastanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen08Block"
+        },
+        "name" : "Paraffinblock Stanze 08",
+        "description" : "Paraffineinbettung der Prostatastanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen09Block"
+        },
+        "name" : "Paraffinblock Stanze 09",
+        "description" : "Paraffineinbettung der Prostatastanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen10Block"
+        },
+        "name" : "Paraffinblock Stanze 10",
+        "description" : "Paraffineinbettung der Prostatastanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen11Block"
+        },
+        "name" : "Paraffinblock Stanze 11",
+        "description" : "Paraffineinbettung der Prostatastanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen12Block"
+        },
+        "name" : "Paraffinblock Stanze 12",
+        "description" : "Paraffineinbettung der Prostatastanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/PathologistPractitioner"
+        },
+        "name" : "Pathologe",
+        "description" : "Durchführender Pathologe für alle pathologischen Befunde",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/TransurethralEnucleationReport"
+        },
+        "name" : "Pathologiebericht Prostata Enucleation",
+        "description" : "Umfangreicher Pathologiebericht nach Prostata Enucleation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/CoreNeedleBiopsyReport"
+        },
+        "name" : "Pathologiebericht Prostatastanzen",
+        "description" : "Umfangreicher Pathologiebericht für Core Needle Biopsys",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/RadicalProstatectomyReport"
+        },
+        "name" : "Pathologiebericht Prostatektomie",
+        "description" : "Umfangreicher Pathologiebericht nach radikaler Prostatektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/TransurethralResectionReport"
+        },
+        "name" : "Pathologiebericht TUR-Prostata",
+        "description" : "Umfangreicher Pathologiebericht nach TUR-Prostata",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/PathologyLabOrganization"
+        },
+        "name" : "Pathologielabor",
+        "description" : "Pathologielabor für alle pathologischen Befunde",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/Patient1"
+        },
+        "name" : "Patient 1 - Biopsie und TUR-P",
+        "description" : "Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/Patient2"
+        },
+        "name" : "Patient 2 - Enukleation und Prostatektomie",
+        "description" : "Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPercentageGleason45"
+        },
+        "name" : "Percentage of Gleason Pattern 4/5 - Biopsy",
+        "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationPercentageGleason45"
+        },
+        "name" : "Percentage of Gleason Pattern 4/5 - Enucleation",
+        "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyPercentageGleason45"
+        },
+        "name" : "Percentage of Gleason Pattern 4/5 - Prostatectomy",
+        "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionPercentageGleason45"
+        },
+        "name" : "Percentage of Gleason Pattern 4/5 - TUR",
+        "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPercentageTumorTotal"
+        },
+        "name" : "Percentage Tumor Content Total - Biopsy",
+        "description" : "Total percentage of tumor in all positive tissue cores",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuralInfiltration"
+        },
+        "name" : "Perineural Infiltration - Biopsy",
+        "description" : "Presence of perineural invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationPerineuralInfiltration"
+        },
+        "name" : "Perineural Infiltration - Enucleation",
+        "description" : "Presence of perineural invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyPerineuralInfiltration"
+        },
+        "name" : "Perineural Infiltration - Prostatectomy",
+        "description" : "Presence of perineural invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionPerineuralInfiltration"
+        },
+        "name" : "Perineural Infiltration - TUR",
+        "description" : "Presence of perineural invasion in cancer specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration01"
+        },
+        "name" : "Perineurale Infiltration Stanze 01",
+        "description" : "Perineurale Infiltration für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration02"
+        },
+        "name" : "Perineurale Infiltration Stanze 02",
+        "description" : "Perineurale Infiltration für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration04"
+        },
+        "name" : "Perineurale Infiltration Stanze 04",
+        "description" : "Perineurale Infiltration für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration06"
+        },
+        "name" : "Perineurale Infiltration Stanze 06",
+        "description" : "Perineurale Infiltration für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration07"
+        },
+        "name" : "Perineurale Infiltration Stanze 07",
+        "description" : "Perineurale Infiltration für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration09"
+        },
+        "name" : "Perineurale Infiltration Stanze 09",
+        "description" : "Perineurale Infiltration für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration11"
+        },
+        "name" : "Perineurale Infiltration Stanze 11",
+        "description" : "Perineurale Infiltration für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPeriprostataticFatInvasion"
+        },
+        "name" : "Periprostatic Fat Invasion - Biopsy",
+        "description" : "Tumor invasion into periprostatic connective and adipose tissue (typically not assessable in biopsy)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
+        },
+        "name" : "Primary Gleason Pattern (Epstein 2005) - Biopsy",
+        "description" : "Primary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationPrimaryGleasonPattern"
+        },
+        "name" : "Primary Gleason Pattern (Epstein 2005) - Enucleation",
+        "description" : "Primary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyPrimaryGleasonPattern"
+        },
+        "name" : "Primary Gleason Pattern (Epstein 2005) - Prostatectomy",
+        "description" : "Primary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionPrimaryGleasonPattern"
+        },
+        "name" : "Primary Gleason Pattern (Epstein 2005) - TUR",
+        "description" : "Primary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
+        },
+        "name" : "Primäres Gleason Muster Stanze 01",
+        "description" : "Primäres Gleason Muster für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
+        },
+        "name" : "Primäres Gleason Muster Stanze 02",
+        "description" : "Primäres Gleason Muster für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason04"
+        },
+        "name" : "Primäres Gleason Muster Stanze 04",
+        "description" : "Primäres Gleason Muster für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason06"
+        },
+        "name" : "Primäres Gleason Muster Stanze 06",
+        "description" : "Primäres Gleason Muster für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason07"
+        },
+        "name" : "Primäres Gleason Muster Stanze 07",
+        "description" : "Primäres Gleason Muster für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason09"
+        },
+        "name" : "Primäres Gleason Muster Stanze 09",
+        "description" : "Primäres Gleason Muster für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason11"
+        },
+        "name" : "Primäres Gleason Muster Stanze 11",
+        "description" : "Primäres Gleason Muster für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWidth"
+        },
+        "name" : "Prostata Breite",
+        "description" : "Breite der Prostata in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/TransurethralEnucleationProcedure"
+        },
+        "name" : "Prostata Enucleation (Simple Prostatectomy)",
+        "description" : "Prostata Enucleation zur Behandlung der benignen Prostatahyperplasie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/TransurethralEnucleationServiceRequest"
+        },
+        "name" : "Prostata Enucleation Anforderung",
+        "description" : "Anforderung für pathologische Aufarbeitung nach Prostata Enucleation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicWidth"
+        },
+        "name" : "Prostata Enucleation Breite",
+        "description" : "Breite des Prostata Enucleation Präparats in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicWeight"
+        },
+        "name" : "Prostata Enucleation Gewicht",
+        "description" : "Gewicht des Prostata Enucleation Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicLength"
+        },
+        "name" : "Prostata Enucleation Länge",
+        "description" : "Länge des Prostata Enucleation Präparats in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
+        },
+        "name" : "Prostata Enucleation Präparat (Einsendespecimen)",
+        "description" : "Prostata Enucleation Resektat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicDepth"
+        },
+        "name" : "Prostata Enucleation Tiefe",
+        "description" : "Tiefe des Prostata Enucleation Präparats in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicProstateHeight"
+        },
+        "name" : "Prostata Höhe",
+        "description" : "Höhe der Prostata in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicProstateDepth"
+        },
+        "name" : "Prostata Tiefe",
+        "description" : "Tiefe der Prostata in cm",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWeight"
+        },
+        "name" : "Prostatagewicht",
+        "description" : "Gewicht des Prostatektomiepräparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/RadicalProstatectomyDiagnosisPreOp"
+        },
+        "name" : "Prostatakarzinom-Diagnose vor Prostatektomie",
+        "description" : "Gesicherte Diagnose eines Prostatakarzinoms nach Biopsie, Indikation zur radikalen Prostatektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
+        },
+        "name" : "Prostatastanze 01 - Rechts lateral basal",
+        "description" : "Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
+        },
+        "name" : "Prostatastanze 02 - Rechts lateral mid",
+        "description" : "Tru-cut Biopsie aus der rechten lateralen Mitte (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+        },
+        "name" : "Prostatastanze 03 - Rechts lateral apikal",
+        "description" : "Tru-cut Biopsie aus der rechten lateralen Apex (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
+        },
+        "name" : "Prostatastanze 04 - Rechts medial basal",
+        "description" : "Tru-cut Biopsie aus der rechten medialen Basis (Übergangszone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
+        },
+        "name" : "Prostatastanze 05 - Rechts medial mid",
+        "description" : "Tru-cut Biopsie aus der rechten medialen Mitte (Übergangszone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
+        },
+        "name" : "Prostatastanze 06 - Rechts medial apikal",
+        "description" : "Tru-cut Biopsie aus der rechten medialen Apex (anteriores fibromuskuläres Stroma)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
+        },
+        "name" : "Prostatastanze 07 - Links lateral basal",
+        "description" : "Tru-cut Biopsie aus der linken lateralen Basis (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+        },
+        "name" : "Prostatastanze 08 - Links lateral mid",
+        "description" : "Tru-cut Biopsie aus der linken lateralen Mitte (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
+        },
+        "name" : "Prostatastanze 09 - Links lateral apikal",
+        "description" : "Tru-cut Biopsie aus der linken lateralen Apex (periphere Zone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
+        },
+        "name" : "Prostatastanze 10 - Links medial basal",
+        "description" : "Tru-cut Biopsie aus der linken medialen Basis (anteriores fibromuskuläres Stroma)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
+        },
+        "name" : "Prostatastanze 11 - Links medial mid",
+        "description" : "Tru-cut Biopsie aus der linken medialen Mitte (Übergangszone)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
+        },
+        "name" : "Prostatastanze 12 - Links medial apikal",
+        "description" : "Tru-cut Biopsie aus der linken medialen Apex (anteriores fibromuskuläres Stroma)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Composition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Composition/CoreNeedleBiopsyComposition"
+        },
+        "name" : "Prostate Biopsy Pathology Report Composition",
+        "description" : "FHIR Composition for structured prostate biopsy pathology report",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Composition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Composition/RadicalProstatectomyComposition"
+        },
+        "name" : "Prostatectomy Pathology Report Composition",
+        "description" : "FHIR Composition for structured prostatectomy pathology report",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+        },
+        "name" : "Prostatektomie Anforderung",
+        "description" : "Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenPart"
+        },
+        "name" : "Prostatektomiepräparat (Einsendespecimen)",
+        "description" : "Vollständiges Prostatektomiepräparat mit Samenbläschen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationProstaticTissueInvolved"
+        },
+        "name" : "Prostatic Tissue Involved by Tumour - Enucleation",
+        "description" : "Percentage of prostatic tissue involved by tumour",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"
+        },
+        "name" : "Prostatic Tissue Involved by Tumour - Prostatectomy",
+        "description" : "Percentage of prostatic tissue involved by tumour",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionProstaticTissueInvolved"
+        },
+        "name" : "Prostatic Tissue Involved by Tumour - TUR",
+        "description" : "Percentage of prostatic tissue involved by tumour",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason01"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 01",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason02"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 02",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason04"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 04",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason06"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 06",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason07"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 07",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason09"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 09",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyProzentGleason11"
+        },
+        "name" : "Prozentualer Anteil Gleasonmuster 4/5 Stanze 11",
+        "description" : "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil01"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 01",
+        "description" : "Prozentualer Tumoranteil für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil02"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 02",
+        "description" : "Prozentualer Tumoranteil für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil04"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 04",
+        "description" : "Prozentualer Tumoranteil für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil06"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 06",
+        "description" : "Prozentualer Tumoranteil für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil07"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 07",
+        "description" : "Prozentualer Tumoranteil für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil09"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 09",
+        "description" : "Prozentualer Tumoranteil für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumoranteil11"
+        },
+        "name" : "Prozentualer Tumoranteil Stanze 11",
+        "description" : "Prozentualer Tumoranteil für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyPSAPostoperative"
+        },
+        "name" : "PSA postoperativ",
+        "description" : "PSA-Kontrolle 6 Wochen nach Prostatektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/PSAPreCoreNeedleBiopsy"
+        },
+        "name" : "PSA vor Biopsie",
+        "description" : "PSA-Wert vor der Prostatastanzenentnahme",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationPSAPre"
+        },
+        "name" : "PSA vor Prostata Enucleation",
+        "description" : "PSA-Wert vor der Prostata Enucleation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionPSAPre"
+        },
+        "name" : "PSA vor TUR-Prostata",
+        "description" : "PSA-Wert vor der TUR-Prostata",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyRatioPositiveCores"
+        },
+        "name" : "Ratio of Positive to Total Cores - Biopsy",
+        "description" : "Ratio of positive cores to all examined cores",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationMacroscopicSeminalVesicles"
+        },
+        "name" : "Samenblasen im Enucleation-Resektat",
+        "description" : "Vorhandensein von Samenblasen im Prostata Enucleation Präparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent"
+        },
+        "name" : "Samenblasen im Resektat",
+        "description" : "Vorhandensein von Samenblasen im Prostatektomiepräparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionMacroscopicSeminalVesicles"
+        },
+        "name" : "Samenblasen im TUR-Resektat",
+        "description" : "Vorhandensein von Samenblasen im TUR-Prostata Präparat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength"
+        },
+        "name" : "Samenbläschenlänge",
+        "description" : "Längenmessung der Samenbläschen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
+        },
+        "name" : "Secondary Gleason Pattern (Epstein 2005) - Biopsy",
+        "description" : "Secondary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationSecondaryGleasonPattern"
+        },
+        "name" : "Secondary Gleason Pattern (Epstein 2005) - Enucleation",
+        "description" : "Secondary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomySecondaryGleasonPattern"
+        },
+        "name" : "Secondary Gleason Pattern (Epstein 2005) - Prostatectomy",
+        "description" : "Secondary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionSecondaryGleasonPattern"
+        },
+        "name" : "Secondary Gleason Pattern (Epstein 2005) - TUR",
+        "description" : "Secondary Gleason pattern according to Epstein 2005",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality01"
+        },
+        "name" : "Seitenangabe Stanze 01",
+        "description" : "Lateralitätsangabe der Prostatastanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality02"
+        },
+        "name" : "Seitenangabe Stanze 02",
+        "description" : "Lateralitätsangabe der Prostatastanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality03"
+        },
+        "name" : "Seitenangabe Stanze 03",
+        "description" : "Lateralitätsangabe der Prostatastanze 03",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality04"
+        },
+        "name" : "Seitenangabe Stanze 04",
+        "description" : "Lateralitätsangabe der Prostatastanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality05"
+        },
+        "name" : "Seitenangabe Stanze 05",
+        "description" : "Lateralitätsangabe der Prostatastanze 05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality06"
+        },
+        "name" : "Seitenangabe Stanze 06",
+        "description" : "Lateralitätsangabe der Prostatastanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality07"
+        },
+        "name" : "Seitenangabe Stanze 07",
+        "description" : "Lateralitätsangabe der Prostatastanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality08"
+        },
+        "name" : "Seitenangabe Stanze 08",
+        "description" : "Lateralitätsangabe der Prostatastanze 08",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality09"
+        },
+        "name" : "Seitenangabe Stanze 09",
+        "description" : "Lateralitätsangabe der Prostatastanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality10"
+        },
+        "name" : "Seitenangabe Stanze 10",
+        "description" : "Lateralitätsangabe der Prostatastanze 10",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality11"
+        },
+        "name" : "Seitenangabe Stanze 11",
+        "description" : "Lateralitätsangabe der Prostatastanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality12"
+        },
+        "name" : "Seitenangabe Stanze 12",
+        "description" : "Lateralitätsangabe der Prostatastanze 12",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 01",
+        "description" : "Sekundäres Gleason Muster für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 02",
+        "description" : "Sekundäres Gleason Muster für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason04"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 04",
+        "description" : "Sekundäres Gleason Muster für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason06"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 06",
+        "description" : "Sekundäres Gleason Muster für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason07"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 07",
+        "description" : "Sekundäres Gleason Muster für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason09"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 09",
+        "description" : "Sekundäres Gleason Muster für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySekundaerGleason11"
+        },
+        "name" : "Sekundäres Gleason Muster Stanze 11",
+        "description" : "Sekundäres Gleason Muster für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsySeminalVesicleInvasion"
+        },
+        "name" : "Seminal Vesicle Invasion - Biopsy",
+        "description" : "Tumor invasion into seminal vesicles (typically not assessable in biopsy)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationSeminalVesicleInvasion"
+        },
+        "name" : "Seminal Vesicle Invasion - Enucleation",
+        "description" : "Tumor invasion into seminal vesicles",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomySeminalVesicleInvasion"
+        },
+        "name" : "Seminal Vesicle Invasion - Prostatectomy",
+        "description" : "Tumor invasion into seminal vesicles",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionSeminalVesicleInvasion"
+        },
+        "name" : "Seminal Vesicle Invasion - TUR",
+        "description" : "Tumor invasion into seminal vesicles",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+        },
+        "name" : "Standardbiopsie Prostata Anforderung",
+        "description" : "Anforderung für 12-Stanzen Prostatabiopsie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyTNMpT"
+        },
+        "name" : "TNM Primary Tumor (pT) - Prostatectomy",
+        "description" : "Pathological primary tumor stage according to TNM classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyTNMpN"
+        },
+        "name" : "TNM Regional Lymph Nodes (pN) - Prostatectomy",
+        "description" : "Pathological regional lymph node stage according to TNM classification",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyGleasonScoreTotal"
+        },
+        "name" : "Total Gleason Score - Biopsy",
+        "description" : "Total Gleason score in biopsy specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralEnucleationGleasonScoreTotal"
+        },
+        "name" : "Total Gleason Score - Enucleation",
+        "description" : "Total Gleason score in Enucleation specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyGleasonScoreTotal"
+        },
+        "name" : "Total Gleason Score - Prostatectomy",
+        "description" : "Total Gleason score in prostatectomy specimen",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionGleasonScoreTotal"
+        },
+        "name" : "Total Gleason Score - TUR",
+        "description" : "Total Gleason score in TUR specimens",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorLengthTotal"
+        },
+        "name" : "Total Tumor Length in mm - Biopsy",
+        "description" : "Total linear length of carcinoma in millimeters",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/TransurethralResectionProcedure"
+        },
+        "name" : "Transurethrale Resektion der Prostata",
+        "description" : "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/RadicalProstatectomyTumorVolume"
+        },
+        "name" : "Tumor Volume - Prostatectomy",
+        "description" : "Total tumor volume in cubic centimeters",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge01"
+        },
+        "name" : "Tumorbefall in Länge Stanze 01",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge02"
+        },
+        "name" : "Tumorbefall in Länge Stanze 02",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge04"
+        },
+        "name" : "Tumorbefall in Länge Stanze 04",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge06"
+        },
+        "name" : "Tumorbefall in Länge Stanze 06",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge07"
+        },
+        "name" : "Tumorbefall in Länge Stanze 07",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge09"
+        },
+        "name" : "Tumorbefall in Länge Stanze 09",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge11"
+        },
+        "name" : "Tumorbefall in Länge Stanze 11",
+        "description" : "Tumorbefall für befallene Stanze in Länge in mm für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe01"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 01",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe02"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 02",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe04"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 04",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe06"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 06",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe07"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 07",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe09"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 09",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe11"
+        },
+        "name" : "Tumornachweis Fettgewebe Stanze 11",
+        "description" : "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase01"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 01",
+        "description" : "Tumornachweis in Samenblasen für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase02"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 02",
+        "description" : "Tumornachweis in Samenblasen für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase04"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 04",
+        "description" : "Tumornachweis in Samenblasen für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase06"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 06",
+        "description" : "Tumornachweis in Samenblasen für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase07"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 07",
+        "description" : "Tumornachweis in Samenblasen für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase09"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 09",
+        "description" : "Tumornachweis in Samenblasen für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase11"
+        },
+        "name" : "Tumornachweis Samenblasen Stanze 11",
+        "description" : "Tumornachweis in Samenblasen für Stanze 11",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Composition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Composition/TransurethralResectionComposition"
+        },
+        "name" : "TUR Pathology Report Composition",
+        "description" : "FHIR Composition for structured TUR pathology report",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+        },
+        "name" : "TUR-Prostata Anforderung",
+        "description" : "Anforderung für pathologische Aufarbeitung nach TUR-Prostata",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionMacroscopicWeight"
+        },
+        "name" : "TUR-Prostata Gewicht",
+        "description" : "Gewicht des TUR-Prostata Präparats",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/TransurethralResectionSpecimenPart"
+        },
+        "name" : "TUR-Prostata Präparat (Einsendespecimen)",
+        "description" : "TUR-Prostata Resektat",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/UrologistPractitioner"
+        },
+        "name" : "Urologe",
+        "description" : "Durchführender Urologe für alle urologischen Eingriffe",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/CoreNeedleBiopsyDiagnosisSuspicion"
+        },
+        "name" : "Verdachtsdiagnose Prostatakarzinom vor Biopsie",
+        "description" : "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auffälligem MRT-Befund",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01"
+        },
+        "name" : "Verhältnis positiver Stanzen 01",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 01",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02"
+        },
+        "name" : "Verhältnis positiver Stanzen 02",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 02",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen04"
+        },
+        "name" : "Verhältnis positiver Stanzen 04",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 04",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen06"
+        },
+        "name" : "Verhältnis positiver Stanzen 06",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen07"
+        },
+        "name" : "Verhältnis positiver Stanzen 07",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 07",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen09"
+        },
+        "name" : "Verhältnis positiver Stanzen 09",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 09",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen11"
+        },
+        "name" : "Verhältnis positiver Stanzen 11",
+        "description" : "Verhältnis positiver zu allen Stanzen für Stanze 11",
+        "exampleBoolean" : true
+      }
+    ],
+    "page" : {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "toc.html"
+        }
+      ],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "index.html"
+            }
+          ],
+          "nameUrl" : "index.html",
+          "title" : "Home",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "biopsy-specimens.html"
+            }
+          ],
+          "nameUrl" : "biopsy-specimens.html",
+          "title" : "Biopsy Specimens",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "clinical-context.html"
+            }
+          ],
+          "nameUrl" : "clinical-context.html",
+          "title" : "Clinical Context",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "prostatectomy-specimens.html"
+            }
+          ],
+          "nameUrl" : "prostatectomy-specimens.html",
+          "title" : "Prostatectomy Specimens",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "tur-enucleation-specimens.html"
+            }
+          ],
+          "nameUrl" : "tur-enucleation-specimens.html",
+          "title" : "Tur Enucleation Specimens",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "tur-resection-specimens.html"
+            }
+          ],
+          "nameUrl" : "tur-resection-specimens.html",
+          "title" : "Tur Resection Specimens",
+          "generation" : "markdown"
+        }
+      ]
+    },
+    "parameter" : [
+      {
+        "code" : "path-resource",
+        "value" : "input/capabilities"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/examples"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/extensions"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/models"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/operations"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/profiles"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/resources"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/vocabulary"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/maps"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/testing"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/history"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "fsh-generated/resources"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "template/config"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "input/images"
+      },
+      {
+        "code" : "path-tx-cache",
+        "value" : "input-cache/txcache"
+      }
+    ]
+  }
+}
+
+```

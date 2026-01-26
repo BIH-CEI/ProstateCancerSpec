@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="CoreNeedleBiopsySpecimen01Part"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen CoreNeedleBiopsySpecimen01Part</b></p><a name="CoreNeedleBiopsySpecimen01Part"> </a><a name="hcCoreNeedleBiopsySpecimen01Part"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><blockquote><p><b>MII EX Biobank Feature R5</b></p><ul><li>type: <span title="Codes:{http://snomed.info/sct 716902004}">Structure of basal part of peripheral zone of right half prostate (body structure)</span></li><li>description: Markiert mit roter Tinte</li></ul></blockquote><p><b>identifier</b>: Placer Identifier/BX24_001_01_A, Filler Identifier/E2024_001-01-A</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 309134005}">Prostate tru-cut biopsy sample</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>request</b>: <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest Tru-cut biopsy of prostate (procedure)</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-UrologistPractitioner.html">Practitioner Andreas Weber </a></td><td>2024-01-15 10:30:00+0100</td><td><span title="Codes:{http://snomed.info/sct 301759007}">Tru-cut biopsy of prostate (procedure)</span></td><td><span title="Codes:{http://snomed.info/sct 716902004}">Structure of basal part of peripheral zone of right half prostate (body structure)</span></td></tr></table><h3>Containers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 434746001}">Specimen vial (physical object)</span></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature">
+    <extension url="type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="716902004"/>
+          <display value="Structure of basal part of peripheral zone of right half prostate (body structure)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="description">
+      <valueString value="Markiert mit roter Tinte"/>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+      </coding>
+    </type>
+    <system value="https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag"/>
+    <value value="BX24_001_01_A"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="FILL"/>
+      </coding>
+    </type>
+    <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
+    <value value="E2024_001-01-A"/>
+  </identifier>
+  <accessionIdentifier>
+    <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
+    <value value="E2024_001"/>
+  </accessionIdentifier>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="309134005"/>
+      <display value="Prostate tru-cut biopsy sample"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <request>
+    <reference value="ServiceRequest/CoreNeedleBiopsyRequest"/>
+  </request>
+  <collection>
+    <collector>
+      <reference value="Practitioner/UrologistPractitioner"/>
+    </collector>
+    <collectedDateTime value="2024-01-15T10:30:00+01:00"/>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="301759007"/>
+        <display value="Tru-cut biopsy of prostate (procedure)"/>
+      </coding>
+    </method>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="716902004"/>
+        <display value="Structure of basal part of peripheral zone of right half prostate (body structure)"/>
+      </coding>
+    </bodySite>
+  </collection>
+  <container>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="434746001"/>
+        <display value="Specimen vial (physical object)"/>
+      </coding>
+    </type>
+  </container>
+</Specimen>

@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Observation/TransurethralEnucleationSecondaryGleasonPattern> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TransurethralEnucleationSecondaryGleasonPattern"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns>
+     ] [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralEnucleationSecondaryGleasonPattern</b></p><a name=\"TransurethralEnucleationSecondaryGleasonPattern\"> </a><a name=\"hcTransurethralEnucleationSecondaryGleasonPattern\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns\">MII PR Onkologie Prostata Gleason Primär</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding\">MII PR Patho Findingversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TransurethralEnucleationServiceRequest.html\">ServiceRequest Simple prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 44642-7}, {http://snomed.info/sct 384995005}\">Gleason pattern.secondary in Prostate tumor</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-05-12</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 369774002}\">Gleason Pattern 5 (finding)</span></p><p><b>specimen</b>: <a href=\"Specimen-TransurethralEnucleationSpecimenSlide01A.html\">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004-HE-01A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004; status = available; type = Histopathology slide (physical object)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralEnucleationServiceRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/TransurethralEnucleationServiceRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:22637-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22637-3" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:44642-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "44642-7" ] ;
+       fhir:display [ fhir:v "Gleason pattern.secondary in Prostate tumor" ]
+     ] [
+       a sct:384995005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "384995005" ] ;
+       fhir:display [ fhir:v "Secondary Gleason pattern (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-05-12"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:369774002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "369774002" ] ;
+       fhir:display [ fhir:v "Gleason Pattern 5 (finding)" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide01A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide01A" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

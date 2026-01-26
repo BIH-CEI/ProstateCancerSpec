@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="TransurethralEnucleationProcedure"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure TransurethralEnucleationProcedure</b></p><a name="TransurethralEnucleationProcedure"> </a><a name="hcTransurethralEnucleationProcedure"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2026.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure">MII PR Prozedur Procedure</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 387713003}">Surgical procedure (procedure)</span></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/ops 5-603}, {http://snomed.info/sct 236205008}">Enukleation der Prostata</span></p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>performed</b>: 2024-05-10 10:30:00+0100</p><p><b>note</b>: </p><blockquote><div><p>Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion.</p>
+</div></blockquote></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="387713003"/>
+      <display value="Surgical procedure (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
+      <version value="2020"/>
+      <code value="5-603"/>
+      <display value="Enukleation der Prostata"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="236205008"/>
+      <display value="Simple prostatectomy (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient2"/>
+  </subject>
+  <performedDateTime value="2024-05-10T10:30:00+01:00"/>
+  <note>
+    <text value="Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."/>
+  </note>
+</Procedure>

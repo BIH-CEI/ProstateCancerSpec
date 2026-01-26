@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/ServiceRequest/TransurethralResectionServiceRequest> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TransurethralResectionServiceRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest TransurethralResectionServiceRequest</b></p><a name=\"TransurethralResectionServiceRequest\"> </a><a name=\"hcTransurethralResectionServiceRequest\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request\">MII PR Patho Service Requestversion: null2026.0.0)</a></p></div><p><b>identifier</b>: Placer ID/PATH-RPT-2024-003</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 726007}\">Pathology consultation, comprehensive, records and specimen with report (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 176258007}\">Transurethral resection of prostate (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralResectionEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)</a></p><p><b>requester</b>: <a href=\"Practitioner-UrologistPractitioner.html\">Practitioner Andreas Weber </a></p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 266569009}\">Benign prostatic hyperplasia</span></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-TransurethralResectionPSAPre.html\">Observation Prostate specific antigen [Mass/volume] in Serum or Plasma</a></li><li><a href=\"Procedure-TransurethralResectionProcedure.html\">Procedure Transurethrale Exzision und Destruktion von Prostatagewebe</a></li><li><a href=\"Condition-TransurethralResectionDiagnosisBPH.html\">Condition Prostatahyperplasie ohne Beschwerden beim Wasserlassen</a></li></ul><p><b>specimen</b>: <a href=\"Specimen-TransurethralResectionSpecimenPart.html\">Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_003; status = available; type = Surgical specimen</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "PLAC" ] ;
+         fhir:display [ fhir:v "Placer ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/serviceRequest"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/serviceRequest>
+     ] ;
+     fhir:value [ fhir:v "PATH-RPT-2024-003" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:726007 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "726007" ] ;
+       fhir:display [ fhir:v "Pathology consultation, comprehensive, records and specimen with report (procedure)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:176258007 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "176258007" ] ;
+       fhir:display [ fhir:v "Transurethral resection of prostate (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/TransurethralResectionEncounter> ;
+     fhir:reference [ fhir:v "Encounter/TransurethralResectionEncounter" ]
+  ] ; # 
+  fhir:requester [
+     fhir:l <http://prostatecancerspec.org/Practitioner/UrologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/UrologistPractitioner" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:266569009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "266569009" ] ;
+       fhir:display [ fhir:v "Benign prostatic hyperplasia" ]
+     ] )
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionPSAPre> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionPSAPre" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Procedure/TransurethralResectionProcedure> ;
+     fhir:reference [ fhir:v "Procedure/TransurethralResectionProcedure" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Condition/TransurethralResectionDiagnosisBPH> ;
+     fhir:reference [ fhir:v "Condition/TransurethralResectionDiagnosisBPH" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenPart> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenPart" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

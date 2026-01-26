@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "CoreNeedleBiopsySpecimen07Slide",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen CoreNeedleBiopsySpecimen07Slide</b></p><a name=\"CoreNeedleBiopsySpecimen07Slide\"> </a><a name=\"hcCoreNeedleBiopsySpecimen07Slide\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen\">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore\">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001-07-HE-1</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 430685002}\">Histopathology slide (physical object)</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>parent</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen07Block.html\">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001-07-Block-A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Paraffin block (physical object)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-17 08:00:00+0100</td><td><span title=\"Codes:{http://snomed.info/sct 127790008}\">Hematoxylin and eosin staining method (procedure)</span></td></tr></table><h3>Processings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Description</b></td><td><b>Procedure</b></td><td><b>Time[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>HE-Färbung</td><td><span title=\"Codes:{http://snomed.info/sct 127790008}\">Hematoxylin and eosin staining method (procedure)</span></td><td>2024-01-17 09:00:00+0100</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E2024_001-07-HE-1"
+  }],
+  "accessionIdentifier" : {
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E2024_001"
+  },
+  "status" : "available",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "430685002",
+      "display" : "Histopathology slide (physical object)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "parent" : [{
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen07Block"
+  }],
+  "collection" : {
+    "collectedDateTime" : "2024-01-17T08:00:00+01:00",
+    "method" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "127790008",
+        "display" : "Hematoxylin and eosin staining method (procedure)"
+      }]
+    }
+  },
+  "processing" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        }
+      }
+    }],
+    "description" : "HE-Färbung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "127790008",
+        "display" : "Hematoxylin and eosin staining method (procedure)"
+      }]
+    },
+    "timeDateTime" : "2024-01-17T09:00:00+01:00"
+  }]
+}

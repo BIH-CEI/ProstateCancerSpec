@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Clinical Context - Prostate Cancer Specification v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prostate Cancer Specification</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="clinical-context.html">Clinical Context</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="biopsy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html">MicroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-CoreNeedleBiopsyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Prostatectomy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="prostatectomy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-RadicalProstatectomyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-RadicalProstatectomyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Enucleation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-enucleation-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralEnucleationReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralEnucleationComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Resection
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-resection-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralResectionReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralResectionComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clinical Context</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prostate Cancer Specification - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://prostatecancerspec.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Clinical Context</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#what-is-the-prostate" id="markdown-toc-what-is-the-prostate">What is the prostate?</a></li>
+  <li><a href="#what-is-prostate-cancer" id="markdown-toc-what-is-prostate-cancer">What is prostate cancer?</a></li>
+  <li><a href="#frequency-and-risk-factors" id="markdown-toc-frequency-and-risk-factors">Frequency and risk factors</a></li>
+  <li><a href="#early-detection-screening" id="markdown-toc-early-detection-screening">Early detection (screening)</a></li>
+  <li><a href="#diagnostic-work-up-if-prostate-cancer-is-suspected" id="markdown-toc-diagnostic-work-up-if-prostate-cancer-is-suspected">Diagnostic work-up if prostate cancer is suspected</a></li>
+  <li><a href="#classification-and-risk-groups" id="markdown-toc-classification-and-risk-groups">Classification and risk groups</a></li>
+  <li><a href="#treatment-goals-and-decision-making" id="markdown-toc-treatment-goals-and-decision-making">Treatment goals and decision-making</a></li>
+  <li><a href="#treatment-of-localised-prostate-cancer" id="markdown-toc-treatment-of-localised-prostate-cancer">Treatment of localised prostate cancer</a></li>
+  <li><a href="#treatment-of-locally-advanced-or-metastatic-prostate-cancer" id="markdown-toc-treatment-of-locally-advanced-or-metastatic-prostate-cancer">Treatment of locally advanced or metastatic prostate cancer</a></li>
+  <li><a href="#follow-up-and-quality-of-life" id="markdown-toc-follow-up-and-quality-of-life">Follow-up and quality of life</a></li>
+  <li><a href="#key-terms-at-a-glance" id="markdown-toc-key-terms-at-a-glance">Key terms at a glance</a></li>
+  <li><a href="#note-on-the-use-of-this" id="markdown-toc-note-on-the-use-of-this">Note on the use of this</a></li>
+</ul>
+
+</div>
+<p>This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter <strong>S3</strong>) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter <strong>EAU</strong>).</p>
+
+<hr />
+
+<h3 id="what-is-the-prostate">What is the prostate?</h3>
+
+<p>The prostate is a small gland of the male reproductive system located below the urinary bladder, directly in front of the rectum (S3, pp. 32 f.). It surrounds the initial part of the urethra and produces a secretion that forms part of the seminal fluid (S3, pp. 32 f.). The gland increases in size with age, which can lead to urinary symptoms even independently of cancer (S3, pp. 32 f.).</p>
+
+<hr />
+
+<h3 id="what-is-prostate-cancer">What is prostate cancer?</h3>
+
+<p>In prostate cancer (prostate carcinoma), cells of the prostate become malignant and start to grow uncontrollably (S3, pp. 32 f.). In the vast majority of cases, these are acinar adenocarcinomas, i.e. glandular cancers (S3, pp. 93 f.; EAU, p. 90). Prostate cancer is one of the most common cancers in men in Europe and occurs mainly at an older age (S3, p. 32; EAU, p. 82). Many tumours grow slowly but, depending on their spread and aggressiveness, can become life-threatening (S3, p. 103; EAU, pp. 85 f.).</p>
+
+<hr />
+
+<h3 id="frequency-and-risk-factors">Frequency and risk factors</h3>
+
+<ul>
+  <li><strong>Frequency</strong>
+    <ul>
+      <li>Prostate cancer is the second most common cancer in men worldwide (EAU, p. 82).</li>
+      <li>In Germany, it is among the most frequent tumours, especially in men over 60 years of age (S3, p. 32).</li>
+    </ul>
+  </li>
+  <li><strong>Important risk factors</strong>
+    <ul>
+      <li>Increasing age: the risk rises markedly with advancing age (S3, pp. 32 f.; EAU, p. 82).</li>
+      <li>Family history, particularly first-degree relatives with prostate cancer (S3, p. 33; EAU, pp. 88 f.).</li>
+      <li>Certain genetic changes, e.g. BRCA2 mutations (S3, p. 33; EAU, pp. 88 f.).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>There are no proven measures that can reliably prevent prostate cancer, although a healthy lifestyle is recommended (S3, p. 37; EAU, p. 82).</p>
+
+<hr />
+
+<h3 id="early-detection-screening">Early detection (screening)</h3>
+
+<p>The aim of early detection is to identify clinically relevant tumours in time while at the same time avoiding overdiagnosis and overtreatment (S3, pp. 40 ff.; EAU, p. 88). The main basis is the measurement of prostate-specific antigen (PSA) in the blood after counselling about benefits and risks (S3, pp. 40–44; EAU, pp. 88 f.).</p>
+
+<ul>
+  <li><strong>German S3 guideline</strong>
+    <ul>
+      <li>Men from 45 years of age with a life expectancy of at least 10 years should be offered a PSA test after unbiased counselling (S3, recommendations 4.2, 4.3; pp. 40–44).</li>
+      <li>Digital rectal examination is no longer recommended for pure early detection (S3, recommendation 4.1; pp. 40 f.).</li>
+    </ul>
+  </li>
+  <li><strong>EAU guideline</strong>
+    <ul>
+      <li>Recommends individual, risk-adapted PSA-based early detection for well-informed men with an expected life expectancy of at least 15 years (EAU, p. 88).</li>
+      <li>Earlier and more intensive screening is advised in men at increased risk (e.g. family history, BRCA2 mutation, men of African ancestry) (EAU, p. 88).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>An elevated PSA value does not automatically mean prostate cancer but may be a reason for further diagnostic work-up (S3, pp. 42 ff.; EAU, pp. 87 f.).</p>
+
+<hr />
+
+<h3 id="diagnostic-work-up-if-prostate-cancer-is-suspected">Diagnostic work-up if prostate cancer is suspected</h3>
+
+<p>If prostate cancer is suspected (e.g. due to elevated PSA), several components are used (S3, pp. 53 ff.; EAU, pp. 87–91).</p>
+
+<ul>
+  <li><strong>History and physical examination</strong>
+    <ul>
+      <li>Assessment of symptoms, comorbidities and family history (S3, pp. 40 f.).</li>
+      <li>Digital rectal examination of the prostate via the rectum to assess size and consistency (S3, pp. 40 f.; EAU, pp. 82 f.).</li>
+    </ul>
+  </li>
+  <li><strong>Imaging (MRI)</strong>
+    <ul>
+      <li>Multiparametric MRI (mpMRI) of the prostate should be performed before biopsy from a confirmed PSA value ≥ 3 ng/mL, if this has therapeutic consequences (S3, recommendation 4.12; pp. 54 f.).</li>
+      <li>MRI findings are standardised using PI‑RADS; higher categories indicate a higher probability of a clinically significant tumour (S3, pp. 54–57; EAU, pp. 90 f.).</li>
+    </ul>
+  </li>
+  <li><strong>Tissue sampling (biopsy)</strong>
+    <ul>
+      <li>A diagnosis of prostate cancer can only be confirmed by histological examination of biopsy samples (S3, pp. 93 ff.; EAU, pp. 87 f., 90).</li>
+      <li>A combination of targeted biopsy of MRI-suspicious areas and systematic biopsy is recommended (S3, recommendations 4.16–4.21; pp. 55–57; EAU, pp. 90–92).</li>
+      <li>The transperineal approach is preferred, as it is associated with a lower risk of infections (S3, recommendations 4.30 f.; pp. 59 f.; EAU, pp. 91–93).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The pathology report includes, among other things, tumour type, tumour extent and ISUP grade group, which describes the aggressiveness (S3, pp. 96 ff.; EAU, p. 90).</p>
+
+<hr />
+
+<h3 id="classification-and-risk-groups">Classification and risk groups</h3>
+
+<p>For treatment decisions, it is crucial how far the tumour has progressed and how aggressive it is (S3, pp. 78–83, 103 ff.; EAU, pp. 83–86).</p>
+
+<h4 id="tnm-system">TNM system</h4>
+
+<p>The TNM classification describes:</p>
+
+<ul>
+  <li><strong>T (primary tumour)</strong> – extent of the tumour within the prostate and into neighbouring structures (EAU, p. 83).
+    <ul>
+      <li>T1: non-palpable tumour, e.g. detected only in biopsy (EAU, p. 83).</li>
+      <li>T2: palpable tumour confined to the prostate (EAU, p. 83).</li>
+      <li>T3: tumour extends through the capsule or involves the seminal vesicles (EAU, p. 83).</li>
+      <li>T4: infiltration of adjacent organs such as bladder neck or rectum (EAU, p. 83).</li>
+    </ul>
+  </li>
+  <li><strong>N (lymph nodes)</strong> – regional lymph node involvement (EAU, p. 84).</li>
+  <li><strong>M (distant metastases)</strong> – e.g. in bones or other organs (EAU, p. 84).</li>
+</ul>
+
+<h4 id="histological-grade-isupgleason">Histological grade (ISUP/Gleason)</h4>
+
+<p>Aggressiveness is assessed using the microscopic appearance (Gleason score, ISUP grade) (S3, pp. 96–103; EAU, p. 85).</p>
+
+<ul>
+  <li>ISUP grade 1: Gleason score 6 (≤ 3+3).</li>
+  <li>ISUP grade 2: Gleason score 7 (3+4).</li>
+  <li>ISUP grade 3: Gleason score 7 (4+3).</li>
+  <li>ISUP grade 4: Gleason score 8.</li>
+  <li>ISUP grade 5: Gleason score 9–10 (EAU, p. 85; S3, pp. 96 f.).</li>
+</ul>
+
+<p>Higher grade groups are typically associated with a less favourable prognosis (S3, pp. 103 f.; EAU, pp. 85 f.).</p>
+
+<h4 id="risk-groups">Risk groups</h4>
+
+<p>To estimate the risk of recurrence and metastasis, risk groups are defined that combine PSA, ISUP grade and T stage (S3, pp. 79–83; EAU, p. 86).</p>
+
+<p>Example of EAU risk groups for localised/locally advanced disease (simplified):</p>
+
+<ul>
+  <li><strong>Low risk</strong>
+    <ul>
+      <li>ISUP 1, PSA ≤ 10 ng/mL and cT1–2a (EAU, Table 3, p. 86).</li>
+    </ul>
+  </li>
+  <li><strong>Intermediate risk</strong>
+    <ul>
+      <li>e.g. ISUP 2–3 or PSA 10–20 ng/mL or cT2b (EAU, Table 3, p. 86; S3, Table 11, p. 81).</li>
+    </ul>
+  </li>
+  <li><strong>High risk / locally advanced</strong>
+    <ul>
+      <li>ISUP 4–5, PSA ≥ 20 ng/mL, cT2c or cT3–4 or cN+ (EAU, Table 3, p. 86; S3, Table 11, p. 81).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>This classification guides recommendations for active surveillance, surgery or radiotherapy (S3, chapter 6; EAU, pp. 96–104).</p>
+
+<hr />
+
+<h3 id="treatment-goals-and-decision-making">Treatment goals and decision-making</h3>
+
+<p>The goals of treatment are prolonging life, preventing or alleviating symptoms and maintaining quality of life (S3, pp. 107 f., 359 ff.; EAU, p. 119 f.). The choice of therapy depends on tumour stage, aggressiveness, comorbidities, life expectancy and patient preferences (S3, pp. 107–111; EAU, pp. 82, 96 ff.).</p>
+
+<p>Both guidelines emphasise shared decision-making after thorough counselling on the benefits and risks of each option, particularly regarding continence, sexual function and quality of life (S3, pp. 107–111, 359 ff.; EAU, p. 119 f.).</p>
+
+<hr />
+
+<h3 id="treatment-of-localised-prostate-cancer">Treatment of localised prostate cancer</h3>
+
+<p>Localised means that the tumour is confined to the prostate without lymph node or distant metastases (S3, pp. 78 f.; EAU, p. 86). In this setting, watchful approaches, surgery and radiotherapy are available (S3, chapter 6; EAU, pp. 96–104).</p>
+
+<h4 id="active-surveillance">Active surveillance</h4>
+
+<p>Active surveillance is aimed at men with low-risk tumours and longer life expectancy (S3, pp. 116–129; EAU, pp. 97–99).</p>
+
+<ul>
+  <li>The tumour is closely monitored using PSA, and if needed MRI and repeat biopsies; no immediate treatment is carried out (S3, pp. 116–120; EAU, pp. 97–99).</li>
+  <li>The aim is to avoid or delay surgery or radiotherapy as long as the tumour remains stable (S3, pp. 116 ff.; EAU, pp. 97–99).</li>
+  <li>If there are signs of progression, treatment with curative intent is initiated (S3, pp. 118–120; EAU, pp. 98 f.).</li>
+</ul>
+
+<p>S3 primarily recommends active surveillance for localised low-risk prostate cancer (S3, recommendation 6.6; pp. 116 f.). EAU considers active surveillance the standard option for low-risk tumours (EAU, pp. 97–99).</p>
+
+<h4 id="surgery-radical-prostatectomy">Surgery (radical prostatectomy)</h4>
+
+<p>In radical prostatectomy, the entire prostate and seminal vesicles, and depending on risk also regional lymph nodes, are removed (S3, pp. 136–138; EAU, pp. 99–103).</p>
+
+<ul>
+  <li>This procedure is suitable for men with localised or selected locally advanced tumours and a life expectancy of at least about 10 years (S3, p. 136 f.; EAU, pp. 99 f., 102 f.).</li>
+  <li>Possible side effects are urinary incontinence and erectile dysfunction (S3, pp. 136 f., 359 ff.; EAU, p. 119 f.).</li>
+  <li>Nerve-sparing techniques can be used if the risk of extracapsular extension is low (EAU, p. 100).</li>
+</ul>
+
+<h4 id="radiotherapy">Radiotherapy</h4>
+
+<p>Radiotherapy can be carried out as external beam radiotherapy (percutaneous radiotherapy) or internal radiotherapy (brachytherapy) (S3, pp. 139–155; EAU, pp. 100–101).</p>
+
+<ul>
+  <li>Modern external radiotherapy uses IMRT/VMAT and IGRT to better spare the bladder and rectum (S3, pp. 139–145; EAU, pp. 100 f.).</li>
+  <li>In intermediate- and high-risk groups, radiotherapy is often combined with short- to medium-term androgen deprivation therapy (S3, pp. 139–151; EAU, pp. 100–103).</li>
+  <li>Side effects may affect bowel function, bladder function and sexual function (S3, pp. 139–145, 359 ff.; EAU, p. 119 f.).</li>
+</ul>
+
+<hr />
+
+<h3 id="treatment-of-locally-advanced-or-metastatic-prostate-cancer">Treatment of locally advanced or metastatic prostate cancer</h3>
+
+<p>If the tumour has extended beyond the prostatic capsule, involves lymph nodes or has formed distant metastases, this is referred to as locally advanced or metastatic prostate cancer (S3, pp. 78 f., 205 ff.; EAU, pp. 86, 95–96). In this situation, systemic therapies are central, often in combination with local treatment (S3, chapter 7; EAU, pp. 104–113).</p>
+
+<h4 id="androgen-deprivation-therapy-adt">Androgen deprivation therapy (ADT)</h4>
+
+<p>Prostate cancer cells usually grow in a testosterone-dependent manner, so androgen deprivation slows their growth (S3, pp. 212–216, 253 ff.; EAU, pp. 108 ff.).</p>
+
+<ul>
+  <li>This can be achieved medically with LHRH analogues/antagonists and antiandrogens, or less commonly by surgical removal of the testes (S3, pp. 212–214; EAU, pp. 108 f.).</li>
+  <li>In hormone-sensitive metastatic prostate cancer, ADT is now usually combined with additional drugs (e.g. abiraterone, apalutamide, enzalutamide, darolutamide or docetaxel) in patients who are fit enough (S3, pp. 225–232; EAU, pp. 108–110).</li>
+  <li>Typical side effects include hot flushes, fatigue, weight gain, loss of muscle mass, increased risk of osteoporosis and metabolic changes (S3, pp. 310–325; EAU, pp. 117–118).</li>
+</ul>
+
+<h4 id="other-systemic-therapies">Other systemic therapies</h4>
+
+<p>In advanced or castration-resistant stages, additional therapies are used (S3, pp. 253–278; EAU, pp. 110–113).</p>
+
+<ul>
+  <li>Modern hormone therapies (androgen receptor signalling inhibitors such as enzalutamide, apalutamide, darolutamide, abiraterone) (S3, pp. 253–267; EAU, pp. 110–113).</li>
+  <li>Chemotherapy, especially with docetaxel and cabazitaxel (S3, pp. 259–267; EAU, pp. 111 f.).</li>
+  <li>Radioligand therapy, e.g. with lutetium‑177‑PSMA (S3, recommendation 7.51; pp. 268 ff.; EAU, pp. 112 f.).</li>
+  <li>PARP inhibitors in the presence of proven DNA repair defects (e.g. BRCA2) (S3, p. 323 f.; EAU, pp. 111 f.).</li>
+</ul>
+
+<p>The choice depends on previous treatments, comorbidities, genetic findings and patient preferences (S3, pp. 253–278; EAU, pp. 110–113).</p>
+
+<hr />
+
+<h3 id="follow-up-and-quality-of-life">Follow-up and quality of life</h3>
+
+<p>After curative-intent treatment (surgery or radiotherapy), regular follow-up is important (S3, pp. 352–356; EAU, p. 117).</p>
+
+<ul>
+  <li>PSA is used as a sensitive marker for possible recurrence (S3, pp. 352–356; EAU, p. 117).</li>
+  <li>Imaging is usually only performed if it would have therapeutic consequences (S3, p. 352 f.; EAU, p. 117).</li>
+</ul>
+
+<p>Quality of life, continence, sexual function, and psychological and social aspects are explicitly highlighted in both guidelines (S3, chapters 8–10; EAU, p. 119 f.). Recommended measures include rehabilitation, physical activity, psycho-oncological support and, where appropriate, participation in self-help groups (S3, pp. 343–351, 359–362; EAU, pp. 119 f., 120).</p>
+
+<hr />
+
+<h3 id="key-terms-at-a-glance">Key terms at a glance</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Meaning in simple words</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PSA</td>
+      <td>Blood value produced by the prostate; elevated levels can, among other things, indicate prostate cancer (S3, pp. 42 ff.; EAU, pp. 87 f.).</td>
+    </tr>
+    <tr>
+      <td>Biopsy</td>
+      <td>Tissue sampling with a needle for microscopic (histological) diagnosis (S3, pp. 93 ff.; EAU, pp. 87–92).</td>
+    </tr>
+    <tr>
+      <td>ISUP grade / Gleason score</td>
+      <td>Measure of how aggressive the tumour cells look under the microscope (S3, pp. 96–103; EAU, p. 85).</td>
+    </tr>
+    <tr>
+      <td>TNM</td>
+      <td>International system for classifying tumour size, lymph node involvement and distant metastases (EAU, pp. 83–84; S3, pp. 78 f.).</td>
+    </tr>
+    <tr>
+      <td>Active surveillance</td>
+      <td>Close monitoring without immediate treatment in low-risk tumours (S3, pp. 116–120; EAU, pp. 97–99).</td>
+    </tr>
+    <tr>
+      <td>Radical prostatectomy</td>
+      <td>Operation to completely remove the prostate (S3, pp. 136–138; EAU, pp. 99–103).</td>
+    </tr>
+    <tr>
+      <td>Radiotherapy</td>
+      <td>Treatment with high-energy radiation to destroy tumour cells (S3, pp. 139–155; EAU, pp. 100–103).</td>
+    </tr>
+    <tr>
+      <td>Androgen deprivation</td>
+      <td>Hormone therapy that reduces the effect of testosterone on tumour cells (S3, pp. 212–216, 253 ff.; EAU, pp. 108 ff.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="note-on-the-use-of-this">Note on the use of this</h3>
+<p>This information is intended to help users of this specification better understand the medical context. The content is based on the S3 Guideline on Prostate Cancer (long version 8.1, 2025) and the EAU Guidelines 2025.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 26, 2026 12:53+0100">2026-01-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

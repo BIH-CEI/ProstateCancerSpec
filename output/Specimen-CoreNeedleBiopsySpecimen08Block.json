@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "CoreNeedleBiopsySpecimen08Block",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen CoreNeedleBiopsySpecimen08Block</b></p><a name=\"CoreNeedleBiopsySpecimen08Block\"> </a><a name=\"hcCoreNeedleBiopsySpecimen08Block\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen\">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore\">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001-08-Block-A</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 1003707006}\">Paraffin block (physical object)</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>parent</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen08Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-16 10:44:00+0100</td><td><span title=\"Codes:{http://snomed.info/sct 434472006}\">Fixation of tissue (procedure)</span></td></tr></table><h3>Processings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Description</b></td><td><b>Procedure</b></td><td><b>Time[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Formalinfixierung und Paraffineinbettung</td><td><span title=\"Codes:{http://snomed.info/sct 434472006}\">Fixation of tissue (procedure)</span></td><td>2024-01-16 08:00:00+0100</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E2024_001-08-Block-A"
+  }],
+  "accessionIdentifier" : {
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E2024_001"
+  },
+  "status" : "available",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1003707006",
+      "display" : "Paraffin block (physical object)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "parent" : [{
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+  }],
+  "collection" : {
+    "collectedDateTime" : "2024-01-16T10:44:00+01:00",
+    "method" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434472006",
+        "display" : "Fixation of tissue (procedure)"
+      }]
+    }
+  },
+  "processing" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        }
+      }
+    }],
+    "description" : "Formalinfixierung und Paraffineinbettung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434472006",
+        "display" : "Fixation of tissue (procedure)"
+      }]
+    },
+    "timeDateTime" : "2024-01-16T08:00:00+01:00"
+  }]
+}

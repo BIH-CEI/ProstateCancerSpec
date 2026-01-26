@@ -1,0 +1,114 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyComposition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CoreNeedleBiopsyComposition</b></p><a name=\"CoreNeedleBiopsyComposition\"> </a><a name=\"hcCoreNeedleBiopsyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PATH-2024; status = finished; class = IMB (IMB)</a></p><p><b>date</b>: 2024-01-20 15:30:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatabiopsie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-CoreNeedleBiopsyRequest.html\">ServiceRequest Tru-cut biopsy of prostate (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/pathology-reports"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/pathology-reports>
+     ] ;
+     fhir:value [ fhir:v "PATH-COMP-2024-001" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://ihe-d.de/CodeSystems/IHEXDStypeCode"^^xsd:anyURI ;
+         fhir:l <http://ihe-d.de/CodeSystems/IHEXDStypeCode>
+       ] ;
+       fhir:code [ fhir:v "PATH" ]
+     ] [
+       a sct:721967005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "721967005" ] ;
+       fhir:display [ fhir:v "Tissue pathology biopsy report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/CoreNeedleBiopsyEncounter> ;
+     fhir:reference [ fhir:v "Encounter/CoreNeedleBiopsyEncounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-01-20T15:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ] ;
+     fhir:display [ fhir:v "Pathologisches Institut" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Histopathologischer Befundbericht - Prostatabiopsie"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+       fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+  ] ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "PATREPE" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/CoreNeedleBiopsyRequest" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Pathologiebefundbericht" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11526-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "11526-1" ] ;
+         fhir:display [ fhir:v "Pathology study" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/CoreNeedleBiopsyReport" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

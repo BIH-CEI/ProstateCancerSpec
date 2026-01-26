@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="TransurethralResectionEncounter"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter TransurethralResectionEncounter</b></p><a name="TransurethralResectionEncounter"> </a><a name="hcTransurethralResectionEncounter"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/PSA-TUR-2024</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://example.hospital.de/encounters"/>
+    <value value="PSA-TUR-2024"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <code value="IMP"/>
+  </class>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+</Encounter>

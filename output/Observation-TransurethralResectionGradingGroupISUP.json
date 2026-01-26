@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Observation",
+  "id" : "TransurethralResectionGradingGroupISUP",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralResectionGradingGroupISUP</b></p><a name=\"TransurethralResectionGradingGroupISUP\"> </a><a name=\"hcTransurethralResectionGradingGroupISUP\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group\">MII PR Onkologie Prostata Gleason Grade Group</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding\">MII PR Patho Findingversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TransurethralResectionServiceRequest.html\">ServiceRequest Transurethral resection of prostate (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94734-1}, {http://snomed.info/sct 1812491000004107}\">Prostate cancer grade group [Score] in Prostate tumor Qualitative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-04-12</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 1279718003}\">International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-TransurethralResectionSpecimenSlide01A.html\">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_003-HE-01A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_003; status = available; type = Histopathology slide (physical object)</a></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "94734-1",
+      "display" : "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1812491000004107",
+      "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "effectiveDateTime" : "2024-04-12",
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1279718003",
+      "display" : "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
+  }
+}

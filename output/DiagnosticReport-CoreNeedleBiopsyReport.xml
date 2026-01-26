@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="CoreNeedleBiopsyReport"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport CoreNeedleBiopsyReport</b></p><a name="CoreNeedleBiopsyReport"> </a><a name="hcCoreNeedleBiopsyReport"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report">MII PR Patho Report</a></p></div><h2><span title="Codes:{http://loinc.org 60568-3}">Pathology Synoptic report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}">Surgical Pathology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</td></tr><tr><td>When For</td><td>2024-01-20 15:00:00+0100</td></tr><tr><td>Reported</td><td>2024-01-20 15:30:00+0100</td></tr><tr><td>Performer</td><td> <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/PATH-RPT-2024-001</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html"><span title="Codes:{http://loinc.org 22634-0}">Pathology report gross observation Narrative</span></a> (<span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.</p>
+</div></blockquote></td><td>2024-01-15 14:00:00+0100</td></tr><tr><td><a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html"><span title="Codes:{http://loinc.org 22635-7}">Pathology report microscopic observation Narrative Other stain</span></a> (<span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span>)</td><td>Mikroskopische Befunde aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>
+</div></blockquote></td><td>2024-01-17 10:00:00+0100</td></tr><tr><td><a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html"><span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td/><td>2023-03-15</td></tr></table><p>Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall.</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="ACSN"/>
+        <display value="Accession ID"/>
+      </coding>
+    </type>
+    <system value="http://example.hospital.de/diagnostic-reports"/>
+    <value value="PATH-RPT-2024-001"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/CoreNeedleBiopsyRequest"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="SP"/>
+      <display value="Surgical Pathology"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60568-3"/>
+      <display value="Pathology Synoptic report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <effectiveDateTime value="2024-01-20T15:00:00+01:00"/>
+  <issued value="2024-01-20T15:30:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/PathologistPractitioner"/>
+  </performer>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen01Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen01Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen01Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen02Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen02Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen02Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen03Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen03Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen03Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen04Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen04Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen04Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen05Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen05Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen05Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen06Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen06Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen06Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen07Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen07Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen07Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen08Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen08Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen08Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen09Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen09Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen09Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen10Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen10Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen10Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen11Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen11Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen11Slide"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen12Part"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen12Block"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/CoreNeedleBiopsySpecimen12Slide"/>
+  </specimen>
+  <result>
+    <reference value="Observation/CoreNeedleBiopsyMacroscopicGrouper"/>
+  </result>
+  <result>
+    <reference value="Observation/CoreNeedleBiopsyMicroscopicGrouper"/>
+  </result>
+  <result>
+    <reference value="Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"/>
+  </result>
+  <conclusion value="Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall."/>
+</DiagnosticReport>

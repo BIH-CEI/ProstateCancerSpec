@@ -1,0 +1,76 @@
+{
+  "resourceType" : "Observation",
+  "id" : "TransurethralEnucleationDiagnosticConclusionGrouper",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralEnucleationDiagnosticConclusionGrouper</b></p><a name=\"TransurethralEnucleationDiagnosticConclusionGrouper\"> </a><a name=\"hcTransurethralEnucleationDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouper</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TransurethralEnucleationServiceRequest.html\">ServiceRequest Simple prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-05-12</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TransurethralEnucleationHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-TransurethralEnucleationMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-TransurethralEnucleationPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-TransurethralEnucleationSecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-TransurethralEnucleationGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-TransurethralEnucleationPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-TransurethralEnucleationGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-TransurethralEnucleationIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html\">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-TransurethralEnucleationProstaticTissueInvolved.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-TransurethralEnucleationExtraprostaticExtension.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationSeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li></ul></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralEnucleationServiceRequest"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient2"
+  },
+  "effectiveDateTime" : "2024-05-12",
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/TransurethralEnucleationHistologicalTypeICDO3"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMorphologyFreeText"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPrimaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationSecondaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationGleasonScoreTotal"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPercentageGleason45"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationGradingGroupISUP"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationIntraductalCarcinoma"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationProstaticTissueInvolved"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationExtraprostaticExtension"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationSeminalVesicleInvasion"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationLymphovascularInvasion"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPerineuralInfiltration"
+  }]
+}

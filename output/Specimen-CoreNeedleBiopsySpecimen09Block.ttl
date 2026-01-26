@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Block> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoreNeedleBiopsySpecimen09Block"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen?version=2026.0.0>
+     ] [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen CoreNeedleBiopsySpecimen09Block</b></p><a name=\"CoreNeedleBiopsySpecimen09Block\"> </a><a name=\"hcCoreNeedleBiopsySpecimen09Block\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen\">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore\">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001-09-Block-A</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 1003707006}\">Paraffin block (physical object)</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>parent</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen09Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-01-16 10:46:00+0100</td><td><span title=\"Codes:{http://snomed.info/sct 434472006}\">Fixation of tissue (procedure)</span></td></tr></table><h3>Processings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Description</b></td><td><b>Procedure</b></td><td><b>Time[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Formalinfixierung und Paraffineinbettung</td><td><span title=\"Codes:{http://snomed.info/sct 434472006}\">Fixation of tissue (procedure)</span></td><td>2024-01-16 08:00:00+0100</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E2024_001-09-Block-A" ]
+  ] ) ; # 
+  fhir:accessionIdentifier [
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E2024_001" ]
+  ] ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:1003707006 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "1003707006" ] ;
+       fhir:display [ fhir:v "Paraffin block (physical object)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:parent ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen09Part" ]
+  ] ) ; # 
+  fhir:collection [
+     fhir:collected [
+       a fhir:DateTime ;
+       fhir:v "2024-01-16T10:46:00+01:00"^^xsd:dateTime
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:434472006 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "434472006" ] ;
+         fhir:display [ fhir:v "Fixation of tissue (procedure)" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:processing ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"^^xsd:anyURI ;
+         fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen>
+       ] ;
+       fhir:value [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "°C" ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:l <http://unitsofmeasure.org>
+           ] ;
+           fhir:code [ fhir:v "Cel" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "8"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "°C" ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:l <http://unitsofmeasure.org>
+           ] ;
+           fhir:code [ fhir:v "Cel" ]
+         ]
+       ]
+     ] ) ;
+     fhir:description [ fhir:v "Formalinfixierung und Paraffineinbettung" ] ;
+     fhir:procedure [
+       fhir:coding ( [
+         a sct:434472006 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "434472006" ] ;
+         fhir:display [ fhir:v "Fixation of tissue (procedure)" ]
+       ] )
+     ] ;
+     fhir:time [
+       a fhir:DateTime ;
+       fhir:v "2024-01-16T08:00:00+01:00"^^xsd:dateTime
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,68 @@
+{
+  "resourceType" : "Condition",
+  "id" : "TransurethralResectionDiagnosisPCa",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition TransurethralResectionDiagnosisPCa</b></p><a name=\"TransurethralResectionDiagnosisPCa\"> </a><a name=\"hcTransurethralResectionDiagnosisPCa\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor\">MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)</a></p></div><p><b>Condition Asserted Date</b>: 2024-01-15</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C61}\">Bösartige Neubildung der Prostata</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralResectionEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)</a></p><p><b>onset</b>: 2024-01-15</p><p><b>recordedDate</b>: 2024-01-15</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1222593007}\">American Joint Committee on Cancer stage IIA (qualifier value)</span></td><td><span title=\"Codes:{http://snomed.info/sct 260998006}\">Clinical staging (qualifier value)</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Inzidentelles Prostatakarzinom in TUR-P-Resektat. Tumoranteil &lt; 5% des resezierten Gewebes. Weitere Diagnostik empfohlen.</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2024-01-15"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2024",
+      "code" : "C61",
+      "display" : "Bösartige Neubildung der Prostata"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TransurethralResectionEncounter"
+  },
+  "onsetDateTime" : "2024-01-15",
+  "recordedDate" : "2024-01-15",
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1222593007",
+        "display" : "American Joint Committee on Cancer stage IIA (qualifier value)"
+      }]
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
+    }
+  }],
+  "note" : [{
+    "text" : "Inzidentelles Prostatakarzinom in TUR-P-Resektat. Tumoranteil < 5% des resezierten Gewebes. Weitere Diagnostik empfohlen."
+  }]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Observation",
+  "id" : "RadicalProstatectomyInvasiveCribriformCarcinoma",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyInvasiveCribriformCarcinoma</b></p><a name=\"RadicalProstatectomyInvasiveCribriformCarcinoma\"> </a><a name=\"hcRadicalProstatectomyInvasiveCribriformCarcinoma\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding\">MII PR Patho Findingversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-RadicalProstatectomyServiceRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1162816009}\">Invasive cribriform carcinoma</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-03-20</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 2667000}\">Absent (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-RadicalProstatectomySpecimenSlide01A.html\">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002-HE-01A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002; status = available; type = Histopathology slide (physical object)</a></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1162816009",
+      "display" : "Invasive cribriform carcinoma (morphologic abnormality)"
+    }],
+    "text" : "Invasive cribriform carcinoma"
+  },
+  "subject" : {
+    "reference" : "Patient/Patient2"
+  },
+  "effectiveDateTime" : "2024-03-20",
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "2667000",
+      "display" : "Absent (qualifier value)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/RadicalProstatectomySpecimenSlide01A"
+  }
+}

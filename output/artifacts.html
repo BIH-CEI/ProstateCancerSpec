@@ -1,0 +1,3713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Prostate Cancer Specification v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prostate Cancer Specification</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="clinical-context.html">Clinical Context</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="biopsy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html">MicroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-CoreNeedleBiopsyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Prostatectomy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="prostatectomy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-RadicalProstatectomyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-RadicalProstatectomyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Enucleation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-enucleation-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralEnucleationReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralEnucleationComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Resection
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-resection-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralResectionReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralResectionComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prostate Cancer Specification - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://prostatecancerspec.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP01.html"
+                  title="Observation/CoreNeedleBiopsyASAP01">ASAP Stanze 01</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP02.html"
+                  title="Observation/CoreNeedleBiopsyASAP02">ASAP Stanze 02</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP04.html"
+                  title="Observation/CoreNeedleBiopsyASAP04">ASAP Stanze 04</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP06.html"
+                  title="Observation/CoreNeedleBiopsyASAP06">ASAP Stanze 06</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP07.html"
+                  title="Observation/CoreNeedleBiopsyASAP07">ASAP Stanze 07</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP09.html"
+                  title="Observation/CoreNeedleBiopsyASAP09">ASAP Stanze 09</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP11.html"
+                  title="Observation/CoreNeedleBiopsyASAP11">ASAP Stanze 11</a>
+            </td>
+            <td>
+<p>ASAP für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount01.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount01">Anzahl Zylinder Stanze 01</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount02.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount02">Anzahl Zylinder Stanze 02</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount03.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount03">Anzahl Zylinder Stanze 03</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount04.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount04">Anzahl Zylinder Stanze 04</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount05.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount05">Anzahl Zylinder Stanze 05</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount06.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount06">Anzahl Zylinder Stanze 06</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount07.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount07">Anzahl Zylinder Stanze 07</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount08.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount08">Anzahl Zylinder Stanze 08</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount09.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount09">Anzahl Zylinder Stanze 09</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount10.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount10">Anzahl Zylinder Stanze 10</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount11">Anzahl Zylinder Stanze 11</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicCylinderCount12">Anzahl Zylinder Stanze 12</a>
+            </td>
+            <td>
+<p>Anzahl der Stanzzylinder in Specimen 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyASAP.html"
+                  title="Observation/CoreNeedleBiopsyASAP">Atypical Small Acinar Proliferation (ASAP) - Biopsy</a>
+            </td>
+            <td>
+<p>Presence of atypical small acinar proliferation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TransurethralEnucleationDiagnosisBPH.html"
+                  title="Condition/TransurethralEnucleationDiagnosisBPH">BPH-Diagnose vor Enukleation</a>
+            </td>
+            <td>
+<p>Symptomatische benigne Prostatahyperplasie als Indikation zur Enukleation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TransurethralResectionDiagnosisBPH.html"
+                  title="Condition/TransurethralResectionDiagnosisBPH">BPH-Diagnose vor TUR-P</a>
+            </td>
+            <td>
+<p>Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyBladderNeckInvasion.html"
+                  title="Observation/RadicalProstatectomyBladderNeckInvasion">Bladder Neck Invasion - Prostatectomy</a>
+            </td>
+            <td>
+<p>Microscopic urinary bladder neck invasion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html"
+                  title="Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - Biopsy</a>
+            </td>
+            <td>
+<p>Grouper for all diagnostic conclusion findings in biopsy specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html"
+                  title="Observation/TransurethralEnucleationDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Grouper for all diagnostic conclusion findings in Prostata Enucleation specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html"
+                  title="Observation/RadicalProstatectomyDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - Prostatectomy</a>
+            </td>
+            <td>
+<p>Grouper for all diagnostic conclusion findings in prostatectomy specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html"
+                  title="Observation/TransurethralResectionDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - TUR-Prostata</a>
+            </td>
+            <td>
+<p>Grouper for all diagnostic conclusion findings in TUR-Prostata specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-CoreNeedleBiopsyEncounter.html"
+                  title="Encounter/CoreNeedleBiopsyEncounter">Encounter für Pathologie</a>
+            </td>
+            <td>
+<p>Encounter für pathologische Befunde</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-TransurethralEnucleationEncounter.html"
+                  title="Encounter/TransurethralEnucleationEncounter">Encounter für Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Encounter für Prostata Enucleation-Beispiel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-RadicalProstatectomyEncounter.html"
+                  title="Encounter/RadicalProstatectomyEncounter">Encounter für Prostatektomie</a>
+            </td>
+            <td>
+<p>Encounter für Prostatektomie-Beispiel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-TransurethralResectionEncounter.html"
+                  title="Encounter/TransurethralResectionEncounter">Encounter für TUR-Prostata</a>
+            </td>
+            <td>
+<p>Encounter für TUR-Prostata-Beispiel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-TransurethralEnucleationComposition.html"
+                  title="Composition/TransurethralEnucleationComposition">Enucleation Pathology Report Composition</a>
+            </td>
+            <td>
+<p>FHIR Composition for structured TUR pathology report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationExtraprostaticExtension.html"
+                  title="Observation/TransurethralEnucleationExtraprostaticExtension">Extraprostatic Extension - Enucleation</a>
+            </td>
+            <td>
+<p>Presence of extraprostatic extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyExtraprostaticExtension.html"
+                  title="Observation/RadicalProstatectomyExtraprostaticExtension">Extraprostatic Extension - Prostatectomy</a>
+            </td>
+            <td>
+<p>Presence of extraprostatic extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionExtraprostaticExtension.html"
+                  title="Observation/TransurethralResectionExtraprostaticExtension">Extraprostatic Extension - TUR</a>
+            </td>
+            <td>
+<p>Presence of extraprostatic extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-CoreNeedleBiopsyDiagnosisConfirmed.html"
+                  title="Condition/CoreNeedleBiopsyDiagnosisConfirmed">Gesicherte Prostatakarzinom-Diagnose nach Biopsie</a>
+            </td>
+            <td>
+<p>Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGradingGroupISUP.html"
+                  title="Observation/CoreNeedleBiopsyGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - Biopsy</a>
+            </td>
+            <td>
+<p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationGradingGroupISUP.html"
+                  title="Observation/TransurethralEnucleationGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - Enucleation</a>
+            </td>
+            <td>
+<p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyGradingGroupISUP.html"
+                  title="Observation/RadicalProstatectomyGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy</a>
+            </td>
+            <td>
+<p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionGradingGroupISUP.html"
+                  title="Observation/TransurethralResectionGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - TUR</a>
+            </td>
+            <td>
+<p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading01.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading01">Gradinggruppe ISUP Stanze 01</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading02.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading02">Gradinggruppe ISUP Stanze 02</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading04.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading04">Gradinggruppe ISUP Stanze 04</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading06.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading06">Gradinggruppe ISUP Stanze 06</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading07.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading07">Gradinggruppe ISUP Stanze 07</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading09.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading09">Gradinggruppe ISUP Stanze 09</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonGrading11.html"
+                  title="Observation/CoreNeedleBiopsyGleasonGrading11">Gradinggruppe ISUP Stanze 11</a>
+            </td>
+            <td>
+<p>Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatousProstatiti.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatousProstatiti">Granulomatous Prostatitis - Biopsy</a>
+            </td>
+            <td>
+<p>Presence of granulomatous prostatitis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis01">Granulomatöse Prostatitis Stanze 01</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis02.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis02">Granulomatöse Prostatitis Stanze 02</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis04.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis04">Granulomatöse Prostatitis Stanze 04</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis06.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis06">Granulomatöse Prostatitis Stanze 06</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis07.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis07">Granulomatöse Prostatitis Stanze 07</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis09.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis09">Granulomatöse Prostatitis Stanze 09</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis11.html"
+                  title="Observation/CoreNeedleBiopsyGranulomatoeseProstatitis11">Granulomatöse Prostatitis Stanze 11</a>
+            </td>
+            <td>
+<p>Granulomatöse Prostatitis für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide01A.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide01A">HE-Schnitt 01A Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide01A.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide01A">HE-Schnitt 01A Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide01A.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide01A">HE-Schnitt 01A TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide01B.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide01B">HE-Schnitt 01B Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide01B.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide01B">HE-Schnitt 01B Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide01B.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide01B">HE-Schnitt 01B TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide02A.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide02A">HE-Schnitt 02A Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide02A.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide02A">HE-Schnitt 02A Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide02A.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide02A">HE-Schnitt 02A TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide02B.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide02B">HE-Schnitt 02B Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide02B.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide02B">HE-Schnitt 02B Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide02B.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide02B">HE-Schnitt 02B TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide03A.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide03A">HE-Schnitt 03A Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide03A.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide03A">HE-Schnitt 03A Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide03A.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide03A">HE-Schnitt 03A TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide03B.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide03B">HE-Schnitt 03B Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenSlide03B.html"
+                  title="Specimen/RadicalProstatectomySpecimenSlide03B">HE-Schnitt 03B Prostatektomie</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide03B.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide03B">HE-Schnitt 03B TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide04A.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide04A">HE-Schnitt 04A Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 04A des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide04A.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide04A">HE-Schnitt 04A TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide04B.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide04B">HE-Schnitt 04B Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 04B des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide04B.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide04B">HE-Schnitt 04B TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide05A.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide05A">HE-Schnitt 05A Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 05A des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide05A.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide05A">HE-Schnitt 05A TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenSlide05B.html"
+                  title="Specimen/TransurethralEnucleationSpecimenSlide05B">HE-Schnitt 05B Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 05B des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenSlide05B.html"
+                  title="Specimen/TransurethralResectionSpecimenSlide05B">HE-Schnitt 05B TUR-Prostata</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen01Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen01Slide">HE-Schnitt Stanze 01</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen02Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen02Slide">HE-Schnitt Stanze 02</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen03Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen03Slide">HE-Schnitt Stanze 03</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen04Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen04Slide">HE-Schnitt Stanze 04</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen05Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen05Slide">HE-Schnitt Stanze 05</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen06Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen06Slide">HE-Schnitt Stanze 06</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen07Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen07Slide">HE-Schnitt Stanze 07</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen08Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen08Slide">HE-Schnitt Stanze 08</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen09Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen09Slide">HE-Schnitt Stanze 09</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen10Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen10Slide">HE-Schnitt Stanze 10</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen11Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen11Slide">HE-Schnitt Stanze 11</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen12Slide.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen12Slide">HE-Schnitt Stanze 12</a>
+            </td>
+            <td>
+<p>Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN01.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN01">High-grade PIN Stanze 01</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN02.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN02">High-grade PIN Stanze 02</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN04.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN04">High-grade PIN Stanze 04</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN06.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN06">High-grade PIN Stanze 06</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN07.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN07">High-grade PIN Stanze 07</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN09.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN09">High-grade PIN Stanze 09</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN11.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN11">High-grade PIN Stanze 11</a>
+            </td>
+            <td>
+<p>Begleitende High-grade-PIN für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHighGradePIN.html"
+                  title="Observation/CoreNeedleBiopsyHighGradePIN">High-grade Prostatic Intraepithelial Neoplasia - Biopsy</a>
+            </td>
+            <td>
+<p>Presence of high-grade prostatic intraepithelial neoplasia</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistologicalGradeWHO.html"
+                  title="Observation/CoreNeedleBiopsyHistologicalGradeWHO">Histological Differentiation Grade WHO - Biopsy</a>
+            </td>
+            <td>
+<p>Histological differentiation grade according to WHO</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistologicalTypeICDO3.html"
+                  title="Observation/CoreNeedleBiopsyHistologicalTypeICDO3">Histological Type ICD-O-3 - Biopsy</a>
+            </td>
+            <td>
+<p>Histological type according to ICD-O-3 classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationHistologicalTypeICDO3.html"
+                  title="Observation/TransurethralEnucleationHistologicalTypeICDO3">Histological Type ICD-O-3 - Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Histological type according to ICD-O-3 classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyHistologicalTypeICDO3.html"
+                  title="Observation/RadicalProstatectomyHistologicalTypeICDO3">Histological Type ICD-O-3 - Prostatectomy</a>
+            </td>
+            <td>
+<p>Histological type according to ICD-O-3 classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionHistologicalTypeICDO3.html"
+                  title="Observation/TransurethralResectionHistologicalTypeICDO3">Histological Type ICD-O-3 - TUR-Prostata</a>
+            </td>
+            <td>
+<p>Histological type according to ICD-O-3 classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp01.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp01">Histologischer Typ Stanze 01</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp02.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp02">Histologischer Typ Stanze 02</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp03.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp03">Histologischer Typ Stanze 03</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp04.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp04">Histologischer Typ Stanze 04</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp05.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp05">Histologischer Typ Stanze 05</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp06.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp06">Histologischer Typ Stanze 06</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp07.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp07">Histologischer Typ Stanze 07</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp08.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp08">Histologischer Typ Stanze 08</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp09.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp09">Histologischer Typ Stanze 09</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp10.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp10">Histologischer Typ Stanze 10</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp11.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp11">Histologischer Typ Stanze 11</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyHistoTyp12.html"
+                  title="Observation/CoreNeedleBiopsyHistoTyp12">Histologischer Typ Stanze 12</a>
+            </td>
+            <td>
+<p>Histologischer Typ ICD-O-3 für Stanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyICDOVersion.html"
+                  title="Observation/CoreNeedleBiopsyICDOVersion">ICD-O Version - Biopsy</a>
+            </td>
+            <td>
+<p>Version of ICD-O classification used</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyICDOVersion.html"
+                  title="Observation/RadicalProstatectomyICDOVersion">ICD-O Version - Prostatectomy</a>
+            </td>
+            <td>
+<p>Version of ICD-O classification used</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraductalCarcinoma.html"
+                  title="Observation/CoreNeedleBiopsyIntraductalCarcinoma">Intraductal Carcinoma - Biopsy</a>
+            </td>
+            <td>
+<p>Presence of intraductal carcinoma</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationIntraductalCarcinoma.html"
+                  title="Observation/TransurethralEnucleationIntraductalCarcinoma">Intraductal Carcinoma - Enucleation</a>
+            </td>
+            <td>
+<p>Presence of intraductal carcinoma of the prostate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyIntraductalCarcinoma.html"
+                  title="Observation/RadicalProstatectomyIntraductalCarcinoma">Intraductal Carcinoma - Prostatectomy</a>
+            </td>
+            <td>
+<p>Presence of intraductal carcinoma of the prostate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionIntraductalCarcinoma.html"
+                  title="Observation/TransurethralResectionIntraductalCarcinoma">Intraductal Carcinoma - TUR</a>
+            </td>
+            <td>
+<p>Presence of intraductal carcinoma of the prostate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom01">Intraduktales Karzinom Stanze 01</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom02">Intraduktales Karzinom Stanze 02</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom04">Intraduktales Karzinom Stanze 04</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom06.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom06">Intraduktales Karzinom Stanze 06</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom07.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom07">Intraduktales Karzinom Stanze 07</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom09.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom09">Intraduktales Karzinom Stanze 09</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.html"
+                  title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom11">Intraduktales Karzinom Stanze 11</a>
+            </td>
+            <td>
+<p>Intraduktales Karzinom für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html"
+                  title="Observation/TransurethralEnucleationInvasiveCribriformCarcinoma">Invasive Cribriform Carcinoma - Enucleation</a>
+            </td>
+            <td>
+<p>Presence of invasive cribriform carcinoma</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.html"
+                  title="Observation/RadicalProstatectomyInvasiveCribriformCarcinoma">Invasive Cribriform Carcinoma - Prostatectomy</a>
+            </td>
+            <td>
+<p>Presence of invasive cribriform carcinoma</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionInvasiveCribriformCarcinoma.html"
+                  title="Observation/TransurethralResectionInvasiveCribriformCarcinoma">Invasive Cribriform Carcinoma - TUR</a>
+            </td>
+            <td>
+<p>Presence of invasive cribriform carcinoma</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TransurethralEnucleationDiagnosisPCa.html"
+                  title="Condition/TransurethralEnucleationDiagnosisPCa">Inzidentelles Prostatakarzinom nach Enukleation</a>
+            </td>
+            <td>
+<p>Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TransurethralResectionDiagnosisPCa.html"
+                  title="Condition/TransurethralResectionDiagnosisPCa">Inzidentelles Prostatakarzinom nach TUR-P</a>
+            </td>
+            <td>
+<p>Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyClinicalMStaging.html"
+                  title="Observation/CoreNeedleBiopsyClinicalMStaging">Klinisches M-Staging</a>
+            </td>
+            <td>
+<p>Klinische M-Kategorie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyClinicalNStaging.html"
+                  title="Observation/CoreNeedleBiopsyClinicalNStaging">Klinisches N-Staging</a>
+            </td>
+            <td>
+<p>Klinische N-Kategorie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyClinicalTStaging.html"
+                  title="Observation/CoreNeedleBiopsyClinicalTStaging">Klinisches T-Staging</a>
+            </td>
+            <td>
+<p>Klinische T-Kategorie nach Biopsie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.html"
+                  title="Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality">Lateralität der Lymphknoten</a>
+            </td>
+            <td>
+<p>Seitenangabe der Lymphknoten im Prostatektomiepräparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyExtraprostaticExtensionLocation.html"
+                  title="Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation">Location of Extraprostatic Extension - Biopsy</a>
+            </td>
+            <td>
+<p>Anatomical location of extraprostatic tumor extension (typically not assessable in biopsy)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyLymphNodesExamined.html"
+                  title="Observation/RadicalProstatectomyLymphNodesExamined">Lymph Nodes Examined - Prostatectomy</a>
+            </td>
+            <td>
+<p>Number of lymph nodes examined</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyLymphNodesPositive.html"
+                  title="Observation/RadicalProstatectomyLymphNodesPositive">Lymph Nodes Positive - Prostatectomy</a>
+            </td>
+            <td>
+<p>Number of lymph nodes with tumor involvement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicLymphNodesPresent.html"
+                  title="Observation/RadicalProstatectomyMacroscopicLymphNodesPresent">Lymphknoten im Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Lymphknoten im Prostatektomiepräparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicLymphNodeDissection.html"
+                  title="Observation/TransurethralEnucleationMacroscopicLymphNodeDissection">Lymphknoten-Dissektion im Enucleation-Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Lymphknoten-Dissektion im Prostata Enucleation Präparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionMacroscopicLymphNodeDissection.html"
+                  title="Observation/TransurethralResectionMacroscopicLymphNodeDissection">Lymphknoten-Dissektion im TUR-Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovascularInvasion.html"
+                  title="Observation/CoreNeedleBiopsyLymphovascularInvasion">Lymphovascular Invasion - Biopsy</a>
+            </td>
+            <td>
+<p>Lymphatic and vascular invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationLymphovascularInvasion.html"
+                  title="Observation/TransurethralEnucleationLymphovascularInvasion">Lymphovascular Invasion - Enucleation</a>
+            </td>
+            <td>
+<p>Lymphatic and vascular invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyLymphovascularInvasion.html"
+                  title="Observation/RadicalProstatectomyLymphovascularInvasion">Lymphovascular Invasion - Prostatectomy</a>
+            </td>
+            <td>
+<p>Lymphatic and vascular invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionLymphovascularInvasion.html"
+                  title="Observation/TransurethralResectionLymphovascularInvasion">Lymphovascular Invasion - TUR</a>
+            </td>
+            <td>
+<p>Lymphatic and vascular invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion01">Lymphovaskuläre Invasion Stanze 01</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion02">Lymphovaskuläre Invasion Stanze 02</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion04">Lymphovaskuläre Invasion Stanze 04</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion06.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion06">Lymphovaskuläre Invasion Stanze 06</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion07.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion07">Lymphovaskuläre Invasion Stanze 07</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion09.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion09">Lymphovaskuläre Invasion Stanze 09</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion11.html"
+                  title="Observation/CoreNeedleBiopsyLymphovaskulaereInvasion11">Lymphovaskuläre Invasion Stanze 11</a>
+            </td>
+            <td>
+<p>Lymphovaskuläre Invasion für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicGrouper">Makroskopische Befunde Grouper</a>
+            </td>
+            <td>
+<p>Gruppierung aller makroskopischen Messungen der Prostatastanzen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html"
+                  title="Observation/TransurethralEnucleationMacroscopicGrouper">Makroskopische Befunde Grouper Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Gruppierung aller makroskopischen Messungen des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html"
+                  title="Observation/RadicalProstatectomyMacroscopicGrouper">Makroskopische Befunde Grouper Prostatektomie</a>
+            </td>
+            <td>
+<p>Gruppierung aller makroskopischen Messungen des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionMacroscopicGrouper.html"
+                  title="Observation/TransurethralResectionMacroscopicGrouper">Makroskopische Befunde Grouper TUR-Prostata</a>
+            </td>
+            <td>
+<p>Gruppierung aller makroskopischen Messungen des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength01.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength01">Makroskopische Länge Stanze 01</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength02.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength02">Makroskopische Länge Stanze 02</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength03.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength03">Makroskopische Länge Stanze 03</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength04.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength04">Makroskopische Länge Stanze 04</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength05.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength05">Makroskopische Länge Stanze 05</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength06.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength06">Makroskopische Länge Stanze 06</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength07.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength07">Makroskopische Länge Stanze 07</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength08.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength08">Makroskopische Länge Stanze 08</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength09.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength09">Makroskopische Länge Stanze 09</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength10.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength10">Makroskopische Länge Stanze 10</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength11.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength11">Makroskopische Länge Stanze 11</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLength12.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLength12">Makroskopische Länge Stanze 12</a>
+            </td>
+            <td>
+<p>Längenmessung der Prostatastanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMarginStatus.html"
+                  title="Observation/RadicalProstatectomyMarginStatus">Margin Status - Prostatectomy</a>
+            </td>
+            <td>
+<p>Status of surgical resection margins</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html"
+                  title="Observation/CoreNeedleBiopsyMicroscopicGrouper">Mikroskopische Befunde Grouper</a>
+            </td>
+            <td>
+<p>Gruppierung aller mikroskopischen Befunde der Prostatastanzen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText01.html"
+                  title="Observation/CoreNeedleBiopsyMorphText01">Morphologie Freitext Stanze 01</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText02.html"
+                  title="Observation/CoreNeedleBiopsyMorphText02">Morphologie Freitext Stanze 02</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText03.html"
+                  title="Observation/CoreNeedleBiopsyMorphText03">Morphologie Freitext Stanze 03</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText04.html"
+                  title="Observation/CoreNeedleBiopsyMorphText04">Morphologie Freitext Stanze 04</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText05.html"
+                  title="Observation/CoreNeedleBiopsyMorphText05">Morphologie Freitext Stanze 05</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText06.html"
+                  title="Observation/CoreNeedleBiopsyMorphText06">Morphologie Freitext Stanze 06</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText07.html"
+                  title="Observation/CoreNeedleBiopsyMorphText07">Morphologie Freitext Stanze 07</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText08.html"
+                  title="Observation/CoreNeedleBiopsyMorphText08">Morphologie Freitext Stanze 08</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText09.html"
+                  title="Observation/CoreNeedleBiopsyMorphText09">Morphologie Freitext Stanze 09</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText10.html"
+                  title="Observation/CoreNeedleBiopsyMorphText10">Morphologie Freitext Stanze 10</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText11.html"
+                  title="Observation/CoreNeedleBiopsyMorphText11">Morphologie Freitext Stanze 11</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphText12.html"
+                  title="Observation/CoreNeedleBiopsyMorphText12">Morphologie Freitext Stanze 12</a>
+            </td>
+            <td>
+<p>Morphologie Freitext für Stanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMorphologyFreeText.html"
+                  title="Observation/CoreNeedleBiopsyMorphologyFreeText">Morphology Free Text Description - Biopsy</a>
+            </td>
+            <td>
+<p>Free text description of tumor morphology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMorphologyFreeText.html"
+                  title="Observation/TransurethralEnucleationMorphologyFreeText">Morphology Free Text Description - Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Free text description of tissue morphology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMorphologyFreeText.html"
+                  title="Observation/RadicalProstatectomyMorphologyFreeText">Morphology Free Text Description - Prostatectomy</a>
+            </td>
+            <td>
+<p>Free text description of tumor morphology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionMorphologyFreeText.html"
+                  title="Observation/TransurethralResectionMorphologyFreeText">Morphology Free Text Description - TUR-Prostata</a>
+            </td>
+            <td>
+<p>Free text description of tissue morphology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPositiveCoresLeft.html"
+                  title="Observation/CoreNeedleBiopsyPositiveCoresLeft">Number of Positive Cores Left Side - Biopsy</a>
+            </td>
+            <td>
+<p>Number of tissue cores positive for carcinoma on the left side</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPositiveCoresRight.html"
+                  title="Observation/CoreNeedleBiopsyPositiveCoresRight">Number of Positive Cores Right Side - Biopsy</a>
+            </td>
+            <td>
+<p>Number of tissue cores positive for carcinoma on the right side</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyPSAPostoperative.html"
+                  title="Observation/RadicalProstatectomyPSAPostoperative">PSA postoperativ</a>
+            </td>
+            <td>
+<p>PSA-Kontrolle 6 Wochen nach Prostatektomie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PSAPreCoreNeedleBiopsy.html"
+                  title="Observation/PSAPreCoreNeedleBiopsy">PSA vor Biopsie</a>
+            </td>
+            <td>
+<p>PSA-Wert vor der Prostatastanzenentnahme</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationPSAPre.html"
+                  title="Observation/TransurethralEnucleationPSAPre">PSA vor Prostata Enucleation</a>
+            </td>
+            <td>
+<p>PSA-Wert vor der Prostata Enucleation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionPSAPre.html"
+                  title="Observation/TransurethralResectionPSAPre">PSA vor TUR-Prostata</a>
+            </td>
+            <td>
+<p>PSA-Wert vor der TUR-Prostata</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenBlock01.html"
+                  title="Specimen/TransurethralEnucleationSpecimenBlock01">Paraffinblock 01 Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostata Enucleation Präparats Block 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenBlock01.html"
+                  title="Specimen/RadicalProstatectomySpecimenBlock01">Paraffinblock 01 Prostatektomie</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostatektomiepräparats Block 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenBlock01.html"
+                  title="Specimen/TransurethralResectionSpecimenBlock01">Paraffinblock 01 TUR-Prostata</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des TUR-Prostata Präparats Block 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenBlock02.html"
+                  title="Specimen/TransurethralEnucleationSpecimenBlock02">Paraffinblock 02 Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostata Enucleation Präparats Block 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenBlock02.html"
+                  title="Specimen/RadicalProstatectomySpecimenBlock02">Paraffinblock 02 Prostatektomie</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostatektomiepräparats Block 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenBlock02.html"
+                  title="Specimen/TransurethralResectionSpecimenBlock02">Paraffinblock 02 TUR-Prostata</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des TUR-Prostata Präparats Block 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenBlock03.html"
+                  title="Specimen/TransurethralEnucleationSpecimenBlock03">Paraffinblock 03 Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostata Enucleation Präparats Block 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenBlock03.html"
+                  title="Specimen/RadicalProstatectomySpecimenBlock03">Paraffinblock 03 Prostatektomie</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostatektomiepräparats Block 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenBlock03.html"
+                  title="Specimen/TransurethralResectionSpecimenBlock03">Paraffinblock 03 TUR-Prostata</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des TUR-Prostata Präparats Block 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenBlock04.html"
+                  title="Specimen/TransurethralEnucleationSpecimenBlock04">Paraffinblock 04 Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostata Enucleation Präparats Block 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenBlock04.html"
+                  title="Specimen/TransurethralResectionSpecimenBlock04">Paraffinblock 04 TUR-Prostata</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des TUR-Prostata Präparats Block 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenBlock05.html"
+                  title="Specimen/TransurethralEnucleationSpecimenBlock05">Paraffinblock 05 Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des Prostata Enucleation Präparats Block 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenBlock05.html"
+                  title="Specimen/TransurethralResectionSpecimenBlock05">Paraffinblock 05 TUR-Prostata</a>
+            </td>
+            <td>
+<p>Paraffineinbettung des TUR-Prostata Präparats Block 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen01Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen01Block">Paraffinblock Stanze 01</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen02Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen02Block">Paraffinblock Stanze 02</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen03Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen03Block">Paraffinblock Stanze 03</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen04Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen04Block">Paraffinblock Stanze 04</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen05Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen05Block">Paraffinblock Stanze 05</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen06Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen06Block">Paraffinblock Stanze 06</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen07Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen07Block">Paraffinblock Stanze 07</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen08Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen08Block">Paraffinblock Stanze 08</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen09Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen09Block">Paraffinblock Stanze 09</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen10Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen10Block">Paraffinblock Stanze 10</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen11Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen11Block">Paraffinblock Stanze 11</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen12Block.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen12Block">Paraffinblock Stanze 12</a>
+            </td>
+            <td>
+<p>Paraffineinbettung der Prostatastanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-PathologistPractitioner.html"
+                  title="Practitioner/PathologistPractitioner">Pathologe</a>
+            </td>
+            <td>
+<p>Durchführender Pathologe für alle pathologischen Befunde</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-TransurethralEnucleationReport.html"
+                  title="DiagnosticReport/TransurethralEnucleationReport">Pathologiebericht Prostata Enucleation</a>
+            </td>
+            <td>
+<p>Umfangreicher Pathologiebericht nach Prostata Enucleation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-CoreNeedleBiopsyReport.html"
+                  title="DiagnosticReport/CoreNeedleBiopsyReport">Pathologiebericht Prostatastanzen</a>
+            </td>
+            <td>
+<p>Umfangreicher Pathologiebericht für Core Needle Biopsys</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-RadicalProstatectomyReport.html"
+                  title="DiagnosticReport/RadicalProstatectomyReport">Pathologiebericht Prostatektomie</a>
+            </td>
+            <td>
+<p>Umfangreicher Pathologiebericht nach radikaler Prostatektomie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-TransurethralResectionReport.html"
+                  title="DiagnosticReport/TransurethralResectionReport">Pathologiebericht TUR-Prostata</a>
+            </td>
+            <td>
+<p>Umfangreicher Pathologiebericht nach TUR-Prostata</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-PathologyLabOrganization.html"
+                  title="Organization/PathologyLabOrganization">Pathologielabor</a>
+            </td>
+            <td>
+<p>Pathologielabor für alle pathologischen Befunde</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient1.html" title="Patient/Patient1">Patient 1 - Biopsie und TUR-P</a>
+            </td>
+            <td>
+<p>Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient2.html" title="Patient/Patient2">Patient 2 - Enukleation und Prostatektomie</a>
+            </td>
+            <td>
+<p>Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPercentageTumorTotal.html"
+                  title="Observation/CoreNeedleBiopsyPercentageTumorTotal">Percentage Tumor Content Total - Biopsy</a>
+            </td>
+            <td>
+<p>Total percentage of tumor in all positive tissue cores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPercentageGleason45.html"
+                  title="Observation/CoreNeedleBiopsyPercentageGleason45">Percentage of Gleason Pattern 4/5 - Biopsy</a>
+            </td>
+            <td>
+<p>Percentage of tumor area with Gleason pattern 4 and 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationPercentageGleason45.html"
+                  title="Observation/TransurethralEnucleationPercentageGleason45">Percentage of Gleason Pattern 4/5 - Enucleation</a>
+            </td>
+            <td>
+<p>Percentage of tumor area with Gleason pattern 4 and 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyPercentageGleason45.html"
+                  title="Observation/RadicalProstatectomyPercentageGleason45">Percentage of Gleason Pattern 4/5 - Prostatectomy</a>
+            </td>
+            <td>
+<p>Percentage of tumor area with Gleason pattern 4 and 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionPercentageGleason45.html"
+                  title="Observation/TransurethralResectionPercentageGleason45">Percentage of Gleason Pattern 4/5 - TUR</a>
+            </td>
+            <td>
+<p>Percentage of tumor area with Gleason pattern 4 and 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuralInfiltration.html"
+                  title="Observation/CoreNeedleBiopsyPerineuralInfiltration">Perineural Infiltration - Biopsy</a>
+            </td>
+            <td>
+<p>Presence of perineural invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationPerineuralInfiltration.html"
+                  title="Observation/TransurethralEnucleationPerineuralInfiltration">Perineural Infiltration - Enucleation</a>
+            </td>
+            <td>
+<p>Presence of perineural invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyPerineuralInfiltration.html"
+                  title="Observation/RadicalProstatectomyPerineuralInfiltration">Perineural Infiltration - Prostatectomy</a>
+            </td>
+            <td>
+<p>Presence of perineural invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionPerineuralInfiltration.html"
+                  title="Observation/TransurethralResectionPerineuralInfiltration">Perineural Infiltration - TUR</a>
+            </td>
+            <td>
+<p>Presence of perineural invasion in cancer specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration01">Perineurale Infiltration Stanze 01</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration02">Perineurale Infiltration Stanze 02</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration04.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration04">Perineurale Infiltration Stanze 04</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration06.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration06">Perineurale Infiltration Stanze 06</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration07.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration07">Perineurale Infiltration Stanze 07</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration09.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration09">Perineurale Infiltration Stanze 09</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration11.html"
+                  title="Observation/CoreNeedleBiopsyPerineuraleInfiltration11">Perineurale Infiltration Stanze 11</a>
+            </td>
+            <td>
+<p>Perineurale Infiltration für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPeriprostataticFatInvasion.html"
+                  title="Observation/CoreNeedleBiopsyPeriprostataticFatInvasion">Periprostatic Fat Invasion - Biopsy</a>
+            </td>
+            <td>
+<p>Tumor invasion into periprostatic connective and adipose tissue (typically not assessable in biopsy)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaryGleasonPattern.html"
+                  title="Observation/CoreNeedleBiopsyPrimaryGleasonPattern">Primary Gleason Pattern (Epstein 2005) - Biopsy</a>
+            </td>
+            <td>
+<p>Primary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationPrimaryGleasonPattern.html"
+                  title="Observation/TransurethralEnucleationPrimaryGleasonPattern">Primary Gleason Pattern (Epstein 2005) - Enucleation</a>
+            </td>
+            <td>
+<p>Primary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyPrimaryGleasonPattern.html"
+                  title="Observation/RadicalProstatectomyPrimaryGleasonPattern">Primary Gleason Pattern (Epstein 2005) - Prostatectomy</a>
+            </td>
+            <td>
+<p>Primary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionPrimaryGleasonPattern.html"
+                  title="Observation/TransurethralResectionPrimaryGleasonPattern">Primary Gleason Pattern (Epstein 2005) - TUR</a>
+            </td>
+            <td>
+<p>Primary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason01.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason01">Primäres Gleason Muster Stanze 01</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason02.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason02">Primäres Gleason Muster Stanze 02</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason04.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason04">Primäres Gleason Muster Stanze 04</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason06.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason06">Primäres Gleason Muster Stanze 06</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason07.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason07">Primäres Gleason Muster Stanze 07</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason09.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason09">Primäres Gleason Muster Stanze 09</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyPrimaerGleason11.html"
+                  title="Observation/CoreNeedleBiopsyPrimaerGleason11">Primäres Gleason Muster Stanze 11</a>
+            </td>
+            <td>
+<p>Primäres Gleason Muster für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicProstateWidth.html"
+                  title="Observation/RadicalProstatectomyMacroscopicProstateWidth">Prostata Breite</a>
+            </td>
+            <td>
+<p>Breite der Prostata in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-TransurethralEnucleationProcedure.html"
+                  title="Procedure/TransurethralEnucleationProcedure">Prostata Enucleation (Simple Prostatectomy)</a>
+            </td>
+            <td>
+<p>Prostata Enucleation zur Behandlung der benignen Prostatahyperplasie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html"
+                  title="ServiceRequest/TransurethralEnucleationServiceRequest">Prostata Enucleation Anforderung</a>
+            </td>
+            <td>
+<p>Anforderung für pathologische Aufarbeitung nach Prostata Enucleation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicWidth.html"
+                  title="Observation/TransurethralEnucleationMacroscopicWidth">Prostata Enucleation Breite</a>
+            </td>
+            <td>
+<p>Breite des Prostata Enucleation Präparats in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicWeight.html"
+                  title="Observation/TransurethralEnucleationMacroscopicWeight">Prostata Enucleation Gewicht</a>
+            </td>
+            <td>
+<p>Gewicht des Prostata Enucleation Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicLength.html"
+                  title="Observation/TransurethralEnucleationMacroscopicLength">Prostata Enucleation Länge</a>
+            </td>
+            <td>
+<p>Länge des Prostata Enucleation Präparats in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralEnucleationSpecimenPart.html"
+                  title="Specimen/TransurethralEnucleationSpecimenPart">Prostata Enucleation Präparat (Einsendespecimen)</a>
+            </td>
+            <td>
+<p>Prostata Enucleation Resektat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicDepth.html"
+                  title="Observation/TransurethralEnucleationMacroscopicDepth">Prostata Enucleation Tiefe</a>
+            </td>
+            <td>
+<p>Tiefe des Prostata Enucleation Präparats in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicProstateHeight.html"
+                  title="Observation/RadicalProstatectomyMacroscopicProstateHeight">Prostata Höhe</a>
+            </td>
+            <td>
+<p>Höhe der Prostata in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicProstateDepth.html"
+                  title="Observation/RadicalProstatectomyMacroscopicProstateDepth">Prostata Tiefe</a>
+            </td>
+            <td>
+<p>Tiefe der Prostata in cm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicProstateWeight.html"
+                  title="Observation/RadicalProstatectomyMacroscopicProstateWeight">Prostatagewicht</a>
+            </td>
+            <td>
+<p>Gewicht des Prostatektomiepräparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-RadicalProstatectomyDiagnosisPreOp.html"
+                  title="Condition/RadicalProstatectomyDiagnosisPreOp">Prostatakarzinom-Diagnose vor Prostatektomie</a>
+            </td>
+            <td>
+<p>Gesicherte Diagnose eines Prostatakarzinoms nach Biopsie, Indikation zur radikalen Prostatektomie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen01Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen01Part">Prostatastanze 01 - Rechts lateral basal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen02Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen02Part">Prostatastanze 02 - Rechts lateral mid</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten lateralen Mitte (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen03Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen03Part">Prostatastanze 03 - Rechts lateral apikal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten lateralen Apex (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen04Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen04Part">Prostatastanze 04 - Rechts medial basal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten medialen Basis (Übergangszone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen05Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen05Part">Prostatastanze 05 - Rechts medial mid</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten medialen Mitte (Übergangszone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen06Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen06Part">Prostatastanze 06 - Rechts medial apikal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der rechten medialen Apex (anteriores fibromuskuläres Stroma)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen07Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen07Part">Prostatastanze 07 - Links lateral basal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken lateralen Basis (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen08Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen08Part">Prostatastanze 08 - Links lateral mid</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken lateralen Mitte (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen09Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen09Part">Prostatastanze 09 - Links lateral apikal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken lateralen Apex (periphere Zone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen10Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen10Part">Prostatastanze 10 - Links medial basal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken medialen Basis (anteriores fibromuskuläres Stroma)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen11Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen11Part">Prostatastanze 11 - Links medial mid</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken medialen Mitte (Übergangszone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-CoreNeedleBiopsySpecimen12Part.html"
+                  title="Specimen/CoreNeedleBiopsySpecimen12Part">Prostatastanze 12 - Links medial apikal</a>
+            </td>
+            <td>
+<p>Tru-cut Biopsie aus der linken medialen Apex (anteriores fibromuskuläres Stroma)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-CoreNeedleBiopsyComposition.html"
+                  title="Composition/CoreNeedleBiopsyComposition">Prostate Biopsy Pathology Report Composition</a>
+            </td>
+            <td>
+<p>FHIR Composition for structured prostate biopsy pathology report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RadicalProstatectomyComposition.html"
+                  title="Composition/RadicalProstatectomyComposition">Prostatectomy Pathology Report Composition</a>
+            </td>
+            <td>
+<p>FHIR Composition for structured prostatectomy pathology report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html"
+                  title="ServiceRequest/RadicalProstatectomyServiceRequest">Prostatektomie Anforderung</a>
+            </td>
+            <td>
+<p>Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-RadicalProstatectomySpecimenPart.html"
+                  title="Specimen/RadicalProstatectomySpecimenPart">Prostatektomiepräparat (Einsendespecimen)</a>
+            </td>
+            <td>
+<p>Vollständiges Prostatektomiepräparat mit Samenbläschen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationProstaticTissueInvolved.html"
+                  title="Observation/TransurethralEnucleationProstaticTissueInvolved">Prostatic Tissue Involved by Tumour - Enucleation</a>
+            </td>
+            <td>
+<p>Percentage of prostatic tissue involved by tumour</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyProstaticTissueInvolved.html"
+                  title="Observation/RadicalProstatectomyProstaticTissueInvolved">Prostatic Tissue Involved by Tumour - Prostatectomy</a>
+            </td>
+            <td>
+<p>Percentage of prostatic tissue involved by tumour</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionProstaticTissueInvolved.html"
+                  title="Observation/TransurethralResectionProstaticTissueInvolved">Prostatic Tissue Involved by Tumour - TUR</a>
+            </td>
+            <td>
+<p>Percentage of prostatic tissue involved by tumour</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason01.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason01">Prozentualer Anteil Gleasonmuster 4/5 Stanze 01</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason02.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason02">Prozentualer Anteil Gleasonmuster 4/5 Stanze 02</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason04.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason04">Prozentualer Anteil Gleasonmuster 4/5 Stanze 04</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason06.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason06">Prozentualer Anteil Gleasonmuster 4/5 Stanze 06</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason07.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason07">Prozentualer Anteil Gleasonmuster 4/5 Stanze 07</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason09.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason09">Prozentualer Anteil Gleasonmuster 4/5 Stanze 09</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyProzentGleason11.html"
+                  title="Observation/CoreNeedleBiopsyProzentGleason11">Prozentualer Anteil Gleasonmuster 4/5 Stanze 11</a>
+            </td>
+            <td>
+<p>Prozentualer Anteil Gleasonmuster 4/5 für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil01.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil01">Prozentualer Tumoranteil Stanze 01</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil02.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil02">Prozentualer Tumoranteil Stanze 02</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil04.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil04">Prozentualer Tumoranteil Stanze 04</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil06.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil06">Prozentualer Tumoranteil Stanze 06</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil07.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil07">Prozentualer Tumoranteil Stanze 07</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil09.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil09">Prozentualer Tumoranteil Stanze 09</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumoranteil11.html"
+                  title="Observation/CoreNeedleBiopsyTumoranteil11">Prozentualer Tumoranteil Stanze 11</a>
+            </td>
+            <td>
+<p>Prozentualer Tumoranteil für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyRatioPositiveCores.html"
+                  title="Observation/CoreNeedleBiopsyRatioPositiveCores">Ratio of Positive to Total Cores - Biopsy</a>
+            </td>
+            <td>
+<p>Ratio of positive cores to all examined cores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationMacroscopicSeminalVesicles.html"
+                  title="Observation/TransurethralEnucleationMacroscopicSeminalVesicles">Samenblasen im Enucleation-Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Samenblasen im Prostata Enucleation Präparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.html"
+                  title="Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent">Samenblasen im Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Samenblasen im Prostatektomiepräparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionMacroscopicSeminalVesicles.html"
+                  title="Observation/TransurethralResectionMacroscopicSeminalVesicles">Samenblasen im TUR-Resektat</a>
+            </td>
+            <td>
+<p>Vorhandensein von Samenblasen im TUR-Prostata Präparat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.html"
+                  title="Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength">Samenbläschenlänge</a>
+            </td>
+            <td>
+<p>Längenmessung der Samenbläschen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySecondaryGleasonPattern.html"
+                  title="Observation/CoreNeedleBiopsySecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - Biopsy</a>
+            </td>
+            <td>
+<p>Secondary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationSecondaryGleasonPattern.html"
+                  title="Observation/TransurethralEnucleationSecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - Enucleation</a>
+            </td>
+            <td>
+<p>Secondary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomySecondaryGleasonPattern.html"
+                  title="Observation/RadicalProstatectomySecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - Prostatectomy</a>
+            </td>
+            <td>
+<p>Secondary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionSecondaryGleasonPattern.html"
+                  title="Observation/TransurethralResectionSecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - TUR</a>
+            </td>
+            <td>
+<p>Secondary Gleason pattern according to Epstein 2005</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality01.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality01">Seitenangabe Stanze 01</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality02.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality02">Seitenangabe Stanze 02</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality03.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality03">Seitenangabe Stanze 03</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 03</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality04.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality04">Seitenangabe Stanze 04</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality05.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality05">Seitenangabe Stanze 05</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 05</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality06.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality06">Seitenangabe Stanze 06</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality07.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality07">Seitenangabe Stanze 07</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality08.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality08">Seitenangabe Stanze 08</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 08</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality09.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality09">Seitenangabe Stanze 09</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality10.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality10">Seitenangabe Stanze 10</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 10</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality11.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality11">Seitenangabe Stanze 11</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyMacroscopicLaterality12.html"
+                  title="Observation/CoreNeedleBiopsyMacroscopicLaterality12">Seitenangabe Stanze 12</a>
+            </td>
+            <td>
+<p>Lateralitätsangabe der Prostatastanze 12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason01.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason01">Sekundäres Gleason Muster Stanze 01</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason02.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason02">Sekundäres Gleason Muster Stanze 02</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason04.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason04">Sekundäres Gleason Muster Stanze 04</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason06.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason06">Sekundäres Gleason Muster Stanze 06</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason07.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason07">Sekundäres Gleason Muster Stanze 07</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason09.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason09">Sekundäres Gleason Muster Stanze 09</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySekundaerGleason11.html"
+                  title="Observation/CoreNeedleBiopsySekundaerGleason11">Sekundäres Gleason Muster Stanze 11</a>
+            </td>
+            <td>
+<p>Sekundäres Gleason Muster für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsySeminalVesicleInvasion.html"
+                  title="Observation/CoreNeedleBiopsySeminalVesicleInvasion">Seminal Vesicle Invasion - Biopsy</a>
+            </td>
+            <td>
+<p>Tumor invasion into seminal vesicles (typically not assessable in biopsy)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationSeminalVesicleInvasion.html"
+                  title="Observation/TransurethralEnucleationSeminalVesicleInvasion">Seminal Vesicle Invasion - Enucleation</a>
+            </td>
+            <td>
+<p>Tumor invasion into seminal vesicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomySeminalVesicleInvasion.html"
+                  title="Observation/RadicalProstatectomySeminalVesicleInvasion">Seminal Vesicle Invasion - Prostatectomy</a>
+            </td>
+            <td>
+<p>Tumor invasion into seminal vesicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionSeminalVesicleInvasion.html"
+                  title="Observation/TransurethralResectionSeminalVesicleInvasion">Seminal Vesicle Invasion - TUR</a>
+            </td>
+            <td>
+<p>Tumor invasion into seminal vesicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-CoreNeedleBiopsyRequest.html"
+                  title="ServiceRequest/CoreNeedleBiopsyRequest">Standardbiopsie Prostata Anforderung</a>
+            </td>
+            <td>
+<p>Anforderung für 12-Stanzen Prostatabiopsie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyTNMpT.html"
+                  title="Observation/RadicalProstatectomyTNMpT">TNM Primary Tumor (pT) - Prostatectomy</a>
+            </td>
+            <td>
+<p>Pathological primary tumor stage according to TNM classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyTNMpN.html"
+                  title="Observation/RadicalProstatectomyTNMpN">TNM Regional Lymph Nodes (pN) - Prostatectomy</a>
+            </td>
+            <td>
+<p>Pathological regional lymph node stage according to TNM classification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-TransurethralResectionComposition.html"
+                  title="Composition/TransurethralResectionComposition">TUR Pathology Report Composition</a>
+            </td>
+            <td>
+<p>FHIR Composition for structured TUR pathology report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-TransurethralResectionServiceRequest.html"
+                  title="ServiceRequest/TransurethralResectionServiceRequest">TUR-Prostata Anforderung</a>
+            </td>
+            <td>
+<p>Anforderung für pathologische Aufarbeitung nach TUR-Prostata</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionMacroscopicWeight.html"
+                  title="Observation/TransurethralResectionMacroscopicWeight">TUR-Prostata Gewicht</a>
+            </td>
+            <td>
+<p>Gewicht des TUR-Prostata Präparats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-TransurethralResectionSpecimenPart.html"
+                  title="Specimen/TransurethralResectionSpecimenPart">TUR-Prostata Präparat (Einsendespecimen)</a>
+            </td>
+            <td>
+<p>TUR-Prostata Resektat</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyGleasonScoreTotal.html"
+                  title="Observation/CoreNeedleBiopsyGleasonScoreTotal">Total Gleason Score - Biopsy</a>
+            </td>
+            <td>
+<p>Total Gleason score in biopsy specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralEnucleationGleasonScoreTotal.html"
+                  title="Observation/TransurethralEnucleationGleasonScoreTotal">Total Gleason Score - Enucleation</a>
+            </td>
+            <td>
+<p>Total Gleason score in Enucleation specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyGleasonScoreTotal.html"
+                  title="Observation/RadicalProstatectomyGleasonScoreTotal">Total Gleason Score - Prostatectomy</a>
+            </td>
+            <td>
+<p>Total Gleason score in prostatectomy specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionGleasonScoreTotal.html"
+                  title="Observation/TransurethralResectionGleasonScoreTotal">Total Gleason Score - TUR</a>
+            </td>
+            <td>
+<p>Total Gleason score in TUR specimens</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorLengthTotal.html"
+                  title="Observation/CoreNeedleBiopsyTumorLengthTotal">Total Tumor Length in mm - Biopsy</a>
+            </td>
+            <td>
+<p>Total linear length of carcinoma in millimeters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-TransurethralResectionProcedure.html"
+                  title="Procedure/TransurethralResectionProcedure">Transurethrale Resektion der Prostata</a>
+            </td>
+            <td>
+<p>TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RadicalProstatectomyTumorVolume.html"
+                  title="Observation/RadicalProstatectomyTumorVolume">Tumor Volume - Prostatectomy</a>
+            </td>
+            <td>
+<p>Total tumor volume in cubic centimeters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge01">Tumorbefall in Länge Stanze 01</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge02">Tumorbefall in Länge Stanze 02</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge04.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge04">Tumorbefall in Länge Stanze 04</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge06.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge06">Tumorbefall in Länge Stanze 06</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge07.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge07">Tumorbefall in Länge Stanze 07</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge09.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge09">Tumorbefall in Länge Stanze 09</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge11.html"
+                  title="Observation/CoreNeedleBiopsyTumorbefallinLaenge11">Tumorbefall in Länge Stanze 11</a>
+            </td>
+            <td>
+<p>Tumorbefall für befallene Stanze in Länge in mm für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe01.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe01">Tumornachweis Fettgewebe Stanze 01</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe02.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe02">Tumornachweis Fettgewebe Stanze 02</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe04.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe04">Tumornachweis Fettgewebe Stanze 04</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe06.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe06">Tumornachweis Fettgewebe Stanze 06</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe07.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe07">Tumornachweis Fettgewebe Stanze 07</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe09.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe09">Tumornachweis Fettgewebe Stanze 09</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe11.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisInFettgewebe11">Tumornachweis Fettgewebe Stanze 11</a>
+            </td>
+            <td>
+<p>Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase01.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase01">Tumornachweis Samenblasen Stanze 01</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase02.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase02">Tumornachweis Samenblasen Stanze 02</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase04.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase04">Tumornachweis Samenblasen Stanze 04</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase06.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase06">Tumornachweis Samenblasen Stanze 06</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase07.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase07">Tumornachweis Samenblasen Stanze 07</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase09">Tumornachweis Samenblasen Stanze 09</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.html"
+                  title="Observation/CoreNeedleBiopsyTumornachweisinSamenblase11">Tumornachweis Samenblasen Stanze 11</a>
+            </td>
+            <td>
+<p>Tumornachweis in Samenblasen für Stanze 11</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-UrologistPractitioner.html"
+                  title="Practitioner/UrologistPractitioner">Urologe</a>
+            </td>
+            <td>
+<p>Durchführender Urologe für alle urologischen Eingriffe</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-CoreNeedleBiopsyDiagnosisSuspicion.html"
+                  title="Condition/CoreNeedleBiopsyDiagnosisSuspicion">Verdachtsdiagnose Prostatakarzinom vor Biopsie</a>
+            </td>
+            <td>
+<p>Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auffälligem MRT-Befund</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01">Verhältnis positiver Stanzen 01</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 01</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02">Verhältnis positiver Stanzen 02</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 02</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen04">Verhältnis positiver Stanzen 04</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 04</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen06">Verhältnis positiver Stanzen 06</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 06</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen07">Verhältnis positiver Stanzen 07</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 07</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen09">Verhältnis positiver Stanzen 09</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 09</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.html"
+                  title="Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen11">Verhältnis positiver Stanzen 11</a>
+            </td>
+            <td>
+<p>Verhältnis positiver zu allen Stanzen für Stanze 11</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 26, 2026 12:53+0100">2026-01-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

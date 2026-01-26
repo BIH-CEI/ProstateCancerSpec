@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="RadicalProstatectomyReport"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport RadicalProstatectomyReport</b></p><a name="RadicalProstatectomyReport"> </a><a name="hcRadicalProstatectomyReport"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report">MII PR Patho Report</a></p></div><h2><span title="Codes:{http://loinc.org 60568-3}">Pathology Synoptic report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}">Surgical Pathology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</td></tr><tr><td>When For</td><td>2024-03-20 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-03-21 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/PATH-RPT-2024-002</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-RadicalProstatectomyMacroscopicGrouper.html"><span title="Codes:{http://loinc.org 22634-0}">Pathology report gross observation Narrative</span></a> (<span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des Prostatektomiepräparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm</p>
+</div></blockquote></td><td>2024-03-16 14:00:00+0100</td></tr><tr><td><a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html"><span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td/><td>2024-03-20</td></tr></table><p>Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="ACSN"/>
+        <display value="Accession ID"/>
+      </coding>
+    </type>
+    <system value="http://example.hospital.de/diagnostic-reports"/>
+    <value value="PATH-RPT-2024-002"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/RadicalProstatectomyServiceRequest"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="SP"/>
+      <display value="Surgical Pathology"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60568-3"/>
+      <display value="Pathology Synoptic report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient2"/>
+  </subject>
+  <effectiveDateTime value="2024-03-20T17:00:00+01:00"/>
+  <issued value="2024-03-21T08:00:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/PathologistPractitioner"/>
+  </performer>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenPart"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenBlock01"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide01A"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide01B"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenBlock02"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide02A"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide02B"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenBlock03"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide03A"/>
+  </specimen>
+  <specimen>
+    <reference value="Specimen/RadicalProstatectomySpecimenSlide03B"/>
+  </specimen>
+  <result>
+    <reference value="Observation/RadicalProstatectomyMacroscopicGrouper"/>
+  </result>
+  <result>
+    <reference value="Observation/RadicalProstatectomyDiagnosticConclusionGrouper"/>
+  </result>
+  <conclusion value="Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."/>
+</DiagnosticReport>

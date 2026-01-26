@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Biopsy Specimens - Prostate Cancer Specification v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prostate Cancer Specification</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="clinical-context.html">Clinical Context</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="biopsy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html">MicroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-CoreNeedleBiopsyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Prostatectomy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="prostatectomy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-RadicalProstatectomyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-RadicalProstatectomyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Enucleation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-enucleation-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralEnucleationReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralEnucleationComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Resection
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-resection-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralResectionReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralResectionComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Biopsy Specimens</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prostate Cancer Specification - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://prostatecancerspec.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Biopsy Specimens</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>This page shows all specimen instances for the prostate biopsy example. The biopsy includes 12 specimen locations, each with a Part, Block, and Slide.</p>
+
+<h3 id="specimen-hierarchy">Specimen Hierarchy</h3>
+
+<h4 id="specimen-01">Specimen 01</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen01Part.html">CoreNeedleBiopsySpecimen01Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen01Block.html">CoreNeedleBiopsySpecimen01Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen01Slide.html">CoreNeedleBiopsySpecimen01Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-02">Specimen 02</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen02Part.html">CoreNeedleBiopsySpecimen02Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen02Block.html">CoreNeedleBiopsySpecimen02Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen02Slide.html">CoreNeedleBiopsySpecimen02Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-03">Specimen 03</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen03Part.html">CoreNeedleBiopsySpecimen03Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen03Block.html">CoreNeedleBiopsySpecimen03Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen03Slide.html">CoreNeedleBiopsySpecimen03Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-04">Specimen 04</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen04Part.html">CoreNeedleBiopsySpecimen04Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen04Block.html">CoreNeedleBiopsySpecimen04Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen04Slide.html">CoreNeedleBiopsySpecimen04Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-05">Specimen 05</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen05Part.html">CoreNeedleBiopsySpecimen05Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen05Block.html">CoreNeedleBiopsySpecimen05Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen05Slide.html">CoreNeedleBiopsySpecimen05Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-06">Specimen 06</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen06Part.html">CoreNeedleBiopsySpecimen06Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen06Block.html">CoreNeedleBiopsySpecimen06Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen06Slide.html">CoreNeedleBiopsySpecimen06Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-07">Specimen 07</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen07Part.html">CoreNeedleBiopsySpecimen07Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen07Block.html">CoreNeedleBiopsySpecimen07Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen07Slide.html">CoreNeedleBiopsySpecimen07Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-08">Specimen 08</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen08Part.html">CoreNeedleBiopsySpecimen08Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen08Block.html">CoreNeedleBiopsySpecimen08Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen08Slide.html">CoreNeedleBiopsySpecimen08Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-09">Specimen 09</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen09Part.html">CoreNeedleBiopsySpecimen09Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen09Block.html">CoreNeedleBiopsySpecimen09Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen09Slide.html">CoreNeedleBiopsySpecimen09Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-10">Specimen 10</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen10Part.html">CoreNeedleBiopsySpecimen10Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen10Block.html">CoreNeedleBiopsySpecimen10Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen10Slide.html">CoreNeedleBiopsySpecimen10Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-11">Specimen 11</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen11Part.html">CoreNeedleBiopsySpecimen11Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen11Block.html">CoreNeedleBiopsySpecimen11Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen11Slide.html">CoreNeedleBiopsySpecimen11Slide</a> - Slide</li>
+</ul>
+
+<h4 id="specimen-12">Specimen 12</h4>
+<ul>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen12Part.html">CoreNeedleBiopsySpecimen12Part</a> - Part</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen12Block.html">CoreNeedleBiopsySpecimen12Block</a> - Block</li>
+  <li><a href="Specimen-CoreNeedleBiopsySpecimen12Slide.html">CoreNeedleBiopsySpecimen12Slide</a> - Slide</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 26, 2026 12:53+0100">2026-01-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

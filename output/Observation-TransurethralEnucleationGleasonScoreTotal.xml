@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TransurethralEnucleationGleasonScoreTotal"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation TransurethralEnucleationGleasonScoreTotal</b></p><a name="TransurethralEnucleationGleasonScoreTotal"> </a><a name="hcTransurethralEnucleationGleasonScoreTotal"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score">https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding">MII PR Patho Findingversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest Simple prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>, <span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 35266-6}, {http://snomed.info/sct 385377005}">Gleason score in Specimen Qualitative</span></p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-05-12</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>value</b>: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010 C_999009}">Gleason grade (Score) 9</span></p><p><b>specimen</b>: <a href="Specimen-TransurethralEnucleationSpecimenSlide01A.html">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004-HE-01A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004; status = available; type = Histopathology slide (physical object)</a></p><p><b>derivedFrom</b>: </p><ul><li><a href="Observation-TransurethralEnucleationPrimaryGleasonPattern.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-TransurethralEnucleationSecondaryGleasonPattern.html">Observation Gleason pattern.secondary in Prostate tumor</a></li></ul></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/TransurethralEnucleationServiceRequest"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="22637-3"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="35266-6"/>
+      <display value="Gleason score in Specimen Qualitative"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385377005"/>
+      <display value="Gleason score (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient2"/>
+  </subject>
+  <effectiveDateTime value="2024-05-12"/>
+  <performer>
+    <reference value="Practitioner/PathologistPractitioner"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010"/>
+      <code value="C_999009"/>
+      <display value="Gleason grade (Score) 9"/>
+    </coding>
+  </valueCodeableConcept>
+  <specimen>
+    <reference value="Specimen/TransurethralEnucleationSpecimenSlide01A"/>
+  </specimen>
+  <derivedFrom>
+    <reference value="Observation/TransurethralEnucleationPrimaryGleasonPattern"/>
+  </derivedFrom>
+  <derivedFrom>
+    <reference value="Observation/TransurethralEnucleationSecondaryGleasonPattern"/>
+  </derivedFrom>
+</Observation>

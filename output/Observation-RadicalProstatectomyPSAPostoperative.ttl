@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Observation/RadicalProstatectomyPSAPostoperative> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadicalProstatectomyPSAPostoperative"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyPSAPostoperative</b></p><a name=\"RadicalProstatectomyPSAPostoperative\"> </a><a name=\"hcRadicalProstatectomyPSAPostoperative\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa\">MII PR Onkologie PSA-Wertversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 26436-6}\">Laboratory studies (set)</span>, <span title=\"Codes:{http://loinc.org LP7839-6}\">Pathology</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2857-1}\">Prostate specific antigen [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-04-26 08:00:00+0100</p><p><b>value</b>: 0.02 ng/ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p><p><b>note</b>: </p><blockquote><div><p>Exzellente biochemische Remission, PSA nicht nachweisbar</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:26436-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "26436-6" ] ;
+       fhir:display [ fhir:v "Laboratory studies (set)" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:LP7839-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "LP7839-6" ] ;
+       fhir:display [ fhir:v "Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2857-1 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "2857-1" ] ;
+       fhir:display [ fhir:v "Prostate specific antigen [Mass/volume] in Serum or Plasma" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-04-26T08:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 0.02 ] ;
+     fhir:unit [ fhir:v "ng/ml" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "ng/mL" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Exzellente biochemische Remission, PSA nicht nachweisbar" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen11Part> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoreNeedleBiopsySpecimen11Part"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen?version=2026.0.0>
+     ] [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen CoreNeedleBiopsySpecimen11Part</b></p><a name=\"CoreNeedleBiopsySpecimen11Part\"> </a><a name=\"hcCoreNeedleBiopsySpecimen11Part\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen\">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore\">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><blockquote><p><b>MII EX Biobank Feature R5</b></p><ul><li>type: <span title=\"Codes:{http://snomed.info/sct 716912006}\">Structure of middle regional part of transition zone of left half prostate (body structure)</span></li><li>description: Markiert mit goldener Tinte</li></ul></blockquote><p><b>identifier</b>: Placer Identifier/BX24_001_11_A, Filler Identifier/E2024_001-11-A</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 309134005}\">Prostate tru-cut biopsy sample</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>request</b>: <a href=\"ServiceRequest-CoreNeedleBiopsyRequest.html\">ServiceRequest Tru-cut biopsy of prostate (procedure)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-UrologistPractitioner.html\">Practitioner Andreas Weber </a></td><td>2024-01-15 10:50:00+0100</td><td><span title=\"Codes:{http://snomed.info/sct 301759007}\">Tru-cut biopsy of prostate (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 716912006}\">Structure of middle regional part of transition zone of left half prostate (body structure)</span></td></tr></table><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 434746001}\">Specimen vial (physical object)</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "type"^^xsd:anyURI ;
+         fhir:l fhir:type
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:716912006 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "716912006" ] ;
+           fhir:display [ fhir:v "Structure of middle regional part of transition zone of left half prostate (body structure)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [
+         fhir:v "description"^^xsd:anyURI ;
+         fhir:l fhir:description
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Markiert mit goldener Tinte"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "PLAC" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag>
+     ] ;
+     fhir:value [ fhir:v "BX24_001_11_A" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "FILL" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E2024_001-11-A" ]
+  ] ) ; # 
+  fhir:accessionIdentifier [
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E2024_001" ]
+  ] ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:309134005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "309134005" ] ;
+       fhir:display [ fhir:v "Prostate tru-cut biopsy sample" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:request ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/CoreNeedleBiopsyRequest" ]
+  ] ) ; # 
+  fhir:collection [
+     fhir:collector [
+       fhir:l <http://prostatecancerspec.org/Practitioner/UrologistPractitioner> ;
+       fhir:reference [ fhir:v "Practitioner/UrologistPractitioner" ]
+     ] ;
+     fhir:collected [
+       a fhir:DateTime ;
+       fhir:v "2024-01-15T10:50:00+01:00"^^xsd:dateTime
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:301759007 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "301759007" ] ;
+         fhir:display [ fhir:v "Tru-cut biopsy of prostate (procedure)" ]
+       ] )
+     ] ;
+     fhir:bodySite [
+       fhir:coding ( [
+         a sct:716912006 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "716912006" ] ;
+         fhir:display [ fhir:v "Structure of middle regional part of transition zone of left half prostate (body structure)" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:container ( [
+     fhir:type [
+       fhir:coding ( [
+         a sct:434746001 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "434746001" ] ;
+         fhir:display [ fhir:v "Specimen vial (physical object)" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

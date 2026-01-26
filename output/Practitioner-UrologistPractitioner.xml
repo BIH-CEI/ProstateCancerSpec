@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="UrologistPractitioner"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner UrologistPractitioner</b></p><a name="UrologistPractitioner"> </a><a name="hcUrologistPractitioner"> </a><p><b>identifier</b>: <code>http://example.hospital.de/practitioner-ids</code>/URO-001</p><p><b>name</b>: Andreas Weber </p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 394612005}">Urology</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://example.hospital.de/practitioner-ids"/>
+    <value value="URO-001"/>
+  </identifier>
+  <name>
+    <family value="Weber"/>
+    <given value="Andreas"/>
+    <prefix value="Prof. Dr."/>
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="394612005"/>
+        <display value="Urology"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

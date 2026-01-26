@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyRequest> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest CoreNeedleBiopsyRequest</b></p><a name=\"CoreNeedleBiopsyRequest\"> </a><a name=\"hcCoreNeedleBiopsyRequest\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request\">MII PR Patho Service Requestversion: null2026.0.0)</a></p></div><p><b>identifier</b>: Placer ID/PATH-RPT-2024-001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 726007}\">Pathology consultation, comprehensive, records and specimen with report (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 301759007}\">Tru-cut biopsy of prostate (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PATH-2024; status = finished; class = IMB (IMB)</a></p><p><b>requester</b>: <a href=\"Practitioner-UrologistPractitioner.html\">Practitioner Andreas Weber </a></p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 162568004}\">Raised prostate specific antigen</span></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-PSAPreCoreNeedleBiopsy.html\">Observation Prostate specific antigen [Mass/volume] in Serum or Plasma</a></li><li><a href=\"Condition-CoreNeedleBiopsyDiagnosisSuspicion.html\">Condition Bösartige Neubildung der Prostata</a></li></ul><p><b>specimen</b>: </p><ul><li><a href=\"Specimen-CoreNeedleBiopsySpecimen01Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen02Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen03Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen04Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen05Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen06Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen07Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen08Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen09Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen10Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen11Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li><li><a href=\"Specimen-CoreNeedleBiopsySpecimen12Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "PLAC" ] ;
+         fhir:display [ fhir:v "Placer ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/serviceRequest"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/serviceRequest>
+     ] ;
+     fhir:value [ fhir:v "PATH-RPT-2024-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:726007 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "726007" ] ;
+       fhir:display [ fhir:v "Pathology consultation, comprehensive, records and specimen with report (procedure)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:301759007 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "301759007" ] ;
+       fhir:display [ fhir:v "Tru-cut biopsy of prostate (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/CoreNeedleBiopsyEncounter> ;
+     fhir:reference [ fhir:v "Encounter/CoreNeedleBiopsyEncounter" ]
+  ] ; # 
+  fhir:requester [
+     fhir:l <http://prostatecancerspec.org/Practitioner/UrologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/UrologistPractitioner" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:162568004 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "162568004" ] ;
+       fhir:display [ fhir:v "Raised prostate specific antigen" ]
+     ] )
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:l <http://prostatecancerspec.org/Observation/PSAPreCoreNeedleBiopsy> ;
+     fhir:reference [ fhir:v "Observation/PSAPreCoreNeedleBiopsy" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Condition/CoreNeedleBiopsyDiagnosisSuspicion> ;
+     fhir:reference [ fhir:v "Condition/CoreNeedleBiopsyDiagnosisSuspicion" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen02Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen02Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen03Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen03Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen04Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen04Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen05Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen05Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen06Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen06Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen07Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen07Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen08Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen08Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen09Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen10Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen10Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen11Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen11Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen12Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen12Part" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,104 @@
+# Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy - Prostate Cancer Specification v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy**
+
+## Example Observation: Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy
+
+Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group), [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
+
+**basedOn**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyServiceRequest.md)
+
+**status**: Final
+
+**category**: Laboratory, Pathology report final diagnosis Narrative
+
+**code**: Prostate cancer grade group [Score] in Prostate tumor Qualitative
+
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+
+**effective**: 2024-03-20
+
+**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+
+**value**: International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)
+
+**specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002-HE-01A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002; status = available; type = Histopathology slide (physical object)](Specimen-RadicalProstatectomySpecimenSlide01A.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "RadicalProstatectomyGradingGroupISUP",
+  "meta" : {
+    "profile" : [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "basedOn" : [
+    {
+      "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+    }
+  ],
+  "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }
+      ]
+    },
+    {
+      "coding" : [
+        {
+          "system" : "http://loinc.org",
+          "code" : "22637-3"
+        }
+      ]
+    }
+  ],
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "code" : "94734-1",
+        "display" : "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "1812491000004107",
+        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+      }
+    ]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient2"
+  },
+  "effectiveDateTime" : "2024-03-20",
+  "performer" : [
+    {
+      "reference" : "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "valueCodeableConcept" : {
+    "coding" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "1279715005",
+        "display" : "International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)"
+      }
+    ]
+  },
+  "specimen" : {
+    "reference" : "Specimen/RadicalProstatectomySpecimenSlide01A"
+  }
+}
+
+```

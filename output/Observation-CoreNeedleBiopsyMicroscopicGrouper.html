@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Mikroskopische Befunde Grouper - Prostate Cancer Specification v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.175"}
+    h3,h4,h5,h6{--heading-prefix:"7.175"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prostate Cancer Specification</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="clinical-context.html">Clinical Context</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="biopsy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html">MicroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-CoreNeedleBiopsyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Prostatectomy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="prostatectomy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-RadicalProstatectomyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-RadicalProstatectomyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Enucleation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-enucleation-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralEnucleationReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralEnucleationComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Resection
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-resection-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralResectionReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralResectionComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Mikroskopische Befunde Grouper</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prostate Cancer Specification - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://prostatecancerspec.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Observation: Mikroskopische Befunde Grouper</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="CoreNeedleBiopsyMicroscopicGrouper"> </a><a name="hcCoreNeedleBiopsyMicroscopicGrouper"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper">MII PR Patho Microscopic Grouper</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 22635-7}">Pathology report microscopic observation Narrative Other stain</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-01-17 10:00:00+0100</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>value</b>: Mikroskopische Befunde aller 12 Prostatastanzen</p><p><b>note</b>: </p><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>
+</div></blockquote><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href="Observation-CoreNeedleBiopsyHistoTyp01.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText01.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason01.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason01.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason01.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading01.html">Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil01.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase01.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe01.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP01.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN01.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp02.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText02.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason02.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason02.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason02.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading02.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil02.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase02.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe02.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP02.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN02.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis02.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp03.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText03.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp04.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText04.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason04.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason04.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason04.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading04.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil04.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge04.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration04.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase04.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe04.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP04.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN04.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis04.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp05.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText05.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp06.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText06.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason06.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason06.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason06.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading06.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil06.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge06.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration06.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase06.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion06.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe06.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom06.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP06.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN06.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis06.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp07.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText07.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason07.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason07.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason07.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading07.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil07.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge07.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration07.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase07.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion07.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe07.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom07.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP07.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN07.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis07.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp08.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText08.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp09.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText09.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason09.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason09.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason09.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading09.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil09.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge09.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration09.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion09.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe09.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom09.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP09.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN09.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis09.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp10.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText10.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp11.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText11.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-CoreNeedleBiopsyPrimaerGleason11.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsySekundaerGleason11.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-CoreNeedleBiopsyProzentGleason11.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGleasonGrading11.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.html">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumoranteil11.html">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href="Observation-CoreNeedleBiopsyTumorbefallinLaenge11.html">Observation Total linear mm of carcinoma</a></li><li><a href="Observation-CoreNeedleBiopsyPerineuraleInfiltration11.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyLymphovaskulaereInvasion11.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyTumornachweisInFettgewebe11.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-CoreNeedleBiopsyASAP11.html">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href="Observation-CoreNeedleBiopsyHighGradePIN11.html">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyGranulomatoeseProstatitis11.html">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href="Observation-CoreNeedleBiopsyHistoTyp12.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-CoreNeedleBiopsyMorphText12.html">Observation Histology type in Cancer specimen Narrative</a></li></ul></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 26, 2026 12:53+0100">2026-01-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
