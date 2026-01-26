@@ -1,5 +1,8 @@
 This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter **S3**) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter **EAU**).
 
+S3 Guideline on Prostate Cancer (long version 8.1): https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom
+EAU Guidelines on Prostate Cancer 2025: https://uroweb.org/guidelines/prostate-cancer
+
 ---
 
 ### What is the prostate?

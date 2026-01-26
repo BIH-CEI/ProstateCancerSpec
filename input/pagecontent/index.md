@@ -63,9 +63,11 @@ This IG builds upon:
 - **MII Pathology Module** [de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0): Grouper and Finding Observations, ServiceRequests and DiagnosticReports
 
 and also asures the compatibility to: 
-- **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles
-- **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base]: Core patient and procedure profiles
-- **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank]: Specimen management
+- **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles (harmonized), PSA-Level etc.
+
+- **MII Base Module** [de.medizininformatikinitiative.kerndatensatz.base v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base): Core patient and procedure profiles
+
+- **MII Biobank Module** [de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank): Specimens (inherited in patho)
 
 #### Standards Compliance
 

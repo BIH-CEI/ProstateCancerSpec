@@ -1,6 +1,6 @@
 // Patient 1 - erhält CoreNeedleBiopsy und anschließend TransurethralResection
 Instance: Patient1
-InstanceOf: Patient
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Patient
 Usage: #example
 Title: "Patient 1 - Biopsie und TUR-P"
 Description: "Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält"
@@ -14,7 +14,7 @@ Description: "Patient der zuerst eine Stanzbiopsie und anschließend eine transu
 
 // Patient 2 - erhält TransurethralEnucleation und anschließend RadicalProstatectomy
 Instance: Patient2
-InstanceOf: Patient
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Patient
 Usage: #example
 Title: "Patient 2 - Enukleation und Prostatektomie"
 Description: "Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält"
