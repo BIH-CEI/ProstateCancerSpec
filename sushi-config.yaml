@@ -47,13 +47,21 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
+pages:
+  index.md:
+    title: Prostate Cancer Specification
+  clinical-context.md:
+    title: Clinical Context
+  motivation.md:
+    title: Motivation
+  biopsy-specimens.md:
+    title: Biopsy Specimens
+  prostatectomy-specimens.md:
+    title: Prostatectomy Specimens
+  tur-enucleation-specimens.md:
+    title: TUR-Enucleation Specimens
+  tur-resection-specimens.md:
+    title: TUR-Resection Specimens
 #     complexExamples.xml:
 #
 #
@@ -78,7 +86,7 @@ dependencies:
 menu:
   Home: index.html
   Clinical Context: clinical-context.html
-  Artifacts: artifacts.html
+  Motivation: motivation.html
   Core Needle Biopsy:
     ServiceRequest: ServiceRequest-CoreNeedleBiopsyRequest.html
     Specimens: biopsy-specimens.html
@@ -108,6 +116,7 @@ menu:
     DiagnosticConclusionGrouper: Observation-TransurethralResectionDiagnosticConclusionGrouper.html
     DiagnosticReport: DiagnosticReport-TransurethralResectionReport.html
     Composition: Composition-TransurethralResectionComposition.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ProstateCancerSpec"] ; # 
   fhir:title [ fhir:v "Prostate Cancer Specification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-26T12:53:42+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-26T14:22:09+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH CEI" ] ;
@@ -9310,26 +9310,7 @@
            fhir:v "index.html"^^xsd:anyURI ;
            fhir:l fhir:index.html
          ] ;
-         fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "biopsy-specimens.html"^^xsd:anyURI ;
-             fhir:l fhir:biopsy-specimens.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "biopsy-specimens.html"^^xsd:anyURI ;
-           fhir:l fhir:biopsy-specimens.html
-         ] ;
-         fhir:title [ fhir:v "Biopsy Specimens" ] ;
+         fhir:title [ fhir:v "Prostate Cancer Specification" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -9349,6 +9330,44 @@
            fhir:l fhir:clinical-context.html
          ] ;
          fhir:title [ fhir:v "Clinical Context" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "motivation.html"^^xsd:anyURI ;
+             fhir:l fhir:motivation.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "motivation.html"^^xsd:anyURI ;
+           fhir:l fhir:motivation.html
+         ] ;
+         fhir:title [ fhir:v "Motivation" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "biopsy-specimens.html"^^xsd:anyURI ;
+             fhir:l fhir:biopsy-specimens.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "biopsy-specimens.html"^^xsd:anyURI ;
+           fhir:l fhir:biopsy-specimens.html
+         ] ;
+         fhir:title [ fhir:v "Biopsy Specimens" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -9386,7 +9405,7 @@
            fhir:v "tur-enucleation-specimens.html"^^xsd:anyURI ;
            fhir:l fhir:tur-enucleation-specimens.html
          ] ;
-         fhir:title [ fhir:v "Tur Enucleation Specimens" ] ;
+         fhir:title [ fhir:v "TUR-Enucleation Specimens" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -9405,7 +9424,7 @@
            fhir:v "tur-resection-specimens.html"^^xsd:anyURI ;
            fhir:l fhir:tur-resection-specimens.html
          ] ;
-         fhir:title [ fhir:v "Tur Resection Specimens" ] ;
+         fhir:title [ fhir:v "TUR-Resection Specimens" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

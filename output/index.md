@@ -1,16 +1,16 @@
-# Home - Prostate Cancer Specification v0.1.0
+# Prostate Cancer Specification - Prostate Cancer Specification v0.1.0
 
 * [**Table of Contents**](toc.md)
-* **Home**
+* **Prostate Cancer Specification**
 
-## Home
+## Prostate Cancer Specification
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
 | Draft as of 2026-01-26 | *Computable Name*:ProstateCancerSpec |
 
-This Implementation Guide defines FHIR profiles and examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
+This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
 ### Scope and Purpose
 
@@ -82,9 +82,9 @@ This IG builds upon:
 
 and also asures the compatibility to:
 
-* **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles
-* **MII Base Module** (de.medizininformatikinitiative.kerndatensatz.base v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base]: Core patient and procedure profiles
-* **MII Biobank Module** (de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0)[https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank]: Specimen management
+* **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles (harmonized), PSA-Level etc.
+* **MII Base Module** [de.medizininformatikinitiative.kerndatensatz.base v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base): Core patient and procedure profiles
+* **MII Biobank Module** [de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank): Specimens (inherited in patho)
 
 #### Standards Compliance
 
@@ -116,7 +116,7 @@ and also asures the compatibility to:
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-01-26T12:53:42+01:00",
+  "date" : "2026-01-26T14:22:09+01:00",
   "publisher" : "BIH CEI",
   "contact" : [
     {
@@ -6167,18 +6167,7 @@ and also asures the compatibility to:
             }
           ],
           "nameUrl" : "index.html",
-          "title" : "Home",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "biopsy-specimens.html"
-            }
-          ],
-          "nameUrl" : "biopsy-specimens.html",
-          "title" : "Biopsy Specimens",
+          "title" : "Prostate Cancer Specification",
           "generation" : "markdown"
         },
         {
@@ -6190,6 +6179,28 @@ and also asures the compatibility to:
           ],
           "nameUrl" : "clinical-context.html",
           "title" : "Clinical Context",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "motivation.html"
+            }
+          ],
+          "nameUrl" : "motivation.html",
+          "title" : "Motivation",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "biopsy-specimens.html"
+            }
+          ],
+          "nameUrl" : "biopsy-specimens.html",
+          "title" : "Biopsy Specimens",
           "generation" : "markdown"
         },
         {
@@ -6211,7 +6222,7 @@ and also asures the compatibility to:
             }
           ],
           "nameUrl" : "tur-enucleation-specimens.html",
-          "title" : "Tur Enucleation Specimens",
+          "title" : "TUR-Enucleation Specimens",
           "generation" : "markdown"
         },
         {
@@ -6222,7 +6233,7 @@ and also asures the compatibility to:
             }
           ],
           "nameUrl" : "tur-resection-specimens.html",
-          "title" : "Tur Resection Specimens",
+          "title" : "TUR-Resection Specimens",
           "generation" : "markdown"
         }
       ]

@@ -17,7 +17,7 @@
     <a href="clinical-context.html">Clinical Context</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="motivation.html">Motivation</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
@@ -121,5 +121,8 @@
         <a href="Composition-TransurethralResectionComposition.html">Composition</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>

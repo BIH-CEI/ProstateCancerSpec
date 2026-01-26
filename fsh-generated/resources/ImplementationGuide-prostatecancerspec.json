@@ -3091,17 +3091,22 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "biopsy-specimens.html",
-          "title": "Biopsy Specimens",
+          "title": "Prostate Cancer Specification",
           "generation": "markdown"
         },
         {
           "nameUrl": "clinical-context.html",
           "title": "Clinical Context",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "motivation.html",
+          "title": "Motivation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "biopsy-specimens.html",
+          "title": "Biopsy Specimens",
           "generation": "markdown"
         },
         {
@@ -3111,12 +3116,12 @@
         },
         {
           "nameUrl": "tur-enucleation-specimens.html",
-          "title": "Tur Enucleation Specimens",
+          "title": "TUR-Enucleation Specimens",
           "generation": "markdown"
         },
         {
           "nameUrl": "tur-resection-specimens.html",
-          "title": "Tur Resection Specimens",
+          "title": "TUR-Resection Specimens",
           "generation": "markdown"
         }
       ]

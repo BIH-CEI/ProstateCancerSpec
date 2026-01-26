@@ -11,7 +11,7 @@
   <name value="ProstateCancerSpec"/>
   <title value="Prostate Cancer Specification"/>
   <status value="draft"/>
-  <date value="2026-01-26T12:53:42+01:00"/>
+  <date value="2026-01-26T14:22:09+01:00"/>
   <publisher value="BIH CEI"/>
   <contact>
     <name value="BIH CEI"/>
@@ -4645,15 +4645,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="biopsy-specimens.html"/>
-        </extension>
-        <nameUrl value="biopsy-specimens.html"/>
-        <title value="Biopsy Specimens"/>
+        <title value="Prostate Cancer Specification"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -4662,6 +4654,22 @@
         </extension>
         <nameUrl value="clinical-context.html"/>
         <title value="Clinical Context"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="motivation.html"/>
+        </extension>
+        <nameUrl value="motivation.html"/>
+        <title value="Motivation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="biopsy-specimens.html"/>
+        </extension>
+        <nameUrl value="biopsy-specimens.html"/>
+        <title value="Biopsy Specimens"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -4677,7 +4685,7 @@
           <valueUrl value="tur-enucleation-specimens.html"/>
         </extension>
         <nameUrl value="tur-enucleation-specimens.html"/>
-        <title value="Tur Enucleation Specimens"/>
+        <title value="TUR-Enucleation Specimens"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -4685,7 +4693,7 @@
           <valueUrl value="tur-resection-specimens.html"/>
         </extension>
         <nameUrl value="tur-resection-specimens.html"/>
-        <title value="Tur Resection Specimens"/>
+        <title value="TUR-Resection Specimens"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -10,7 +10,7 @@
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-01-26T12:53:42+01:00",
+  "date" : "2026-01-26T14:22:09+01:00",
   "publisher" : "BIH CEI",
   "contact" : [{
     "name" : "BIH CEI",
@@ -5184,16 +5184,7 @@
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "Home",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "biopsy-specimens.html"
-        }],
-        "nameUrl" : "biopsy-specimens.html",
-        "title" : "Biopsy Specimens",
+        "title" : "Prostate Cancer Specification",
         "generation" : "markdown"
       },
       {
@@ -5203,6 +5194,24 @@
         }],
         "nameUrl" : "clinical-context.html",
         "title" : "Clinical Context",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "motivation.html"
+        }],
+        "nameUrl" : "motivation.html",
+        "title" : "Motivation",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "biopsy-specimens.html"
+        }],
+        "nameUrl" : "biopsy-specimens.html",
+        "title" : "Biopsy Specimens",
         "generation" : "markdown"
       },
       {
@@ -5220,7 +5229,7 @@
           "valueUrl" : "tur-enucleation-specimens.html"
         }],
         "nameUrl" : "tur-enucleation-specimens.html",
-        "title" : "Tur Enucleation Specimens",
+        "title" : "TUR-Enucleation Specimens",
         "generation" : "markdown"
       },
       {
@@ -5229,7 +5238,7 @@
           "valueUrl" : "tur-resection-specimens.html"
         }],
         "nameUrl" : "tur-resection-specimens.html",
-        "title" : "Tur Resection Specimens",
+        "title" : "TUR-Resection Specimens",
         "generation" : "markdown"
       }]
     },

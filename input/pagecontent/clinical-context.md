@@ -1,7 +1,8 @@
 This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter **S3**) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter **EAU**).
 
-S3 Guideline on Prostate Cancer (long version 8.1): https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom
-EAU Guidelines on Prostate Cancer 2025: https://uroweb.org/guidelines/prostate-cancer
+[S3 Guideline on Prostate Cancer (long version 8.1)](https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom)
+
+[EAU Guidelines on Prostate Cancer 2025](https://uroweb.org/guidelines/prostate-cancer)
 
 ---
 
@@ -136,13 +137,55 @@ Active surveillance is aimed at men with low-risk tumours and longer life expect
 
 S3 primarily recommends active surveillance for localised low-risk prostate cancer (S3, recommendation 6.6; pp. 116 f.). EAU considers active surveillance the standard option for low-risk tumours (EAU, pp. 97–99).
 
-#### Surgery (radical prostatectomy)
+#### Surgical and endoscopic procedures on the prostate
 
-In radical prostatectomy, the entire prostate and seminal vesicles, and depending on risk also regional lymph nodes, are removed (S3, pp. 136–138; EAU, pp. 99–103).
+As part of the diagnosis and treatment of prostate cancer, different procedures on the prostate are used. They have different goals: some are used to confirm the diagnosis, others aim at cure, others mainly at relieving urinary symptoms.
 
-- This procedure is suitable for men with localised or selected locally advanced tumours and a life expectancy of at least about 10 years (S3, p. 136 f.; EAU, pp. 99 f., 102 f.).
-- Possible side effects are urinary incontinence and erectile dysfunction (S3, pp. 136 f., 359 ff.; EAU, p. 119 f.).
-- Nerve-sparing techniques can be used if the risk of extracapsular extension is low (EAU, p. 100).
+#### Prostate core needle biopsy (CoreNeedleBiopsy)
+
+Prostate core needle biopsy is a **diagnostic** procedure.
+
+- **When is it performed?**  
+  It is performed when there is a justified suspicion of prostate cancer, for example due to an elevated PSA value, an abnormal digital rectal examination or suspicious lesions on multiparametric MRI. It can also be used during follow-up in the context of active surveillance.  
+- **Why is it performed?**  
+  Only a tissue sample can reliably show whether prostate cancer is present and how aggressive it is (ISUP grade/Gleason score). These findings are crucial for staging and treatment planning.  
+- **What is done?**  
+  Under image guidance (usually ultrasound, often with MRI fusion), a thin hollow needle is used to take several small cylinders of tissue (“cores”) from different regions of the prostate. Today, a transperineal approach is often used to reduce the risk of infection. The removed tissue is then examined under the microscope in a pathology laboratory.
+
+#### Radical prostatectomy (RadicalProstatectomy)
+
+Radical prostatectomy is a **curative surgical** procedure.
+
+- **When is it performed?**  
+  It is used for localised or selected locally advanced prostate cancer when there is a realistic chance of cure and life expectancy is sufficiently long.  
+- **Why is it performed?**  
+  The goal is to remove the tumour completely. The removed organ also allows for very precise pathological examination, which provides important information for prognosis and the need for additional treatments.  
+- **What is done?**  
+  The entire prostate and the seminal vesicles are removed, and depending on the patient’s risk profile, lymph nodes in the pelvis may also be removed. The operation can be performed as open surgery, laparoscopically or with robotic assistance. Where oncologically feasible, nerve-sparing techniques are used to better preserve continence and erectile function.
+
+#### Transurethral enucleation of the prostate (TransurethralEnucleation, e.g. HoLEP/ThuLEP)
+
+Transurethral enucleation is mainly a **function-improving** procedure for a markedly enlarged prostate; it can also be used in men with prostate cancer to relieve urinary symptoms.
+
+- **When is it performed?**  
+  It is used in men with significantly enlarged prostates and pronounced urinary symptoms (e.g. weak stream, residual urine, repeated urinary retention), especially in large glands. In the context of prostate cancer, it is considered when there is a relevant narrowing of the urethra in addition to the tumour that needs to be treated.  
+- **Why is it performed?**  
+  The aim is to remove the inner, obstructing part of the prostate (the adenoma) almost completely in order to relieve the urethra and significantly improve urine flow. In patients with prostate cancer, the main goal is usually symptom relief, not complete tumour removal.  
+- **What is done?**  
+  Using an endoscope inserted through the urethra, special instruments (often a laser, for example in HoLEP) are used to separate and “shell out” the inner prostate tissue from the outer capsule. The freed tissue is then pushed into the bladder, fragmented (morcellated) and removed. The tissue is examined histologically and can provide information about known or incidentally detected prostate cancer.
+
+#### Transurethral resection of the prostate (TURP, TransurethralResection)
+
+TURP is an established **standard procedure for benign prostate enlargement**, and in prostate cancer it is mainly used **palliatively** to relieve symptoms.
+
+- **When is it performed?**  
+  It is used in men with significant urinary problems due to narrowing of the urethra by an enlarged prostate, for example in urinary retention or recurrent urinary tract infections. In advanced or metastatic prostate cancer, TURP can be needed when rapid relief of bladder outlet obstruction is necessary.  
+- **Why is it performed?**  
+  The aim is to improve urine flow, reduce residual urine and prevent complications such as urinary retention or infections. In the context of prostate cancer, TURP is not intended to cure the cancer but to relieve symptoms and improve quality of life.  
+- **What is done?**  
+  Through an endoscope passed via the urethra, an electrical loop is used to shave off the inner prostate tissue layer by layer; the removed “chips” of tissue are flushed out. This tissue is also examined histologically and can provide information about the presence and extent of prostate cancer.
+
+---
 
 #### Radiotherapy
 

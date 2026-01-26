@@ -2,13 +2,14 @@
 
 ## Pages
 
-* [Home](index.md)
+* [](index.md)
 * [Artifacts Summary](artifacts.md)
+* [Motivation](motivation.md)
 * [Clinical Context](clinical-context.md)
-* [Tur Enucleation Specimens](tur-enucleation-specimens.md)
+* [TUR-Enucleation Specimens](tur-enucleation-specimens.md)
 * [Biopsy Specimens](biopsy-specimens.md)
 * [Prostatectomy Specimens](prostatectomy-specimens.md)
-* [Tur Resection Specimens](tur-resection-specimens.md)
+* [TUR-Resection Specimens](tur-resection-specimens.md)
 
 ## Resources
 

@@ -1,9 +1,9 @@
-# Tur Resection Specimens - Prostate Cancer Specification v0.1.0
+# TUR-Resection Specimens - Prostate Cancer Specification v0.1.0
 
 * [**Table of Contents**](toc.md)
-* **Tur Resection Specimens**
+* **TUR-Resection Specimens**
 
-## Tur Resection Specimens
+## TUR-Resection Specimens
 
 This page shows all specimen instances for the transurethral resection example. The resection includes 1 Part, 5 Blocks, and 10 Slides.
 

@@ -1,9 +1,9 @@
-# Tur Enucleation Specimens - Prostate Cancer Specification v0.1.0
+# TUR-Enucleation Specimens - Prostate Cancer Specification v0.1.0
 
 * [**Table of Contents**](toc.md)
-* **Tur Enucleation Specimens**
+* **TUR-Enucleation Specimens**
 
-## Tur Enucleation Specimens
+## TUR-Enucleation Specimens
 
 This page shows all specimen instances for the transurethral enucleation example. The enucleation includes 1 Part, 5 Blocks, and 10 Slides.
 
