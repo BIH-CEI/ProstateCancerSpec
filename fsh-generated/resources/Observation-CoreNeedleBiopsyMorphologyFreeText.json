@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsyMorphologyFreeText",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "33731-1",
+        "system": "http://loinc.org",
+        "display": "Histology type in Cancer specimen Narrative"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2023-03-15",
+  "valueString": "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
+}

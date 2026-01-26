@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsyTumoranteil02",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22635-7",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "385396009",
+        "system": "http://snomed.info/sct",
+        "display": "Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+  "valueQuantity": {
+    "value": 60,
+    "code": "%",
+    "system": "http://unitsofmeasure.org",
+    "unit": "%"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "716903009",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of middle part of peripheral zone of right half prostate (body structure)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/CoreNeedleBiopsySpecimen02Slide"
+  }
+}

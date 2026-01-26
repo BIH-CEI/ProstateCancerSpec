@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "RadicalProstatectomyTNMpN",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1229951005",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer pN0 (qualifier value)"
+      }
+    ],
+    "text": "pN0 - No regional lymph node metastasis"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21900-6",
+        "system": "http://loinc.org",
+        "display": "Regional lymph nodes.pathology [Class] Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "effectiveDateTime": "2024-03-20"
+}

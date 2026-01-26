@@ -1,0 +1,86 @@
+{
+  "resourceType": "Observation",
+  "id": "TransurethralResectionDiagnosticConclusionGrouper",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/TransurethralResectionServiceRequest"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/TransurethralResectionHistologicalTypeICDO3"
+    },
+    {
+      "reference": "Observation/TransurethralResectionMorphologyFreeText"
+    },
+    {
+      "reference": "Observation/TransurethralResectionPrimaryGleasonPattern"
+    },
+    {
+      "reference": "Observation/TransurethralResectionSecondaryGleasonPattern"
+    },
+    {
+      "reference": "Observation/TransurethralResectionGleasonScoreTotal"
+    },
+    {
+      "reference": "Observation/TransurethralResectionPercentageGleason45"
+    },
+    {
+      "reference": "Observation/TransurethralResectionGradingGroupISUP"
+    },
+    {
+      "reference": "Observation/TransurethralResectionIntraductalCarcinoma"
+    },
+    {
+      "reference": "Observation/TransurethralResectionInvasiveCribriformCarcinoma"
+    },
+    {
+      "reference": "Observation/TransurethralResectionProstaticTissueInvolved"
+    },
+    {
+      "reference": "Observation/TransurethralResectionExtraprostaticExtension"
+    },
+    {
+      "reference": "Observation/TransurethralResectionSeminalVesicleInvasion"
+    },
+    {
+      "reference": "Observation/TransurethralResectionLymphovascularInvasion"
+    },
+    {
+      "reference": "Observation/TransurethralResectionPerineuralInfiltration"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "22637-3"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2024-04-12"
+}

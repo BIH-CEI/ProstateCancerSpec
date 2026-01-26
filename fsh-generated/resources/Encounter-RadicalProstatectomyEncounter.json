@@ -1,0 +1,17 @@
+{
+  "resourceType": "Encounter",
+  "id": "RadicalProstatectomyEncounter",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/encounters",
+      "value": "PSA-OP-2024"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  }
+}

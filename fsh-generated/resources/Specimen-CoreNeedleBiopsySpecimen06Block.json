@@ -1,0 +1,84 @@
+{
+  "resourceType": "Specimen",
+  "id": "CoreNeedleBiopsySpecimen06Block",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E2024_001-06-Block-A"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value": "E2024_001"
+  },
+  "parent": [
+    {
+      "reference": "Specimen/CoreNeedleBiopsySpecimen06Part"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-01-16T10:40:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "434472006",
+          "system": "http://snomed.info/sct",
+          "display": "Fixation of tissue (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434472006",
+            "display": "Fixation of tissue (procedure)"
+          }
+        ]
+      },
+      "description": "Formalinfixierung und Paraffineinbettung",
+      "timeDateTime": "2024-01-16T08:00:00+01:00"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1003707006",
+        "display": "Paraffin block (physical object)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

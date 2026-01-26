@@ -1,0 +1,87 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "TransurethralEnucleationServiceRequest",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PLAC",
+            "display": "Placer ID"
+          }
+        ]
+      },
+      "system": "http://example.hospital.de/serviceRequest",
+      "value": "PATH-RPT-2024-004"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "726007",
+          "display": "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "266569009",
+          "system": "http://snomed.info/sct",
+          "display": "Benign prostatic hyperplasia"
+        }
+      ]
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/TransurethralEnucleationSpecimenPart"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/TransurethralEnucleationPSAPre"
+    },
+    {
+      "reference": "Procedure/TransurethralEnucleationProcedure"
+    },
+    {
+      "reference": "Condition/TransurethralEnucleationDiagnosisBPH"
+    }
+  ],
+  "intent": "order",
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "236205008",
+        "system": "http://snomed.info/sct",
+        "display": "Simple prostatectomy (procedure)"
+      }
+    ]
+  },
+  "encounter": {
+    "reference": "Encounter/TransurethralEnucleationEncounter"
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "requester": {
+    "reference": "Practitioner/UrologistPractitioner"
+  }
+}

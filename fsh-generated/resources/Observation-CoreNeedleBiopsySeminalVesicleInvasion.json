@@ -1,0 +1,60 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsySeminalVesicleInvasion",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "44626-0",
+        "system": "http://loinc.org",
+        "display": "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2023-03-15",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "47492008",
+        "system": "http://snomed.info/sct",
+        "display": "Not seen (qualifier value)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsyMorphText03",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22635-7",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "33731-1",
+        "system": "http://loinc.org",
+        "display": "Histology type in Cancer specimen Narrative"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+  "valueString": "Benigne Prostatadrüsen mit regelrechten azinären Strukturen. Vereinzelt Fibrose. Kein Anhalt für maligne Veränderungen.",
+  "bodySite": {
+    "coding": [
+      {
+        "code": "716904003",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of apex part of peripheral zone of right half prostate (body structure)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/CoreNeedleBiopsySpecimen03Slide"
+  }
+}

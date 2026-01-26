@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "TransurethralEnucleationDiagnosisBPH",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85ml. IPSS 24. Indikation zur Enukleation gestellt."
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "N40.0",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "display": "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "encounter": {
+    "reference": "Encounter/TransurethralEnucleationEncounter"
+  },
+  "onsetDateTime": "2023-06-01",
+  "recordedDate": "2024-02-01"
+}

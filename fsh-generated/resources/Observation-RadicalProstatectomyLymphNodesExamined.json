@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "RadicalProstatectomyLymphNodesExamined",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+    }
+  ],
+  "valueQuantity": {
+    "value": 12,
+    "unit": "lymph nodes",
+    "system": "http://unitsofmeasure.org",
+    "code": "{LymphNodes}"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21894-1",
+        "system": "http://loinc.org",
+        "display": "Regional lymph nodes examined [#] in Cancer specimen"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "effectiveDateTime": "2024-03-20"
+}

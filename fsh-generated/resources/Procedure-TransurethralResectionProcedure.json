@@ -1,0 +1,43 @@
+{
+  "resourceType": "Procedure",
+  "id": "TransurethralResectionProcedure",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-601",
+        "display": "Transurethrale Exzision und Destruktion von Prostatagewebe",
+        "version": "2020"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "176258007",
+        "display": "Transurethral resection of prostate (procedure)"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "387713003",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical procedure (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "performedDateTime": "2024-04-10T10:30:00+01:00"
+}

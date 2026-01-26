@@ -1,0 +1,3034 @@
+[
+  {
+    "outputFile": "Composition-CoreNeedleBiopsyComposition.json",
+    "fshName": "CoreNeedleBiopsyComposition",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/composition.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Composition-RadicalProstatectomyComposition.json",
+    "fshName": "RadicalProstatectomyComposition",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/composition.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Composition-TransurethralEnucleationComposition.json",
+    "fshName": "TransurethralEnucleationComposition",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/composition.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Composition-TransurethralResectionComposition.json",
+    "fshName": "TransurethralResectionComposition",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/composition.fsh",
+    "startLine": 5,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Condition-CoreNeedleBiopsyDiagnosisConfirmed.json",
+    "fshName": "CoreNeedleBiopsyDiagnosisConfirmed",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnosis.fsh",
+    "startLine": 23,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Condition-CoreNeedleBiopsyDiagnosisSuspicion.json",
+    "fshName": "CoreNeedleBiopsyDiagnosisSuspicion",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnosis.fsh",
+    "startLine": 2,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Condition-RadicalProstatectomyDiagnosisPreOp.json",
+    "fshName": "RadicalProstatectomyDiagnosisPreOp",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnosis.fsh",
+    "startLine": 2,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Condition-TransurethralEnucleationDiagnosisBPH.json",
+    "fshName": "TransurethralEnucleationDiagnosisBPH",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnosis.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Condition-TransurethralEnucleationDiagnosisPCa.json",
+    "fshName": "TransurethralEnucleationDiagnosisPCa",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnosis.fsh",
+    "startLine": 18,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Condition-TransurethralResectionDiagnosisBPH.json",
+    "fshName": "TransurethralResectionDiagnosisBPH",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnosis.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Condition-TransurethralResectionDiagnosisPCa.json",
+    "fshName": "TransurethralResectionDiagnosisPCa",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnosis.fsh",
+    "startLine": 18,
+    "endLine": 38
+  },
+  {
+    "outputFile": "DiagnosticReport-CoreNeedleBiopsyReport.json",
+    "fshName": "CoreNeedleBiopsyReport",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-report.fsh",
+    "startLine": 2,
+    "endLine": 73
+  },
+  {
+    "outputFile": "DiagnosticReport-RadicalProstatectomyReport.json",
+    "fshName": "RadicalProstatectomyReport",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-report.fsh",
+    "startLine": 2,
+    "endLine": 41
+  },
+  {
+    "outputFile": "DiagnosticReport-TransurethralEnucleationReport.json",
+    "fshName": "TransurethralEnucleationReport",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-report.fsh",
+    "startLine": 2,
+    "endLine": 51
+  },
+  {
+    "outputFile": "DiagnosticReport-TransurethralResectionReport.json",
+    "fshName": "TransurethralResectionReport",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-report.fsh",
+    "startLine": 2,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Encounter-CoreNeedleBiopsyEncounter.json",
+    "fshName": "CoreNeedleBiopsyEncounter",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/encounter.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Encounter-RadicalProstatectomyEncounter.json",
+    "fshName": "RadicalProstatectomyEncounter",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/encounter.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Encounter-TransurethralEnucleationEncounter.json",
+    "fshName": "TransurethralEnucleationEncounter",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/encounter.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Encounter-TransurethralResectionEncounter.json",
+    "fshName": "TransurethralResectionEncounter",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/encounter.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP.json",
+    "fshName": "CoreNeedleBiopsyASAP",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 441,
+    "endLine": 455
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP01.json",
+    "fshName": "CoreNeedleBiopsyASAP01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 268,
+    "endLine": 283
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP02.json",
+    "fshName": "CoreNeedleBiopsyASAP02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 584,
+    "endLine": 599
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP04.json",
+    "fshName": "CoreNeedleBiopsyASAP04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 268,
+    "endLine": 283
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP06.json",
+    "fshName": "CoreNeedleBiopsyASAP06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 619,
+    "endLine": 634
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP07.json",
+    "fshName": "CoreNeedleBiopsyASAP07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 268,
+    "endLine": 283
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP09.json",
+    "fshName": "CoreNeedleBiopsyASAP09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 619,
+    "endLine": 634
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyASAP11.json",
+    "fshName": "CoreNeedleBiopsyASAP11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 303,
+    "endLine": 318
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyClinicalMStaging.json",
+    "fshName": "CoreNeedleBiopsyClinicalMStaging",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/tnm-staging.fsh",
+    "startLine": 28,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyClinicalNStaging.json",
+    "fshName": "CoreNeedleBiopsyClinicalNStaging",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/tnm-staging.fsh",
+    "startLine": 15,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyClinicalTStaging.json",
+    "fshName": "CoreNeedleBiopsyClinicalTStaging",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/tnm-staging.fsh",
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.json",
+    "fshName": "CoreNeedleBiopsyDiagnosticConclusionGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 6,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyExtraprostaticExtensionLocation.json",
+    "fshName": "CoreNeedleBiopsyExtraprostaticExtensionLocation",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 407,
+    "endLine": 421
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading01.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 104,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading02.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 420,
+    "endLine": 437
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading04.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 104,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading06.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 455,
+    "endLine": 472
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading07.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 104,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading09.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 455,
+    "endLine": 472
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading11.json",
+    "fshName": "CoreNeedleBiopsyGleasonGrading11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 139,
+    "endLine": 156
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGleasonScoreTotal.json",
+    "fshName": "CoreNeedleBiopsyGleasonScoreTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 165,
+    "endLine": 183
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGradingGroupISUP.json",
+    "fshName": "CoreNeedleBiopsyGradingGroupISUP",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 206,
+    "endLine": 222
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 304,
+    "endLine": 319
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis02.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 620,
+    "endLine": 635
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis04.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 304,
+    "endLine": 319
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis06.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 655,
+    "endLine": 670
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis07.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 304,
+    "endLine": 319
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis09.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 655,
+    "endLine": 670
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis11.json",
+    "fshName": "CoreNeedleBiopsyGranulomatoeseProstatitis11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 339,
+    "endLine": 354
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyGranulomatousProstatiti.json",
+    "fshName": "CoreNeedleBiopsyGranulomatousProstatiti",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 475,
+    "endLine": 489
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 458,
+    "endLine": 472
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN01.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 286,
+    "endLine": 301
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN02.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 602,
+    "endLine": 617
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN04.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 286,
+    "endLine": 301
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN06.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 637,
+    "endLine": 652
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN07.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 286,
+    "endLine": 301
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN09.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 637,
+    "endLine": 652
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN11.json",
+    "fshName": "CoreNeedleBiopsyHighGradePIN11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 321,
+    "endLine": 336
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp01.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 10,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp02.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 326,
+    "endLine": 341
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp03.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp03",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 642,
+    "endLine": 657
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp04.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 10,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp05.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp05",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 326,
+    "endLine": 341
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp06.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 361,
+    "endLine": 376
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp07.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 10,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp08.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp08",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 326,
+    "endLine": 341
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp09.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 361,
+    "endLine": 376
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp10.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp10",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 10,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp11.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 45,
+    "endLine": 60
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistoTyp12.json",
+    "fshName": "CoreNeedleBiopsyHistoTyp12",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 361,
+    "endLine": 376
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistologicalGradeWHO.json",
+    "fshName": "CoreNeedleBiopsyHistologicalGradeWHO",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 225,
+    "endLine": 239
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyHistologicalTypeICDO3.json",
+    "fshName": "CoreNeedleBiopsyHistologicalTypeICDO3",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 62,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyICDOVersion.json",
+    "fshName": "CoreNeedleBiopsyICDOVersion",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 96,
+    "endLine": 110
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraductalCarcinoma.json",
+    "fshName": "CoreNeedleBiopsyIntraductalCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 424,
+    "endLine": 438
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 250,
+    "endLine": 265
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 566,
+    "endLine": 581
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 250,
+    "endLine": 265
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom06.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 601,
+    "endLine": 616
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom07.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 250,
+    "endLine": 265
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom09.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 601,
+    "endLine": 616
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.json",
+    "fshName": "CoreNeedleBiopsyIntraduktalesKarzinom11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 285,
+    "endLine": 300
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovascularInvasion.json",
+    "fshName": "CoreNeedleBiopsyLymphovascularInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 373,
+    "endLine": 387
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 214,
+    "endLine": 229
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 530,
+    "endLine": 545
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 214,
+    "endLine": 229
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion06.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 565,
+    "endLine": 580
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion07.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 214,
+    "endLine": 229
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion09.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 565,
+    "endLine": 580
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion11.json",
+    "fshName": "CoreNeedleBiopsyLymphovaskulaereInvasion11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 249,
+    "endLine": 264
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount01.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 93,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount02.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 135,
+    "endLine": 151
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount03.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount03",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 177,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount04.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 219,
+    "endLine": 235
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount05.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount05",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 261,
+    "endLine": 277
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount06.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 303,
+    "endLine": 319
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount07.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 345,
+    "endLine": 361
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount08.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount08",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 387,
+    "endLine": 403
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount09.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 429,
+    "endLine": 445
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount10.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount10",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 471,
+    "endLine": 487
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 513,
+    "endLine": 529
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicCylinderCount12",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 555,
+    "endLine": 571
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicGrouper.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 6,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality01.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 583,
+    "endLine": 599
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality02.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 602,
+    "endLine": 618
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality03.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality03",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 621,
+    "endLine": 637
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality04.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 640,
+    "endLine": 656
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality05.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality05",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 659,
+    "endLine": 675
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality06.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 678,
+    "endLine": 694
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality07.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 701,
+    "endLine": 717
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality08.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality08",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 720,
+    "endLine": 736
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality09.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 739,
+    "endLine": 755
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality10.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality10",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 758,
+    "endLine": 774
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality11.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 777,
+    "endLine": 793
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLaterality12.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLaterality12",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 796,
+    "endLine": 812
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength01.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 74,
+    "endLine": 90
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength02.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 116,
+    "endLine": 132
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength03.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength03",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 158,
+    "endLine": 174
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength04.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 200,
+    "endLine": 216
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength05.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength05",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 242,
+    "endLine": 258
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength06.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 284,
+    "endLine": 300
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength07.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 326,
+    "endLine": 342
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength08.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength08",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 368,
+    "endLine": 384
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength09.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 410,
+    "endLine": 426
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength10.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength10",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 452,
+    "endLine": 468
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength11.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 494,
+    "endLine": 510
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMacroscopicLength12.json",
+    "fshName": "CoreNeedleBiopsyMacroscopicLength12",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/macroscopy.fsh",
+    "startLine": 536,
+    "endLine": 552
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMicroscopicGrouper.json",
+    "fshName": "CoreNeedleBiopsyMicroscopicGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-grouper.fsh",
+    "startLine": 6,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText01.json",
+    "fshName": "CoreNeedleBiopsyMorphText01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 28,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText02.json",
+    "fshName": "CoreNeedleBiopsyMorphText02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 344,
+    "endLine": 359
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText03.json",
+    "fshName": "CoreNeedleBiopsyMorphText03",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 660,
+    "endLine": 675
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText04.json",
+    "fshName": "CoreNeedleBiopsyMorphText04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 28,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText05.json",
+    "fshName": "CoreNeedleBiopsyMorphText05",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 344,
+    "endLine": 359
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText06.json",
+    "fshName": "CoreNeedleBiopsyMorphText06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 379,
+    "endLine": 394
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText07.json",
+    "fshName": "CoreNeedleBiopsyMorphText07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 28,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText08.json",
+    "fshName": "CoreNeedleBiopsyMorphText08",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 344,
+    "endLine": 359
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText09.json",
+    "fshName": "CoreNeedleBiopsyMorphText09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 379,
+    "endLine": 394
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText10.json",
+    "fshName": "CoreNeedleBiopsyMorphText10",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 28,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText11.json",
+    "fshName": "CoreNeedleBiopsyMorphText11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 63,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphText12.json",
+    "fshName": "CoreNeedleBiopsyMorphText12",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 379,
+    "endLine": 394
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyMorphologyFreeText.json",
+    "fshName": "CoreNeedleBiopsyMorphologyFreeText",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 79,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPercentageGleason45.json",
+    "fshName": "CoreNeedleBiopsyPercentageGleason45",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 186,
+    "endLine": 203
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPercentageTumorTotal.json",
+    "fshName": "CoreNeedleBiopsyPercentageTumorTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 299,
+    "endLine": 316
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuralInfiltration.json",
+    "fshName": "CoreNeedleBiopsyPerineuralInfiltration",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 339,
+    "endLine": 353
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration01.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 178,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration02.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 494,
+    "endLine": 509
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration04.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 178,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration06.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 529,
+    "endLine": 544
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration07.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 178,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration09.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 529,
+    "endLine": 544
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration11.json",
+    "fshName": "CoreNeedleBiopsyPerineuraleInfiltration11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 213,
+    "endLine": 228
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPeriprostataticFatInvasion.json",
+    "fshName": "CoreNeedleBiopsyPeriprostataticFatInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 390,
+    "endLine": 404
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPositiveCoresLeft.json",
+    "fshName": "CoreNeedleBiopsyPositiveCoresLeft",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 261,
+    "endLine": 276
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPositiveCoresRight.json",
+    "fshName": "CoreNeedleBiopsyPositiveCoresRight",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 242,
+    "endLine": 257
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason01.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 46,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason02.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 362,
+    "endLine": 379
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason04.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 46,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason06.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 397,
+    "endLine": 414
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason07.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 46,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason09.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 397,
+    "endLine": 414
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason11.json",
+    "fshName": "CoreNeedleBiopsyPrimaerGleason11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 81,
+    "endLine": 98
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyPrimaryGleasonPattern.json",
+    "fshName": "CoreNeedleBiopsyPrimaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 113,
+    "endLine": 136
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason01.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 86,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason02.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 402,
+    "endLine": 417
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason04.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 86,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason06.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 437,
+    "endLine": 452
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason07.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 86,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason09.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 437,
+    "endLine": 452
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyProzentGleason11.json",
+    "fshName": "CoreNeedleBiopsyProzentGleason11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 121,
+    "endLine": 136
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyRatioPositiveCores.json",
+    "fshName": "CoreNeedleBiopsyRatioPositiveCores",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 279,
+    "endLine": 296
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySecondaryGleasonPattern.json",
+    "fshName": "CoreNeedleBiopsySecondaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 139,
+    "endLine": 162
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason01.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 66,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason02.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 382,
+    "endLine": 399
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason04.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 66,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason06.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 417,
+    "endLine": 434
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason07.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 66,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason09.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 417,
+    "endLine": 434
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySekundaerGleason11.json",
+    "fshName": "CoreNeedleBiopsySekundaerGleason11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 101,
+    "endLine": 118
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsySeminalVesicleInvasion.json",
+    "fshName": "CoreNeedleBiopsySeminalVesicleInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 356,
+    "endLine": 370
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorLengthTotal.json",
+    "fshName": "CoreNeedleBiopsyTumorLengthTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
+    "startLine": 319,
+    "endLine": 336
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil01.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 142,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil02.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 458,
+    "endLine": 473
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil04.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 142,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil06.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 493,
+    "endLine": 508
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil07.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 142,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil09.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 493,
+    "endLine": 508
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumoranteil11.json",
+    "fshName": "CoreNeedleBiopsyTumoranteil11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 177,
+    "endLine": 192
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge01.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 160,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge02.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 476,
+    "endLine": 491
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge04.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 160,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge06.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 511,
+    "endLine": 526
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge07.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 160,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge09.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 511,
+    "endLine": 526
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumorbefallinLaenge11.json",
+    "fshName": "CoreNeedleBiopsyTumorbefallinLaenge11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 195,
+    "endLine": 210
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe01.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 232,
+    "endLine": 247
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe02.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 548,
+    "endLine": 563
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe04.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 232,
+    "endLine": 247
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe06.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 583,
+    "endLine": 598
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe07.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 232,
+    "endLine": 247
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe09.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 583,
+    "endLine": 598
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisInFettgewebe11.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisInFettgewebe11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 267,
+    "endLine": 282
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase01.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 196,
+    "endLine": 211
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase02.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 512,
+    "endLine": 527
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase04.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 196,
+    "endLine": 211
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase06.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 547,
+    "endLine": 562
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase07.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 196,
+    "endLine": 211
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 547,
+    "endLine": 562
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.json",
+    "fshName": "CoreNeedleBiopsyTumornachweisinSamenblase11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 231,
+    "endLine": 246
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen01",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 124,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen02",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-01-03.fsh",
+    "startLine": 440,
+    "endLine": 455
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen04",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 124,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen06",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-04-06.fsh",
+    "startLine": 475,
+    "endLine": 490
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen07",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 124,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen09",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-07-09.fsh",
+    "startLine": 475,
+    "endLine": 490
+  },
+  {
+    "outputFile": "Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.json",
+    "fshName": "CoreNeedleBiopsyVerhaeltnisPositiverStanzen11",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/microscopy-findings-10-12.fsh",
+    "startLine": 159,
+    "endLine": 174
+  },
+  {
+    "outputFile": "Observation-PSAPreCoreNeedleBiopsy.json",
+    "fshName": "PSAPreCoreNeedleBiopsy",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/supportingInfo-psa-level.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyBladderNeckInvasion.json",
+    "fshName": "RadicalProstatectomyBladderNeckInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 355,
+    "endLine": 370
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyDiagnosticConclusionGrouper.json",
+    "fshName": "RadicalProstatectomyDiagnosticConclusionGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 6,
+    "endLine": 41
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyExtraprostaticExtension.json",
+    "fshName": "RadicalProstatectomyExtraprostaticExtension",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 282,
+    "endLine": 298
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyGleasonScoreTotal.json",
+    "fshName": "RadicalProstatectomyGleasonScoreTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 138,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyGradingGroupISUP.json",
+    "fshName": "RadicalProstatectomyGradingGroupISUP",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 181,
+    "endLine": 198
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyHistologicalTypeICDO3.json",
+    "fshName": "RadicalProstatectomyHistologicalTypeICDO3",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 44,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyICDOVersion.json",
+    "fshName": "RadicalProstatectomyICDOVersion",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 80,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyIntraductalCarcinoma.json",
+    "fshName": "RadicalProstatectomyIntraductalCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 201,
+    "endLine": 216
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.json",
+    "fshName": "RadicalProstatectomyInvasiveCribriformCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 219,
+    "endLine": 235
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyLymphNodesExamined.json",
+    "fshName": "RadicalProstatectomyLymphNodesExamined",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 391,
+    "endLine": 408
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyLymphNodesPositive.json",
+    "fshName": "RadicalProstatectomyLymphNodesPositive",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 411,
+    "endLine": 428
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyLymphovascularInvasion.json",
+    "fshName": "RadicalProstatectomyLymphovascularInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 319,
+    "endLine": 334
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicGrouper.json",
+    "fshName": "RadicalProstatectomyMacroscopicGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 6,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.json",
+    "fshName": "RadicalProstatectomyMacroscopicLymphNodesLaterality",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 136,
+    "endLine": 152
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicLymphNodesPresent.json",
+    "fshName": "RadicalProstatectomyMacroscopicLymphNodesPresent",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 116,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicProstateDepth.json",
+    "fshName": "RadicalProstatectomyMacroscopicProstateDepth",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 96,
+    "endLine": 113
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicProstateHeight.json",
+    "fshName": "RadicalProstatectomyMacroscopicProstateHeight",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 76,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicProstateWeight.json",
+    "fshName": "RadicalProstatectomyMacroscopicProstateWeight",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 37,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicProstateWidth.json",
+    "fshName": "RadicalProstatectomyMacroscopicProstateWidth",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 56,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.json",
+    "fshName": "RadicalProstatectomyMacroscopicSeminalVesicleLength",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 175,
+    "endLine": 191
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.json",
+    "fshName": "RadicalProstatectomyMacroscopicSeminalVesiclesPresent",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/macroscopy.fsh",
+    "startLine": 155,
+    "endLine": 172
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMarginStatus.json",
+    "fshName": "RadicalProstatectomyMarginStatus",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 373,
+    "endLine": 388
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyMorphologyFreeText.json",
+    "fshName": "RadicalProstatectomyMorphologyFreeText",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 62,
+    "endLine": 77
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyPSAPostoperative.json",
+    "fshName": "RadicalProstatectomyPSAPostoperative",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/psa-followup.fsh",
+    "startLine": 2,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyPercentageGleason45.json",
+    "fshName": "RadicalProstatectomyPercentageGleason45",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 160,
+    "endLine": 178
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyPerineuralInfiltration.json",
+    "fshName": "RadicalProstatectomyPerineuralInfiltration",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 337,
+    "endLine": 352
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyPrimaryGleasonPattern.json",
+    "fshName": "RadicalProstatectomyPrimaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 98,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyProstaticTissueInvolved.json",
+    "fshName": "RadicalProstatectomyProstaticTissueInvolved",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 260,
+    "endLine": 279
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomySecondaryGleasonPattern.json",
+    "fshName": "RadicalProstatectomySecondaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 118,
+    "endLine": 135
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomySeminalVesicleInvasion.json",
+    "fshName": "RadicalProstatectomySeminalVesicleInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 301,
+    "endLine": 316
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyTNMpN.json",
+    "fshName": "RadicalProstatectomyTNMpN",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 450,
+    "endLine": 465
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyTNMpT.json",
+    "fshName": "RadicalProstatectomyTNMpT",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 431,
+    "endLine": 447
+  },
+  {
+    "outputFile": "Observation-RadicalProstatectomyTumorVolume.json",
+    "fshName": "RadicalProstatectomyTumorVolume",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
+    "startLine": 238,
+    "endLine": 257
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationDiagnosticConclusionGrouper.json",
+    "fshName": "TransurethralEnucleationDiagnosticConclusionGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 6,
+    "endLine": 33
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationExtraprostaticExtension.json",
+    "fshName": "TransurethralEnucleationExtraprostaticExtension",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 234,
+    "endLine": 250
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationGleasonScoreTotal.json",
+    "fshName": "TransurethralEnucleationGleasonScoreTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 112,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationGradingGroupISUP.json",
+    "fshName": "TransurethralEnucleationGradingGroupISUP",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 155,
+    "endLine": 172
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationHistologicalTypeICDO3.json",
+    "fshName": "TransurethralEnucleationHistologicalTypeICDO3",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 36,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationIntraductalCarcinoma.json",
+    "fshName": "TransurethralEnucleationIntraductalCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 175,
+    "endLine": 190
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.json",
+    "fshName": "TransurethralEnucleationInvasiveCribriformCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 193,
+    "endLine": 209
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationLymphovascularInvasion.json",
+    "fshName": "TransurethralEnucleationLymphovascularInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 271,
+    "endLine": 286
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicDepth.json",
+    "fshName": "TransurethralEnucleationMacroscopicDepth",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 94,
+    "endLine": 111
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicGrouper.json",
+    "fshName": "TransurethralEnucleationMacroscopicGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 6,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicLength.json",
+    "fshName": "TransurethralEnucleationMacroscopicLength",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 54,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicLymphNodeDissection.json",
+    "fshName": "TransurethralEnucleationMacroscopicLymphNodeDissection",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 134,
+    "endLine": 151
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicSeminalVesicles.json",
+    "fshName": "TransurethralEnucleationMacroscopicSeminalVesicles",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 114,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicWeight.json",
+    "fshName": "TransurethralEnucleationMacroscopicWeight",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 35,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMacroscopicWidth.json",
+    "fshName": "TransurethralEnucleationMacroscopicWidth",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/macroscopy.fsh",
+    "startLine": 74,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationMorphologyFreeText.json",
+    "fshName": "TransurethralEnucleationMorphologyFreeText",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 54,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationPSAPre.json",
+    "fshName": "TransurethralEnucleationPSAPre",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/supportingInfo-psa-level.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationPercentageGleason45.json",
+    "fshName": "TransurethralEnucleationPercentageGleason45",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 134,
+    "endLine": 152
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationPerineuralInfiltration.json",
+    "fshName": "TransurethralEnucleationPerineuralInfiltration",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 289,
+    "endLine": 304
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationPrimaryGleasonPattern.json",
+    "fshName": "TransurethralEnucleationPrimaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 72,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationProstaticTissueInvolved.json",
+    "fshName": "TransurethralEnucleationProstaticTissueInvolved",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 212,
+    "endLine": 231
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationSecondaryGleasonPattern.json",
+    "fshName": "TransurethralEnucleationSecondaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 92,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Observation-TransurethralEnucleationSeminalVesicleInvasion.json",
+    "fshName": "TransurethralEnucleationSeminalVesicleInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
+    "startLine": 253,
+    "endLine": 268
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionDiagnosticConclusionGrouper.json",
+    "fshName": "TransurethralResectionDiagnosticConclusionGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 6,
+    "endLine": 33
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionExtraprostaticExtension.json",
+    "fshName": "TransurethralResectionExtraprostaticExtension",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 234,
+    "endLine": 250
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionGleasonScoreTotal.json",
+    "fshName": "TransurethralResectionGleasonScoreTotal",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 112,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionGradingGroupISUP.json",
+    "fshName": "TransurethralResectionGradingGroupISUP",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 155,
+    "endLine": 172
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionHistologicalTypeICDO3.json",
+    "fshName": "TransurethralResectionHistologicalTypeICDO3",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 36,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionIntraductalCarcinoma.json",
+    "fshName": "TransurethralResectionIntraductalCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 175,
+    "endLine": 190
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionInvasiveCribriformCarcinoma.json",
+    "fshName": "TransurethralResectionInvasiveCribriformCarcinoma",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 193,
+    "endLine": 209
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionLymphovascularInvasion.json",
+    "fshName": "TransurethralResectionLymphovascularInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 271,
+    "endLine": 286
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionMacroscopicGrouper.json",
+    "fshName": "TransurethralResectionMacroscopicGrouper",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/macroscopy.fsh",
+    "startLine": 6,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionMacroscopicLymphNodeDissection.json",
+    "fshName": "TransurethralResectionMacroscopicLymphNodeDissection",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/macroscopy.fsh",
+    "startLine": 71,
+    "endLine": 88
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionMacroscopicSeminalVesicles.json",
+    "fshName": "TransurethralResectionMacroscopicSeminalVesicles",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/macroscopy.fsh",
+    "startLine": 51,
+    "endLine": 68
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionMacroscopicWeight.json",
+    "fshName": "TransurethralResectionMacroscopicWeight",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/macroscopy.fsh",
+    "startLine": 32,
+    "endLine": 48
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionMorphologyFreeText.json",
+    "fshName": "TransurethralResectionMorphologyFreeText",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 54,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionPSAPre.json",
+    "fshName": "TransurethralResectionPSAPre",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/supportingInfo-psa-level.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionPercentageGleason45.json",
+    "fshName": "TransurethralResectionPercentageGleason45",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 134,
+    "endLine": 152
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionPerineuralInfiltration.json",
+    "fshName": "TransurethralResectionPerineuralInfiltration",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 289,
+    "endLine": 304
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionPrimaryGleasonPattern.json",
+    "fshName": "TransurethralResectionPrimaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 72,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionProstaticTissueInvolved.json",
+    "fshName": "TransurethralResectionProstaticTissueInvolved",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 212,
+    "endLine": 231
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionSecondaryGleasonPattern.json",
+    "fshName": "TransurethralResectionSecondaryGleasonPattern",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 92,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Observation-TransurethralResectionSeminalVesicleInvasion.json",
+    "fshName": "TransurethralResectionSeminalVesicleInvasion",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/diagnostic-conclusion.fsh",
+    "startLine": 253,
+    "endLine": 268
+  },
+  {
+    "outputFile": "Organization-PathologyLabOrganization.json",
+    "fshName": "PathologyLabOrganization",
+    "fshType": "Instance",
+    "fshFile": "examples/ContextResources/organization.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Patient-Patient1.json",
+    "fshName": "Patient1",
+    "fshType": "Instance",
+    "fshFile": "examples/ContextResources/patient.fsh",
+    "startLine": 2,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Patient-Patient2.json",
+    "fshName": "Patient2",
+    "fshType": "Instance",
+    "fshFile": "examples/ContextResources/patient.fsh",
+    "startLine": 16,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Practitioner-PathologistPractitioner.json",
+    "fshName": "PathologistPractitioner",
+    "fshType": "Instance",
+    "fshFile": "examples/ContextResources/practitioner.fsh",
+    "startLine": 2,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Practitioner-UrologistPractitioner.json",
+    "fshName": "UrologistPractitioner",
+    "fshType": "Instance",
+    "fshFile": "examples/ContextResources/practitioner.fsh",
+    "startLine": 17,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Procedure-TransurethralEnucleationProcedure.json",
+    "fshName": "TransurethralEnucleationProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/procedure.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Procedure-TransurethralResectionProcedure.json",
+    "fshName": "TransurethralResectionProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/procedure.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ServiceRequest-CoreNeedleBiopsyRequest.json",
+    "fshName": "CoreNeedleBiopsyRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/serviceRequest.fsh",
+    "startLine": 2,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ServiceRequest-RadicalProstatectomyServiceRequest.json",
+    "fshName": "RadicalProstatectomyServiceRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/serviceRequest.fsh",
+    "startLine": 2,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ServiceRequest-TransurethralEnucleationServiceRequest.json",
+    "fshName": "TransurethralEnucleationServiceRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/serviceRequest.fsh",
+    "startLine": 2,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ServiceRequest-TransurethralResectionServiceRequest.json",
+    "fshName": "TransurethralResectionServiceRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/serviceRequest.fsh",
+    "startLine": 2,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen01Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen01Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 47,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen01Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen01Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 5,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen01Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen01Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 76,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen02Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 150,
+    "endLine": 176
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen02Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 108,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen02Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 179,
+    "endLine": 205
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen03Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 253,
+    "endLine": 279
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen03Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 211,
+    "endLine": 249
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen03Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 282,
+    "endLine": 308
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen04Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 356,
+    "endLine": 382
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen04Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 314,
+    "endLine": 352
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen04Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 385,
+    "endLine": 411
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen05Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 458,
+    "endLine": 484
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen05Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 417,
+    "endLine": 455
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen05Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 487,
+    "endLine": 513
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen06Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 560,
+    "endLine": 586
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen06Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 519,
+    "endLine": 557
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen06Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 589,
+    "endLine": 615
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen07Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 662,
+    "endLine": 688
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen07Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 621,
+    "endLine": 659
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen07Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 691,
+    "endLine": 717
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen08Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 764,
+    "endLine": 790
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen08Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 723,
+    "endLine": 761
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen08Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 793,
+    "endLine": 819
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen09Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 866,
+    "endLine": 892
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen09Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 825,
+    "endLine": 863
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen09Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 895,
+    "endLine": 921
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen10Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 968,
+    "endLine": 994
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen10Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 927,
+    "endLine": 965
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen10Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 997,
+    "endLine": 1023
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen11Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1070,
+    "endLine": 1096
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen11Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1029,
+    "endLine": 1067
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen11Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1099,
+    "endLine": 1125
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Block.json",
+    "fshName": "CoreNeedleBiopsySpecimen12Block",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1172,
+    "endLine": 1198
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Part.json",
+    "fshName": "CoreNeedleBiopsySpecimen12Part",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1131,
+    "endLine": 1169
+  },
+  {
+    "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Slide.json",
+    "fshName": "CoreNeedleBiopsySpecimen12Slide",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
+    "startLine": 1201,
+    "endLine": 1227
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenBlock01.json",
+    "fshName": "RadicalProstatectomySpecimenBlock01",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 43,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenBlock02.json",
+    "fshName": "RadicalProstatectomySpecimenBlock02",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 135,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenBlock03.json",
+    "fshName": "RadicalProstatectomySpecimenBlock03",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 227,
+    "endLine": 253
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenPart.json",
+    "fshName": "RadicalProstatectomySpecimenPart",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 5,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide01A.json",
+    "fshName": "RadicalProstatectomySpecimenSlide01A",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 75,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide01B.json",
+    "fshName": "RadicalProstatectomySpecimenSlide01B",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 103,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide02A.json",
+    "fshName": "RadicalProstatectomySpecimenSlide02A",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 167,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide02B.json",
+    "fshName": "RadicalProstatectomySpecimenSlide02B",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 195,
+    "endLine": 221
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide03A.json",
+    "fshName": "RadicalProstatectomySpecimenSlide03A",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 259,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Specimen-RadicalProstatectomySpecimenSlide03B.json",
+    "fshName": "RadicalProstatectomySpecimenSlide03B",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
+    "startLine": 287,
+    "endLine": 313
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock01.json",
+    "fshName": "TransurethralEnucleationSpecimenBlock01",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 43,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock02.json",
+    "fshName": "TransurethralEnucleationSpecimenBlock02",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 135,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock03.json",
+    "fshName": "TransurethralEnucleationSpecimenBlock03",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 227,
+    "endLine": 253
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock04.json",
+    "fshName": "TransurethralEnucleationSpecimenBlock04",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 319,
+    "endLine": 345
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock05.json",
+    "fshName": "TransurethralEnucleationSpecimenBlock05",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 411,
+    "endLine": 437
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenPart.json",
+    "fshName": "TransurethralEnucleationSpecimenPart",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 5,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide01A.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide01A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 75,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide01B.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide01B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 103,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide02A.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide02A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 167,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide02B.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide02B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 195,
+    "endLine": 221
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide03A.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide03A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 259,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide03B.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide03B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 287,
+    "endLine": 313
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide04A.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide04A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 351,
+    "endLine": 377
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide04B.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide04B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 379,
+    "endLine": 405
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide05A.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide05A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 443,
+    "endLine": 469
+  },
+  {
+    "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide05B.json",
+    "fshName": "TransurethralEnucleationSpecimenSlide05B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
+    "startLine": 471,
+    "endLine": 497
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenBlock01.json",
+    "fshName": "TransurethralResectionSpecimenBlock01",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 43,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenBlock02.json",
+    "fshName": "TransurethralResectionSpecimenBlock02",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 135,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenBlock03.json",
+    "fshName": "TransurethralResectionSpecimenBlock03",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 227,
+    "endLine": 253
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenBlock04.json",
+    "fshName": "TransurethralResectionSpecimenBlock04",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 319,
+    "endLine": 345
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenBlock05.json",
+    "fshName": "TransurethralResectionSpecimenBlock05",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 411,
+    "endLine": 437
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenPart.json",
+    "fshName": "TransurethralResectionSpecimenPart",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 5,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide01A.json",
+    "fshName": "TransurethralResectionSpecimenSlide01A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 75,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide01B.json",
+    "fshName": "TransurethralResectionSpecimenSlide01B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 103,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide02A.json",
+    "fshName": "TransurethralResectionSpecimenSlide02A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 167,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide02B.json",
+    "fshName": "TransurethralResectionSpecimenSlide02B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 195,
+    "endLine": 221
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide03A.json",
+    "fshName": "TransurethralResectionSpecimenSlide03A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 259,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide03B.json",
+    "fshName": "TransurethralResectionSpecimenSlide03B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 287,
+    "endLine": 313
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide04A.json",
+    "fshName": "TransurethralResectionSpecimenSlide04A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 351,
+    "endLine": 377
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide04B.json",
+    "fshName": "TransurethralResectionSpecimenSlide04B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 379,
+    "endLine": 405
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide05A.json",
+    "fshName": "TransurethralResectionSpecimenSlide05A",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 443,
+    "endLine": 469
+  },
+  {
+    "outputFile": "Specimen-TransurethralResectionSpecimenSlide05B.json",
+    "fshName": "TransurethralResectionSpecimenSlide05B",
+    "fshType": "Instance",
+    "fshFile": "examples/TransurethralResection/specimens.fsh",
+    "startLine": 471,
+    "endLine": 497
+  }
+]

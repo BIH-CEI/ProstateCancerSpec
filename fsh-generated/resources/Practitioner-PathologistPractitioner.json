@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "PathologistPractitioner",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/practitioner-ids",
+      "value": "PATH-001"
+    }
+  ],
+  "name": [
+    {
+      "prefix": [
+        "Dr."
+      ],
+      "given": [
+        "Maria"
+      ],
+      "family": "Schneider"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "394595002",
+            "system": "http://snomed.info/sct",
+            "display": "Pathology"
+          }
+        ]
+      }
+    }
+  ]
+}

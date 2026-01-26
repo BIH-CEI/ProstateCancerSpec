@@ -1,0 +1,84 @@
+{
+  "resourceType": "Specimen",
+  "id": "TransurethralEnucleationSpecimenBlock05",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E2024_004-Block-05"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value": "E2024_004"
+  },
+  "parent": [
+    {
+      "reference": "Specimen/TransurethralEnucleationSpecimenPart"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-04-11T10:50:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "434472006",
+          "system": "http://snomed.info/sct",
+          "display": "Fixation of tissue (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434472006",
+            "display": "Fixation of tissue (procedure)"
+          }
+        ]
+      },
+      "description": "Formalinfixierung und Paraffineinbettung",
+      "timeDateTime": "2024-04-11T08:20:00+01:00"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1003707006",
+        "display": "Paraffin block (physical object)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/Patient2"
+  }
+}

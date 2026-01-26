@@ -1,0 +1,17 @@
+{
+  "resourceType": "Encounter",
+  "id": "TransurethralResectionEncounter",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/encounters",
+      "value": "PSA-TUR-2024"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Procedure",
+  "id": "TransurethralEnucleationProcedure",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-603",
+        "display": "Enukleation der Prostata",
+        "version": "2020"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "236205008",
+        "display": "Simple prostatectomy (procedure)"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "387713003",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical procedure (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "performedDateTime": "2024-05-10T10:30:00+01:00"
+}

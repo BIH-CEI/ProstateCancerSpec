@@ -1,0 +1,60 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsyICDOVersion",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "397005006",
+        "system": "http://snomed.info/sct",
+        "display": "World Health Organization tumor classification (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "effectiveDateTime": "2023-03-15",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "33",
+        "system": "urn:oid:1.2.276.0.76.3.1.131.1.5.153",
+        "display": "ICD-O-3 2. Auflage 2019"
+      }
+    ]
+  }
+}

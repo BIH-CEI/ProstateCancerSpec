@@ -1,0 +1,94 @@
+{
+  "resourceType": "Composition",
+  "id": "TransurethralEnucleationComposition",
+  "identifier": {
+    "system": "http://example.hospital.de/pathology-reports",
+    "value": "PATH-COMP-2024-004",
+    "type": {
+      "coding": [
+        {
+          "code": "ACSN",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "display": "Accession ID"
+        }
+      ]
+    }
+  },
+  "type": {
+    "coding": [
+      {
+        "code": "PATH",
+        "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+      },
+      {
+        "code": "721967005",
+        "system": "http://snomed.info/sct",
+        "display": "Tissue pathology biopsy report"
+      }
+    ]
+  },
+  "author": [
+    {
+      "reference": "Organization/PathologyLabOrganization",
+      "display": "Pathologisches Institut"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "legal",
+      "party": {
+        "reference": "Organization/PathologyLabOrganization"
+      }
+    }
+  ],
+  "event": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "PATREPE",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+            }
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "reference": "ServiceRequest/TransurethralEnucleationServiceRequest"
+        }
+      ]
+    }
+  ],
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "DiagnosticReport/TransurethralEnucleationReport"
+        }
+      ],
+      "title": "Pathologiebefundbericht",
+      "code": {
+        "coding": [
+          {
+            "code": "11526-1",
+            "system": "http://loinc.org",
+            "display": "Pathology study"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "date": "2024-04-15T08:00:00+01:00",
+  "title": "Histopathologischer Befundbericht - Prostata Enucleation",
+  "encounter": {
+    "reference": "Encounter/TransurethralEnucleationEncounter"
+  },
+  "custodian": {
+    "reference": "Organization/PathologyLabOrganization"
+  }
+}

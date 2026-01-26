@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "CoreNeedleBiopsyClinicalMStaging",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"
+    ]
+  },
+  "note": [
+    {
+      "text": "Keine Fernmetastasen nachweisbar"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21907-1",
+        "system": "http://loinc.org",
+        "display": "Distant metastases.clinical [Class] Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1229973008",
+        "system": "http://snomed.info/sct",
+        "display": "M0 category"
+      }
+    ]
+  },
+  "effectiveDateTime": "2024-01-22T10:00:00+01:00"
+}

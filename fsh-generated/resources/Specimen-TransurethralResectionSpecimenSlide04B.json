@@ -1,0 +1,84 @@
+{
+  "resourceType": "Specimen",
+  "id": "TransurethralResectionSpecimenSlide04B",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E2024_003-HE-04B"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value": "E2024_003"
+  },
+  "parent": [
+    {
+      "reference": "Specimen/TransurethralResectionSpecimenBlock04"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-04-12T08:35:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "127790008",
+          "system": "http://snomed.info/sct",
+          "display": "Hematoxylin and eosin staining method (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "127790008",
+            "display": "Hematoxylin and eosin staining method (procedure)"
+          }
+        ]
+      },
+      "description": "HE-Färbung",
+      "timeDateTime": "2024-04-12T09:35:00+01:00"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "430685002",
+        "display": "Histopathology slide (physical object)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

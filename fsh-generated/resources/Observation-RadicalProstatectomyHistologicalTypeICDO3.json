@@ -1,0 +1,63 @@
+{
+  "resourceType": "Observation",
+  "id": "RadicalProstatectomyHistologicalTypeICDO3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "22637-3",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "59847-4",
+        "system": "http://loinc.org",
+        "display": "Histology and Behavior ICD-O-3 Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "specimen": {
+    "reference": "Specimen/RadicalProstatectomySpecimenSlide01A"
+  },
+  "effectiveDateTime": "2024-03-20",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "8140/3",
+        "system": "urn:oid:2.16.840.1.113883.6.43.1",
+        "display": "Azinäres Adenokarzinom"
+      }
+    ]
+  }
+}

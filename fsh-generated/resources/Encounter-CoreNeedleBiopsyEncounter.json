@@ -1,0 +1,17 @@
+{
+  "resourceType": "Encounter",
+  "id": "CoreNeedleBiopsyEncounter",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/encounters",
+      "value": "PATH-2024"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "IMB"
+  },
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

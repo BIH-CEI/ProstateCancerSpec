@@ -1,0 +1,17 @@
+{
+  "resourceType": "Encounter",
+  "id": "TransurethralEnucleationEncounter",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/encounters",
+      "value": "PSA-ENUC-2024"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/Patient2"
+  }
+}

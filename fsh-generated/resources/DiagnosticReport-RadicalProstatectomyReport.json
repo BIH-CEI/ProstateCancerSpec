@@ -1,0 +1,101 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "RadicalProstatectomyReport",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "ACSN",
+            "display": "Accession ID"
+          }
+        ]
+      },
+      "system": "http://example.hospital.de/diagnostic-reports",
+      "value": "PATH-RPT-2024-002"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "SP",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "display": "Surgical Pathology"
+        }
+      ]
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenPart"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenBlock01"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide01A"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide01B"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenBlock02"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide02A"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide02B"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenBlock03"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide03A"
+    },
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenSlide03B"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/RadicalProstatectomyMacroscopicGrouper"
+    },
+    {
+      "reference": "Observation/RadicalProstatectomyDiagnosticConclusionGrouper"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "60568-3",
+        "display": "Pathology Synoptic report"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "effectiveDateTime": "2024-03-20T17:00:00+01:00",
+  "issued": "2024-03-21T08:00:00+01:00",
+  "conclusion": "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
+}
