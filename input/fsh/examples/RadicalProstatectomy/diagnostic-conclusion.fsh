@@ -11,9 +11,9 @@ Description: "Grouper for all diagnostic conclusion findings in prostatectomy sp
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22637-3
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 
 // hasMember references für Prostatektomie-spezifische Findings
@@ -51,10 +51,10 @@ Description: "Histological type according to ICD-O-3 classification"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#59847-4 "Histology and Behavior ICD-O-3 Cancer"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 
@@ -69,10 +69,10 @@ Description: "Free text description of tumor morphology"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33731-1 "Histology type in Cancer specimen Narrative"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueString = "Konventionelles Adenokarzinom der Prostata mit gemischten Gleason-Mustern"
 
@@ -86,11 +86,11 @@ Description: "Version of ICD-O classification used"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#21899-0 "ICD-O-3 Version"
-* subject = Reference(RadicalProstatectomyPatient)
+* code = $sct#397005006 "World Health Organization tumor classification (observable entity)"
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueString = "ICD-O-3.2"
 
@@ -107,10 +107,10 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44641-9 "Gleason pattern.primary in Prostate tumor"
 * code.coding[+] = $sct#384994009 "Primary Gleason pattern (observable entity)"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#369771005 "Gleason Pattern 3 (finding)"
 
@@ -127,10 +127,10 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44642-7 "Gleason pattern.secondary in Prostate tumor"
 * code.coding[+] = $sct#384995005 "Secondary Gleason pattern (observable entity)"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 
@@ -147,10 +147,10 @@ Description: "Total Gleason score in prostatectomy specimen"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
 * code.coding[+] = $sct#385377005 "Gleason score (observable entity)"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999007 "Gleason grade (Score) 7"
 * derivedFrom[0] = Reference(RadicalProstatectomyPrimaryGleasonPattern)
@@ -167,10 +167,10 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueQuantity.value = 30
 * valueQuantity.unit = "%"
@@ -190,10 +190,10 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#1279715005 "International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)"
 
@@ -208,10 +208,10 @@ Description: "Presence of intraductal carcinoma of the prostate"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162814007 "Non-infiltrating intraductal carcinoma (morphologic abnormality)"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -227,10 +227,10 @@ Description: "Presence of invasive cribriform carcinoma"
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162816009 "Invasive cribriform carcinoma (morphologic abnormality)"
 * code.text = "Invasive cribriform carcinoma"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -246,10 +246,10 @@ Description: "Total tumor volume in cubic centimeters"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33728-7 "Size.maximum dimension of tumor in Prostate"
 * code.text = "Tumor volume"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueQuantity.value = 2.8
 * valueQuantity.unit = "cm3"
@@ -268,10 +268,10 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * code.text = "Prostatic tissue involved by tumour"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueQuantity.value = 25
 * valueQuantity.unit = "%"
@@ -290,10 +290,10 @@ Description: "Presence of extraprostatic extension"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44625-2 "Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols"
 * code.text = "Extraprostatic extension"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -308,10 +308,10 @@ Description: "Tumor invasion into seminal vesicles"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44626-0 "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -326,10 +326,10 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33761-8 "Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -344,10 +344,10 @@ Description: "Presence of perineural invasion in cancer specimen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#92837-4 "Perineural invasion [Presence] in Cancer specimen"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -361,11 +361,11 @@ Description: "Microscopic urinary bladder neck invasion"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#44624-5 "Bladder neck invasion [Identifier] in Specimen by CAP cancer protocols"
-* subject = Reference(RadicalProstatectomyPatient)
+* code = $loinc#84906-7 "Bladder neck involvement of Prostate tumor"
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 
@@ -380,10 +380,10 @@ Description: "Status of surgical resection margins"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44669-0 "Surgical margin involvement by tumor [Identifier] in Prostate Qualitative"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#1228937002 "Surgical margins uninvolved by tumor (finding)"
 
@@ -398,9 +398,9 @@ Description: "Number of lymph nodes examined"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#21894-1 "Regional lymph nodes examined [#] in Cancer specimen"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueQuantity.value = 12
 * valueQuantity.unit = "lymph nodes"
@@ -418,9 +418,9 @@ Description: "Number of lymph nodes with tumor involvement"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#21893-3 "Regional lymph nodes positive [#] in Cancer specimen by Light microscopy"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueQuantity.value = 0
 * valueQuantity.unit = "lymph nodes"
@@ -438,10 +438,10 @@ Description: "Pathological primary tumor stage according to TNM classification"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#21899-0 "Primary tumor.pathology Cancer"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#1229947008 "American Joint Committee on Cancer pT2c (qualifier value)"
 * valueCodeableConcept.text = "pT2c - Tumor involves both sides"
@@ -457,9 +457,9 @@ Description: "Pathological regional lymph node stage according to TNM classifica
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * effectiveDateTime = "2024-03-20"
-* performer = Reference(RadicalProstatectomyPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyServiceRequest)
 * valueCodeableConcept = $sct#1229951005 "American Joint Committee on Cancer pN0 (qualifier value)"
 * valueCodeableConcept.text = "pN0 - No regional lymph node metastasis"

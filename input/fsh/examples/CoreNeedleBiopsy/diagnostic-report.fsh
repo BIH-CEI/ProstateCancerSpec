@@ -10,11 +10,11 @@ Description: "Umfangreicher Pathologiebericht für Core Needle Biopsys"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
 * code = $loinc#60568-3 "Pathology Synoptic report"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * basedOn = Reference(CoreNeedleBiopsyRequest)
 * effectiveDateTime = "2024-01-20T15:00:00+01:00"
 * issued = "2024-01-20T15:30:00+01:00"
-* performer = Reference(CoreNeedleBiopsyPathologistPractitioner)
+* performer = Reference(PathologistPractitioner)
 // Alle 12 Prostatastanzen - Part, Block, Slide
 // Stanze 01
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen01Part)

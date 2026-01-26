@@ -9,7 +9,7 @@ Description: "PSA-Wert vor der Prostatastanzenentnahme"
 * category[+] = $loinc#26436-6 "Laboratory studies (set)"
 * category[+] = $loinc#LP7839-6 "Pathology"
 * code = $loinc#2857-1 "Prostate specific antigen [Mass/volume] in Serum or Plasma"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * valueQuantity
   * value = 12.8
   * unit = "ng/ml"

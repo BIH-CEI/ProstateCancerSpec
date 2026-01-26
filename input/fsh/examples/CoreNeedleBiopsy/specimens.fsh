@@ -30,11 +30,11 @@ Description: "Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:30:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
@@ -59,7 +59,7 @@ Description: "Paraffineinbettung der Prostatastanze 01"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen01Part)
 * collection
   * collectedDateTime = "2024-01-16T10:30:00+01:00"
@@ -88,7 +88,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen01Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -133,11 +133,11 @@ Description: "Tru-cut Biopsie aus der rechten lateralen Mitte (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:32:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716917000 "Structure of lateral middle regional part of peripheral zone of right half prostate (body structure)"
@@ -162,7 +162,7 @@ Description: "Paraffineinbettung der Prostatastanze 02"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen02Part)
 * collection
   * collectedDateTime = "2024-01-16T10:32:00+01:00"
@@ -191,7 +191,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 02"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen02Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -236,11 +236,11 @@ Description: "Tru-cut Biopsie aus der rechten lateralen Apex (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:34:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716934008 "Structure of apical part of peripheral zone of right half prostate (body structure)"
@@ -265,7 +265,7 @@ Description: "Paraffineinbettung der Prostatastanze 03"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen03Part)
 * collection
   * collectedDateTime = "2024-01-16T10:34:00+01:00"
@@ -294,7 +294,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 03"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen03Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -339,11 +339,11 @@ Description: "Tru-cut Biopsie aus der rechten medialen Basis (Übergangszone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:36:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716892006 "Structure of basal part of anterior fibromuscular stroma of right half prostate (body structure)"
@@ -368,7 +368,7 @@ Description: "Paraffineinbettung der Prostatastanze 04"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen04Part)
 * collection
   * collectedDateTime = "2024-01-16T10:36:00+01:00"
@@ -397,7 +397,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 04"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen04Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -442,11 +442,11 @@ Description: "Tru-cut Biopsie aus der rechten medialen Mitte (Übergangszone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:38:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716911004 "Structure of middle regional part of transition zone of right half prostate (body structure)"
@@ -470,7 +470,7 @@ Description: "Paraffineinbettung der Prostatastanze 05"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen05Part)
 * collection
   * collectedDateTime = "2024-01-16T10:38:00+01:00"
@@ -499,7 +499,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 05"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen05Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -544,11 +544,11 @@ Description: "Tru-cut Biopsie aus der rechten medialen Apex (anteriores fibromus
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:40:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
@@ -572,7 +572,7 @@ Description: "Paraffineinbettung der Prostatastanze 06"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen06Part)
 * collection
   * collectedDateTime = "2024-01-16T10:40:00+01:00"
@@ -601,7 +601,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 06"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen06Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -646,11 +646,11 @@ Description: "Tru-cut Biopsie aus der linken lateralen Basis (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:42:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
@@ -674,7 +674,7 @@ Description: "Paraffineinbettung der Prostatastanze 07"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen07Part)
 * collection
   * collectedDateTime = "2024-01-16T10:42:00+01:00"
@@ -703,7 +703,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 07"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen07Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -748,11 +748,11 @@ Description: "Tru-cut Biopsie aus der linken lateralen Mitte (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:44:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716918005 "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
@@ -776,7 +776,7 @@ Description: "Paraffineinbettung der Prostatastanze 08"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen08Part)
 * collection
   * collectedDateTime = "2024-01-16T10:44:00+01:00"
@@ -805,7 +805,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 08"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen08Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -850,11 +850,11 @@ Description: "Tru-cut Biopsie aus der linken lateralen Apex (periphere Zone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:46:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
@@ -878,7 +878,7 @@ Description: "Paraffineinbettung der Prostatastanze 09"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen09Part)
 * collection
   * collectedDateTime = "2024-01-16T10:46:00+01:00"
@@ -907,7 +907,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 09"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen09Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -952,11 +952,11 @@ Description: "Tru-cut Biopsie aus der linken medialen Basis (anteriores fibromus
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:48:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716893001 "Structure of basal part of anterior fibromuscular stroma of left half prostate (body structure)"
@@ -980,7 +980,7 @@ Description: "Paraffineinbettung der Prostatastanze 10"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen10Part)
 * collection
   * collectedDateTime = "2024-01-16T10:48:00+01:00"
@@ -1009,7 +1009,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 10"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen10Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -1054,11 +1054,11 @@ Description: "Tru-cut Biopsie aus der linken medialen Mitte (Übergangszone)"
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:50:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716912006 "Structure of middle regional part of transition zone of left half prostate (body structure)"
@@ -1082,7 +1082,7 @@ Description: "Paraffineinbettung der Prostatastanze 11"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen11Part)
 * collection
   * collectedDateTime = "2024-01-16T10:50:00+01:00"
@@ -1111,7 +1111,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 11"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen11Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"
@@ -1156,11 +1156,11 @@ Description: "Tru-cut Biopsie aus der linken medialen Apex (anteriores fibromusk
 
 * status = #available
 * type = $sct#309134005 "Prostate tru-cut biopsy sample"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * request = Reference(CoreNeedleBiopsyRequest)
 
 * collection
-  * collector = Reference(CoreNeedleBiopsyUrologistPractitioner)
+  * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-01-15T10:52:00+01:00"
   * method = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
   * bodySite = $sct#716910003 "Structure of middle regional part of anterior fibromuscular stroma of left half prostate (body structure)"
@@ -1184,7 +1184,7 @@ Description: "Paraffineinbettung der Prostatastanze 12"
   * value = "E2024_001"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen12Part)
 * collection
   * collectedDateTime = "2024-01-16T10:52:00+01:00"
@@ -1213,7 +1213,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 12"
   * value = "E2024_001"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * parent = Reference(CoreNeedleBiopsySpecimen12Block)
 * collection
   * collectedDateTime = "2024-01-17T08:00:00+01:00"

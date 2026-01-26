@@ -13,9 +13,9 @@ Description: "Anforderung für pathologische Aufarbeitung nach TUR-Prostata"
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
 * code = $sct#176258007 "Transurethral resection of prostate (procedure)"
 * encounter = Reference(TransurethralResectionEncounter)
-* subject = Reference(CoreNeedleBiopsyPatient)
-* requester = Reference(TransurethralResectionUrologist)
-* performer = Reference(TransurethralResectionPathologist)
+* subject = Reference(Patient1)
+* requester = Reference(UrologistPractitioner)
+* performer = Reference(PathologistPractitioner)
 * reasonCode = $sct#266569009 "Benign prostatic hyperplasia"
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * supportingInfo[+] = Reference(TransurethralResectionPSAPre)

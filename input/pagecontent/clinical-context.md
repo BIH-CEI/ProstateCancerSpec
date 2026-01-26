@@ -1,390 +1,206 @@
-# Klinischer Kontext: Prostatakarzinom
-
-Diese Seite bietet Informatikern und technischen Implementierern einen Überblick über den medizinischen Kontext des Prostatakarzinoms, um die FHIR-Profile und Beispiele dieses Implementation Guides besser zu verstehen.
-
-## Anatomie und Funktion der Prostata
-
-Die **Prostata** ist eine etwa kastaniengroße Drüse des männlichen Urogenitalsystems, die unterhalb der Harnblase liegt und die Harnröhre umschließt. Sie besteht aus mehreren anatomischen Zonen:
-
-- **Periphere Zone** (~70% des Drüsengewebes): Hier entstehen etwa 70-80% aller Prostatakarzinome
-- **Transitionalzone** (~5-10%): Ausgangspunkt der benignen Prostatahyperplasie (BPH)
-- **Zentrale Zone** (~20-25%)
-- **Anteriore fibromuskuläre Zone** (kein Drüsengewebe)
-
-Die Prostata produziert einen Teil der Samenflüssigkeit und ist eng mit den Samenblasen (Vesicula seminalis) verbunden.
-
-## Epidemiologie des Prostatakarzinoms
-
-Das **Prostatakarzinom** ist:
-- Die **häufigste Krebserkrankung** bei Männern in Deutschland (~60.000 Neuerkrankungen/Jahr)
-- Die **dritthäufigste krebsbedingte Todesursache** bei Männern
-- Eine Erkrankung des höheren Lebensalters (Medianalter bei Diagnose: ~72 Jahre)
-- In frühen Stadien oft asymptomatisch
-
-### Risikofaktoren
-- **Alter** (wichtigster Risikofaktor)
-- **Familiäre Belastung** (genetische Prädisposition bei ~10-15% der Fälle)
-- **Ethnizität** (höheres Risiko bei Männern afrikanischer Abstammung)
-
-## Diagnostische Pipeline
-
-Die Diagnostik des Prostatakarzinoms erfolgt in mehreren Schritten:
-
-### 1. PSA-Screening (Prostata-spezifisches Antigen)
-
-Der **PSA-Wert** im Blut ist ein wichtiger, aber **nicht-spezifischer** Marker:
-- **Normal**: < 4 ng/ml (altersabhängig)
-- **Graubereich**: 4-10 ng/ml
-- **Verdächtig**: > 10 ng/ml
-
-**Wichtig**: Erhöhte PSA-Werte können auch durch benigne Erkrankungen (BPH, Prostatitis) verursacht werden.
-
-Zusätzliche Parameter:
-- **PSA-Dichte**: PSA-Wert/Prostatavolumen
-- **PSA-Velocity**: Anstiegsgeschwindigkeit über die Zeit
-- **Freies PSA-Ratio**: Verhältnis freies/Gesamt-PSA
-
-### 2. Multiparametrische MRT (mpMRT)
-
-Bei Verdacht auf Prostatakarzinom wird zunehmend ein **mpMRT** vor der Biopsie durchgeführt:
-- **PI-RADS Score** (1-5): Bewertung verdächtiger Läsionen
-- PI-RADS 3-5: Biopsie-indikation
-- Ermöglicht gezielte Biopsie verdächtiger Areale
-
-### 3. Prostatabiopsie
-
-Die **systematische Stanzbiopsie** ist der Goldstandard zur Diagnosesicherung:
-
-#### Standardbiopsie (12-Core)
-- **12 Gewebeproben** (Stanzen) aus definierten Lokalisationen
-- 6 Stanzen pro Seite (links/rechts)
-- Systematische Abdeckung der peripheren Zone
-- **Beispiel in diesem IG**: [Core Needle Biopsy](ServiceRequest-CoreNeedleBiopsyRequest.html)
-
-#### Fusionsbiopsie
-- Kombination aus MRT-Bildern und Ultraschall
-- Gezielte Biopsie verdächtiger Läsionen (targeted biopsy)
-- Zusätzlich systematische Stanzen
-
-### 4. Erweiterte Diagnostik bei aggressiven Tumoren
-
-- **CT Thorax/Abdomen**: Bei Hochrisiko-Tumoren zum Ausschluss von Fernmetastasen
-- **Knochenszintigraphie/PSMA-PET**: Zum Nachweis von Knochenmetastasen
-- **Beckenlymphknoten-Staging**: Bei Risiko für Lymphknotenbefall
-
-## Pathologische Befundung
-
-Die pathologische Aufarbeitung ist entscheidend für Prognose und Therapieplanung.
-
-### Gleason-Score und ISUP-Grading
-
-Das **Gleason-Grading-System** (nach Donald Gleason, 2005 modifiziert nach Epstein) ist der wichtigste prognostische Marker:
-
-#### Gleason-Muster (1-5)
-- **Muster 3**: Gut differenzierte, einzelne Drüsen
-- **Muster 4**: Fusionierte/kribriforme Drüsen, schlecht differenziert
-- **Muster 5**: Keine Drüsenbildung, solide Tumorzellnester
-
-#### Gleason-Score
-Summe aus den beiden häufigsten Mustern:
-- **Primäres Gleason-Muster**: Am häufigsten vorliegendes Muster
-- **Sekundäres Gleason-Muster**: Zweithäufigstes Muster
-- **Gleason-Score**: Summe (z.B. 3+4=7)
-
-#### ISUP Grade Groups (WHO 2016)
-Vereinfachte Klassifikation für bessere Verständlichkeit:
-
-| ISUP Grade | Gleason-Score | Prognose |
-|------------|---------------|----------|
-| Grade Group 1 | 3+3=6 | Günstig |
-| Grade Group 2 | 3+4=7 | Intermediär günstig |
-| Grade Group 3 | 4+3=7 | Intermediär ungünstig |
-| Grade Group 4 | 4+4=8 | Ungünstig |
-| Grade Group 5 | 9-10 (4+5, 5+4, 5+5) | Sehr ungünstig |
-
-**Beispiele in diesem IG**:
-- CoreNeedleBiopsy: ISUP Grade 2-3 (Gleason 3+4=7, 4+3=7)
-- RadicalProstatectomy: ISUP Grade 2 (Gleason 3+4=7)
-- TransurethralEnucleation: ISUP Grade 5 (Gleason 4+5=9)
-
-### Weitere pathologische Parameter
-
-#### Bei Biopsie
-- **Tumoranteil**: Prozentsatz befallenen Gewebes pro Stanze
-- **Tumorbefallene Stanzen**: Anzahl/Gesamt (z.B. 6/12)
-- **Tumorlänge**: Länge des Tumorbefalls in mm pro Stanze
-- **Perineurale Infiltration (Pn)**: Tumorausbreitung entlang Nerven
-- **High-Grade PIN**: Präkanzerose (prostatische intraepitheliale Neoplasie)
-- **ASAP**: Atypical Small Acinar Proliferation (Verdachtsdiagnose)
-
-#### Bei Prostatektomie-Präparaten
-- **Tumorvolumen**: In ml oder % des Organs
-- **Extraprostatische Extension (EPE)**: Durchbruch der Organkapsel
-- **Samenblaseninfiltration**: Befall der Vesicula seminalis
-- **Resektionsränder (R-Status)**:
-  - R0: Keine Tumorzellen am Schnittrand
-  - R1: Tumorzellen am Schnittrand (positive Resektionsränder)
-- **Lymphknotenbefall**: Anzahl befallener/untersuchter Lymphknoten
-- **Lymphgefäßinvasion (L)**: Tumoreinbruch in Lymphgefäße
-- **Veneninvasion (V)**: Tumoreinbruch in Blutgefäße
-
-### Spezielle Histologien
-- **Intraduktales Karzinom (IDC-P)**: Aggressiver Subtyp, oft mit Gleason 4-5
-- **Kribriformes Karzinom**: Siebartiges Wachstumsmuster, prognostisch ungünstig
-- **Azinäres Adenokarzinom**: Häufigster Typ (~95% der Fälle)
-- **Duktales Adenokarzinom**: Seltener, aggressiver Typ
-
-## TNM-Klassifikation (8. Edition, UICC 2017)
-
-Das **TNM-System** beschreibt die anatomische Tumorausbreitung:
-
-### T-Kategorie (Primärtumor)
-
-**Klinisches Staging (cT)** - basierend auf DRU, Bildgebung:
-- **cT1**: Nicht tastbar, nicht sichtbar
-  - cT1c: Diagnose durch erhöhtes PSA/Biopsie
-- **cT2**: Tumor auf Prostata begrenzt
-  - cT2a: ≤ 50% eines Lappens
-  - cT2b: > 50% eines Lappens
-  - cT2c: Beide Lappen befallen
-- **cT3**: Extraprostatische Extension
-  - cT3a: Extraprostatische Extension (EPE)
-  - cT3b: Samenblaseninfiltration
-- **cT4**: Tumor infiltriert Nachbarorgane
-
-**Pathologisches Staging (pT)** - nach radikaler Prostatektomie:
-- **pT2**: Organbegrenzt
-  - pT2a, pT2b, pT2c (wie oT2)
-- **pT3a**: Extraprostatische Extension
-- **pT3b**: Samenblaseninfiltration
-- **pT4**: Infiltration von Blase, Rektum
-
-### N-Kategorie (Lymphknoten)
-- **N0/pN0**: Keine regionären Lymphknotenmetastasen
-- **N1/pN1**: Regionäre Lymphknotenmetastasen
-
-### M-Kategorie (Fernmetastasen)
-- **M0**: Keine Fernmetastasen
-- **M1a**: Nicht-regionäre Lymphknoten
-- **M1b**: Knochen
-- **M1c**: Andere Organe
-
-**Beispiele in diesem IG**:
-- CoreNeedleBiopsy: cT2a cN0 cM0
-- RadicalProstatectomy: pT2c pN0 (R0)
-
-## Therapieoptionen nach Leitlinie
-
-Die Therapiewahl hängt von **Tumorcharakteristika, Lebenserwartung und Patientenpräferenz** ab.
-
-### Risikostratifikation (D'Amico-Klassifikation)
-
-| Risiko | PSA | Gleason | cT-Stadium |
-|--------|-----|---------|------------|
-| **Niedrigrisiko** | < 10 ng/ml | ≤ 6 | ≤ T2a |
-| **Intermediärrisiko** | 10-20 ng/ml | 7 | T2b |
-| **Hochrisiko** | > 20 ng/ml | 8-10 | ≥ T2c |
-
-### Therapiestrategien
-
-#### 1. Aktive Überwachung (Active Surveillance)
-- **Indikation**: Niedrigrisiko-Karzinome (ISUP 1)
-- Engmaschige Kontrolle ohne sofortige Therapie
-- PSA alle 3-6 Monate, Re-Biopsie nach 1-3 Jahren
-- Therapie bei Progression
-
-#### 2. Radikale Prostatektomie
-- **Gold-Standard** bei lokal begrenztem Karzinom
-- **Operationsverfahren**:
-  - Retropubische radikale Prostatektomie
-  - Laparoskopische/roboter-assistierte Prostatektomie (RALP)
-  - Perineale Prostatektomie (selten)
-- **Entfernt**: Prostata, Samenblasen, ggf. Beckenlymphknoten
-- **Beispiel in diesem IG**: [Radical Prostatectomy](ServiceRequest-RadicalProstatectomyServiceRequest.html)
-
-#### 3. Strahlentherapie
-- **Externe Strahlentherapie (EBRT)**: Perkutane Bestrahlung
-- **Brachytherapie**: Einbringen radioaktiver Seeds in die Prostata
-- Oft kombiniert mit antihormoneller Therapie bei Hochrisiko-Tumoren
-
-#### 4. Antihormonelle Therapie (ADT)
-- **Androgendeprivation**: Entzug männlicher Hormone
-- Bei lokal fortgeschrittenen und metastasierten Tumoren
-- **Wirkstoffe**: GnRH-Agonisten/-Antagonisten, Antiandrogene
-
-#### 5. Fokale Therapien
-- **HIFU**: Hochintensiver fokussierter Ultraschall
-- **Kryotherapie**: Gezielte Vereisung
-- **Lasertherapie**
-- Noch nicht Leitlinien-Standard, experimentell
-
-#### 6. Palliation bei metastasiertem Karzinom
-- Hormontherapie
-- Chemotherapie (Docetaxel, Cabazitaxel)
-- Neue Substanzen (Abirateron, Enzalutamid, PARP-Inhibitoren)
-- PSMA-Radioliganden-Therapie
-
-### Therapie benigner Prostatavergrößerung (BPH)
-
-Bei symptomatischer BPH ohne Karzinom:
-- **TUR-P** (Transurethrale Resektion der Prostata): Standard
-- **Enukleation** (HoLEP, ThuLEP): Laser-Enukleation bei großer Prostata
-- Medikamentöse Therapie (Alpha-Blocker, 5-Alpha-Reduktasehemmer)
-
-**Inzidentelles Prostatakarzinom**: Bei 5-15% der BPH-Operationen wird zufällig ein Karzinom entdeckt.
-
-**Beispiele in diesem IG**:
-- [Transurethral Enucleation](ServiceRequest-TransurethralEnucleationServiceRequest.html): Enukleation mit inzidentellem aggressiven Karzinom
-- [Transurethral Resection](ServiceRequest-TransurethralResectionServiceRequest.html): TUR-P mit inzidentellem Karzinom
-
-## Patientenjourney: Von der Diagnose zur Therapie
-
-Die folgende Journey zeigt den typischen Ablauf und die Verknüpfung zu den FHIR-Ressourcen:
-
-### 1. Primärdiagnostik (Niedergelassener Urologe)
-
-```
-PSA-Erhöhung → mpMRT → Biopsie-Indikation
-```
-
-**FHIR-Ressourcen**:
-- Observation: PSA-Wert
-- ImagingStudy: mpMRT
-- ServiceRequest: Biopsie-Anforderung
-
-### 2. Prostatabiopsie (Ambulant/Klinik)
-
-```
-12-Core-Biopsie → Pathologische Aufarbeitung → Befund
-```
-
-**FHIR-Ressourcen**:
-- Procedure: Biopsieverfahren
-- Specimen: 12 Gewebestanzen
-- Observation: Mikroskopische Befunde (pro Stanze)
-- Observation: Gleason-Score, ISUP Grade
-- DiagnosticReport: Pathologiebericht
-
-**Beispiel**: [Core Needle Biopsy Scenario](ServiceRequest-CoreNeedleBiopsyRequest.html)
-
-### 3. Staging bei Karzinomnachweis
-
-```
-TNM-Klassifikation → Risikostratifikation → Therapieplanung
-```
-
-**FHIR-Ressourcen**:
-- Observation: cT, cN, cM
-- Condition: Prostatakarzinom mit Staging
-
-### 4a. Therapie: Radikale Prostatektomie
-
-```
-Operation → Pathologische Aufarbeitung → pTNM-Staging → Nachsorge
-```
-
-**FHIR-Ressourcen**:
-- Procedure: Prostatektomie
-- Specimen: Prostatektomie-Präparat
-- Observation: Makroskopische Befunde (Gewicht, Maße)
-- Observation: Mikroskopische Befunde (Gleason, EPE, Margins)
-- Observation: pTNM-Staging
-- DiagnosticReport: Pathologiebericht
-
-**Beispiel**: [Radical Prostatectomy Scenario](ServiceRequest-RadicalProstatectomyServiceRequest.html)
-
-### 4b. Inzidentelles Karzinom bei BPH-Operation
-
-```
-BPH-Symptome → TUR-P/Enukleation → Pathologie → Inzidenteller Tumorbefund
-```
-
-**FHIR-Ressourcen**:
-- Procedure: TUR-P oder Enukleation
-- Specimen: Resektionschips/enukleiertes Gewebe
-- Observation: Pathologische Befunde
-- Condition: Inzidentelles Prostatakarzinom
-
-**Beispiele**:
-- [Transurethral Enucleation](ServiceRequest-TransurethralEnucleationServiceRequest.html) (aggressives Karzinom)
-- [Transurethral Resection](ServiceRequest-TransurethralResectionServiceRequest.html) (inzidentelles Karzinom)
-
-### 5. Nachsorge und Monitoring
-
-```
-PSA-Kontrollen (alle 3-6 Monate) → Bei PSA-Anstieg: Rezidiv-Diagnostik
-```
-
-**FHIR-Ressourcen**:
-- Observation: PSA-Follow-up
-- Condition: Biochemisches Rezidiv (bei PSA-Anstieg)
-
-## Wichtige Leitlinienempfehlungen (S3-Leitlinie Prostatakarzinom 8.1)
-
-### Diagnostik
-- **PSA-Screening**: Informierte Entscheidung ab 45 Jahren (familiäre Belastung: ab 40)
-- **mpMRT vor Biopsie**: Empfohlen zur Detektion klinisch signifikanter Karzinome
-- **Systematische 12-Core-Biopsie**: Standard bei Biopsie-Indikation
-- **Re-Biopsie**: Bei persistierendem Verdacht und negativer Erstbiopsie
-
-### Therapie lokalisiertes Karzinom
-- **Aktive Überwachung**: Standard bei Niedrigrisiko-Karzinomen (ISUP 1)
-- **Radikale Prostatektomie**: Standard bei lokal begrenzten Tumoren mit Lebenserwartung > 10 Jahre
-- **Strahlentherapie**: Alternative zur Operation, gleichwertige Ergebnisse
-- **Nervenschonende Operation**: Anstreben bei organübergreifendem Tumor (pT2)
-
-### Therapie fortgeschrittenes/metastasiertes Karzinom
-- **Antihormonelle Therapie**: Basis-Therapie bei Metastasierung
-- **Kombinations-Therapie**: ADT + Docetaxel oder ADT + Abirateron/Enzalutamid bei high-volume Metastasierung
-- **PSMA-PET**: Bei Rezidiv-Diagnostik und Therapieplanung
-
-### Pathologie
-- **Gleason-Grading nach ISUP 2014**: Standard
-- **Quantifizierung**: Tumorvolumen, Tumorlänge in Stanzen
-- **Prognostische Marker**: Intraduktales Karzinom, kribriformes Wachstum
-
-## Relevanz für die FHIR-Implementierung
-
-Die in diesem IG modellierten Szenarien decken die kritischen Punkte der diagnostischen und therapeutischen Pipeline ab:
-
-1. **CoreNeedleBiopsy**: Standard-Diagnostik mit 12 systematischen Stanzen
-2. **RadicalProstatectomy**: Therapie eines lokalisierten Karzinoms mit günstiger Prognose
-3. **TransurethralEnucleation**: Inzidentelles high-grade Karzinom bei BPH-Operation
-4. **TransurethralResection**: Häufige BPH-Prozedur mit möglichem Tumorbefund
-
-Die strukturierte Abbildung dieser Prozesse in FHIR ermöglicht:
-- **Interoperabilität** zwischen ambulanter und stationärer Versorgung
-- **Nachverfolgbarkeit** von Gewebeproben (Specimen-Tracking)
-- **Strukturierte Dokumentation** pathologischer Befunde
-- **Decision Support** basierend auf Leitlinien-Kriterien
-- **Qualitätssicherung** durch standardisierte Datenerfassung
-
-## Referenzen und weiterführende Literatur
-
-- **Leitlinienprogramm Onkologie**: [S3-Leitlinie Prostatakarzinom](https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom) (Version 8.1, 2025)
-- **WHO Classification of Tumours**: Urinary and Male Genital Tumours (5th Edition, 2022)
-- **ISUP Grading System**: Epstein et al., "The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma"
-- **TNM-Klassifikation**: UICC TNM Classification of Malignant Tumours (8th Edition, 2017)
-- **EAU Guidelines**: European Association of Urology - Prostate Cancer Guidelines
-- **NCCN Guidelines**: National Comprehensive Cancer Network - Prostate Cancer
-
-## Glossar
-
-| Begriff | Erklärung |
-|---------|-----------|
-| **PSA** | Prostata-spezifisches Antigen, Tumormarker |
-| **PI-RADS** | Prostate Imaging Reporting and Data System (MRT-Befundung) |
-| **DRE/DRU** | Digital-rektale Untersuchung (Tastuntersuchung) |
-| **mpMRT** | Multiparametrische Magnetresonanztomographie |
-| **BPH** | Benigne Prostatahyperplasie (gutartige Vergrößerung) |
-| **PIN** | Prostatische Intraepitheliale Neoplasie (Präkanzerose) |
-| **ASAP** | Atypical Small Acinar Proliferation (Verdachtsdiagnose) |
-| **EPE** | Extraprostatische Extension (Kapselüberschreitung) |
-| **ADT** | Androgen Deprivation Therapy (Hormonentzugstherapie) |
-| **RALP** | Roboter-assistierte laparoskopische Prostatektomie |
-| **TUR-P** | Transurethrale Resektion der Prostata |
-| **HoLEP** | Holmium-Laser-Enukleation der Prostata |
+This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter **S3**) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter **EAU**).
 
 ---
 
-*Diese Seite dient als medizinischer Kontext für die technische Implementierung. Bei medizinischen Fragen konsultieren Sie bitte die aktuelle S3-Leitlinie und Fachliteratur.*
+### What is the prostate?
+
+The prostate is a small gland of the male reproductive system located below the urinary bladder, directly in front of the rectum (S3, pp. 32 f.). It surrounds the initial part of the urethra and produces a secretion that forms part of the seminal fluid (S3, pp. 32 f.). The gland increases in size with age, which can lead to urinary symptoms even independently of cancer (S3, pp. 32 f.).
+
+---
+
+### What is prostate cancer?
+
+In prostate cancer (prostate carcinoma), cells of the prostate become malignant and start to grow uncontrollably (S3, pp. 32 f.). In the vast majority of cases, these are acinar adenocarcinomas, i.e. glandular cancers (S3, pp. 93 f.; EAU, p. 90). Prostate cancer is one of the most common cancers in men in Europe and occurs mainly at an older age (S3, p. 32; EAU, p. 82). Many tumours grow slowly but, depending on their spread and aggressiveness, can become life-threatening (S3, p. 103; EAU, pp. 85 f.).
+
+---
+
+### Frequency and risk factors
+
+- **Frequency**
+  - Prostate cancer is the second most common cancer in men worldwide (EAU, p. 82).
+  - In Germany, it is among the most frequent tumours, especially in men over 60 years of age (S3, p. 32).
+
+- **Important risk factors**
+  - Increasing age: the risk rises markedly with advancing age (S3, pp. 32 f.; EAU, p. 82).
+  - Family history, particularly first-degree relatives with prostate cancer (S3, p. 33; EAU, pp. 88 f.).
+  - Certain genetic changes, e.g. BRCA2 mutations (S3, p. 33; EAU, pp. 88 f.).
+
+There are no proven measures that can reliably prevent prostate cancer, although a healthy lifestyle is recommended (S3, p. 37; EAU, p. 82).
+
+---
+
+### Early detection (screening)
+
+The aim of early detection is to identify clinically relevant tumours in time while at the same time avoiding overdiagnosis and overtreatment (S3, pp. 40 ff.; EAU, p. 88). The main basis is the measurement of prostate-specific antigen (PSA) in the blood after counselling about benefits and risks (S3, pp. 40–44; EAU, pp. 88 f.).
+
+- **German S3 guideline**
+  - Men from 45 years of age with a life expectancy of at least 10 years should be offered a PSA test after unbiased counselling (S3, recommendations 4.2, 4.3; pp. 40–44).
+  - Digital rectal examination is no longer recommended for pure early detection (S3, recommendation 4.1; pp. 40 f.).
+
+- **EAU guideline**
+  - Recommends individual, risk-adapted PSA-based early detection for well-informed men with an expected life expectancy of at least 15 years (EAU, p. 88).
+  - Earlier and more intensive screening is advised in men at increased risk (e.g. family history, BRCA2 mutation, men of African ancestry) (EAU, p. 88).
+
+An elevated PSA value does not automatically mean prostate cancer but may be a reason for further diagnostic work-up (S3, pp. 42 ff.; EAU, pp. 87 f.).
+
+---
+
+### Diagnostic work-up if prostate cancer is suspected
+
+If prostate cancer is suspected (e.g. due to elevated PSA), several components are used (S3, pp. 53 ff.; EAU, pp. 87–91).
+
+- **History and physical examination**
+  - Assessment of symptoms, comorbidities and family history (S3, pp. 40 f.).
+  - Digital rectal examination of the prostate via the rectum to assess size and consistency (S3, pp. 40 f.; EAU, pp. 82 f.).
+
+- **Imaging (MRI)**
+  - Multiparametric MRI (mpMRI) of the prostate should be performed before biopsy from a confirmed PSA value ≥ 3 ng/mL, if this has therapeutic consequences (S3, recommendation 4.12; pp. 54 f.).
+  - MRI findings are standardised using PI‑RADS; higher categories indicate a higher probability of a clinically significant tumour (S3, pp. 54–57; EAU, pp. 90 f.).
+
+- **Tissue sampling (biopsy)**
+  - A diagnosis of prostate cancer can only be confirmed by histological examination of biopsy samples (S3, pp. 93 ff.; EAU, pp. 87 f., 90).
+  - A combination of targeted biopsy of MRI-suspicious areas and systematic biopsy is recommended (S3, recommendations 4.16–4.21; pp. 55–57; EAU, pp. 90–92).
+  - The transperineal approach is preferred, as it is associated with a lower risk of infections (S3, recommendations 4.30 f.; pp. 59 f.; EAU, pp. 91–93).
+
+The pathology report includes, among other things, tumour type, tumour extent and ISUP grade group, which describes the aggressiveness (S3, pp. 96 ff.; EAU, p. 90).
+
+---
+
+### Classification and risk groups
+
+For treatment decisions, it is crucial how far the tumour has progressed and how aggressive it is (S3, pp. 78–83, 103 ff.; EAU, pp. 83–86).
+
+#### TNM system
+
+The TNM classification describes:
+
+- **T (primary tumour)** – extent of the tumour within the prostate and into neighbouring structures (EAU, p. 83).
+  - T1: non-palpable tumour, e.g. detected only in biopsy (EAU, p. 83).
+  - T2: palpable tumour confined to the prostate (EAU, p. 83).
+  - T3: tumour extends through the capsule or involves the seminal vesicles (EAU, p. 83).
+  - T4: infiltration of adjacent organs such as bladder neck or rectum (EAU, p. 83).
+- **N (lymph nodes)** – regional lymph node involvement (EAU, p. 84).
+- **M (distant metastases)** – e.g. in bones or other organs (EAU, p. 84).
+
+#### Histological grade (ISUP/Gleason)
+
+Aggressiveness is assessed using the microscopic appearance (Gleason score, ISUP grade) (S3, pp. 96–103; EAU, p. 85).
+
+- ISUP grade 1: Gleason score 6 (≤ 3+3).
+- ISUP grade 2: Gleason score 7 (3+4).
+- ISUP grade 3: Gleason score 7 (4+3).
+- ISUP grade 4: Gleason score 8.
+- ISUP grade 5: Gleason score 9–10 (EAU, p. 85; S3, pp. 96 f.).
+
+Higher grade groups are typically associated with a less favourable prognosis (S3, pp. 103 f.; EAU, pp. 85 f.).
+
+#### Risk groups
+
+To estimate the risk of recurrence and metastasis, risk groups are defined that combine PSA, ISUP grade and T stage (S3, pp. 79–83; EAU, p. 86).
+
+Example of EAU risk groups for localised/locally advanced disease (simplified):
+
+- **Low risk**
+  - ISUP 1, PSA ≤ 10 ng/mL and cT1–2a (EAU, Table 3, p. 86).
+- **Intermediate risk**
+  - e.g. ISUP 2–3 or PSA 10–20 ng/mL or cT2b (EAU, Table 3, p. 86; S3, Table 11, p. 81).
+- **High risk / locally advanced**
+  - ISUP 4–5, PSA ≥ 20 ng/mL, cT2c or cT3–4 or cN+ (EAU, Table 3, p. 86; S3, Table 11, p. 81).
+
+This classification guides recommendations for active surveillance, surgery or radiotherapy (S3, chapter 6; EAU, pp. 96–104).
+
+---
+
+### Treatment goals and decision-making
+
+The goals of treatment are prolonging life, preventing or alleviating symptoms and maintaining quality of life (S3, pp. 107 f., 359 ff.; EAU, p. 119 f.). The choice of therapy depends on tumour stage, aggressiveness, comorbidities, life expectancy and patient preferences (S3, pp. 107–111; EAU, pp. 82, 96 ff.).
+
+Both guidelines emphasise shared decision-making after thorough counselling on the benefits and risks of each option, particularly regarding continence, sexual function and quality of life (S3, pp. 107–111, 359 ff.; EAU, p. 119 f.).
+
+---
+
+### Treatment of localised prostate cancer
+
+Localised means that the tumour is confined to the prostate without lymph node or distant metastases (S3, pp. 78 f.; EAU, p. 86). In this setting, watchful approaches, surgery and radiotherapy are available (S3, chapter 6; EAU, pp. 96–104).
+
+#### Active surveillance
+
+Active surveillance is aimed at men with low-risk tumours and longer life expectancy (S3, pp. 116–129; EAU, pp. 97–99).
+
+- The tumour is closely monitored using PSA, and if needed MRI and repeat biopsies; no immediate treatment is carried out (S3, pp. 116–120; EAU, pp. 97–99).
+- The aim is to avoid or delay surgery or radiotherapy as long as the tumour remains stable (S3, pp. 116 ff.; EAU, pp. 97–99).
+- If there are signs of progression, treatment with curative intent is initiated (S3, pp. 118–120; EAU, pp. 98 f.).
+
+S3 primarily recommends active surveillance for localised low-risk prostate cancer (S3, recommendation 6.6; pp. 116 f.). EAU considers active surveillance the standard option for low-risk tumours (EAU, pp. 97–99).
+
+#### Surgery (radical prostatectomy)
+
+In radical prostatectomy, the entire prostate and seminal vesicles, and depending on risk also regional lymph nodes, are removed (S3, pp. 136–138; EAU, pp. 99–103).
+
+- This procedure is suitable for men with localised or selected locally advanced tumours and a life expectancy of at least about 10 years (S3, p. 136 f.; EAU, pp. 99 f., 102 f.).
+- Possible side effects are urinary incontinence and erectile dysfunction (S3, pp. 136 f., 359 ff.; EAU, p. 119 f.).
+- Nerve-sparing techniques can be used if the risk of extracapsular extension is low (EAU, p. 100).
+
+#### Radiotherapy
+
+Radiotherapy can be carried out as external beam radiotherapy (percutaneous radiotherapy) or internal radiotherapy (brachytherapy) (S3, pp. 139–155; EAU, pp. 100–101).
+
+- Modern external radiotherapy uses IMRT/VMAT and IGRT to better spare the bladder and rectum (S3, pp. 139–145; EAU, pp. 100 f.).
+- In intermediate- and high-risk groups, radiotherapy is often combined with short- to medium-term androgen deprivation therapy (S3, pp. 139–151; EAU, pp. 100–103).
+- Side effects may affect bowel function, bladder function and sexual function (S3, pp. 139–145, 359 ff.; EAU, p. 119 f.).
+
+---
+
+### Treatment of locally advanced or metastatic prostate cancer
+
+If the tumour has extended beyond the prostatic capsule, involves lymph nodes or has formed distant metastases, this is referred to as locally advanced or metastatic prostate cancer (S3, pp. 78 f., 205 ff.; EAU, pp. 86, 95–96). In this situation, systemic therapies are central, often in combination with local treatment (S3, chapter 7; EAU, pp. 104–113).
+
+#### Androgen deprivation therapy (ADT)
+
+Prostate cancer cells usually grow in a testosterone-dependent manner, so androgen deprivation slows their growth (S3, pp. 212–216, 253 ff.; EAU, pp. 108 ff.).
+
+- This can be achieved medically with LHRH analogues/antagonists and antiandrogens, or less commonly by surgical removal of the testes (S3, pp. 212–214; EAU, pp. 108 f.).
+- In hormone-sensitive metastatic prostate cancer, ADT is now usually combined with additional drugs (e.g. abiraterone, apalutamide, enzalutamide, darolutamide or docetaxel) in patients who are fit enough (S3, pp. 225–232; EAU, pp. 108–110).
+- Typical side effects include hot flushes, fatigue, weight gain, loss of muscle mass, increased risk of osteoporosis and metabolic changes (S3, pp. 310–325; EAU, pp. 117–118).
+
+#### Other systemic therapies
+
+In advanced or castration-resistant stages, additional therapies are used (S3, pp. 253–278; EAU, pp. 110–113).
+
+- Modern hormone therapies (androgen receptor signalling inhibitors such as enzalutamide, apalutamide, darolutamide, abiraterone) (S3, pp. 253–267; EAU, pp. 110–113).
+- Chemotherapy, especially with docetaxel and cabazitaxel (S3, pp. 259–267; EAU, pp. 111 f.).
+- Radioligand therapy, e.g. with lutetium‑177‑PSMA (S3, recommendation 7.51; pp. 268 ff.; EAU, pp. 112 f.).
+- PARP inhibitors in the presence of proven DNA repair defects (e.g. BRCA2) (S3, p. 323 f.; EAU, pp. 111 f.).
+
+The choice depends on previous treatments, comorbidities, genetic findings and patient preferences (S3, pp. 253–278; EAU, pp. 110–113).
+
+---
+
+### Follow-up and quality of life
+
+After curative-intent treatment (surgery or radiotherapy), regular follow-up is important (S3, pp. 352–356; EAU, p. 117).
+
+- PSA is used as a sensitive marker for possible recurrence (S3, pp. 352–356; EAU, p. 117).
+- Imaging is usually only performed if it would have therapeutic consequences (S3, p. 352 f.; EAU, p. 117).
+
+Quality of life, continence, sexual function, and psychological and social aspects are explicitly highlighted in both guidelines (S3, chapters 8–10; EAU, p. 119 f.). Recommended measures include rehabilitation, physical activity, psycho-oncological support and, where appropriate, participation in self-help groups (S3, pp. 343–351, 359–362; EAU, pp. 119 f., 120).
+
+---
+
+### Key terms at a glance
+
+| Term                     | Meaning in simple words                                                                                          |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------|
+| PSA                      | Blood value produced by the prostate; elevated levels can, among other things, indicate prostate cancer (S3, pp. 42 ff.; EAU, pp. 87 f.). |
+| Biopsy                   | Tissue sampling with a needle for microscopic (histological) diagnosis (S3, pp. 93 ff.; EAU, pp. 87–92).        |
+| ISUP grade / Gleason score | Measure of how aggressive the tumour cells look under the microscope (S3, pp. 96–103; EAU, p. 85).             |
+| TNM                      | International system for classifying tumour size, lymph node involvement and distant metastases (EAU, pp. 83–84; S3, pp. 78 f.). |
+| Active surveillance      | Close monitoring without immediate treatment in low-risk tumours (S3, pp. 116–120; EAU, pp. 97–99).              |
+| Radical prostatectomy    | Operation to completely remove the prostate (S3, pp. 136–138; EAU, pp. 99–103).                                  |
+| Radiotherapy             | Treatment with high-energy radiation to destroy tumour cells (S3, pp. 139–155; EAU, pp. 100–103).                |
+| Androgen deprivation     | Hormone therapy that reduces the effect of testosterone on tumour cells (S3, pp. 212–216, 253 ff.; EAU, pp. 108 ff.). |
+
+---
+
+### Note on the use of this 
+This information is intended to help users of this specification better understand the medical context. The content is based on the S3 Guideline on Prostate Cancer (long version 8.1, 2025) and the EAU Guidelines 2025.

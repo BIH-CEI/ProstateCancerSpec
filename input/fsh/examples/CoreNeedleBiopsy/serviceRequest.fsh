@@ -13,9 +13,9 @@ Description: "Anforderung für 12-Stanzen Prostatabiopsie"
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
 * code = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
 * encounter = Reference(CoreNeedleBiopsyEncounter)
-* subject = Reference(CoreNeedleBiopsyPatient)
-* requester = Reference(CoreNeedleBiopsyUrologistPractitioner)
-* performer = Reference(CoreNeedleBiopsyPathologistPractitioner)
+* subject = Reference(Patient1)
+* requester = Reference(UrologistPractitioner)
+* performer = Reference(PathologistPractitioner)
 * reasonCode = $sct#162568004 "Raised prostate specific antigen"
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen01Part)
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen02Part)

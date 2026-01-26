@@ -11,9 +11,9 @@ Description: "Gruppierung aller mikroskopischen Befunde der Prostatastanzen"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22635-7
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
-* performer = Reference(CoreNeedleBiopsyPathologistPractitioner)
+* performer = Reference(PathologistPractitioner)
 * valueString = "Mikroskopische Befunde aller 12 Prostatastanzen"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 

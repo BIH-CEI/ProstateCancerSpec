@@ -13,15 +13,15 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 * status = #final
 * type.coding[0] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH
 * type.coding[+] = $sct#721967005 "Tissue pathology biopsy report"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * date = "2024-01-20T15:30:00+01:00"
-* author = Reference(CoreNeedleBiopsyPathLabOrganization)
+* author = Reference(PathologyLabOrganization)
 * author.display = "Pathologisches Institut"
 * title = "Histopathologischer Befundbericht - Prostatabiopsie"
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * attester.mode = #legal
-* attester.party = Reference(CoreNeedleBiopsyPathLabOrganization)
-* custodian = Reference(CoreNeedleBiopsyPathLabOrganization)
+* attester.party = Reference(PathologyLabOrganization)
+* custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
 * event.detail = Reference(CoreNeedleBiopsyRequest)
 

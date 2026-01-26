@@ -8,7 +8,7 @@ Description: "Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
 * code = $icd-10-gm#N40.0 "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * encounter = Reference(TransurethralResectionEncounter)
 * onsetDateTime = "2023-03-01"
 * recordedDate = "2024-01-05"
@@ -29,7 +29,7 @@ Description: "Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat"
 * code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * encounter = Reference(TransurethralResectionEncounter)
 * onsetDateTime = "2024-01-15"
 * recordedDate = "2024-01-15"

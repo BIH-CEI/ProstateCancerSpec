@@ -10,11 +10,11 @@ Description: "Umfangreicher Pathologiebericht nach Prostata Enucleation"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
 * code = $loinc#60568-3 "Pathology Synoptic report"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * effectiveDateTime = "2024-05-12T17:00:00+01:00"
 * issued = "2024-05-13T08:00:00+01:00"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 
 // Prostata Enucleation Präparat - Part
 * specimen[+] = Reference(TransurethralEnucleationSpecimenPart)

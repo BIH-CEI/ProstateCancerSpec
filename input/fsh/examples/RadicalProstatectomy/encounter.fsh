@@ -7,4 +7,4 @@ Description: "Encounter für Prostatektomie-Beispiel"
 * identifier.value = "PSA-OP-2024"
 * status = #finished
 * class = #IMP
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)

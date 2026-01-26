@@ -9,7 +9,7 @@ Description: "PSA-Kontrolle 6 Wochen nach Prostatektomie"
 * category[+] = $loinc#26436-6 "Laboratory studies (set)"
 * category[+] = $loinc#LP7839-6 "Pathology"
 * code = $loinc#2857-1 "Prostate specific antigen [Mass/volume] in Serum or Plasma"
-* subject = Reference(RadicalProstatectomyPatient)
+* subject = Reference(Patient2)
 * valueQuantity
   * value = 0.02
   * unit = "ng/ml"

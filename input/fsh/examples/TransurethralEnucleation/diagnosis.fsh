@@ -8,7 +8,7 @@ Description: "Symptomatische benigne Prostatahyperplasie als Indikation zur Enuk
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
 * code = $icd-10-gm#N40.0 "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * encounter = Reference(TransurethralEnucleationEncounter)
 * onsetDateTime = "2023-06-01"
 * recordedDate = "2024-02-01"
@@ -29,7 +29,7 @@ Description: "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-P
 * code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * encounter = Reference(TransurethralEnucleationEncounter)
 * onsetDateTime = "2024-02-20"
 * recordedDate = "2024-02-20"

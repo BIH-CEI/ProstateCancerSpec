@@ -11,9 +11,9 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
-* performer = Reference(TransurethralResectionPathologist)
+* performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des TUR-Prostata Präparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 
@@ -38,11 +38,11 @@ Description: "Gewicht des TUR-Prostata Präparats"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#44668-2 "Prostate weight"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* code = $sct#371506001 "Specimen weight (observable entity)"
+* subject = Reference(Patient1)
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:10:00+01:00"
-* performer = Reference(TransurethralResectionPathologist)
+* performer = Reference(PathologistPractitioner)
 * valueQuantity = 25 'g' "g"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "TUR-Prostata Gewicht 25g"
@@ -59,10 +59,10 @@ Description: "Vorhandensein von Samenblasen im TUR-Prostata Präparat"
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Samenblasen im Resektat"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:18:00+01:00"
-* performer = Reference(TransurethralResectionPathologist)
+* performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Samenblasen im Resektat"
@@ -79,10 +79,10 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Lymphknoten-Dissektion Präparat"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:19:00+01:00"
-* performer = Reference(TransurethralResectionPathologist)
+* performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Lymphknoten im Resektat"

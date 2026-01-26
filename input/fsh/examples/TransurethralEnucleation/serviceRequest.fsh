@@ -13,9 +13,9 @@ Description: "Anforderung für pathologische Aufarbeitung nach Prostata Enucleat
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
 * code = $sct#236205008 "Simple prostatectomy (procedure)"
 * encounter = Reference(TransurethralEnucleationEncounter)
-* subject = Reference(CoreNeedleBiopsyPatient)
-* requester = Reference(TransurethralEnucleationUrologist)
-* performer = Reference(TransurethralEnucleationPathologist)
+* subject = Reference(Patient2)
+* requester = Reference(UrologistPractitioner)
+* performer = Reference(PathologistPractitioner)
 * reasonCode = $sct#266569009 "Benign prostatic hyperplasia"
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * supportingInfo[+] = Reference(TransurethralEnucleationPSAPre)

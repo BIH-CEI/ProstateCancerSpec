@@ -11,9 +11,9 @@ Description: "Grouper for all diagnostic conclusion findings in Prostata Enuclea
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22637-3
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 
 // hasMember references für Enucleation-spezifische Findings
@@ -43,10 +43,10 @@ Description: "Histological type according to ICD-O-3 classification"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#59847-4 "Histology and Behavior ICD-O-3 Cancer"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 
@@ -61,10 +61,10 @@ Description: "Free text description of tissue morphology"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33731-1 "Histology type in Cancer specimen Narrative"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueString = "Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall."
 
@@ -81,10 +81,10 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44641-9 "Gleason pattern.primary in Prostate tumor"
 * code.coding[+] = $sct#384994009 "Primary Gleason pattern (observable entity)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 
@@ -101,10 +101,10 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44642-7 "Gleason pattern.secondary in Prostate tumor"
 * code.coding[+] = $sct#384995005 "Secondary Gleason pattern (observable entity)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#369774002 "Gleason Pattern 5 (finding)"
 
@@ -121,10 +121,10 @@ Description: "Total Gleason score in Enucleation specimens"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
 * code.coding[+] = $sct#385377005 "Gleason score (observable entity)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
 * derivedFrom[0] = Reference(TransurethralEnucleationPrimaryGleasonPattern)
@@ -141,10 +141,10 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueQuantity.value = 90
 * valueQuantity.unit = "%"
@@ -164,10 +164,10 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#1279718003 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
 
@@ -182,10 +182,10 @@ Description: "Presence of intraductal carcinoma of the prostate"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162814007 "Non-infiltrating intraductal carcinoma (morphologic abnormality)"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
@@ -201,10 +201,10 @@ Description: "Presence of invasive cribriform carcinoma"
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162816009 "Invasive cribriform carcinoma (morphologic abnormality)"
 * code.text = "Invasive cribriform carcinoma"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
@@ -220,10 +220,10 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * code.text = "Prostatic tissue involved by tumour"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueQuantity.value = 60
 * valueQuantity.unit = "%"
@@ -242,10 +242,10 @@ Description: "Presence of extraprostatic extension"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44625-2 "Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols"
 * code.text = "Extraprostatic extension"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
@@ -260,10 +260,10 @@ Description: "Tumor invasion into seminal vesicles"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44626-0 "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
@@ -278,10 +278,10 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33761-8 "Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
@@ -296,9 +296,9 @@ Description: "Presence of perineural invasion in cancer specimen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#92837-4 "Perineural invasion [Presence] in Cancer specimen"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
-* performer = Reference(TransurethralEnucleationPathologist)
+* performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationServiceRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"

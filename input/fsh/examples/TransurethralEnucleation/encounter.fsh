@@ -7,4 +7,4 @@ Description: "Encounter für Prostata Enucleation-Beispiel"
 * identifier.value = "PSA-ENUC-2024"
 * status = #finished
 * class = #IMP
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient2)

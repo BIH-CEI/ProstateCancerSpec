@@ -13,7 +13,7 @@ Description: "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auff
 * code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * onsetDateTime = "2024-01-10"
 * recordedDate = "2024-01-10"
@@ -34,7 +34,7 @@ Description: "Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie"
 * code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
-* subject = Reference(CoreNeedleBiopsyPatient)
+* subject = Reference(Patient1)
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * onsetDateTime = "2024-01-17"
 * recordedDate = "2024-01-17"
