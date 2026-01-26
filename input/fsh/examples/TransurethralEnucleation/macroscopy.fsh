@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Patho_Macroscopic_Grouper
 Usage: #example
 Title: "Makroskopische Befunde Grouper Prostata Enucleation"
 Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleation Präparats"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0

@@ -4,7 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur
 Usage: #example
 Title: "Transurethrale Resektion der Prostata"
 Description: "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.0"
 * status = #completed
 * category = $sct#387713003 "Surgical procedure (procedure)"
 * code.coding[ops] = http://fhir.de/CodeSystem/bfarm/ops#5-601 "Transurethrale Exzision und Destruktion von Prostatagewebe"

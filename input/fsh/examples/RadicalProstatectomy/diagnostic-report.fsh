@@ -4,6 +4,7 @@ InstanceOf: $mii-patho-report
 Usage: #example
 Title: "Pathologiebericht Prostatektomie"
 Description: "Umfangreicher Pathologiebericht nach radikaler Prostatektomie"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
 * identifier[Set-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
 * identifier[Set-ID].system = "http://example.hospital.de/diagnostic-reports"
 * identifier[Set-ID].value = "PATH-RPT-2024-002"

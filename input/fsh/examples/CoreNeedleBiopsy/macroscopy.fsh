@@ -4,10 +4,11 @@
 
 // Grouper für makroskopische Messungen nach MII-Patho-Befund
 Instance: CoreNeedleBiopsyMacroscopicGrouper
-InstanceOf: MII_PR_Patho_Macroscopic_Grouper
+InstanceOf: MII_PR_Patho_Macroscopic_Grouper* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
 Usage: #example
 Title: "Makroskopische Befunde Grouper"
 Description: "Gruppierung aller makroskopischen Messungen der Prostatastanzen"
+
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0

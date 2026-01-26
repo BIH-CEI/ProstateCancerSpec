@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Patho_Diagnostic_Conclusion_Grouper
 Usage: #example
 Title: "Diagnostic Conclusion Grouper - Prostatectomy"
 Description: "Grouper for all diagnostic conclusion findings in prostatectomy specimens"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22637-3
