@@ -6,7 +6,7 @@
 
 ## Example Procedure: Prostata Enucleation (Simple Prostatectomy)
 
-Profile: [MII PR Prozedur Procedure](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2026.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure)
+Profile: [MII PR Prozedur Procedureversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2026.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure)
 
 **status**: Completed
 
@@ -35,7 +35,7 @@ Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. I
   "id" : "TransurethralEnucleationProcedure",
   "meta" : {
     "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.0"
     ]
   },
   "status" : "completed",

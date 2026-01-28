@@ -78,6 +78,9 @@
   "subject": {
     "reference": "Patient/Patient2"
   },
+  "encounter": {
+    "reference": "Encounter/RadicalProstatectomyEncounter"
+  },
   "onsetDateTime": "2024-02-10",
   "recordedDate": "2024-02-10"
 }

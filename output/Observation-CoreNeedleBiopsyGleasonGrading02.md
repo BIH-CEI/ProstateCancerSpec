@@ -20,7 +20,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
 
-**value**: International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)
+**value**: International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)
 
 **bodySite**: Structure of middle part of peripheral zone of right half prostate (body structure)
 
@@ -86,8 +86,8 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "1279714001",
-        "display" : "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+        "code" : "1279716006",
+        "display" : "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
       }
     ]
   },

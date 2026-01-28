@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-01-26 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-01-28 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -116,7 +116,7 @@ and also asures the compatibility to:
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-01-26T14:22:09+01:00",
+  "date" : "2026-01-28T10:26:21+01:00",
   "publisher" : "BIH CEI",
   "contact" : [
     {

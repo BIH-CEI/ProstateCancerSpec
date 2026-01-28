@@ -20,6 +20,8 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-OP-2024; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
+
 **onset**: 2024-02-10
 
 **recordedDate**: 2024-02-10
@@ -95,6 +97,9 @@ Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinis
   },
   "subject" : {
     "reference" : "Patient/Patient2"
+  },
+  "encounter" : {
+    "reference" : "Encounter/RadicalProstatectomyEncounter"
   },
   "onsetDateTime" : "2024-02-10",
   "recordedDate" : "2024-02-10",

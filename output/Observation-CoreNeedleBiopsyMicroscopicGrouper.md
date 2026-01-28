@@ -6,7 +6,7 @@
 
 ## Example Observation: Mikroskopische Befunde Grouper
 
-Profile: [MII PR Patho Microscopic Grouper](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper)
+Profile: [MII PR Patho Microscopic Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper)
 
 **status**: Final
 
@@ -173,7 +173,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 St
   "id" : "CoreNeedleBiopsyMicroscopicGrouper",
   "meta" : {
     "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper|2026.0.0"
     ]
   },
   "status" : "final",

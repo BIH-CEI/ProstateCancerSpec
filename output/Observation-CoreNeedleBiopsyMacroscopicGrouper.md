@@ -6,7 +6,7 @@
 
 ## Example Observation: Makroskopische Befunde Grouper
 
-Profile: [MII PR Patho Macroscopic Grouper](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper)
+Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper)
 
 **status**: Final
 
@@ -80,7 +80,7 @@ Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Z
   "id" : "CoreNeedleBiopsyMacroscopicGrouper",
   "meta" : {
     "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
     ]
   },
   "status" : "final",
