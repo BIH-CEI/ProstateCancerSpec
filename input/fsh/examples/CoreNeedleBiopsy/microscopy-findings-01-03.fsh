@@ -432,7 +432,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 02"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+* valueCodeableConcept = $sct#1279716006 "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
 * bodySite = $sct#716903009 "Structure of middle part of peripheral zone of right half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen02Slide)
 
