@@ -23,7 +23,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/TransurethralResectionServiceRequest"
+      "reference": "ServiceRequest/TransurethralResectionReportRequest"
     }
   ],
   "hasMember": [

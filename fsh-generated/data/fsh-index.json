@@ -2376,32 +2376,56 @@
     "endLine": 15
   },
   {
-    "outputFile": "ServiceRequest-CoreNeedleBiopsyRequest.json",
-    "fshName": "CoreNeedleBiopsyRequest",
+    "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.18.27.16--20241221120534.json",
+    "fshName": "2.16.840.1.113883.3.1937.777.18.27.16--20241221120534",
+    "fshType": "Instance",
+    "fshFile": "Questionnaires/QuestionnaireCoreNeedleBiopsyClinicalInformations.fsh",
+    "startLine": 8,
+    "endLine": 336
+  },
+  {
+    "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.18.27.17--20250102170615.json",
+    "fshName": "2.16.840.1.113883.3.1937.777.18.27.17--20250102170615",
+    "fshType": "Instance",
+    "fshFile": "Questionnaires/QuestionnaireCoreNeedleBiopsySingle.fsh",
+    "startLine": 7,
+    "endLine": 755
+  },
+  {
+    "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.18.27.18--20250115134435.json",
+    "fshName": "2.16.840.1.113883.3.1937.777.18.27.18--20250115134435",
+    "fshType": "Instance",
+    "fshFile": "Questionnaires/QuestionnaireCoreNeedleBiopsyCase.fsh",
+    "startLine": 7,
+    "endLine": 821
+  },
+  {
+    "outputFile": "ServiceRequest-CoreNeedleBiopsyReportRequest.json",
+    "fshName": "CoreNeedleBiopsyReportRequest",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/serviceRequest.fsh",
     "startLine": 2,
     "endLine": 33
   },
   {
-    "outputFile": "ServiceRequest-RadicalProstatectomyServiceRequest.json",
-    "fshName": "RadicalProstatectomyServiceRequest",
+    "outputFile": "ServiceRequest-RadicalProstatectomyReportRequest.json",
+    "fshName": "RadicalProstatectomyReportRequest",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/serviceRequest.fsh",
     "startLine": 2,
     "endLine": 21
   },
   {
-    "outputFile": "ServiceRequest-TransurethralEnucleationServiceRequest.json",
-    "fshName": "TransurethralEnucleationServiceRequest",
+    "outputFile": "ServiceRequest-TransurethralEnucleationReportRequest.json",
+    "fshName": "TransurethralEnucleationReportRequest",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/serviceRequest.fsh",
     "startLine": 2,
     "endLine": 23
   },
   {
-    "outputFile": "ServiceRequest-TransurethralResectionServiceRequest.json",
-    "fshName": "TransurethralResectionServiceRequest",
+    "outputFile": "ServiceRequest-TransurethralResectionReportRequest.json",
+    "fshName": "TransurethralResectionReportRequest",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/serviceRequest.fsh",
     "startLine": 2,
@@ -2412,8 +2436,8 @@
     "fshName": "CoreNeedleBiopsySpecimen01Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 47,
-    "endLine": 73
+    "startLine": 48,
+    "endLine": 77
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen01Part.json",
@@ -2421,303 +2445,303 @@
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
     "startLine": 5,
-    "endLine": 43
+    "endLine": 44
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen01Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen01Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 76,
-    "endLine": 102
+    "startLine": 80,
+    "endLine": 116
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Block.json",
     "fshName": "CoreNeedleBiopsySpecimen02Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 150,
-    "endLine": 176
+    "startLine": 165,
+    "endLine": 194
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Part.json",
     "fshName": "CoreNeedleBiopsySpecimen02Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 108,
-    "endLine": 146
+    "startLine": 122,
+    "endLine": 161
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen02Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen02Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 179,
-    "endLine": 205
+    "startLine": 197,
+    "endLine": 233
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Block.json",
     "fshName": "CoreNeedleBiopsySpecimen03Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 253,
-    "endLine": 279
+    "startLine": 282,
+    "endLine": 311
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Part.json",
     "fshName": "CoreNeedleBiopsySpecimen03Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 211,
-    "endLine": 249
+    "startLine": 239,
+    "endLine": 278
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen03Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen03Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 282,
-    "endLine": 308
+    "startLine": 314,
+    "endLine": 350
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Block.json",
     "fshName": "CoreNeedleBiopsySpecimen04Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 356,
-    "endLine": 382
+    "startLine": 399,
+    "endLine": 428
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Part.json",
     "fshName": "CoreNeedleBiopsySpecimen04Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 314,
-    "endLine": 352
+    "startLine": 356,
+    "endLine": 395
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen04Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen04Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 385,
-    "endLine": 411
+    "startLine": 431,
+    "endLine": 467
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Block.json",
     "fshName": "CoreNeedleBiopsySpecimen05Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 458,
-    "endLine": 484
+    "startLine": 515,
+    "endLine": 544
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Part.json",
     "fshName": "CoreNeedleBiopsySpecimen05Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 417,
-    "endLine": 455
+    "startLine": 473,
+    "endLine": 512
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen05Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen05Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 487,
-    "endLine": 513
+    "startLine": 547,
+    "endLine": 583
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Block.json",
     "fshName": "CoreNeedleBiopsySpecimen06Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 560,
-    "endLine": 586
+    "startLine": 631,
+    "endLine": 660
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Part.json",
     "fshName": "CoreNeedleBiopsySpecimen06Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 519,
-    "endLine": 557
+    "startLine": 589,
+    "endLine": 628
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen06Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen06Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 589,
-    "endLine": 615
+    "startLine": 663,
+    "endLine": 699
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Block.json",
     "fshName": "CoreNeedleBiopsySpecimen07Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 662,
-    "endLine": 688
+    "startLine": 747,
+    "endLine": 776
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Part.json",
     "fshName": "CoreNeedleBiopsySpecimen07Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 621,
-    "endLine": 659
+    "startLine": 705,
+    "endLine": 744
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen07Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen07Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 691,
-    "endLine": 717
+    "startLine": 779,
+    "endLine": 815
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Block.json",
     "fshName": "CoreNeedleBiopsySpecimen08Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 764,
-    "endLine": 790
+    "startLine": 863,
+    "endLine": 892
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Part.json",
     "fshName": "CoreNeedleBiopsySpecimen08Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 723,
-    "endLine": 761
+    "startLine": 821,
+    "endLine": 860
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen08Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen08Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 793,
-    "endLine": 819
+    "startLine": 895,
+    "endLine": 931
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Block.json",
     "fshName": "CoreNeedleBiopsySpecimen09Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 866,
-    "endLine": 892
+    "startLine": 979,
+    "endLine": 1008
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Part.json",
     "fshName": "CoreNeedleBiopsySpecimen09Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 825,
-    "endLine": 863
+    "startLine": 937,
+    "endLine": 976
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen09Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen09Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 895,
-    "endLine": 921
+    "startLine": 1011,
+    "endLine": 1047
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Block.json",
     "fshName": "CoreNeedleBiopsySpecimen10Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 968,
-    "endLine": 994
+    "startLine": 1095,
+    "endLine": 1124
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Part.json",
     "fshName": "CoreNeedleBiopsySpecimen10Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 927,
-    "endLine": 965
+    "startLine": 1053,
+    "endLine": 1092
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen10Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen10Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 997,
-    "endLine": 1023
+    "startLine": 1127,
+    "endLine": 1163
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Block.json",
     "fshName": "CoreNeedleBiopsySpecimen11Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1070,
-    "endLine": 1096
+    "startLine": 1211,
+    "endLine": 1240
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Part.json",
     "fshName": "CoreNeedleBiopsySpecimen11Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1029,
-    "endLine": 1067
+    "startLine": 1169,
+    "endLine": 1208
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen11Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen11Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1099,
-    "endLine": 1125
+    "startLine": 1243,
+    "endLine": 1279
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Block.json",
     "fshName": "CoreNeedleBiopsySpecimen12Block",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1172,
-    "endLine": 1198
+    "startLine": 1327,
+    "endLine": 1356
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Part.json",
     "fshName": "CoreNeedleBiopsySpecimen12Part",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1131,
-    "endLine": 1169
+    "startLine": 1285,
+    "endLine": 1324
   },
   {
     "outputFile": "Specimen-CoreNeedleBiopsySpecimen12Slide.json",
     "fshName": "CoreNeedleBiopsySpecimen12Slide",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/specimens.fsh",
-    "startLine": 1201,
-    "endLine": 1227
+    "startLine": 1359,
+    "endLine": 1395
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenBlock01.json",
     "fshName": "RadicalProstatectomySpecimenBlock01",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 43,
-    "endLine": 69
+    "startLine": 44,
+    "endLine": 73
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenBlock02.json",
     "fshName": "RadicalProstatectomySpecimenBlock02",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 135,
-    "endLine": 161
+    "startLine": 145,
+    "endLine": 174
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenBlock03.json",
     "fshName": "RadicalProstatectomySpecimenBlock03",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 227,
-    "endLine": 253
+    "startLine": 246,
+    "endLine": 275
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenPart.json",
@@ -2725,95 +2749,95 @@
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide01A.json",
     "fshName": "RadicalProstatectomySpecimenSlide01A",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 75,
-    "endLine": 101
+    "startLine": 79,
+    "endLine": 108
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide01B.json",
     "fshName": "RadicalProstatectomySpecimenSlide01B",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 103,
-    "endLine": 129
+    "startLine": 110,
+    "endLine": 139
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide02A.json",
     "fshName": "RadicalProstatectomySpecimenSlide02A",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 167,
-    "endLine": 193
+    "startLine": 180,
+    "endLine": 209
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide02B.json",
     "fshName": "RadicalProstatectomySpecimenSlide02B",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 195,
-    "endLine": 221
+    "startLine": 211,
+    "endLine": 240
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide03A.json",
     "fshName": "RadicalProstatectomySpecimenSlide03A",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 259,
-    "endLine": 285
+    "startLine": 281,
+    "endLine": 310
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenSlide03B.json",
     "fshName": "RadicalProstatectomySpecimenSlide03B",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 287,
-    "endLine": 313
+    "startLine": 312,
+    "endLine": 341
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock01.json",
     "fshName": "TransurethralEnucleationSpecimenBlock01",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 43,
-    "endLine": 69
+    "startLine": 44,
+    "endLine": 73
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock02.json",
     "fshName": "TransurethralEnucleationSpecimenBlock02",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 135,
-    "endLine": 161
+    "startLine": 146,
+    "endLine": 175
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock03.json",
     "fshName": "TransurethralEnucleationSpecimenBlock03",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 227,
-    "endLine": 253
+    "startLine": 248,
+    "endLine": 277
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock04.json",
     "fshName": "TransurethralEnucleationSpecimenBlock04",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 319,
-    "endLine": 345
+    "startLine": 350,
+    "endLine": 379
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenBlock05.json",
     "fshName": "TransurethralEnucleationSpecimenBlock05",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 411,
-    "endLine": 437
+    "startLine": 452,
+    "endLine": 481
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenPart.json",
@@ -2821,127 +2845,127 @@
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide01A.json",
     "fshName": "TransurethralEnucleationSpecimenSlide01A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 75,
-    "endLine": 101
+    "startLine": 79,
+    "endLine": 108
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide01B.json",
     "fshName": "TransurethralEnucleationSpecimenSlide01B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 103,
-    "endLine": 129
+    "startLine": 110,
+    "endLine": 139
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide02A.json",
     "fshName": "TransurethralEnucleationSpecimenSlide02A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 167,
-    "endLine": 193
+    "startLine": 181,
+    "endLine": 210
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide02B.json",
     "fshName": "TransurethralEnucleationSpecimenSlide02B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 195,
-    "endLine": 221
+    "startLine": 212,
+    "endLine": 241
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide03A.json",
     "fshName": "TransurethralEnucleationSpecimenSlide03A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 259,
-    "endLine": 285
+    "startLine": 283,
+    "endLine": 312
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide03B.json",
     "fshName": "TransurethralEnucleationSpecimenSlide03B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 287,
-    "endLine": 313
+    "startLine": 314,
+    "endLine": 343
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide04A.json",
     "fshName": "TransurethralEnucleationSpecimenSlide04A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 351,
-    "endLine": 377
+    "startLine": 385,
+    "endLine": 414
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide04B.json",
     "fshName": "TransurethralEnucleationSpecimenSlide04B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 379,
-    "endLine": 405
+    "startLine": 416,
+    "endLine": 445
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide05A.json",
     "fshName": "TransurethralEnucleationSpecimenSlide05A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 443,
-    "endLine": 469
+    "startLine": 487,
+    "endLine": 516
   },
   {
     "outputFile": "Specimen-TransurethralEnucleationSpecimenSlide05B.json",
     "fshName": "TransurethralEnucleationSpecimenSlide05B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/specimens.fsh",
-    "startLine": 471,
-    "endLine": 497
+    "startLine": 518,
+    "endLine": 547
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenBlock01.json",
     "fshName": "TransurethralResectionSpecimenBlock01",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 43,
-    "endLine": 69
+    "startLine": 44,
+    "endLine": 73
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenBlock02.json",
     "fshName": "TransurethralResectionSpecimenBlock02",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 135,
-    "endLine": 161
+    "startLine": 146,
+    "endLine": 175
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenBlock03.json",
     "fshName": "TransurethralResectionSpecimenBlock03",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 227,
-    "endLine": 253
+    "startLine": 248,
+    "endLine": 277
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenBlock04.json",
     "fshName": "TransurethralResectionSpecimenBlock04",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 319,
-    "endLine": 345
+    "startLine": 350,
+    "endLine": 379
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenBlock05.json",
     "fshName": "TransurethralResectionSpecimenBlock05",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 411,
-    "endLine": 437
+    "startLine": 452,
+    "endLine": 481
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenPart.json",
@@ -2949,86 +2973,86 @@
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide01A.json",
     "fshName": "TransurethralResectionSpecimenSlide01A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 75,
-    "endLine": 101
+    "startLine": 79,
+    "endLine": 108
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide01B.json",
     "fshName": "TransurethralResectionSpecimenSlide01B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 103,
-    "endLine": 129
+    "startLine": 110,
+    "endLine": 139
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide02A.json",
     "fshName": "TransurethralResectionSpecimenSlide02A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 167,
-    "endLine": 193
+    "startLine": 181,
+    "endLine": 210
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide02B.json",
     "fshName": "TransurethralResectionSpecimenSlide02B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 195,
-    "endLine": 221
+    "startLine": 212,
+    "endLine": 241
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide03A.json",
     "fshName": "TransurethralResectionSpecimenSlide03A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 259,
-    "endLine": 285
+    "startLine": 283,
+    "endLine": 312
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide03B.json",
     "fshName": "TransurethralResectionSpecimenSlide03B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 287,
-    "endLine": 313
+    "startLine": 314,
+    "endLine": 343
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide04A.json",
     "fshName": "TransurethralResectionSpecimenSlide04A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 351,
-    "endLine": 377
+    "startLine": 385,
+    "endLine": 414
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide04B.json",
     "fshName": "TransurethralResectionSpecimenSlide04B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 379,
-    "endLine": 405
+    "startLine": 416,
+    "endLine": 445
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide05A.json",
     "fshName": "TransurethralResectionSpecimenSlide05A",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 443,
-    "endLine": 469
+    "startLine": 487,
+    "endLine": 516
   },
   {
     "outputFile": "Specimen-TransurethralResectionSpecimenSlide05B.json",
     "fshName": "TransurethralResectionSpecimenSlide05B",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/specimens.fsh",
-    "startLine": 471,
-    "endLine": 497
+    "startLine": 518,
+    "endLine": 547
   }
 ]

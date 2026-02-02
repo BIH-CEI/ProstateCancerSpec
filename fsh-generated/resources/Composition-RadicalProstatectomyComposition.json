@@ -55,7 +55,7 @@
       ],
       "detail": [
         {
-          "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+          "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
         }
       ]
     }

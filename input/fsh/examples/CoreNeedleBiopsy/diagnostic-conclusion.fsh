@@ -15,7 +15,7 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * hasMember[+] = Reference(CoreNeedleBiopsyHistologicalTypeICDO3)
 * hasMember[+] = Reference(CoreNeedleBiopsyMorphologyFreeText)
 * hasMember[+] = Reference(CoreNeedleBiopsyICDOVersion)
@@ -73,7 +73,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 
 // Morphology Free Text
@@ -90,7 +90,7 @@ Description: "Free text description of tumor morphology"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueString = "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
 
 // ICD-O Version
@@ -107,7 +107,7 @@ Description: "Version of ICD-O classification used"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $ICDO-3_Auflagen#33 "ICD-O-3 2. Auflage 2019"
 
 // Primary Gleason Pattern
@@ -126,7 +126,7 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaerGleason01)
 * derivedFrom[+] = Reference(CoreNeedleBiopsyPrimaerGleason02)
@@ -152,7 +152,7 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 * derivedFrom[0] = Reference(CoreNeedleBiopsySekundaerGleason01)
 * derivedFrom[+] = Reference(CoreNeedleBiopsySekundaerGleason02)
@@ -178,7 +178,7 @@ Description: "Total Gleason score in biopsy specimens"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999005 "Gleason  grade (Score) 7a"
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(CoreNeedleBiopsySecondaryGleasonPattern)
@@ -197,7 +197,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 77
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
@@ -219,7 +219,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
 
 // Histological Grade WHO
@@ -236,7 +236,7 @@ Description: "Histological differentiation grade according to WHO"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010#4 "Undifferenziert"
 
 // Number of Positive Cores Right
@@ -254,7 +254,7 @@ Description: "Number of tissue cores positive for carcinoma on the right side"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 3
 
 
@@ -273,7 +273,7 @@ Description: "Number of tissue cores positive for carcinoma on the left side"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 4
 
 // Ratio of Positive to Total Cores
@@ -290,7 +290,7 @@ Description: "Ratio of positive cores to all examined cores"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueRatio.numerator.value = 7
 * valueRatio.numerator.unit = "cores"
 * valueRatio.denominator.value = 12
@@ -310,7 +310,7 @@ Description: "Total percentage of tumor in all positive tissue cores"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 35
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
@@ -330,7 +330,7 @@ Description: "Total linear length of carcinoma in millimeters"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 18.5
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $ucum
@@ -350,7 +350,7 @@ Description: "Presence of perineural invasion in cancer specimen"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Seminal Vesicle Invasion
@@ -367,7 +367,7 @@ Description: "Tumor invasion into seminal vesicles (typically not assessable in 
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 
 // Lymphovascular Invasion
@@ -384,7 +384,7 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 
 // Periprostatic Fat Invasion
@@ -401,7 +401,7 @@ Description: "Tumor invasion into periprostatic connective and adipose tissue (t
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Extraprostatic Extension Location
@@ -418,7 +418,7 @@ Description: "Anatomical location of extraprostatic tumor extension (typically n
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $loinc#LA25151-4 "Apical"
 
 // Intraductal Carcinoma
@@ -435,7 +435,7 @@ Description: "Presence of intraductal carcinoma"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 
 // ASAP
@@ -452,7 +452,7 @@ Description: "Presence of atypical small acinar proliferation"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
 
 // High-grade PIN
@@ -469,7 +469,7 @@ Description: "Presence of high-grade prostatic intraepithelial neoplasia"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 
 // Granulomatous Prostatitis
@@ -486,5 +486,5 @@ Description: "Presence of granulomatous prostatitis"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(CoreNeedleBiopsyRequest)
+* basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"

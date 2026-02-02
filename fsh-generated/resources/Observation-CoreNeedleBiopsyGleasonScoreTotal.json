@@ -46,7 +46,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "derivedFrom": [

@@ -10,12 +10,12 @@
   "identifier": [
     {
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_001-06-HE-1"
+      "value": "E_24_001_F_1_1HE"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_001"
+    "value": "E_24_001"
   },
   "parent": [
     {
@@ -27,14 +27,46 @@
     "method": {
       "coding": [
         {
-          "code": "127790008",
+          "code": "13283003",
           "system": "http://snomed.info/sct",
-          "display": "Hematoxylin and eosin staining method (procedure)"
+          "display": "Tissue processing technique (procedure)"
         }
       ]
     }
   },
   "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434472006",
+            "display": "Sectioning of tissue block (procedure)"
+          }
+        ]
+      },
+      "description": "Schnittherstellung",
+      "timeDateTime": "2024-01-17T09:00:00+01:00"
+    },
     {
       "extension": [
         {
@@ -65,15 +97,37 @@
         ]
       },
       "description": "HE-Färbung",
-      "timeDateTime": "2024-01-17T09:00:00+01:00"
+      "timeDateTime": "2024-01-17T09:15:00+01:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "433466003",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "430862008",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
     }
   ],
   "type": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "430685002",
-        "display": "Histopathology slide (physical object)"
+        "code": "430856003",
+        "display": "Tissue section (specimen)"
       }
     ]
   },

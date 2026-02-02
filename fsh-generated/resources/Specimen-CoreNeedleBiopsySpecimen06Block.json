@@ -10,12 +10,12 @@
   "identifier": [
     {
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_001-06-Block-A"
+      "value": "E_24_001_F_1"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_001"
+    "value": "E_24_001"
   },
   "parent": [
     {
@@ -27,9 +27,9 @@
     "method": {
       "coding": [
         {
-          "code": "434472006",
+          "code": "787377000",
           "system": "http://snomed.info/sct",
-          "display": "Fixation of tissue (procedure)"
+          "display": "Gross examination and sampling of tissue specimen (procedure)"
         }
       ]
     }
@@ -59,21 +59,43 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "434472006",
-            "display": "Fixation of tissue (procedure)"
+            "code": "787376009",
+            "display": "Preparation of formalin fixed paraffin embedded tissue specimen (procedure)"
           }
         ]
       },
-      "description": "Formalinfixierung und Paraffineinbettung",
+      "description": "Zuschnitt und Paraffineinbettung",
       "timeDateTime": "2024-01-16T08:00:00+01:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "1003707006",
+            "system": "http://snomed.info/sct",
+            "display": "Paraffin block (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "311731000",
+            "system": "http://snomed.info/sct",
+            "display": "Paraffin wax (substance)"
+          }
+        ]
+      }
     }
   ],
   "type": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1003707006",
-        "display": "Paraffin block (physical object)"
+        "code": "1201985008",
+        "display": "Tissue block specimen (specimen)"
       }
     ]
   },

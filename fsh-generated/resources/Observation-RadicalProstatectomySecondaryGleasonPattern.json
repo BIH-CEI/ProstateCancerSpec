@@ -46,7 +46,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "status": "final",

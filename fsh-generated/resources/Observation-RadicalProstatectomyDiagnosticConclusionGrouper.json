@@ -23,7 +23,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "hasMember": [

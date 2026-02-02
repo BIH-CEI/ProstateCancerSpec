@@ -17,8 +17,8 @@
           }
         ]
       },
-      "system": "http://example.hospital.de/diagnostic-reports",
-      "value": "PATH-RPT-2024-004"
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E_24_004"
     }
   ],
   "category": [
@@ -34,7 +34,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/TransurethralEnucleationServiceRequest"
+      "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
   "performer": [

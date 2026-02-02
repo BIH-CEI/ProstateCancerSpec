@@ -10,12 +10,12 @@
   "identifier": [
     {
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_004-HE-05A"
+      "value": "E_24_004_A_5_1HE"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_004"
+    "value": "E_24_004"
   },
   "parent": [
     {
@@ -66,6 +66,28 @@
       },
       "description": "HE-Färbung",
       "timeDateTime": "2024-04-12T09:40:00+01:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "433466003",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "430862008",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
     }
   ],
   "type": {

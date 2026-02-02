@@ -116,6 +116,9 @@
 [CoreNeedleBiopsyHistoTyp10]: Observation-CoreNeedleBiopsyHistoTyp10.html
 [CoreNeedleBiopsyHistoTyp11]: Observation-CoreNeedleBiopsyHistoTyp11.html
 [CoreNeedleBiopsyHistoTyp12]: Observation-CoreNeedleBiopsyHistoTyp12.html
+[2.16.840.1.113883.3.1937.777.18.27.16--20241221120534]: Questionnaire-2.16.840.1.113883.3.1937.777.18.27.16--20241221120534.html
+[2.16.840.1.113883.3.1937.777.18.27.17--20250102170615]: Questionnaire-2.16.840.1.113883.3.1937.777.18.27.17--20250102170615.html
+[2.16.840.1.113883.3.1937.777.18.27.18--20250115134435]: Questionnaire-2.16.840.1.113883.3.1937.777.18.27.18--20250115134435.html
 [CoreNeedleBiopsyICDOVersion]: Observation-CoreNeedleBiopsyICDOVersion.html
 [RadicalProstatectomyICDOVersion]: Observation-RadicalProstatectomyICDOVersion.html
 [CoreNeedleBiopsyIntraductalCarcinoma]: Observation-CoreNeedleBiopsyIntraductalCarcinoma.html
@@ -254,7 +257,7 @@
 [CoreNeedleBiopsyPrimaerGleason11]: Observation-CoreNeedleBiopsyPrimaerGleason11.html
 [RadicalProstatectomyMacroscopicProstateWidth]: Observation-RadicalProstatectomyMacroscopicProstateWidth.html
 [TransurethralEnucleationProcedure]: Procedure-TransurethralEnucleationProcedure.html
-[TransurethralEnucleationServiceRequest]: ServiceRequest-TransurethralEnucleationServiceRequest.html
+[TransurethralEnucleationReportRequest]: ServiceRequest-TransurethralEnucleationReportRequest.html
 [TransurethralEnucleationMacroscopicWidth]: Observation-TransurethralEnucleationMacroscopicWidth.html
 [TransurethralEnucleationMacroscopicWeight]: Observation-TransurethralEnucleationMacroscopicWeight.html
 [TransurethralEnucleationMacroscopicLength]: Observation-TransurethralEnucleationMacroscopicLength.html
@@ -278,7 +281,7 @@
 [CoreNeedleBiopsySpecimen12Part]: Specimen-CoreNeedleBiopsySpecimen12Part.html
 [CoreNeedleBiopsyComposition]: Composition-CoreNeedleBiopsyComposition.html
 [RadicalProstatectomyComposition]: Composition-RadicalProstatectomyComposition.html
-[RadicalProstatectomyServiceRequest]: ServiceRequest-RadicalProstatectomyServiceRequest.html
+[RadicalProstatectomyReportRequest]: ServiceRequest-RadicalProstatectomyReportRequest.html
 [RadicalProstatectomySpecimenPart]: Specimen-RadicalProstatectomySpecimenPart.html
 [TransurethralEnucleationProstaticTissueInvolved]: Observation-TransurethralEnucleationProstaticTissueInvolved.html
 [RadicalProstatectomyProstaticTissueInvolved]: Observation-RadicalProstatectomyProstaticTissueInvolved.html
@@ -333,7 +336,7 @@
 [TransurethralEnucleationSeminalVesicleInvasion]: Observation-TransurethralEnucleationSeminalVesicleInvasion.html
 [RadicalProstatectomySeminalVesicleInvasion]: Observation-RadicalProstatectomySeminalVesicleInvasion.html
 [TransurethralResectionSeminalVesicleInvasion]: Observation-TransurethralResectionSeminalVesicleInvasion.html
-[CoreNeedleBiopsyRequest]: ServiceRequest-CoreNeedleBiopsyRequest.html
+[CoreNeedleBiopsyReportRequest]: ServiceRequest-CoreNeedleBiopsyReportRequest.html
 [RadicalProstatectomyTNMpT]: Observation-RadicalProstatectomyTNMpT.html
 [RadicalProstatectomyTNMpN]: Observation-RadicalProstatectomyTNMpN.html
 [CoreNeedleBiopsyGleasonScoreTotal]: Observation-CoreNeedleBiopsyGleasonScoreTotal.html
@@ -365,7 +368,7 @@
 [CoreNeedleBiopsyTumornachweisinSamenblase09]: Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.html
 [CoreNeedleBiopsyTumornachweisinSamenblase11]: Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.html
 [TransurethralResectionComposition]: Composition-TransurethralResectionComposition.html
-[TransurethralResectionServiceRequest]: ServiceRequest-TransurethralResectionServiceRequest.html
+[TransurethralResectionReportRequest]: ServiceRequest-TransurethralResectionReportRequest.html
 [TransurethralResectionMacroscopicWeight]: Observation-TransurethralResectionMacroscopicWeight.html
 [TransurethralResectionSpecimenPart]: Specimen-TransurethralResectionSpecimenPart.html
 [UrologistPractitioner]: Practitioner-UrologistPractitioner.html

@@ -4,7 +4,7 @@
   "identifier": [
     {
       "system": "http://example.hospital.de/encounters",
-      "value": "PSA-TUR-2024"
+      "value": "E_24_003"
     }
   ],
   "status": "finished",

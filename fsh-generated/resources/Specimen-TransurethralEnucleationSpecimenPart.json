@@ -17,7 +17,7 @@
           }
         ]
       },
-      "system": "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag",
+      "system": "https://urologie.example-hospital.de/fhir/specimen/placer",
       "value": "ENUC24_001_A"
     },
     {
@@ -30,16 +30,16 @@
         ]
       },
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_004-A"
+      "value": "E_24_004_A"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_004"
+    "value": "E_24_004"
   },
   "request": [
     {
-      "reference": "ServiceRequest/TransurethralEnucleationServiceRequest"
+      "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
   "collection": {
@@ -74,6 +74,15 @@
             "code": "434746001",
             "system": "http://snomed.info/sct",
             "display": "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "434162003",
+            "system": "http://snomed.info/sct",
+            "display": "Neutral buffered formalin (substance)"
           }
         ]
       }

@@ -4,7 +4,7 @@
   "identifier": [
     {
       "system": "http://example.hospital.de/encounters",
-      "value": "PSA-OP-2024"
+      "value": "E_24_002"
     }
   ],
   "status": "finished",

@@ -31,7 +31,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "status": "final",

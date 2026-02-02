@@ -55,7 +55,7 @@
       ],
       "detail": [
         {
-          "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+          "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
         }
       ]
     }

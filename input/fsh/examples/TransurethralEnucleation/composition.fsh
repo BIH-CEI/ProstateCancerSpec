@@ -23,7 +23,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 * attester.party = Reference(PathologyLabOrganization)
 * custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
-* event.detail = Reference(TransurethralEnucleationServiceRequest)
+* event.detail = Reference(TransurethralEnucleationReportRequest)
 
 // Sektion für Pathologiebefundbericht
 * section.title = "Pathologiebefundbericht"

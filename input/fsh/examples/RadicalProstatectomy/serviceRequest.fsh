@@ -1,5 +1,5 @@
 // Service Request für Prostatektomie
-Instance: RadicalProstatectomyServiceRequest
+Instance: RadicalProstatectomyReportRequest
 InstanceOf: MII_PR_Patho_Service_Request
 Usage: #example
 Title: "Prostatektomie Anforderung"

@@ -11,21 +11,21 @@ Description: "Vollständiges Prostatektomiepräparat mit Samenbläschen"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier[+]
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-  * system = "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag"
+  * system = "https://urologie.example-hospital.de/fhir/specimen/placer"
   * value = "OP24_001_A"
 * identifier[+]
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-A"
+  * value = "E_24_002_A"
 
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 
 * status = #available
 * type = $sct#118292001 "Surgical specimen"
 * subject = Reference(Patient2)
-* request = Reference(RadicalProstatectomyServiceRequest)
+* request = Reference(RadicalProstatectomyReportRequest)
 
 * collection
   * collector = Reference(UrologistPractitioner)
@@ -35,6 +35,7 @@ Description: "Vollständiges Prostatektomiepräparat mit Samenbläschen"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
+  * additiveCodeableConcept = $sct#434162003 "Neutral buffered formalin (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - PARAFFINBLOCK 01
@@ -49,10 +50,10 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 01"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-Block-01"
+  * value = "E_24_002_A_1"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
 * subject = Reference(Patient2)
@@ -67,6 +68,9 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 01"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - HE-SCHNITTE BLOCK 01
@@ -81,10 +85,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-01A"
+  * value = "E_24_002_A_1_1HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -99,6 +103,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 Instance: RadicalProstatectomySpecimenSlide01B
 InstanceOf: $mii-patho-specimen
@@ -109,10 +116,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-01B"
+  * value = "E_24_002_A_1_2HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -127,6 +134,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - PARAFFINBLOCK 02
@@ -141,10 +151,10 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 02"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-Block-02"
+  * value = "E_24_002_A_2"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
 * subject = Reference(Patient2)
@@ -159,6 +169,9 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 02"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - HE-SCHNITTE BLOCK 02
@@ -173,10 +186,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-02A"
+  * value = "E_24_002_A_2_1HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -191,6 +204,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 Instance: RadicalProstatectomySpecimenSlide02B
 InstanceOf: $mii-patho-specimen
@@ -201,10 +217,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-02B"
+  * value = "E_24_002_A_2_2HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -219,6 +235,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - PARAFFINBLOCK 03
@@ -233,10 +252,10 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 03"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-Block-03"
+  * value = "E_24_002_A_3"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
 * subject = Reference(Patient2)
@@ -251,6 +270,9 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 03"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
 // PROSTATEKTOMIE - HE-SCHNITTE BLOCK 03
@@ -265,10 +287,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-03A"
+  * value = "E_24_002_A_3_1HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -283,6 +305,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 Instance: RadicalProstatectomySpecimenSlide03B
 InstanceOf: $mii-patho-specimen
@@ -293,10 +318,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräpa
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002-HE-03B"
+  * value = "E_24_002_A_3_2HE"
 * accessionIdentifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
-  * value = "E2024_002"
+  * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
 * subject = Reference(Patient2)
@@ -311,3 +336,6 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräpa
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"

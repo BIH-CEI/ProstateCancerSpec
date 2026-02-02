@@ -1,5 +1,5 @@
 // Service Request für Prostata Enucleation
-Instance: TransurethralEnucleationServiceRequest
+Instance: TransurethralEnucleationReportRequest
 InstanceOf: MII_PR_Patho_Service_Request
 Usage: #example
 Title: "Prostata Enucleation Anforderung"

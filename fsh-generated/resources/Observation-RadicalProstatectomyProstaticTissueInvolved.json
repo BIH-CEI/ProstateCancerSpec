@@ -41,7 +41,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "valueQuantity": {

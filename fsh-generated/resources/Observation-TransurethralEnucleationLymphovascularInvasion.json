@@ -31,7 +31,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/TransurethralEnucleationServiceRequest"
+      "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
   "status": "final",

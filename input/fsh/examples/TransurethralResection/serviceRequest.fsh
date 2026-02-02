@@ -1,5 +1,5 @@
 // Service Request für TUR-Prostata
-Instance: TransurethralResectionServiceRequest
+Instance: TransurethralResectionReportRequest
 InstanceOf: MII_PR_Patho_Service_Request
 Usage: #example
 Title: "TUR-Prostata Anforderung"

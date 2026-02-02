@@ -15,7 +15,7 @@ Description: "Grouper for all diagnostic conclusion findings in TUR-Prostata spe
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 
 // hasMember references für TUR-spezifische Findings
 * hasMember[+] = Reference(TransurethralResectionHistologicalTypeICDO3)
@@ -48,7 +48,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 
 // Morphology Free Text
@@ -66,7 +66,7 @@ Description: "Free text description of tissue morphology"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueString = "Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall."
 
 // Primary Gleason Pattern
@@ -86,7 +86,7 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 
 // Secondary Gleason Pattern
@@ -106,7 +106,7 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#369774002 "Gleason Pattern 5 (finding)"
 
 // Gleason Score Total
@@ -126,7 +126,7 @@ Description: "Total Gleason score in TUR specimens"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
 * derivedFrom[0] = Reference(TransurethralResectionPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(TransurethralResectionSecondaryGleasonPattern)
@@ -146,7 +146,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueQuantity.value = 90
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
@@ -169,7 +169,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#1279718003 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
 
 // Intraductal Carcinoma of the Prostate (IDC-P)
@@ -187,7 +187,7 @@ Description: "Presence of intraductal carcinoma of the prostate"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Invasive Cribriform Carcinoma (ICC)
@@ -206,7 +206,7 @@ Description: "Presence of invasive cribriform carcinoma"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Prostatic Tissue Involved by Tumour
@@ -225,7 +225,7 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueQuantity.value = 60
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
@@ -247,7 +247,7 @@ Description: "Presence of extraprostatic extension"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Seminal Vesicle Invasion
@@ -265,7 +265,7 @@ Description: "Tumor invasion into seminal vesicles"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Lymphovascular Invasion
@@ -283,7 +283,7 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 
 // Perineural Infiltration
@@ -301,5 +301,5 @@ Description: "Presence of perineural invasion in cancer specimen"
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
-* basedOn = Reference(TransurethralResectionServiceRequest)
+* basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"

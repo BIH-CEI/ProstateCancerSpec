@@ -997,6 +997,28 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.16--20241221120534"
+        },
+        "name": "ICCR Fragebogen für Klinische Angaben bei Prostata-Stanzbiopsien",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20250102170615"
+        },
+        "name": "ICCR Fragebogen für Prostata-Einzelstanzen",
+        "description": "Modell für \"intelligentes\" Formular",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.18--20250115134435"
+        },
+        "name": "ICCR Fragebogen für Prostata-Fall",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/CoreNeedleBiopsyICDOVersion"
         },
         "name": "ICD-O Version - Biopsy",
@@ -2101,7 +2123,7 @@
       },
       {
         "reference": {
-          "reference": "ServiceRequest/TransurethralEnucleationServiceRequest"
+          "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
         },
         "name": "Prostata Enucleation Anforderung",
         "description": "Anforderung für pathologische Aufarbeitung nach Prostata Enucleation",
@@ -2293,7 +2315,7 @@
       },
       {
         "reference": {
-          "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+          "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
         },
         "name": "Prostatektomie Anforderung",
         "description": "Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie",
@@ -2733,7 +2755,7 @@
       },
       {
         "reference": {
-          "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+          "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
         },
         "name": "Standardbiopsie Prostata Anforderung",
         "description": "Anforderung für 12-Stanzen Prostatabiopsie",
@@ -2989,7 +3011,7 @@
       },
       {
         "reference": {
-          "reference": "ServiceRequest/TransurethralResectionServiceRequest"
+          "reference": "ServiceRequest/TransurethralResectionReportRequest"
         },
         "name": "TUR-Prostata Anforderung",
         "description": "Anforderung für pathologische Aufarbeitung nach TUR-Prostata",

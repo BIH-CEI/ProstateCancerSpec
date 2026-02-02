@@ -40,7 +40,7 @@
           }
         ]
       },
-      "system": "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag",
+      "system": "https://urologie.example-hospital.de/fhir/specimen/placer",
       "value": "BX24_001_06_A"
     },
     {
@@ -53,16 +53,16 @@
         ]
       },
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_001-06-A"
+      "value": "E_24_001_F"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_001"
+    "value": "E_24_001"
   },
   "request": [
     {
-      "reference": "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "collection": {
@@ -97,6 +97,15 @@
             "code": "434746001",
             "system": "http://snomed.info/sct",
             "display": "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "434162003",
+            "system": "http://snomed.info/sct",
+            "display": "Neutral buffered formalin (substance)"
           }
         ]
       }

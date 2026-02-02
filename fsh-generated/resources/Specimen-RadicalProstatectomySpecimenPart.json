@@ -17,7 +17,7 @@
           }
         ]
       },
-      "system": "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag",
+      "system": "https://urologie.example-hospital.de/fhir/specimen/placer",
       "value": "OP24_001_A"
     },
     {
@@ -30,16 +30,16 @@
         ]
       },
       "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value": "E2024_002-A"
+      "value": "E_24_002_A"
     }
   ],
   "accessionIdentifier": {
     "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value": "E2024_002"
+    "value": "E_24_002"
   },
   "request": [
     {
-      "reference": "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "collection": {
@@ -74,6 +74,15 @@
             "code": "434746001",
             "system": "http://snomed.info/sct",
             "display": "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "434162003",
+            "system": "http://snomed.info/sct",
+            "display": "Neutral buffered formalin (substance)"
           }
         ]
       }

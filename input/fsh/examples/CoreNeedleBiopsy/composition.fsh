@@ -23,7 +23,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 * attester.party = Reference(PathologyLabOrganization)
 * custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
-* event.detail = Reference(CoreNeedleBiopsyRequest)
+* event.detail = Reference(CoreNeedleBiopsyReportRequest)
 
 // Sektion für Pathologiebefundbericht
 * section.title = "Pathologiebefundbericht"

@@ -6,13 +6,13 @@ Title: "Pathologiebericht Prostatektomie"
 Description: "Umfangreicher Pathologiebericht nach radikaler Prostatektomie"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
 * identifier[Set-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
-* identifier[Set-ID].system = "http://example.hospital.de/diagnostic-reports"
-* identifier[Set-ID].value = "PATH-RPT-2024-002"
+* identifier[Set-ID].system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
+* identifier[Set-ID].value = "E_24_002"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
 * code = $loinc#60568-3 "Pathology Synoptic report"
 * subject = Reference(Patient2)
-* basedOn = Reference(RadicalProstatectomyServiceRequest)
+* basedOn = Reference(RadicalProstatectomyReportRequest)
 * effectiveDateTime = "2024-03-20T17:00:00+01:00"
 * issued = "2024-03-21T08:00:00+01:00"
 * performer = Reference(PathologistPractitioner)

@@ -1,5 +1,5 @@
 // Service Request für Prostatabiopsie
-Instance: CoreNeedleBiopsyRequest
+Instance: CoreNeedleBiopsyReportRequest
 InstanceOf: MII_PR_Patho_Service_Request
 Usage: #example
 Title: "Standardbiopsie Prostata Anforderung"
@@ -11,7 +11,7 @@ Description: "Anforderung für 12-Stanzen Prostatabiopsie"
 * identifier[Placer-ID].value = "PATH-RPT-2024-001"
 * intent = #order
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-* code = $sct#301759007 "Tru-cut biopsy of prostate (procedure)"
+* code = $loinc#66117-3 "Prostate Pathology biopsy report"
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * subject = Reference(Patient1)
 * requester = Reference(UrologistPractitioner)
