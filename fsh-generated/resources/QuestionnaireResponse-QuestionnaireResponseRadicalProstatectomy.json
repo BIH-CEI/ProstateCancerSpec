@@ -1,0 +1,273 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseRadicalProstatectomy",
+  "item": [
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueString": "Schmidt"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.84",
+              "text": "Familienname"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "Peter"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.85",
+              "text": "Vorname"
+            },
+            {
+              "answer": [
+                {
+                  "valueDate": "1960-03-22"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
+              "text": "Geburtsdatum"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PAT-2024-002"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
+              "text": "Patienten-Identifikator"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PATH-RPT-2024-002"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+              "text": "Auftragsnummer des Einsenders"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "E_24_002"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+              "text": "Eingangs-/Fallnummer"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+          "text": "Patientendaten"
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 55,
+                        "code": "g",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10600",
+                  "text": "Gewicht"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 4,
+                        "code": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "cm"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10610",
+                  "text": "Höhe Prostata"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 4.5,
+                        "code": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "cm"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10620",
+                  "text": "Breite Prostata"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 3.5,
+                        "code": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "cm"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10630",
+                  "text": "Tiefe Prostata"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "52101004",
+                        "system": "http://snomed.info/sct",
+                        "display": "Present (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11220",
+                  "text": "Lymphknoten im Resektat"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "51440002",
+                        "system": "http://snomed.info/sct",
+                        "display": "Bilateral (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11219",
+                  "text": "Seitenangabe Lymphknoten"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "52101004",
+                        "system": "http://snomed.info/sct",
+                        "display": "Present (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11218",
+                  "text": "Samenblasen im Resektat"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.2.11108",
+              "text": "Untersuchungsmaterial"
+            },
+            {
+              "item": [
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "8140/3",
+                        "system": "urn:oid:2.16.840.1.113883.6.43.1",
+                        "display": "Azinäres Adenokarzinom"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.52",
+                  "text": "Histologischer Typ ICD-O-3"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueString": "Konventionelles Adenokarzinom der Prostata mit gemischten Gleason-Mustern"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.50",
+                  "text": "Morphologie Freitext"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10670",
+              "text": "Histologischer Tumortyp"
+            },
+            {
+              "item": [
+                {
+                  "item": [
+                    {
+                      "item": [
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "369773008",
+                                "system": "http://snomed.info/sct",
+                                "display": "Gleason Pattern 4 (finding)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.38",
+                          "text": "Primäres Gleason Muster"
+                        },
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "369772003",
+                                "system": "http://snomed.info/sct",
+                                "display": "Gleason Pattern 3 (finding)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.39",
+                          "text": "Sekundäres Gleason Muster"
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10710",
+                      "text": "Gleason Muster (Epstein 2005)"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10700",
+                  "text": "Gleason Score (ISUP 2014, WHO 2016)"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "1279715000",
+                        "system": "http://snomed.info/sct",
+                        "display": "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10690",
+                  "text": "Gradinggruppe nach ISUP 2014/WHO 2016"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11221",
+              "text": "Histologischer Grad"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10590",
+          "text": "Prostatektomien"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10000",
+      "text": "Prostatakarzinome"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient2"
+  },
+  "authored": "2024-03-20T14:30:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}

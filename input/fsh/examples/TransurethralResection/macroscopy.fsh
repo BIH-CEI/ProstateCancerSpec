@@ -17,6 +17,7 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des TUR-Prostata Präparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Referenzen zu makroskopischen Findings
 * hasMember[+] = Reference(TransurethralResectionMacroscopicWeight)
@@ -47,6 +48,7 @@ Description: "Gewicht des TUR-Prostata Präparats"
 * valueQuantity = 25 'g' "g"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "TUR-Prostata Gewicht 25g"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Samenblasen im Resektat
 Instance: TransurethralResectionMacroscopicSeminalVesicles
@@ -67,6 +69,7 @@ Description: "Vorhandensein von Samenblasen im TUR-Prostata Präparat"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Samenblasen im Resektat"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Lymphknoten-Dissektion Präparat
 Instance: TransurethralResectionMacroscopicLymphNodeDissection
@@ -87,3 +90,4 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Lymphknoten im Resektat"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)

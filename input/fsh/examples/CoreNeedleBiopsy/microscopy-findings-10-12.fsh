@@ -23,6 +23,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 10"
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
 * bodySite = $sct#716898006 "Structure of basal part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen10Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText10
@@ -41,6 +42,7 @@ Description: "Morphologie Freitext für Stanze 10"
 * valueString = "Benigne fibröse und glatte Muskulatur mit spärlichen Prostatadrüsen. Stromareiche Zone. Keine malignen Veränderungen."
 * bodySite = $sct#716898006 "Structure of basal part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen10Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 
 Instance: CoreNeedleBiopsyHistoTyp11
 InstanceOf: $mii-patho-finding
@@ -58,6 +60,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 11"
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText11
@@ -76,6 +79,7 @@ Description: "Morphologie Freitext für Stanze 11"
 * valueString = "Azinäres Adenokarzinom mit vorwiegend Gleason Pattern 3, gering fokal Gleason Pattern 4. Mäßig differenziertes Karzinom."
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Primäres Gleason Muster
 Instance: CoreNeedleBiopsyPrimaerGleason11
@@ -96,6 +100,7 @@ Description: "Primäres Gleason Muster für Stanze 11"
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Sekundäres Gleason Muster
 Instance: CoreNeedleBiopsySekundaerGleason11
@@ -116,6 +121,7 @@ Description: "Sekundäres Gleason Muster für Stanze 11"
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Prozentualer Anteil Gleasonmuster 4/5
 Instance: CoreNeedleBiopsyProzentGleason11
@@ -134,6 +140,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 11"
 * valueQuantity = 15 '%' "%"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Gradinggruppe nach ISUP 2014/WHO 2016
 Instance: CoreNeedleBiopsyGleasonGrading11
@@ -154,6 +161,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 11"
 * valueCodeableConcept = $sct#860743003 "Gleason grade group 2 (finding)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Verhältnis positiver zu allen Stanzen
 Instance: CoreNeedleBiopsyVerhaeltnisPositiverStanzen11
@@ -172,6 +180,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 11"
 * valueString = "7/12"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Prozentualer Tumoranteil
 Instance: CoreNeedleBiopsyTumoranteil11
@@ -190,6 +199,7 @@ Description: "Prozentualer Tumoranteil für Stanze 11"
 * valueQuantity = 25 '%' "%"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Tumorbefall in Länge (mm)
 Instance: CoreNeedleBiopsyTumorbefallinLaenge11
@@ -208,6 +218,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 11"
 * valueQuantity = 2.8 'mm' "mm"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Perineurale Infiltration
 Instance: CoreNeedleBiopsyPerineuraleInfiltration11
@@ -226,6 +237,7 @@ Description: "Perineurale Infiltration für Stanze 11"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Tumornachweis in Samenblasen
 Instance: CoreNeedleBiopsyTumornachweisinSamenblase11
@@ -244,6 +256,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 11"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Lymphovaskuläre Invasion
 Instance: CoreNeedleBiopsyLymphovaskulaereInvasion11
@@ -262,6 +275,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 11"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Tumornachweis in periprostatischem Gewebe
 Instance: CoreNeedleBiopsyTumornachweisInFettgewebe11
@@ -280,6 +294,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // Intraduktales Karzinom
 Instance: CoreNeedleBiopsyIntraduktalesKarzinom11
@@ -316,6 +331,7 @@ Description: "ASAP für Stanze 11"
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // High-grade PIN
 Instance: CoreNeedleBiopsyHighGradePIN11
@@ -352,6 +368,7 @@ Description: "Granulomatöse Prostatitis für Stanze 11"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
 // =============================================================================
 // STANZE 12 - Mikroskopische Befunde (Benigne)
@@ -374,6 +391,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 12"
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
 * bodySite = $sct#716899003 "Structure of apex part of anterior fibromuscular zone of prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen12Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle12)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText12

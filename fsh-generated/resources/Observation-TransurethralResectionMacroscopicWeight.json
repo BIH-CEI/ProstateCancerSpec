@@ -34,6 +34,11 @@
       "text": "TUR-Prostata Gewicht 25g"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

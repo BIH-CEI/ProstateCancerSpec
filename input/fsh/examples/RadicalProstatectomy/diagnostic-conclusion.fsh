@@ -16,6 +16,7 @@ Description: "Grouper for all diagnostic conclusion findings in prostatectomy sp
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // hasMember references für Prostatektomie-spezifische Findings
 * hasMember[+] = Reference(RadicalProstatectomyHistologicalTypeICDO3)
@@ -58,6 +59,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Morphology Free Text
 Instance: RadicalProstatectomyMorphologyFreeText
@@ -76,6 +78,7 @@ Description: "Free text description of tumor morphology"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueString = "Konventionelles Adenokarzinom der Prostata mit gemischten Gleason-Mustern"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // ICD-O Version
 Instance: RadicalProstatectomyICDOVersion
@@ -94,6 +97,7 @@ Description: "Version of ICD-O classification used"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueString = "ICD-O-3.2"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Primary Gleason Pattern
 Instance: RadicalProstatectomyPrimaryGleasonPattern
@@ -114,6 +118,7 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#369771005 "Gleason Pattern 3 (finding)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Secondary Gleason Pattern
 Instance: RadicalProstatectomySecondaryGleasonPattern
@@ -134,6 +139,7 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Gleason Score Total
 Instance: RadicalProstatectomyGleasonScoreTotal
@@ -177,6 +183,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Grading Group ISUP 2014/WHO 2016
 Instance: RadicalProstatectomyGradingGroupISUP
@@ -197,6 +204,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#1279715005 "International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Intraductal Carcinoma of the Prostate (IDC-P)
 Instance: RadicalProstatectomyIntraductalCarcinoma
@@ -215,6 +223,7 @@ Description: "Presence of intraductal carcinoma of the prostate"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Invasive Cribriform Carcinoma (ICC)
 Instance: RadicalProstatectomyInvasiveCribriformCarcinoma
@@ -234,6 +243,7 @@ Description: "Presence of invasive cribriform carcinoma"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Tumor Volume
 Instance: RadicalProstatectomyTumorVolume
@@ -256,6 +266,7 @@ Description: "Total tumor volume in cubic centimeters"
 * valueQuantity.unit = "cm3"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #cm3
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Prostatic Tissue Involved by Tumour
 Instance: RadicalProstatectomyProstaticTissueInvolved
@@ -278,6 +289,7 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Extraprostatic Extension
 Instance: RadicalProstatectomyExtraprostaticExtension
@@ -297,6 +309,7 @@ Description: "Presence of extraprostatic extension"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Seminal Vesicle Invasion
 Instance: RadicalProstatectomySeminalVesicleInvasion
@@ -315,6 +328,7 @@ Description: "Tumor invasion into seminal vesicles"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lymphovascular Invasion
 Instance: RadicalProstatectomyLymphovascularInvasion
@@ -333,6 +347,7 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Perineural Infiltration
 Instance: RadicalProstatectomyPerineuralInfiltration
@@ -351,6 +366,7 @@ Description: "Presence of perineural invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Bladder Neck Invasion
 Instance: RadicalProstatectomyBladderNeckInvasion
@@ -369,6 +385,7 @@ Description: "Microscopic urinary bladder neck invasion"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Margin Status
 Instance: RadicalProstatectomyMarginStatus
@@ -387,6 +404,7 @@ Description: "Status of surgical resection margins"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#1228937002 "Surgical margins uninvolved by tumor (finding)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lymph Nodes Examined
 Instance: RadicalProstatectomyLymphNodesExamined
@@ -407,6 +425,7 @@ Description: "Number of lymph nodes examined"
 * valueQuantity.unit = "lymph nodes"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{LymphNodes}
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lymph Nodes Positive
 Instance: RadicalProstatectomyLymphNodesPositive
@@ -427,6 +446,7 @@ Description: "Number of lymph nodes with tumor involvement"
 * valueQuantity.unit = "lymph nodes"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{LymphNodes}
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // TNM - Primary Tumor (pT)
 Instance: RadicalProstatectomyTNMpT
@@ -446,6 +466,7 @@ Description: "Pathological primary tumor stage according to TNM classification"
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#1229947008 "American Joint Committee on Cancer pT2c (qualifier value)"
 * valueCodeableConcept.text = "pT2c - Tumor involves both sides"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // TNM - Regional Lymph Nodes (pN)
 Instance: RadicalProstatectomyTNMpN
@@ -464,3 +485,4 @@ Description: "Pathological regional lymph node stage according to TNM classifica
 * basedOn = Reference(RadicalProstatectomyReportRequest)
 * valueCodeableConcept = $sct#1229951005 "American Joint Committee on Cancer pN0 (qualifier value)"
 * valueCodeableConcept.text = "pN0 - No regional lymph node metastasis"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)

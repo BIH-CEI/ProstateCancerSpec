@@ -26,6 +26,11 @@
       "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "hasMember": [
     {
       "reference": "Observation/TransurethralEnucleationHistologicalTypeICDO3"

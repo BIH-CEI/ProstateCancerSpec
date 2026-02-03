@@ -1,0 +1,112 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseCoreNeedleBiopsySingle10",
+  "item": [
+    {
+      "answer": [
+        {
+          "valueString": "Hans Mueller"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+      "text": "Name des Patienten"
+    },
+    {
+      "answer": [
+        {
+          "valueDate": "1955-08-15"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+      "text": "Geburtsdatum des Patienten"
+    },
+    {
+      "answer": [
+        {
+          "valueString": "PAT-2024-001"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+      "text": "Patientenidentifikator"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueString": "BX24_001_10_J"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11233",
+          "text": "Präparate-Identifikator"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "716898004",
+                "system": "http://snomed.info/sct",
+                "display": "Structure of right anterior peripheral zone of prostate (body structure)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.75",
+          "text": "Prostataanteil"
+        },
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11244",
+              "text": "Anzahl Gewebezylinder"
+            },
+            {
+              "answer": [
+                {
+                  "valueQuantity": {
+                    "value": 1.9,
+                    "code": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11245",
+              "text": "Länge des Gewebezylinders"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11243",
+          "text": "Makroskopische Beschreibung"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "373067005",
+                "system": "http://snomed.info/sct",
+                "display": "No (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.49",
+          "text": "Karzinom vorhanden"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11242",
+      "text": "Angaben zu Präparat"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20241221120534",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "authored": "2024-01-15T14:30:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}

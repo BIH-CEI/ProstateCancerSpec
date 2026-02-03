@@ -40,6 +40,11 @@
     "system": "http://unitsofmeasure.org",
     "code": "{LymphNodes}"
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

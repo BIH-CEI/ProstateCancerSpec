@@ -997,6 +997,21 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.23--20251023181538"
+        },
+        "name": "ICCR Eingabeformular für Prostatektomien",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.22--20251014150033"
+        },
+        "name": "ICCR Eingabeformular für TURP-Präparate",
+        "description": "Modell für \"intelligentes\" Formular",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.16--20241221120534"
         },
         "name": "ICCR Fragebogen für Klinische Angaben bei Prostata-Stanzbiopsien",
@@ -2495,6 +2510,140 @@
         },
         "name": "PSA vor TUR-Prostata",
         "description": "PSA-Wert vor der TUR-Prostata",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Case Level",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie auf Fall-Ebene mit diagnostischer Schlussfolgerung und Gesamtbefund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle07"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 07",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9, Grade Group 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle08"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 08",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle09"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 09",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 09 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle10"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 10",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 11",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 11 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle12"
+        },
+        "name": "QuestionnaireResponse - Core Needle Biopsy Single 12",
+        "description": "QuestionnaireResponse für Prostata-Stanzbiopsie 12 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01"
+        },
+        "name": "QuestionnaireResponse - Einzelstanze 01",
+        "description": "Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle02"
+        },
+        "name": "QuestionnaireResponse - Einzelstanze 02",
+        "description": "Antworten zum Fragebogen für Prostata-Einzelstanze 02 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle03"
+        },
+        "name": "QuestionnaireResponse - Einzelstanze 03",
+        "description": "Antworten zum Fragebogen für Prostata-Einzelstanze 03 (benigne)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle04"
+        },
+        "name": "QuestionnaireResponse - Einzelstanze 04",
+        "description": "Antworten zum Fragebogen für Prostata-Einzelstanze 04 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyClinicalInformations"
+        },
+        "name": "QuestionnaireResponse - Klinische Angaben bei Stanzbiopsien",
+        "description": "Antworten zum Fragebogen für klinische Angaben bei Prostata-Stanzbiopsien",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+        },
+        "name": "QuestionnaireResponse - Radical Prostatectomy",
+        "description": "QuestionnaireResponse für radikale Prostatektomie mit makroskopischen und diagnostischen Befunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+        },
+        "name": "QuestionnaireResponse - Transurethral Enucleation",
+        "description": "QuestionnaireResponse für Prostata-Enukleation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+        },
+        "name": "QuestionnaireResponse - Transurethral Resection (TURP)",
+        "description": "QuestionnaireResponse für transurethrale Resektion der Prostata",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle05"
+        },
+        "name": "QuestionnaireResponseCoreNeedleBiopsySingle05",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06"
+        },
+        "name": "QuestionnaireResponseCoreNeedleBiopsySingle06",
         "exampleBoolean": true
       },
       {

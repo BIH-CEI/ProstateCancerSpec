@@ -49,6 +49,11 @@
       "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient1"

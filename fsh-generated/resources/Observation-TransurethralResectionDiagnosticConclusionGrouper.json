@@ -26,6 +26,11 @@
       "reference": "ServiceRequest/TransurethralResectionReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+    }
+  ],
   "hasMember": [
     {
       "reference": "Observation/TransurethralResectionHistologicalTypeICDO3"

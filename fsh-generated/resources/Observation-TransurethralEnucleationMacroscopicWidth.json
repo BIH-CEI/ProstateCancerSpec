@@ -44,6 +44,11 @@
       "text": "Prostata Enucleation Breite: 2.8 cm"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

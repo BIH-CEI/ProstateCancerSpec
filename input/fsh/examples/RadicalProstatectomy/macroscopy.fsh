@@ -17,6 +17,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostatektomieprä
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des Prostatektomiepräparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Referenzen zu makroskopischen Findings
 * derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicProstateWeight)
@@ -52,6 +53,7 @@ Description: "Gewicht des Prostatektomiepräparats"
 * valueQuantity = 55 'g' "g"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostatagewicht 55g"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Prostata Breite
 Instance: RadicalProstatectomyMacroscopicProstateWidth
@@ -72,6 +74,7 @@ Description: "Breite der Prostata in cm"
 * valueQuantity = 4.5 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Breite: 4.5 cm"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Prostata Höhe
 Instance: RadicalProstatectomyMacroscopicProstateHeight
@@ -92,6 +95,7 @@ Description: "Höhe der Prostata in cm"
 * valueQuantity = 4.0 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Höhe: 4.0 cm"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Prostata Tiefe
 Instance: RadicalProstatectomyMacroscopicProstateDepth
@@ -112,6 +116,7 @@ Description: "Tiefe der Prostata in cm"
 * valueQuantity = 3.5 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Tiefe: 3.5 cm"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lymphknoten im Resektat vorhanden
 Instance: RadicalProstatectomyMacroscopicLymphNodesPresent
@@ -132,6 +137,7 @@ Description: "Vorhandensein von Lymphknoten im Prostatektomiepräparat"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Lymphknoten im Resektat vorhanden"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lateralität der Lymphknoten
 Instance: RadicalProstatectomyMacroscopicLymphNodesLaterality
@@ -151,6 +157,7 @@ Description: "Seitenangabe der Lymphknoten im Prostatektomiepräparat"
 * valueCodeableConcept = $sct#51440002 "Bilateral (qualifier value)"
 * bodySite = $sct#245357009 "Pelvic lymph node"
 * note.text = "Lymphknoten bilateral vorhanden"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Samenblasen im Resektat vorhanden
 Instance: RadicalProstatectomyMacroscopicSeminalVesiclesPresent
@@ -171,6 +178,7 @@ Description: "Vorhandensein von Samenblasen im Prostatektomiepräparat"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Samenblasen im Resektat vorhanden"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Samenbläschenlänge
 Instance: RadicalProstatectomyMacroscopicSeminalVesicleLength
@@ -190,3 +198,4 @@ Description: "Längenmessung der Samenbläschen"
 * valueString = "Rechts 2.5 cm, Links 2.5 cm"
 * bodySite = $sct#64739004 "Seminal vesicle structure (body structure)"
 * note.text = "Beide Samenbläschen je 2.5 cm lang"
+* derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)

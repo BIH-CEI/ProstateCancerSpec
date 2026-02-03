@@ -21,6 +21,11 @@
       "reference": "Practitioner/PathologistPractitioner"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+    }
+  ],
   "hasMember": [
     {
       "reference": "Observation/TransurethralResectionMacroscopicWeight"

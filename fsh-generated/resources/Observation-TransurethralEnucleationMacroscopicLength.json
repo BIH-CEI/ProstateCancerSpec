@@ -44,6 +44,11 @@
       "text": "Prostata Enucleation Länge: 3.5 cm"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

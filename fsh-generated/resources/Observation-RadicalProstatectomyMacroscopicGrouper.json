@@ -23,6 +23,9 @@
   ],
   "derivedFrom": [
     {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    },
+    {
       "reference": "Observation/RadicalProstatectomyMacroscopicProstateWeight"
     },
     {

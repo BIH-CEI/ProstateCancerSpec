@@ -16,6 +16,7 @@ Description: "Grouper for all diagnostic conclusion findings in TUR-Prostata spe
 * effectiveDateTime = "2024-04-12"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // hasMember references für TUR-spezifische Findings
 * hasMember[+] = Reference(TransurethralResectionHistologicalTypeICDO3)
@@ -50,6 +51,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Morphology Free Text
 Instance: TransurethralResectionMorphologyFreeText
@@ -68,6 +70,7 @@ Description: "Free text description of tissue morphology"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueString = "Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall."
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Primary Gleason Pattern
 Instance: TransurethralResectionPrimaryGleasonPattern
@@ -88,6 +91,7 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Secondary Gleason Pattern
 Instance: TransurethralResectionSecondaryGleasonPattern
@@ -108,6 +112,7 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#369774002 "Gleason Pattern 5 (finding)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Gleason Score Total
 Instance: TransurethralResectionGleasonScoreTotal
@@ -151,6 +156,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Grading Group ISUP 2014/WHO 2016
 Instance: TransurethralResectionGradingGroupISUP
@@ -171,6 +177,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#1279718003 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Intraductal Carcinoma of the Prostate (IDC-P)
 Instance: TransurethralResectionIntraductalCarcinoma
@@ -189,6 +196,7 @@ Description: "Presence of intraductal carcinoma of the prostate"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Invasive Cribriform Carcinoma (ICC)
 Instance: TransurethralResectionInvasiveCribriformCarcinoma
@@ -208,6 +216,7 @@ Description: "Presence of invasive cribriform carcinoma"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Prostatic Tissue Involved by Tumour
 Instance: TransurethralResectionProstaticTissueInvolved
@@ -230,6 +239,7 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Extraprostatic Extension
 Instance: TransurethralResectionExtraprostaticExtension
@@ -249,6 +259,7 @@ Description: "Presence of extraprostatic extension"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Seminal Vesicle Invasion
 Instance: TransurethralResectionSeminalVesicleInvasion
@@ -267,6 +278,7 @@ Description: "Tumor invasion into seminal vesicles"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Lymphovascular Invasion
 Instance: TransurethralResectionLymphovascularInvasion
@@ -285,6 +297,7 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Perineural Infiltration
 Instance: TransurethralResectionPerineuralInfiltration
@@ -303,3 +316,4 @@ Description: "Presence of perineural invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralResection)

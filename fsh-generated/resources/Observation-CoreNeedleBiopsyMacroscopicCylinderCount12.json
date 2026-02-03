@@ -29,6 +29,11 @@
       "reference": "Practitioner/PathologistPractitioner"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle12"
+    }
+  ],
   "note": [
     {
       "text": "Ein intakter Stanzzylinder"

@@ -44,6 +44,11 @@
       "text": "Keine Lymphknoten im Resektat"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

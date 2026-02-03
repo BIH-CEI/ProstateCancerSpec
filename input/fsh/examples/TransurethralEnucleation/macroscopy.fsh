@@ -17,6 +17,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleati
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des Prostata Enucleation Präparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Referenzen zu makroskopischen Findings
 * hasMember[+] = Reference(TransurethralEnucleationMacroscopicWeight)
@@ -50,6 +51,7 @@ Description: "Gewicht des Prostata Enucleation Präparats"
 * valueQuantity = 25 'g' "g"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Enucleation Gewicht 25g"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Prostata Enucleation Länge
 Instance: TransurethralEnucleationMacroscopicLength
@@ -70,6 +72,7 @@ Description: "Länge des Prostata Enucleation Präparats in cm"
 * valueQuantity = 3.5 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Enucleation Länge: 3.5 cm"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Prostata Enucleation Breite
 Instance: TransurethralEnucleationMacroscopicWidth
@@ -90,6 +93,7 @@ Description: "Breite des Prostata Enucleation Präparats in cm"
 * valueQuantity = 2.8 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Enucleation Breite: 2.8 cm"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Prostata Enucleation Tiefe
 Instance: TransurethralEnucleationMacroscopicDepth
@@ -110,6 +114,7 @@ Description: "Tiefe des Prostata Enucleation Präparats in cm"
 * valueQuantity = 2.2 'cm' "cm"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Prostata Enucleation Tiefe: 2.2 cm"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Samenblasen im Resektat
 Instance: TransurethralEnucleationMacroscopicSeminalVesicles
@@ -130,6 +135,7 @@ Description: "Vorhandensein von Samenblasen im Prostata Enucleation Präparat"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Samenblasen im Resektat"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Lymphknoten-Dissektion Präparat
 Instance: TransurethralEnucleationMacroscopicLymphNodeDissection
@@ -150,3 +156,4 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im Prostata Enucleation P
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Lymphknoten im Resektat"
+* derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)

@@ -50,6 +50,11 @@
     "system": "http://unitsofmeasure.org",
     "code": "cm3"
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

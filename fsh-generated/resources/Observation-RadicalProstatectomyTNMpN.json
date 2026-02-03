@@ -44,6 +44,11 @@
     ],
     "text": "pN0 - No regional lymph node metastasis"
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

@@ -34,6 +34,11 @@
       "text": "Prostata Enucleation Gewicht 25g"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

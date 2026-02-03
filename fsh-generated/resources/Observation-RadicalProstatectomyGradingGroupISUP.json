@@ -49,6 +49,11 @@
       "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

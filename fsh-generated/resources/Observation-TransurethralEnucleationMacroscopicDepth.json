@@ -44,6 +44,11 @@
       "text": "Prostata Enucleation Tiefe: 2.2 cm"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

@@ -29,6 +29,11 @@
       "reference": "Practitioner/PathologistPractitioner"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle03"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

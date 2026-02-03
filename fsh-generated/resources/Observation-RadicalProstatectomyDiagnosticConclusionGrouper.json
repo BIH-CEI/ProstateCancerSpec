@@ -26,6 +26,11 @@
       "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "hasMember": [
     {
       "reference": "Observation/RadicalProstatectomyHistologicalTypeICDO3"

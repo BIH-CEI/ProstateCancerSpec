@@ -44,6 +44,11 @@
       "text": "Prostata Breite: 4.5 cm"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

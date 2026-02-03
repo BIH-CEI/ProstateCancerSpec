@@ -1,0 +1,394 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseCoreNeedleBiopsyCase",
+  "item": [
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueString": "Mueller"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.84",
+              "text": "Familienname"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "Hans"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.85",
+              "text": "Vorname"
+            },
+            {
+              "answer": [
+                {
+                  "valueDate": "1955-08-15"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
+              "text": "Geburtsdatum"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PAT-2024-001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
+              "text": "Patienten-Identifikator"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PATH-RPT-2024-001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+              "text": "Auftragsnummer des Einsenders"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "E_24_001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+              "text": "Eingangs-/Fallnummer"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+          "text": "Patientendaten"
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "8140/3",
+                        "system": "urn:oid:2.16.840.1.113883.6.43.1",
+                        "display": "Azinäres Adenokarzinom"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.52",
+                  "text": "Histologischer Typ ICD-O-3"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueString": "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.50",
+                  "text": "Morphologie Freitext"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "33",
+                        "system": "urn:oid:1.2.276.0.76.3.1.131.1.5.153",
+                        "display": "ICD-O-3 2. Auflage 2019"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11247",
+                  "text": "ICD-O Version"
+                },
+                {
+                  "item": [
+                    {
+                      "item": [
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "711323001",
+                                "system": "http://snomed.info/sct",
+                                "display": "Systematic biopsy (procedure)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.69",
+                          "text": "Biopsietyp"
+                        },
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "369772003",
+                                "system": "http://snomed.info/sct",
+                                "display": "Gleason Pattern 3 (finding)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.38",
+                          "text": "Primäres Gleason Muster"
+                        },
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "369773008",
+                                "system": "http://snomed.info/sct",
+                                "display": "Gleason Pattern 4 (finding)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.39",
+                          "text": "Sekundäres Gleason Muster"
+                        },
+                        {
+                          "answer": [
+                            {
+                              "valueCoding": {
+                                "code": "1279714001",
+                                "system": "http://snomed.info/sct",
+                                "display": "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10270",
+                          "text": "Grade Group (ISUP 2014 / WHO 2016)"
+                        },
+                        {
+                          "answer": [
+                            {
+                              "valueQuantity": {
+                                "value": 77,
+                                "code": "%",
+                                "system": "http://unitsofmeasure.org",
+                                "unit": "%"
+                              }
+                            }
+                          ],
+                          "linkId": "2.16.840.1.113883.3.1937.777.18.2.67",
+                          "text": "Prozentualer Anteil Gleasonmuster 4"
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.66",
+                      "text": "Höchster Grad"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11205",
+                  "text": "Histologischer Grad"
+                },
+                {
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueCoding": {
+                            "code": "47492008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Not seen (qualifier value)"
+                          }
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.77",
+                      "text": "IDC-P und/oder ICC"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.76",
+                  "text": "Spezielle Wachstumsmuster"
+                },
+                {
+                  "item": [
+                    {
+                      "answer": [
+                        {
+                          "valueString": "Systematische Biopsie"
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.80",
+                      "text": "Biopsietyp"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueString": "7/12"
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10320",
+                      "text": "Verhältnis positiver zu allen Stanzen"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueQuantity": {
+                            "value": 35,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "%"
+                          }
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.2.11142",
+                      "text": "Prozentualer Tumoranteil Gesamt"
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueQuantity": {
+                            "value": 18.5,
+                            "code": "mm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mm"
+                          }
+                        }
+                      ],
+                      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11204",
+                      "text": "Tumorbefall Gesamt in Länge in mm"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11232",
+                  "text": "Tumorausbreitung"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "52101004",
+                        "system": "http://snomed.info/sct",
+                        "display": "Present (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.34",
+                  "text": "Extraprostatische Ausbreitung"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "LA25151-4",
+                        "system": "http://loinc.org",
+                        "display": "Apical"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11241",
+                  "text": "Lokalisation Extraprostatische Tumorausbreitung"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "47492008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Not seen (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.32",
+                  "text": "Tumornachweis in Samenblasen"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "47492008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Not seen (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.33",
+                  "text": "Lymphovaskuläre Invasion"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "52101004",
+                        "system": "http://snomed.info/sct",
+                        "display": "Present (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.31",
+                  "text": "Perineurale Infiltration"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "47492008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Not seen (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11207",
+                  "text": "Intraduktales Karzinom"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "373067005",
+                        "system": "http://snomed.info/sct",
+                        "display": "No (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.35",
+                  "text": "ASAP (Atypical Small Acinar Proliferation)"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "47492008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Not seen (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.36",
+                  "text": "Begleitende High-grade-PIN"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "47492008",
+                        "system": "http://snomed.info/sct",
+                        "display": "Not seen (qualifier value)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.37",
+                  "text": "Granulomatöse Prostatitis"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11249",
+              "text": "Diagnostische Schlussfolgerung"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10210",
+          "text": "Stanzbiopsien"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10000",
+      "text": "Prostatakarzinome"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.18--20250115134435",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "authored": "2024-01-22T14:30:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}

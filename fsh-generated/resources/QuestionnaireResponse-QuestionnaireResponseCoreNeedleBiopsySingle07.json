@@ -1,0 +1,261 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseCoreNeedleBiopsySingle07",
+  "item": [
+    {
+      "answer": [
+        {
+          "valueString": "Hans Mueller"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+      "text": "Name des Patienten"
+    },
+    {
+      "answer": [
+        {
+          "valueDate": "1955-08-15"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+      "text": "Geburtsdatum des Patienten"
+    },
+    {
+      "answer": [
+        {
+          "valueString": "PAT-2024-001"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+      "text": "Patientenidentifikator"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueString": "BX24_001_07_G"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11233",
+          "text": "Präparate-Identifikator"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "716899007",
+                "system": "http://snomed.info/sct",
+                "display": "Structure of left lateral peripheral zone of prostate (body structure)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.75",
+          "text": "Prostataanteil"
+        },
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11244",
+              "text": "Anzahl Gewebezylinder"
+            },
+            {
+              "answer": [
+                {
+                  "valueQuantity": {
+                    "value": 1.5,
+                    "code": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11245",
+              "text": "Länge des Gewebezylinders"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11243",
+          "text": "Makroskopische Beschreibung"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "373066001",
+                "system": "http://snomed.info/sct",
+                "display": "Yes (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.49",
+          "text": "Karzinom vorhanden"
+        },
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "369773008",
+                    "system": "http://snomed.info/sct",
+                    "display": "Gleason Pattern 4 (finding)"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10290",
+              "text": "Primäres Gleason-Muster"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "369774002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Gleason Pattern 5 (finding)"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11246",
+              "text": "Sekundäres Gleason-Muster"
+            },
+            {
+              "answer": [
+                {
+                  "valueInteger": 9
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10280",
+              "text": "Gleason-Score"
+            },
+            {
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "762269003",
+                    "system": "http://snomed.info/sct",
+                    "display": "Grade Group 5 (finding)"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.55",
+              "text": "Grade Group (ISUP 2014)"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.54",
+          "text": "Histologic grade / Gleason Score (ISUP 2014, WHO 2016)"
+        },
+        {
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 60,
+                "code": "%",
+                "system": "http://unitsofmeasure.org",
+                "unit": "%"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11247",
+          "text": "Anteil Pattern 4"
+        },
+        {
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 40,
+                "code": "%",
+                "system": "http://unitsofmeasure.org",
+                "unit": "%"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11248",
+          "text": "Anteil Pattern 5"
+        },
+        {
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 14.8,
+                "code": "mm",
+                "system": "http://unitsofmeasure.org",
+                "unit": "mm"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10330",
+          "text": "Größte Ausdehnung des Karzinoms"
+        },
+        {
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 95,
+                "code": "%",
+                "system": "http://unitsofmeasure.org",
+                "unit": "%"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10340",
+          "text": "Anteil des Karzinoms am Gewebe"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "373066001",
+                "system": "http://snomed.info/sct",
+                "display": "Yes (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.63",
+          "text": "Perineurale Invasion"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "373066001",
+                "system": "http://snomed.info/sct",
+                "display": "Yes (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11249",
+          "text": "Lymphgefäßinvasion"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "373066001",
+                "system": "http://snomed.info/sct",
+                "display": "Yes (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11250",
+          "text": "Invasion in periprostatisches Fettgewebe"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11242",
+      "text": "Angaben zu Präparat"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20241221120534",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "authored": "2024-01-15T14:30:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}

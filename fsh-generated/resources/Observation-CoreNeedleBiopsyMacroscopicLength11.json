@@ -29,6 +29,11 @@
       "reference": "Practitioner/PathologistPractitioner"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11"
+    }
+  ],
   "note": [
     {
       "text": "Stanzzylinder Gesamtlänge 1.7cm"

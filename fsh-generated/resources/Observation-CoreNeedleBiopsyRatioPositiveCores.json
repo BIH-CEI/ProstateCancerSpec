@@ -44,6 +44,11 @@
       "unit": "cores"
     }
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

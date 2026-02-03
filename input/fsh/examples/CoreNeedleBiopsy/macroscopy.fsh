@@ -88,6 +88,7 @@ Description: "Längenmessung der Prostatastanze 01"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.8 'cm' "cm"
 * bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle01)
 * note.text = "Stanzzylinder Gesamtlänge 1.8cm"
 
 // Zylinder-Anzahl-Finding für Stanze 01
@@ -107,6 +108,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 01"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle01)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -130,6 +132,7 @@ Description: "Längenmessung der Prostatastanze 02"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.6 'cm' "cm"
 * bodySite = $sct#716917000 "Structure of lateral middle regional part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle02)
 * note.text = "Stanzzylinder Gesamtlänge 1.6cm"
 
 // Zylinder-Anzahl-Finding für Stanze 02
@@ -149,6 +152,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 02"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716917000 "Structure of lateral middle regional part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle02)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -172,6 +176,7 @@ Description: "Längenmessung der Prostatastanze 03"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.5 'cm' "cm"
 * bodySite = $sct#716934008 "Structure of apical part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle03)
 * note.text = "Stanzzylinder Gesamtlänge 1.5cm"
 
 // Zylinder-Anzahl-Finding für Stanze 03
@@ -191,6 +196,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 03"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716934008 "Structure of apical part of peripheral zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle03)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -214,6 +220,7 @@ Description: "Längenmessung der Prostatastanze 04"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.9 'cm' "cm"
 * bodySite = $sct#716892006 "Structure of basal part of anterior fibromuscular stroma of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 * note.text = "Stanzzylinder Gesamtlänge 1.9cm"
 
 // Zylinder-Anzahl-Finding für Stanze 04
@@ -233,6 +240,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 04"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716892006 "Structure of basal part of anterior fibromuscular stroma of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -256,6 +264,7 @@ Description: "Längenmessung der Prostatastanze 05"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.4 'cm' "cm"
 * bodySite = $sct#716911004 "Structure of middle regional part of transition zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle05)
 * note.text = "Stanzzylinder Gesamtlänge 1.4cm"
 
 // Zylinder-Anzahl-Finding für Stanze 05
@@ -275,6 +284,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 05"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716911004 "Structure of middle regional part of transition zone of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle05)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -298,6 +308,7 @@ Description: "Längenmessung der Prostatastanze 06"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.7 'cm' "cm"
 * bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 * note.text = "Stanzzylinder Gesamtlänge 1.7cm"
 
 // Zylinder-Anzahl-Finding für Stanze 06
@@ -317,6 +328,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 06"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -340,6 +352,7 @@ Description: "Längenmessung der Prostatastanze 07"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.6 'cm' "cm"
 * bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle07)
 * note.text = "Stanzzylinder Gesamtlänge 1.6cm"
 
 // Zylinder-Anzahl-Finding für Stanze 07
@@ -359,6 +372,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 07"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle07)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -382,6 +396,7 @@ Description: "Längenmessung der Prostatastanze 08"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.5 'cm' "cm"
 * bodySite = $sct#716918005 "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle08)
 * note.text = "Stanzzylinder Gesamtlänge 1.5cm"
 
 // Zylinder-Anzahl-Finding für Stanze 08
@@ -401,6 +416,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 08"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716918005 "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle08)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -424,6 +440,7 @@ Description: "Längenmessung der Prostatastanze 09"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.8 'cm' "cm"
 * bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle09)
 * note.text = "Stanzzylinder Gesamtlänge 1.8cm"
 
 // Zylinder-Anzahl-Finding für Stanze 09
@@ -443,6 +460,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 09"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle09)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -466,6 +484,7 @@ Description: "Längenmessung der Prostatastanze 10"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.3 'cm' "cm"
 * bodySite = $sct#716893001 "Structure of basal part of anterior fibromuscular stroma of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 * note.text = "Stanzzylinder Gesamtlänge 1.3cm"
 
 // Zylinder-Anzahl-Finding für Stanze 10
@@ -485,6 +504,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 10"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716893001 "Structure of basal part of anterior fibromuscular stroma of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -508,6 +528,7 @@ Description: "Längenmessung der Prostatastanze 11"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.7 'cm' "cm"
 * bodySite = $sct#716912006 "Structure of middle regional part of transition zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 * note.text = "Stanzzylinder Gesamtlänge 1.7cm"
 
 // Zylinder-Anzahl-Finding für Stanze 11
@@ -527,6 +548,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 11"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716912006 "Structure of middle regional part of transition zone of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================
@@ -550,6 +572,7 @@ Description: "Längenmessung der Prostatastanze 12"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.4 'cm' "cm"
 * bodySite = $sct#716910003 "Structure of middle regional part of anterior fibromuscular stroma of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle12)
 * note.text = "Stanzzylinder Gesamtlänge 1.4cm"
 
 // Zylinder-Anzahl-Finding für Stanze 12
@@ -569,6 +592,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 12"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
 * bodySite = $sct#716910003 "Structure of middle regional part of anterior fibromuscular stroma of left half prostate (body structure)"
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle12)
 * note.text = "Ein intakter Stanzzylinder"
 
 // =============================================================================

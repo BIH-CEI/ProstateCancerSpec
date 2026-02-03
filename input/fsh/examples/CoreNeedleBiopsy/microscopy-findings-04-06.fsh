@@ -23,6 +23,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 04"
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText04
@@ -41,6 +42,7 @@ Description: "Morphologie Freitext für Stanze 04"
 * valueString = "Azinäres Adenokarzinom mit vorwiegend Gleason Pattern 4, cribriform pattern mit Comedonecrosis. Hochaggressives Karzinom."
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Primäres Gleason Muster
 Instance: CoreNeedleBiopsyPrimaerGleason04
@@ -61,6 +63,7 @@ Description: "Primäres Gleason Muster für Stanze 04"
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Sekundäres Gleason Muster
 Instance: CoreNeedleBiopsySekundaerGleason04
@@ -81,6 +84,7 @@ Description: "Sekundäres Gleason Muster für Stanze 04"
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Prozentualer Anteil Gleasonmuster 4/5
 Instance: CoreNeedleBiopsyProzentGleason04
@@ -99,6 +103,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 04"
 * valueQuantity = 100 '%' "%"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Gradinggruppe nach ISUP 2014/WHO 2016
 Instance: CoreNeedleBiopsyGleasonGrading04
@@ -119,6 +124,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 04"
 * valueCodeableConcept = $sct#860745005 "Gleason grade group 4 (finding)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Verhältnis positiver zu allen Stanzen
 Instance: CoreNeedleBiopsyVerhaeltnisPositiverStanzen04
@@ -137,6 +143,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 04"
 * valueString = "3/12"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Prozentualer Tumoranteil
 Instance: CoreNeedleBiopsyTumoranteil04
@@ -155,6 +162,7 @@ Description: "Prozentualer Tumoranteil für Stanze 04"
 * valueQuantity = 80 '%' "%"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Tumorbefall in Länge (mm)
 Instance: CoreNeedleBiopsyTumorbefallinLaenge04
@@ -173,6 +181,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 04"
 * valueQuantity = 12.8 'mm' "mm"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Perineurale Infiltration
 Instance: CoreNeedleBiopsyPerineuraleInfiltration04
@@ -191,6 +200,7 @@ Description: "Perineurale Infiltration für Stanze 04"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Tumornachweis in Samenblasen
 Instance: CoreNeedleBiopsyTumornachweisinSamenblase04
@@ -209,6 +219,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 04"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Lymphovaskuläre Invasion
 Instance: CoreNeedleBiopsyLymphovaskulaereInvasion04
@@ -227,6 +238,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 04"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Tumornachweis in periprostatischem Gewebe
 Instance: CoreNeedleBiopsyTumornachweisInFettgewebe04
@@ -245,6 +257,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // Intraduktales Karzinom
 Instance: CoreNeedleBiopsyIntraduktalesKarzinom04
@@ -263,6 +276,7 @@ Description: "Intraduktales Karzinom für Stanze 04"
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // ASAP
 Instance: CoreNeedleBiopsyASAP04
@@ -281,6 +295,7 @@ Description: "ASAP für Stanze 04"
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // High-grade PIN
 Instance: CoreNeedleBiopsyHighGradePIN04
@@ -317,6 +332,7 @@ Description: "Granulomatöse Prostatitis für Stanze 04"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
 // =============================================================================
 // STANZE 05 - Mikroskopische Befunde (Benigne)
@@ -339,6 +355,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 05"
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
 * bodySite = $sct#716906001 "Structure of middle part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen05Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle05)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText05
@@ -374,6 +391,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 06"
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Morphologie Freitext
 Instance: CoreNeedleBiopsyMorphText06
@@ -412,6 +430,7 @@ Description: "Primäres Gleason Muster für Stanze 06"
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Sekundäres Gleason Muster
 Instance: CoreNeedleBiopsySekundaerGleason06
@@ -450,6 +469,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 06"
 * valueQuantity = 0 '%' "%"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Gradinggruppe nach ISUP 2014/WHO 2016
 Instance: CoreNeedleBiopsyGleasonGrading06
@@ -488,6 +508,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 06"
 * valueString = "4/12"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Prozentualer Tumoranteil
 Instance: CoreNeedleBiopsyTumoranteil06
@@ -506,6 +527,7 @@ Description: "Prozentualer Tumoranteil für Stanze 06"
 * valueQuantity = 20 '%' "%"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Tumorbefall in Länge (mm)
 Instance: CoreNeedleBiopsyTumorbefallinLaenge06
@@ -524,6 +546,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 06"
 * valueQuantity = 3.1 'mm' "mm"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Perineurale Infiltration
 Instance: CoreNeedleBiopsyPerineuraleInfiltration06
@@ -542,6 +565,7 @@ Description: "Perineurale Infiltration für Stanze 06"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Tumornachweis in Samenblasen
 Instance: CoreNeedleBiopsyTumornachweisinSamenblase06
@@ -560,6 +584,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 06"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Lymphovaskuläre Invasion
 Instance: CoreNeedleBiopsyLymphovaskulaereInvasion06
@@ -578,6 +603,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 06"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Tumornachweis in periprostatischem Gewebe
 Instance: CoreNeedleBiopsyTumornachweisInFettgewebe06
@@ -596,6 +622,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Intraduktales Karzinom
 Instance: CoreNeedleBiopsyIntraduktalesKarzinom06
@@ -614,6 +641,7 @@ Description: "Intraduktales Karzinom für Stanze 06"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // ASAP
 Instance: CoreNeedleBiopsyASAP06
@@ -632,6 +660,7 @@ Description: "ASAP für Stanze 06"
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // High-grade PIN
 Instance: CoreNeedleBiopsyHighGradePIN06
@@ -650,6 +679,7 @@ Description: "Begleitende High-grade-PIN für Stanze 06"
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 * bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
+* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
 // Granulomatöse Prostatitis
 Instance: CoreNeedleBiopsyGranulomatoeseProstatitis06

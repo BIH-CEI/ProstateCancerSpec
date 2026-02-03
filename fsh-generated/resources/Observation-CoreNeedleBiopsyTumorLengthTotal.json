@@ -40,6 +40,11 @@
     "system": "http://unitsofmeasure.org",
     "code": "mm"
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

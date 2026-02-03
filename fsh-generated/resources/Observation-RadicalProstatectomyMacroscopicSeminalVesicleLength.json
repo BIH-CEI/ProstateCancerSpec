@@ -34,6 +34,11 @@
       "text": "Beide Samenbläschen je 2.5 cm lang"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

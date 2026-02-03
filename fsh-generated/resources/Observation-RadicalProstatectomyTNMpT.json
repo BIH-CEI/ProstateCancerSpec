@@ -44,6 +44,11 @@
     ],
     "text": "pT2c - Tumor involves both sides"
   },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

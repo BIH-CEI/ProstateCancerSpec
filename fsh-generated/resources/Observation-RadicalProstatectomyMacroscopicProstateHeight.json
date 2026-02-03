@@ -44,6 +44,11 @@
       "text": "Prostata Höhe: 4.0 cm"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

@@ -49,6 +49,11 @@
       "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/Patient2"

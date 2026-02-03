@@ -1,0 +1,160 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseCoreNeedleBiopsySingle05",
+  "item": [
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueString": "Mueller"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.84",
+              "text": "Familienname"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "Hans"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.85",
+              "text": "Vorname"
+            },
+            {
+              "answer": [
+                {
+                  "valueDate": "1955-08-15"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
+              "text": "Geburtsdatum"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PAT-2024-001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
+              "text": "Patienten-Identifikator"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "PATH-RPT-2024-001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+              "text": "Auftragsnummer des Einsenders"
+            },
+            {
+              "answer": [
+                {
+                  "valueString": "E_24_001"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+              "text": "Eingangs-/Fallnummer"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+          "text": "Patientendaten"
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "answer": [
+                    {
+                      "valueString": "BX24_001_05_A"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.29",
+                  "text": "Proben-ID (-bezeichnung)"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueString": "E_24_001_E_1"
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11245",
+                  "text": "Block-ID"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "716920009",
+                        "system": "http://snomed.info/sct",
+                        "display": "Structure of middle regional part of transition zone of right half prostate (body structure)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11243",
+                  "text": "Lokalisation der Entnahmestelle"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 1.4,
+                        "code": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "cm"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11244",
+                  "text": "Länge der Stanzzylinder"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueInteger": 1
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10240",
+                  "text": "Anzahl der Stanzzylinder im Einsendungsgefäß"
+                },
+                {
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "code": "110396000",
+                        "system": "http://snomed.info/sct",
+                        "display": "No evidence of malignant neoplasm (finding)"
+                      }
+                    }
+                  ],
+                  "linkId": "2.16.840.1.113883.3.1937.777.18.2.49",
+                  "text": "Karzinom vorhanden"
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.11242",
+              "text": "Befunde an Einzelstanzen"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10210",
+          "text": "Stanzbiopsien"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10000",
+      "text": "Prostatakarzinome"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20250102170615",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "authored": "2024-01-17T10:00:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}

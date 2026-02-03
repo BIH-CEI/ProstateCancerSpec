@@ -1,9 +1,9 @@
 ## Code Memories
 
-**Letzte Session: 02.02.2026**
-- Issue #1 abgeschlossen (DiagnosticReport Set-ID + Placer-System korrigiert)
-- Issue #3 abgeschlossen (Additive zu 78 Specimens hinzugefügt)
-- SUSHI Build erfolgreich (0 Errors, 0 Warnings)
+**Letzte Session: 03.02.2026**
+- QuestionnaireResponses für ALLE 4 Biopsietypen erstellt ✅
+- derivedFrom-Referenzen zu ALLEN Observations hinzugefügt ✅
+- SUSHI Build erfolgreich (401 Instances, 0 Errors, 0 Warnings)
 
 **Status Übersicht:**
 - Issue #1 abgeschlossen (02.02.2026)
@@ -11,9 +11,128 @@
 - Issue #3 abgeschlossen (02.02.2026)
 - Issue #4 abgeschlossen (29.01.2026)
 - Issue #5 abgeschlossen (29.01.2026)
-- Issue #6 TODO: derivedFrom zu MacroscopicLength hinzufügen (benötigt QuestionnaireResponse)
-- Issue #7 TODO: derivedFrom zu MacroscopicCylinderCount hinzufügen (benötigt QuestionnaireResponse)
-- Issue #8 TODO: derivedFrom zu allen Observations hinzufügen (benötigt QuestionnaireResponse); specimen.type bereits durch Issue #5 erledigt
+- Issue #6 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicLength hinzugefügt
+- Issue #7 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicCylinderCount hinzugefügt
+- Issue #8 abgeschlossen (03.02.2026): derivedFrom zu ALLEN Observations aller 4 Biopsietypen hinzugefügt
+
+**QuestionnaireResponse Übersicht (03.02.2026):**
+1. **CoreNeedleBiopsy**: 155 Observations mit derivedFrom
+   - 12x QuestionnaireResponseCoreNeedleBiopsySingle01-12
+   - 1x QuestionnaireResponseCoreNeedleBiopsyCase
+   - 1x QuestionnaireResponseCoreNeedleBiopsyClinicalInformations
+
+2. **RadicalProstatectomy**: 31 Observations mit derivedFrom
+   - 1x QuestionnaireResponseRadicalProstatectomy
+   - Patient2 (Peter Schmidt, PAT-2024-002)
+
+3. **TransurethralResection**: 19 Observations mit derivedFrom
+   - 1x QuestionnaireResponseTransurethralResection
+   - Patient1 (Hans Mueller, PAT-2024-001)
+   - Key differentiator: linkId "2.16.840.1.113883.3.1937.777.18.2.133" = $sct#176258007 "TURP"
+
+4. **TransurethralEnucleation**: 22 Observations mit derivedFrom
+   - 1x QuestionnaireResponseTransurethralEnucleation
+   - Patient2 (Peter Schmidt, PAT-2024-002)
+   - Key differentiator: linkId "2.16.840.1.113883.3.1937.777.18.2.133" = $sct#236205008 "Simple prostatectomy"
+
+## TODOs für nächste Session
+
+**Priorität 1 - ICCR Integration:**
+- ICCR Dokumente im Clinical Context referenzieren
+- ICCR stärker einbringen als Quelle der Findings
+- SDC-Questionnaires und QRs auf Grundlage der ICCR Dokumente hinzufügen
+- derivedFrom Elemente auf ICCR-basierte QRs erweitern
+
+**Priorität 2 - Package & Deployment:**
+- Package bauen und veröffentlichen
+
+**Priorität 3 - Naming & Terminologie:**
+- CoreNeedleBiopsyRequest → CoreNeedleBiopsyReportRequest (siehe Issue #2 Status)
+- Biopsie-Anforderung allgemeiner machen: "Tru-cut biopsy of prostate (procedure)" wird direkt angefordert
+
+**Priorität 4 - Validierung:**
+- derivedFrom & hasMember Referenzen kontrollieren (insbesondere Grouper!)
+- S3 - Schnellschnitte prüfen
+
+**Priorität 5 - Narratives:**
+- Composition.text (header) für alle 4 Biopsietypen generieren
+- Composition.section.text (Befundtext) für alle 4 Biopsietypen generieren
+
+**Priorität 6 - Kommunikation:**
+- Prof. Haroske Link zu Github Issues schicken
+
+## Questionnaires (hinzugefügt, Analyse 02.02.2026)
+
+### Verfügbare Questionnaires (5)
+1. **QuestionnaireCoreNeedleBiopsyCase** (820 Zeilen, 789 Items, v0.9)
+   - Zweck: Prostata-Fall (Gesamtfall)
+   - Mapping: Diagnostische Schlussfolgerung, TNM Staging
+
+2. **QuestionnaireCoreNeedleBiopsyClinicalInformations** (335 Zeilen, 303 Items, v0.9)
+   - Zweck: Klinische Angaben bei Stanzbiopsien
+   - Mapping: PSA-Werte, klinische Daten
+
+3. **QuestionnaireCoreNeedleBiopsySingle** (754 Zeilen, 722 Items, v0.9)
+   - Zweck: Prostata-Einzelstanzen
+   - Mapping: Makroskopie + Mikroskopie pro Stanze
+   - **Enthält**: `$loinc#44619-5` (Length) + `$loinc#44652-6` (Cylinder Count)
+
+4. **QuestionnaireRadicalProstatectomy** (1026 Zeilen, 996 Items)
+   - Zweck: Prostatektomien
+
+5. **QuestionnaireTUR** (819 Zeilen, 789 Items)
+   - Zweck: TURP-Präparate
+
+### Observation-Questionnaire Mapping
+
+**Issue #6 - MacroscopicLength:**
+- Observations: 12x `CoreNeedleBiopsyMacroscopicLength01-12`
+- LOINC Code: `#44619-5` "Length of tissue core(s)"
+- Questionnaire Item: `QuestionnaireCoreNeedleBiopsySingle` Zeile 236-237
+- **Status**: Mapping identifiziert, QuestionnaireResponses müssen erstellt werden
+
+**Issue #7 - MacroscopicCylinderCount:**
+- Observations: 12x `CoreNeedleBiopsyMacroscopicCylinderCount01-12`
+- LOINC Code: `#44652-6` "Total number of cores in Tissue core"
+- Questionnaire Item: `QuestionnaireCoreNeedleBiopsySingle` Zeile 247-248
+- **Status**: Mapping identifiziert, QuestionnaireResponses müssen erstellt werden
+
+**Issue #8 - Alle Observations:**
+- Makroskopie: 24 Observations (Issues #6 + #7)
+- Mikroskopie: ~144+ Observations (Gleason, Grade Groups, ASAP, PIN, etc.)
+- Diagnostische Schlussfolgerung: ~30+ Observations (TNM, Diagnosis, etc.)
+- **Status**: Strategie entwickelt, Implementierung ausstehend
+
+### Implementierungs-Roadmap für Issues #6, #7, #8
+
+**Schritt 1**: QuestionnaireResponse Examples erstellen ✅ ABGESCHLOSSEN (03.02.2026)
+- ✅ 12x QuestionnaireResponse (basierend auf QuestionnaireCoreNeedleBiopsySingle)
+  - Datei: `input/fsh/examples/CoreNeedleBiopsy/questionnaire-response-single.fsh`
+  - Instances: QuestionnaireResponseCoreNeedleBiopsySingle01-12
+  - 4 maligne Stanzen (01, 02, 04, 07) mit vollständigen mikroskopischen Daten
+  - 8 benigne Stanzen (03, 05, 06, 08-12) mit makroskopischen Daten
+- ✅ 1x QuestionnaireResponse (basierend auf QuestionnaireCoreNeedleBiopsyCase)
+  - Datei: `input/fsh/examples/CoreNeedleBiopsy/questionnaire-response-case.fsh`
+  - Instance: QuestionnaireResponseCoreNeedleBiopsyCase
+  - Enthält: Diagnostische Schlussfolgerung, Gleason-Muster, Grade Group, Tumorausbreitung, Invasionen, Begleiterkrankungen
+- ✅ 1x QuestionnaireResponse (basierend auf QuestionnaireCoreNeedleBiopsyClinicalInformations)
+  - Datei: `input/fsh/examples/CoreNeedleBiopsy/questionnaire-response-clinical-informations.fsh`
+  - Instance: QuestionnaireResponseCoreNeedleBiopsyClinicalInformations
+  - Enthält: PSA-Wert, 12 Specimens mit IDs, Body Sites, Längen, Zylinderzahlen
+
+**Schritt 2**: derivedFrom-Referenzen hinzufügen ✅ ABGESCHLOSSEN (03.02.2026)
+- ✅ macroscopy.fsh: 24 Observations (12x Length + 12x Cylinder Count)
+  - Alle verweisen auf QuestionnaireResponseCoreNeedleBiopsySingle01-12
+- ✅ microscopy-findings-*.fsh: 110 Observations
+  - 4 Dateien bearbeitet (01-03, 04-06, 07-09, 10-12)
+  - Alle verweisen auf QuestionnaireResponseCoreNeedleBiopsySingle01-12
+- ✅ diagnostic-conclusion.fsh: 21 Observations
+  - Alle verweisen auf QuestionnaireResponseCoreNeedleBiopsyCase
+- **Gesamt: 155 Observations mit derivedFrom-Referenzen**
+
+**Schritt 3**: SUSHI Build verifizieren ✅ ABGESCHLOSSEN (03.02.2026)
+- ✅ 398 Instances erfolgreich kompiliert
+- ✅ 0 Errors, 0 Warnings
 
 ## Issue #1: Hierarchie von Kodierungen - ABGESCHLOSSEN (02.02.2026)
 

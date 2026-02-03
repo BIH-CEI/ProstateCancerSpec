@@ -1,0 +1,140 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseTransurethralResection",
+  "item": [
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueString": "Mueller"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.84",
+          "text": "Familienname"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "Hans"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.85",
+          "text": "Vorname"
+        },
+        {
+          "answer": [
+            {
+              "valueDate": "1955-08-15"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
+          "text": "Geburtsdatum"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "PAT-2024-001"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
+          "text": "Patienten-Identifikator"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "PATH-RPT-2024-003"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.88",
+          "text": "Auftragsnummer des Einsenders"
+        },
+        {
+          "answer": [
+            {
+              "valueString": "E_24_003"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.89",
+          "text": "Eingangs-/Fallnummer"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.83",
+      "text": "Patientendaten"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "176258007",
+                "system": "http://snomed.info/sct",
+                "display": "Transurethral resection of prostate (procedure)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.133",
+          "text": "Operatives Verfahren"
+        },
+        {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueQuantity": {
+                    "value": 25,
+                    "code": "g",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "g"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10440",
+              "text": "Gewicht"
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10430",
+          "text": "Untersuchungsmaterial"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "86049000",
+                "system": "http://snomed.info/sct",
+                "display": "Malignant neoplasm, primary (morphologic abnormality)"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.134",
+          "text": "Histologischer Tumortyp"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "8140/3",
+                "system": "urn:oid:2.16.840.1.113883.6.43.1",
+                "display": "Azinäres Adenokarzinom"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10470",
+          "text": "Histologischer Typ ICD-O-3"
+        }
+      ],
+      "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10420",
+      "text": "Transurethrale Resektate"
+    }
+  ],
+  "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Patient1"
+  },
+  "authored": "2024-04-11T14:30:00+01:00",
+  "author": {
+    "reference": "Practitioner/PathologistPractitioner"
+  }
+}
