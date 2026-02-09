@@ -40,9 +40,10 @@ Prostate enucleation (simple prostatectomy) with incidental aggressive cancer:
 - Present: intraductal carcinoma, invasive cribriform carcinoma, extraprostatic extension, seminal vesicle invasion
 
 #### Transurethral Resection
-Transurethral resection (TUR-P) with incidental cancer:
+Transurethral resection (TUR-P) with benign findings:
+- Benign prostatic hyperplasia (BPH), no carcinoma
 - 5 blocks and 10 slides from TUR chips
-- Diagnostic findings from resection tissue
+- Macroscopic and diagnostic findings from resection tissue
 
 ### Resource Organization
 
@@ -62,12 +63,22 @@ This IG builds upon:
 
 - **MII Pathology Module** [de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0): Grouper and Finding Observations, ServiceRequests and DiagnosticReports
 
-and also asures the compatibility to: 
+and also assures the compatibility to:
 - **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles (harmonized), PSA-Level etc.
 
 - **MII Base Module** [de.medizininformatikinitiative.kerndatensatz.base v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base): Core patient and procedure profiles
 
 - **MII Biobank Module** [de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank): Specimens (inherited in patho)
+
+#### Pathology Reporting Basis
+
+The pathology findings and observations in this IG are based on the prostate cancer datasets published by the **International Collaboration on Cancer Reporting (ICCR)**. These internationally agreed, evidence-based datasets define which elements should be reported in structured pathology reports for prostate cancer specimens:
+
+- **[Prostate Cancer – Core Needle Biopsy, 2nd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-biopsy/)**: Histopathology reporting guide for core needle biopsies, covering specimen-level and case-level reporting elements.
+- **[Prostate Cancer – Radical Prostatectomy Specimen, 3rd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-rad-pros/)**: Histopathology reporting guide for radical prostatectomy specimens.
+- **[Prostate Cancer – Transurethral Resection and Enucleation, 2nd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-tur/)**: Histopathology reporting guide for TUR and enucleation specimens.
+
+All three datasets were updated in 2024 to align with the 2022 WHO Classification of Urinary and Male Genital Tumours (5th edition) and TNM8 staging.
 
 #### Standards Compliance
 

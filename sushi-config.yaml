@@ -62,6 +62,8 @@ pages:
     title: TUR-Enucleation Specimens
   tur-resection-specimens.md:
     title: TUR-Resection Specimens
+  document-viewer.xml:
+    title: Befund-Viewer
 #     complexExamples.xml:
 #
 #
@@ -75,6 +77,9 @@ pages:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 #
+# parameters:
+#   path-liquid: liquid
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
@@ -87,8 +92,9 @@ menu:
   Home: index.html
   Clinical Context: clinical-context.html
   Motivation: motivation.html
+  Befund-Viewer: document-viewer.html
   Core Needle Biopsy:
-    ServiceRequest: ServiceRequest-CoreNeedleBiopsyRequest.html
+    ServiceRequest: ServiceRequest-CoreNeedleBiopsyReportRequest.html
     Specimens: biopsy-specimens.html
     MacroscopyGrouper: Observation-CoreNeedleBiopsyMacroscopicGrouper.html
     MicroscopyGrouper: Observation-CoreNeedleBiopsyMicroscopicGrouper.html
@@ -96,21 +102,21 @@ menu:
     DiagnosticReport: DiagnosticReport-CoreNeedleBiopsyReport.html
     Composition: Composition-CoreNeedleBiopsyComposition.html
   Prostatectomy:
-    ServiceRequest: ServiceRequest-RadicalProstatectomyServiceRequest.html
+    ServiceRequest: ServiceRequest-RadicalProstatectomyReportRequest.html
     Specimens: prostatectomy-specimens.html
     MacroscopyGrouper: Observation-RadicalProstatectomyMacroscopicGrouper.html
     DiagnosticConclusionGrouper: Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html
     DiagnosticReport: DiagnosticReport-RadicalProstatectomyReport.html
     Composition: Composition-RadicalProstatectomyComposition.html
   TUR Enucleation:
-    ServiceRequest: ServiceRequest-TransurethralEnucleationServiceRequest.html
+    ServiceRequest: ServiceRequest-TransurethralEnucleationReportRequest.html
     Specimens: tur-enucleation-specimens.html
     MacroscopyGrouper: Observation-TransurethralEnucleationMacroscopicGrouper.html
     DiagnosticConclusionGrouper: Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html
     DiagnosticReport: DiagnosticReport-TransurethralEnucleationReport.html
     Composition: Composition-TransurethralEnucleationComposition.html
   TUR Resection:
-    ServiceRequest: ServiceRequest-TransurethralResectionServiceRequest.html
+    ServiceRequest: ServiceRequest-TransurethralResectionReportRequest.html
     Specimens: tur-resection-specimens.html
     MacroscopyGrouper: Observation-TransurethralResectionMacroscopicGrouper.html
     DiagnosticConclusionGrouper: Observation-TransurethralResectionDiagnosticConclusionGrouper.html

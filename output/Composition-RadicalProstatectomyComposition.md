@@ -12,7 +12,7 @@
 
 **type**: Tissue pathology biopsy report
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-OP-2024; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
 
 **date**: 2024-03-21 08:00:00+0100
 
@@ -34,7 +34,7 @@
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Detail** |
-| * | pathology report entry task | [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyServiceRequest.md) |
+| * | pathology report entry task | [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyReportRequest.md) |
 
 
 
@@ -72,7 +72,8 @@
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1",
+    "display" : "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
   },
   "encounter" : {
     "reference" : "Encounter/RadicalProstatectomyEncounter"
@@ -110,7 +111,7 @@
       ],
       "detail" : [
         {
-          "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+          "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
         }
       ]
     }

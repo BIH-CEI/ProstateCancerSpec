@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Tru-cut biopsy of prostate (procedure)](ServiceRequest-CoreNeedleBiopsyRequest.md)
+**basedOn**: [ServiceRequest Prostate Pathology biopsy report](ServiceRequest-CoreNeedleBiopsyReportRequest.md)
 
 **status**: Final
 
@@ -20,7 +20,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **effective**: 2023-03-15
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: ICD-O-3 2. Auflage 2019
 
@@ -39,7 +39,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   },
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "status" : "final",

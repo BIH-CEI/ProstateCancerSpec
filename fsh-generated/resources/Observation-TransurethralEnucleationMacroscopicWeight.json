@@ -50,7 +50,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient3"
   },
   "specimen": {
     "reference": "Specimen/TransurethralEnucleationSpecimenPart"

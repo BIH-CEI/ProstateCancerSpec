@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.22"}
-    h3,h4,h5,h6{--heading-prefix:"8.22"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.23"}
+    h3,h4,h5,h6{--heading-prefix:"9.23"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -88,13 +88,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -122,7 +125,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -147,7 +150,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -172,7 +175,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -276,7 +279,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="TransurethralEnucleationDiagnosisBPH"> </a><a name="hcTransurethralEnucleationDiagnosisBPH"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm N40.0}">Prostatahyperplasie ohne Beschwerden beim Wasserlassen</span></p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>encounter</b>: <a href="Encounter-TransurethralEnucleationEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#PSA-ENUC-2024; status = finished; class = IMP (IMP)</a></p><p><b>onset</b>: 2023-06-01</p><p><b>recordedDate</b>: 2024-02-01</p><p><b>note</b>: </p><blockquote><div><p>Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85ml. IPSS 24. Indikation zur Enukleation gestellt.</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="TransurethralEnucleationDiagnosisBPH"> </a><a name="hcTransurethralEnucleationDiagnosisBPH"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm N40.0}">Prostatahyperplasie ohne Beschwerden beim Wasserlassen</span></p><p><b>subject</b>: <a href="Patient-Patient3.html">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>encounter</b>: <a href="Encounter-TransurethralEnucleationEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#E_24_004; status = finished; class = IMP (IMP)</a></p><p><b>onset</b>: 2023-06-01</p><p><b>recordedDate</b>: 2024-02-01</p><p><b>note</b>: </p><blockquote><div><p>Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85ml. IPSS 24. Indikation zur Enukleation gestellt.</p>
 </div></blockquote></div>
 
   
@@ -302,7 +305,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

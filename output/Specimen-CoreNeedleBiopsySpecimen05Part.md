@@ -12,9 +12,9 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 * type: Structure of middle regional part of transition zone of right half prostate (body structure)
 * description: Markiert mit oranger Tinte
 
-**identifier**: Placer Identifier/BX24_001_05_A, Filler Identifier/E2024_001-05-A
+**identifier**: Placer Identifier/BX24_001_05_A, Filler Identifier/E_24_001_E
 
-**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_001
+**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_001
 
 **status**: Available
 
@@ -22,21 +22,21 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**request**: [ServiceRequest Tru-cut biopsy of prostate (procedure)](ServiceRequest-CoreNeedleBiopsyRequest.md)
+**request**: [ServiceRequest Prostate Pathology biopsy report](ServiceRequest-CoreNeedleBiopsyReportRequest.md)
 
 ### Collections
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber](Practitioner-UrologistPractitioner.md) | 2024-01-15 10:38:00+0100 | Tru-cut biopsy of prostate (procedure) | Structure of middle regional part of transition zone of right half prostate (body structure) |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-01-15 10:38:00+0100 | Tru-cut biopsy of prostate (procedure) | Structure of middle regional part of transition zone of right half prostate (body structure) |
 
 ### Containers
 
-| | |
-| :--- | :--- |
-| - | **Type** |
-| * | Specimen vial (physical object) |
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Additive[x]** |
+| * | Specimen vial (physical object) | Neutral buffered formalin (substance) |
 
 
 
@@ -85,7 +85,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
           }
         ]
       },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag",
+      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
       "value" : "BX24_001_05_A"
     },
     {
@@ -98,12 +98,12 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
         ]
       },
       "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E2024_001-05-A"
+      "value" : "E_24_001_E"
     }
   ],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value" : "E2024_001"
+    "value" : "E_24_001"
   },
   "status" : "available",
   "type" : {
@@ -120,7 +120,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   },
   "request" : [
     {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "collection" : {
@@ -155,6 +155,15 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
             "system" : "http://snomed.info/sct",
             "code" : "434746001",
             "display" : "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "434162003",
+            "display" : "Neutral buffered formalin (substance)"
           }
         ]
       }

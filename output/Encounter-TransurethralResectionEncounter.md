@@ -6,13 +6,13 @@
 
 ## Example Encounter: Encounter für TUR-Prostata
 
-**identifier**: `http://example.hospital.de/encounters`/PSA-TUR-2024
+**identifier**: `http://example.hospital.de/encounters`/E_24_003
 
 **status**: Finished
 
 **class**: [not stated]: IMP (IMP)
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
 
 
@@ -25,7 +25,7 @@
   "identifier" : [
     {
       "system" : "http://example.hospital.de/encounters",
-      "value" : "PSA-TUR-2024"
+      "value" : "E_24_003"
     }
   ],
   "status" : "finished",
@@ -33,7 +33,7 @@
     "code" : "IMP"
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   }
 }
 

@@ -3,17 +3,17 @@
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="RadicalProstatectomyEncounter"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name="RadicalProstatectomyEncounter"> </a><a name="hcRadicalProstatectomyEncounter"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/PSA-OP-2024</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name="RadicalProstatectomyEncounter"> </a><a name="hcRadicalProstatectomyEncounter"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/E_24_002</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p></div>
   </text>
   <identifier>
     <system value="http://example.hospital.de/encounters"/>
-    <value value="PSA-OP-2024"/>
+    <value value="E_24_002"/>
   </identifier>
   <status value="finished"/>
   <class>
     <code value="IMP"/>
   </class>
   <subject>
-    <reference value="Patient/Patient2"/>
+    <reference value="Patient/Patient1"/>
   </subject>
 </Encounter>

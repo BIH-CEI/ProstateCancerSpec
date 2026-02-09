@@ -38,11 +38,6 @@
   "valueQuantity": {
     "value": 4
   },
-  "derivedFrom": [
-    {
-      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
-    }
-  ],
   "status": "final",
   "code": {
     "coding": [

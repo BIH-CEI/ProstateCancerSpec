@@ -1,9 +1,9 @@
-// Patient 1 - erhält CoreNeedleBiopsy und anschließend TransurethralResection
+// Patient 1 - erhält CoreNeedleBiopsy (Karzinom) und anschließend RadicalProstatectomy mit Lymphadenektomie
 Instance: Patient1
 InstanceOf: Patient
 Usage: #example
-Title: "Patient 1 - Biopsie und TUR-P"
-Description: "Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält"
+Title: "Patient 1 - Biopsie und Prostatektomie"
+Description: "Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie"
 * identifier.system = "http://example.hospital.de/patient-ids"
 * identifier.value = "PAT-2024-001"
 * name
@@ -12,12 +12,12 @@ Description: "Patient der zuerst eine Stanzbiopsie und anschließend eine transu
 * gender = #male
 * birthDate = "1955-08-15"
 
-// Patient 2 - erhält TransurethralEnucleation und anschließend RadicalProstatectomy
+// Patient 2 - erhält TransurethralResection (benigner Befund, Miktionsbeschwerden)
 Instance: Patient2
 InstanceOf: Patient
 Usage: #example
-Title: "Patient 2 - Enukleation und Prostatektomie"
-Description: "Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält"
+Title: "Patient 2 - TUR-P (benigne)"
+Description: "Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis"
 * identifier.system = "http://example.hospital.de/patient-ids"
 * identifier.value = "PAT-2024-002"
 * name
@@ -25,3 +25,17 @@ Description: "Patient der zuerst eine transurethrale Enukleation und anschließe
   * family = "Schmidt"
 * gender = #male
 * birthDate = "1960-03-22"
+
+// Patient 3 - erhält TransurethralEnucleation (Karzinom) und anschließend Lymphadenektomie
+Instance: Patient3
+InstanceOf: Patient
+Usage: #example
+Title: "Patient 3 - Enukleation (Karzinom)"
+Description: "Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie"
+* identifier.system = "http://example.hospital.de/patient-ids"
+* identifier.value = "PAT-2024-003"
+* name
+  * given[0] = "Klaus"
+  * family = "Becker"
+* gender = #male
+* birthDate = "1958-11-10"

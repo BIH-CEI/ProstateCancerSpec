@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-01-28 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-02-09 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -57,10 +57,11 @@ Prostate enucleation (simple prostatectomy) with incidental aggressive cancer:
 
 #### Transurethral Resection
 
-Transurethral resection (TUR-P) with incidental cancer:
+Transurethral resection (TUR-P) with benign findings:
 
+* Benign prostatic hyperplasia (BPH), no carcinoma
 * 5 blocks and 10 slides from TUR chips
-* Diagnostic findings from resection tissue
+* Macroscopic and diagnostic findings from resection tissue
 
 ### Resource Organization
 
@@ -80,11 +81,21 @@ This IG builds upon:
 
 * **MII Pathology Module** [de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0): Grouper and Finding Observations, ServiceRequests and DiagnosticReports
 
-and also asures the compatibility to:
+and also assures the compatibility to:
 
 * **MII Oncology Module** [de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie) : Observations for TNM staging, Gleason grading profiles (harmonized), PSA-Level etc.
 * **MII Base Module** [de.medizininformatikinitiative.kerndatensatz.base v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base): Core patient and procedure profiles
 * **MII Biobank Module** [de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank): Specimens (inherited in patho)
+
+#### Pathology Reporting Basis
+
+The pathology findings and observations in this IG are based on the prostate cancer datasets published by the **International Collaboration on Cancer Reporting (ICCR)**. These internationally agreed, evidence-based datasets define which elements should be reported in structured pathology reports for prostate cancer specimens:
+
+* **[Prostate Cancer – Core Needle Biopsy, 2nd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-biopsy/)**: Histopathology reporting guide for core needle biopsies, covering specimen-level and case-level reporting elements.
+* **[Prostate Cancer – Radical Prostatectomy Specimen, 3rd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-rad-pros/)**: Histopathology reporting guide for radical prostatectomy specimens.
+* **[Prostate Cancer – Transurethral Resection and Enucleation, 2nd edition (November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-tur/)**: Histopathology reporting guide for TUR and enucleation specimens.
+
+All three datasets were updated in 2024 to align with the 2022 WHO Classification of Urinary and Male Genital Tumours (5th edition) and TNM8 staging.
 
 #### Standards Compliance
 
@@ -116,7 +127,7 @@ and also asures the compatibility to:
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-01-28T10:26:21+01:00",
+  "date" : "2026-02-09T11:01:00+01:00",
   "publisher" : "BIH CEI",
   "contact" : [
     {
@@ -1139,6 +1150,20 @@ and also asures the compatibility to:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionBPHNodularity"
+        },
+        "name" : "BPH Nodularität - TUR-Prostata",
+        "description" : "Ausgeprägtheit der BPH-Knoten",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Condition"
           }
         ],
@@ -1215,8 +1240,64 @@ and also asures the compatibility to:
         "reference" : {
           "reference" : "Observation/TransurethralResectionDiagnosticConclusionGrouper"
         },
-        "name" : "Diagnostic Conclusion Grouper - TUR-Prostata",
-        "description" : "Grouper for all diagnostic conclusion findings in TUR-Prostata specimens",
+        "name" : "Diagnostic Conclusion Grouper - TUR-Prostata (benigne)",
+        "description" : "Grouper for all diagnostic conclusion findings in TUR-Prostata specimens (benign)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/TransurethralEnucleationDocument"
+        },
+        "name" : "Document Bundle - Prostata-Enukleation",
+        "description" : "FHIR Document Bundle für den vollständigen Enukleations-Befundbericht",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/CoreNeedleBiopsyDocument"
+        },
+        "name" : "Document Bundle - Prostatabiopsie",
+        "description" : "FHIR Document Bundle für den vollständigen Biopsie-Befundbericht",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/RadicalProstatectomyDocument"
+        },
+        "name" : "Document Bundle - Radikale Prostatektomie",
+        "description" : "FHIR Document Bundle für den vollständigen Prostatektomie-Befundbericht",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/TransurethralResectionDocument"
+        },
+        "name" : "Document Bundle - TUR-Prostata",
+        "description" : "FHIR Document Bundle für den vollständigen TUR-P-Befundbericht",
         "exampleBoolean" : true
       },
       {
@@ -1279,6 +1360,20 @@ and also asures the compatibility to:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/TransurethralResectionInflammation"
+        },
+        "name" : "Entzündung - TUR-Prostata",
+        "description" : "Begleitende chronische Prostatitis",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Composition"
           }
         ],
@@ -1314,20 +1409,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyExtraprostaticExtension"
         },
         "name" : "Extraprostatic Extension - Prostatectomy",
-        "description" : "Presence of extraprostatic extension",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionExtraprostaticExtension"
-        },
-        "name" : "Extraprostatic Extension - TUR",
         "description" : "Presence of extraprostatic extension",
         "exampleBoolean" : true
       },
@@ -1384,20 +1465,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyGradingGroupISUP"
         },
         "name" : "Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy",
-        "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionGradingGroupISUP"
-        },
-        "name" : "Grading Group according to ISUP 2014/WHO 2016 - TUR",
         "description" : "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
         "exampleBoolean" : true
       },
@@ -2319,10 +2386,10 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "Observation/TransurethralResectionHistologicalTypeICDO3"
+          "reference" : "Observation/TransurethralResectionHistologicalDiagnosis"
         },
-        "name" : "Histological Type ICD-O-3 - TUR-Prostata",
-        "description" : "Histological type according to ICD-O-3 classification",
+        "name" : "Histologische Diagnose - TUR-Prostata (BPH)",
+        "description" : "Benigne Prostatahyperplasie ohne Malignitätsnachweis",
         "exampleBoolean" : true
       },
       {
@@ -2571,20 +2638,6 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "Observation/TransurethralResectionIntraductalCarcinoma"
-        },
-        "name" : "Intraductal Carcinoma - TUR",
-        "description" : "Presence of intraductal carcinoma of the prostate",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
           "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom01"
         },
         "name" : "Intraduktales Karzinom Stanze 01",
@@ -2707,20 +2760,6 @@ and also asures the compatibility to:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionInvasiveCribriformCarcinoma"
-        },
-        "name" : "Invasive Cribriform Carcinoma - TUR",
-        "description" : "Presence of invasive cribriform carcinoma",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Condition"
           }
         ],
@@ -2729,20 +2768,6 @@ and also asures the compatibility to:
         },
         "name" : "Inzidentelles Prostatakarzinom nach Enukleation",
         "description" : "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/TransurethralResectionDiagnosisPCa"
-        },
-        "name" : "Inzidentelles Prostatakarzinom nach TUR-P",
-        "description" : "Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat",
         "exampleBoolean" : true
       },
       {
@@ -2924,20 +2949,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyLymphovascularInvasion"
         },
         "name" : "Lymphovascular Invasion - Prostatectomy",
-        "description" : "Lymphatic and vascular invasion in cancer specimen",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionLymphovascularInvasion"
-        },
-        "name" : "Lymphovascular Invasion - TUR",
         "description" : "Lymphatic and vascular invasion in cancer specimen",
         "exampleBoolean" : true
       },
@@ -3509,20 +3520,6 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "Observation/TransurethralResectionMorphologyFreeText"
-        },
-        "name" : "Morphology Free Text Description - TUR-Prostata",
-        "description" : "Free text description of tissue morphology",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
           "reference" : "Observation/CoreNeedleBiopsyPositiveCoresLeft"
         },
         "name" : "Number of Positive Cores Left Side - Biopsy",
@@ -3987,8 +3984,8 @@ and also asures the compatibility to:
         "reference" : {
           "reference" : "Patient/Patient1"
         },
-        "name" : "Patient 1 - Biopsie und TUR-P",
-        "description" : "Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält",
+        "name" : "Patient 1 - Biopsie und Prostatektomie",
+        "description" : "Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie",
         "exampleBoolean" : true
       },
       {
@@ -4001,8 +3998,22 @@ and also asures the compatibility to:
         "reference" : {
           "reference" : "Patient/Patient2"
         },
-        "name" : "Patient 2 - Enukleation und Prostatektomie",
-        "description" : "Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält",
+        "name" : "Patient 2 - TUR-P (benigne)",
+        "description" : "Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/Patient3"
+        },
+        "name" : "Patient 3 - Enukleation (Karzinom)",
+        "description" : "Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie",
         "exampleBoolean" : true
       },
       {
@@ -4044,20 +4055,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyPercentageGleason45"
         },
         "name" : "Percentage of Gleason Pattern 4/5 - Prostatectomy",
-        "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionPercentageGleason45"
-        },
-        "name" : "Percentage of Gleason Pattern 4/5 - TUR",
         "description" : "Percentage of tumor area with Gleason pattern 4 and 5",
         "exampleBoolean" : true
       },
@@ -4114,20 +4111,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyPerineuralInfiltration"
         },
         "name" : "Perineural Infiltration - Prostatectomy",
-        "description" : "Presence of perineural invasion in cancer specimen",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionPerineuralInfiltration"
-        },
-        "name" : "Perineural Infiltration - TUR",
         "description" : "Presence of perineural invasion in cancer specimen",
         "exampleBoolean" : true
       },
@@ -4293,20 +4276,6 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "Observation/TransurethralResectionPrimaryGleasonPattern"
-        },
-        "name" : "Primary Gleason Pattern (Epstein 2005) - TUR",
-        "description" : "Primary Gleason pattern according to Epstein 2005",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
           "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
         },
         "name" : "Primäres Gleason Muster Stanze 01",
@@ -4433,7 +4402,7 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "ServiceRequest/TransurethralEnucleationServiceRequest"
+          "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
         },
         "name" : "Prostata Enucleation Anforderung",
         "description" : "Anforderung für pathologische Aufarbeitung nach Prostata Enucleation",
@@ -4769,7 +4738,7 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+          "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
         },
         "name" : "Prostatektomie Anforderung",
         "description" : "Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie",
@@ -4814,20 +4783,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"
         },
         "name" : "Prostatic Tissue Involved by Tumour - Prostatectomy",
-        "description" : "Percentage of prostatic tissue involved by tumour",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionProstaticTissueInvolved"
-        },
-        "name" : "Prostatic Tissue Involved by Tumour - TUR",
         "description" : "Percentage of prostatic tissue involved by tumour",
         "exampleBoolean" : true
       },
@@ -5087,6 +5042,228 @@ and also asures the compatibility to:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Case Level",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie auf Fall-Ebene mit diagnostischer Schlussfolgerung und Gesamtbefund",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle07"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 07",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9, Grade Group 5)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle08"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 08",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle09"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 09",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 09 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle10"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 10",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 11",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 11 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle12"
+        },
+        "name" : "QuestionnaireResponse - Core Needle Biopsy Single 12",
+        "description" : "QuestionnaireResponse für Prostata-Stanzbiopsie 12 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01"
+        },
+        "name" : "QuestionnaireResponse - Einzelstanze 01",
+        "description" : "Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle02"
+        },
+        "name" : "QuestionnaireResponse - Einzelstanze 02",
+        "description" : "Antworten zum Fragebogen für Prostata-Einzelstanze 02 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle03"
+        },
+        "name" : "QuestionnaireResponse - Einzelstanze 03",
+        "description" : "Antworten zum Fragebogen für Prostata-Einzelstanze 03 (benigne)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle04"
+        },
+        "name" : "QuestionnaireResponse - Einzelstanze 04",
+        "description" : "Antworten zum Fragebogen für Prostata-Einzelstanze 04 mit makroskopischen und mikroskopischen Befunden",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+        },
+        "name" : "QuestionnaireResponse - Radical Prostatectomy",
+        "description" : "QuestionnaireResponse für radikale Prostatektomie mit makroskopischen und diagnostischen Befunden",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+        },
+        "name" : "QuestionnaireResponse - Transurethral Enucleation",
+        "description" : "QuestionnaireResponse für Prostata-Enukleation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+        },
+        "name" : "QuestionnaireResponse - Transurethral Resection (TURP)",
+        "description" : "QuestionnaireResponse für transurethrale Resektion der Prostata",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle05"
+        },
+        "name" : "QuestionnaireResponseCoreNeedleBiopsySingle05",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06"
+        },
+        "name" : "QuestionnaireResponseCoreNeedleBiopsySingle06",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Observation"
           }
         ],
@@ -5192,20 +5369,6 @@ and also asures the compatibility to:
           "reference" : "Observation/RadicalProstatectomySecondaryGleasonPattern"
         },
         "name" : "Secondary Gleason Pattern (Epstein 2005) - Prostatectomy",
-        "description" : "Secondary Gleason pattern according to Epstein 2005",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionSecondaryGleasonPattern"
-        },
-        "name" : "Secondary Gleason Pattern (Epstein 2005) - TUR",
         "description" : "Secondary Gleason pattern according to Epstein 2005",
         "exampleBoolean" : true
       },
@@ -5521,25 +5684,11 @@ and also asures the compatibility to:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionSeminalVesicleInvasion"
-        },
-        "name" : "Seminal Vesicle Invasion - TUR",
-        "description" : "Tumor invasion into seminal vesicles",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ServiceRequest"
           }
         ],
         "reference" : {
-          "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+          "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
         },
         "name" : "Standardbiopsie Prostata Anforderung",
         "description" : "Anforderung für 12-Stanzen Prostatabiopsie",
@@ -5613,20 +5762,6 @@ and also asures the compatibility to:
         },
         "name" : "Total Gleason Score - Prostatectomy",
         "description" : "Total Gleason score in prostatectomy specimen",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/TransurethralResectionGleasonScoreTotal"
-        },
-        "name" : "Total Gleason Score - TUR",
-        "description" : "Total Gleason score in TUR specimens",
         "exampleBoolean" : true
       },
       {
@@ -5987,7 +6122,7 @@ and also asures the compatibility to:
           }
         ],
         "reference" : {
-          "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+          "reference" : "ServiceRequest/TransurethralResectionReportRequest"
         },
         "name" : "TUR-Prostata Anforderung",
         "description" : "Anforderung für pathologische Aufarbeitung nach TUR-Prostata",
@@ -6235,6 +6370,17 @@ and also asures the compatibility to:
           "nameUrl" : "tur-resection-specimens.html",
           "title" : "TUR-Resection Specimens",
           "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "document-viewer.html"
+            }
+          ],
+          "nameUrl" : "document-viewer.html",
+          "title" : "Befund-Viewer",
+          "generation" : "html"
         }
       ]
     },

@@ -12,7 +12,7 @@
 
 **type**: Tissue pathology biopsy report
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-ENUC-2024; status = finished; class = IMP (IMP)](Encounter-TransurethralEnucleationEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_004; status = finished; class = IMP (IMP)](Encounter-TransurethralEnucleationEncounter.md)
 
 **date**: 2024-04-15 08:00:00+0100
 
@@ -34,7 +34,7 @@
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Detail** |
-| * | pathology report entry task | [ServiceRequest Simple prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationServiceRequest.md) |
+| * | pathology report entry task | [ServiceRequest Simple prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md) |
 
 
 
@@ -72,7 +72,7 @@
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient3"
   },
   "encounter" : {
     "reference" : "Encounter/TransurethralEnucleationEncounter"
@@ -110,7 +110,7 @@
       ],
       "detail" : [
         {
-          "reference" : "ServiceRequest/TransurethralEnucleationServiceRequest"
+          "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
         }
       ]
     }

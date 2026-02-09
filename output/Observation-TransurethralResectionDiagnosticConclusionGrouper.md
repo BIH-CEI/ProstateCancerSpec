@@ -1,14 +1,14 @@
-# Diagnostic Conclusion Grouper - TUR-Prostata - Prostate Cancer Specification v0.1.0
+# Diagnostic Conclusion Grouper - TUR-Prostata (benigne) - Prostate Cancer Specification v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Diagnostic Conclusion Grouper - TUR-Prostata**
+* **Diagnostic Conclusion Grouper - TUR-Prostata (benigne)**
 
-## Example Observation: Diagnostic Conclusion Grouper - TUR-Prostata
+## Example Observation: Diagnostic Conclusion Grouper - TUR-Prostata (benigne)
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionServiceRequest.md)
+**basedOn**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
 
 **status**: Final
 
@@ -16,28 +16,26 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 **code**: Pathology report final diagnosis Narrative
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
 **effective**: 2024-04-12
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
+
+**note**: By Practitioner/PathologistPractitioner @2024-04-12
+
+> 
+
+Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.
+
 
 **hasMember**: 
 
-* [Observation Histology and Behavior ICD-O-3 Cancer](Observation-TransurethralResectionHistologicalTypeICDO3.md)
-* [Observation Histology type in Cancer specimen Narrative](Observation-TransurethralResectionMorphologyFreeText.md)
-* [Observation Gleason pattern.primary in Prostate tumor](Observation-TransurethralResectionPrimaryGleasonPattern.md)
-* [Observation Gleason pattern.secondary in Prostate tumor](Observation-TransurethralResectionSecondaryGleasonPattern.md)
-* [Observation Gleason score in Specimen Qualitative](Observation-TransurethralResectionGleasonScoreTotal.md)
-* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area](Observation-TransurethralResectionPercentageGleason45.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-TransurethralResectionGradingGroupISUP.md)
-* [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-TransurethralResectionIntraductalCarcinoma.md)
-* [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-TransurethralResectionInvasiveCribriformCarcinoma.md)
-* [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-TransurethralResectionProstaticTissueInvolved.md)
-* [Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols](Observation-TransurethralResectionExtraprostaticExtension.md)
-* [Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols](Observation-TransurethralResectionSeminalVesicleInvasion.md)
-* [Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols](Observation-TransurethralResectionLymphovascularInvasion.md)
-* [Observation Perineural invasion [Presence] in Cancer specimen](Observation-TransurethralResectionPerineuralInfiltration.md)
+* [Observation Histology type in Cancer specimen Narrative](Observation-TransurethralResectionHistologicalDiagnosis.md)
+* [Observation Benign prostatic hyperplasia (disorder)](Observation-TransurethralResectionBPHNodularity.md)
+* [Observation Chronic prostatitis (disorder)](Observation-TransurethralResectionInflammation.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'](QuestionnaireResponse-QuestionnaireResponseTransurethralResection.md)
 
 
 
@@ -54,7 +52,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   },
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
     }
   ],
   "status" : "final",
@@ -77,7 +75,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-12",
   "performer" : [
@@ -85,48 +83,29 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
       "reference" : "Practitioner/PathologistPractitioner"
     }
   ],
+  "note" : [
+    {
+      "authorReference" : {
+        "reference" : "Practitioner/PathologistPractitioner"
+      },
+      "time" : "2024-04-12",
+      "text" : "Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN."
+    }
+  ],
   "hasMember" : [
     {
-      "reference" : "Observation/TransurethralResectionHistologicalTypeICDO3"
+      "reference" : "Observation/TransurethralResectionHistologicalDiagnosis"
     },
     {
-      "reference" : "Observation/TransurethralResectionMorphologyFreeText"
+      "reference" : "Observation/TransurethralResectionBPHNodularity"
     },
     {
-      "reference" : "Observation/TransurethralResectionPrimaryGleasonPattern"
-    },
+      "reference" : "Observation/TransurethralResectionInflammation"
+    }
+  ],
+  "derivedFrom" : [
     {
-      "reference" : "Observation/TransurethralResectionSecondaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionGleasonScoreTotal"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionPercentageGleason45"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionGradingGroupISUP"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionIntraductalCarcinoma"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionInvasiveCribriformCarcinoma"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionProstaticTissueInvolved"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionExtraprostaticExtension"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionSeminalVesicleInvasion"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionLymphovascularInvasion"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionPerineuralInfiltration"
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
     }
   ]
 }

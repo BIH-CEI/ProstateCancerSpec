@@ -11,7 +11,7 @@ Description: "Umfangreicher Pathologiebericht nach TUR-Prostata"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
 * code = $loinc#60568-3 "Pathology Synoptic report"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * basedOn = Reference(TransurethralResectionReportRequest)
 * effectiveDateTime = "2024-04-12T17:00:00+01:00"
 * issued = "2024-04-13T08:00:00+01:00"

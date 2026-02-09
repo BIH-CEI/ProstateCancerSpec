@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Patient 2 - Enukleation und Prostatektomie - XML Representation - Prostate Cancer Specification v0.1.0</title>
+    <title>Patient 2 - TUR-P (benigne) - XML Representation - Prostate Cancer Specification v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.226"}
-    h3,h4,h5,h6{--heading-prefix:"8.226"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.225"}
+    h3,h4,h5,h6{--heading-prefix:"9.225"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -90,13 +90,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -124,7 +127,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -149,7 +152,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -174,7 +177,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -208,7 +211,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient 2 - Enukleation und Prostatektomie</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient 2 - TUR-P (benigne)</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -267,7 +270,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Patient 2 - Enukleation und Prostatektomie - XML Representation</h2>
+<h2 id="root">: Patient 2 - TUR-P (benigne) - XML Representation</h2>
 
 
 <p><a href="Patient-Patient2.xml" no-download="true">Raw xml</a> | <a href="Patient-Patient2.xml" download>Download</a></p>
@@ -279,7 +282,7 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Patient2&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient Patient2&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Patient2&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcPatient2&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;<a name="end-xhtml"></a>
@@ -318,7 +321,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

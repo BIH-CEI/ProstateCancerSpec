@@ -18,9 +18,9 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **effective**: 2024-01-15 14:10:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 1.8 cm(Details: UCUM codecm = 'cm')
+**value**: 1.8 cm (Details: UCUM codecm = 'cm')
 
 **note**: 
 
@@ -31,7 +31,9 @@ Stanzzylinder Gesamtlänge 1.8cm
 
 **bodySite**: Structure of basal part of peripheral zone of right half prostate (body structure)
 
-**specimen**: [Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Prostate tru-cut biopsy sample](Specimen-CoreNeedleBiopsySpecimen01Part.md)
+**specimen**: [Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample](Specimen-CoreNeedleBiopsySpecimen01Part.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20250102170615' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle01.md)
 
 
 
@@ -105,7 +107,12 @@ Stanzzylinder Gesamtlänge 1.8cm
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
-  }
+  },
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01"
+    }
+  ]
 }
 
 ```

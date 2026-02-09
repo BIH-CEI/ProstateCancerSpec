@@ -13,7 +13,7 @@ Title: "QuestionnaireResponse - Transurethral Enucleation"
 Description: "QuestionnaireResponse für Prostata-Enukleation"
 * questionnaire = "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435"
 * status = #completed
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * authored = "2024-05-11T14:30:00+01:00"
 * author = Reference(PathologistPractitioner)
 
@@ -32,11 +32,11 @@ Description: "QuestionnaireResponse für Prostata-Enukleation"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.86"
     * text = "Geburtsdatum"
-    * answer.valueDate = "1960-03-22"
+    * answer.valueDate = "1958-11-10"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.87"
     * text = "Patienten-Identifikator"
-    * answer.valueString = "PAT-2024-002"
+    * answer.valueString = "PAT-2024-003"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.88"
     * text = "Auftragsnummer des Einsenders"

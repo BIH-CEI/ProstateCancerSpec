@@ -13,7 +13,7 @@ Title: "QuestionnaireResponse - Transurethral Resection (TURP)"
 Description: "QuestionnaireResponse für transurethrale Resektion der Prostata"
 * questionnaire = "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435"
 * status = #completed
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * authored = "2024-04-11T14:30:00+01:00"
 * author = Reference(PathologistPractitioner)
 
@@ -24,19 +24,19 @@ Description: "QuestionnaireResponse für transurethrale Resektion der Prostata"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.84"
     * text = "Familienname"
-    * answer.valueString = "Mueller"
+    * answer.valueString = "Schmidt"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.85"
     * text = "Vorname"
-    * answer.valueString = "Hans"
+    * answer.valueString = "Peter"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.86"
     * text = "Geburtsdatum"
-    * answer.valueDate = "1955-08-15"
+    * answer.valueDate = "1960-03-22"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.87"
     * text = "Patienten-Identifikator"
-    * answer.valueString = "PAT-2024-001"
+    * answer.valueString = "PAT-2024-002"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.88"
     * text = "Auftragsnummer des Einsenders"
@@ -66,13 +66,13 @@ Description: "QuestionnaireResponse für transurethrale Resektion der Prostata"
       * text = "Gewicht"
       * answer.valueQuantity = 25 'g' "g"
   
-  // Histologischer Tumortyp
+  // Histologische Diagnose (benigne)
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.134"
-    * text = "Histologischer Tumortyp"
-    * answer.valueCoding = $sct#86049000 "Malignant neoplasm, primary (morphologic abnormality)"
-  
+    * text = "Histologische Diagnose"
+    * answer.valueCoding = $sct#266569009 "Benign prostatic hyperplasia (disorder)"
+
   * item[+]
-    * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.10470"
-    * text = "Histologischer Typ ICD-O-3"
-    * answer.valueCoding = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
+    * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.10490"
+    * text = "Befundtext"
+    * answer.valueString = "Benigne Prostatahyperplasie ohne Malignitätsnachweis"

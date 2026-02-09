@@ -18,9 +18,9 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 
 **code**: Bösartige Neubildung der Prostata
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-OP-2024; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
 
 **onset**: 2024-02-10
 
@@ -96,7 +96,7 @@ Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinis
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "encounter" : {
     "reference" : "Encounter/RadicalProstatectomyEncounter"

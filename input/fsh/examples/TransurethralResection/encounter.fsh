@@ -7,4 +7,4 @@ Description: "Encounter für TUR-Prostata-Beispiel"
 * identifier.value = "E_24_003"
 * status = #finished
 * class = #IMP
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)

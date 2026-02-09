@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyServiceRequest.md)
+**basedOn**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyReportRequest.md)
 
 **status**: Final
 
@@ -16,11 +16,18 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 **code**: Pathology report final diagnosis Narrative
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
 **effective**: 2024-03-20
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
+
+**note**: By Practitioner/PathologistPractitioner @2024-03-20
+
+> 
+
+Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.
+
 
 **hasMember**: 
 
@@ -47,6 +54,8 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 * [Observation Primary tumor.pathology Cancer](Observation-RadicalProstatectomyTNMpT.md)
 * [Observation Regional lymph nodes.pathology [Class] Cancer](Observation-RadicalProstatectomyTNMpN.md)
 
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
+
 
 
 ## Resource Content
@@ -62,7 +71,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   },
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "status" : "final",
@@ -85,12 +94,21 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20",
   "performer" : [
     {
       "reference" : "Practitioner/PathologistPractitioner"
+    }
+  ],
+  "note" : [
+    {
+      "authorReference" : {
+        "reference" : "Practitioner/PathologistPractitioner"
+      },
+      "time" : "2024-03-20",
+      "text" : "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0."
     }
   ],
   "hasMember" : [
@@ -159,6 +177,11 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
     },
     {
       "reference" : "Observation/RadicalProstatectomyTNMpN"
+    }
+  ],
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
     }
   ]
 }

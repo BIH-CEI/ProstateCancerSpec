@@ -7,7 +7,7 @@
         {
           "answer": [
             {
-              "valueString": "Mueller"
+              "valueString": "Schmidt"
             }
           ],
           "linkId": "2.16.840.1.113883.3.1937.777.18.2.84",
@@ -16,7 +16,7 @@
         {
           "answer": [
             {
-              "valueString": "Hans"
+              "valueString": "Peter"
             }
           ],
           "linkId": "2.16.840.1.113883.3.1937.777.18.2.85",
@@ -25,7 +25,7 @@
         {
           "answer": [
             {
-              "valueDate": "1955-08-15"
+              "valueDate": "1960-03-22"
             }
           ],
           "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
@@ -34,7 +34,7 @@
         {
           "answer": [
             {
-              "valueString": "PAT-2024-001"
+              "valueString": "PAT-2024-002"
             }
           ],
           "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
@@ -101,27 +101,23 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "86049000",
+                "code": "266569009",
                 "system": "http://snomed.info/sct",
-                "display": "Malignant neoplasm, primary (morphologic abnormality)"
+                "display": "Benign prostatic hyperplasia (disorder)"
               }
             }
           ],
           "linkId": "2.16.840.1.113883.3.1937.777.18.2.134",
-          "text": "Histologischer Tumortyp"
+          "text": "Histologische Diagnose"
         },
         {
           "answer": [
             {
-              "valueCoding": {
-                "code": "8140/3",
-                "system": "urn:oid:2.16.840.1.113883.6.43.1",
-                "display": "Azinäres Adenokarzinom"
-              }
+              "valueString": "Benigne Prostatahyperplasie ohne Malignitätsnachweis"
             }
           ],
-          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10470",
-          "text": "Histologischer Typ ICD-O-3"
+          "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10490",
+          "text": "Befundtext"
         }
       ],
       "linkId": "2.16.840.1.113883.3.1937.777.18.2.4.10420",
@@ -131,7 +127,7 @@
   "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435",
   "status": "completed",
   "subject": {
-    "reference": "Patient/Patient1"
+    "reference": "Patient/Patient2"
   },
   "authored": "2024-04-11T14:30:00+01:00",
   "author": {

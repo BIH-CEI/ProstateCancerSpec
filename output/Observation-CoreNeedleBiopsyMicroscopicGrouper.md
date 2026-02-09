@@ -18,7 +18,7 @@ Profile: [MII PR Patho Microscopic Grouperversion: null2026.0.0)](https://simpli
 
 **effective**: 2024-01-17 10:00:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: Mikroskopische Befunde aller 12 Prostatastanzen
 

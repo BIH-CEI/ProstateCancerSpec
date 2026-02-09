@@ -33,26 +33,30 @@ These are example instances that show what data produced and consumed by systems
 | [Anzahl Zylinder Stanze 11](Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.md) | Anzahl der Stanzzylinder in Specimen 11 |
 | [Anzahl Zylinder Stanze 12](Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.md) | Anzahl der Stanzzylinder in Specimen 12 |
 | [Atypical Small Acinar Proliferation (ASAP) - Biopsy](Observation-CoreNeedleBiopsyASAP.md) | Presence of atypical small acinar proliferation |
+| [BPH Nodularität - TUR-Prostata](Observation-TransurethralResectionBPHNodularity.md) | Ausgeprägtheit der BPH-Knoten |
 | [BPH-Diagnose vor Enukleation](Condition-TransurethralEnucleationDiagnosisBPH.md) | Symptomatische benigne Prostatahyperplasie als Indikation zur Enukleation |
 | [BPH-Diagnose vor TUR-P](Condition-TransurethralResectionDiagnosisBPH.md) | Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P |
 | [Bladder Neck Invasion - Prostatectomy](Observation-RadicalProstatectomyBladderNeckInvasion.md) | Microscopic urinary bladder neck invasion |
 | [Diagnostic Conclusion Grouper - Biopsy](Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in biopsy specimens |
 | [Diagnostic Conclusion Grouper - Prostata Enucleation](Observation-TransurethralEnucleationDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in Prostata Enucleation specimens |
 | [Diagnostic Conclusion Grouper - Prostatectomy](Observation-RadicalProstatectomyDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in prostatectomy specimens |
-| [Diagnostic Conclusion Grouper - TUR-Prostata](Observation-TransurethralResectionDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in TUR-Prostata specimens |
+| [Diagnostic Conclusion Grouper - TUR-Prostata (benigne)](Observation-TransurethralResectionDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in TUR-Prostata specimens (benign) |
+| [Document Bundle - Prostata-Enukleation](Bundle-TransurethralEnucleationDocument.md) | FHIR Document Bundle für den vollständigen Enukleations-Befundbericht |
+| [Document Bundle - Prostatabiopsie](Bundle-CoreNeedleBiopsyDocument.md) | FHIR Document Bundle für den vollständigen Biopsie-Befundbericht |
+| [Document Bundle - Radikale Prostatektomie](Bundle-RadicalProstatectomyDocument.md) | FHIR Document Bundle für den vollständigen Prostatektomie-Befundbericht |
+| [Document Bundle - TUR-Prostata](Bundle-TransurethralResectionDocument.md) | FHIR Document Bundle für den vollständigen TUR-P-Befundbericht |
 | [Encounter für Pathologie](Encounter-CoreNeedleBiopsyEncounter.md) | Encounter für pathologische Befunde |
 | [Encounter für Prostata Enucleation](Encounter-TransurethralEnucleationEncounter.md) | Encounter für Prostata Enucleation-Beispiel |
 | [Encounter für Prostatektomie](Encounter-RadicalProstatectomyEncounter.md) | Encounter für Prostatektomie-Beispiel |
 | [Encounter für TUR-Prostata](Encounter-TransurethralResectionEncounter.md) | Encounter für TUR-Prostata-Beispiel |
+| [Entzündung - TUR-Prostata](Observation-TransurethralResectionInflammation.md) | Begleitende chronische Prostatitis |
 | [Enucleation Pathology Report Composition](Composition-TransurethralEnucleationComposition.md) | FHIR Composition for structured TUR pathology report |
 | [Extraprostatic Extension - Enucleation](Observation-TransurethralEnucleationExtraprostaticExtension.md) | Presence of extraprostatic extension |
 | [Extraprostatic Extension - Prostatectomy](Observation-RadicalProstatectomyExtraprostaticExtension.md) | Presence of extraprostatic extension |
-| [Extraprostatic Extension - TUR](Observation-TransurethralResectionExtraprostaticExtension.md) | Presence of extraprostatic extension |
 | [Gesicherte Prostatakarzinom-Diagnose nach Biopsie](Condition-CoreNeedleBiopsyDiagnosisConfirmed.md) | Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie |
 | [Grading Group according to ISUP 2014/WHO 2016 - Biopsy](Observation-CoreNeedleBiopsyGradingGroupISUP.md) | Prostate cancer grade group according to ISUP 2014 and WHO 2016 |
 | [Grading Group according to ISUP 2014/WHO 2016 - Enucleation](Observation-TransurethralEnucleationGradingGroupISUP.md) | Prostate cancer grade group according to ISUP 2014 and WHO 2016 |
 | [Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy](Observation-RadicalProstatectomyGradingGroupISUP.md) | Prostate cancer grade group according to ISUP 2014 and WHO 2016 |
-| [Grading Group according to ISUP 2014/WHO 2016 - TUR](Observation-TransurethralResectionGradingGroupISUP.md) | Prostate cancer grade group according to ISUP 2014 and WHO 2016 |
 | [Gradinggruppe ISUP Stanze 01](Observation-CoreNeedleBiopsyGleasonGrading01.md) | Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 01 |
 | [Gradinggruppe ISUP Stanze 02](Observation-CoreNeedleBiopsyGleasonGrading02.md) | Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 02 |
 | [Gradinggruppe ISUP Stanze 04](Observation-CoreNeedleBiopsyGleasonGrading04.md) | Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 04 |
@@ -118,7 +122,7 @@ These are example instances that show what data produced and consumed by systems
 | [Histological Type ICD-O-3 - Biopsy](Observation-CoreNeedleBiopsyHistologicalTypeICDO3.md) | Histological type according to ICD-O-3 classification |
 | [Histological Type ICD-O-3 - Prostata Enucleation](Observation-TransurethralEnucleationHistologicalTypeICDO3.md) | Histological type according to ICD-O-3 classification |
 | [Histological Type ICD-O-3 - Prostatectomy](Observation-RadicalProstatectomyHistologicalTypeICDO3.md) | Histological type according to ICD-O-3 classification |
-| [Histological Type ICD-O-3 - TUR-Prostata](Observation-TransurethralResectionHistologicalTypeICDO3.md) | Histological type according to ICD-O-3 classification |
+| [Histologische Diagnose - TUR-Prostata (BPH)](Observation-TransurethralResectionHistologicalDiagnosis.md) | Benigne Prostatahyperplasie ohne Malignitätsnachweis |
 | [Histologischer Typ Stanze 01](Observation-CoreNeedleBiopsyHistoTyp01.md) | Histologischer Typ ICD-O-3 für Stanze 01 |
 | [Histologischer Typ Stanze 02](Observation-CoreNeedleBiopsyHistoTyp02.md) | Histologischer Typ ICD-O-3 für Stanze 02 |
 | [Histologischer Typ Stanze 03](Observation-CoreNeedleBiopsyHistoTyp03.md) | Histologischer Typ ICD-O-3 für Stanze 03 |
@@ -136,7 +140,6 @@ These are example instances that show what data produced and consumed by systems
 | [Intraductal Carcinoma - Biopsy](Observation-CoreNeedleBiopsyIntraductalCarcinoma.md) | Presence of intraductal carcinoma |
 | [Intraductal Carcinoma - Enucleation](Observation-TransurethralEnucleationIntraductalCarcinoma.md) | Presence of intraductal carcinoma of the prostate |
 | [Intraductal Carcinoma - Prostatectomy](Observation-RadicalProstatectomyIntraductalCarcinoma.md) | Presence of intraductal carcinoma of the prostate |
-| [Intraductal Carcinoma - TUR](Observation-TransurethralResectionIntraductalCarcinoma.md) | Presence of intraductal carcinoma of the prostate |
 | [Intraduktales Karzinom Stanze 01](Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.md) | Intraduktales Karzinom für Stanze 01 |
 | [Intraduktales Karzinom Stanze 02](Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.md) | Intraduktales Karzinom für Stanze 02 |
 | [Intraduktales Karzinom Stanze 04](Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.md) | Intraduktales Karzinom für Stanze 04 |
@@ -146,9 +149,7 @@ These are example instances that show what data produced and consumed by systems
 | [Intraduktales Karzinom Stanze 11](Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.md) | Intraduktales Karzinom für Stanze 11 |
 | [Invasive Cribriform Carcinoma - Enucleation](Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.md) | Presence of invasive cribriform carcinoma |
 | [Invasive Cribriform Carcinoma - Prostatectomy](Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.md) | Presence of invasive cribriform carcinoma |
-| [Invasive Cribriform Carcinoma - TUR](Observation-TransurethralResectionInvasiveCribriformCarcinoma.md) | Presence of invasive cribriform carcinoma |
 | [Inzidentelles Prostatakarzinom nach Enukleation](Condition-TransurethralEnucleationDiagnosisPCa.md) | Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat |
-| [Inzidentelles Prostatakarzinom nach TUR-P](Condition-TransurethralResectionDiagnosisPCa.md) | Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat |
 | [Klinisches M-Staging](Observation-CoreNeedleBiopsyClinicalMStaging.md) | Klinische M-Kategorie |
 | [Klinisches N-Staging](Observation-CoreNeedleBiopsyClinicalNStaging.md) | Klinische N-Kategorie |
 | [Klinisches T-Staging](Observation-CoreNeedleBiopsyClinicalTStaging.md) | Klinische T-Kategorie nach Biopsie |
@@ -162,7 +163,6 @@ These are example instances that show what data produced and consumed by systems
 | [Lymphovascular Invasion - Biopsy](Observation-CoreNeedleBiopsyLymphovascularInvasion.md) | Lymphatic and vascular invasion in cancer specimen |
 | [Lymphovascular Invasion - Enucleation](Observation-TransurethralEnucleationLymphovascularInvasion.md) | Lymphatic and vascular invasion in cancer specimen |
 | [Lymphovascular Invasion - Prostatectomy](Observation-RadicalProstatectomyLymphovascularInvasion.md) | Lymphatic and vascular invasion in cancer specimen |
-| [Lymphovascular Invasion - TUR](Observation-TransurethralResectionLymphovascularInvasion.md) | Lymphatic and vascular invasion in cancer specimen |
 | [Lymphovaskuläre Invasion Stanze 01](Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.md) | Lymphovaskuläre Invasion für Stanze 01 |
 | [Lymphovaskuläre Invasion Stanze 02](Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.md) | Lymphovaskuläre Invasion für Stanze 02 |
 | [Lymphovaskuläre Invasion Stanze 04](Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.md) | Lymphovaskuläre Invasion für Stanze 04 |
@@ -203,7 +203,6 @@ These are example instances that show what data produced and consumed by systems
 | [Morphology Free Text Description - Biopsy](Observation-CoreNeedleBiopsyMorphologyFreeText.md) | Free text description of tumor morphology |
 | [Morphology Free Text Description - Prostata Enucleation](Observation-TransurethralEnucleationMorphologyFreeText.md) | Free text description of tissue morphology |
 | [Morphology Free Text Description - Prostatectomy](Observation-RadicalProstatectomyMorphologyFreeText.md) | Free text description of tumor morphology |
-| [Morphology Free Text Description - TUR-Prostata](Observation-TransurethralResectionMorphologyFreeText.md) | Free text description of tissue morphology |
 | [Number of Positive Cores Left Side - Biopsy](Observation-CoreNeedleBiopsyPositiveCoresLeft.md) | Number of tissue cores positive for carcinoma on the left side |
 | [Number of Positive Cores Right Side - Biopsy](Observation-CoreNeedleBiopsyPositiveCoresRight.md) | Number of tissue cores positive for carcinoma on the right side |
 | [PSA postoperativ](Observation-RadicalProstatectomyPSAPostoperative.md) | PSA-Kontrolle 6 Wochen nach Prostatektomie |
@@ -241,17 +240,16 @@ These are example instances that show what data produced and consumed by systems
 | [Pathologiebericht Prostatektomie](DiagnosticReport-RadicalProstatectomyReport.md) | Umfangreicher Pathologiebericht nach radikaler Prostatektomie |
 | [Pathologiebericht TUR-Prostata](DiagnosticReport-TransurethralResectionReport.md) | Umfangreicher Pathologiebericht nach TUR-Prostata |
 | [Pathologielabor](Organization-PathologyLabOrganization.md) | Pathologielabor für alle pathologischen Befunde |
-| [Patient 1 - Biopsie und TUR-P](Patient-Patient1.md) | Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält |
-| [Patient 2 - Enukleation und Prostatektomie](Patient-Patient2.md) | Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält |
+| [Patient 1 - Biopsie und Prostatektomie](Patient-Patient1.md) | Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie |
+| [Patient 2 - TUR-P (benigne)](Patient-Patient2.md) | Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis |
+| [Patient 3 - Enukleation (Karzinom)](Patient-Patient3.md) | Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie |
 | [Percentage Tumor Content Total - Biopsy](Observation-CoreNeedleBiopsyPercentageTumorTotal.md) | Total percentage of tumor in all positive tissue cores |
 | [Percentage of Gleason Pattern 4/5 - Biopsy](Observation-CoreNeedleBiopsyPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
 | [Percentage of Gleason Pattern 4/5 - Enucleation](Observation-TransurethralEnucleationPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
 | [Percentage of Gleason Pattern 4/5 - Prostatectomy](Observation-RadicalProstatectomyPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
-| [Percentage of Gleason Pattern 4/5 - TUR](Observation-TransurethralResectionPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
 | [Perineural Infiltration - Biopsy](Observation-CoreNeedleBiopsyPerineuralInfiltration.md) | Presence of perineural invasion in cancer specimen |
 | [Perineural Infiltration - Enucleation](Observation-TransurethralEnucleationPerineuralInfiltration.md) | Presence of perineural invasion in cancer specimen |
 | [Perineural Infiltration - Prostatectomy](Observation-RadicalProstatectomyPerineuralInfiltration.md) | Presence of perineural invasion in cancer specimen |
-| [Perineural Infiltration - TUR](Observation-TransurethralResectionPerineuralInfiltration.md) | Presence of perineural invasion in cancer specimen |
 | [Perineurale Infiltration Stanze 01](Observation-CoreNeedleBiopsyPerineuraleInfiltration01.md) | Perineurale Infiltration für Stanze 01 |
 | [Perineurale Infiltration Stanze 02](Observation-CoreNeedleBiopsyPerineuraleInfiltration02.md) | Perineurale Infiltration für Stanze 02 |
 | [Perineurale Infiltration Stanze 04](Observation-CoreNeedleBiopsyPerineuraleInfiltration04.md) | Perineurale Infiltration für Stanze 04 |
@@ -263,7 +261,6 @@ These are example instances that show what data produced and consumed by systems
 | [Primary Gleason Pattern (Epstein 2005) - Biopsy](Observation-CoreNeedleBiopsyPrimaryGleasonPattern.md) | Primary Gleason pattern according to Epstein 2005 |
 | [Primary Gleason Pattern (Epstein 2005) - Enucleation](Observation-TransurethralEnucleationPrimaryGleasonPattern.md) | Primary Gleason pattern according to Epstein 2005 |
 | [Primary Gleason Pattern (Epstein 2005) - Prostatectomy](Observation-RadicalProstatectomyPrimaryGleasonPattern.md) | Primary Gleason pattern according to Epstein 2005 |
-| [Primary Gleason Pattern (Epstein 2005) - TUR](Observation-TransurethralResectionPrimaryGleasonPattern.md) | Primary Gleason pattern according to Epstein 2005 |
 | [Primäres Gleason Muster Stanze 01](Observation-CoreNeedleBiopsyPrimaerGleason01.md) | Primäres Gleason Muster für Stanze 01 |
 | [Primäres Gleason Muster Stanze 02](Observation-CoreNeedleBiopsyPrimaerGleason02.md) | Primäres Gleason Muster für Stanze 02 |
 | [Primäres Gleason Muster Stanze 04](Observation-CoreNeedleBiopsyPrimaerGleason04.md) | Primäres Gleason Muster für Stanze 04 |
@@ -273,7 +270,7 @@ These are example instances that show what data produced and consumed by systems
 | [Primäres Gleason Muster Stanze 11](Observation-CoreNeedleBiopsyPrimaerGleason11.md) | Primäres Gleason Muster für Stanze 11 |
 | [Prostata Breite](Observation-RadicalProstatectomyMacroscopicProstateWidth.md) | Breite der Prostata in cm |
 | [Prostata Enucleation (Simple Prostatectomy)](Procedure-TransurethralEnucleationProcedure.md) | Prostata Enucleation zur Behandlung der benignen Prostatahyperplasie |
-| [Prostata Enucleation Anforderung](ServiceRequest-TransurethralEnucleationServiceRequest.md) | Anforderung für pathologische Aufarbeitung nach Prostata Enucleation |
+| [Prostata Enucleation Anforderung](ServiceRequest-TransurethralEnucleationReportRequest.md) | Anforderung für pathologische Aufarbeitung nach Prostata Enucleation |
 | [Prostata Enucleation Breite](Observation-TransurethralEnucleationMacroscopicWidth.md) | Breite des Prostata Enucleation Präparats in cm |
 | [Prostata Enucleation Gewicht](Observation-TransurethralEnucleationMacroscopicWeight.md) | Gewicht des Prostata Enucleation Präparats |
 | [Prostata Enucleation Länge](Observation-TransurethralEnucleationMacroscopicLength.md) | Länge des Prostata Enucleation Präparats in cm |
@@ -297,11 +294,10 @@ These are example instances that show what data produced and consumed by systems
 | [Prostatastanze 12 - Links medial apikal](Specimen-CoreNeedleBiopsySpecimen12Part.md) | Tru-cut Biopsie aus der linken medialen Apex (anteriores fibromuskuläres Stroma) |
 | [Prostate Biopsy Pathology Report Composition](Composition-CoreNeedleBiopsyComposition.md) | FHIR Composition for structured prostate biopsy pathology report |
 | [Prostatectomy Pathology Report Composition](Composition-RadicalProstatectomyComposition.md) | FHIR Composition for structured prostatectomy pathology report |
-| [Prostatektomie Anforderung](ServiceRequest-RadicalProstatectomyServiceRequest.md) | Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie |
+| [Prostatektomie Anforderung](ServiceRequest-RadicalProstatectomyReportRequest.md) | Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie |
 | [Prostatektomiepräparat (Einsendespecimen)](Specimen-RadicalProstatectomySpecimenPart.md) | Vollständiges Prostatektomiepräparat mit Samenbläschen |
 | [Prostatic Tissue Involved by Tumour - Enucleation](Observation-TransurethralEnucleationProstaticTissueInvolved.md) | Percentage of prostatic tissue involved by tumour |
 | [Prostatic Tissue Involved by Tumour - Prostatectomy](Observation-RadicalProstatectomyProstaticTissueInvolved.md) | Percentage of prostatic tissue involved by tumour |
-| [Prostatic Tissue Involved by Tumour - TUR](Observation-TransurethralResectionProstaticTissueInvolved.md) | Percentage of prostatic tissue involved by tumour |
 | [Prozentualer Anteil Gleasonmuster 4/5 Stanze 01](Observation-CoreNeedleBiopsyProzentGleason01.md) | Prozentualer Anteil Gleasonmuster 4/5 für Stanze 01 |
 | [Prozentualer Anteil Gleasonmuster 4/5 Stanze 02](Observation-CoreNeedleBiopsyProzentGleason02.md) | Prozentualer Anteil Gleasonmuster 4/5 für Stanze 02 |
 | [Prozentualer Anteil Gleasonmuster 4/5 Stanze 04](Observation-CoreNeedleBiopsyProzentGleason04.md) | Prozentualer Anteil Gleasonmuster 4/5 für Stanze 04 |
@@ -316,6 +312,22 @@ These are example instances that show what data produced and consumed by systems
 | [Prozentualer Tumoranteil Stanze 07](Observation-CoreNeedleBiopsyTumoranteil07.md) | Prozentualer Tumoranteil für Stanze 07 |
 | [Prozentualer Tumoranteil Stanze 09](Observation-CoreNeedleBiopsyTumoranteil09.md) | Prozentualer Tumoranteil für Stanze 09 |
 | [Prozentualer Tumoranteil Stanze 11](Observation-CoreNeedleBiopsyTumoranteil11.md) | Prozentualer Tumoranteil für Stanze 11 |
+| [QuestionnaireResponse - Core Needle Biopsy Case Level](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsyCase.md) | QuestionnaireResponse für Prostata-Stanzbiopsie auf Fall-Ebene mit diagnostischer Schlussfolgerung und Gesamtbefund |
+| [QuestionnaireResponse - Core Needle Biopsy Single 07](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle07.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9, Grade Group 5) |
+| [QuestionnaireResponse - Core Needle Biopsy Single 08](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle08.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne) |
+| [QuestionnaireResponse - Core Needle Biopsy Single 09](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle09.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 09 (benigne) |
+| [QuestionnaireResponse - Core Needle Biopsy Single 10](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle10.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne) |
+| [QuestionnaireResponse - Core Needle Biopsy Single 11](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle11.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 11 (benigne) |
+| [QuestionnaireResponse - Core Needle Biopsy Single 12](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle12.md) | QuestionnaireResponse für Prostata-Stanzbiopsie 12 (benigne) |
+| [QuestionnaireResponse - Einzelstanze 01](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle01.md) | Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makroskopischen und mikroskopischen Befunden |
+| [QuestionnaireResponse - Einzelstanze 02](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle02.md) | Antworten zum Fragebogen für Prostata-Einzelstanze 02 mit makroskopischen und mikroskopischen Befunden |
+| [QuestionnaireResponse - Einzelstanze 03](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle03.md) | Antworten zum Fragebogen für Prostata-Einzelstanze 03 (benigne) |
+| [QuestionnaireResponse - Einzelstanze 04](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle04.md) | Antworten zum Fragebogen für Prostata-Einzelstanze 04 mit makroskopischen und mikroskopischen Befunden |
+| [QuestionnaireResponse - Radical Prostatectomy](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md) | QuestionnaireResponse für radikale Prostatektomie mit makroskopischen und diagnostischen Befunden |
+| [QuestionnaireResponse - Transurethral Enucleation](QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.md) | QuestionnaireResponse für Prostata-Enukleation |
+| [QuestionnaireResponse - Transurethral Resection (TURP)](QuestionnaireResponse-QuestionnaireResponseTransurethralResection.md) | QuestionnaireResponse für transurethrale Resektion der Prostata |
+| [QuestionnaireResponseCoreNeedleBiopsySingle05](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle05.md) |  |
+| [QuestionnaireResponseCoreNeedleBiopsySingle06](QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle06.md) |  |
 | [Ratio of Positive to Total Cores - Biopsy](Observation-CoreNeedleBiopsyRatioPositiveCores.md) | Ratio of positive cores to all examined cores |
 | [Samenblasen im Enucleation-Resektat](Observation-TransurethralEnucleationMacroscopicSeminalVesicles.md) | Vorhandensein von Samenblasen im Prostata Enucleation Präparat |
 | [Samenblasen im Resektat](Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.md) | Vorhandensein von Samenblasen im Prostatektomiepräparat |
@@ -324,7 +336,6 @@ These are example instances that show what data produced and consumed by systems
 | [Secondary Gleason Pattern (Epstein 2005) - Biopsy](Observation-CoreNeedleBiopsySecondaryGleasonPattern.md) | Secondary Gleason pattern according to Epstein 2005 |
 | [Secondary Gleason Pattern (Epstein 2005) - Enucleation](Observation-TransurethralEnucleationSecondaryGleasonPattern.md) | Secondary Gleason pattern according to Epstein 2005 |
 | [Secondary Gleason Pattern (Epstein 2005) - Prostatectomy](Observation-RadicalProstatectomySecondaryGleasonPattern.md) | Secondary Gleason pattern according to Epstein 2005 |
-| [Secondary Gleason Pattern (Epstein 2005) - TUR](Observation-TransurethralResectionSecondaryGleasonPattern.md) | Secondary Gleason pattern according to Epstein 2005 |
 | [Seitenangabe Stanze 01](Observation-CoreNeedleBiopsyMacroscopicLaterality01.md) | Lateralitätsangabe der Prostatastanze 01 |
 | [Seitenangabe Stanze 02](Observation-CoreNeedleBiopsyMacroscopicLaterality02.md) | Lateralitätsangabe der Prostatastanze 02 |
 | [Seitenangabe Stanze 03](Observation-CoreNeedleBiopsyMacroscopicLaterality03.md) | Lateralitätsangabe der Prostatastanze 03 |
@@ -347,18 +358,16 @@ These are example instances that show what data produced and consumed by systems
 | [Seminal Vesicle Invasion - Biopsy](Observation-CoreNeedleBiopsySeminalVesicleInvasion.md) | Tumor invasion into seminal vesicles (typically not assessable in biopsy) |
 | [Seminal Vesicle Invasion - Enucleation](Observation-TransurethralEnucleationSeminalVesicleInvasion.md) | Tumor invasion into seminal vesicles |
 | [Seminal Vesicle Invasion - Prostatectomy](Observation-RadicalProstatectomySeminalVesicleInvasion.md) | Tumor invasion into seminal vesicles |
-| [Seminal Vesicle Invasion - TUR](Observation-TransurethralResectionSeminalVesicleInvasion.md) | Tumor invasion into seminal vesicles |
-| [Standardbiopsie Prostata Anforderung](ServiceRequest-CoreNeedleBiopsyRequest.md) | Anforderung für 12-Stanzen Prostatabiopsie |
+| [Standardbiopsie Prostata Anforderung](ServiceRequest-CoreNeedleBiopsyReportRequest.md) | Anforderung für 12-Stanzen Prostatabiopsie |
 | [TNM Primary Tumor (pT) - Prostatectomy](Observation-RadicalProstatectomyTNMpT.md) | Pathological primary tumor stage according to TNM classification |
 | [TNM Regional Lymph Nodes (pN) - Prostatectomy](Observation-RadicalProstatectomyTNMpN.md) | Pathological regional lymph node stage according to TNM classification |
 | [TUR Pathology Report Composition](Composition-TransurethralResectionComposition.md) | FHIR Composition for structured TUR pathology report |
-| [TUR-Prostata Anforderung](ServiceRequest-TransurethralResectionServiceRequest.md) | Anforderung für pathologische Aufarbeitung nach TUR-Prostata |
+| [TUR-Prostata Anforderung](ServiceRequest-TransurethralResectionReportRequest.md) | Anforderung für pathologische Aufarbeitung nach TUR-Prostata |
 | [TUR-Prostata Gewicht](Observation-TransurethralResectionMacroscopicWeight.md) | Gewicht des TUR-Prostata Präparats |
 | [TUR-Prostata Präparat (Einsendespecimen)](Specimen-TransurethralResectionSpecimenPart.md) | TUR-Prostata Resektat |
 | [Total Gleason Score - Biopsy](Observation-CoreNeedleBiopsyGleasonScoreTotal.md) | Total Gleason score in biopsy specimens |
 | [Total Gleason Score - Enucleation](Observation-TransurethralEnucleationGleasonScoreTotal.md) | Total Gleason score in Enucleation specimens |
 | [Total Gleason Score - Prostatectomy](Observation-RadicalProstatectomyGleasonScoreTotal.md) | Total Gleason score in prostatectomy specimen |
-| [Total Gleason Score - TUR](Observation-TransurethralResectionGleasonScoreTotal.md) | Total Gleason score in TUR specimens |
 | [Total Tumor Length in mm - Biopsy](Observation-CoreNeedleBiopsyTumorLengthTotal.md) | Total linear length of carcinoma in millimeters |
 | [Transurethrale Resektion der Prostata](Procedure-TransurethralResectionProcedure.md) | TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie |
 | [Tumor Volume - Prostatectomy](Observation-RadicalProstatectomyTumorVolume.md) | Total tumor volume in cubic centimeters |

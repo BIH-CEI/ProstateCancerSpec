@@ -60,7 +60,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient1"
   },
   "specimen": {
     "reference": "Specimen/RadicalProstatectomySpecimenPart"

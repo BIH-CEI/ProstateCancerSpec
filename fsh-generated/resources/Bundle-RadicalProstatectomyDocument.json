@@ -1,0 +1,458 @@
+{
+  "resourceType": "Bundle",
+  "id": "RadicalProstatectomyDocument",
+  "entry": [
+    {
+      "fullUrl": "http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "RadicalProstatectomyComposition",
+        "identifier": {
+          "system": "http://example.hospital.de/pathology-reports",
+          "value": "PATH-COMP-2024-002",
+          "type": {
+            "coding": [
+              {
+                "code": "ACSN",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "display": "Accession ID"
+              }
+            ]
+          }
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "PATH",
+              "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+            },
+            {
+              "code": "721967005",
+              "system": "http://snomed.info/sct",
+              "display": "Tissue pathology biopsy report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient1",
+          "display": "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
+        },
+        "author": [
+          {
+            "reference": "Organization/PathologyLabOrganization",
+            "display": "Pathologisches Institut"
+          }
+        ],
+        "attester": [
+          {
+            "mode": "legal",
+            "party": {
+              "reference": "Organization/PathologyLabOrganization"
+            }
+          }
+        ],
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "PATREPE",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "DiagnosticReport/RadicalProstatectomyReport"
+              }
+            ],
+            "title": "Pathologiebefundbericht",
+            "code": {
+              "coding": [
+                {
+                  "code": "11526-1",
+                  "system": "http://loinc.org",
+                  "display": "Pathology study"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "date": "2024-03-21T08:00:00+01:00",
+        "title": "Histopathologischer Befundbericht - Prostatektomie",
+        "encounter": {
+          "reference": "Encounter/RadicalProstatectomyEncounter"
+        },
+        "custodian": {
+          "reference": "Organization/PathologyLabOrganization"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Patient/Patient1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient1",
+        "identifier": [
+          {
+            "system": "http://example.hospital.de/patient-ids",
+            "value": "PAT-2024-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Hans"
+            ],
+            "family": "Mueller"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1955-08-15"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Organization/PathologyLabOrganization",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "PathologyLabOrganization",
+        "identifier": [
+          {
+            "system": "http://example.hospital.de/organization-ids",
+            "value": "ORG-PATH-001"
+          }
+        ],
+        "name": "Pathologielabor"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "RadicalProstatectomyReport",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ACSN",
+                  "display": "Accession ID"
+                }
+              ]
+            },
+            "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+            "value": "E_24_002"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "SP",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Surgical Pathology"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenPart"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenBlock01"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide01A"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide01B"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenBlock02"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide02A"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide02B"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenBlock03"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide03A"
+          },
+          {
+            "reference": "Specimen/RadicalProstatectomySpecimenSlide03B"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicGrouper"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyDiagnosticConclusionGrouper"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60568-3",
+              "display": "Pathology Synoptic report"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "effectiveDateTime": "2024-03-20T17:00:00+01:00",
+        "issued": "2024-03-21T08:00:00+01:00",
+        "conclusion": "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "RadicalProstatectomyDiagnosticConclusionGrouper",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/RadicalProstatectomyHistologicalTypeICDO3"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMorphologyFreeText"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyICDOVersion"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyPrimaryGleasonPattern"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomySecondaryGleasonPattern"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyGleasonScoreTotal"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyPercentageGleason45"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyGradingGroupISUP"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyIntraductalCarcinoma"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyTumorVolume"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyProstaticTissueInvolved"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyExtraprostaticExtension"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomySeminalVesicleInvasion"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyLymphovascularInvasion"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyPerineuralInfiltration"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyBladderNeckInvasion"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMarginStatus"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyLymphNodesExamined"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyLymphNodesPositive"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyTNMpT"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyTNMpN"
+          }
+        ],
+        "note": [
+          {
+            "authorReference": {
+              "reference": "Practitioner/PathologistPractitioner"
+            },
+            "time": "2024-03-20",
+            "text": "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22637-3"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "effectiveDateTime": "2024-03-20"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "RadicalProstatectomyMacroscopicGrouper",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicProstateWeight"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicProstateWidth"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicProstateHeight"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicProstateDepth"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicLymphNodesPresent"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent"
+          },
+          {
+            "reference": "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength"
+          }
+        ],
+        "note": [
+          {
+            "text": "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22634-0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "effectiveDateTime": "2024-03-16T14:00:00+01:00",
+        "valueString": "Makroskopische Messungen des Prostatektomiepräparats",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostatic structure (body structure)"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2024-03-21T08:00:00+01:00"
+}

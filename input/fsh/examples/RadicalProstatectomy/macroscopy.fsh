@@ -12,7 +12,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostatektomieprä
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * effectiveDateTime = "2024-03-16T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des Prostatektomiepräparats"
@@ -46,7 +46,7 @@ Description: "Gewicht des Prostatektomiepräparats"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
 * code = $loinc#44668-2 "Prostate weight"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -67,7 +67,7 @@ Description: "Breite der Prostata in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#33756-8 "Prostate size"
 * code.text = "Prostata Breite"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:15:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -88,7 +88,7 @@ Description: "Höhe der Prostata in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#33756-8 "Prostate size"
 * code.text = "Prostata Höhe"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:16:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -109,7 +109,7 @@ Description: "Tiefe der Prostata in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#33756-8 "Prostate size"
 * code.text = "Prostata Tiefe"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:17:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -130,7 +130,7 @@ Description: "Vorhandensein von Lymphknoten im Prostatektomiepräparat"
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Lymphknoten im Resektat"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -150,7 +150,7 @@ Description: "Seitenangabe der Lymphknoten im Prostatektomiepräparat"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
 * code = $loinc#272741003 "Laterality"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:18:30+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -171,7 +171,7 @@ Description: "Vorhandensein von Samenblasen im Prostatektomiepräparat"
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Samenblasen im Resektat"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -191,7 +191,7 @@ Description: "Längenmessung der Samenbläschen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
 * code = $loinc#33757-6 "Seminal vesicle size"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:20:00+01:00"
 * performer = Reference(PathologistPractitioner)

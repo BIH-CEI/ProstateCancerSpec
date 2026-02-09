@@ -15,8 +15,8 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 | Subject | Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001) |
 | When For | 2024-01-20 15:00:00+0100 |
 | Reported | 2024-01-20 15:30:00+0100 |
-| Performer | [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md) |
-| Identifier | Accession ID/PATH-RPT-2024-001 |
+| Performer | [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md) |
+| Identifier | Accession ID/E_24_001 |
 
 **Report Details**
 
@@ -33,7 +33,7 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report final diagnosis Narrative](Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: 
+  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.By Practitioner/PathologistPractitioner @2023-03-15
   * **When For**: 2023-03-15
 
 Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall.
@@ -62,13 +62,13 @@ Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit peri
           }
         ]
       },
-      "system" : "http://example.hospital.de/diagnostic-reports",
-      "value" : "PATH-RPT-2024-001"
+      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value" : "E_24_001"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "status" : "final",

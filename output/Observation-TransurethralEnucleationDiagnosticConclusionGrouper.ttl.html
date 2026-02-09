@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.25"}
-    h3,h4,h5,h6{--heading-prefix:"8.25"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.26"}
+    h3,h4,h5,h6{--heading-prefix:"9.26"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -90,13 +90,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -124,7 +127,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -149,7 +152,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -174,7 +177,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -289,7 +292,7 @@
 
  a fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TransurethralEnucleationDiagnosticConclusionGrouper&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;TransurethralEnucleationDiagnosticConclusionGrouper&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0&quot;^^xsd:anyURI ;
@@ -297,11 +300,11 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation TransurethralEnucleationDiagnosticConclusionGrouper&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;TransurethralEnucleationDiagnosticConclusionGrouper\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcTransurethralEnucleationDiagnosticConclusionGrouper\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\&quot;&gt;MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;ServiceRequest-TransurethralEnucleationServiceRequest.html\&quot;&gt;ServiceRequest Simple prostatectomy (procedure)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 22637-3}\&quot;&gt;Pathology report final diagnosis Narrative&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-Patient2.html\&quot;&gt;Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-12&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-PathologistPractitioner.html\&quot;&gt;Practitioner Maria Schneider &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationHistologicalTypeICDO3.html\&quot;&gt;Observation Histology and Behavior ICD-O-3 Cancer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationMorphologyFreeText.html\&quot;&gt;Observation Histology type in Cancer specimen Narrative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPrimaryGleasonPattern.html\&quot;&gt;Observation Gleason pattern.primary in Prostate tumor&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationSecondaryGleasonPattern.html\&quot;&gt;Observation Gleason pattern.secondary in Prostate tumor&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationGleasonScoreTotal.html\&quot;&gt;Observation Gleason score in Specimen Qualitative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPercentageGleason45.html\&quot;&gt;Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationGradingGroupISUP.html\&quot;&gt;Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationIntraductalCarcinoma.html\&quot;&gt;Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html\&quot;&gt;Observation Invasive cribriform carcinoma (morphologic abnormality)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationProstaticTissueInvolved.html\&quot;&gt;Observation Tissue cores.positive.carcinoma in Tissue core&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationExtraprostaticExtension.html\&quot;&gt;Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationSeminalVesicleInvasion.html\&quot;&gt;Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationLymphovascularInvasion.html\&quot;&gt;Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPerineuralInfiltration.html\&quot;&gt;Observation Perineural invasion [Presence] in Cancer specimen&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation TransurethralEnucleationDiagnosticConclusionGrouper&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;TransurethralEnucleationDiagnosticConclusionGrouper\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcTransurethralEnucleationDiagnosticConclusionGrouper\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\&quot;&gt;MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;ServiceRequest-TransurethralEnucleationReportRequest.html\&quot;&gt;ServiceRequest Simple prostatectomy (procedure)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 22637-3}\&quot;&gt;Pathology report final diagnosis Narrative&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-Patient3.html\&quot;&gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-12&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-PathologistPractitioner.html\&quot;&gt;Practitioner Maria Schneider &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: By Practitioner/PathologistPractitioner @2024-05-12&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationHistologicalTypeICDO3.html\&quot;&gt;Observation Histology and Behavior ICD-O-3 Cancer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationMorphologyFreeText.html\&quot;&gt;Observation Histology type in Cancer specimen Narrative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPrimaryGleasonPattern.html\&quot;&gt;Observation Gleason pattern.primary in Prostate tumor&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationSecondaryGleasonPattern.html\&quot;&gt;Observation Gleason pattern.secondary in Prostate tumor&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationGleasonScoreTotal.html\&quot;&gt;Observation Gleason score in Specimen Qualitative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPercentageGleason45.html\&quot;&gt;Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationGradingGroupISUP.html\&quot;&gt;Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationIntraductalCarcinoma.html\&quot;&gt;Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html\&quot;&gt;Observation Invasive cribriform carcinoma (morphologic abnormality)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationProstaticTissueInvolved.html\&quot;&gt;Observation Tissue cores.positive.carcinoma in Tissue core&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationExtraprostaticExtension.html\&quot;&gt;Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationSeminalVesicleInvasion.html\&quot;&gt;Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationLymphovascularInvasion.html\&quot;&gt;Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-TransurethralEnucleationPerineuralInfiltration.html\&quot;&gt;Observation Perineural invasion [Presence] in Cancer specimen&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\&quot;QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html\&quot;&gt;Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&amp;gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.basedOn">fhir:basedOn</a> ( [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:ServiceRequest/TransurethralEnucleationServiceRequest ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ServiceRequest/TransurethralEnucleationServiceRequest&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:ServiceRequest/TransurethralEnucleationReportRequest ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ServiceRequest/TransurethralEnucleationReportRequest&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:category</a> ( [
@@ -320,8 +323,8 @@ a loinc:22637-3 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;22637-3&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/Patient2 ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient2&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/Patient3 ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient3&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">fhir:effective</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
@@ -330,6 +333,14 @@ a loinc:22637-3 ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> ( [
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Practitioner/PathologistPractitioner ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/PathologistPractitioner&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.author_x_">fhir:author</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Practitioner/PathologistPractitioner ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/PathologistPractitioner&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.time">fhir:time</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-05-12&quot;^^xsd:date ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">fhir:hasMember</a> ( [
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/TransurethralEnucleationHistologicalTypeICDO3 ;
@@ -373,6 +384,10 @@ a loinc:22637-3 ;
   ] [
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/TransurethralEnucleationPerineuralInfiltration ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/TransurethralEnucleationPerineuralInfiltration&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.derivedFrom">fhir:derivedFrom</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation&quot; ]
   ] ) . # 
 
 </code></pre>
@@ -400,7 +415,7 @@ a loinc:22637-3 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

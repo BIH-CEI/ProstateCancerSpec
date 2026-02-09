@@ -88,13 +88,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -122,7 +125,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -147,7 +150,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -172,7 +175,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -244,6 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#structured-pathology-reporting-and-the-iccr" id="markdown-toc-structured-pathology-reporting-and-the-iccr">Structured pathology reporting and the ICCR</a></li>
   <li><a href="#what-is-the-prostate" id="markdown-toc-what-is-the-prostate">What is the prostate?</a></li>
   <li><a href="#what-is-prostate-cancer" id="markdown-toc-what-is-prostate-cancer">What is prostate cancer?</a></li>
   <li><a href="#frequency-and-risk-factors" id="markdown-toc-frequency-and-risk-factors">Frequency and risk factors</a></li>
@@ -259,11 +263,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter <strong>S3</strong>) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter <strong>EAU</strong>).</p>
+<p>This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter <strong>S3</strong>), the current EAU Guidelines on Prostate Cancer 2025 (hereinafter <strong>EAU</strong>), and the ICCR Prostate Cancer Datasets (hereinafter <strong>ICCR</strong>).</p>
 
 <p><a href="https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom">S3 Guideline on Prostate Cancer (long version 8.1)</a></p>
 
 <p><a href="https://uroweb.org/guidelines/prostate-cancer">EAU Guidelines on Prostate Cancer 2025</a></p>
+
+<p><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/">ICCR Prostate Cancer Datasets (2nd/3rd edition, November 2024)</a></p>
+
+<hr />
+
+<h3 id="structured-pathology-reporting-and-the-iccr">Structured pathology reporting and the ICCR</h3>
+
+<p>The <strong>International Collaboration on Cancer Reporting (ICCR)</strong> is a joint initiative of pathology societies from the USA, UK, Canada and Australia, founded in 2011 to develop internationally agreed, evidence-based datasets for structured cancer pathology reporting. These datasets define which elements — both core (required) and non-core (recommended) — should be included in pathology reports for specific specimen types.</p>
+
+<p>For prostate cancer, the ICCR publishes three datasets that directly correspond to the four example scenarios in this Implementation Guide:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ICCR Dataset</th>
+      <th>Edition</th>
+      <th>Applies to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-biopsy/">Core Needle Biopsy</a></td>
+      <td>2nd ed. (Nov 2024)</td>
+      <td>Core Needle Biopsy scenario</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-rad-pros/">Radical Prostatectomy Specimen</a></td>
+      <td>3rd ed. (Nov 2024)</td>
+      <td>Radical Prostatectomy scenario</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-tur/">Transurethral Resection and Enucleation</a></td>
+      <td>2nd ed. (Nov 2024)</td>
+      <td>TUR Resection and TUR Enucleation scenarios</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The ICCR forms serve as the primary source for the pathology findings and observations modelled in this Implementation Guide. Where the S3 or EAU guidelines address pathology reporting, their recommendations are consistent with the ICCR elements.</p>
 
 <hr />
 
@@ -621,7 +664,7 @@ Through an endoscope passed via the urethra, an electrical loop is used to shave
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

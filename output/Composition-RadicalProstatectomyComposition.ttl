@@ -13,7 +13,7 @@
   fhir:id [ fhir:v "RadicalProstatectomyComposition"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition RadicalProstatectomyComposition</b></p><a name=\"RadicalProstatectomyComposition\"> </a><a name=\"hcRadicalProstatectomyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-002</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-RadicalProstatectomyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PSA-OP-2024; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-03-21 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatektomie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-RadicalProstatectomyServiceRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition RadicalProstatectomyComposition</b></p><a name=\"RadicalProstatectomyComposition\"> </a><a name=\"hcRadicalProstatectomyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-002</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-RadicalProstatectomyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-03-21 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatektomie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier [
      fhir:type [
@@ -51,8 +51,9 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
-     fhir:reference [ fhir:v "Patient/Patient2" ]
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ] ;
+     fhir:display [ fhir:v "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)" ]
   ] ; # 
   fhir:encounter [
      fhir:l <http://prostatecancerspec.org/Encounter/RadicalProstatectomyEncounter> ;
@@ -87,8 +88,8 @@
        ] )
      ] ) ;
      fhir:detail ( [
-       fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyServiceRequest> ;
-       fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyServiceRequest" ]
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyReportRequest" ]
      ] )
   ] ) ; # 
   fhir:section ( [

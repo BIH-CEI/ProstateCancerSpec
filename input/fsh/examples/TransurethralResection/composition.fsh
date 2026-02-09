@@ -13,7 +13,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 * status = #final
 * type.coding[0] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH
 * type.coding[+] = $sct#721967005 "Tissue pathology biopsy report"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * date = "2024-04-15T08:00:00+01:00"
 * author = Reference(PathologyLabOrganization)
 * author.display = "Pathologisches Institut"

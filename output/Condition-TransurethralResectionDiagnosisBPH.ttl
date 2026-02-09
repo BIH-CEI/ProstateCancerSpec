@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "TransurethralResectionDiagnosisBPH"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition TransurethralResectionDiagnosisBPH</b></p><a name=\"TransurethralResectionDiagnosisBPH\"> </a><a name=\"hcTransurethralResectionDiagnosisBPH\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm N40.0}\">Prostatahyperplasie ohne Beschwerden beim Wasserlassen</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralResectionEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)</a></p><p><b>onset</b>: 2023-03-01</p><p><b>recordedDate</b>: 2024-01-05</p><p><b>note</b>: </p><blockquote><div><p>Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harnwegsinfekten. Prostatavolumen ca. 45ml. IPSS 19. Indikation zur TUR-P gestellt.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition TransurethralResectionDiagnosisBPH</b></p><a name=\"TransurethralResectionDiagnosisBPH\"> </a><a name=\"hcTransurethralResectionDiagnosisBPH\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm N40.0}\">Prostatahyperplasie ohne Beschwerden beim Wasserlassen</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralResectionEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_003; status = finished; class = IMP (IMP)</a></p><p><b>onset</b>: 2023-03-01</p><p><b>recordedDate</b>: 2024-01-05</p><p><b>note</b>: </p><blockquote><div><p>Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harnwegsinfekten. Prostatavolumen ca. 45ml. IPSS 19. Indikation zur TUR-P gestellt.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -51,8 +51,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
-     fhir:reference [ fhir:v "Patient/Patient1" ]
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
   ] ; # 
   fhir:encounter [
      fhir:l <http://prostatecancerspec.org/Encounter/TransurethralResectionEncounter> ;

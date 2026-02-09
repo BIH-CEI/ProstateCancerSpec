@@ -81,7 +81,7 @@
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/Patient1"
+    "reference": "Patient/Patient2"
   },
   "date": "2024-04-15T08:00:00+01:00",
   "title": "Histopathologischer Befundbericht - TUR-Prostata",

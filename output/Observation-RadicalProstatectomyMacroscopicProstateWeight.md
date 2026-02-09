@@ -14,13 +14,13 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **code**: Prostate weight
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
 **effective**: 2024-03-16 14:10:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 55 g(Details: UCUM codeg = 'g')
+**value**: 55 g (Details: UCUM codeg = 'g')
 
 **note**: 
 
@@ -31,7 +31,9 @@ Prostatagewicht 55g
 
 **bodySite**: Prostatic structure (body structure)
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002; status = available; type = Surgical specimen](Specimen-RadicalProstatectomySpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Surgical specimen](Specimen-RadicalProstatectomySpecimenPart.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 
 
 
@@ -75,7 +77,7 @@ Prostatagewicht 55g
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-16T14:10:00+01:00",
   "performer" : [
@@ -105,7 +107,12 @@ Prostatagewicht 55g
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"
-  }
+  },
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    }
+  ]
 }
 
 ```

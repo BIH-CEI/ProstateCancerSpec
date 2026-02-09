@@ -88,13 +88,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -122,7 +125,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -147,7 +150,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -172,7 +175,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -257,7 +260,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-01-28
+            as of 2026-02-09
           
         
       </td>
@@ -337,10 +340,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <h4 id="transurethral-resection">Transurethral Resection</h4>
-<p>Transurethral resection (TUR-P) with incidental cancer:</p>
+<p>Transurethral resection (TUR-P) with benign findings:</p>
 <ul>
+  <li>Benign prostatic hyperplasia (BPH), no carcinoma</li>
   <li>5 blocks and 10 slides from TUR chips</li>
-  <li>Diagnostic findings from resection tissue</li>
+  <li>Macroscopic and diagnostic findings from resection tissue</li>
 </ul>
 
 <h3 id="resource-organization">Resource Organization</h3>
@@ -365,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>MII Pathology Module</strong> <a href="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.0">de.medizininformatikinitiative.kerndatensatz.patho v2026.0.0</a>: Grouper and Finding Observations, ServiceRequests and DiagnosticReports</li>
 </ul>
 
-<p>and also asures the compatibility to:</p>
+<p>and also assures the compatibility to:</p>
 <ul>
   <li>
     <p><strong>MII Oncology Module</strong> <a href="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie">de.medizininformatikinitiative.kerndatensatz.onkologie v2026.0.0</a> : Observations for TNM staging, Gleason grading profiles (harmonized), PSA-Level etc.</p>
@@ -377,6 +381,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><strong>MII Biobank Module</strong> <a href="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank">de.medizininformatikinitiative.kerndatensatz.biobank v2026.0.0</a>: Specimens (inherited in patho)</p>
   </li>
 </ul>
+
+<h4 id="pathology-reporting-basis">Pathology Reporting Basis</h4>
+
+<p>The pathology findings and observations in this IG are based on the prostate cancer datasets published by the <strong>International Collaboration on Cancer Reporting (ICCR)</strong>. These internationally agreed, evidence-based datasets define which elements should be reported in structured pathology reports for prostate cancer specimens:</p>
+
+<ul>
+  <li><strong><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-biopsy/">Prostate Cancer – Core Needle Biopsy, 2nd edition (November 2024)</a></strong>: Histopathology reporting guide for core needle biopsies, covering specimen-level and case-level reporting elements.</li>
+  <li><strong><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-rad-pros/">Prostate Cancer – Radical Prostatectomy Specimen, 3rd edition (November 2024)</a></strong>: Histopathology reporting guide for radical prostatectomy specimens.</li>
+  <li><strong><a href="https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-tur/">Prostate Cancer – Transurethral Resection and Enucleation, 2nd edition (November 2024)</a></strong>: Histopathology reporting guide for TUR and enucleation specimens.</li>
+</ul>
+
+<p>All three datasets were updated in 2024 to align with the 2022 WHO Classification of Urinary and Male Genital Tumours (5th edition) and TNM8 staging.</p>
 
 <h4 id="standards-compliance">Standards Compliance</h4>
 
@@ -417,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

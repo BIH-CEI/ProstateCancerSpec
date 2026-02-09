@@ -6,13 +6,13 @@
 
 ## Example Encounter: Encounter für Prostata Enucleation
 
-**identifier**: `http://example.hospital.de/encounters`/PSA-ENUC-2024
+**identifier**: `http://example.hospital.de/encounters`/E_24_004
 
 **status**: Finished
 
 **class**: [not stated]: IMP (IMP)
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
 
 
@@ -25,7 +25,7 @@
   "identifier" : [
     {
       "system" : "http://example.hospital.de/encounters",
-      "value" : "PSA-ENUC-2024"
+      "value" : "E_24_004"
     }
   ],
   "status" : "finished",
@@ -33,7 +33,7 @@
     "code" : "IMP"
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient3"
   }
 }
 

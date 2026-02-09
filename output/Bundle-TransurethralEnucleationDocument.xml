@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TransurethralEnucleationDocument"/>
+  <type value="document"/>
+  <timestamp value="2024-04-15T08:00:00+01:00"/>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition"/>
+    <resource>
+      <Composition>
+        <id value="TransurethralEnucleationComposition"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_TransurethralEnucleationComposition"> </a><p class="res-header-id"><b>Generated Narrative: Composition TransurethralEnucleationComposition</b></p><a name="TransurethralEnucleationComposition"> </a><a name="hcTransurethralEnucleationComposition"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-004</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href="Encounter-TransurethralEnucleationEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#E_24_004; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-04-15 08:00:00+0100</p><p><b>author</b>: <a href="Organization-PathologyLabOrganization.html">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostata Enucleation</p><h3>Attesters</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style="display: none">*</td><td>Legal</td><td><a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></p><h3>Events</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}">pathology report entry task</span></td><td><a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest Simple prostatectomy (procedure)</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="ACSN"/>
+              <display value="Accession ID"/>
+            </coding>
+          </type>
+          <system value="http://example.hospital.de/pathology-reports"/>
+          <value value="PATH-COMP-2024-004"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://ihe-d.de/CodeSystems/IHEXDStypeCode"/>
+            <code value="PATH"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721967005"/>
+            <display value="Tissue pathology biopsy report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/Patient3"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/TransurethralEnucleationEncounter"/>
+        </encounter>
+        <date value="2024-04-15T08:00:00+01:00"/>
+        <author>
+          <reference value="Organization/PathologyLabOrganization"/>
+          <display value="Pathologisches Institut"/>
+        </author>
+        <title value="Histopathologischer Befundbericht - Prostata Enucleation"/>
+        <attester>
+          <mode value="legal"/>
+          <party>
+            <reference value="Organization/PathologyLabOrganization"/>
+          </party>
+        </attester>
+        <custodian>
+          <reference value="Organization/PathologyLabOrganization"/>
+        </custodian>
+        <event>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+              <code value="PATREPE"/>
+            </coding>
+          </code>
+          <detail>
+            <reference value="ServiceRequest/TransurethralEnucleationReportRequest"/>
+          </detail>
+        </event>
+        <section>
+          <title value="Pathologiebefundbericht"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11526-1"/>
+              <display value="Pathology study"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="DiagnosticReport/TransurethralEnucleationReport"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/Patient/Patient3"/>
+    <resource>
+      <Patient>
+        <id value="Patient3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_Patient3"> </a><p class="res-header-id"><b>Generated Narrative: Patient Patient3</b></p><a name="Patient3"> </a><a name="hcPatient3"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</p><hr/></div>
+        </text>
+        <identifier>
+          <system value="http://example.hospital.de/patient-ids"/>
+          <value value="PAT-2024-003"/>
+        </identifier>
+        <name>
+          <family value="Becker"/>
+          <given value="Klaus"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1958-11-10"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/Organization/PathologyLabOrganization"/>
+    <resource>
+      <Organization>
+        <id value="PathologyLabOrganization"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_PathologyLabOrganization"> </a><p class="res-header-id"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name="PathologyLabOrganization"> </a><a name="hcPathologyLabOrganization"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>
+        </text>
+        <identifier>
+          <system value="http://example.hospital.de/organization-ids"/>
+          <value value="ORG-PATH-001"/>
+        </identifier>
+        <name value="Pathologielabor"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="TransurethralEnucleationReport"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_TransurethralEnucleationReport"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport TransurethralEnucleationReport</b></p><a name="TransurethralEnucleationReport"> </a><a name="hcTransurethralEnucleationReport"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title="Codes:{http://loinc.org 60568-3}">Pathology Synoptic report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}">Surgical Pathology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</td></tr><tr><td>When For</td><td>2024-05-12 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-05-13 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_004</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-TransurethralEnucleationMacroscopicGrouper.html"><span title="Codes:{http://loinc.org 22634-0}">Pathology report gross observation Narrative</span></a> (<span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des Prostata Enucleation Präparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>
+</div></blockquote></td><td>2024-04-11 14:00:00+0100</td></tr><tr><td><a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html"><span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>
+</div></blockquote>By Practitioner/PathologistPractitioner @2024-05-12</td><td>2024-05-12</td></tr></table><p>Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="ACSN"/>
+              <display value="Accession ID"/>
+            </coding>
+          </type>
+          <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
+          <value value="E_24_004"/>
+        </identifier>
+        <basedOn>
+          <reference value="ServiceRequest/TransurethralEnucleationReportRequest"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="SP"/>
+            <display value="Surgical Pathology"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60568-3"/>
+            <display value="Pathology Synoptic report"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient3"/>
+        </subject>
+        <effectiveDateTime value="2024-05-12T17:00:00+01:00"/>
+        <issued value="2024-05-13T08:00:00+01:00"/>
+        <performer>
+          <reference value="Practitioner/PathologistPractitioner"/>
+        </performer>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenPart"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenBlock01"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide01A"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide01B"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenBlock02"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide02A"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide02B"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenBlock03"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide03A"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide03B"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenBlock04"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide04A"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide04B"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenBlock05"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide05A"/>
+        </specimen>
+        <specimen>
+          <reference value="Specimen/TransurethralEnucleationSpecimenSlide05B"/>
+        </specimen>
+        <result>
+          <reference value="Observation/TransurethralEnucleationMacroscopicGrouper"/>
+        </result>
+        <result>
+          <reference value="Observation/TransurethralEnucleationDiagnosticConclusionGrouper"/>
+        </result>
+        <conclusion value="Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall."/>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper"/>
+    <resource>
+      <Observation>
+        <id value="TransurethralEnucleationDiagnosticConclusionGrouper"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TransurethralEnucleationDiagnosticConclusionGrouper"> </a><p class="res-header-id"><b>Generated Narrative: Observation TransurethralEnucleationDiagnosticConclusionGrouper</b></p><a name="TransurethralEnucleationDiagnosticConclusionGrouper"> </a><a name="hcTransurethralEnucleationDiagnosticConclusionGrouper"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest Simple prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href="Patient-Patient3.html">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>effective</b>: 2024-05-12</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-05-12</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>
+</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href="Observation-TransurethralEnucleationHistologicalTypeICDO3.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-TransurethralEnucleationMorphologyFreeText.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-TransurethralEnucleationPrimaryGleasonPattern.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-TransurethralEnucleationSecondaryGleasonPattern.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-TransurethralEnucleationGleasonScoreTotal.html">Observation Gleason score in Specimen Qualitative</a></li><li><a href="Observation-TransurethralEnucleationPercentageGleason45.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href="Observation-TransurethralEnucleationGradingGroupISUP.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-TransurethralEnucleationIntraductalCarcinoma.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href="Observation-TransurethralEnucleationProstaticTissueInvolved.html">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href="Observation-TransurethralEnucleationExtraprostaticExtension.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralEnucleationSeminalVesicleInvasion.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralEnucleationLymphovascularInvasion.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralEnucleationPerineuralInfiltration.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li></ul><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'</a></p></div>
+        </text>
+        <basedOn>
+          <reference value="ServiceRequest/TransurethralEnucleationReportRequest"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="22637-3"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient3"/>
+        </subject>
+        <effectiveDateTime value="2024-05-12"/>
+        <performer>
+          <reference value="Practitioner/PathologistPractitioner"/>
+        </performer>
+        <note>
+          <authorReference>
+            <reference value="Practitioner/PathologistPractitioner"/>
+          </authorReference>
+          <time value="2024-05-12"/>
+          <text value="Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz."/>
+        </note>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationHistologicalTypeICDO3"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMorphologyFreeText"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationPrimaryGleasonPattern"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationSecondaryGleasonPattern"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationGleasonScoreTotal"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationPercentageGleason45"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationGradingGroupISUP"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationIntraductalCarcinoma"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationProstaticTissueInvolved"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationExtraprostaticExtension"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationSeminalVesicleInvasion"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationLymphovascularInvasion"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationPerineuralInfiltration"/>
+        </hasMember>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper"/>
+    <resource>
+      <Observation>
+        <id value="TransurethralEnucleationMacroscopicGrouper"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TransurethralEnucleationMacroscopicGrouper"> </a><p class="res-header-id"><b>Generated Narrative: Observation TransurethralEnucleationMacroscopicGrouper</b></p><a name="TransurethralEnucleationMacroscopicGrouper"> </a><a name="hcTransurethralEnucleationMacroscopicGrouper"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 22634-0}">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href="Patient-Patient3.html">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>effective</b>: 2024-04-11 14:00:00+0100</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen des Prostata Enucleation Präparats</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>
+</div></blockquote><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 41216001}">Prostatic structure (body structure)</span></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-TransurethralEnucleationMacroscopicWeight.html">Observation Specimen weight (observable entity)</a></li><li><a href="Observation-TransurethralEnucleationMacroscopicLength.html">Observation Dimension [Length] of Specimen</a></li><li><a href="Observation-TransurethralEnucleationMacroscopicWidth.html">Observation Dimension [Length] of Specimen</a></li><li><a href="Observation-TransurethralEnucleationMacroscopicDepth.html">Observation Prostate size</a></li><li><a href="Observation-TransurethralEnucleationMacroscopicSeminalVesicles.html">Observation Tumor finding</a></li><li><a href="Observation-TransurethralEnucleationMacroscopicLymphNodeDissection.html">Observation Tumor finding</a></li></ul><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'</a></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="22634-0"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Patient3"/>
+        </subject>
+        <effectiveDateTime value="2024-04-11T14:00:00+01:00"/>
+        <performer>
+          <reference value="Practitioner/PathologistPractitioner"/>
+        </performer>
+        <valueString value="Makroskopische Messungen des Prostata Enucleation Präparats"/>
+        <note>
+          <text value="Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."/>
+        </note>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="41216001"/>
+            <display value="Prostatic structure (body structure)"/>
+          </coding>
+        </bodySite>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicWeight"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicLength"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicWidth"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicDepth"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicSeminalVesicles"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TransurethralEnucleationMacroscopicLymphNodeDissection"/>
+        </hasMember>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

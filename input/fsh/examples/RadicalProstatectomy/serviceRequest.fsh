@@ -13,7 +13,7 @@ Description: "Anforderung für pathologische Aufarbeitung nach radikaler Prostat
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
 * code = $sct#176106009 "Radical prostatectomy (procedure)"
 * encounter = Reference(RadicalProstatectomyEncounter)
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * requester = Reference(UrologistPractitioner)
 * performer = Reference(PathologistPractitioner)
 * reasonCode = $sct#399068003 "Malignant tumor of prostate"

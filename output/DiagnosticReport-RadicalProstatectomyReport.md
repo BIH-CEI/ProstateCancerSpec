@@ -12,11 +12,11 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 
 | | |
 | :--- | :--- |
-| Subject | Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002) |
+| Subject | Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001) |
 | When For | 2024-03-20 17:00:00+0100 |
 | Reported | 2024-03-21 08:00:00+0100 |
-| Performer | [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md) |
-| Identifier | Accession ID/PATH-RPT-2024-002 |
+| Performer | [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md) |
+| Identifier | Accession ID/E_24_002 |
 
 **Report Details**
 
@@ -28,7 +28,7 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report final diagnosis Narrative](Observation-RadicalProstatectomyDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: 
+  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.By Practitioner/PathologistPractitioner @2024-03-20
   * **When For**: 2024-03-20
 
 Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.
@@ -57,13 +57,13 @@ Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolume
           }
         ]
       },
-      "system" : "http://example.hospital.de/diagnostic-reports",
-      "value" : "PATH-RPT-2024-002"
+      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value" : "E_24_002"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/RadicalProstatectomyServiceRequest"
+      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
     }
   ],
   "status" : "final",
@@ -88,7 +88,7 @@ Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolume
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20T17:00:00+01:00",
   "issued" : "2024-03-21T08:00:00+01:00",

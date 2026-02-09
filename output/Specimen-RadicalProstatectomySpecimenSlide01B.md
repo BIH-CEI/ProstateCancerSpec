@@ -8,17 +8,17 @@
 
 Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen), [MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore)
 
-**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_002-HE-01B
+**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_002_A_1_2HE
 
-**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_002
+**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_002
 
 **status**: Available
 
 **type**: Histopathology slide (physical object)
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002-Block-01; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_002; status = available; type = Paraffin block (physical object)](Specimen-RadicalProstatectomySpecimenBlock01.md)
+**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002_A_1; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Paraffin block (physical object)](Specimen-RadicalProstatectomySpecimenBlock01.md)
 
 ### Collections
 
@@ -33,6 +33,13 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Extension** | **Description** | **Procedure** | **Time[x]** |
 | * |  | HE-Färbung | Hematoxylin and eosin staining method (procedure) | 2024-03-17 09:05:00+0100 |
+
+### Containers
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Additive[x]** |
+| * | Microscope slide (physical object) | Microscope slide mounting medium (substance) |
 
 
 
@@ -51,12 +58,12 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "identifier" : [
     {
       "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E2024_002-HE-01B"
+      "value" : "E_24_002_A_1_2HE"
     }
   ],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value" : "E2024_002"
+    "value" : "E_24_002"
   },
   "status" : "available",
   "type" : {
@@ -69,7 +76,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "parent" : [
     {
@@ -120,6 +127,28 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
         ]
       },
       "timeDateTime" : "2024-03-17T09:05:00+01:00"
+    }
+  ],
+  "container" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "433466003",
+            "display" : "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "430862008",
+            "display" : "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
     }
   ]
 }

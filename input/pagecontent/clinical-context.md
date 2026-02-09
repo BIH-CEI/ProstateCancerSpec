@@ -1,8 +1,26 @@
-This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter **S3**) as well as the current EAU Guidelines on Prostate Cancer 2025 (hereinafter **EAU**).
+This page provides an overview of the prostate and prostate cancer. It is based on the German S3 Guideline on Prostate Cancer (long version 8.1, 2025, hereinafter **S3**), the current EAU Guidelines on Prostate Cancer 2025 (hereinafter **EAU**), and the ICCR Prostate Cancer Datasets (hereinafter **ICCR**).
 
 [S3 Guideline on Prostate Cancer (long version 8.1)](https://www.leitlinienprogramm-onkologie.de/leitlinien/prostatakarzinom)
 
 [EAU Guidelines on Prostate Cancer 2025](https://uroweb.org/guidelines/prostate-cancer)
+
+[ICCR Prostate Cancer Datasets (2nd/3rd edition, November 2024)](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/)
+
+---
+
+### Structured pathology reporting and the ICCR
+
+The **International Collaboration on Cancer Reporting (ICCR)** is a joint initiative of pathology societies from the USA, UK, Canada and Australia, founded in 2011 to develop internationally agreed, evidence-based datasets for structured cancer pathology reporting. These datasets define which elements — both core (required) and non-core (recommended) — should be included in pathology reports for specific specimen types.
+
+For prostate cancer, the ICCR publishes three datasets that directly correspond to the four example scenarios in this Implementation Guide:
+
+| ICCR Dataset | Edition | Applies to |
+|---|---|---|
+| [Core Needle Biopsy](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-biopsy/) | 2nd ed. (Nov 2024) | Core Needle Biopsy scenario |
+| [Radical Prostatectomy Specimen](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-rad-pros/) | 3rd ed. (Nov 2024) | Radical Prostatectomy scenario |
+| [Transurethral Resection and Enucleation](https://www.iccr-cancer.org/datasets/published-datasets/urinary-male-genital/prostate-tur/) | 2nd ed. (Nov 2024) | TUR Resection and TUR Enucleation scenarios |
+
+The ICCR forms serve as the primary source for the pathology findings and observations modelled in this Implementation Guide. Where the S3 or EAU guidelines address pathology reporting, their recommendations are consistent with the ICCR elements.
 
 ---
 

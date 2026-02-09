@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -88,13 +88,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -122,7 +125,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -147,7 +150,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -172,7 +175,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -434,6 +437,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionBPHNodularity.html"
+                  title="Observation/TransurethralResectionBPHNodularity">BPH Nodularität - TUR-Prostata</a>
+            </td>
+            <td>
+<p>Ausgeprägtheit der BPH-Knoten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Condition-TransurethralEnucleationDiagnosisBPH.html"
                   title="Condition/TransurethralEnucleationDiagnosisBPH">BPH-Diagnose vor Enukleation</a>
             </td>
@@ -489,10 +501,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html"
-                  title="Observation/TransurethralResectionDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - TUR-Prostata</a>
+                  title="Observation/TransurethralResectionDiagnosticConclusionGrouper">Diagnostic Conclusion Grouper - TUR-Prostata (benigne)</a>
             </td>
             <td>
-<p>Grouper for all diagnostic conclusion findings in TUR-Prostata specimens</p>
+<p>Grouper for all diagnostic conclusion findings in TUR-Prostata specimens (benign)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-TransurethralEnucleationDocument.html"
+                  title="Bundle/TransurethralEnucleationDocument">Document Bundle - Prostata-Enukleation</a>
+            </td>
+            <td>
+<p>FHIR Document Bundle für den vollständigen Enukleations-Befundbericht</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-CoreNeedleBiopsyDocument.html"
+                  title="Bundle/CoreNeedleBiopsyDocument">Document Bundle - Prostatabiopsie</a>
+            </td>
+            <td>
+<p>FHIR Document Bundle für den vollständigen Biopsie-Befundbericht</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RadicalProstatectomyDocument.html"
+                  title="Bundle/RadicalProstatectomyDocument">Document Bundle - Radikale Prostatektomie</a>
+            </td>
+            <td>
+<p>FHIR Document Bundle für den vollständigen Prostatektomie-Befundbericht</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-TransurethralResectionDocument.html"
+                  title="Bundle/TransurethralResectionDocument">Document Bundle - TUR-Prostata</a>
+            </td>
+            <td>
+<p>FHIR Document Bundle für den vollständigen TUR-P-Befundbericht</p>
 </td>
          </tr>
          <tr>
@@ -533,6 +581,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-TransurethralResectionInflammation.html"
+                  title="Observation/TransurethralResectionInflammation">Entzündung - TUR-Prostata</a>
+            </td>
+            <td>
+<p>Begleitende chronische Prostatitis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Composition-TransurethralEnucleationComposition.html"
                   title="Composition/TransurethralEnucleationComposition">Enucleation Pathology Report Composition</a>
             </td>
@@ -553,15 +610,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomyExtraprostaticExtension.html"
                   title="Observation/RadicalProstatectomyExtraprostaticExtension">Extraprostatic Extension - Prostatectomy</a>
-            </td>
-            <td>
-<p>Presence of extraprostatic extension</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionExtraprostaticExtension.html"
-                  title="Observation/TransurethralResectionExtraprostaticExtension">Extraprostatic Extension - TUR</a>
             </td>
             <td>
 <p>Presence of extraprostatic extension</p>
@@ -598,15 +646,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomyGradingGroupISUP.html"
                   title="Observation/RadicalProstatectomyGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy</a>
-            </td>
-            <td>
-<p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionGradingGroupISUP.html"
-                  title="Observation/TransurethralResectionGradingGroupISUP">Grading Group according to ISUP 2014/WHO 2016 - TUR</a>
             </td>
             <td>
 <p>Prostate cancer grade group according to ISUP 2014 and WHO 2016</p>
@@ -1199,11 +1238,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionHistologicalTypeICDO3.html"
-                  title="Observation/TransurethralResectionHistologicalTypeICDO3">Histological Type ICD-O-3 - TUR-Prostata</a>
+               <a href="Observation-TransurethralResectionHistologicalDiagnosis.html"
+                  title="Observation/TransurethralResectionHistologicalDiagnosis">Histologische Diagnose - TUR-Prostata (BPH)</a>
             </td>
             <td>
-<p>Histological type according to ICD-O-3 classification</p>
+<p>Benigne Prostatahyperplasie ohne Malignitätsnachweis</p>
 </td>
          </tr>
          <tr>
@@ -1361,15 +1400,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionIntraductalCarcinoma.html"
-                  title="Observation/TransurethralResectionIntraductalCarcinoma">Intraductal Carcinoma - TUR</a>
-            </td>
-            <td>
-<p>Presence of intraductal carcinoma of the prostate</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.html"
                   title="Observation/CoreNeedleBiopsyIntraduktalesKarzinom01">Intraduktales Karzinom Stanze 01</a>
             </td>
@@ -1451,29 +1481,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionInvasiveCribriformCarcinoma.html"
-                  title="Observation/TransurethralResectionInvasiveCribriformCarcinoma">Invasive Cribriform Carcinoma - TUR</a>
-            </td>
-            <td>
-<p>Presence of invasive cribriform carcinoma</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Condition-TransurethralEnucleationDiagnosisPCa.html"
                   title="Condition/TransurethralEnucleationDiagnosisPCa">Inzidentelles Prostatakarzinom nach Enukleation</a>
             </td>
             <td>
 <p>Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-TransurethralResectionDiagnosisPCa.html"
-                  title="Condition/TransurethralResectionDiagnosisPCa">Inzidentelles Prostatakarzinom nach TUR-P</a>
-            </td>
-            <td>
-<p>Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat</p>
 </td>
          </tr>
          <tr>
@@ -1588,15 +1600,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomyLymphovascularInvasion.html"
                   title="Observation/RadicalProstatectomyLymphovascularInvasion">Lymphovascular Invasion - Prostatectomy</a>
-            </td>
-            <td>
-<p>Lymphatic and vascular invasion in cancer specimen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionLymphovascularInvasion.html"
-                  title="Observation/TransurethralResectionLymphovascularInvasion">Lymphovascular Invasion - TUR</a>
             </td>
             <td>
 <p>Lymphatic and vascular invasion in cancer specimen</p>
@@ -1964,15 +1967,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionMorphologyFreeText.html"
-                  title="Observation/TransurethralResectionMorphologyFreeText">Morphology Free Text Description - TUR-Prostata</a>
-            </td>
-            <td>
-<p>Free text description of tissue morphology</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyPositiveCoresLeft.html"
                   title="Observation/CoreNeedleBiopsyPositiveCoresLeft">Number of Positive Cores Left Side - Biopsy</a>
             </td>
@@ -2306,18 +2300,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-Patient1.html" title="Patient/Patient1">Patient 1 - Biopsie und TUR-P</a>
+               <a href="Patient-Patient1.html" title="Patient/Patient1">Patient 1 - Biopsie und Prostatektomie</a>
             </td>
             <td>
-<p>Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält</p>
+<p>Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-Patient2.html" title="Patient/Patient2">Patient 2 - Enukleation und Prostatektomie</a>
+               <a href="Patient-Patient2.html" title="Patient/Patient2">Patient 2 - TUR-P (benigne)</a>
             </td>
             <td>
-<p>Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält</p>
+<p>Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient3.html" title="Patient/Patient3">Patient 3 - Enukleation (Karzinom)</a>
+            </td>
+            <td>
+<p>Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie</p>
 </td>
          </tr>
          <tr>
@@ -2358,15 +2360,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionPercentageGleason45.html"
-                  title="Observation/TransurethralResectionPercentageGleason45">Percentage of Gleason Pattern 4/5 - TUR</a>
-            </td>
-            <td>
-<p>Percentage of tumor area with Gleason pattern 4 and 5</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyPerineuralInfiltration.html"
                   title="Observation/CoreNeedleBiopsyPerineuralInfiltration">Perineural Infiltration - Biopsy</a>
             </td>
@@ -2387,15 +2380,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomyPerineuralInfiltration.html"
                   title="Observation/RadicalProstatectomyPerineuralInfiltration">Perineural Infiltration - Prostatectomy</a>
-            </td>
-            <td>
-<p>Presence of perineural invasion in cancer specimen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionPerineuralInfiltration.html"
-                  title="Observation/TransurethralResectionPerineuralInfiltration">Perineural Infiltration - TUR</a>
             </td>
             <td>
 <p>Presence of perineural invasion in cancer specimen</p>
@@ -2502,15 +2486,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionPrimaryGleasonPattern.html"
-                  title="Observation/TransurethralResectionPrimaryGleasonPattern">Primary Gleason Pattern (Epstein 2005) - TUR</a>
-            </td>
-            <td>
-<p>Primary Gleason pattern according to Epstein 2005</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyPrimaerGleason01.html"
                   title="Observation/CoreNeedleBiopsyPrimaerGleason01">Primäres Gleason Muster Stanze 01</a>
             </td>
@@ -2592,8 +2567,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html"
-                  title="ServiceRequest/TransurethralEnucleationServiceRequest">Prostata Enucleation Anforderung</a>
+               <a href="ServiceRequest-TransurethralEnucleationReportRequest.html"
+                  title="ServiceRequest/TransurethralEnucleationReportRequest">Prostata Enucleation Anforderung</a>
             </td>
             <td>
 <p>Anforderung für pathologische Aufarbeitung nach Prostata Enucleation</p>
@@ -2808,8 +2783,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html"
-                  title="ServiceRequest/RadicalProstatectomyServiceRequest">Prostatektomie Anforderung</a>
+               <a href="ServiceRequest-RadicalProstatectomyReportRequest.html"
+                  title="ServiceRequest/RadicalProstatectomyReportRequest">Prostatektomie Anforderung</a>
             </td>
             <td>
 <p>Anforderung für pathologische Aufarbeitung nach radikaler Prostatektomie</p>
@@ -2837,15 +2812,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomyProstaticTissueInvolved.html"
                   title="Observation/RadicalProstatectomyProstaticTissueInvolved">Prostatic Tissue Involved by Tumour - Prostatectomy</a>
-            </td>
-            <td>
-<p>Percentage of prostatic tissue involved by tumour</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionProstaticTissueInvolved.html"
-                  title="Observation/TransurethralResectionProstaticTissueInvolved">Prostatic Tissue Involved by Tumour - TUR</a>
             </td>
             <td>
 <p>Percentage of prostatic tissue involved by tumour</p>
@@ -2979,6 +2945,150 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsyCase.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase">QuestionnaireResponse - Core Needle Biopsy Case Level</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie auf Fall-Ebene mit diagnostischer Schlussfolgerung und Gesamtbefund</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle07.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle07">QuestionnaireResponse - Core Needle Biopsy Single 07</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9, Grade Group 5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle08.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle08">QuestionnaireResponse - Core Needle Biopsy Single 08</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle09.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle09">QuestionnaireResponse - Core Needle Biopsy Single 09</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 09 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle10.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle10">QuestionnaireResponse - Core Needle Biopsy Single 10</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle11.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11">QuestionnaireResponse - Core Needle Biopsy Single 11</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 11 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle12.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle12">QuestionnaireResponse - Core Needle Biopsy Single 12</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Stanzbiopsie 12 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle01.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01">QuestionnaireResponse - Einzelstanze 01</a>
+            </td>
+            <td>
+<p>Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makroskopischen und mikroskopischen Befunden</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle02.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle02">QuestionnaireResponse - Einzelstanze 02</a>
+            </td>
+            <td>
+<p>Antworten zum Fragebogen für Prostata-Einzelstanze 02 mit makroskopischen und mikroskopischen Befunden</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle03.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle03">QuestionnaireResponse - Einzelstanze 03</a>
+            </td>
+            <td>
+<p>Antworten zum Fragebogen für Prostata-Einzelstanze 03 (benigne)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle04.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle04">QuestionnaireResponse - Einzelstanze 04</a>
+            </td>
+            <td>
+<p>Antworten zum Fragebogen für Prostata-Einzelstanze 04 mit makroskopischen und mikroskopischen Befunden</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy">QuestionnaireResponse - Radical Prostatectomy</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für radikale Prostatektomie mit makroskopischen und diagnostischen Befunden</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation">QuestionnaireResponse - Transurethral Enucleation</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für Prostata-Enukleation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseTransurethralResection.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseTransurethralResection">QuestionnaireResponse - Transurethral Resection (TURP)</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse für transurethrale Resektion der Prostata</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle05.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle05">QuestionnaireResponseCoreNeedleBiopsySingle05</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseCoreNeedleBiopsySingle06.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06">QuestionnaireResponseCoreNeedleBiopsySingle06</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyRatioPositiveCores.html"
                   title="Observation/CoreNeedleBiopsyRatioPositiveCores">Ratio of Positive to Total Cores - Biopsy</a>
             </td>
@@ -3044,15 +3154,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-RadicalProstatectomySecondaryGleasonPattern.html"
                   title="Observation/RadicalProstatectomySecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - Prostatectomy</a>
-            </td>
-            <td>
-<p>Secondary Gleason pattern according to Epstein 2005</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionSecondaryGleasonPattern.html"
-                  title="Observation/TransurethralResectionSecondaryGleasonPattern">Secondary Gleason Pattern (Epstein 2005) - TUR</a>
             </td>
             <td>
 <p>Secondary Gleason pattern according to Epstein 2005</p>
@@ -3258,17 +3359,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionSeminalVesicleInvasion.html"
-                  title="Observation/TransurethralResectionSeminalVesicleInvasion">Seminal Vesicle Invasion - TUR</a>
-            </td>
-            <td>
-<p>Tumor invasion into seminal vesicles</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-CoreNeedleBiopsyRequest.html"
-                  title="ServiceRequest/CoreNeedleBiopsyRequest">Standardbiopsie Prostata Anforderung</a>
+               <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html"
+                  title="ServiceRequest/CoreNeedleBiopsyReportRequest">Standardbiopsie Prostata Anforderung</a>
             </td>
             <td>
 <p>Anforderung für 12-Stanzen Prostatabiopsie</p>
@@ -3303,8 +3395,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ServiceRequest-TransurethralResectionServiceRequest.html"
-                  title="ServiceRequest/TransurethralResectionServiceRequest">TUR-Prostata Anforderung</a>
+               <a href="ServiceRequest-TransurethralResectionReportRequest.html"
+                  title="ServiceRequest/TransurethralResectionReportRequest">TUR-Prostata Anforderung</a>
             </td>
             <td>
 <p>Anforderung für pathologische Aufarbeitung nach TUR-Prostata</p>
@@ -3353,15 +3445,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Total Gleason score in prostatectomy specimen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TransurethralResectionGleasonScoreTotal.html"
-                  title="Observation/TransurethralResectionGleasonScoreTotal">Total Gleason Score - TUR</a>
-            </td>
-            <td>
-<p>Total Gleason score in TUR specimens</p>
 </td>
          </tr>
          <tr>
@@ -3681,7 +3764,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

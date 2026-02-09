@@ -6,7 +6,7 @@
 
 ## Example Encounter: Encounter für Pathologie
 
-**identifier**: `http://example.hospital.de/encounters`/PATH-2024
+**identifier**: `http://example.hospital.de/encounters`/E_24_001
 
 **status**: Finished
 
@@ -25,7 +25,7 @@
   "identifier" : [
     {
       "system" : "http://example.hospital.de/encounters",
-      "value" : "PATH-2024"
+      "value" : "E_24_001"
     }
   ],
   "status" : "finished",

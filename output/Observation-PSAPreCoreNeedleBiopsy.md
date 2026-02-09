@@ -18,7 +18,7 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
 
 **effective**: 2024-01-10 08:00:00+0100
 
-**value**: 12.8 ng/ml(Details: UCUM codeng/mL = 'ng/mL')
+**value**: 12.8 ng/ml (Details: UCUM codeng/mL = 'ng/mL')
 
 ### ReferenceRanges
 

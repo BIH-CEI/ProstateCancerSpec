@@ -14,11 +14,11 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
 
 **code**: Prostate specific antigen [Mass/volume] in Serum or Plasma
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
 **effective**: 2024-04-26 08:00:00+0100
 
-**value**: 0.02 ng/ml(Details: UCUM codeng/mL = 'ng/mL')
+**value**: 0.02 ng/ml (Details: UCUM codeng/mL = 'ng/mL')
 
 **note**: 
 
@@ -71,7 +71,7 @@ Exzellente biochemische Remission, PSA nicht nachweisbar
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-04-26T08:00:00+01:00",
   "valueQuantity" : {

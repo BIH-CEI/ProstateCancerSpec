@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Diagnostic Conclusion Grouper - TUR-Prostata - Prostate Cancer Specification v0.1.0</title>
+    <title>Diagnostic Conclusion Grouper - TUR-Prostata (benigne) - Prostate Cancer Specification v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.27"}
-    h3,h4,h5,h6{--heading-prefix:"8.27"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.28"}
+    h3,h4,h5,h6{--heading-prefix:"9.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -88,13 +88,16 @@
   <li>
     <a href="motivation.html">Motivation</a>
   </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-CoreNeedleBiopsyRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="biopsy-specimens.html">Specimens</a>
@@ -122,7 +125,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-RadicalProstatectomyServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="prostatectomy-specimens.html">Specimens</a>
@@ -147,7 +150,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralEnucleationServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-enucleation-specimens.html">Specimens</a>
@@ -172,7 +175,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest</a>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
       </li>
       <li>
         <a href="tur-resection-specimens.html">Specimens</a>
@@ -206,7 +209,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Diagnostic Conclusion Grouper - TUR-Prostata</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Diagnostic Conclusion Grouper - TUR-Prostata (benigne)</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -266,7 +269,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">Example Observation: Diagnostic Conclusion Grouper - TUR-Prostata</h2>
+  <h2 id="root">Example Observation: Diagnostic Conclusion Grouper - TUR-Prostata (benigne)</h2>
 
 
 
@@ -276,7 +279,8 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="TransurethralResectionDiagnosticConclusionGrouper"> </a><a name="hcTransurethralResectionDiagnosticConclusionGrouper"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest Transurethral resection of prostate (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-04-12</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-TransurethralResectionHistologicalTypeICDO3.html">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href="Observation-TransurethralResectionMorphologyFreeText.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-TransurethralResectionPrimaryGleasonPattern.html">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href="Observation-TransurethralResectionSecondaryGleasonPattern.html">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href="Observation-TransurethralResectionGleasonScoreTotal.html">Observation Gleason score in Specimen Qualitative</a></li><li><a href="Observation-TransurethralResectionPercentageGleason45.html">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href="Observation-TransurethralResectionGradingGroupISUP.html">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href="Observation-TransurethralResectionIntraductalCarcinoma.html">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href="Observation-TransurethralResectionInvasiveCribriformCarcinoma.html">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href="Observation-TransurethralResectionProstaticTissueInvolved.html">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href="Observation-TransurethralResectionExtraprostaticExtension.html">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralResectionSeminalVesicleInvasion.html">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralResectionLymphovascularInvasion.html">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href="Observation-TransurethralResectionPerineuralInfiltration.html">Observation Perineural invasion [Presence] in Cancer specimen</a></li></ul></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="TransurethralResectionDiagnosticConclusionGrouper"> </a><a name="hcTransurethralResectionDiagnosticConclusionGrouper"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest Transurethral resection of prostate (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 22637-3}">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-04-12</p><p><b>performer</b>: <a href="Practitioner-PathologistPractitioner.html">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-04-12</p><blockquote><div><p>Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>
+</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href="Observation-TransurethralResectionHistologicalDiagnosis.html">Observation Histology type in Cancer specimen Narrative</a></li><li><a href="Observation-TransurethralResectionBPHNodularity.html">Observation Benign prostatic hyperplasia (disorder)</a></li><li><a href="Observation-TransurethralResectionInflammation.html">Observation Chronic prostatitis (disorder)</a></li></ul><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QuestionnaireResponseTransurethralResection.html">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'</a></p></div>
 
   
 
@@ -301,7 +305,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:26+0100">2026-01-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

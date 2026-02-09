@@ -1,0 +1,57 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+  {% for e in entry %}
+  {% if e.resource.resourceType == 'Composition' %}
+  <h2>{{ e.resource.title }}</h2>
+  <table>
+    <tbody>
+      <tr><td><b>Patient</b></td><td>{{ e.resource.subject.display }}</td></tr>
+      <tr><td><b>Fallnummer</b></td><td>{{ e.resource.identifier.value }}</td></tr>
+      <tr><td><b>Datum</b></td><td>{{ e.resource.date }}</td></tr>
+      <tr><td><b>Institut</b></td><td>{{ e.resource.author[0].display }}</td></tr>
+    </tbody>
+  </table>
+  {% endif %}
+  {% endfor %}
+
+  {% for e in entry %}
+  {% if e.resource.resourceType == 'Patient' %}
+  <h3>Patientendaten</h3>
+  <table>
+    <tbody>
+      <tr><td><b>Name</b></td><td>{{ e.resource.name[0].given[0] }} {{ e.resource.name[0].family }}</td></tr>
+      <tr><td><b>Geburtsdatum</b></td><td>{{ e.resource.birthDate }}</td></tr>
+      <tr><td><b>Geschlecht</b></td><td>{{ e.resource.gender }}</td></tr>
+      <tr><td><b>Patienten-ID</b></td><td>{{ e.resource.identifier[0].value }}</td></tr>
+    </tbody>
+  </table>
+  {% endif %}
+  {% endfor %}
+
+  {% for e in entry %}
+  {% if e.resource.resourceType == 'DiagnosticReport' %}
+  <h3>Diagnose</h3>
+  <p>{{ e.resource.conclusion }}</p>
+  <h4>Proben ({{ e.resource.specimen.count }})</h4>
+  <ul>
+  {% for sp in e.resource.specimen %}
+    <li>{{ sp.reference }}</li>
+  {% endfor %}
+  </ul>
+  <h4>Befundgruppen</h4>
+  <ul>
+  {% for res in e.resource.result %}
+    <li>{{ res.reference }}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+
+  {% for e in entry %}
+  {% if e.resource.resourceType == 'Observation' %}
+  {% if e.resource.note[0].text %}
+  <h3>{{ e.resource.code.coding[0].display }}</h3>
+  <p><i>{{ e.resource.note[0].text }}</i></p>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+</div>

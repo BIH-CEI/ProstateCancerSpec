@@ -27,6 +27,10 @@
       }
     ]
   },
+  "subject": {
+    "reference": "Patient/Patient1",
+    "display": "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
+  },
   "author": [
     {
       "reference": "Organization/PathologyLabOrganization",
@@ -80,9 +84,6 @@
     }
   ],
   "status": "final",
-  "subject": {
-    "reference": "Patient/Patient2"
-  },
   "date": "2024-03-21T08:00:00+01:00",
   "title": "Histopathologischer Befundbericht - Prostatektomie",
   "encounter": {

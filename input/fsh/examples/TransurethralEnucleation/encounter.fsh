@@ -7,4 +7,4 @@ Description: "Encounter für Prostata Enucleation-Beispiel"
 * identifier.value = "E_24_004"
 * status = #finished
 * class = #IMP
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)

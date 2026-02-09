@@ -8,17 +8,17 @@
 
 Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen), [MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore)
 
-**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_003-Block-05
+**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_003_A_5
 
-**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_003
+**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_003
 
 **status**: Available
 
 **type**: Paraffin block (physical object)
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_003; status = available; type = Surgical specimen](Specimen-TransurethralResectionSpecimenPart.md)
+**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Surgical specimen](Specimen-TransurethralResectionSpecimenPart.md)
 
 ### Collections
 
@@ -33,6 +33,13 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Extension** | **Description** | **Procedure** | **Time[x]** |
 | * |  | Formalinfixierung und Paraffineinbettung | Fixation of tissue (procedure) | 2024-04-11 08:20:00+0100 |
+
+### Containers
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Additive[x]** |
+| * | Paraffin block (physical object) | Paraffin wax (substance) |
 
 
 
@@ -51,12 +58,12 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "identifier" : [
     {
       "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E2024_003-Block-05"
+      "value" : "E_24_003_A_5"
     }
   ],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value" : "E2024_003"
+    "value" : "E_24_003"
   },
   "status" : "available",
   "type" : {
@@ -69,7 +76,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "parent" : [
     {
@@ -120,6 +127,28 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
         ]
       },
       "timeDateTime" : "2024-04-11T08:20:00+01:00"
+    }
+  ],
+  "container" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "1003707006",
+            "display" : "Paraffin block (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "311731000",
+            "display" : "Paraffin wax (substance)"
+          }
+        ]
+      }
     }
   ]
 }

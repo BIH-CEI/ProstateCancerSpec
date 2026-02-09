@@ -24,7 +24,7 @@ Description: "TUR-Prostata Resektat"
 
 * status = #available
 * type = $sct#118292001 "Surgical specimen"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * request = Reference(TransurethralResectionReportRequest)
 
 * collection
@@ -56,7 +56,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 01"
   * value = "E_24_003"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:30:00+01:00"
@@ -91,7 +91,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
   * collectedDateTime = "2024-04-12T08:00:00+01:00"
@@ -122,7 +122,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
   * collectedDateTime = "2024-04-12T08:05:00+01:00"
@@ -158,7 +158,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 02"
   * value = "E_24_003"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:35:00+01:00"
@@ -193,7 +193,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
   * collectedDateTime = "2024-04-12T08:10:00+01:00"
@@ -224,7 +224,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
   * collectedDateTime = "2024-04-12T08:15:00+01:00"
@@ -260,7 +260,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 03"
   * value = "E_24_003"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:40:00+01:00"
@@ -295,7 +295,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
   * collectedDateTime = "2024-04-12T08:20:00+01:00"
@@ -326,7 +326,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
   * collectedDateTime = "2024-04-12T08:25:00+01:00"
@@ -362,7 +362,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 04"
   * value = "E_24_003"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:45:00+01:00"
@@ -397,7 +397,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
   * collectedDateTime = "2024-04-12T08:30:00+01:00"
@@ -428,7 +428,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
   * collectedDateTime = "2024-04-12T08:35:00+01:00"
@@ -464,7 +464,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 05"
   * value = "E_24_003"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:50:00+01:00"
@@ -499,7 +499,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection
   * collectedDateTime = "2024-04-12T08:40:00+01:00"
@@ -530,7 +530,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präpar
   * value = "E_24_003"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient1)
+* subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection
   * collectedDateTime = "2024-04-12T08:45:00+01:00"

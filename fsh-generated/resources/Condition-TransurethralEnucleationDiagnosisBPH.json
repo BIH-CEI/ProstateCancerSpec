@@ -42,7 +42,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient3"
   },
   "encounter": {
     "reference": "Encounter/TransurethralEnucleationEncounter"

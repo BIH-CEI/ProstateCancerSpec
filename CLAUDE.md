@@ -1,9 +1,8 @@
 ## Code Memories
 
 **Letzte Session: 03.02.2026**
-- QuestionnaireResponses für ALLE 4 Biopsietypen erstellt ✅
-- derivedFrom-Referenzen zu ALLEN Observations hinzugefügt ✅
-- SUSHI Build erfolgreich (401 Instances, 0 Errors, 0 Warnings)
+- Issue #9 abgeschlossen: 3-Patienten-Struktur nach Haroske implementiert ✅
+- SUSHI Build erfolgreich (390 Instances, 0 Errors, 0 Warnings)
 
 **Status Übersicht:**
 - Issue #1 abgeschlossen (02.02.2026)
@@ -14,26 +13,31 @@
 - Issue #6 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicLength hinzugefügt
 - Issue #7 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicCylinderCount hinzugefügt
 - Issue #8 abgeschlossen (03.02.2026): derivedFrom zu ALLEN Observations aller 4 Biopsietypen hinzugefügt
+- Issue #9 abgeschlossen (03.02.2026): 3-Patienten-Struktur implementiert
 
-**QuestionnaireResponse Übersicht (03.02.2026):**
-1. **CoreNeedleBiopsy**: 155 Observations mit derivedFrom
-   - 12x QuestionnaireResponseCoreNeedleBiopsySingle01-12
-   - 1x QuestionnaireResponseCoreNeedleBiopsyCase
-   - 1x QuestionnaireResponseCoreNeedleBiopsyClinicalInformations
+**Patient-Struktur (nach Haroske, Issue #9):**
+1. **Patient1 (Hans Mueller, PAT-2024-001, geb. 1955-08-15)**
+   - CoreNeedleBiopsy (erhöhter PSA, Karzinom) → RadicalProstatectomy (Karzinom, mit Lymphadenektomie)
+   - 155 + 31 = 186 Observations mit derivedFrom
 
-2. **RadicalProstatectomy**: 31 Observations mit derivedFrom
-   - 1x QuestionnaireResponseRadicalProstatectomy
-   - Patient2 (Peter Schmidt, PAT-2024-002)
+2. **Patient2 (Peter Schmidt, PAT-2024-002, geb. 1960-03-22)**
+   - TransurethralResection (Miktionsbeschwerden, BENIGNER Befund - BPH, kein Karzinom)
+   - 7 Observations mit derivedFrom (3 diagnostic conclusion + 4 macroscopy)
 
-3. **TransurethralResection**: 19 Observations mit derivedFrom
-   - 1x QuestionnaireResponseTransurethralResection
-   - Patient1 (Hans Mueller, PAT-2024-001)
-   - Key differentiator: linkId "2.16.840.1.113883.3.1937.777.18.2.133" = $sct#176258007 "TURP"
+3. **Patient3 (Klaus Becker, PAT-2024-003, geb. 1958-11-10)**
+   - TransurethralEnucleation (Miktionsbeschwerden, Karzinom) → zukünftig Lymphadenektomie
+   - 22 Observations mit derivedFrom
 
-4. **TransurethralEnucleation**: 22 Observations mit derivedFrom
-   - 1x QuestionnaireResponseTransurethralEnucleation
-   - Patient2 (Peter Schmidt, PAT-2024-002)
-   - Key differentiator: linkId "2.16.840.1.113883.3.1937.777.18.2.133" = $sct#236205008 "Simple prostatectomy"
+**Issue #9 Änderungen (03.02.2026):**
+- ✅ Patient3 erstellt (Klaus Becker)
+- ✅ RadicalProstatectomy: Patient2 → Patient1 verschoben
+- ✅ TransurethralEnucleation: Patient2 → Patient3 verschoben
+- ✅ TransurethralResection: Patient1 → Patient2 verschoben
+- ✅ TransurethralResection: Von malignen zu benignen Befunden geändert
+  - Entfernt: 14 maligne Observations (Gleason, Grade Group, Invasionen)
+  - Hinzugefügt: 3 benigne Observations (BPH, Nodularität, Entzündung)
+  - Diagnose: Nur BPH, kein Prostatakarzinom
+  - QuestionnaireResponse angepasst: Benigne Prostatahyperplasie statt Adenokarzinom
 
 ## TODOs für nächste Session
 

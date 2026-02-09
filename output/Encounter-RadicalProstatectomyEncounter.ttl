@@ -11,22 +11,22 @@
   fhir:id [ fhir:v "RadicalProstatectomyEncounter"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name=\"RadicalProstatectomyEncounter\"> </a><a name=\"hcRadicalProstatectomyEncounter\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/PSA-OP-2024</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name=\"RadicalProstatectomyEncounter\"> </a><a name=\"hcRadicalProstatectomyEncounter\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/E_24_002</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
      fhir:system [
        fhir:v "http://example.hospital.de/encounters"^^xsd:anyURI ;
        fhir:l <http://example.hospital.de/encounters>
      ] ;
-     fhir:value [ fhir:v "PSA-OP-2024" ]
+     fhir:value [ fhir:v "E_24_002" ]
   ] ) ; # 
   fhir:status [ fhir:v "finished"] ; # 
   fhir:class [
      fhir:code [ fhir:v "IMP" ]
   ] ; # 
   fhir:subject [
-     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
-     fhir:reference [ fhir:v "Patient/Patient2" ]
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

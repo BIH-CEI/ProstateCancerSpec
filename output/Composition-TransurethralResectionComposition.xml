@@ -3,7 +3,7 @@
 <Composition xmlns="http://hl7.org/fhir">
   <id value="TransurethralResectionComposition"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition TransurethralResectionComposition</b></p><a name="TransurethralResectionComposition"> </a><a name="hcTransurethralResectionComposition"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-003</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href="Encounter-TransurethralResectionEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-04-15 08:00:00+0100</p><p><b>author</b>: <a href="Organization-PathologyLabOrganization.html">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - TUR-Prostata</p><h3>Attesters</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style="display: none">*</td><td>Legal</td><td><a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></p><h3>Events</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}">pathology report entry task</span></td><td><a href="ServiceRequest-TransurethralResectionServiceRequest.html">ServiceRequest Transurethral resection of prostate (procedure)</a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition TransurethralResectionComposition</b></p><a name="TransurethralResectionComposition"> </a><a name="hcTransurethralResectionComposition"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-003</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href="Encounter-TransurethralResectionEncounter.html">Encounter: identifier = http://example.hospital.de/encounters#E_24_003; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-04-15 08:00:00+0100</p><p><b>author</b>: <a href="Organization-PathologyLabOrganization.html">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - TUR-Prostata</p><h3>Attesters</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style="display: none">*</td><td>Legal</td><td><a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href="Organization-PathologyLabOrganization.html">Organization Pathologielabor</a></p><h3>Events</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}">pathology report entry task</span></td><td><a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest Transurethral resection of prostate (procedure)</a></td></tr></table></div>
   </text>
   <identifier>
     <type>
@@ -29,7 +29,7 @@
     </coding>
   </type>
   <subject>
-    <reference value="Patient/Patient1"/>
+    <reference value="Patient/Patient2"/>
   </subject>
   <encounter>
     <reference value="Encounter/TransurethralResectionEncounter"/>
@@ -57,7 +57,7 @@
       </coding>
     </code>
     <detail>
-      <reference value="ServiceRequest/TransurethralResectionServiceRequest"/>
+      <reference value="ServiceRequest/TransurethralResectionReportRequest"/>
     </detail>
   </event>
   <section>

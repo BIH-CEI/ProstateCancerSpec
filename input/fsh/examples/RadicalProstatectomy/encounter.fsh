@@ -7,4 +7,4 @@ Description: "Encounter für Prostatektomie-Beispiel"
 * identifier.value = "E_24_002"
 * status = #finished
 * class = #IMP
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)

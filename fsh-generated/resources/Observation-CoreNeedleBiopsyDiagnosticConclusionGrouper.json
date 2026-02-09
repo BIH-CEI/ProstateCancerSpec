@@ -97,6 +97,15 @@
       "reference": "Observation/CoreNeedleBiopsyGranulomatousProstatiti"
     }
   ],
+  "note": [
+    {
+      "authorReference": {
+        "reference": "Practitioner/PathologistPractitioner"
+      },
+      "time": "2023-03-15",
+      "text": "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
+    }
+  ],
   "derivedFrom": [
     {
       "reference": "Observation/CoreNeedleBiopsyPrimaerGleason01"

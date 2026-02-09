@@ -12,7 +12,7 @@
 
 **type**: Tissue pathology biopsy report
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)](Encounter-TransurethralResectionEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_003; status = finished; class = IMP (IMP)](Encounter-TransurethralResectionEncounter.md)
 
 **date**: 2024-04-15 08:00:00+0100
 
@@ -34,7 +34,7 @@
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Detail** |
-| * | pathology report entry task | [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionServiceRequest.md) |
+| * | pathology report entry task | [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md) |
 
 
 
@@ -72,7 +72,7 @@
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "encounter" : {
     "reference" : "Encounter/TransurethralResectionEncounter"
@@ -110,7 +110,7 @@
       ],
       "detail" : [
         {
-          "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+          "reference" : "ServiceRequest/TransurethralResectionReportRequest"
         }
       ]
     }

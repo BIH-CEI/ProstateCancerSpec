@@ -221,6 +221,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/TransurethralResectionBPHNodularity"
+        },
+        "name": "BPH Nodularität - TUR-Prostata",
+        "description": "Ausgeprägtheit der BPH-Knoten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/TransurethralEnucleationDiagnosisBPH"
         },
         "name": "BPH-Diagnose vor Enukleation",
@@ -263,8 +271,40 @@
         "reference": {
           "reference": "Observation/TransurethralResectionDiagnosticConclusionGrouper"
         },
-        "name": "Diagnostic Conclusion Grouper - TUR-Prostata",
-        "description": "Grouper for all diagnostic conclusion findings in TUR-Prostata specimens",
+        "name": "Diagnostic Conclusion Grouper - TUR-Prostata (benigne)",
+        "description": "Grouper for all diagnostic conclusion findings in TUR-Prostata specimens (benign)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/TransurethralEnucleationDocument"
+        },
+        "name": "Document Bundle - Prostata-Enukleation",
+        "description": "FHIR Document Bundle für den vollständigen Enukleations-Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/CoreNeedleBiopsyDocument"
+        },
+        "name": "Document Bundle - Prostatabiopsie",
+        "description": "FHIR Document Bundle für den vollständigen Biopsie-Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/RadicalProstatectomyDocument"
+        },
+        "name": "Document Bundle - Radikale Prostatektomie",
+        "description": "FHIR Document Bundle für den vollständigen Prostatektomie-Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/TransurethralResectionDocument"
+        },
+        "name": "Document Bundle - TUR-Prostata",
+        "description": "FHIR Document Bundle für den vollständigen TUR-P-Befundbericht",
         "exampleBoolean": true
       },
       {
@@ -301,6 +341,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/TransurethralResectionInflammation"
+        },
+        "name": "Entzündung - TUR-Prostata",
+        "description": "Begleitende chronische Prostatitis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Composition/TransurethralEnucleationComposition"
         },
         "name": "Enucleation Pathology Report Composition",
@@ -320,14 +368,6 @@
           "reference": "Observation/RadicalProstatectomyExtraprostaticExtension"
         },
         "name": "Extraprostatic Extension - Prostatectomy",
-        "description": "Presence of extraprostatic extension",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionExtraprostaticExtension"
-        },
-        "name": "Extraprostatic Extension - TUR",
         "description": "Presence of extraprostatic extension",
         "exampleBoolean": true
       },
@@ -360,14 +400,6 @@
           "reference": "Observation/RadicalProstatectomyGradingGroupISUP"
         },
         "name": "Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy",
-        "description": "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionGradingGroupISUP"
-        },
-        "name": "Grading Group according to ISUP 2014/WHO 2016 - TUR",
         "description": "Prostate cancer grade group according to ISUP 2014 and WHO 2016",
         "exampleBoolean": true
       },
@@ -893,10 +925,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/TransurethralResectionHistologicalTypeICDO3"
+          "reference": "Observation/TransurethralResectionHistologicalDiagnosis"
         },
-        "name": "Histological Type ICD-O-3 - TUR-Prostata",
-        "description": "Histological type according to ICD-O-3 classification",
+        "name": "Histologische Diagnose - TUR-Prostata (BPH)",
+        "description": "Benigne Prostatahyperplasie ohne Malignitätsnachweis",
         "exampleBoolean": true
       },
       {
@@ -997,43 +1029,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.23--20251023181538"
-        },
-        "name": "ICCR Eingabeformular für Prostatektomien",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.22--20251014150033"
-        },
-        "name": "ICCR Eingabeformular für TURP-Präparate",
-        "description": "Modell für \"intelligentes\" Formular",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.16--20241221120534"
-        },
-        "name": "ICCR Fragebogen für Klinische Angaben bei Prostata-Stanzbiopsien",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.17--20250102170615"
-        },
-        "name": "ICCR Fragebogen für Prostata-Einzelstanzen",
-        "description": "Modell für \"intelligentes\" Formular",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.18.27.18--20250115134435"
-        },
-        "name": "ICCR Fragebogen für Prostata-Fall",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/CoreNeedleBiopsyICDOVersion"
         },
         "name": "ICD-O Version - Biopsy",
@@ -1069,14 +1064,6 @@
           "reference": "Observation/RadicalProstatectomyIntraductalCarcinoma"
         },
         "name": "Intraductal Carcinoma - Prostatectomy",
-        "description": "Presence of intraductal carcinoma of the prostate",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionIntraductalCarcinoma"
-        },
-        "name": "Intraductal Carcinoma - TUR",
         "description": "Presence of intraductal carcinoma of the prostate",
         "exampleBoolean": true
       },
@@ -1154,26 +1141,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/TransurethralResectionInvasiveCribriformCarcinoma"
-        },
-        "name": "Invasive Cribriform Carcinoma - TUR",
-        "description": "Presence of invasive cribriform carcinoma",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Condition/TransurethralEnucleationDiagnosisPCa"
         },
         "name": "Inzidentelles Prostatakarzinom nach Enukleation",
         "description": "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Condition/TransurethralResectionDiagnosisPCa"
-        },
-        "name": "Inzidentelles Prostatakarzinom nach TUR-P",
-        "description": "Zufällig entdecktes Prostatakarzinom in TUR-P-Resektat",
         "exampleBoolean": true
       },
       {
@@ -1277,14 +1248,6 @@
           "reference": "Observation/RadicalProstatectomyLymphovascularInvasion"
         },
         "name": "Lymphovascular Invasion - Prostatectomy",
-        "description": "Lymphatic and vascular invasion in cancer specimen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionLymphovascularInvasion"
-        },
-        "name": "Lymphovascular Invasion - TUR",
         "description": "Lymphatic and vascular invasion in cancer specimen",
         "exampleBoolean": true
       },
@@ -1610,14 +1573,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/TransurethralResectionMorphologyFreeText"
-        },
-        "name": "Morphology Free Text Description - TUR-Prostata",
-        "description": "Free text description of tissue morphology",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/CoreNeedleBiopsyPositiveCoresLeft"
         },
         "name": "Number of Positive Cores Left Side - Biopsy",
@@ -1884,16 +1839,24 @@
         "reference": {
           "reference": "Patient/Patient1"
         },
-        "name": "Patient 1 - Biopsie und TUR-P",
-        "description": "Patient der zuerst eine Stanzbiopsie und anschließend eine transurethrale Resektion erhält",
+        "name": "Patient 1 - Biopsie und Prostatektomie",
+        "description": "Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie",
         "exampleBoolean": true
       },
       {
         "reference": {
           "reference": "Patient/Patient2"
         },
-        "name": "Patient 2 - Enukleation und Prostatektomie",
-        "description": "Patient der zuerst eine transurethrale Enukleation und anschließend eine radikale Prostatektomie erhält",
+        "name": "Patient 2 - TUR-P (benigne)",
+        "description": "Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient3"
+        },
+        "name": "Patient 3 - Enukleation (Karzinom)",
+        "description": "Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie",
         "exampleBoolean": true
       },
       {
@@ -1917,14 +1880,6 @@
           "reference": "Observation/RadicalProstatectomyPercentageGleason45"
         },
         "name": "Percentage of Gleason Pattern 4/5 - Prostatectomy",
-        "description": "Percentage of tumor area with Gleason pattern 4 and 5",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionPercentageGleason45"
-        },
-        "name": "Percentage of Gleason Pattern 4/5 - TUR",
         "description": "Percentage of tumor area with Gleason pattern 4 and 5",
         "exampleBoolean": true
       },
@@ -1957,14 +1912,6 @@
           "reference": "Observation/RadicalProstatectomyPerineuralInfiltration"
         },
         "name": "Perineural Infiltration - Prostatectomy",
-        "description": "Presence of perineural invasion in cancer specimen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionPerineuralInfiltration"
-        },
-        "name": "Perineural Infiltration - TUR",
         "description": "Presence of perineural invasion in cancer specimen",
         "exampleBoolean": true
       },
@@ -2053,14 +2000,6 @@
           "reference": "Observation/RadicalProstatectomyPrimaryGleasonPattern"
         },
         "name": "Primary Gleason Pattern (Epstein 2005) - Prostatectomy",
-        "description": "Primary Gleason pattern according to Epstein 2005",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionPrimaryGleasonPattern"
-        },
-        "name": "Primary Gleason Pattern (Epstein 2005) - TUR",
         "description": "Primary Gleason pattern according to Epstein 2005",
         "exampleBoolean": true
       },
@@ -2362,14 +2301,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/TransurethralResectionProstaticTissueInvolved"
-        },
-        "name": "Prostatic Tissue Involved by Tumour - TUR",
-        "description": "Percentage of prostatic tissue involved by tumour",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/CoreNeedleBiopsyProzentGleason01"
         },
         "name": "Prozentualer Anteil Gleasonmuster 4/5 Stanze 01",
@@ -2602,14 +2533,6 @@
       },
       {
         "reference": {
-          "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyClinicalInformations"
-        },
-        "name": "QuestionnaireResponse - Klinische Angaben bei Stanzbiopsien",
-        "description": "Antworten zum Fragebogen für klinische Angaben bei Prostata-Stanzbiopsien",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
         },
         "name": "QuestionnaireResponse - Radical Prostatectomy",
@@ -2707,14 +2630,6 @@
           "reference": "Observation/RadicalProstatectomySecondaryGleasonPattern"
         },
         "name": "Secondary Gleason Pattern (Epstein 2005) - Prostatectomy",
-        "description": "Secondary Gleason pattern according to Epstein 2005",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionSecondaryGleasonPattern"
-        },
-        "name": "Secondary Gleason Pattern (Epstein 2005) - TUR",
         "description": "Secondary Gleason pattern according to Epstein 2005",
         "exampleBoolean": true
       },
@@ -2896,14 +2811,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/TransurethralResectionSeminalVesicleInvasion"
-        },
-        "name": "Seminal Vesicle Invasion - TUR",
-        "description": "Tumor invasion into seminal vesicles",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
         },
         "name": "Standardbiopsie Prostata Anforderung",
@@ -2948,14 +2855,6 @@
         },
         "name": "Total Gleason Score - Prostatectomy",
         "description": "Total Gleason score in prostatectomy specimen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/TransurethralResectionGleasonScoreTotal"
-        },
-        "name": "Total Gleason Score - TUR",
-        "description": "Total Gleason score in TUR specimens",
         "exampleBoolean": true
       },
       {
@@ -3294,6 +3193,11 @@
           "nameUrl": "tur-resection-specimens.html",
           "title": "TUR-Resection Specimens",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "document-viewer.html",
+          "title": "Befund-Viewer",
+          "generation": "html"
         }
       ]
     },

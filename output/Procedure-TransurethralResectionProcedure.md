@@ -14,7 +14,7 @@ Profile: [MII PR Prozedur Procedureversion: null2026.0.0)](https://simplifier.ne
 
 **code**: Transurethrale Exzision und Destruktion von Prostatagewebe
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
 **performed**: 2024-04-10 10:30:00+0100
 
@@ -64,7 +64,7 @@ Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. In
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "performedDateTime" : "2024-04-10T10:30:00+01:00",
   "note" : [

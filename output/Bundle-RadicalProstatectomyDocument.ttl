@@ -1,0 +1,520 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Bundle/RadicalProstatectomyDocument> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadicalProstatectomyDocument"] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-03-21T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Patient/Patient1"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Patient/Patient1>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Patient/Patient1> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Organization/PathologyLabOrganization"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Organization/PathologyLabOrganization> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper> )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition> a fhir:Composition ;
+  fhir:id [ fhir:v "RadicalProstatectomyComposition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_RadicalProstatectomyComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition RadicalProstatectomyComposition</b></p><a name=\"RadicalProstatectomyComposition\"> </a><a name=\"hcRadicalProstatectomyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-002</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-RadicalProstatectomyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-03-21 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatektomie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/pathology-reports"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/pathology-reports>
+     ] ;
+     fhir:value [ fhir:v "PATH-COMP-2024-002" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://ihe-d.de/CodeSystems/IHEXDStypeCode"^^xsd:anyURI ;
+         fhir:l <http://ihe-d.de/CodeSystems/IHEXDStypeCode>
+       ] ;
+       fhir:code [ fhir:v "PATH" ]
+     ] [
+       a sct:721967005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "721967005" ] ;
+       fhir:display [ fhir:v "Tissue pathology biopsy report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ] ;
+     fhir:display [ fhir:v "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/RadicalProstatectomyEncounter> ;
+     fhir:reference [ fhir:v "Encounter/RadicalProstatectomyEncounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-03-21T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ] ;
+     fhir:display [ fhir:v "Pathologisches Institut" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Histopathologischer Befundbericht - Prostatektomie"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+       fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+  ] ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "PATREPE" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyReportRequest" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Pathologiebefundbericht" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11526-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "11526-1" ] ;
+         fhir:display [ fhir:v "Pathology study" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/RadicalProstatectomyReport" ]
+     ] )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Patient/Patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</p><hr/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/patient-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/patient-ids>
+     ] ;
+     fhir:value [ fhir:v "PAT-2024-001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Mueller" ] ;
+     fhir:given ( [ fhir:v "Hans" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1955-08-15"^^xsd:date] . # 
+
+<http://prostatecancerspec.org/Organization/PathologyLabOrganization> a fhir:Organization ;
+  fhir:id [ fhir:v "PathologyLabOrganization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/organization-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/organization-ids>
+     ] ;
+     fhir:value [ fhir:v "ORG-PATH-001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pathologielabor"] . # 
+
+<http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "RadicalProstatectomyReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_RadicalProstatectomyReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport RadicalProstatectomyReport</b></p><a name=\"RadicalProstatectomyReport\"> </a><a name=\"hcRadicalProstatectomyReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</td></tr><tr><td>When For</td><td>2024-03-20 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-03-21 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_002</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-RadicalProstatectomyMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des Prostatektomiepräparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm</p>\n</div></blockquote></td><td>2024-03-16 14:00:00+0100</td></tr><tr><td><a href=\"Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2024-03-20</td><td>2024-03-20</td></tr></table><p>Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E_24_002" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "SP" ] ;
+       fhir:display [ fhir:v "Surgical Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:60568-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "60568-3" ] ;
+       fhir:display [ fhir:v "Pathology Synoptic report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-03-20T17:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-03-21T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenPart> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenPart" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenBlock01> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenBlock01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide01A> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide01A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide01B> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide01B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenBlock02> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenBlock02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide02A> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide02A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide02B> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide02B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenBlock03> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenBlock03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide03A> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide03A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenSlide03B> ;
+     fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenSlide03B" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicGrouper" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyDiagnosticConclusionGrouper" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."] . # 
+
+<http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "RadicalProstatectomyDiagnosticConclusionGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RadicalProstatectomyDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyDiagnosticConclusionGrouper</b></p><a name=\"RadicalProstatectomyDiagnosticConclusionGrouper\"> </a><a name=\"hcRadicalProstatectomyDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-03-20</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-03-20</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-RadicalProstatectomyHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-RadicalProstatectomyMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-RadicalProstatectomyICDOVersion.html\">Observation World Health Organization tumor classification (observable entity)</a></li><li><a href=\"Observation-RadicalProstatectomyPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomySecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomyGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-RadicalProstatectomyGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.html\">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-RadicalProstatectomyTumorVolume.html\">Observation Size.maximum dimension of tumor in Prostate</a></li><li><a href=\"Observation-RadicalProstatectomyProstaticTissueInvolved.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-RadicalProstatectomyExtraprostaticExtension.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomySeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomyLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomyPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-RadicalProstatectomyBladderNeckInvasion.html\">Observation Bladder neck involvement of Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomyMarginStatus.html\">Observation Surgical margin involvement by tumor [Identifier] in Prostate Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyLymphNodesExamined.html\">Observation Regional lymph nodes examined [#] in Cancer specimen</a></li><li><a href=\"Observation-RadicalProstatectomyLymphNodesPositive.html\">Observation Regional lymph nodes positive [#] in Cancer specimen by Light microscopy</a></li><li><a href=\"Observation-RadicalProstatectomyTNMpT.html\">Observation Primary tumor.pathology Cancer</a></li><li><a href=\"Observation-RadicalProstatectomyTNMpN.html\">Observation Regional lymph nodes.pathology [Class] Cancer</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '-&gt;Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22637-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22637-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-03-20"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+       fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+     ] ;
+     fhir:time [ fhir:v "2024-03-20"^^xsd:date ] ;
+     fhir:text [ fhir:v "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0." ]
+  ] ) ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyHistologicalTypeICDO3> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyHistologicalTypeICDO3" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMorphologyFreeText> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMorphologyFreeText" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyICDOVersion> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyICDOVersion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyPrimaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyPrimaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomySecondaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomySecondaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyGleasonScoreTotal> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyGleasonScoreTotal" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyPercentageGleason45> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyPercentageGleason45" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyGradingGroupISUP> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyGradingGroupISUP" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyIntraductalCarcinoma> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyIntraductalCarcinoma" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyInvasiveCribriformCarcinoma> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyTumorVolume> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyTumorVolume" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyProstaticTissueInvolved> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyProstaticTissueInvolved" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyExtraprostaticExtension> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyExtraprostaticExtension" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomySeminalVesicleInvasion> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomySeminalVesicleInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyLymphovascularInvasion> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyLymphovascularInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyPerineuralInfiltration> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyPerineuralInfiltration" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyBladderNeckInvasion> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyBladderNeckInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMarginStatus> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMarginStatus" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyLymphNodesExamined> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyLymphNodesExamined" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyLymphNodesPositive> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyLymphNodesPositive" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyTNMpT> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyTNMpT" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyTNMpN> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyTNMpN" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy" ]
+  ] ) . # 
+
+<http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "RadicalProstatectomyMacroscopicGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RadicalProstatectomyMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyMacroscopicGrouper</b></p><a name=\"RadicalProstatectomyMacroscopicGrouper\"> </a><a name=\"hcRadicalProstatectomyMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-03-16 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen des Prostatektomiepräparats</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '-&gt;Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateWeight.html\">Observation Prostate weight</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateWidth.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateHeight.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateDepth.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicLymphNodesPresent.html\">Observation Tumor finding</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.html\">Observation Laterality</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.html\">Observation Tumor finding</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.html\">Observation Seminal vesicle size</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22634-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22634-0" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-03-16T14:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Makroskopische Messungen des Prostatektomiepräparats"
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm" ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:41216001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "41216001" ] ;
+       fhir:display [ fhir:v "Prostatic structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicProstateWeight> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicProstateWeight" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicProstateWidth> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicProstateWidth" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicProstateHeight> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicProstateHeight" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicProstateDepth> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicProstateDepth" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicLymphNodesPresent> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicLymphNodesPresent" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength> ;
+     fhir:reference [ fhir:v "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

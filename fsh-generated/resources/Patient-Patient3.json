@@ -1,0 +1,20 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient3",
+  "identifier": [
+    {
+      "system": "http://example.hospital.de/patient-ids",
+      "value": "PAT-2024-003"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Klaus"
+      ],
+      "family": "Becker"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1958-11-10"
+}

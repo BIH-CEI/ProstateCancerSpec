@@ -1,0 +1,447 @@
+{
+  "resourceType": "Bundle",
+  "id": "TransurethralEnucleationDocument",
+  "entry": [
+    {
+      "fullUrl": "http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "TransurethralEnucleationComposition",
+        "identifier": {
+          "system": "http://example.hospital.de/pathology-reports",
+          "value": "PATH-COMP-2024-004",
+          "type": {
+            "coding": [
+              {
+                "code": "ACSN",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "display": "Accession ID"
+              }
+            ]
+          }
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "PATH",
+              "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+            },
+            {
+              "code": "721967005",
+              "system": "http://snomed.info/sct",
+              "display": "Tissue pathology biopsy report"
+            }
+          ]
+        },
+        "author": [
+          {
+            "reference": "Organization/PathologyLabOrganization",
+            "display": "Pathologisches Institut"
+          }
+        ],
+        "attester": [
+          {
+            "mode": "legal",
+            "party": {
+              "reference": "Organization/PathologyLabOrganization"
+            }
+          }
+        ],
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "PATREPE",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "DiagnosticReport/TransurethralEnucleationReport"
+              }
+            ],
+            "title": "Pathologiebefundbericht",
+            "code": {
+              "coding": [
+                {
+                  "code": "11526-1",
+                  "system": "http://loinc.org",
+                  "display": "Pathology study"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient3"
+        },
+        "date": "2024-04-15T08:00:00+01:00",
+        "title": "Histopathologischer Befundbericht - Prostata Enucleation",
+        "encounter": {
+          "reference": "Encounter/TransurethralEnucleationEncounter"
+        },
+        "custodian": {
+          "reference": "Organization/PathologyLabOrganization"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Patient/Patient3",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Patient3",
+        "identifier": [
+          {
+            "system": "http://example.hospital.de/patient-ids",
+            "value": "PAT-2024-003"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Klaus"
+            ],
+            "family": "Becker"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1958-11-10"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Organization/PathologyLabOrganization",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "PathologyLabOrganization",
+        "identifier": [
+          {
+            "system": "http://example.hospital.de/organization-ids",
+            "value": "ORG-PATH-001"
+          }
+        ],
+        "name": "Pathologielabor"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "TransurethralEnucleationReport",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ACSN",
+                  "display": "Accession ID"
+                }
+              ]
+            },
+            "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+            "value": "E_24_004"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "SP",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Surgical Pathology"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenPart"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenBlock01"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide01A"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide01B"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenBlock02"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide02A"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide02B"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenBlock03"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide03A"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide03B"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenBlock04"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide04A"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide04B"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenBlock05"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide05A"
+          },
+          {
+            "reference": "Specimen/TransurethralEnucleationSpecimenSlide05B"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicGrouper"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationDiagnosticConclusionGrouper"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60568-3",
+              "display": "Pathology Synoptic report"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient3"
+        },
+        "effectiveDateTime": "2024-05-12T17:00:00+01:00",
+        "issued": "2024-05-13T08:00:00+01:00",
+        "conclusion": "Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall."
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TransurethralEnucleationDiagnosticConclusionGrouper",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/TransurethralEnucleationReportRequest"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/TransurethralEnucleationHistologicalTypeICDO3"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMorphologyFreeText"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationPrimaryGleasonPattern"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationSecondaryGleasonPattern"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationGleasonScoreTotal"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationPercentageGleason45"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationGradingGroupISUP"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationIntraductalCarcinoma"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationProstaticTissueInvolved"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationExtraprostaticExtension"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationSeminalVesicleInvasion"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationLymphovascularInvasion"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationPerineuralInfiltration"
+          }
+        ],
+        "note": [
+          {
+            "authorReference": {
+              "reference": "Practitioner/PathologistPractitioner"
+            },
+            "time": "2024-05-12",
+            "text": "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22637-3"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient3"
+        },
+        "effectiveDateTime": "2024-05-12"
+      }
+    },
+    {
+      "fullUrl": "http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TransurethralEnucleationMacroscopicGrouper",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicWeight"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicLength"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicWidth"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicDepth"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicSeminalVesicles"
+          },
+          {
+            "reference": "Observation/TransurethralEnucleationMacroscopicLymphNodeDissection"
+          }
+        ],
+        "note": [
+          {
+            "text": "Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22634-0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/Patient3"
+        },
+        "effectiveDateTime": "2024-04-11T14:00:00+01:00",
+        "valueString": "Makroskopische Messungen des Prostata Enucleation Präparats",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostatic structure (body structure)"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2024-04-15T08:00:00+01:00"
+}

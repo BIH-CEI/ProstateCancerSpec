@@ -1,0 +1,466 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Bundle/TransurethralResectionDocument> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TransurethralResectionDocument"] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-04-15T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Composition/TransurethralResectionComposition"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Composition/TransurethralResectionComposition>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Composition/TransurethralResectionComposition> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Patient/Patient2"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Patient/Patient2>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Patient/Patient2> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Organization/PathologyLabOrganization"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Organization/PathologyLabOrganization> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/DiagnosticReport/TransurethralResectionReport"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/TransurethralResectionReport>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/DiagnosticReport/TransurethralResectionReport> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/TransurethralResectionDiagnosticConclusionGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionDiagnosticConclusionGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/TransurethralResectionDiagnosticConclusionGrouper> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper> )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Composition/TransurethralResectionComposition> a fhir:Composition ;
+  fhir:id [ fhir:v "TransurethralResectionComposition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_TransurethralResectionComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition TransurethralResectionComposition</b></p><a name=\"TransurethralResectionComposition\"> </a><a name=\"hcTransurethralResectionComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-003</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralResectionEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_003; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-04-15 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - TUR-Prostata</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-TransurethralResectionReportRequest.html\">ServiceRequest Transurethral resection of prostate (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/pathology-reports"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/pathology-reports>
+     ] ;
+     fhir:value [ fhir:v "PATH-COMP-2024-003" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://ihe-d.de/CodeSystems/IHEXDStypeCode"^^xsd:anyURI ;
+         fhir:l <http://ihe-d.de/CodeSystems/IHEXDStypeCode>
+       ] ;
+       fhir:code [ fhir:v "PATH" ]
+     ] [
+       a sct:721967005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "721967005" ] ;
+       fhir:display [ fhir:v "Tissue pathology biopsy report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/TransurethralResectionEncounter> ;
+     fhir:reference [ fhir:v "Encounter/TransurethralResectionEncounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-04-15T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ] ;
+     fhir:display [ fhir:v "Pathologisches Institut" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Histopathologischer Befundbericht - TUR-Prostata"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+       fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+  ] ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "PATREPE" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralResectionReportRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/TransurethralResectionReportRequest" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Pathologiebefundbericht" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11526-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "11526-1" ] ;
+         fhir:display [ fhir:v "Pathology study" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/TransurethralResectionReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/TransurethralResectionReport" ]
+     ] )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Patient/Patient2> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient2</b></p><a name=\"Patient2\"> </a><a name=\"hcPatient2\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</p><hr/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/patient-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/patient-ids>
+     ] ;
+     fhir:value [ fhir:v "PAT-2024-002" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Schmidt" ] ;
+     fhir:given ( [ fhir:v "Peter" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1960-03-22"^^xsd:date] . # 
+
+<http://prostatecancerspec.org/Organization/PathologyLabOrganization> a fhir:Organization ;
+  fhir:id [ fhir:v "PathologyLabOrganization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/organization-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/organization-ids>
+     ] ;
+     fhir:value [ fhir:v "ORG-PATH-001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pathologielabor"] . # 
+
+<http://prostatecancerspec.org/DiagnosticReport/TransurethralResectionReport> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "TransurethralResectionReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_TransurethralResectionReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport TransurethralResectionReport</b></p><a name=\"TransurethralResectionReport\"> </a><a name=\"hcTransurethralResectionReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</td></tr><tr><td>When For</td><td>2024-04-12 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-04-13 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_003</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-TransurethralResectionMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des TUR-Prostata Präparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>\n</div></blockquote></td><td>2024-04-11 14:00:00+0100</td></tr><tr><td><a href=\"Observation-TransurethralResectionDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2024-04-12</td><td>2024-04-12</td></tr></table><p>TUR-Prostata: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E_24_003" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralResectionReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/TransurethralResectionReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "SP" ] ;
+       fhir:display [ fhir:v "Surgical Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:60568-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "60568-3" ] ;
+       fhir:display [ fhir:v "Pathology Synoptic report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-04-12T17:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-04-13T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenPart> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenPart" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenBlock01> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenBlock01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide01A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide01A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide01B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide01B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenBlock02> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenBlock02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide02A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide02A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide02B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide02B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenBlock03> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenBlock03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide03A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide03A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide03B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide03B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenBlock04> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenBlock04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide04A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide04A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide04B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide04B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenBlock05> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenBlock05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide05A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide05A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralResectionSpecimenSlide05B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralResectionSpecimenSlide05B" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionMacroscopicGrouper" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionDiagnosticConclusionGrouper> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionDiagnosticConclusionGrouper" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "TUR-Prostata: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall."] . # 
+
+<http://prostatecancerspec.org/Observation/TransurethralResectionDiagnosticConclusionGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "TransurethralResectionDiagnosticConclusionGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TransurethralResectionDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralResectionDiagnosticConclusionGrouper</b></p><a name=\"TransurethralResectionDiagnosticConclusionGrouper\"> </a><a name=\"hcTransurethralResectionDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TransurethralResectionReportRequest.html\">ServiceRequest Transurethral resection of prostate (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-04-12</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-04-12</p><blockquote><div><p>Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TransurethralResectionHistologicalDiagnosis.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-TransurethralResectionBPHNodularity.html\">Observation Benign prostatic hyperplasia (disorder)</a></li><li><a href=\"Observation-TransurethralResectionInflammation.html\">Observation Chronic prostatitis (disorder)</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseTransurethralResection.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralResectionReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/TransurethralResectionReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22637-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22637-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-04-12"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+       fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+     ] ;
+     fhir:time [ fhir:v "2024-04-12"^^xsd:date ] ;
+     fhir:text [ fhir:v "Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN." ]
+  ] ) ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionHistologicalDiagnosis> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionHistologicalDiagnosis" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionBPHNodularity> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionBPHNodularity" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionInflammation> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionInflammation" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseTransurethralResection> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseTransurethralResection" ]
+  ] ) . # 
+
+<http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "TransurethralResectionMacroscopicGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TransurethralResectionMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralResectionMacroscopicGrouper</b></p><a name=\"TransurethralResectionMacroscopicGrouper\"> </a><a name=\"hcTransurethralResectionMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>effective</b>: 2024-04-11 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen des TUR-Prostata Präparats</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TransurethralResectionMacroscopicWeight.html\">Observation Specimen weight (observable entity)</a></li><li><a href=\"Observation-TransurethralResectionMacroscopicSeminalVesicles.html\">Observation Tumor finding</a></li><li><a href=\"Observation-TransurethralResectionMacroscopicLymphNodeDissection.html\">Observation Tumor finding</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseTransurethralResection.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22634-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22634-0" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient2> ;
+     fhir:reference [ fhir:v "Patient/Patient2" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-04-11T14:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Makroskopische Messungen des TUR-Prostata Präparats"
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat." ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:41216001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "41216001" ] ;
+       fhir:display [ fhir:v "Prostatic structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicWeight> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionMacroscopicWeight" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicSeminalVesicles> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionMacroscopicSeminalVesicles" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicLymphNodeDissection> ;
+     fhir:reference [ fhir:v "Observation/TransurethralResectionMacroscopicLymphNodeDissection" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseTransurethralResection> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseTransurethralResection" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

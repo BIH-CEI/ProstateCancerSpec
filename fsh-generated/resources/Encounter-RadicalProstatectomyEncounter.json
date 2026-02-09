@@ -12,6 +12,6 @@
     "code": "IMP"
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient1"
   }
 }

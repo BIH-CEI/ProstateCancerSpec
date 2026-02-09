@@ -12,7 +12,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleati
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des Prostata Enucleation Präparats"
@@ -44,7 +44,7 @@ Description: "Gewicht des Prostata Enucleation Präparats"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
 * code = $sct#371506001 "Specimen weight (observable entity)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -65,7 +65,7 @@ Description: "Länge des Prostata Enucleation Präparats in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#84894-5	"Dimension [Length] of Specimen"
 * code.text = "Prostata Enucleation Länge"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:15:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -86,7 +86,7 @@ Description: "Breite des Prostata Enucleation Präparats in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#84894-5	"Dimension [Length] of Specimen"
 * code.text = "Prostata Enucleation Breite"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:16:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -107,7 +107,7 @@ Description: "Tiefe des Prostata Enucleation Präparats in cm"
 * category[section-type] = $loinc#22634-0
 * code = $loinc#33756-8 "Prostate size"
 * code.text = "Prostata Enucleation Tiefe"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:17:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -128,7 +128,7 @@ Description: "Vorhandensein von Samenblasen im Prostata Enucleation Präparat"
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Samenblasen im Resektat"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
@@ -149,7 +149,7 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im Prostata Enucleation P
 * category[section-type] = $loinc#22634-0
 * code = $sct#395557000 "Tumor finding"
 * code.text = "Lymphknoten-Dissektion Präparat"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)

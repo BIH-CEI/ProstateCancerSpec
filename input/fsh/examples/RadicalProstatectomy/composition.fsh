@@ -13,7 +13,8 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 * status = #final
 * type.coding[0] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH
 * type.coding[+] = $sct#721967005 "Tissue pathology biopsy report"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
+* subject.display = "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
 * date = "2024-03-21T08:00:00+01:00"
 * author = Reference(PathologyLabOrganization)
 * author.display = "Pathologisches Institut"

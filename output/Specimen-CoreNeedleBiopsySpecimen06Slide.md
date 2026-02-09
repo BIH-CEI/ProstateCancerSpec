@@ -8,31 +8,35 @@
 
 Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen), [MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore)
 
-**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_001-06-HE-1
+**identifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_001_F_1_1HE
 
-**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_001
+**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_001
 
 **status**: Available
 
-**type**: Histopathology slide (physical object)
+**type**: Tissue section (specimen)
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001-06-Block-A; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_001; status = available; type = Paraffin block (physical object)](Specimen-CoreNeedleBiopsySpecimen06Block.md)
+**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001_F_1; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Tissue block specimen (specimen)](Specimen-CoreNeedleBiopsySpecimen06Block.md)
 
 ### Collections
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** |
-| * | 2024-01-17 08:00:00+0100 | Hematoxylin and eosin staining method (procedure) |
+| * | 2024-01-17 08:00:00+0100 | Tissue processing technique (procedure) |
 
-### Processings
+> **processing****MII EX Biobank Temperaturbedingungen**: 2-8 °C**description**: Schnittherstellung**procedure**: Sectioning of tissue block (procedure)**time**: 2024-01-17 09:00:00+0100
 
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| - | **Extension** | **Description** | **Procedure** | **Time[x]** |
-| * |  | HE-Färbung | Hematoxylin and eosin staining method (procedure) | 2024-01-17 09:00:00+0100 |
+> **processing****MII EX Biobank Temperaturbedingungen**: 2-8 °C**description**: HE-Färbung**procedure**: Hematoxylin and eosin staining method (procedure)**time**: 2024-01-17 09:15:00+0100
+
+### Containers
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Additive[x]** |
+| * | Microscope slide (physical object) | Microscope slide mounting medium (substance) |
 
 
 
@@ -51,20 +55,20 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "identifier" : [
     {
       "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E2024_001-06-HE-1"
+      "value" : "E_24_001_F_1_1HE"
     }
   ],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value" : "E2024_001"
+    "value" : "E_24_001"
   },
   "status" : "available",
   "type" : {
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "430685002",
-        "display" : "Histopathology slide (physical object)"
+        "code" : "430856003",
+        "display" : "Tissue section (specimen)"
       }
     ]
   },
@@ -82,13 +86,45 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
       "coding" : [
         {
           "system" : "http://snomed.info/sct",
-          "code" : "127790008",
-          "display" : "Hematoxylin and eosin staining method (procedure)"
+          "code" : "13283003",
+          "display" : "Tissue processing technique (procedure)"
         }
       ]
     }
   },
   "processing" : [
+    {
+      "extension" : [
+        {
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : 2,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : 8,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        }
+      ],
+      "description" : "Schnittherstellung",
+      "procedure" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "434472006",
+            "display" : "Sectioning of tissue block (procedure)"
+          }
+        ]
+      },
+      "timeDateTime" : "2024-01-17T09:00:00+01:00"
+    },
     {
       "extension" : [
         {
@@ -119,7 +155,29 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
           }
         ]
       },
-      "timeDateTime" : "2024-01-17T09:00:00+01:00"
+      "timeDateTime" : "2024-01-17T09:15:00+01:00"
+    }
+  ],
+  "container" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "433466003",
+            "display" : "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "430862008",
+            "display" : "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
     }
   ]
 }

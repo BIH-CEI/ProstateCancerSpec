@@ -6,13 +6,13 @@
 
 ## Example Encounter: Encounter für Prostatektomie
 
-**identifier**: `http://example.hospital.de/encounters`/PSA-OP-2024
+**identifier**: `http://example.hospital.de/encounters`/E_24_002
 
 **status**: Finished
 
 **class**: [not stated]: IMP (IMP)
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
 
 
@@ -25,7 +25,7 @@
   "identifier" : [
     {
       "system" : "http://example.hospital.de/encounters",
-      "value" : "PSA-OP-2024"
+      "value" : "E_24_002"
     }
   ],
   "status" : "finished",
@@ -33,7 +33,7 @@
     "code" : "IMP"
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   }
 }
 

@@ -20,7 +20,7 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PATH-2024; status = finished; class = IMB (IMB)](Encounter-CoreNeedleBiopsyEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)](Encounter-CoreNeedleBiopsyEncounter.md)
 
 **onset**: 2024-01-10
 

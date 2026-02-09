@@ -1,0 +1,495 @@
+# Document Bundle - Radikale Prostatektomie - Prostate Cancer Specification v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Document Bundle - Radikale Prostatektomie**
+
+## Example Bundle: Document Bundle - Radikale Prostatektomie
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "RadicalProstatectomyDocument",
+  "type" : "document",
+  "timestamp" : "2024-03-21T08:00:00+01:00",
+  "entry" : [
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Composition/RadicalProstatectomyComposition",
+      "resource" : {
+        "resourceType" : "Composition",
+        "id" : "RadicalProstatectomyComposition",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_RadicalProstatectomyComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition RadicalProstatectomyComposition</b></p><a name=\"RadicalProstatectomyComposition\"> </a><a name=\"hcRadicalProstatectomyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-002</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-RadicalProstatectomyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-03-21 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatektomie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></td></tr></table></div>"
+        },
+        "identifier" : {
+          "type" : {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code" : "ACSN",
+                "display" : "Accession ID"
+              }
+            ]
+          },
+          "system" : "http://example.hospital.de/pathology-reports",
+          "value" : "PATH-COMP-2024-002"
+        },
+        "status" : "final",
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+              "code" : "PATH"
+            },
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "721967005",
+              "display" : "Tissue pathology biopsy report"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1",
+          "display" : "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
+        },
+        "encounter" : {
+          "reference" : "Encounter/RadicalProstatectomyEncounter"
+        },
+        "date" : "2024-03-21T08:00:00+01:00",
+        "author" : [
+          {
+            "reference" : "Organization/PathologyLabOrganization",
+            "display" : "Pathologisches Institut"
+          }
+        ],
+        "title" : "Histopathologischer Befundbericht - Prostatektomie",
+        "attester" : [
+          {
+            "mode" : "legal",
+            "party" : {
+              "reference" : "Organization/PathologyLabOrganization"
+            }
+          }
+        ],
+        "custodian" : {
+          "reference" : "Organization/PathologyLabOrganization"
+        },
+        "event" : [
+          {
+            "code" : [
+              {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code" : "PATREPE"
+                  }
+                ]
+              }
+            ],
+            "detail" : [
+              {
+                "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+              }
+            ]
+          }
+        ],
+        "section" : [
+          {
+            "title" : "Pathologiebefundbericht",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11526-1",
+                  "display" : "Pathology study"
+                }
+              ]
+            },
+            "entry" : [
+              {
+                "reference" : "DiagnosticReport/RadicalProstatectomyReport"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Patient/Patient1",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "Patient1",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</p><hr/></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://example.hospital.de/patient-ids",
+            "value" : "PAT-2024-001"
+          }
+        ],
+        "name" : [
+          {
+            "family" : "Mueller",
+            "given" : ["Hans"]
+          }
+        ],
+        "gender" : "male",
+        "birthDate" : "1955-08-15"
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Organization/PathologyLabOrganization",
+      "resource" : {
+        "resourceType" : "Organization",
+        "id" : "PathologyLabOrganization",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://example.hospital.de/organization-ids",
+            "value" : "ORG-PATH-001"
+          }
+        ],
+        "name" : "Pathologielabor"
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport",
+      "resource" : {
+        "resourceType" : "DiagnosticReport",
+        "id" : "RadicalProstatectomyReport",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_RadicalProstatectomyReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport RadicalProstatectomyReport</b></p><a name=\"RadicalProstatectomyReport\"> </a><a name=\"hcRadicalProstatectomyReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</td></tr><tr><td>When For</td><td>2024-03-20 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-03-21 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_002</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-RadicalProstatectomyMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des Prostatektomiepräparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm</p>\n</div></blockquote></td><td>2024-03-16 14:00:00+0100</td></tr><tr><td><a href=\"Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2024-03-20</td><td>2024-03-20</td></tr></table><p>Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.</p></div>"
+        },
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "ACSN",
+                  "display" : "Accession ID"
+                }
+              ]
+            },
+            "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+            "value" : "E_24_002"
+          }
+        ],
+        "basedOn" : [
+          {
+            "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+          }
+        ],
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code" : "SP",
+                "display" : "Surgical Pathology"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "60568-3",
+              "display" : "Pathology Synoptic report"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-03-20T17:00:00+01:00",
+        "issued" : "2024-03-21T08:00:00+01:00",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "specimen" : [
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenPart"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenBlock01"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide01A"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide01B"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenBlock02"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide02A"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide02B"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenBlock03"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide03A"
+          },
+          {
+            "reference" : "Specimen/RadicalProstatectomySpecimenSlide03B"
+          }
+        ],
+        "result" : [
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicGrouper"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyDiagnosticConclusionGrouper"
+          }
+        ],
+        "conclusion" : "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Observation/RadicalProstatectomyDiagnosticConclusionGrouper",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "RadicalProstatectomyDiagnosticConclusionGrouper",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RadicalProstatectomyDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyDiagnosticConclusionGrouper</b></p><a name=\"RadicalProstatectomyDiagnosticConclusionGrouper\"> </a><a name=\"hcRadicalProstatectomyDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Radical prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-03-20</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-03-20</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-RadicalProstatectomyHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-RadicalProstatectomyMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-RadicalProstatectomyICDOVersion.html\">Observation World Health Organization tumor classification (observable entity)</a></li><li><a href=\"Observation-RadicalProstatectomyPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomySecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomyGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-RadicalProstatectomyGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.html\">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-RadicalProstatectomyTumorVolume.html\">Observation Size.maximum dimension of tumor in Prostate</a></li><li><a href=\"Observation-RadicalProstatectomyProstaticTissueInvolved.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-RadicalProstatectomyExtraprostaticExtension.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomySeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomyLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-RadicalProstatectomyPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-RadicalProstatectomyBladderNeckInvasion.html\">Observation Bladder neck involvement of Prostate tumor</a></li><li><a href=\"Observation-RadicalProstatectomyMarginStatus.html\">Observation Surgical margin involvement by tumor [Identifier] in Prostate Qualitative</a></li><li><a href=\"Observation-RadicalProstatectomyLymphNodesExamined.html\">Observation Regional lymph nodes examined [#] in Cancer specimen</a></li><li><a href=\"Observation-RadicalProstatectomyLymphNodesPositive.html\">Observation Regional lymph nodes positive [#] in Cancer specimen by Light microscopy</a></li><li><a href=\"Observation-RadicalProstatectomyTNMpT.html\">Observation Primary tumor.pathology Cancer</a></li><li><a href=\"Observation-RadicalProstatectomyTNMpN.html\">Observation Regional lymph nodes.pathology [Class] Cancer</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '-&gt;Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'</a></p></div>"
+        },
+        "basedOn" : [
+          {
+            "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+          }
+        ],
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "laboratory"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "22637-3"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-03-20",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "note" : [
+          {
+            "authorReference" : {
+              "reference" : "Practitioner/PathologistPractitioner"
+            },
+            "time" : "2024-03-20",
+            "text" : "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0."
+          }
+        ],
+        "hasMember" : [
+          {
+            "reference" : "Observation/RadicalProstatectomyHistologicalTypeICDO3"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMorphologyFreeText"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyICDOVersion"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyPrimaryGleasonPattern"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomySecondaryGleasonPattern"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyGleasonScoreTotal"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyPercentageGleason45"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyGradingGroupISUP"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyIntraductalCarcinoma"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyTumorVolume"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyExtraprostaticExtension"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomySeminalVesicleInvasion"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyLymphovascularInvasion"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyPerineuralInfiltration"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyBladderNeckInvasion"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMarginStatus"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyLymphNodesExamined"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyLymphNodesPositive"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyTNMpT"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyTNMpN"
+          }
+        ],
+        "derivedFrom" : [
+          {
+            "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "RadicalProstatectomyMacroscopicGrouper",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RadicalProstatectomyMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RadicalProstatectomyMacroscopicGrouper</b></p><a name=\"RadicalProstatectomyMacroscopicGrouper\"> </a><a name=\"hcRadicalProstatectomyMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-03-16 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen des Prostatektomiepräparats</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '-&gt;Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateWeight.html\">Observation Prostate weight</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateWidth.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateHeight.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicProstateDepth.html\">Observation Prostate size</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicLymphNodesPresent.html\">Observation Tumor finding</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.html\">Observation Laterality</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.html\">Observation Tumor finding</a></li><li><a href=\"Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.html\">Observation Seminal vesicle size</a></li></ul></div>"
+        },
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "laboratory"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "22634-0"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-03-16T14:00:00+01:00",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "valueString" : "Makroskopische Messungen des Prostatektomiepräparats",
+        "note" : [
+          {
+            "text" : "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
+          }
+        ],
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "41216001",
+              "display" : "Prostatic structure (body structure)"
+            }
+          ]
+        },
+        "derivedFrom" : [
+          {
+            "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWeight"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWidth"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicProstateHeight"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicProstateDepth"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicLymphNodesPresent"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicLymphNodesLaterality"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicSeminalVesiclesPresent"
+          },
+          {
+            "reference" : "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

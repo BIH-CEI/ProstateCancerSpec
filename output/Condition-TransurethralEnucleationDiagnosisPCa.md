@@ -18,9 +18,9 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 
 **code**: Bösartige Neubildung der Prostata
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-ENUC-2024; status = finished; class = IMP (IMP)](Encounter-TransurethralEnucleationEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_004; status = finished; class = IMP (IMP)](Encounter-TransurethralEnucleationEncounter.md)
 
 **onset**: 2024-02-20
 
@@ -96,7 +96,7 @@ Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnt
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient3"
   },
   "encounter" : {
     "reference" : "Encounter/TransurethralEnucleationEncounter"

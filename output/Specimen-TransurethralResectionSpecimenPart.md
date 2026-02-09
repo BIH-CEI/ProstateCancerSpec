@@ -8,31 +8,31 @@
 
 Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen), [MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore)
 
-**identifier**: Placer Identifier/TUR24_001_A, Filler Identifier/E2024_003-A
+**identifier**: Placer Identifier/TUR24_001_A, Filler Identifier/E_24_003_A
 
-**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E2024_003
+**accessionIdentifier**: `https://pathologie.example-hospital.de/fhir/fn/befundbericht`/E_24_003
 
 **status**: Available
 
 **type**: Surgical specimen
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**request**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionServiceRequest.md)
+**request**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
 
 ### Collections
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber](Practitioner-UrologistPractitioner.md) | 2024-04-10 10:30:00+0100 | Transurethral resection of prostate (procedure) | Prostate structure |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-04-10 10:30:00+0100 | Transurethral resection of prostate (procedure) | Prostate structure |
 
 ### Containers
 
-| | |
-| :--- | :--- |
-| - | **Type** |
-| * | Specimen vial (physical object) |
+| | | |
+| :--- | :--- | :--- |
+| - | **Type** | **Additive[x]** |
+| * | Specimen vial (physical object) | Neutral buffered formalin (substance) |
 
 
 
@@ -58,7 +58,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
           }
         ]
       },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/untersuchungsauftrag",
+      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
       "value" : "TUR24_001_A"
     },
     {
@@ -71,12 +71,12 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
         ]
       },
       "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E2024_003-A"
+      "value" : "E_24_003_A"
     }
   ],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-    "value" : "E2024_003"
+    "value" : "E_24_003"
   },
   "status" : "available",
   "type" : {
@@ -89,11 +89,11 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "request" : [
     {
-      "reference" : "ServiceRequest/TransurethralResectionServiceRequest"
+      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
     }
   ],
   "collection" : {
@@ -128,6 +128,15 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
             "system" : "http://snomed.info/sct",
             "code" : "434746001",
             "display" : "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "434162003",
+            "display" : "Neutral buffered formalin (substance)"
           }
         ]
       }

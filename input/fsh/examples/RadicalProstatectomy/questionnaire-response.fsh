@@ -14,7 +14,7 @@ Title: "QuestionnaireResponse - Radical Prostatectomy"
 Description: "QuestionnaireResponse für radikale Prostatektomie mit makroskopischen und diagnostischen Befunden"
 * questionnaire = "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435"
 * status = #completed
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * authored = "2024-03-20T14:30:00+01:00"
 * author = Reference(PathologistPractitioner)
 
@@ -47,12 +47,12 @@ Description: "QuestionnaireResponse für radikale Prostatektomie mit makroskopis
     * item[+]
       * linkId = "2.16.840.1.113883.3.1937.777.18.2.86"
       * text = "Geburtsdatum"
-      * answer.valueDate = "1960-03-22"
+      * answer.valueDate = "1955-08-15"
 
     * item[+]
       * linkId = "2.16.840.1.113883.3.1937.777.18.2.87"
       * text = "Patienten-Identifikator"
-      * answer.valueString = "PAT-2024-002"
+      * answer.valueString = "PAT-2024-001"
 
     * item[+]
       * linkId = "2.16.840.1.113883.3.1937.777.18.2.88"

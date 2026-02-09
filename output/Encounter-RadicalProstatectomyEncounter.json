@@ -3,17 +3,17 @@
   "id" : "RadicalProstatectomyEncounter",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name=\"RadicalProstatectomyEncounter\"> </a><a name=\"hcRadicalProstatectomyEncounter\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/PSA-OP-2024</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href=\"Patient-Patient2.html\">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RadicalProstatectomyEncounter</b></p><a name=\"RadicalProstatectomyEncounter\"> </a><a name=\"hcRadicalProstatectomyEncounter\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/encounters</code>/E_24_002</p><p><b>status</b>: Finished</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p></div>"
   },
   "identifier" : [{
     "system" : "http://example.hospital.de/encounters",
-    "value" : "PSA-OP-2024"
+    "value" : "E_24_002"
   }],
   "status" : "finished",
   "class" : {
     "code" : "IMP"
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   }
 }

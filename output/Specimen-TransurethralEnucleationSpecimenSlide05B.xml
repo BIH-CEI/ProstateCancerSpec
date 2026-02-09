@@ -7,15 +7,15 @@
     <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen TransurethralEnucleationSpecimenSlide05B</b></p><a name="TransurethralEnucleationSpecimenSlide05B"> </a><a name="hcTransurethralEnucleationSpecimenSlide05B"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_004-HE-05B</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E2024_004</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 430685002}">Histopathology slide (physical object)</span></p><p><b>subject</b>: <a href="Patient-Patient2.html">Peter Schmidt  Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)</a></p><p><b>parent</b>: <a href="Specimen-TransurethralEnucleationSpecimenBlock05.html">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004-Block-05; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004; status = available; type = Paraffin block (physical object)</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td>2024-04-12 08:45:00+0100</td><td><span title="Codes:{http://snomed.info/sct 127790008}">Hematoxylin and eosin staining method (procedure)</span></td></tr></table><h3>Processings</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Description</b></td><td><b>Procedure</b></td><td><b>Time[x]</b></td></tr><tr><td style="display: none">*</td><td/><td>HE-Färbung</td><td><span title="Codes:{http://snomed.info/sct 127790008}">Hematoxylin and eosin staining method (procedure)</span></td><td>2024-04-12 09:45:00+0100</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen TransurethralEnucleationSpecimenSlide05B</b></p><a name="TransurethralEnucleationSpecimenSlide05B"> </a><a name="hcTransurethralEnucleationSpecimenSlide05B"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E_24_004_A_5_2HE</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E_24_004</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 430685002}">Histopathology slide (physical object)</span></p><p><b>subject</b>: <a href="Patient-Patient3.html">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>parent</b>: <a href="Specimen-TransurethralEnucleationSpecimenBlock05.html">Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_5; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Paraffin block (physical object)</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td>2024-04-12 08:45:00+0100</td><td><span title="Codes:{http://snomed.info/sct 127790008}">Hematoxylin and eosin staining method (procedure)</span></td></tr></table><h3>Processings</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Description</b></td><td><b>Procedure</b></td><td><b>Time[x]</b></td></tr><tr><td style="display: none">*</td><td/><td>HE-Färbung</td><td><span title="Codes:{http://snomed.info/sct 127790008}">Hematoxylin and eosin staining method (procedure)</span></td><td>2024-04-12 09:45:00+0100</td></tr></table><h3>Containers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Additive[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 433466003}">Microscope slide (physical object)</span></td><td><span title="Codes:{http://snomed.info/sct 430862008}">Microscope slide mounting medium (substance)</span></td></tr></table></div>
   </text>
   <identifier>
     <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
-    <value value="E2024_004-HE-05B"/>
+    <value value="E_24_004_A_5_2HE"/>
   </identifier>
   <accessionIdentifier>
     <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
-    <value value="E2024_004"/>
+    <value value="E_24_004"/>
   </accessionIdentifier>
   <status value="available"/>
   <type>
@@ -26,7 +26,7 @@
     </coding>
   </type>
   <subject>
-    <reference value="Patient/Patient2"/>
+    <reference value="Patient/Patient3"/>
   </subject>
   <parent>
     <reference value="Specimen/TransurethralEnucleationSpecimenBlock05"/>
@@ -68,4 +68,20 @@
     </procedure>
     <timeDateTime value="2024-04-12T09:45:00+01:00"/>
   </processing>
+  <container>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="433466003"/>
+        <display value="Microscope slide (physical object)"/>
+      </coding>
+    </type>
+    <additiveCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="430862008"/>
+        <display value="Microscope slide mounting medium (substance)"/>
+      </coding>
+    </additiveCodeableConcept>
+  </container>
 </Specimen>

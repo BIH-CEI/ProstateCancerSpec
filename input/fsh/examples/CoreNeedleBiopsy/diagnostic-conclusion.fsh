@@ -39,7 +39,9 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * hasMember[+] = Reference(CoreNeedleBiopsyASAP)
 * hasMember[+] = Reference(CoreNeedleBiopsyHighGradePIN)
 * hasMember[+] = Reference(CoreNeedleBiopsyGranulomatousProstatiti)
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
+* note.authorReference = Reference(PathologistPractitioner)
+* note.time = "2023-03-15"
+* note.text = "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
 
 // derivedFrom references to microscopy findings
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaerGleason01)
@@ -76,7 +78,6 @@ Description: "Histological type according to ICD-O-3 classification"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Morphology Free Text
 Instance: CoreNeedleBiopsyMorphologyFreeText
@@ -94,7 +95,6 @@ Description: "Free text description of tumor morphology"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueString = "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // ICD-O Version
 Instance: CoreNeedleBiopsyICDOVersion
@@ -112,7 +112,6 @@ Description: "Version of ICD-O classification used"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $ICDO-3_Auflagen#33 "ICD-O-3 2. Auflage 2019"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Primary Gleason Pattern
 Instance: CoreNeedleBiopsyPrimaryGleasonPattern
@@ -206,7 +205,6 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Grading Group ISUP 2014/WHO 2016
 Instance: CoreNeedleBiopsyGradingGroupISUP
@@ -226,7 +224,6 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Histological Grade WHO
 Instance: CoreNeedleBiopsyHistologicalGradeWHO
@@ -244,7 +241,6 @@ Description: "Histological differentiation grade according to WHO"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010#4 "Undifferenziert"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Number of Positive Cores Right
 Instance: CoreNeedleBiopsyPositiveCoresRight
@@ -263,7 +259,6 @@ Description: "Number of tissue cores positive for carcinoma on the right side"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 3
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 
 // Number of Positive Cores Left
@@ -283,7 +278,6 @@ Description: "Number of tissue cores positive for carcinoma on the left side"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueQuantity.value = 4
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Ratio of Positive to Total Cores
 Instance: CoreNeedleBiopsyRatioPositiveCores
@@ -304,7 +298,6 @@ Description: "Ratio of positive cores to all examined cores"
 * valueRatio.numerator.unit = "cores"
 * valueRatio.denominator.value = 12
 * valueRatio.denominator.unit = "cores"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Percentage Tumor Total
 Instance: CoreNeedleBiopsyPercentageTumorTotal
@@ -325,7 +318,6 @@ Description: "Total percentage of tumor in all positive tissue cores"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Tumor Length Total
 Instance: CoreNeedleBiopsyTumorLengthTotal
@@ -346,7 +338,6 @@ Description: "Total linear length of carcinoma in millimeters"
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mm
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Perineural Infiltration
 Instance: CoreNeedleBiopsyPerineuralInfiltration
@@ -364,7 +355,6 @@ Description: "Presence of perineural invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Seminal Vesicle Invasion
 Instance: CoreNeedleBiopsySeminalVesicleInvasion
@@ -382,7 +372,6 @@ Description: "Tumor invasion into seminal vesicles (typically not assessable in 
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Lymphovascular Invasion
 Instance: CoreNeedleBiopsyLymphovascularInvasion
@@ -400,7 +389,6 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Periprostatic Fat Invasion
 Instance: CoreNeedleBiopsyPeriprostataticFatInvasion
@@ -418,7 +406,6 @@ Description: "Tumor invasion into periprostatic connective and adipose tissue (t
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Extraprostatic Extension Location
 Instance: CoreNeedleBiopsyExtraprostaticExtensionLocation
@@ -436,7 +423,6 @@ Description: "Anatomical location of extraprostatic tumor extension (typically n
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $loinc#LA25151-4 "Apical"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Intraductal Carcinoma
 Instance: CoreNeedleBiopsyIntraductalCarcinoma
@@ -454,7 +440,6 @@ Description: "Presence of intraductal carcinoma"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // ASAP
 Instance: CoreNeedleBiopsyASAP
@@ -472,7 +457,6 @@ Description: "Presence of atypical small acinar proliferation"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // High-grade PIN
 Instance: CoreNeedleBiopsyHighGradePIN
@@ -490,7 +474,6 @@ Description: "Presence of high-grade prostatic intraepithelial neoplasia"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)
 
 // Granulomatous Prostatitis
 Instance: CoreNeedleBiopsyGranulomatousProstatiti
@@ -508,4 +491,3 @@ Description: "Presence of granulomatous prostatitis"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsyCase)

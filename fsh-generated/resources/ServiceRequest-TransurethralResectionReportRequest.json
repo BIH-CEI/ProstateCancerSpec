@@ -79,7 +79,7 @@
     "reference": "Encounter/TransurethralResectionEncounter"
   },
   "subject": {
-    "reference": "Patient/Patient1"
+    "reference": "Patient/Patient2"
   },
   "requester": {
     "reference": "Practitioner/UrologistPractitioner"

@@ -13,7 +13,7 @@ Description: "Gesicherte Diagnose eines Prostatakarzinoms nach Biopsie, Indikati
 * code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * encounter = Reference(RadicalProstatectomyEncounter)
 * onsetDateTime = "2024-02-10"
 * recordedDate = "2024-02-10"

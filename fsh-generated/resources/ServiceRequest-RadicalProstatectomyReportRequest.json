@@ -73,7 +73,7 @@
     "reference": "Encounter/RadicalProstatectomyEncounter"
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient1"
   },
   "requester": {
     "reference": "Practitioner/UrologistPractitioner"

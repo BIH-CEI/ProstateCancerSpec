@@ -14,9 +14,9 @@
 
 **code**: Prostatahyperplasie ohne Beschwerden beim Wasserlassen
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#PSA-TUR-2024; status = finished; class = IMP (IMP)](Encounter-TransurethralResectionEncounter.md)
+**encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_003; status = finished; class = IMP (IMP)](Encounter-TransurethralResectionEncounter.md)
 
 **onset**: 2023-03-01
 
@@ -73,7 +73,7 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harn
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "encounter" : {
     "reference" : "Encounter/TransurethralResectionEncounter"

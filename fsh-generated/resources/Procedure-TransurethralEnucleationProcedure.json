@@ -37,7 +37,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient3"
   },
   "performedDateTime": "2024-05-10T10:30:00+01:00"
 }

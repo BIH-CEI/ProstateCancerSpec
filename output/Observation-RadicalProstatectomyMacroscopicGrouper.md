@@ -14,11 +14,11 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **code**: Pathology report gross observation Narrative
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
 **effective**: 2024-03-16 14:00:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: Makroskopische Messungen des Prostatektomiepräparats
 
@@ -33,6 +33,7 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
 
 **derivedFrom**: 
 
+* [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 * [Observation Prostate weight](Observation-RadicalProstatectomyMacroscopicProstateWeight.md)
 * [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateWidth.md)
 * [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateHeight.md)
@@ -75,7 +76,7 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-16T14:00:00+01:00",
   "performer" : [
@@ -99,6 +100,9 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
     ]
   },
   "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+    },
     {
       "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWeight"
     },

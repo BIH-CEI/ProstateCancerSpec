@@ -1,0 +1,508 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Bundle/TransurethralEnucleationDocument> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TransurethralEnucleationDocument"] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-04-15T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Patient/Patient3"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Patient/Patient3>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Patient/Patient3> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Organization/PathologyLabOrganization"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Organization/PathologyLabOrganization> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper> )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Composition/TransurethralEnucleationComposition> a fhir:Composition ;
+  fhir:id [ fhir:v "TransurethralEnucleationComposition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_TransurethralEnucleationComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition TransurethralEnucleationComposition</b></p><a name=\"TransurethralEnucleationComposition\"> </a><a name=\"hcTransurethralEnucleationComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-004</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-TransurethralEnucleationEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_004; status = finished; class = IMP (IMP)</a></p><p><b>date</b>: 2024-04-15 08:00:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostata Enucleation</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-TransurethralEnucleationReportRequest.html\">ServiceRequest Simple prostatectomy (procedure)</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/pathology-reports"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/pathology-reports>
+     ] ;
+     fhir:value [ fhir:v "PATH-COMP-2024-004" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://ihe-d.de/CodeSystems/IHEXDStypeCode"^^xsd:anyURI ;
+         fhir:l <http://ihe-d.de/CodeSystems/IHEXDStypeCode>
+       ] ;
+       fhir:code [ fhir:v "PATH" ]
+     ] [
+       a sct:721967005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "721967005" ] ;
+       fhir:display [ fhir:v "Tissue pathology biopsy report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient3> ;
+     fhir:reference [ fhir:v "Patient/Patient3" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/TransurethralEnucleationEncounter> ;
+     fhir:reference [ fhir:v "Encounter/TransurethralEnucleationEncounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-04-15T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ] ;
+     fhir:display [ fhir:v "Pathologisches Institut" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Histopathologischer Befundbericht - Prostata Enucleation"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+       fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+  ] ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "PATREPE" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralEnucleationReportRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/TransurethralEnucleationReportRequest" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Pathologiebefundbericht" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11526-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "11526-1" ] ;
+         fhir:display [ fhir:v "Pathology study" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/TransurethralEnucleationReport" ]
+     ] )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Patient/Patient3> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient3</b></p><a name=\"Patient3\"> </a><a name=\"hcPatient3\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</p><hr/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/patient-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/patient-ids>
+     ] ;
+     fhir:value [ fhir:v "PAT-2024-003" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Becker" ] ;
+     fhir:given ( [ fhir:v "Klaus" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1958-11-10"^^xsd:date] . # 
+
+<http://prostatecancerspec.org/Organization/PathologyLabOrganization> a fhir:Organization ;
+  fhir:id [ fhir:v "PathologyLabOrganization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/organization-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/organization-ids>
+     ] ;
+     fhir:value [ fhir:v "ORG-PATH-001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pathologielabor"] . # 
+
+<http://prostatecancerspec.org/DiagnosticReport/TransurethralEnucleationReport> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "TransurethralEnucleationReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_TransurethralEnucleationReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport TransurethralEnucleationReport</b></p><a name=\"TransurethralEnucleationReport\"> </a><a name=\"hcTransurethralEnucleationReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</td></tr><tr><td>When For</td><td>2024-05-12 17:00:00+0100</td></tr><tr><td>Reported</td><td>2024-05-13 08:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_004</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-TransurethralEnucleationMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen des Prostata Enucleation Präparats</td><td>Final</td><td><blockquote><div><p>Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>\n</div></blockquote></td><td>2024-04-11 14:00:00+0100</td></tr><tr><td><a href=\"Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2024-05-12</td><td>2024-05-12</td></tr></table><p>Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E_24_004" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralEnucleationReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/TransurethralEnucleationReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "SP" ] ;
+       fhir:display [ fhir:v "Surgical Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:60568-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "60568-3" ] ;
+       fhir:display [ fhir:v "Pathology Synoptic report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient3> ;
+     fhir:reference [ fhir:v "Patient/Patient3" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-05-12T17:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-05-13T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenPart> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenPart" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenBlock01> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenBlock01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide01A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide01A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide01B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide01B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenBlock02> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenBlock02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide02A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide02A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide02B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide02B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenBlock03> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenBlock03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide03A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide03A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide03B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide03B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenBlock04> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenBlock04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide04A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide04A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide04B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide04B" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenBlock05> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenBlock05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide05A> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide05A" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/TransurethralEnucleationSpecimenSlide05B> ;
+     fhir:reference [ fhir:v "Specimen/TransurethralEnucleationSpecimenSlide05B" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicGrouper" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationDiagnosticConclusionGrouper" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall."] . # 
+
+<http://prostatecancerspec.org/Observation/TransurethralEnucleationDiagnosticConclusionGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "TransurethralEnucleationDiagnosticConclusionGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TransurethralEnucleationDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralEnucleationDiagnosticConclusionGrouper</b></p><a name=\"TransurethralEnucleationDiagnosticConclusionGrouper\"> </a><a name=\"hcTransurethralEnucleationDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TransurethralEnucleationReportRequest.html\">ServiceRequest Simple prostatectomy (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient3.html\">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>effective</b>: 2024-05-12</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2024-05-12</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TransurethralEnucleationHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-TransurethralEnucleationMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-TransurethralEnucleationPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-TransurethralEnucleationSecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-TransurethralEnucleationGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-TransurethralEnucleationPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-TransurethralEnucleationGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-TransurethralEnucleationIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.html\">Observation Invasive cribriform carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-TransurethralEnucleationProstaticTissueInvolved.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-TransurethralEnucleationExtraprostaticExtension.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationSeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-TransurethralEnucleationPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/TransurethralEnucleationReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/TransurethralEnucleationReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22637-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22637-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient3> ;
+     fhir:reference [ fhir:v "Patient/Patient3" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-05-12"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+       fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+     ] ;
+     fhir:time [ fhir:v "2024-05-12"^^xsd:date ] ;
+     fhir:text [ fhir:v "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz." ]
+  ] ) ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationHistologicalTypeICDO3> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationHistologicalTypeICDO3" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMorphologyFreeText> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMorphologyFreeText" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationPrimaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationPrimaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationSecondaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationSecondaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationGleasonScoreTotal> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationGleasonScoreTotal" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationPercentageGleason45> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationPercentageGleason45" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationGradingGroupISUP> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationGradingGroupISUP" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationIntraductalCarcinoma> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationIntraductalCarcinoma" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationInvasiveCribriformCarcinoma> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationProstaticTissueInvolved> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationProstaticTissueInvolved" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationExtraprostaticExtension> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationExtraprostaticExtension" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationSeminalVesicleInvasion> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationSeminalVesicleInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationLymphovascularInvasion> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationLymphovascularInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationPerineuralInfiltration> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationPerineuralInfiltration" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation" ]
+  ] ) . # 
+
+<http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "TransurethralEnucleationMacroscopicGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TransurethralEnucleationMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TransurethralEnucleationMacroscopicGrouper</b></p><a name=\"TransurethralEnucleationMacroscopicGrouper\"> </a><a name=\"hcTransurethralEnucleationMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient3.html\">Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)</a></p><p><b>effective</b>: 2024-04-11 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen des Prostata Enucleation Präparats</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TransurethralEnucleationMacroscopicWeight.html\">Observation Specimen weight (observable entity)</a></li><li><a href=\"Observation-TransurethralEnucleationMacroscopicLength.html\">Observation Dimension [Length] of Specimen</a></li><li><a href=\"Observation-TransurethralEnucleationMacroscopicWidth.html\">Observation Dimension [Length] of Specimen</a></li><li><a href=\"Observation-TransurethralEnucleationMacroscopicDepth.html\">Observation Prostate size</a></li><li><a href=\"Observation-TransurethralEnucleationMacroscopicSeminalVesicles.html\">Observation Tumor finding</a></li><li><a href=\"Observation-TransurethralEnucleationMacroscopicLymphNodeDissection.html\">Observation Tumor finding</a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.html\">Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '-&gt;Klaus Becker  Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22634-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22634-0" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient3> ;
+     fhir:reference [ fhir:v "Patient/Patient3" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-04-11T14:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Makroskopische Messungen des Prostata Enucleation Präparats"
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat." ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:41216001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "41216001" ] ;
+       fhir:display [ fhir:v "Prostatic structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicWeight> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicWeight" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicLength> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicLength" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicWidth> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicWidth" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicDepth> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicDepth" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicSeminalVesicles> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicSeminalVesicles" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/TransurethralEnucleationMacroscopicLymphNodeDissection> ;
+     fhir:reference [ fhir:v "Observation/TransurethralEnucleationMacroscopicLymphNodeDissection" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

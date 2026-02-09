@@ -1,10 +1,10 @@
-# Patient 2 - Enukleation und Prostatektomie - Prostate Cancer Specification v0.1.0
+# Patient 2 - TUR-P (benigne) - Prostate Cancer Specification v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Patient 2 - Enukleation und Prostatektomie**
+* **Patient 2 - TUR-P (benigne)**
 
-## Example Patient: Patient 2 - Enukleation und Prostatektomie
+## Example Patient: Patient 2 - TUR-P (benigne)
 
 Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)
 

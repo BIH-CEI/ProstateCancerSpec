@@ -10,6 +10,6 @@ Description: "Prostata Enucleation zur Behandlung der benignen Prostatahyperplas
 * code.coding[ops] = http://fhir.de/CodeSystem/bfarm/ops#5-603 "Enukleation der Prostata"
 * code.coding[ops].version = "2020"
 * code.coding[sct] = $sct#236205008 "Simple prostatectomy (procedure)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient3)
 * performedDateTime = "2024-05-10T10:30:00+01:00"
 * note.text = "Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."

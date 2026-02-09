@@ -24,7 +24,7 @@ Description: "Vollständiges Prostatektomiepräparat mit Samenbläschen"
 
 * status = #available
 * type = $sct#118292001 "Surgical specimen"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * request = Reference(RadicalProstatectomyReportRequest)
 
 * collection
@@ -56,7 +56,7 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 01"
   * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:30:00+01:00"
@@ -91,7 +91,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock01)
 * collection
   * collectedDateTime = "2024-03-17T08:00:00+01:00"
@@ -122,7 +122,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock01)
 * collection
   * collectedDateTime = "2024-03-17T08:05:00+01:00"
@@ -157,7 +157,7 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 02"
   * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:35:00+01:00"
@@ -192,7 +192,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock02)
 * collection
   * collectedDateTime = "2024-03-17T08:10:00+01:00"
@@ -223,7 +223,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock02)
 * collection
   * collectedDateTime = "2024-03-17T08:15:00+01:00"
@@ -258,7 +258,7 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 03"
   * value = "E_24_002"
 * status = #available
 * type = $sct#1003707006 "Paraffin block (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:40:00+01:00"
@@ -293,7 +293,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock03)
 * collection
   * collectedDateTime = "2024-03-17T08:20:00+01:00"
@@ -324,7 +324,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräpa
   * value = "E_24_002"
 * status = #available
 * type = $sct#430685002 "Histopathology slide (physical object)"
-* subject = Reference(Patient2)
+* subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenBlock03)
 * collection
   * collectedDateTime = "2024-03-17T08:25:00+01:00"

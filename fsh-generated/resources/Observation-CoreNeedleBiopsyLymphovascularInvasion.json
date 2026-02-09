@@ -34,11 +34,6 @@
       "reference": "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
-  "derivedFrom": [
-    {
-      "reference": "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsyCase"
-    }
-  ],
   "status": "final",
   "code": {
     "coding": [

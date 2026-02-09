@@ -1,0 +1,1160 @@
+# Document Bundle - Prostatabiopsie - Prostate Cancer Specification v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Document Bundle - Prostatabiopsie**
+
+## Example Bundle: Document Bundle - Prostatabiopsie
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "CoreNeedleBiopsyDocument",
+  "type" : "document",
+  "timestamp" : "2024-01-20T15:30:00+01:00",
+  "entry" : [
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition",
+      "resource" : {
+        "resourceType" : "Composition",
+        "id" : "CoreNeedleBiopsyComposition",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CoreNeedleBiopsyComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CoreNeedleBiopsyComposition</b></p><a name=\"CoreNeedleBiopsyComposition\"> </a><a name=\"hcCoreNeedleBiopsyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)</a></p><p><b>date</b>: 2024-01-20 15:30:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatabiopsie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-CoreNeedleBiopsyReportRequest.html\">ServiceRequest Prostate Pathology biopsy report</a></td></tr></table></div>"
+        },
+        "identifier" : {
+          "type" : {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code" : "ACSN",
+                "display" : "Accession ID"
+              }
+            ]
+          },
+          "system" : "http://example.hospital.de/pathology-reports",
+          "value" : "PATH-COMP-2024-001"
+        },
+        "status" : "final",
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+              "code" : "PATH"
+            },
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "721967005",
+              "display" : "Tissue pathology biopsy report"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1",
+          "display" : "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)"
+        },
+        "encounter" : {
+          "reference" : "Encounter/CoreNeedleBiopsyEncounter"
+        },
+        "date" : "2024-01-20T15:30:00+01:00",
+        "author" : [
+          {
+            "reference" : "Organization/PathologyLabOrganization",
+            "display" : "Pathologisches Institut"
+          }
+        ],
+        "title" : "Histopathologischer Befundbericht - Prostatabiopsie",
+        "attester" : [
+          {
+            "mode" : "legal",
+            "party" : {
+              "reference" : "Organization/PathologyLabOrganization"
+            }
+          }
+        ],
+        "custodian" : {
+          "reference" : "Organization/PathologyLabOrganization"
+        },
+        "event" : [
+          {
+            "code" : [
+              {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code" : "PATREPE"
+                  }
+                ]
+              }
+            ],
+            "detail" : [
+              {
+                "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+              }
+            ]
+          }
+        ],
+        "section" : [
+          {
+            "title" : "Pathologiebefundbericht",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11526-1",
+                  "display" : "Pathology study"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "additional",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (8,5 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung.</p><h3>Makroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Länge (cm)</th><th>Zylinder</th></tr></thead><tbody><tr><td>01</td><td>Rechts apikal</td><td>1.2</td><td>2</td></tr><tr><td>02</td><td>Rechts medial</td><td>1.5</td><td>2</td></tr><tr><td>03</td><td>Rechts basal</td><td>1.3</td><td>2</td></tr><tr><td>04</td><td>Rechts lateral apikal</td><td>1.4</td><td>2</td></tr><tr><td>05</td><td>Rechts lateral medial</td><td>1.6</td><td>2</td></tr><tr><td>06</td><td>Rechts lateral basal</td><td>1.1</td><td>2</td></tr><tr><td>07</td><td>Links apikal</td><td>1.3</td><td>2</td></tr><tr><td>08</td><td>Links medial</td><td>1.4</td><td>2</td></tr><tr><td>09</td><td>Links basal</td><td>1.2</td><td>2</td></tr><tr><td>10</td><td>Links lateral apikal</td><td>1.5</td><td>2</td></tr><tr><td>11</td><td>Links lateral medial</td><td>1.3</td><td>2</td></tr><tr><td>12</td><td>Links lateral basal</td><td>1.4</td><td>2</td></tr></tbody></table><h3>Mikroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Befund</th><th>Gleason</th><th>Tumoranteil</th></tr></thead><tbody><tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr><tr><td>02</td><td>Adenokarzinom</td><td>4+3=7</td><td>60%</td></tr><tr><td>03</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>04</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr><tr><td>05</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>06</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>07</td><td>Adenokarzinom</td><td>3+4=7</td><td>45%</td></tr><tr><td>08</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>09</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>10</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>11</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr></tbody></table><h3>Diagnostische Schlussfolgerung</h3><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tbody><tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr><tr><td>Gleason-Score</td><td>3+4=7a</td></tr><tr><td>ISUP-Gradgruppe</td><td>2 (WHO 2016)</td></tr><tr><td>Positive Stanzen</td><td>7 von 12 (3 rechts, 4 links)</td></tr><tr><td>Tumoranteil gesamt</td><td>35%</td></tr><tr><td>Tumorlänge gesamt</td><td>18,5 mm</td></tr><tr><td>Anteil Gleason 4/5</td><td>77%</td></tr><tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr><tr><td>Periprostatische Fettinvasion</td><td>Nachgewiesen (apikal)</td></tr><tr><td>Samenblaseninfiltration</td><td>Nicht nachgewiesen</td></tr><tr><td>Lymphovaskuläre Invasion</td><td>Nicht nachgewiesen</td></tr><tr><td>Intraduktales Karzinom</td><td>Nicht nachgewiesen</td></tr><tr><td>ASAP</td><td>Nein</td></tr><tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr></tbody></table></div>"
+            },
+            "entry" : [
+              {
+                "reference" : "DiagnosticReport/CoreNeedleBiopsyReport"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Patient/Patient1",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "Patient1",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</p><hr/></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://example.hospital.de/patient-ids",
+            "value" : "PAT-2024-001"
+          }
+        ],
+        "name" : [
+          {
+            "family" : "Mueller",
+            "given" : ["Hans"]
+          }
+        ],
+        "gender" : "male",
+        "birthDate" : "1955-08-15"
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Organization/PathologyLabOrganization",
+      "resource" : {
+        "resourceType" : "Organization",
+        "id" : "PathologyLabOrganization",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://example.hospital.de/organization-ids",
+            "value" : "ORG-PATH-001"
+          }
+        ],
+        "name" : "Pathologielabor"
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport",
+      "resource" : {
+        "resourceType" : "DiagnosticReport",
+        "id" : "CoreNeedleBiopsyReport",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_CoreNeedleBiopsyReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport CoreNeedleBiopsyReport</b></p><a name=\"CoreNeedleBiopsyReport\"> </a><a name=\"hcCoreNeedleBiopsyReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</td></tr><tr><td>When For</td><td>2024-01-20 15:00:00+0100</td></tr><tr><td>Reported</td><td>2024-01-20 15:30:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.</p>\n</div></blockquote></td><td>2024-01-15 14:00:00+0100</td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyMicroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22635-7}\">Pathology report microscopic observation Narrative Other stain</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Mikroskopische Befunde aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>\n</div></blockquote></td><td>2024-01-17 10:00:00+0100</td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2023-03-15</td><td>2023-03-15</td></tr></table><p>Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall.</p></div>"
+        },
+        "identifier" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "ACSN",
+                  "display" : "Accession ID"
+                }
+              ]
+            },
+            "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+            "value" : "E_24_001"
+          }
+        ],
+        "basedOn" : [
+          {
+            "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+          }
+        ],
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code" : "SP",
+                "display" : "Surgical Pathology"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "60568-3",
+              "display" : "Pathology Synoptic report"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-01-20T15:00:00+01:00",
+        "issued" : "2024-01-20T15:30:00+01:00",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "specimen" : [
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen01Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen02Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen02Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen03Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen03Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen04Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen04Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen05Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen05Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen06Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen06Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen07Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen07Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen08Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen08Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen09Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen09Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen10Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen10Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen11Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen11Slide"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen12Block"
+          },
+          {
+            "reference" : "Specimen/CoreNeedleBiopsySpecimen12Slide"
+          }
+        ],
+        "result" : [
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicGrouper"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMicroscopicGrouper"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"
+          }
+        ],
+        "conclusion" : "Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall."
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "CoreNeedleBiopsyDiagnosticConclusionGrouper",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyDiagnosticConclusionGrouper</b></p><a name=\"CoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><a name=\"hcCoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-CoreNeedleBiopsyReportRequest.html\">ServiceRequest Prostate Pathology biopsy report</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2023-03-15</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2023-03-15</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyICDOVersion.html\">Observation World Health Organization tumor classification (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-CoreNeedleBiopsyGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistologicalGradeWHO.html\">Observation Grade Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyPositiveCoresRight.html\">Observation Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate</a></li><li><a href=\"Observation-CoreNeedleBiopsyPositiveCoresLeft.html\">Observation Number of tissue cores positive for carcinoma where In = Structure of left lateral lobe of prostate</a></li><li><a href=\"Observation-CoreNeedleBiopsyRatioPositiveCores.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyPercentageTumorTotal.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorLengthTotal.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsySeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyPeriprostataticFatInvasion.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyExtraprostaticExtensionLocation.html\">Observation Extraprostatic extension site [Anatomy] of Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN.html\">Observation High grade prostatic intraepithelial neoplasia</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatousProstatiti.html\">Observation Granulomatous prostatitis</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason01.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason01.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason02.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason02.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason01.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason02.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading01.html\">Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading02.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil01.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil02.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN01.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li></ul></div>"
+        },
+        "basedOn" : [
+          {
+            "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+          }
+        ],
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "laboratory"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "22637-3"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2023-03-15",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "note" : [
+          {
+            "authorReference" : {
+              "reference" : "Practitioner/PathologistPractitioner"
+            },
+            "time" : "2023-03-15",
+            "text" : "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
+          }
+        ],
+        "hasMember" : [
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistologicalTypeICDO3"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphologyFreeText"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyICDOVersion"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonScoreTotal"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPercentageGleason45"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGradingGroupISUP"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistologicalGradeWHO"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPositiveCoresRight"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPositiveCoresLeft"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyRatioPositiveCores"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPercentageTumorTotal"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorLengthTotal"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuralInfiltration"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySeminalVesicleInvasion"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovascularInvasion"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPeriprostataticFatInvasion"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraductalCarcinoma"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatousProstatiti"
+          }
+        ],
+        "derivedFrom" : [
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN01"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "CoreNeedleBiopsyMacroscopicGrouper",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyMacroscopicGrouper</b></p><a name=\"CoreNeedleBiopsyMacroscopicGrouper\"> </a><a name=\"hcCoreNeedleBiopsyMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-01-15 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen aller 12 Prostatastanzen</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength01.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength02.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength03.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength04.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength05.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength06.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength07.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength08.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength09.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength10.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength11.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength12.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount01.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount02.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount03.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount04.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount05.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount06.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount07.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount08.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount09.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount10.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality01.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality02.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality03.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality04.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality05.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality06.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality07.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality08.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality09.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality10.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality11.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality12.html\">Observation Laterality</a></li></ul></div>"
+        },
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "laboratory"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "22634-0"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-01-15T14:00:00+01:00",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "valueString" : "Makroskopische Messungen aller 12 Prostatastanzen",
+        "note" : [
+          {
+            "text" : "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion."
+          }
+        ],
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "41216001",
+              "display" : "Prostatic structure (body structure)"
+            }
+          ]
+        },
+        "derivedFrom" : [
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength03"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength05"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength08"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength10"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength12"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount03"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount05"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount08"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount10"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount12"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality03"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality05"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality08"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality10"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality12"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "CoreNeedleBiopsyMicroscopicGrouper",
+        "meta" : {
+          "profile" : [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper|2026.0.0"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyMicroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyMicroscopicGrouper</b></p><a name=\"CoreNeedleBiopsyMicroscopicGrouper\"> </a><a name=\"hcCoreNeedleBiopsyMicroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper\">MII PR Patho Microscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22635-7}\">Pathology report microscopic observation Narrative Other stain</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-01-17 10:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Mikroskopische Befunde aller 12 Prostatastanzen</p><p><b>note</b>: </p><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp01.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText01.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason01.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason01.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason01.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading01.html\">Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil01.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase01.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe01.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP01.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN01.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp02.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText02.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason02.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason02.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason02.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading02.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil02.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase02.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe02.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP02.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN02.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis02.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp03.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText03.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp04.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText04.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason04.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason04.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason04.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading04.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil04.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge04.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration04.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase04.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe04.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP04.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN04.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis04.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp05.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText05.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp06.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText06.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason06.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason06.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason06.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading06.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil06.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge06.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration06.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase06.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion06.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe06.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom06.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP06.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN06.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis06.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp07.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText07.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason07.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason07.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason07.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading07.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil07.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge07.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration07.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase07.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion07.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe07.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom07.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP07.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN07.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis07.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp08.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText08.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp09.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText09.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason09.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason09.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason09.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading09.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil09.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge09.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration09.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion09.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe09.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom09.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP09.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN09.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis09.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp10.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText10.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp11.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText11.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason11.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason11.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason11.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading11.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil11.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge11.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration11.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion11.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe11.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP11.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN11.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis11.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp12.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText12.html\">Observation Histology type in Cancer specimen Narrative</a></li></ul></div>"
+        },
+        "status" : "final",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "laboratory"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "22635-7"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/Patient1"
+        },
+        "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
+        "performer" : [
+          {
+            "reference" : "Practitioner/PathologistPractitioner"
+          }
+        ],
+        "valueString" : "Mikroskopische Befunde aller 12 Prostatastanzen",
+        "note" : [
+          {
+            "text" : "Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert."
+          }
+        ],
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "41216001",
+              "display" : "Prostatic structure (body structure)"
+            }
+          ]
+        },
+        "derivedFrom" : [
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis01"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis02"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp03"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText03"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis04"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp05"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText05"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis06"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis07"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp08"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText08"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis09"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp10"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText10"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsySekundaerGleason11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyProzentGleason11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGleasonGrading11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumoranteil11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisinSamenblase11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyIntraduktalesKarzinom11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyASAP11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHighGradePIN11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis11"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyHistoTyp12"
+          },
+          {
+            "reference" : "Observation/CoreNeedleBiopsyMorphText12"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

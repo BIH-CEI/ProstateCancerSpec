@@ -14,13 +14,13 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **code**: Specimen weight (observable entity)
 
-**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
+**subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
 **effective**: 2024-04-11 14:10:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 25 g(Details: UCUM codeg = 'g')
+**value**: 25 g (Details: UCUM codeg = 'g')
 
 **note**: 
 
@@ -31,7 +31,9 @@ Prostata Enucleation Gewicht 25g
 
 **bodySite**: Prostatic structure (body structure)
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E2024_004; status = available; type = Surgical specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Surgical specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'](QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.md)
 
 
 
@@ -75,7 +77,7 @@ Prostata Enucleation Gewicht 25g
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-04-11T14:10:00+01:00",
   "performer" : [
@@ -105,7 +107,12 @@ Prostata Enucleation Gewicht 25g
   },
   "specimen" : {
     "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
-  }
+  },
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+    }
+  ]
 }
 
 ```

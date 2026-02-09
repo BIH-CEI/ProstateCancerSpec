@@ -12,11 +12,11 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 
 | | |
 | :--- | :--- |
-| Subject | Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002) |
+| Subject | Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003) |
 | When For | 2024-05-12 17:00:00+0100 |
 | Reported | 2024-05-13 08:00:00+0100 |
-| Performer | [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md) |
-| Identifier | Accession ID/PATH-RPT-2024-004 |
+| Performer | [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md) |
+| Identifier | Accession ID/E_24_004 |
 
 **Report Details**
 
@@ -28,7 +28,7 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report final diagnosis Narrative](Observation-TransurethralEnucleationDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: 
+  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.By Practitioner/PathologistPractitioner @2024-05-12
   * **When For**: 2024-05-12
 
 Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.
@@ -57,13 +57,13 @@ Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade G
           }
         ]
       },
-      "system" : "http://example.hospital.de/diagnostic-reports",
-      "value" : "PATH-RPT-2024-004"
+      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value" : "E_24_004"
     }
   ],
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/TransurethralEnucleationServiceRequest"
+      "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
     }
   ],
   "status" : "final",
@@ -88,7 +88,7 @@ Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade G
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient2"
+    "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-05-12T17:00:00+01:00",
   "issued" : "2024-05-13T08:00:00+01:00",

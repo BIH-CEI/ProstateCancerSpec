@@ -27,7 +27,7 @@
             {
               "answer": [
                 {
-                  "valueDate": "1960-03-22"
+                  "valueDate": "1955-08-15"
                 }
               ],
               "linkId": "2.16.840.1.113883.3.1937.777.18.2.86",
@@ -36,7 +36,7 @@
             {
               "answer": [
                 {
-                  "valueString": "PAT-2024-002"
+                  "valueString": "PAT-2024-001"
                 }
               ],
               "linkId": "2.16.840.1.113883.3.1937.777.18.2.87",
@@ -264,7 +264,7 @@
   "questionnaire": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435",
   "status": "completed",
   "subject": {
-    "reference": "Patient/Patient2"
+    "reference": "Patient/Patient1"
   },
   "authored": "2024-03-20T14:30:00+01:00",
   "author": {

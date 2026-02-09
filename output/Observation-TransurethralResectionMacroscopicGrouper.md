@@ -14,11 +14,11 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **code**: Pathology report gross observation Narrative
 
-**subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
+**subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
 **effective**: 2024-04-11 14:00:00+0100
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: Makroskopische Messungen des TUR-Prostata Präparats
 
@@ -36,6 +36,8 @@ Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5
 * [Observation Specimen weight (observable entity)](Observation-TransurethralResectionMacroscopicWeight.md)
 * [Observation Tumor finding](Observation-TransurethralResectionMacroscopicSeminalVesicles.md)
 * [Observation Tumor finding](Observation-TransurethralResectionMacroscopicLymphNodeDissection.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'](QuestionnaireResponse-QuestionnaireResponseTransurethralResection.md)
 
 
 
@@ -70,7 +72,7 @@ Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5
     ]
   },
   "subject" : {
-    "reference" : "Patient/Patient1"
+    "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-11T14:00:00+01:00",
   "performer" : [
@@ -102,6 +104,11 @@ Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5
     },
     {
       "reference" : "Observation/TransurethralResectionMacroscopicLymphNodeDissection"
+    }
+  ],
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
     }
   ]
 }

@@ -8,7 +8,7 @@
 
 Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group), [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Tru-cut biopsy of prostate (procedure)](ServiceRequest-CoreNeedleBiopsyRequest.md)
+**basedOn**: [ServiceRequest Prostate Pathology biopsy report](ServiceRequest-CoreNeedleBiopsyReportRequest.md)
 
 **status**: Final
 
@@ -20,7 +20,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **effective**: 2023-03-15
 
-**performer**: [Practitioner Maria Schneider](Practitioner-PathologistPractitioner.md)
+**performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)
 
@@ -40,7 +40,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
   },
   "basedOn" : [
     {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyRequest"
+      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
     }
   ],
   "status" : "final",

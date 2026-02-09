@@ -1,0 +1,1194 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Bundle/CoreNeedleBiopsyDocument> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyDocument"] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-01-20T15:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Patient/Patient1"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Patient/Patient1>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Patient/Patient1> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Organization/PathologyLabOrganization"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Organization/PathologyLabOrganization> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper> )
+  ] [
+     fhir:fullUrl [
+       fhir:v "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper"^^xsd:anyURI ;
+       fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper>
+     ] ;
+     fhir:resource ( <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper> )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Composition/CoreNeedleBiopsyComposition> a fhir:Composition ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyComposition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_CoreNeedleBiopsyComposition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition CoreNeedleBiopsyComposition</b></p><a name=\"CoreNeedleBiopsyComposition\"> </a><a name=\"hcCoreNeedleBiopsyComposition\"> </a><p><b>identifier</b>: Accession ID/PATH-COMP-2024-001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://ihe-d.de/CodeSystems/IHEXDStypeCode PATH}, {http://snomed.info/sct 721967005}\">Tissue pathology biopsy report</span></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)</a></p><p><b>date</b>: 2024-01-20 15:30:00+0100</p><p><b>author</b>: <a href=\"Organization-PathologyLabOrganization.html\">Pathologisches Institut</a></p><p><b>title</b>: Histopathologischer Befundbericht - Prostatabiopsie</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td><a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-PathologyLabOrganization.html\">Organization Pathologielabor</a></p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode PATREPE}\">pathology report entry task</span></td><td><a href=\"ServiceRequest-CoreNeedleBiopsyReportRequest.html\">ServiceRequest Prostate Pathology biopsy report</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://example.hospital.de/pathology-reports"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/pathology-reports>
+     ] ;
+     fhir:value [ fhir:v "PATH-COMP-2024-001" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://ihe-d.de/CodeSystems/IHEXDStypeCode"^^xsd:anyURI ;
+         fhir:l <http://ihe-d.de/CodeSystems/IHEXDStypeCode>
+       ] ;
+       fhir:code [ fhir:v "PATH" ]
+     ] [
+       a sct:721967005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "721967005" ] ;
+       fhir:display [ fhir:v "Tissue pathology biopsy report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ] ;
+     fhir:display [ fhir:v "Hans Mueller, geb. 15.08.1955 (PAT-2024-001)" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/CoreNeedleBiopsyEncounter> ;
+     fhir:reference [ fhir:v "Encounter/CoreNeedleBiopsyEncounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-01-20T15:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ] ;
+     fhir:display [ fhir:v "Pathologisches Institut" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Histopathologischer Befundbericht - Prostatabiopsie"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+       fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <http://prostatecancerspec.org/Organization/PathologyLabOrganization> ;
+     fhir:reference [ fhir:v "Organization/PathologyLabOrganization" ]
+  ] ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
+         fhir:code [ fhir:v "PATREPE" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:l <http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyReportRequest> ;
+       fhir:reference [ fhir:v "ServiceRequest/CoreNeedleBiopsyReportRequest" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Pathologiebefundbericht" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11526-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "11526-1" ] ;
+         fhir:display [ fhir:v "Pathology study" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "additional" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (8,5 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung.</p><h3>Makroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Länge (cm)</th><th>Zylinder</th></tr></thead><tbody><tr><td>01</td><td>Rechts apikal</td><td>1.2</td><td>2</td></tr><tr><td>02</td><td>Rechts medial</td><td>1.5</td><td>2</td></tr><tr><td>03</td><td>Rechts basal</td><td>1.3</td><td>2</td></tr><tr><td>04</td><td>Rechts lateral apikal</td><td>1.4</td><td>2</td></tr><tr><td>05</td><td>Rechts lateral medial</td><td>1.6</td><td>2</td></tr><tr><td>06</td><td>Rechts lateral basal</td><td>1.1</td><td>2</td></tr><tr><td>07</td><td>Links apikal</td><td>1.3</td><td>2</td></tr><tr><td>08</td><td>Links medial</td><td>1.4</td><td>2</td></tr><tr><td>09</td><td>Links basal</td><td>1.2</td><td>2</td></tr><tr><td>10</td><td>Links lateral apikal</td><td>1.5</td><td>2</td></tr><tr><td>11</td><td>Links lateral medial</td><td>1.3</td><td>2</td></tr><tr><td>12</td><td>Links lateral basal</td><td>1.4</td><td>2</td></tr></tbody></table><h3>Mikroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Befund</th><th>Gleason</th><th>Tumoranteil</th></tr></thead><tbody><tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr><tr><td>02</td><td>Adenokarzinom</td><td>4+3=7</td><td>60%</td></tr><tr><td>03</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>04</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr><tr><td>05</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>06</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>07</td><td>Adenokarzinom</td><td>3+4=7</td><td>45%</td></tr><tr><td>08</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>09</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>10</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>11</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr></tbody></table><h3>Diagnostische Schlussfolgerung</h3><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tbody><tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr><tr><td>Gleason-Score</td><td>3+4=7a</td></tr><tr><td>ISUP-Gradgruppe</td><td>2 (WHO 2016)</td></tr><tr><td>Positive Stanzen</td><td>7 von 12 (3 rechts, 4 links)</td></tr><tr><td>Tumoranteil gesamt</td><td>35%</td></tr><tr><td>Tumorlänge gesamt</td><td>18,5 mm</td></tr><tr><td>Anteil Gleason 4/5</td><td>77%</td></tr><tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr><tr><td>Periprostatische Fettinvasion</td><td>Nachgewiesen (apikal)</td></tr><tr><td>Samenblaseninfiltration</td><td>Nicht nachgewiesen</td></tr><tr><td>Lymphovaskuläre Invasion</td><td>Nicht nachgewiesen</td></tr><tr><td>Intraduktales Karzinom</td><td>Nicht nachgewiesen</td></tr><tr><td>ASAP</td><td>Nein</td></tr><tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr></tbody></table></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/CoreNeedleBiopsyReport" ]
+     ] )
+  ] ) . # 
+
+<http://prostatecancerspec.org/Patient/Patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</p><hr/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/patient-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/patient-ids>
+     ] ;
+     fhir:value [ fhir:v "PAT-2024-001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Mueller" ] ;
+     fhir:given ( [ fhir:v "Hans" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1955-08-15"^^xsd:date] . # 
+
+<http://prostatecancerspec.org/Organization/PathologyLabOrganization> a fhir:Organization ;
+  fhir:id [ fhir:v "PathologyLabOrganization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_PathologyLabOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization PathologyLabOrganization</b></p><a name=\"PathologyLabOrganization\"> </a><a name=\"hcPathologyLabOrganization\"> </a><p><b>identifier</b>: <code>http://example.hospital.de/organization-ids</code>/ORG-PATH-001</p><p><b>name</b>: Pathologielabor</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.hospital.de/organization-ids"^^xsd:anyURI ;
+       fhir:l <http://example.hospital.de/organization-ids>
+     ] ;
+     fhir:value [ fhir:v "ORG-PATH-001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pathologielabor"] . # 
+
+<http://prostatecancerspec.org/DiagnosticReport/CoreNeedleBiopsyReport> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_CoreNeedleBiopsyReport\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport CoreNeedleBiopsyReport</b></p><a name=\"CoreNeedleBiopsyReport\"> </a><a name=\"hcCoreNeedleBiopsyReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report\">MII PR Patho Reportversion: null2026.0.0)</a></p></div><h2><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Surgical Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</td></tr><tr><td>When For</td><td>2024-01-20 15:00:00+0100</td></tr><tr><td>Reported</td><td>2024-01-20 15:30:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></td></tr><tr><td>Identifier</td><td> Accession ID/E_24_001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyMacroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Makroskopische Messungen aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.</p>\n</div></blockquote></td><td>2024-01-15 14:00:00+0100</td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyMicroscopicGrouper.html\"><span title=\"Codes:{http://loinc.org 22635-7}\">Pathology report microscopic observation Narrative Other stain</span></a> (<span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span>)</td><td>Mikroskopische Befunde aller 12 Prostatastanzen</td><td>Final</td><td><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>\n</div></blockquote></td><td>2024-01-17 10:00:00+0100</td></tr><tr><td><a href=\"Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html\"><span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></a></td><td/><td>Final</td><td><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>\n</div></blockquote>By Practitioner/PathologistPractitioner @2023-03-15</td><td>2023-03-15</td></tr></table><p>Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "ACSN" ] ;
+         fhir:display [ fhir:v "Accession ID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://pathologie.example-hospital.de/fhir/fn/befundbericht"^^xsd:anyURI ;
+       fhir:l <https://pathologie.example-hospital.de/fhir/fn/befundbericht>
+     ] ;
+     fhir:value [ fhir:v "E_24_001" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/CoreNeedleBiopsyReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "SP" ] ;
+       fhir:display [ fhir:v "Surgical Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:60568-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "60568-3" ] ;
+       fhir:display [ fhir:v "Pathology Synoptic report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-01-20T15:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-01-20T15:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:specimen ( [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen02Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen02Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen02Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen02Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen02Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen02Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen03Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen03Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen03Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen03Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen03Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen03Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen04Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen04Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen04Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen04Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen04Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen04Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen05Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen05Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen05Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen05Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen05Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen05Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen06Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen06Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen06Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen06Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen06Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen06Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen07Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen07Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen07Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen07Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen07Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen07Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen08Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen08Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen08Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen08Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen08Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen08Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen09Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen09Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen09Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen09Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen10Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen10Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen10Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen10Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen10Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen10Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen11Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen11Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen11Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen11Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen11Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen11Slide" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen12Part> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen12Part" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen12Block> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen12Block" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen12Slide> ;
+     fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen12Slide" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicGrouper" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMicroscopicGrouper" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall."] . # 
+
+<http://prostatecancerspec.org/Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyDiagnosticConclusionGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyDiagnosticConclusionGrouper</b></p><a name=\"CoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><a name=\"hcCoreNeedleBiopsyDiagnosticConclusionGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper\">MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-CoreNeedleBiopsyReportRequest.html\">ServiceRequest Prostate Pathology biopsy report</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2023-03-15</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>note</b>: By Practitioner/PathologistPractitioner @2023-03-15</p><blockquote><div><p>Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>\n</div></blockquote><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyHistologicalTypeICDO3.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphologyFreeText.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyICDOVersion.html\">Observation World Health Organization tumor classification (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaryGleasonPattern.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySecondaryGleasonPattern.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonScoreTotal.html\">Observation Gleason score in Specimen Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPercentageGleason45.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area</a></li><li><a href=\"Observation-CoreNeedleBiopsyGradingGroupISUP.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistologicalGradeWHO.html\">Observation Grade Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyPositiveCoresRight.html\">Observation Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate</a></li><li><a href=\"Observation-CoreNeedleBiopsyPositiveCoresLeft.html\">Observation Number of tissue cores positive for carcinoma where In = Structure of left lateral lobe of prostate</a></li><li><a href=\"Observation-CoreNeedleBiopsyRatioPositiveCores.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyPercentageTumorTotal.html\">Observation Tissue cores.positive.carcinoma in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorLengthTotal.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuralInfiltration.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsySeminalVesicleInvasion.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovascularInvasion.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyPeriprostataticFatInvasion.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyExtraprostaticExtensionLocation.html\">Observation Extraprostatic extension site [Anatomy] of Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraductalCarcinoma.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN.html\">Observation High grade prostatic intraepithelial neoplasia</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatousProstatiti.html\">Observation Granulomatous prostatitis</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason01.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason01.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason02.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason02.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason01.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason02.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading01.html\">Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading02.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil01.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil02.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN01.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/CoreNeedleBiopsyReportRequest" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22637-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22637-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-03-15"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+       fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+     ] ;
+     fhir:time [ fhir:v "2023-03-15"^^xsd:date ] ;
+     fhir:text [ fhir:v "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen." ]
+  ] ) ; # 
+  fhir:hasMember ( [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistologicalTypeICDO3> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistologicalTypeICDO3" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphologyFreeText> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphologyFreeText" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyICDOVersion> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyICDOVersion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySecondaryGleasonPattern> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySecondaryGleasonPattern" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonScoreTotal> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonScoreTotal" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPercentageGleason45> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPercentageGleason45" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGradingGroupISUP> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGradingGroupISUP" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistologicalGradeWHO> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistologicalGradeWHO" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPositiveCoresRight> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPositiveCoresRight" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPositiveCoresLeft> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPositiveCoresLeft" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyRatioPositiveCores> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyRatioPositiveCores" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPercentageTumorTotal> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPercentageTumorTotal" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorLengthTotal> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorLengthTotal" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuralInfiltration> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuralInfiltration" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySeminalVesicleInvasion> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySeminalVesicleInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovascularInvasion> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovascularInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPeriprostataticFatInvasion> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPeriprostataticFatInvasion" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraductalCarcinoma> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraductalCarcinoma" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatousProstatiti> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatousProstatiti" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN01" ]
+  ] ) . # 
+
+<http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyMacroscopicGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyMacroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyMacroscopicGrouper</b></p><a name=\"CoreNeedleBiopsyMacroscopicGrouper\"> </a><a name=\"hcCoreNeedleBiopsyMacroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper\">MII PR Patho Macroscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22634-0}\">Pathology report gross observation Narrative</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-01-15 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Makroskopische Messungen aller 12 Prostatastanzen</p><p><b>note</b>: </p><blockquote><div><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength01.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength02.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength03.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength04.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength05.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength06.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength07.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength08.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength09.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength10.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength11.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLength12.html\">Observation Length of tissue core(s)</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount01.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount02.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount03.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount04.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount05.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount06.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount07.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount08.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount09.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount10.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.html\">Observation Total number of cores in Tissue core</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality01.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality02.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality03.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality04.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality05.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality06.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality07.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality08.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality09.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality10.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality11.html\">Observation Laterality</a></li><li><a href=\"Observation-CoreNeedleBiopsyMacroscopicLaterality12.html\">Observation Laterality</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22634-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22634-0" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-01-15T14:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Makroskopische Messungen aller 12 Prostatastanzen"
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion." ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:41216001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "41216001" ] ;
+       fhir:display [ fhir:v "Prostatic structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength03> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength05> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength08> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength08" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength10> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength10" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLength12> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLength12" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount03> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount05> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount08> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount08" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount10> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount10" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicCylinderCount12> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicCylinderCount12" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality03> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality05> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality08> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality08" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality10> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality10" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMacroscopicLaterality12> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMacroscopicLaterality12" ]
+  ] ) . # 
+
+<http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper> a fhir:Observation ;
+  fhir:id [ fhir:v "CoreNeedleBiopsyMicroscopicGrouper"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper|2026.0.0"^^xsd:anyURI ;
+       fhir:l <https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper?version=2026.0.0>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CoreNeedleBiopsyMicroscopicGrouper\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CoreNeedleBiopsyMicroscopicGrouper</b></p><a name=\"CoreNeedleBiopsyMicroscopicGrouper\"> </a><a name=\"hcCoreNeedleBiopsyMicroscopicGrouper\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper\">MII PR Patho Microscopic Grouperversion: null2026.0.0)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 22635-7}\">Pathology report microscopic observation Narrative Other stain</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>effective</b>: 2024-01-17 10:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><p><b>value</b>: Mikroskopische Befunde aller 12 Prostatastanzen</p><p><b>note</b>: </p><blockquote><div><p>Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 41216001}\">Prostatic structure (body structure)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp01.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText01.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason01.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason01.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason01.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading01.html\">Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil01.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration01.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase01.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe01.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP01.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN01.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp02.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText02.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason02.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason02.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason02.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading02.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil02.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration02.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase02.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion02.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe02.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom02.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP02.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN02.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis02.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp03.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText03.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp04.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText04.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason04.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason04.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason04.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading04.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil04.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge04.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration04.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase04.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion04.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe04.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom04.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP04.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN04.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis04.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp05.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText05.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp06.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText06.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason06.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason06.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason06.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading06.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil06.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge06.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration06.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase06.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion06.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe06.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom06.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP06.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN06.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis06.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp07.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText07.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason07.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason07.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason07.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading07.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil07.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge07.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration07.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase07.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion07.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe07.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom07.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP07.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN07.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis07.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp08.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText08.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp09.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText09.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason09.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason09.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason09.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading09.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil09.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge09.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration09.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase09.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion09.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe09.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom09.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP09.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN09.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis09.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp10.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText10.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp11.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText11.html\">Observation Histology type in Cancer specimen Narrative</a></li><li><a href=\"Observation-CoreNeedleBiopsyPrimaerGleason11.html\">Observation Gleason pattern.primary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsySekundaerGleason11.html\">Observation Gleason pattern.secondary in Prostate tumor</a></li><li><a href=\"Observation-CoreNeedleBiopsyProzentGleason11.html\">Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGleasonGrading11.html\">Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative</a></li><li><a href=\"Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.html\">Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumoranteil11.html\">Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumorbefallinLaenge11.html\">Observation Total linear mm of carcinoma</a></li><li><a href=\"Observation-CoreNeedleBiopsyPerineuraleInfiltration11.html\">Observation Perineural invasion [Presence] in Cancer specimen</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisinSamenblase11.html\">Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyLymphovaskulaereInvasion11.html\">Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyTumornachweisInFettgewebe11.html\">Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</a></li><li><a href=\"Observation-CoreNeedleBiopsyIntraduktalesKarzinom11.html\">Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)</a></li><li><a href=\"Observation-CoreNeedleBiopsyASAP11.html\">Observation Atypical small acinar proliferation of prostate (disorder)</a></li><li><a href=\"Observation-CoreNeedleBiopsyHighGradePIN11.html\">Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyGranulomatoeseProstatitis11.html\">Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy</a></li><li><a href=\"Observation-CoreNeedleBiopsyHistoTyp12.html\">Observation Histology and Behavior ICD-O-3 Cancer</a></li><li><a href=\"Observation-CoreNeedleBiopsyMorphText12.html\">Observation Histology type in Cancer specimen Narrative</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:22635-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "22635-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-01-17T10:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Mikroskopische Befunde aller 12 Prostatastanzen"
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert." ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:41216001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "41216001" ] ;
+       fhir:display [ fhir:v "Prostatic structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis01> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis01" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis02> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis02" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp03> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText03> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText03" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis04> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis04" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp05> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText05> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText05" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis06> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis06" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis07> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis07" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp08> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp08" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText08> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText08" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis09> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis09" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp10> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp10" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText10> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText10" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPrimaerGleason11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPrimaerGleason11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsySekundaerGleason11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsySekundaerGleason11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyProzentGleason11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyProzentGleason11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGleasonGrading11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGleasonGrading11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumoranteil11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumoranteil11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumorbefallinLaenge11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumorbefallinLaenge11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyPerineuraleInfiltration11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyPerineuraleInfiltration11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisinSamenblase11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisinSamenblase11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyLymphovaskulaereInvasion11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyLymphovaskulaereInvasion11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyTumornachweisInFettgewebe11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyTumornachweisInFettgewebe11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyIntraduktalesKarzinom11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyIntraduktalesKarzinom11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyASAP11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyASAP11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHighGradePIN11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHighGradePIN11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyGranulomatoeseProstatitis11> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyGranulomatoeseProstatitis11" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyHistoTyp12> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyHistoTyp12" ]
+  ] [
+     fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMorphText12> ;
+     fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMorphText12" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
