@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/composition.fsh",
     "startLine": 5,
-    "endLine": 32
+    "endLine": 34
   },
   {
     "outputFile": "Composition-TransurethralEnucleationComposition.json",
@@ -53,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/composition.fsh",
     "startLine": 5,
-    "endLine": 31
+    "endLine": 34
   },
   {
     "outputFile": "Composition-TransurethralResectionComposition.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "examples/TransurethralResection/composition.fsh",
     "startLine": 5,
-    "endLine": 31
+    "endLine": 34
   },
   {
     "outputFile": "Condition-CoreNeedleBiopsyDiagnosisConfirmed.json",

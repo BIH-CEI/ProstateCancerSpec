@@ -315,7 +315,8 @@
     ]
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>" : {
-    <a href="Patient-Patient2.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/Patient2"
+    <a href="Patient-Patient2.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/Patient2",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Peter Schmidt, geb. 22.03.1960 (PAT-2024-002)"
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>" : {
     <a href="Encounter-TransurethralResectionEncounter.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/TransurethralResectionEncounter"
@@ -370,6 +371,10 @@
           }
         ]
       },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "additional",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h3&gt;Klinische Angaben&lt;/h3&gt;&lt;p&gt;Obstruktive Miktionsbeschwerden bei bekannter Prostatahyperplasie. PSA 4,2 ng/ml. Transurethrale Resektion der Prostata (TUR-P).&lt;/p&gt;&lt;h3&gt;Makroskopie&lt;/h3&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;4\&quot; cellspacing=\&quot;0\&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Präparat&lt;/td&gt;&lt;td&gt;TUR-Prostata-Späne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Gewicht&lt;/td&gt;&lt;td&gt;25 g&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Samenblasen&lt;/td&gt;&lt;td&gt;Nicht im Resektat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Lymphknoten&lt;/td&gt;&lt;td&gt;Nicht im Resektat&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Mikroskopie&lt;/h3&gt;&lt;p&gt;Prostatastanzgewebe mit ausgeprägter nodulärer glandulärer und stromaler Hyperplasie. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität.&lt;/p&gt;&lt;h3&gt;Diagnostische Schlussfolgerung&lt;/h3&gt;&lt;p&gt;&lt;b&gt;Diagnose:&lt;/b&gt; Benigne Prostatahyperplasie (BPH)&lt;/p&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;4\&quot; cellspacing=\&quot;0\&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Histologische Diagnose&lt;/td&gt;&lt;td&gt;Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;BPH-Typ&lt;/td&gt;&lt;td&gt;Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Entzündung&lt;/td&gt;&lt;td&gt;Fokale chronisch-lymphozytäre Prostatitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Malignität&lt;/td&gt;&lt;td&gt;Kein Anhalt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ASAP&lt;/td&gt;&lt;td&gt;Nicht nachgewiesen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;High-grade-PIN&lt;/td&gt;&lt;td&gt;Nicht nachgewiesen&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;"
+      },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
           <a href="DiagnosticReport-TransurethralResectionReport.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "DiagnosticReport/TransurethralResectionReport"
@@ -401,7 +406,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 11:01+0100">2026-02-09</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 9, 2026 15:02+0100">2026-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
