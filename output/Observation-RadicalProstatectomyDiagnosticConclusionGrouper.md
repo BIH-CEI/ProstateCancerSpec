@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyReportRequest.md)
+**basedOn**: [ServiceRequest Pathology synoptic report](ServiceRequest-RadicalProstatectomyReportRequest.md)
 
 **status**: Final
 
@@ -26,7 +26,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 > 
 
-Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.
+Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.
 
 
 **hasMember**: 
@@ -41,8 +41,8 @@ Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4
 * [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-RadicalProstatectomyGradingGroupISUP.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyIntraductalCarcinoma.md)
 * [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.md)
-* [Observation Size.maximum dimension of tumor in Prostate](Observation-RadicalProstatectomyTumorVolume.md)
-* [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-RadicalProstatectomyProstaticTissueInvolved.md)
+* [Observation Size.maximum dimension of tumor in Prostate](Observation-RadicalProstatectomyMaxTumorDiameter.md)
+* [Observation Tissue involvement by tumor as percentage of total tissue examined](Observation-RadicalProstatectomyProstaticTissueInvolved.md)
 * [Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols](Observation-RadicalProstatectomyExtraprostaticExtension.md)
 * [Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols](Observation-RadicalProstatectomySeminalVesicleInvasion.md)
 * [Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols](Observation-RadicalProstatectomyLymphovascularInvasion.md)
@@ -108,7 +108,7 @@ Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4
         "reference" : "Practitioner/PathologistPractitioner"
       },
       "time" : "2024-03-20",
-      "text" : "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0."
+      "text" : "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0."
     }
   ],
   "hasMember" : [
@@ -143,7 +143,7 @@ Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4
       "reference" : "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
     },
     {
-      "reference" : "Observation/RadicalProstatectomyTumorVolume"
+      "reference" : "Observation/RadicalProstatectomyMaxTumorDiameter"
     },
     {
       "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"

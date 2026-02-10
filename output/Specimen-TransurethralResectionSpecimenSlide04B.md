@@ -14,11 +14,11 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Histopathology slide (physical object)
+**type**: Tissue section (specimen)
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_4; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Paraffin block (physical object)](Specimen-TransurethralResectionSpecimenBlock04.md)
+**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_4; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Tissue block specimen (specimen)](Specimen-TransurethralResectionSpecimenBlock04.md)
 
 ### Collections
 
@@ -70,8 +70,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "430685002",
-        "display" : "Histopathology slide (physical object)"
+        "code" : "430856003",
+        "display" : "Tissue section (specimen)"
       }
     ]
   },

@@ -699,7 +699,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 06"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 // =============================================================================
-// STANZE 07 - Links lateral basal (POSITIVE)
+// STANZE 07 - Links lateral basal (POSITIVE - HIGHEST GRADE 4+5=9)
 // =============================================================================
 
 Instance: CoreNeedleBiopsySpecimen07Part
@@ -931,7 +931,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 08"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 // =============================================================================
-// STANZE 09 - Links lateral apikal (POSITIVE - HIGHEST GRADE)
+// STANZE 09 - Links lateral apikal (POSITIVE)
 // =============================================================================
 
 Instance: CoreNeedleBiopsySpecimen09Part

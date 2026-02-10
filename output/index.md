@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-02-09 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-02-10 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -127,7 +127,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-02-09T15:02:42+01:00",
+  "date" : "2026-02-10T16:25:07+01:00",
   "publisher" : "BIH CEI",
   "contact" : [
     {
@@ -2050,6 +2050,62 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
           }
         ],
         "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide01"
+        },
+        "name" : "HE-Schnitt Lymphknoten links 01",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide02"
+        },
+        "name" : "HE-Schnitt Lymphknoten links 02",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide01"
+        },
+        "name" : "HE-Schnitt Lymphknoten rechts 01",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide02"
+        },
+        "name" : "HE-Schnitt Lymphknoten rechts 02",
+        "description" : "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
           "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
         },
         "name" : "HE-Schnitt Stanze 01",
@@ -3296,6 +3352,20 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
           }
         ],
         "reference" : {
+          "reference" : "Observation/RadicalProstatectomyMaxTumorDiameter"
+        },
+        "name" : "Maximum Tumor Diameter - Prostatectomy",
+        "description" : "Maximum tumor diameter in millimeters",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
           "reference" : "Observation/CoreNeedleBiopsyMicroscopicGrouper"
         },
         "name" : "Mikroskopische Befunde Grouper",
@@ -3730,6 +3800,34 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
           }
         ],
         "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock"
+        },
+        "name" : "Paraffinblock Lymphknoten links",
+        "description" : "Paraffineinbettung der pelvinen Lymphknoten links",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightBlock"
+        },
+        "name" : "Paraffinblock Lymphknoten rechts",
+        "description" : "Paraffineinbettung der pelvinen Lymphknoten rechts",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
           "reference" : "Specimen/CoreNeedleBiopsySpecimen01Block"
         },
         "name" : "Paraffinblock Stanze 01",
@@ -4014,6 +4112,34 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
         },
         "name" : "Patient 3 - Enukleation (Karzinom)",
         "description" : "Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeft"
+        },
+        "name" : "Pelvine Lymphknoten links (Einsendespecimen)",
+        "description" : "Pelvine Lymphknoten links aus der Lymphadenektomie",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRight"
+        },
+        "name" : "Pelvine Lymphknoten rechts (Einsendespecimen)",
+        "description" : "Pelvine Lymphknoten rechts aus der Lymphadenektomie",
         "exampleBoolean" : true
       },
       {
@@ -5790,20 +5916,6 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
         },
         "name" : "Transurethrale Resektion der Prostata",
         "description" : "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/RadicalProstatectomyTumorVolume"
-        },
-        "name" : "Tumor Volume - Prostatectomy",
-        "description" : "Total tumor volume in cubic centimeters",
         "exampleBoolean" : true
       },
       {

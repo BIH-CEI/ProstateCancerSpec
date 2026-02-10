@@ -14,11 +14,11 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Paraffin block (physical object)
+**type**: Tissue block specimen (specimen)
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Surgical specimen](Specimen-RadicalProstatectomySpecimenPart.md)
+**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)](Specimen-RadicalProstatectomySpecimenPart.md)
 
 ### Collections
 
@@ -70,8 +70,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "1003707006",
-        "display" : "Paraffin block (physical object)"
+        "code" : "1201985008",
+        "display" : "Tissue block specimen (specimen)"
       }
     ]
   },

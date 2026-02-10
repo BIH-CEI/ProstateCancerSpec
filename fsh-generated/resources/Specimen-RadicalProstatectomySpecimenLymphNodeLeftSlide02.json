@@ -1,0 +1,124 @@
+{
+  "resourceType": "Specimen",
+  "id": "RadicalProstatectomySpecimenLymphNodeLeftSlide02",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E_24_002_C_1_2HE"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value": "E_24_002"
+  },
+  "parent": [
+    {
+      "reference": "Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-03-17T08:45:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "13283003",
+          "system": "http://snomed.info/sct",
+          "display": "Tissue processing technique (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434472006",
+            "display": "Sectioning of tissue specimen (procedure)"
+          }
+        ]
+      },
+      "description": "Schnittherstellung",
+      "timeDateTime": "2024-03-17T09:45:00+01:00"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "127790008",
+            "display": "Hematoxylin and eosin staining method (procedure)"
+          }
+        ]
+      },
+      "description": "HE-Färbung",
+      "timeDateTime": "2024-03-17T10:00:00+01:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "433466003",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "430862008",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "430856003",
+        "display": "Tissue section (specimen)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

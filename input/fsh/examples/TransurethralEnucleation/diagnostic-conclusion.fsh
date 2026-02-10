@@ -35,7 +35,7 @@ Description: "Grouper for all diagnostic conclusion findings in Prostata Enuclea
 * hasMember[+] = Reference(TransurethralEnucleationPerineuralInfiltration)
 * note.authorReference = Reference(PathologistPractitioner)
 * note.time = "2024-05-12"
-* note.text = "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz."
+* note.text = "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz."
 
 // Histological Type (ICD-O-3)
 Instance: TransurethralEnucleationHistologicalTypeICDO3

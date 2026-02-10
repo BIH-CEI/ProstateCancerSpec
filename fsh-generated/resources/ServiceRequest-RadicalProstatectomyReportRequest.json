@@ -63,9 +63,9 @@
   "code": {
     "coding": [
       {
-        "code": "176106009",
-        "system": "http://snomed.info/sct",
-        "display": "Radical prostatectomy (procedure)"
+        "code": "60568-3",
+        "system": "http://loinc.org",
+        "display": "Pathology synoptic report"
       }
     ]
   },

@@ -41,18 +41,18 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><th>Stanze</th><th>Lokalisation</th><th>Länge (cm)</th><th>Zylinder</th></tr>
 </thead>
 <tbody>
-<tr><td>01</td><td>Rechts apikal</td><td>1.2</td><td>2</td></tr>
-<tr><td>02</td><td>Rechts medial</td><td>1.5</td><td>2</td></tr>
-<tr><td>03</td><td>Rechts basal</td><td>1.3</td><td>2</td></tr>
-<tr><td>04</td><td>Rechts lateral apikal</td><td>1.4</td><td>2</td></tr>
-<tr><td>05</td><td>Rechts lateral medial</td><td>1.6</td><td>2</td></tr>
-<tr><td>06</td><td>Rechts lateral basal</td><td>1.1</td><td>2</td></tr>
-<tr><td>07</td><td>Links apikal</td><td>1.3</td><td>2</td></tr>
-<tr><td>08</td><td>Links medial</td><td>1.4</td><td>2</td></tr>
-<tr><td>09</td><td>Links basal</td><td>1.2</td><td>2</td></tr>
-<tr><td>10</td><td>Links lateral apikal</td><td>1.5</td><td>2</td></tr>
-<tr><td>11</td><td>Links lateral medial</td><td>1.3</td><td>2</td></tr>
-<tr><td>12</td><td>Links lateral basal</td><td>1.4</td><td>2</td></tr>
+<tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td><td>1</td></tr>
+<tr><td>02</td><td>Rechts lateral mid</td><td>1.6</td><td>1</td></tr>
+<tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td><td>1</td></tr>
+<tr><td>04</td><td>Rechts medial basal</td><td>1.9</td><td>1</td></tr>
+<tr><td>05</td><td>Rechts medial mid</td><td>1.4</td><td>1</td></tr>
+<tr><td>06</td><td>Rechts medial apikal</td><td>1.7</td><td>1</td></tr>
+<tr><td>07</td><td>Links lateral basal</td><td>1.6</td><td>1</td></tr>
+<tr><td>08</td><td>Links lateral mid</td><td>1.5</td><td>1</td></tr>
+<tr><td>09</td><td>Links lateral apikal</td><td>1.8</td><td>1</td></tr>
+<tr><td>10</td><td>Links medial basal</td><td>1.3</td><td>1</td></tr>
+<tr><td>11</td><td>Links medial mid</td><td>1.7</td><td>1</td></tr>
+<tr><td>12</td><td>Links medial apikal</td><td>1.4</td><td>1</td></tr>
 </tbody>
 </table>
 
@@ -65,14 +65,14 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr>
 <tr><td>02</td><td>Adenokarzinom</td><td>4+3=7</td><td>60%</td></tr>
 <tr><td>03</td><td>Benigne</td><td>-</td><td>-</td></tr>
-<tr><td>04</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr>
+<tr><td>04</td><td>Adenokarzinom</td><td>4+4=8</td><td>80%</td></tr>
 <tr><td>05</td><td>Benigne</td><td>-</td><td>-</td></tr>
-<tr><td>06</td><td>Benigne</td><td>-</td><td>-</td></tr>
-<tr><td>07</td><td>Adenokarzinom</td><td>3+4=7</td><td>45%</td></tr>
+<tr><td>06</td><td>Adenokarzinom</td><td>3+3=6</td><td>20%</td></tr>
+<tr><td>07</td><td>Adenokarzinom</td><td>4+5=9</td><td>95%</td></tr>
 <tr><td>08</td><td>Benigne</td><td>-</td><td>-</td></tr>
-<tr><td>09</td><td>Benigne</td><td>-</td><td>-</td></tr>
+<tr><td>09</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr>
 <tr><td>10</td><td>Benigne</td><td>-</td><td>-</td></tr>
-<tr><td>11</td><td>Benigne</td><td>-</td><td>-</td></tr>
+<tr><td>11</td><td>Adenokarzinom</td><td>3+4=7</td><td>25%</td></tr>
 <tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr>
 </tbody>
 </table>
@@ -82,11 +82,11 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr>
-<tr><td>Gleason-Score</td><td>3+4=7a</td></tr>
-<tr><td>ISUP-Gradgruppe</td><td>2 (WHO 2016)</td></tr>
-<tr><td>Positive Stanzen</td><td>7 von 12 (3 rechts, 4 links)</td></tr>
-<tr><td>Tumoranteil gesamt</td><td>35%</td></tr>
-<tr><td>Tumorlänge gesamt</td><td>18,5 mm</td></tr>
+<tr><td>Gleason-Score</td><td>4+5=9 (höchster Score)</td></tr>
+<tr><td>ISUP-Gradgruppe</td><td>5 (WHO 2016)</td></tr>
+<tr><td>Positive Stanzen</td><td>7 von 12 (4 rechts, 3 links)</td></tr>
+<tr><td>Tumoranteil gesamt</td><td>51%</td></tr>
+<tr><td>Tumorlänge gesamt</td><td>52,7 mm</td></tr>
 <tr><td>Anteil Gleason 4/5</td><td>77%</td></tr>
 <tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr>
 <tr><td>Periprostatische Fettinvasion</td><td>Nachgewiesen (apikal)</td></tr>

@@ -24,7 +24,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **value**: Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie. Kein Anhalt für Malignität. Keine high-grade PIN. Keine ASAP.
 
-**specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Histopathology slide (physical object)](Specimen-TransurethralResectionSpecimenSlide01A.md)
+**specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Tissue section (specimen)](Specimen-TransurethralResectionSpecimenSlide01A.md)
 
 **derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'](QuestionnaireResponse-QuestionnaireResponseTransurethralResection.md)
 

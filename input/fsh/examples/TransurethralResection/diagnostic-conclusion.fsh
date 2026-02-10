@@ -24,7 +24,7 @@ Description: "Grouper for all diagnostic conclusion findings in TUR-Prostata spe
 * hasMember[+] = Reference(TransurethralResectionInflammation)
 * note.authorReference = Reference(PathologistPractitioner)
 * note.time = "2024-04-12"
-* note.text = "Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN."
+* note.text = "Zusammenfassung: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN."
 
 // Histologische Diagnose - Benigne Prostatahyperplasie
 Instance: TransurethralResectionHistologicalDiagnosis

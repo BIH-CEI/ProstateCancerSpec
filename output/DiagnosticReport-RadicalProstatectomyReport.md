@@ -28,10 +28,10 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report final diagnosis Narrative](Observation-RadicalProstatectomyDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0.By Practitioner/PathologistPractitioner @2024-03-20
+  * **Note**: > Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.By Practitioner/PathologistPractitioner @2024-03-20
   * **When For**: 2024-03-20
 
-Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.
+Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2 pN0 (0/12) R0. Maximaler Tumordurchmesser 18 mm (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.
 
 
 
@@ -127,6 +127,30 @@ Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolume
     },
     {
       "reference" : "Specimen/RadicalProstatectomySpecimenSlide03B"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRight"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightBlock"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide01"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide02"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeft"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide01"
+    },
+    {
+      "reference" : "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide02"
     }
   ],
   "result" : [
@@ -137,7 +161,7 @@ Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolume
       "reference" : "Observation/RadicalProstatectomyDiagnosticConclusionGrouper"
     }
   ],
-  "conclusion" : "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
+  "conclusion" : "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2 pN0 (0/12) R0. Maximaler Tumordurchmesser 18 mm (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
 }
 
 ```

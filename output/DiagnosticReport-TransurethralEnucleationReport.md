@@ -21,14 +21,14 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 **Report Details**
 
 * **Code**: [Pathology report gross observation Narrative](Observation-TransurethralEnucleationMacroscopicGrouper.md)(Prostatic structure (body structure))
-  * **Value**: Makroskopische Messungen des Prostata Enucleation Präparats
+  * **Value**: 
   * **Flags**: Final
   * **Note**: > Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.
   * **When For**: 2024-04-11 14:00:00+0100
 * **Code**: [Pathology report final diagnosis Narrative](Observation-TransurethralEnucleationDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.By Practitioner/PathologistPractitioner @2024-05-12
+  * **Note**: > Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.By Practitioner/PathologistPractitioner @2024-05-12
   * **When For**: 2024-05-12
 
 Prostata Enucleation: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.

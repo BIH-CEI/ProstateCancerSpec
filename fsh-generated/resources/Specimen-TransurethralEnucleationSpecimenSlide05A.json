@@ -94,8 +94,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "430685002",
-        "display": "Histopathology slide (physical object)"
+        "code": "430856003",
+        "display": "Tissue section (specimen)"
       }
     ]
   },

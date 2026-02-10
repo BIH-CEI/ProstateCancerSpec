@@ -22,7 +22,7 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Gleason grade (Score) 7a
+**value**: Gleason grade (Score) 9
 
 **derivedFrom**: 
 
@@ -94,8 +94,8 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
     "coding" : [
       {
         "system" : "urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010",
-        "code" : "C_999005",
-        "display" : "Gleason  grade (Score) 7a"
+        "code" : "C_999009",
+        "display" : "Gleason grade (Score) 9"
       }
     ]
   },

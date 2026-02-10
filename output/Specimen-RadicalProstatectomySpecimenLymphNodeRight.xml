@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="RadicalProstatectomySpecimenLymphNodeRight"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen RadicalProstatectomySpecimenLymphNodeRight</b></p><a name="RadicalProstatectomySpecimenLymphNodeRight"> </a><a name="hcRadicalProstatectomySpecimenLymphNodeRight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen">MII PR Patho Specimenversion: null2026.0.0)</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore">MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)</a></p></div><p><b>identifier</b>: Placer Identifier/OP24_001_B, Filler Identifier/E_24_002_B</p><p><b>accessionIdentifier</b>: <code>https://pathologie.example-hospital.de/fhir/fn/befundbericht</code>/E_24_002</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 397135002}">Specimen from pelvic lymph node (specimen)</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>request</b>: <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest Pathology synoptic report</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-UrologistPractitioner.html">Practitioner Andreas Weber </a></td><td>2024-03-15 10:45:00+0100</td><td><span title="Codes:{http://snomed.info/sct 79876008}">Pelvic lymphadenectomy (procedure)</span></td><td><span title="Codes:{http://snomed.info/sct 368550005}">Structure of pelvic lymph node (body structure)</span></td></tr></table><h3>Containers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Additive[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 434746001}">Specimen vial (physical object)</span></td><td><span title="Codes:{http://snomed.info/sct 434162003}">Neutral buffered formalin (substance)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+      </coding>
+    </type>
+    <system value="https://urologie.example-hospital.de/fhir/specimen/placer"/>
+    <value value="OP24_001_B"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="FILL"/>
+      </coding>
+    </type>
+    <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
+    <value value="E_24_002_B"/>
+  </identifier>
+  <accessionIdentifier>
+    <system value="https://pathologie.example-hospital.de/fhir/fn/befundbericht"/>
+    <value value="E_24_002"/>
+  </accessionIdentifier>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="397135002"/>
+      <display value="Specimen from pelvic lymph node (specimen)"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <request>
+    <reference value="ServiceRequest/RadicalProstatectomyReportRequest"/>
+  </request>
+  <collection>
+    <collector>
+      <reference value="Practitioner/UrologistPractitioner"/>
+    </collector>
+    <collectedDateTime value="2024-03-15T10:45:00+01:00"/>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="79876008"/>
+        <display value="Pelvic lymphadenectomy (procedure)"/>
+      </coding>
+    </method>
+    <bodySite>
+      <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="24028007"/>
+            <display value="Right (qualifier value)"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="368550005"/>
+        <display value="Structure of pelvic lymph node (body structure)"/>
+      </coding>
+    </bodySite>
+  </collection>
+  <container>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="434746001"/>
+        <display value="Specimen vial (physical object)"/>
+      </coding>
+    </type>
+    <additiveCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="434162003"/>
+        <display value="Neutral buffered formalin (substance)"/>
+      </coding>
+    </additiveCodeableConcept>
+  </container>
+</Specimen>

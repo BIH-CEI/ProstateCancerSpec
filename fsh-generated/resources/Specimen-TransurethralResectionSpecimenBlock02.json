@@ -73,9 +73,9 @@
       "type": {
         "coding": [
           {
-            "code": "1003707006",
+            "code": "1201985008",
             "system": "http://snomed.info/sct",
-            "display": "Paraffin block (physical object)"
+            "display": "Tissue block specimen (specimen)"
           }
         ]
       },
@@ -94,8 +94,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1003707006",
-        "display": "Paraffin block (physical object)"
+        "code": "1201985008",
+        "display": "Tissue block specimen (specimen)"
       }
     ]
   },

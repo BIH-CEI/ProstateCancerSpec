@@ -14,11 +14,11 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Histopathology slide (physical object)
+**type**: Tissue section (specimen)
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
-**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_3; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Paraffin block (physical object)](Specimen-TransurethralEnucleationSpecimenBlock03.md)
+**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_3; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue block specimen (specimen)](Specimen-TransurethralEnucleationSpecimenBlock03.md)
 
 ### Collections
 
@@ -70,8 +70,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "430685002",
-        "display" : "Histopathology slide (physical object)"
+        "code" : "430856003",
+        "display" : "Tissue section (specimen)"
       }
     ]
   },

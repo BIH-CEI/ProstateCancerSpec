@@ -55,7 +55,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 01"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1003707006 "Paraffin block (physical object)"
+* type = $sct#1201985008 "Tissue block specimen (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
@@ -69,7 +69,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 01"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#1201985008 "Tissue block specimen (specimen)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -90,7 +90,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
@@ -121,7 +121,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
@@ -157,7 +157,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 02"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1003707006 "Paraffin block (physical object)"
+* type = $sct#1201985008 "Tissue block specimen (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
@@ -171,7 +171,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 02"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#1201985008 "Tissue block specimen (specimen)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -192,7 +192,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
@@ -223,7 +223,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
@@ -259,7 +259,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 03"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1003707006 "Paraffin block (physical object)"
+* type = $sct#1201985008 "Tissue block specimen (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
@@ -273,7 +273,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 03"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#1201985008 "Tissue block specimen (specimen)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -294,7 +294,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
@@ -325,7 +325,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
@@ -361,7 +361,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 04"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1003707006 "Paraffin block (physical object)"
+* type = $sct#1201985008 "Tissue block specimen (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
@@ -375,7 +375,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 04"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#1201985008 "Tissue block specimen (specimen)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -396,7 +396,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
@@ -427,7 +427,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
@@ -463,7 +463,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 05"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1003707006 "Paraffin block (physical object)"
+* type = $sct#1201985008 "Tissue block specimen (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
@@ -477,7 +477,7 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 05"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#1201985008 "Tissue block specimen (specimen)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -498,7 +498,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection
@@ -529,7 +529,7 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präpar
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#430685002 "Histopathology slide (physical object)"
+* type = $sct#430856003 "Tissue section (specimen)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection

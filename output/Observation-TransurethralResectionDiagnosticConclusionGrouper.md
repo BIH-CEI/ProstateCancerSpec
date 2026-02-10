@@ -26,7 +26,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 > 
 
-Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.
+Zusammenfassung: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.
 
 
 **hasMember**: 
@@ -89,7 +89,7 @@ Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyper
         "reference" : "Practitioner/PathologistPractitioner"
       },
       "time" : "2024-04-12",
-      "text" : "Diagnose: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN."
+      "text" : "Zusammenfassung: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN."
     }
   ],
   "hasMember" : [

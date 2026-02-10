@@ -22,7 +22,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)
+**value**: International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)
 
 
 
@@ -89,8 +89,8 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "1279714001",
-        "display" : "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+        "code" : "1279717008",
+        "display" : "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
       }
     ]
   }

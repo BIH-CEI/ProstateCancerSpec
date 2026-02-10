@@ -65,9 +65,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "C_999005",
+        "code": "C_999009",
         "system": "urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010",
-        "display": "Gleason  grade (Score) 7a"
+        "display": "Gleason grade (Score) 9"
       }
     ]
   }

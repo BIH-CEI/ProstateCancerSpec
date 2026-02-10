@@ -35,8 +35,20 @@ Description: "Umfangreicher Pathologiebericht nach radikaler Prostatektomie"
 * specimen[+] = Reference(RadicalProstatectomySpecimenSlide03A)
 * specimen[+] = Reference(RadicalProstatectomySpecimenSlide03B)
 
+// Lymphknoten rechts
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeRight)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeRightBlock)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeRightSlide01)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeRightSlide02)
+
+// Lymphknoten links
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeLeft)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeLeftBlock)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeLeftSlide01)
+* specimen[+] = Reference(RadicalProstatectomySpecimenLymphNodeLeftSlide02)
+
 // Pathologische Befunde - nur Grouper
 * result[macroscopic-observations] = Reference(RadicalProstatectomyMacroscopicGrouper)
 * result[diagnostic-conclusion] = Reference(RadicalProstatectomyDiagnosticConclusionGrouper)
 
-* conclusion = "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2c pN0 (0/12) R0. Tumorvolumen ca. 2,8 cm³ (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."
+* conclusion = "Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2 pN0 (0/12) R0. Maximaler Tumordurchmesser 18 mm (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei."

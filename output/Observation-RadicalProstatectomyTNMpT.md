@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyReportRequest.md)
+**basedOn**: [ServiceRequest Pathology synoptic report](ServiceRequest-RadicalProstatectomyReportRequest.md)
 
 **status**: Final
 
@@ -22,9 +22,9 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: pT2c - Tumor involves both sides
+**value**: pT2 - Organ confined
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Surgical specimen](Specimen-RadicalProstatectomySpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)](Specimen-RadicalProstatectomySpecimenPart.md)
 
 **derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 
@@ -87,11 +87,11 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "1229947008",
-        "display" : "American Joint Committee on Cancer pT2c (qualifier value)"
+        "code" : "1352545001",
+        "display" : "pT2 category (tumor staging)"
       }
     ],
-    "text" : "pT2c - Tumor involves both sides"
+    "text" : "pT2 - Organ confined"
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"

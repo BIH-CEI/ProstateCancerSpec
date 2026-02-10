@@ -20,13 +20,11 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Makroskopische Messungen des TUR-Prostata Präparats
-
 **note**: 
 
 > 
 
-Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.
+Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.
 
 
 **bodySite**: Prostatic structure (body structure)
@@ -80,10 +78,9 @@ Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5
       "reference" : "Practitioner/PathologistPractitioner"
     }
   ],
-  "valueString" : "Makroskopische Messungen des TUR-Prostata Präparats",
   "note" : [
     {
-      "text" : "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
+      "text" : "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
     }
   ],
   "bodySite" : {

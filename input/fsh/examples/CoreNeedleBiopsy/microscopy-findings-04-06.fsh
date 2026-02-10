@@ -375,6 +375,7 @@ Description: "Morphologie Freitext für Stanze 05"
 * bodySite = $sct#716906001 "Structure of middle part of peripheral zone of left half prostate (body structure)"
 * specimen = Reference(CoreNeedleBiopsySpecimen05Slide)
 
+// STANZE 06 - Mikroskopische Befunde (Maligne - Gleason 3+3=6)
 Instance: CoreNeedleBiopsyHistoTyp06
 InstanceOf: $mii-patho-finding
 Usage: #example

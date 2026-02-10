@@ -14,11 +14,11 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Surgical specimen
+**type**: Specimen from prostate obtained by radical prostatectomy (specimen)
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
-**request**: [ServiceRequest Radical prostatectomy (procedure)](ServiceRequest-RadicalProstatectomyReportRequest.md)
+**request**: [ServiceRequest Pathology synoptic report](ServiceRequest-RadicalProstatectomyReportRequest.md)
 
 ### Collections
 
@@ -83,8 +83,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "118292001",
-        "display" : "Surgical specimen"
+        "code" : "122725003",
+        "display" : "Specimen from prostate obtained by radical prostatectomy (specimen)"
       }
     ]
   },

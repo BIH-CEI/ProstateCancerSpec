@@ -20,7 +20,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Present (qualifier value)
+**value**: Absent (qualifier value)
 
 **note**: 
 
@@ -90,8 +90,8 @@ Keine Samenblasen im Resektat
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "52101004",
-        "display" : "Present (qualifier value)"
+        "code" : "2667000",
+        "display" : "Absent (qualifier value)"
       }
     ]
   },

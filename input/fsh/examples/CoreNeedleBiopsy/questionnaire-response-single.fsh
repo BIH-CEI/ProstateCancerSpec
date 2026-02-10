@@ -571,7 +571,7 @@ Usage: #example
 * item[=].item[=].item[=].item[=].text = "Karzinom vorhanden"
 * item[=].item[=].item[=].item[=].answer.valueCoding = $sct#110396000 "No evidence of malignant neoplasm (finding)"
 
-// STANZE 06 - BENIGN
+// STANZE 06 - Gleason 3+3=6 (Grade Group 1)
 Instance: QuestionnaireResponseCoreNeedleBiopsySingle06
 InstanceOf: QuestionnaireResponse
 Usage: #example
@@ -797,7 +797,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne)"
     * answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
 // =============================================================================
-// STANZE 09 - BENIGN
+// STANZE 09 - Gleason 3+4=7 (Grade Group 2)
 // =============================================================================
 
 Instance: QuestionnaireResponseCoreNeedleBiopsySingle09
@@ -907,7 +907,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne)"
     * answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
 // =============================================================================
-// STANZE 11 - BENIGN
+// STANZE 11 - Gleason 3+4=7 (Grade Group 2)
 // =============================================================================
 
 Instance: QuestionnaireResponseCoreNeedleBiopsySingle11

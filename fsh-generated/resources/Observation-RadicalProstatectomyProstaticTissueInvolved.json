@@ -27,9 +27,9 @@
   "code": {
     "coding": [
       {
-        "code": "44651-8",
+        "code": "44654-2",
         "system": "http://loinc.org",
-        "display": "Tissue cores.positive.carcinoma in Tissue core"
+        "display": "Tissue involvement by tumor as percentage of total tissue examined"
       }
     ],
     "text": "Prostatic tissue involved by tumour"

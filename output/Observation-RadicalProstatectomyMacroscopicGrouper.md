@@ -31,9 +31,8 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
 
 **bodySite**: Prostatic structure (body structure)
 
-**derivedFrom**: 
+**hasMember**: 
 
-* [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 * [Observation Prostate weight](Observation-RadicalProstatectomyMacroscopicProstateWeight.md)
 * [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateWidth.md)
 * [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateHeight.md)
@@ -42,6 +41,8 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
 * [Observation Laterality](Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.md)
 * [Observation Tumor finding](Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.md)
 * [Observation Seminal vesicle size](Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.md)
+
+**derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 
 
 
@@ -99,10 +100,7 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
       }
     ]
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    },
+  "hasMember" : [
     {
       "reference" : "Observation/RadicalProstatectomyMacroscopicProstateWeight"
     },
@@ -126,6 +124,11 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
     },
     {
       "reference" : "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength"
+    }
+  ],
+  "derivedFrom" : [
+    {
+      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
     }
   ]
 }

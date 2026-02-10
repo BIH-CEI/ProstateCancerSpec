@@ -24,7 +24,7 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
 
 **value**: Gleason grade (Score) 9
 
-**specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Histopathology slide (physical object)](Specimen-TransurethralEnucleationSpecimenSlide01A.md)
+**specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue section (specimen)](Specimen-TransurethralEnucleationSpecimenSlide01A.md)
 
 **derivedFrom**: 
 

@@ -14,7 +14,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Paraffin block (physical object)
+**type**: Tissue block specimen (specimen)
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
@@ -39,7 +39,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Additive[x]** |
-| * | Paraffin block (physical object) | Paraffin wax (substance) |
+| * | Tissue block specimen (specimen) | Paraffin wax (substance) |
 
 
 
@@ -70,8 +70,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "1003707006",
-        "display" : "Paraffin block (physical object)"
+        "code" : "1201985008",
+        "display" : "Tissue block specimen (specimen)"
       }
     ]
   },
@@ -135,8 +135,8 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
         "coding" : [
           {
             "system" : "http://snomed.info/sct",
-            "code" : "1003707006",
-            "display" : "Paraffin block (physical object)"
+            "code" : "1201985008",
+            "display" : "Tissue block specimen (specimen)"
           }
         ]
       },

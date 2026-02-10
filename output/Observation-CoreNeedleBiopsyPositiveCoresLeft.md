@@ -22,7 +22,7 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 4
+**value**: 3
 
 
 
@@ -81,7 +81,7 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
     }
   ],
   "valueQuantity" : {
-    "value" : 4
+    "value" : 3
   }
 }
 

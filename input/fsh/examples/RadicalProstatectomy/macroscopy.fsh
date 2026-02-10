@@ -19,15 +19,15 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostatektomieprä
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
-// Referenzen zu makroskopischen Findings
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicProstateWeight)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicProstateWidth)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicProstateHeight)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicProstateDepth)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicLymphNodesPresent)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicLymphNodesLaterality)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesiclesPresent)
-* derivedFrom[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesicleLength)
+// hasMember Referenzen zu makroskopischen Findings
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicProstateWeight)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicProstateWidth)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicProstateHeight)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicProstateDepth)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicLymphNodesPresent)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicLymphNodesLaterality)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesiclesPresent)
+* hasMember[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesicleLength)
 
 * note.text = "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
 

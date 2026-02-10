@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 35 % (Details: UCUM code% = '%')
+**value**: 51 % (Details: UCUM code% = '%')
 
 
 
@@ -80,7 +80,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
     }
   ],
   "valueQuantity" : {
-    "value" : 35,
+    "value" : 51,
     "unit" : "%",
     "system" : "http://unitsofmeasure.org",
     "code" : "%"

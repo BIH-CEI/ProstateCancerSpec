@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ProstateCancerSpec"] ; # 
   fhir:title [ fhir:v "Prostate Cancer Specification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-09T15:02:42+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-10T16:25:07+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH CEI" ] ;
@@ -3111,6 +3111,90 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide01> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide01" ]
+       ] ;
+       fhir:name [ fhir:v "HE-Schnitt Lymphknoten links 01" ] ;
+       fhir:description [ fhir:v "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide02> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide02" ]
+       ] ;
+       fhir:name [ fhir:v "HE-Schnitt Lymphknoten links 02" ] ;
+       fhir:description [ fhir:v "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide01> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide01" ]
+       ] ;
+       fhir:name [ fhir:v "HE-Schnitt Lymphknoten rechts 01" ] ;
+       fhir:description [ fhir:v "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide02> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide02" ]
+       ] ;
+       fhir:name [ fhir:v "HE-Schnitt Lymphknoten rechts 02" ] ;
+       fhir:description [ fhir:v "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Slide> ;
          fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Slide" ]
        ] ;
@@ -4980,6 +5064,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyMaxTumorDiameter> ;
+         fhir:reference [ fhir:v "Observation/RadicalProstatectomyMaxTumorDiameter" ]
+       ] ;
+       fhir:name [ fhir:v "Maximum Tumor Diameter - Prostatectomy" ] ;
+       fhir:description [ fhir:v "Maximum tumor diameter in millimeters" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper> ;
          fhir:reference [ fhir:v "Observation/CoreNeedleBiopsyMicroscopicGrouper" ]
        ] ;
@@ -5631,6 +5736,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock" ]
+       ] ;
+       fhir:name [ fhir:v "Paraffinblock Lymphknoten links" ] ;
+       fhir:description [ fhir:v "Paraffineinbettung der pelvinen Lymphknoten links" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeRightBlock> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeRightBlock" ]
+       ] ;
+       fhir:name [ fhir:v "Paraffinblock Lymphknoten rechts" ] ;
+       fhir:description [ fhir:v "Paraffineinbettung der pelvinen Lymphknoten rechts" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://prostatecancerspec.org/Specimen/CoreNeedleBiopsySpecimen01Block> ;
          fhir:reference [ fhir:v "Specimen/CoreNeedleBiopsySpecimen01Block" ]
        ] ;
@@ -6056,6 +6203,48 @@
        ] ;
        fhir:name [ fhir:v "Patient 3 - Enukleation (Karzinom)" ] ;
        fhir:description [ fhir:v "Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeLeft> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeLeft" ]
+       ] ;
+       fhir:name [ fhir:v "Pelvine Lymphknoten links (Einsendespecimen)" ] ;
+       fhir:description [ fhir:v "Pelvine Lymphknoten links aus der Lymphadenektomie" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeRight> ;
+         fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeRight" ]
+       ] ;
+       fhir:name [ fhir:v "Pelvine Lymphknoten rechts (Einsendespecimen)" ] ;
+       fhir:description [ fhir:v "Pelvine Lymphknoten rechts aus der Lymphadenektomie" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -8721,27 +8910,6 @@
        ] ;
        fhir:name [ fhir:v "Transurethrale Resektion der Prostata" ] ;
        fhir:description [ fhir:v "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://prostatecancerspec.org/Observation/RadicalProstatectomyTumorVolume> ;
-         fhir:reference [ fhir:v "Observation/RadicalProstatectomyTumorVolume" ]
-       ] ;
-       fhir:name [ fhir:v "Tumor Volume - Prostatectomy" ] ;
-       fhir:description [ fhir:v "Total tumor volume in cubic centimeters" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true

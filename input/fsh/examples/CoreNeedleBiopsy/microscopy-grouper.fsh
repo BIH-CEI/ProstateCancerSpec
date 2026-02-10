@@ -159,4 +159,4 @@ Description: "Gruppierung aller mikroskopischen Befunde der Prostatastanzen"
 * derivedFrom[+] = Reference(CoreNeedleBiopsyHistoTyp12)
 * derivedFrom[+] = Reference(CoreNeedleBiopsyMorphText12)
 
-* note.text = "Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert."
+* note.text = "Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12."

@@ -1,0 +1,118 @@
+{
+  "resourceType": "Specimen",
+  "id": "RadicalProstatectomySpecimenLymphNodeLeft",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PLAC",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://urologie.example-hospital.de/fhir/specimen/placer",
+      "value": "OP24_001_C"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "FILL",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+      "value": "E_24_002_C"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value": "E_24_002"
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/RadicalProstatectomyReportRequest"
+    }
+  ],
+  "collection": {
+    "bodySite": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "7771000",
+                "system": "http://snomed.info/sct",
+                "display": "Left (qualifier value)"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "368550005",
+          "system": "http://snomed.info/sct",
+          "display": "Structure of pelvic lymph node (body structure)"
+        }
+      ]
+    },
+    "collector": {
+      "reference": "Practitioner/UrologistPractitioner"
+    },
+    "collectedDateTime": "2024-03-15T10:50:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "79876008",
+          "system": "http://snomed.info/sct",
+          "display": "Pelvic lymphadenectomy (procedure)"
+        }
+      ]
+    }
+  },
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "434746001",
+            "system": "http://snomed.info/sct",
+            "display": "Specimen vial (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "434162003",
+            "system": "http://snomed.info/sct",
+            "display": "Neutral buffered formalin (substance)"
+          }
+        ]
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "397135002",
+        "display": "Specimen from pelvic lymph node (specimen)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/Patient1"
+  }
+}

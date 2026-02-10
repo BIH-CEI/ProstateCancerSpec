@@ -98,6 +98,10 @@ These are example instances that show what data produced and consumed by systems
 | [HE-Schnitt 05A TUR-Prostata](Specimen-TransurethralResectionSpecimenSlide05A.md) | Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präparats |
 | [HE-Schnitt 05B Prostata Enucleation](Specimen-TransurethralEnucleationSpecimenSlide05B.md) | Hämatoxylin-Eosin gefärbter Schnitt 05B des Prostata Enucleation Präparats |
 | [HE-Schnitt 05B TUR-Prostata](Specimen-TransurethralResectionSpecimenSlide05B.md) | Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präparats |
+| [HE-Schnitt Lymphknoten links 01](Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide01.md) | Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links |
+| [HE-Schnitt Lymphknoten links 02](Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide02.md) | Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links |
+| [HE-Schnitt Lymphknoten rechts 01](Specimen-RadicalProstatectomySpecimenLymphNodeRightSlide01.md) | Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts |
+| [HE-Schnitt Lymphknoten rechts 02](Specimen-RadicalProstatectomySpecimenLymphNodeRightSlide02.md) | Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts |
 | [HE-Schnitt Stanze 01](Specimen-CoreNeedleBiopsySpecimen01Slide.md) | Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01 |
 | [HE-Schnitt Stanze 02](Specimen-CoreNeedleBiopsySpecimen02Slide.md) | Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 02 |
 | [HE-Schnitt Stanze 03](Specimen-CoreNeedleBiopsySpecimen03Slide.md) | Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 03 |
@@ -187,6 +191,7 @@ These are example instances that show what data produced and consumed by systems
 | [Makroskopische Länge Stanze 11](Observation-CoreNeedleBiopsyMacroscopicLength11.md) | Längenmessung der Prostatastanze 11 |
 | [Makroskopische Länge Stanze 12](Observation-CoreNeedleBiopsyMacroscopicLength12.md) | Längenmessung der Prostatastanze 12 |
 | [Margin Status - Prostatectomy](Observation-RadicalProstatectomyMarginStatus.md) | Status of surgical resection margins |
+| [Maximum Tumor Diameter - Prostatectomy](Observation-RadicalProstatectomyMaxTumorDiameter.md) | Maximum tumor diameter in millimeters |
 | [Mikroskopische Befunde Grouper](Observation-CoreNeedleBiopsyMicroscopicGrouper.md) | Gruppierung aller mikroskopischen Befunde der Prostatastanzen |
 | [Morphologie Freitext Stanze 01](Observation-CoreNeedleBiopsyMorphText01.md) | Morphologie Freitext für Stanze 01 |
 | [Morphologie Freitext Stanze 02](Observation-CoreNeedleBiopsyMorphText02.md) | Morphologie Freitext für Stanze 02 |
@@ -222,6 +227,8 @@ These are example instances that show what data produced and consumed by systems
 | [Paraffinblock 04 TUR-Prostata](Specimen-TransurethralResectionSpecimenBlock04.md) | Paraffineinbettung des TUR-Prostata Präparats Block 04 |
 | [Paraffinblock 05 Prostata Enucleation](Specimen-TransurethralEnucleationSpecimenBlock05.md) | Paraffineinbettung des Prostata Enucleation Präparats Block 05 |
 | [Paraffinblock 05 TUR-Prostata](Specimen-TransurethralResectionSpecimenBlock05.md) | Paraffineinbettung des TUR-Prostata Präparats Block 05 |
+| [Paraffinblock Lymphknoten links](Specimen-RadicalProstatectomySpecimenLymphNodeLeftBlock.md) | Paraffineinbettung der pelvinen Lymphknoten links |
+| [Paraffinblock Lymphknoten rechts](Specimen-RadicalProstatectomySpecimenLymphNodeRightBlock.md) | Paraffineinbettung der pelvinen Lymphknoten rechts |
 | [Paraffinblock Stanze 01](Specimen-CoreNeedleBiopsySpecimen01Block.md) | Paraffineinbettung der Prostatastanze 01 |
 | [Paraffinblock Stanze 02](Specimen-CoreNeedleBiopsySpecimen02Block.md) | Paraffineinbettung der Prostatastanze 02 |
 | [Paraffinblock Stanze 03](Specimen-CoreNeedleBiopsySpecimen03Block.md) | Paraffineinbettung der Prostatastanze 03 |
@@ -243,6 +250,8 @@ These are example instances that show what data produced and consumed by systems
 | [Patient 1 - Biopsie und Prostatektomie](Patient-Patient1.md) | Patient mit erhöhtem PSA und Karzinomnachweis in der Stanzbiopsie, erhält anschließend radikale Prostatektomie mit Lymphadenektomie |
 | [Patient 2 - TUR-P (benigne)](Patient-Patient2.md) | Patient mit Miktionsbeschwerden, erhält transurethrale Resektion ohne Karzinomnachweis |
 | [Patient 3 - Enukleation (Karzinom)](Patient-Patient3.md) | Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie |
+| [Pelvine Lymphknoten links (Einsendespecimen)](Specimen-RadicalProstatectomySpecimenLymphNodeLeft.md) | Pelvine Lymphknoten links aus der Lymphadenektomie |
+| [Pelvine Lymphknoten rechts (Einsendespecimen)](Specimen-RadicalProstatectomySpecimenLymphNodeRight.md) | Pelvine Lymphknoten rechts aus der Lymphadenektomie |
 | [Percentage Tumor Content Total - Biopsy](Observation-CoreNeedleBiopsyPercentageTumorTotal.md) | Total percentage of tumor in all positive tissue cores |
 | [Percentage of Gleason Pattern 4/5 - Biopsy](Observation-CoreNeedleBiopsyPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
 | [Percentage of Gleason Pattern 4/5 - Enucleation](Observation-TransurethralEnucleationPercentageGleason45.md) | Percentage of tumor area with Gleason pattern 4 and 5 |
@@ -370,7 +379,6 @@ These are example instances that show what data produced and consumed by systems
 | [Total Gleason Score - Prostatectomy](Observation-RadicalProstatectomyGleasonScoreTotal.md) | Total Gleason score in prostatectomy specimen |
 | [Total Tumor Length in mm - Biopsy](Observation-CoreNeedleBiopsyTumorLengthTotal.md) | Total linear length of carcinoma in millimeters |
 | [Transurethrale Resektion der Prostata](Procedure-TransurethralResectionProcedure.md) | TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie |
-| [Tumor Volume - Prostatectomy](Observation-RadicalProstatectomyTumorVolume.md) | Total tumor volume in cubic centimeters |
 | [Tumorbefall in Länge Stanze 01](Observation-CoreNeedleBiopsyTumorbefallinLaenge01.md) | Tumorbefall für befallene Stanze in Länge in mm für Stanze 01 |
 | [Tumorbefall in Länge Stanze 02](Observation-CoreNeedleBiopsyTumorbefallinLaenge02.md) | Tumorbefall für befallene Stanze in Länge in mm für Stanze 02 |
 | [Tumorbefall in Länge Stanze 04](Observation-CoreNeedleBiopsyTumorbefallinLaenge04.md) | Tumorbefall für befallene Stanze in Länge in mm für Stanze 04 |

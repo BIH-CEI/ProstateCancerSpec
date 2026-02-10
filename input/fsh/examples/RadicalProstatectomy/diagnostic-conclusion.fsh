@@ -29,7 +29,7 @@ Description: "Grouper for all diagnostic conclusion findings in prostatectomy sp
 * hasMember[+] = Reference(RadicalProstatectomyGradingGroupISUP)
 * hasMember[+] = Reference(RadicalProstatectomyIntraductalCarcinoma)
 * hasMember[+] = Reference(RadicalProstatectomyInvasiveCribriformCarcinoma)
-* hasMember[+] = Reference(RadicalProstatectomyTumorVolume)
+* hasMember[+] = Reference(RadicalProstatectomyMaxTumorDiameter)
 * hasMember[+] = Reference(RadicalProstatectomyProstaticTissueInvolved)
 * hasMember[+] = Reference(RadicalProstatectomyExtraprostaticExtension)
 * hasMember[+] = Reference(RadicalProstatectomySeminalVesicleInvasion)
@@ -43,7 +43,7 @@ Description: "Grouper for all diagnostic conclusion findings in prostatectomy sp
 * hasMember[+] = Reference(RadicalProstatectomyTNMpN)
 * note.authorReference = Reference(PathologistPractitioner)
 * note.time = "2024-03-20"
-* note.text = "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Tumorvolumen 2,8 cm³, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2c pN0."
+* note.text = "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0."
 
 // Histological Type (ICD-O-3)
 Instance: RadicalProstatectomyHistologicalTypeICDO3
@@ -248,27 +248,27 @@ Description: "Presence of invasive cribriform carcinoma"
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
-// Tumor Volume
-Instance: RadicalProstatectomyTumorVolume
+// Maximum Tumor Diameter
+Instance: RadicalProstatectomyMaxTumorDiameter
 InstanceOf: $mii-patho-finding
 Usage: #example
-Title: "Tumor Volume - Prostatectomy"
-Description: "Total tumor volume in cubic centimeters"
+Title: "Maximum Tumor Diameter - Prostatectomy"
+Description: "Maximum tumor diameter in millimeters"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33728-7 "Size.maximum dimension of tumor in Prostate"
-* code.text = "Tumor volume"
+* code.text = "Maximum tumor diameter"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueQuantity.value = 2.8
-* valueQuantity.unit = "cm3"
+* valueQuantity.value = 18
+* valueQuantity.unit = "mm"
 * valueQuantity.system = $ucum
-* valueQuantity.code = #cm3
+* valueQuantity.code = #mm
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Prostatic Tissue Involved by Tumour
@@ -281,7 +281,7 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
+* code = $loinc#44654-2 "Tissue involvement by tumor as percentage of total tissue examined"
 * code.text = "Prostatic tissue involved by tumour"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -467,8 +467,8 @@ Description: "Pathological primary tumor stage according to TNM classification"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#1229947008 "American Joint Committee on Cancer pT2c (qualifier value)"
-* valueCodeableConcept.text = "pT2c - Tumor involves both sides"
+* valueCodeableConcept = $sct#1352545001 "pT2 category (tumor staging)"
+* valueCodeableConcept.text = "pT2 - Organ confined"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // TNM - Regional Lymph Nodes (pN)

@@ -37,7 +37,7 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 
 > 
 
-Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Intermediäres Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt.
+Prostatakarzinom ISUP Grade Group 5 (höchster Gleason 4+5=9), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Hohes Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt.
 
 
 
@@ -127,7 +127,7 @@ Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinis
   ],
   "note" : [
     {
-      "text" : "Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Intermediäres Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt."
+      "text" : "Prostatakarzinom ISUP Grade Group 5 (höchster Gleason 4+5=9), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Hohes Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt."
     }
   ]
 }

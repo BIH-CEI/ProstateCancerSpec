@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: 18.5 mm (Details: UCUM codemm = 'mm')
+**value**: 52.7 mm (Details: UCUM codemm = 'mm')
 
 
 
@@ -80,7 +80,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
     }
   ],
   "valueQuantity" : {
-    "value" : 18.5,
+    "value" : 52.7,
     "unit" : "mm",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm"

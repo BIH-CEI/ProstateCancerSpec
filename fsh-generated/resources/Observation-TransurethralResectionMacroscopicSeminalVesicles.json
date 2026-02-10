@@ -60,9 +60,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "52101004",
+        "code": "2667000",
         "system": "http://snomed.info/sct",
-        "display": "Present (qualifier value)"
+        "display": "Absent (qualifier value)"
       }
     ]
   },

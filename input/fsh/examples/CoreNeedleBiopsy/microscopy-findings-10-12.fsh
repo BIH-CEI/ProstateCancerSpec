@@ -44,6 +44,7 @@ Description: "Morphologie Freitext für Stanze 10"
 * specimen = Reference(CoreNeedleBiopsySpecimen10Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 
+// STANZE 11 - Mikroskopische Befunde (Maligne - Gleason 3+4=7)
 Instance: CoreNeedleBiopsyHistoTyp11
 InstanceOf: $mii-patho-finding
 Usage: #example

@@ -64,7 +64,6 @@
     "reference": "Patient/Patient3"
   },
   "effectiveDateTime": "2024-04-11T14:00:00+01:00",
-  "valueString": "Makroskopische Messungen des Prostata Enucleation Präparats",
   "bodySite": {
     "coding": [
       {

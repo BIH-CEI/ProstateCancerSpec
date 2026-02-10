@@ -15,7 +15,6 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleati
 * subject = Reference(Patient3)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueString = "Makroskopische Messungen des Prostata Enucleation Präparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 

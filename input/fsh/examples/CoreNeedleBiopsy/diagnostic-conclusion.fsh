@@ -41,7 +41,7 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * hasMember[+] = Reference(CoreNeedleBiopsyGranulomatousProstatiti)
 * note.authorReference = Reference(PathologistPractitioner)
 * note.time = "2023-03-15"
-* note.text = "Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
+* note.text = "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). 7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11), prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
 
 // derivedFrom references to microscopy findings
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaerGleason01)
@@ -182,7 +182,7 @@ Description: "Total Gleason score in biopsy specimens"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999005 "Gleason  grade (Score) 7a"
+* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(CoreNeedleBiopsySecondaryGleasonPattern)
 
@@ -223,7 +223,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+* valueCodeableConcept = $sct#1279717008 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
 
 // Histological Grade WHO
 Instance: CoreNeedleBiopsyHistologicalGradeWHO
@@ -258,7 +258,7 @@ Description: "Number of tissue cores positive for carcinoma on the right side"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueQuantity.value = 3
+* valueQuantity.value = 4
 
 
 // Number of Positive Cores Left
@@ -277,7 +277,7 @@ Description: "Number of tissue cores positive for carcinoma on the left side"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueQuantity.value = 4
+* valueQuantity.value = 3
 
 // Ratio of Positive to Total Cores
 Instance: CoreNeedleBiopsyRatioPositiveCores
@@ -314,7 +314,7 @@ Description: "Total percentage of tumor in all positive tissue cores"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueQuantity.value = 35
+* valueQuantity.value = 51
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
@@ -334,7 +334,7 @@ Description: "Total linear length of carcinoma in millimeters"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueQuantity.value = 18.5
+* valueQuantity.value = 52.7
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mm

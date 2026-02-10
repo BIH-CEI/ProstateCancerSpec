@@ -1,10 +1,16 @@
 ## Code Memories
 
-**Letzte Session: 03.02.2026**
-- Issue #9 abgeschlossen: 3-Patienten-Struktur nach Haroske implementiert ✅
-- SUSHI Build erfolgreich (390 Instances, 0 Errors, 0 Warnings)
+**Letzte Session: 10.02.2026**
+- CoreNeedleBiopsy Narrative vs. Instanzen abgeglichen ✅
+- 7 maligne Stanzen korrekt identifiziert (01, 02, 04, 06, 07, 09, 11)
+- RadicalProstatectomy Issues #8, #10-16 implementiert ✅
 
-**Status Übersicht:**
+**WICHTIGER WORKFLOW - Narrative vs. Instanzen:**
+1. ZUERST: FHIR-Instanzen auf Grundlage der GitHub-Issues anpassen
+2. DANACH: Narrative in Composition aktualisieren (nach Kontrolle der Instanzen)
+3. Niemals Narrative vor den Instanzen ändern!
+
+**Status Übersicht - Abgeschlossene Issues:**
 - Issue #1 abgeschlossen (02.02.2026)
 - Issue #2 abgeschlossen (29.01.2026)
 - Issue #3 abgeschlossen (02.02.2026)
@@ -12,8 +18,26 @@
 - Issue #5 abgeschlossen (29.01.2026)
 - Issue #6 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicLength hinzugefügt
 - Issue #7 abgeschlossen (03.02.2026): derivedFrom zu MacroscopicCylinderCount hinzugefügt
-- Issue #8 abgeschlossen (03.02.2026): derivedFrom zu ALLEN Observations aller 4 Biopsietypen hinzugefügt
 - Issue #9 abgeschlossen (03.02.2026): 3-Patienten-Struktur implementiert
+
+**Status Übersicht - Abgeschlossene Issues (10.02.2026):**
+- Issue #8 abgeschlossen (10.02.2026): specimen.type für RadicalProstatectomy korrigiert
+  - Part (Prostata): 122725003 "Specimen from prostate obtained by radical prostatectomy"
+  - Part (LK): 397135002 "Specimen from pelvic lymph node" + mCODE laterality extension
+  - Block: 1201985008 "Tissue block specimen"
+  - Slide: 430856003 "Tissue section"
+- Issue #10 abgeschlossen (10.02.2026): Lymphknoten-Specimens hinzugefügt
+  - 2 Parts (rechts/links) + 2 Blocks + 4 Slides
+  - Lateralität via mCODE Extension auf bodySite
+- Issue #11 abgeschlossen (10.02.2026): ServiceRequest code → $loinc#60568-3
+- Issue #12 abgeschlossen (10.02.2026): Diagnostic Conclusion Grouper bereits korrekt mit hasMember
+- Issue #13 abgeschlossen (10.02.2026): Macroscopy Grouper derivedFrom → hasMember
+- Issue #14 abgeschlossen (10.02.2026): ProstaticTissueInvolved LOINC → 44654-2
+- Issue #15 abgeschlossen (10.02.2026): TumorVolume → MaxTumorDiameter (18mm)
+- Issue #16 abgeschlossen (10.02.2026): TNM pT → UICC 1352545001 "pT2 category"
+
+**Noch offen - Narrative aktualisieren:**
+- RadicalProstatectomy Composition.section.text muss nach Instanz-Änderungen aktualisiert werden
 
 **Patient-Struktur (nach Haroske, Issue #9):**
 1. **Patient1 (Hans Mueller, PAT-2024-001, geb. 1955-08-15)**

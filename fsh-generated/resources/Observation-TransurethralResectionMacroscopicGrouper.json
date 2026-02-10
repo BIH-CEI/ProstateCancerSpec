@@ -39,7 +39,7 @@
   ],
   "note": [
     {
-      "text": "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
+      "text": "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
     }
   ],
   "code": {
@@ -55,7 +55,6 @@
     "reference": "Patient/Patient2"
   },
   "effectiveDateTime": "2024-04-11T14:00:00+01:00",
-  "valueString": "Makroskopische Messungen des TUR-Prostata Präparats",
   "bodySite": {
     "coding": [
       {

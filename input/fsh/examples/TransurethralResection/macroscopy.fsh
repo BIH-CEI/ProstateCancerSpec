@@ -15,7 +15,6 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * subject = Reference(Patient2)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueString = "Makroskopische Messungen des TUR-Prostata Präparats"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
@@ -24,7 +23,7 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * hasMember[+] = Reference(TransurethralResectionMacroscopicSeminalVesicles)
 * hasMember[+] = Reference(TransurethralResectionMacroscopicLymphNodeDissection)
 
-* note.text = "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
+* note.text = "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
 
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - TUR-PROSTATA
@@ -66,7 +65,7 @@ Description: "Vorhandensein von Samenblasen im TUR-Prostata Präparat"
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Samenblasen im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
@@ -87,7 +86,7 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat
 * specimen = Reference(TransurethralResectionSpecimenPart)
 * effectiveDateTime = "2024-04-11T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
 * bodySite = $sct#41216001 "Prostatic structure (body structure)"
 * note.text = "Keine Lymphknoten im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)

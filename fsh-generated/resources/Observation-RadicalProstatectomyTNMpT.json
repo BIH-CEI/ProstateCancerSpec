@@ -37,12 +37,12 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1229947008",
+        "code": "1352545001",
         "system": "http://snomed.info/sct",
-        "display": "American Joint Committee on Cancer pT2c (qualifier value)"
+        "display": "pT2 category (tumor staging)"
       }
     ],
-    "text": "pT2c - Tumor involves both sides"
+    "text": "pT2 - Organ confined"
   },
   "derivedFrom": [
     {

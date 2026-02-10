@@ -16,7 +16,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **category**: Pathology consultation, comprehensive, records and specimen with report (procedure)
 
-**code**: Radical prostatectomy (procedure)
+**code**: Pathology synoptic report
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -30,7 +30,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **supportingInfo**: [Condition Bösartige Neubildung der Prostata](Condition-RadicalProstatectomyDiagnosisPreOp.md)
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Surgical specimen](Specimen-RadicalProstatectomySpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)](Specimen-RadicalProstatectomySpecimenPart.md)
 
 
 
@@ -76,9 +76,9 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "code" : {
     "coding" : [
       {
-        "system" : "http://snomed.info/sct",
-        "code" : "176106009",
-        "display" : "Radical prostatectomy (procedure)"
+        "system" : "http://loinc.org",
+        "code" : "60568-3",
+        "display" : "Pathology synoptic report"
       }
     ]
   },

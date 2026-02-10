@@ -26,7 +26,7 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 > 
 
-Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.
+Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).
 
 
 **bodySite**: Prostatic structure (body structure)
@@ -114,7 +114,7 @@ Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Z
   "valueString" : "Makroskopische Messungen aller 12 Prostatastanzen",
   "note" : [
     {
-      "text" : "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion."
+      "text" : "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal)."
     }
   ],
   "bodySite" : {

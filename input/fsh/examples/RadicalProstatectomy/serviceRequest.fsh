@@ -11,7 +11,7 @@ Description: "Anforderung für pathologische Aufarbeitung nach radikaler Prostat
 * identifier[Placer-ID].value = "PATH-RPT-2024-002"
 * intent = #order
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-* code = $sct#176106009 "Radical prostatectomy (procedure)"
+* code = $loinc#60568-3 "Pathology synoptic report"
 * encounter = Reference(RadicalProstatectomyEncounter)
 * subject = Reference(Patient1)
 * requester = Reference(UrologistPractitioner)

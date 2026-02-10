@@ -11,7 +11,7 @@
   <name value="ProstateCancerSpec"/>
   <title value="Prostate Cancer Specification"/>
   <status value="draft"/>
-  <date value="2026-02-09T15:02:42+01:00"/>
+  <date value="2026-02-10T16:25:07+01:00"/>
   <publisher value="BIH CEI"/>
   <contact>
     <name value="BIH CEI"/>
@@ -1404,6 +1404,50 @@
         <valueString value="Specimen"/>
       </extension>
       <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide01"/>
+      </reference>
+      <name value="HE-Schnitt Lymphknoten links 01"/>
+      <description value="Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeLeftSlide02"/>
+      </reference>
+      <name value="HE-Schnitt Lymphknoten links 02"/>
+      <description value="Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten links"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide01"/>
+      </reference>
+      <name value="HE-Schnitt Lymphknoten rechts 01"/>
+      <description value="Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeRightSlide02"/>
+      </reference>
+      <name value="HE-Schnitt Lymphknoten rechts 02"/>
+      <description value="Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rechts"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
         <reference value="Specimen/CoreNeedleBiopsySpecimen01Slide"/>
       </reference>
       <name value="HE-Schnitt Stanze 01"/>
@@ -2383,6 +2427,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/RadicalProstatectomyMaxTumorDiameter"/>
+      </reference>
+      <name value="Maximum Tumor Diameter - Prostatectomy"/>
+      <description value="Maximum tumor diameter in millimeters"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/CoreNeedleBiopsyMicroscopicGrouper"/>
       </reference>
       <name value="Mikroskopische Befunde Grouper"/>
@@ -2724,6 +2779,28 @@
         <valueString value="Specimen"/>
       </extension>
       <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeLeftBlock"/>
+      </reference>
+      <name value="Paraffinblock Lymphknoten links"/>
+      <description value="Paraffineinbettung der pelvinen Lymphknoten links"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeRightBlock"/>
+      </reference>
+      <name value="Paraffinblock Lymphknoten rechts"/>
+      <description value="Paraffineinbettung der pelvinen Lymphknoten rechts"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
         <reference value="Specimen/CoreNeedleBiopsySpecimen01Block"/>
       </reference>
       <name value="Paraffinblock Stanze 01"/>
@@ -2948,6 +3025,28 @@
       </reference>
       <name value="Patient 3 - Enukleation (Karzinom)"/>
       <description value="Patient mit Miktionsbeschwerden und Karzinomnachweis, erhält transurethrale Enukleation und anschließend Lymphadenektomie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeLeft"/>
+      </reference>
+      <name value="Pelvine Lymphknoten links (Einsendespecimen)"/>
+      <description value="Pelvine Lymphknoten links aus der Lymphadenektomie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/RadicalProstatectomySpecimenLymphNodeRight"/>
+      </reference>
+      <name value="Pelvine Lymphknoten rechts (Einsendespecimen)"/>
+      <description value="Pelvine Lymphknoten rechts aus der Lymphadenektomie"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -4343,17 +4442,6 @@
       </reference>
       <name value="Transurethrale Resektion der Prostata"/>
       <description value="TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperplasie"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RadicalProstatectomyTumorVolume"/>
-      </reference>
-      <name value="Tumor Volume - Prostatectomy"/>
-      <description value="Total tumor volume in cubic centimeters"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

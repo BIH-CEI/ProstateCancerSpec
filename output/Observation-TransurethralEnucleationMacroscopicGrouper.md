@@ -20,8 +20,6 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Makroskopische Messungen des Prostata Enucleation Pr채parats
-
 **note**: 
 
 > 
@@ -83,7 +81,6 @@ Makroskopische Aufarbeitung des Prostata Enucleation Pr채parats: Gewicht 25g, L�
       "reference" : "Practitioner/PathologistPractitioner"
     }
   ],
-  "valueString" : "Makroskopische Messungen des Prostata Enucleation Pr채parats",
   "note" : [
     {
       "text" : "Makroskopische Aufarbeitung des Prostata Enucleation Pr채parats: Gewicht 25g, L채nge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."

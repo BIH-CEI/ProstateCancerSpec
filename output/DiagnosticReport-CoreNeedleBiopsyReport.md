@@ -23,17 +23,17 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report gross observation Narrative](Observation-CoreNeedleBiopsyMacroscopicGrouper.md)(Prostatic structure (body structure))
   * **Value**: Makroskopische Messungen aller 12 Prostatastanzen
   * **Flags**: Final
-  * **Note**: > Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion, Stanzen 07-12 aus linker Prostataregion.
+  * **Note**: > Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).
   * **When For**: 2024-01-15 14:00:00+0100
 * **Code**: [Pathology report microscopic observation Narrative Other stain](Observation-CoreNeedleBiopsyMicroscopicGrouper.md)(Prostatic structure (body structure))
   * **Value**: Mikroskopische Befunde aller 12 Prostatastanzen
   * **Flags**: Final
-  * **Note**: > Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 6 von 12 Stanzen nachgewiesen. Gleason Scores von 3+3=6 bis 4+5=9. Benigne Befunde in Stanzen 03, 05, 08, 10, 12. Detaillierte Findings für alle 16 Parameter pro Stanze implementiert.
+  * **Note**: > Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.
   * **When For**: 2024-01-17 10:00:00+0100
 * **Code**: [Pathology report final diagnosis Narrative](Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Diagnose: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7a, ISUP-Gradgruppe 2 (WHO 2016). 7 von 12 Stanzen tumorbefallen (3 rechts, 4 links), prozentualer Tumoranteil 35%, Tumorlänge gesamt 18,5 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.By Practitioner/PathologistPractitioner @2023-03-15
+  * **Note**: > Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). 7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11), prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.By Practitioner/PathologistPractitioner @2023-03-15
   * **When For**: 2023-03-15
 
 Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall.

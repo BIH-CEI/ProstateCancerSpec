@@ -83,6 +83,10 @@
 [TransurethralResectionSpecimenSlide05A]: Specimen-TransurethralResectionSpecimenSlide05A.html
 [TransurethralEnucleationSpecimenSlide05B]: Specimen-TransurethralEnucleationSpecimenSlide05B.html
 [TransurethralResectionSpecimenSlide05B]: Specimen-TransurethralResectionSpecimenSlide05B.html
+[RadicalProstatectomySpecimenLymphNodeLeftSlide01]: Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide01.html
+[RadicalProstatectomySpecimenLymphNodeLeftSlide02]: Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide02.html
+[RadicalProstatectomySpecimenLymphNodeRightSlide01]: Specimen-RadicalProstatectomySpecimenLymphNodeRightSlide01.html
+[RadicalProstatectomySpecimenLymphNodeRightSlide02]: Specimen-RadicalProstatectomySpecimenLymphNodeRightSlide02.html
 [CoreNeedleBiopsySpecimen01Slide]: Specimen-CoreNeedleBiopsySpecimen01Slide.html
 [CoreNeedleBiopsySpecimen02Slide]: Specimen-CoreNeedleBiopsySpecimen02Slide.html
 [CoreNeedleBiopsySpecimen03Slide]: Specimen-CoreNeedleBiopsySpecimen03Slide.html
@@ -172,6 +176,7 @@
 [CoreNeedleBiopsyMacroscopicLength11]: Observation-CoreNeedleBiopsyMacroscopicLength11.html
 [CoreNeedleBiopsyMacroscopicLength12]: Observation-CoreNeedleBiopsyMacroscopicLength12.html
 [RadicalProstatectomyMarginStatus]: Observation-RadicalProstatectomyMarginStatus.html
+[RadicalProstatectomyMaxTumorDiameter]: Observation-RadicalProstatectomyMaxTumorDiameter.html
 [CoreNeedleBiopsyMicroscopicGrouper]: Observation-CoreNeedleBiopsyMicroscopicGrouper.html
 [CoreNeedleBiopsyMorphText01]: Observation-CoreNeedleBiopsyMorphText01.html
 [CoreNeedleBiopsyMorphText02]: Observation-CoreNeedleBiopsyMorphText02.html
@@ -203,6 +208,8 @@
 [TransurethralResectionSpecimenBlock04]: Specimen-TransurethralResectionSpecimenBlock04.html
 [TransurethralEnucleationSpecimenBlock05]: Specimen-TransurethralEnucleationSpecimenBlock05.html
 [TransurethralResectionSpecimenBlock05]: Specimen-TransurethralResectionSpecimenBlock05.html
+[RadicalProstatectomySpecimenLymphNodeLeftBlock]: Specimen-RadicalProstatectomySpecimenLymphNodeLeftBlock.html
+[RadicalProstatectomySpecimenLymphNodeRightBlock]: Specimen-RadicalProstatectomySpecimenLymphNodeRightBlock.html
 [CoreNeedleBiopsySpecimen01Block]: Specimen-CoreNeedleBiopsySpecimen01Block.html
 [CoreNeedleBiopsySpecimen02Block]: Specimen-CoreNeedleBiopsySpecimen02Block.html
 [CoreNeedleBiopsySpecimen03Block]: Specimen-CoreNeedleBiopsySpecimen03Block.html
@@ -224,6 +231,8 @@
 [Patient1]: Patient-Patient1.html
 [Patient2]: Patient-Patient2.html
 [Patient3]: Patient-Patient3.html
+[RadicalProstatectomySpecimenLymphNodeLeft]: Specimen-RadicalProstatectomySpecimenLymphNodeLeft.html
+[RadicalProstatectomySpecimenLymphNodeRight]: Specimen-RadicalProstatectomySpecimenLymphNodeRight.html
 [CoreNeedleBiopsyPercentageGleason45]: Observation-CoreNeedleBiopsyPercentageGleason45.html
 [TransurethralEnucleationPercentageGleason45]: Observation-TransurethralEnucleationPercentageGleason45.html
 [RadicalProstatectomyPercentageGleason45]: Observation-RadicalProstatectomyPercentageGleason45.html
@@ -351,7 +360,6 @@
 [RadicalProstatectomyGleasonScoreTotal]: Observation-RadicalProstatectomyGleasonScoreTotal.html
 [CoreNeedleBiopsyTumorLengthTotal]: Observation-CoreNeedleBiopsyTumorLengthTotal.html
 [TransurethralResectionProcedure]: Procedure-TransurethralResectionProcedure.html
-[RadicalProstatectomyTumorVolume]: Observation-RadicalProstatectomyTumorVolume.html
 [CoreNeedleBiopsyTumorbefallinLaenge01]: Observation-CoreNeedleBiopsyTumorbefallinLaenge01.html
 [CoreNeedleBiopsyTumorbefallinLaenge02]: Observation-CoreNeedleBiopsyTumorbefallinLaenge02.html
 [CoreNeedleBiopsyTumorbefallinLaenge04]: Observation-CoreNeedleBiopsyTumorbefallinLaenge04.html

@@ -92,8 +92,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "118292001",
-        "display": "Surgical specimen"
+        "code": "122725003",
+        "display": "Specimen from prostate obtained by radical prostatectomy (specimen)"
       }
     ]
   },

@@ -19,4 +19,4 @@ Description: "Gesicherte Diagnose eines Prostatakarzinoms nach Biopsie, Indikati
 * recordedDate = "2024-02-10"
 * stage.summary = $sct#1222593007 "American Joint Committee on Cancer stage IIA (qualifier value)"
 * stage.type = $sct#260998006 "Clinical staging (qualifier value)"
-* note.text = "Prostatakarzinom ISUP Grade Group 2 (Gleason 3+4=7), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Intermediäres Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt."
+* note.text = "Prostatakarzinom ISUP Grade Group 5 (höchster Gleason 4+5=9), bioptisch gesichert. Klinisches Stadium cT2c cN0 cM0. Hohes Risiko nach D'Amico. Indikation zur radikalen Prostatektomie gestellt."
