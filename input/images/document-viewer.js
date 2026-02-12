@@ -208,23 +208,27 @@ function renderBundle(bundle) {
       html += '</div>';
     }
 
-    // --- MIKROSKOPIE (wenn Grouper vorhanden) ---
-    if (microscopicGrouper) {
+    // --- MIKROSKOPIE (wenn Grouper oder section.text vorhanden) ---
+    if (microscopicGrouper || parsedSections['mikroskopie']) {
       html += '<div class="report-section">';
       html += '<h3>Mikroskopie</h3>';
 
-      // Tabelle aus section.text.div
+      // Tabelle oder Text aus section.text.div
       if (parsedSections['mikroskopie']) {
         var microTable = extractTable(parsedSections['mikroskopie'].content);
         if (microTable) {
           html += '<div class="section-table">' + microTable + '</div>';
+        } else {
+          html += '<div class="section-content">' + parsedSections['mikroskopie'].content + '</div>';
         }
       }
 
       // .note des Groupers
-      var microNote = getNoteText(microscopicGrouper);
-      if (microNote) {
-        html += '<p class="grouper-note">' + microNote.replace(/\n/g, '<br/>') + '</p>';
+      if (microscopicGrouper) {
+        var microNote = getNoteText(microscopicGrouper);
+        if (microNote) {
+          html += '<p class="grouper-note">' + microNote.replace(/\n/g, '<br/>') + '</p>';
+        }
       }
 
       html += '</div>';

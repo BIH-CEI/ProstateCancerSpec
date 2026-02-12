@@ -15,6 +15,16 @@
   </div>
 
   <style type="text/css">
+    /* Override IG Publisher heading numbering within viewer */
+    #viewer h1:before,
+    #viewer h2:before,
+    #viewer h3:before,
+    #viewer h4:before,
+    #viewer h5:before,
+    #viewer h6:before {
+      content: none !important;
+    }
+
     /* Viewer Container */
     #viewer {
       font-family: 'Times New Roman', Times, serif;

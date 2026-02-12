@@ -38,7 +38,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <h3>Makroskopie</h3>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <thead>
-<tr><th>Stanze</th><th>Lokalisation</th><th>Länge (cm)</th><th>Zylinder</th></tr>
+<tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th><th>Zylinderanzahl im Gefäß</th></tr>
 </thead>
 <tbody>
 <tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td><td>1</td></tr>
@@ -59,7 +59,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <h3>Mikroskopie</h3>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <thead>
-<tr><th>Stanze</th><th>Befund</th><th>Gleason</th><th>Tumoranteil</th></tr>
+<tr><th>Stanze</th><th>Befund</th><th>Gleason-Score</th><th>Tumoranteil</th></tr>
 </thead>
 <tbody>
 <tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr>
@@ -93,7 +93,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>Samenblaseninfiltration</td><td>Nicht nachgewiesen</td></tr>
 <tr><td>Lymphovaskuläre Invasion</td><td>Nicht nachgewiesen</td></tr>
 <tr><td>Intraduktales Karzinom</td><td>Nicht nachgewiesen</td></tr>
-<tr><td>ASAP</td><td>Nein</td></tr>
+<tr><td>ASAP</td><td>Nicht nachgewiesen</td></tr>
 <tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr>
 </tbody>
 </table>

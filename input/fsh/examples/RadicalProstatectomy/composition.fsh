@@ -39,7 +39,7 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Präparat</td><td>Radikale Prostatektomie mit Samenblasen und pelvinen Lymphknoten</td></tr>
-<tr><td>Prostatagewicht</td><td>55 g</td></tr>
+<tr><td>Gewicht</td><td>55 g</td></tr>
 <tr><td>Maße (B × H × T)</td><td>4,5 × 4,0 × 3,5 cm</td></tr>
 <tr><td>Samenblasen</td><td>Vorhanden, beidseits 2,5 cm</td></tr>
 <tr><td>Lymphknoten</td><td>Bilateral vorhanden</td></tr>
