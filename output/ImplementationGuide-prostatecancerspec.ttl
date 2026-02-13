@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ProstateCancerSpec"] ; # 
   fhir:title [ fhir:v "Prostate Cancer Specification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-12T10:36:25+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-13T10:02:55+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH CEI" ] ;
