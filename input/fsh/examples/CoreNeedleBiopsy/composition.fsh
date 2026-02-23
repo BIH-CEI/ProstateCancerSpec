@@ -55,6 +55,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>12</td><td>Links medial apikal</td><td>1.4</td><td>1</td></tr>
 </tbody>
 </table>
+<p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1,3–1,9 cm, je 1 Zylinder pro Specimen. Stanzen 01–06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07–12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).</p>
 
 <h3>Mikroskopie</h3>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
@@ -76,6 +77,7 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr>
 </tbody>
 </table>
+<p>Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason-Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.</p>
 
 <h3>Diagnostische Schlussfolgerung</h3>
 <p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p>
@@ -97,4 +99,5 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr>
 </tbody>
 </table>
+<p>7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11). Prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration und Infiltration des periprostatischen Fettgewebes apikal nachgewiesen. Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>
 </div>"

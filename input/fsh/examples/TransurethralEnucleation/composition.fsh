@@ -45,6 +45,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Lymphknoten</td><td>Nicht im Resektat</td></tr>
 </tbody>
 </table>
+<p>Enukleationspräparat 25 g, Maße 3,5 × 2,8 × 2,2 cm. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
 
 <h3>Mikroskopie</h3>
 <p>Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall.</p>
@@ -66,5 +67,6 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr>
 </tbody>
 </table>
+<p>Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Anteil Gleasonmuster 4/5: 90%. Tumorinfiltration ca. 60% des Prostatagewebes. Intraduktales Karzinom und invasive kribriforme Anteile nachgewiesen. Extraprostatische Ausbreitung, Samenblaseninvasion, lymphovaskuläre Invasion und perineurale Infiltration nachgewiesen.</p>
 <p><b>Empfehlung:</b> Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>
 </div>"

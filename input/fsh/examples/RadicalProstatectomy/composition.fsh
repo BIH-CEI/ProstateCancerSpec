@@ -45,6 +45,7 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <tr><td>Lymphknoten</td><td>Bilateral vorhanden</td></tr>
 </tbody>
 </table>
+<p>Prostatektomiepräparat 55 g, Maße 4,5 × 4,0 × 3,5 cm. Samenbläschen beidseits 2,5 cm. Lymphknoten bilateral vorhanden.</p>
 
 <h3>Mikroskopie</h3>
 <p>Konventionelles Adenokarzinom der Prostata mit gemischten Gleason-Mustern. Tumor bilateral nachweisbar.</p>
@@ -73,4 +74,5 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <tr><td>pN-Stadium</td><td>pN0</td></tr>
 </tbody>
 </table>
+<p>Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Anteil Gleasonmuster 4/5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.</p>
 </div>"

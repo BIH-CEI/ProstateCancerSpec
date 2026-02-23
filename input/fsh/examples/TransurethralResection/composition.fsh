@@ -44,6 +44,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Lymphknoten</td><td>Nicht im Resektat</td></tr>
 </tbody>
 </table>
+<p>TUR-Prostata-Präparat 25 g. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
 
 <h3>Mikroskopie</h3>
 <p>Prostatastanzgewebe mit ausgeprägter nodulärer glandulärer und stromaler Hyperplasie. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität.</p>
@@ -60,4 +61,5 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr>
 </tbody>
 </table>
+<p>Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>
 </div>"
