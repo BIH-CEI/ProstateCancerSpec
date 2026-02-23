@@ -46,7 +46,7 @@
       {
         "code": "94735-8",
         "system": "http://loinc.org",
-        "display": "Prostate tumor area with Gleason pattern 4+5/Total tumor area"
+        "display": "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
       }
     ]
   },

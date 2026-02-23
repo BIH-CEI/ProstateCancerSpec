@@ -22,13 +22,6 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**note**: By Practitioner/PathologistPractitioner @2024-05-12
-
-> 
-
-Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.
-
-
 **hasMember**: 
 
 * [Observation Histology and Behavior ICD-O-3 Cancer](Observation-TransurethralEnucleationHistologicalTypeICDO3.md)
@@ -36,8 +29,8 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiv
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-TransurethralEnucleationPrimaryGleasonPattern.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-TransurethralEnucleationSecondaryGleasonPattern.md)
 * [Observation Gleason score in Specimen Qualitative](Observation-TransurethralEnucleationGleasonScoreTotal.md)
-* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area](Observation-TransurethralEnucleationPercentageGleason45.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-TransurethralEnucleationGradingGroupISUP.md)
+* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-TransurethralEnucleationPercentageGleason45.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-TransurethralEnucleationGradingGroupISUP.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-TransurethralEnucleationIntraductalCarcinoma.md)
 * [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.md)
 * [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-TransurethralEnucleationProstaticTissueInvolved.md)
@@ -92,15 +85,6 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiv
   "performer" : [
     {
       "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "note" : [
-    {
-      "authorReference" : {
-        "reference" : "Practitioner/PathologistPractitioner"
-      },
-      "time" : "2024-05-12",
-      "text" : "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) mit invasiven kribriformen Anteilen und intraduktaler Karzinomkomponente. Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Prozentualer Anteil Gleasonmuster 4 und 5: 90%. Ausgedehnte Tumorinfiltration, ca. 60% des Prostatagewebes befallen. Extraprostatische Ausbreitung nachgewiesen. Samenblaseninfiltration nachgewiesen. Lymphovaskuläre Invasion nachgewiesen. Perineurale Infiltration nachgewiesen. Empfehlung: Staging-Untersuchungen und interdisziplinäre Tumorkonferenz."
     }
   ],
   "hasMember" : [

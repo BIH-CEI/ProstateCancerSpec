@@ -29,8 +29,6 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostatektomieprä
 * hasMember[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesiclesPresent)
 * hasMember[+] = Reference(RadicalProstatectomyMacroscopicSeminalVesicleLength)
 
-* note.text = "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
-
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - PROSTATEKTOMIE
 // =============================================================================
@@ -45,7 +43,7 @@ Description: "Gewicht des Prostatektomiepräparats"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#44668-2 "Prostate weight"
+* code = $loinc#29638-4 "Weight of Tissue"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:10:00+01:00"
@@ -65,7 +63,7 @@ Description: "Breite der Prostata in cm"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#33756-8 "Prostate size"
+* code = $loinc#84894-5 "Dimension [Length] of Specimen"
 * code.text = "Prostata Breite"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -86,7 +84,7 @@ Description: "Höhe der Prostata in cm"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#33756-8 "Prostate size"
+* code = $loinc#84894-5 "Dimension [Length] of Specimen"
 * code.text = "Prostata Höhe"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -107,7 +105,7 @@ Description: "Tiefe der Prostata in cm"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#33756-8 "Prostate size"
+* code = $loinc#84894-5 "Dimension [Length] of Specimen"
 * code.text = "Prostata Tiefe"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -149,7 +147,7 @@ Description: "Seitenangabe der Lymphknoten im Prostatektomiepräparat"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:18:30+01:00"
@@ -169,7 +167,7 @@ Description: "Vorhandensein von Samenblasen im Prostatektomiepräparat"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $sct#395557000 "Tumor finding"
+* code = $loinc#84895-2 "Seminal vesicles [Presence] in Specimen"
 * code.text = "Samenblasen im Resektat"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -190,7 +188,7 @@ Description: "Längenmessung der Samenbläschen"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#33757-6 "Seminal vesicle size"
+* code = $loinc#84894-5 "Dimension [Length] of Specimen"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:20:00+01:00"

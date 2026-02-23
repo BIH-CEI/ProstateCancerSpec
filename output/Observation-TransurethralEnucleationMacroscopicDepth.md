@@ -71,8 +71,8 @@ Prostata Enucleation Tiefe: 2.2 cm
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "33756-8",
-        "display" : "Prostate size"
+        "code" : "84894-5",
+        "display" : "Dimension [Length] of Specimen"
       }
     ],
     "text" : "Prostata Enucleation Tiefe"

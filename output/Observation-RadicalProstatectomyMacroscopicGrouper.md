@@ -22,25 +22,18 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **value**: Makroskopische Messungen des Prostatektomiepräparats
 
-**note**: 
-
-> 
-
-Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm
-
-
 **bodySite**: Prostatic structure (body structure)
 
 **hasMember**: 
 
-* [Observation Prostate weight](Observation-RadicalProstatectomyMacroscopicProstateWeight.md)
-* [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateWidth.md)
-* [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateHeight.md)
-* [Observation Prostate size](Observation-RadicalProstatectomyMacroscopicProstateDepth.md)
+* [Observation Weight of Tissue](Observation-RadicalProstatectomyMacroscopicProstateWeight.md)
+* [Observation Dimension [Length] of Specimen](Observation-RadicalProstatectomyMacroscopicProstateWidth.md)
+* [Observation Dimension [Length] of Specimen](Observation-RadicalProstatectomyMacroscopicProstateHeight.md)
+* [Observation Dimension [Length] of Specimen](Observation-RadicalProstatectomyMacroscopicProstateDepth.md)
 * [Observation Tumor finding](Observation-RadicalProstatectomyMacroscopicLymphNodesPresent.md)
-* [Observation Laterality](Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.md)
-* [Observation Tumor finding](Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.md)
-* [Observation Seminal vesicle size](Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.md)
+* [Observation Anatomic part Laterality](Observation-RadicalProstatectomyMacroscopicLymphNodesLaterality.md)
+* [Observation Seminal vesicles [Presence] in Specimen](Observation-RadicalProstatectomyMacroscopicSeminalVesiclesPresent.md)
+* [Observation Dimension [Length] of Specimen](Observation-RadicalProstatectomyMacroscopicSeminalVesicleLength.md)
 
 **derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.19--20250115134435' about '->Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'](QuestionnaireResponse-QuestionnaireResponseRadicalProstatectomy.md)
 
@@ -86,11 +79,6 @@ Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4
     }
   ],
   "valueString" : "Makroskopische Messungen des Prostatektomiepräparats",
-  "note" : [
-    {
-      "text" : "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
-    }
-  ],
   "bodySite" : {
     "coding" : [
       {

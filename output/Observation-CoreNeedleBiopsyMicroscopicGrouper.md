@@ -22,13 +22,6 @@ Profile: [MII PR Patho Microscopic Grouperversion: null2026.0.0)](https://simpli
 
 **value**: Mikroskopische Befunde aller 12 Prostatastanzen
 
-**note**: 
-
-> 
-
-Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.
-
-
 **bodySite**: Prostatic structure (body structure)
 
 **derivedFrom**: 
@@ -55,7 +48,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason02.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason02.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason02.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading02.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading02.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil02.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge02.md)
@@ -74,7 +67,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason04.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason04.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason04.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading04.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading04.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen04.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil04.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge04.md)
@@ -93,7 +86,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason06.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason06.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason06.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading06.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading06.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen06.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil06.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge06.md)
@@ -110,7 +103,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason07.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason07.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason07.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading07.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading07.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen07.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil07.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge07.md)
@@ -129,7 +122,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason09.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason09.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason09.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading09.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading09.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen09.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil09.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge09.md)
@@ -148,7 +141,7 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaerGleason11.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySekundaerGleason11.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason11.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading11.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading11.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen11.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil11.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorbefallinLaenge11.md)
@@ -205,11 +198,6 @@ Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 St
     }
   ],
   "valueString" : "Mikroskopische Befunde aller 12 Prostatastanzen",
-  "note" : [
-    {
-      "text" : "Mikroskopische Untersuchung der 12 Prostatastanzen: Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12."
-    }
-  ],
   "bodySite" : {
     "coding" : [
       {

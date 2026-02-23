@@ -20,7 +20,7 @@
   <code>
     <coding>
       <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
-      <version value="2020"/>
+      <version value="2025"/>
       <code value="5-603"/>
       <display value="Enukleation der Prostata"/>
     </coding>

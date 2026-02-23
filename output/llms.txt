@@ -11,6 +11,7 @@
 * [Biopsy Specimens](biopsy-specimens.md)
 * [Prostatectomy Specimens](prostatectomy-specimens.md)
 * [TUR-Resection Specimens](tur-resection-specimens.md)
+* [Semantic Annotations](semantic-annotations.md)
 
 ## Resources
 

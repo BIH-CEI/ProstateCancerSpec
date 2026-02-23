@@ -8,7 +8,7 @@ Description: "PSA-Wert vor der Prostata Enucleation"
 * status = #final
 * category[+] = $loinc#26436-6 "Laboratory studies (set)"
 * category[+] = $loinc#LP7839-6 "Pathology"
-* code = $loinc#2857-1 "Prostate specific antigen [Mass/volume] in Serum or Plasma"
+* code = $loinc#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient3)
 * valueQuantity
   * value = 8.5

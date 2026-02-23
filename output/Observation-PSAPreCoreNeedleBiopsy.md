@@ -12,7 +12,7 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
 
 **category**: Laboratory studies (set), Pathology
 
-**code**: Prostate specific antigen [Mass/volume] in Serum or Plasma
+**code**: Prostate specific Ag [Mass/volume] in Serum or Plasma
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -66,7 +66,7 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
       {
         "system" : "http://loinc.org",
         "code" : "2857-1",
-        "display" : "Prostate specific antigen [Mass/volume] in Serum or Plasma"
+        "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
       }
     ]
   },

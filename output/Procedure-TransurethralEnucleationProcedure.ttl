@@ -38,7 +38,7 @@
          fhir:v "http://fhir.de/CodeSystem/bfarm/ops"^^xsd:anyURI ;
          fhir:l <http://fhir.de/CodeSystem/bfarm/ops>
        ] ;
-       fhir:version [ fhir:v "2020" ] ;
+       fhir:version [ fhir:v "2025" ] ;
        fhir:code [ fhir:v "5-603" ] ;
        fhir:display [ fhir:v "Enukleation der Prostata" ]
      ] [

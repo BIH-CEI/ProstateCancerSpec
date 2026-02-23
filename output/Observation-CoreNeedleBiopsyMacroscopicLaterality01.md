@@ -12,7 +12,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report gross observation Narrative
 
-**code**: Laterality
+**code**: Anatomic part Laterality
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -69,8 +69,8 @@ Rechte Prostataregion
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "272741003",
-        "display" : "Laterality"
+        "code" : "20228-3",
+        "display" : "Anatomic part Laterality"
       }
     ]
   },

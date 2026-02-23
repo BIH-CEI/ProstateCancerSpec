@@ -14,7 +14,7 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
 
 **category**: Laboratory, Pathology report final diagnosis Narrative
 
-**code**: Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate
+**code**: Tissue cores.positive.carcinoma in Tissue core
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -23,6 +23,8 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
 **value**: 4
+
+**bodySite**: Right (qualifier value)
 
 
 
@@ -65,9 +67,9 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
   "code" : {
     "coding" : [
       {
-        "system" : "http://snomed.info/sct",
-        "code" : "399727003:18720000=251597001",
-        "display" : "Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate"
+        "system" : "http://loinc.org",
+        "code" : "44651-8",
+        "display" : "Tissue cores.positive.carcinoma in Tissue core"
       }
     ]
   },
@@ -82,6 +84,15 @@ Profiles: [MII PR Onkologie Prostata Anzahl positiver Stanzen](https://simplifie
   ],
   "valueQuantity" : {
     "value" : 4
+  },
+  "bodySite" : {
+    "coding" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "24028007",
+        "display" : "Right (qualifier value)"
+      }
+    ]
   }
 }
 

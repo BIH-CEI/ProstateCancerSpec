@@ -60,8 +60,6 @@ Description: "Gruppierung aller makroskopischen Messungen der Prostatastanzen"
 * derivedFrom[+] = Reference(CoreNeedleBiopsyMacroscopicLaterality11)
 * derivedFrom[+] = Reference(CoreNeedleBiopsyMacroscopicLaterality12)
 
-* note.text = "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal)."
-
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - PROSTATA STANZEN
 // Separate Findings für Länge und Anzahl der Zylinder pro Einsendespecimen
@@ -614,7 +612,7 @@ Description: "Lateralitätsangabe der Prostatastanze 01"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen01Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -633,7 +631,7 @@ Description: "Lateralitätsangabe der Prostatastanze 02"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen02Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -652,7 +650,7 @@ Description: "Lateralitätsangabe der Prostatastanze 03"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen03Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -671,7 +669,7 @@ Description: "Lateralitätsangabe der Prostatastanze 04"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen04Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -690,7 +688,7 @@ Description: "Lateralitätsangabe der Prostatastanze 05"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen05Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -709,7 +707,7 @@ Description: "Lateralitätsangabe der Prostatastanze 06"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen06Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -732,7 +730,7 @@ Description: "Lateralitätsangabe der Prostatastanze 07"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen07Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -751,7 +749,7 @@ Description: "Lateralitätsangabe der Prostatastanze 08"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen08Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -770,7 +768,7 @@ Description: "Lateralitätsangabe der Prostatastanze 09"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen09Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -789,7 +787,7 @@ Description: "Lateralitätsangabe der Prostatastanze 10"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen10Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -808,7 +806,7 @@ Description: "Lateralitätsangabe der Prostatastanze 11"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen11Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
@@ -827,7 +825,7 @@ Description: "Lateralitätsangabe der Prostatastanze 12"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#272741003 "Laterality"
+* code = $loinc#20228-3 "Anatomic part Laterality"
 * subject = Reference(Patient1)
 * specimen = Reference(CoreNeedleBiopsySpecimen12Part)
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"

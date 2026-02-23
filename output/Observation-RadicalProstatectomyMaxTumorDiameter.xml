@@ -28,7 +28,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="33728-7"/>
-      <display value="Size.maximum dimension of tumor in Prostate"/>
+      <display value="Size.maximum dimension in Tumor"/>
     </coding>
     <text value="Maximum tumor diameter"/>
   </code>

@@ -62,7 +62,7 @@
          fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ;
          fhir:l <http://fhir.de/CodeSystem/bfarm/icd-10-gm>
        ] ;
-       fhir:version [ fhir:v "2024" ] ;
+       fhir:version [ fhir:v "2025" ] ;
        fhir:code [ fhir:v "C61" ] ;
        fhir:display [ fhir:v "Bösartige Neubildung der Prostata" ]
      ] )

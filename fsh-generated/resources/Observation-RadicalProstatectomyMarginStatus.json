@@ -43,9 +43,9 @@
   "code": {
     "coding": [
       {
-        "code": "44669-0",
+        "code": "84905-9",
         "system": "http://loinc.org",
-        "display": "Surgical margin involvement by tumor [Identifier] in Prostate Qualitative"
+        "display": "Margin involvement [Type] in Prostate tumor"
       }
     ]
   },

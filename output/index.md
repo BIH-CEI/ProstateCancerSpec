@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-02-13 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-02-23 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -127,7 +127,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-02-13T10:02:55+01:00",
+  "date" : "2026-02-23T14:58:33+01:00",
   "publisher" : "BIH CEI",
   "contact" : [
     {
@@ -6481,6 +6481,17 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
           ],
           "nameUrl" : "tur-resection-specimens.html",
           "title" : "TUR-Resection Specimens",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "semantic-annotations.html"
+            }
+          ],
+          "nameUrl" : "semantic-annotations.html",
+          "title" : "Semantic Annotations",
           "generation" : "markdown"
         },
         {

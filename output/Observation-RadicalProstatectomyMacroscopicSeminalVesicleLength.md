@@ -12,7 +12,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report gross observation Narrative
 
-**code**: Seminal vesicle size
+**code**: Dimension [Length] of Specimen
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -71,8 +71,8 @@ Beide Samenbläschen je 2.5 cm lang
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "33757-6",
-        "display" : "Seminal vesicle size"
+        "code" : "84894-5",
+        "display" : "Dimension [Length] of Specimen"
       }
     ]
   },

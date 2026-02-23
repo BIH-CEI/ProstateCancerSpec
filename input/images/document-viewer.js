@@ -40,14 +40,6 @@ function findObservationByCode(bundle, loincCode) {
   return null;
 }
 
-// Extrahiere .note Text aus Observation
-function getNoteText(observation) {
-  if (!observation || !observation.note || observation.note.length === 0) {
-    return null;
-  }
-  return observation.note[0].text;
-}
-
 // Parse section.text.div und extrahiere Sektionen nach h3-Überschriften
 function parseSectionDiv(divContent) {
   if (!divContent) return {};
@@ -79,35 +71,6 @@ function parseSectionDiv(divContent) {
   }
 
   return sections;
-}
-
-// Extrahiere nur die Tabelle aus einem HTML-String
-function extractTable(html) {
-  if (!html) return null;
-  var match = html.match(/<table[^>]*>[\s\S]*?<\/table>/i);
-  return match ? match[0] : null;
-}
-
-// Extrahiere Text vor der Tabelle (z.B. Diagnose-Zeile)
-function extractTextBeforeTable(html) {
-  if (!html) return null;
-  var tableStart = html.indexOf('<table');
-  if (tableStart === -1) return html;
-  var text = html.substring(0, tableStart).trim();
-  // Entferne leere p-Tags
-  text = text.replace(/<p>\s*<\/p>/g, '');
-  return text || null;
-}
-
-// Extrahiere Text nach der Tabelle (z.B. Empfehlung)
-function extractTextAfterTable(html) {
-  if (!html) return null;
-  var tableEnd = html.lastIndexOf('</table>');
-  if (tableEnd === -1) return null;
-  var text = html.substring(tableEnd + 8).trim();
-  // Entferne leere p-Tags
-  text = text.replace(/<p>\s*<\/p>/g, '');
-  return text || null;
 }
 
 function renderBundle(bundle) {
@@ -191,18 +154,8 @@ function renderBundle(bundle) {
       html += '<div class="report-section">';
       html += '<h3>Makroskopie</h3>';
 
-      // Tabelle aus section.text.div
       if (parsedSections['makroskopie']) {
-        var macroTable = extractTable(parsedSections['makroskopie'].content);
-        if (macroTable) {
-          html += '<div class="section-table">' + macroTable + '</div>';
-        }
-      }
-
-      // .note des Groupers
-      var macroNote = getNoteText(macroscopicGrouper);
-      if (macroNote) {
-        html += '<p class="grouper-note">' + macroNote.replace(/\n/g, '<br/>') + '</p>';
+        html += '<div class="section-content">' + parsedSections['makroskopie'].content + '</div>';
       }
 
       html += '</div>';
@@ -213,22 +166,8 @@ function renderBundle(bundle) {
       html += '<div class="report-section">';
       html += '<h3>Mikroskopie</h3>';
 
-      // Tabelle oder Text aus section.text.div
       if (parsedSections['mikroskopie']) {
-        var microTable = extractTable(parsedSections['mikroskopie'].content);
-        if (microTable) {
-          html += '<div class="section-table">' + microTable + '</div>';
-        } else {
-          html += '<div class="section-content">' + parsedSections['mikroskopie'].content + '</div>';
-        }
-      }
-
-      // .note des Groupers
-      if (microscopicGrouper) {
-        var microNote = getNoteText(microscopicGrouper);
-        if (microNote) {
-          html += '<p class="grouper-note">' + microNote.replace(/\n/g, '<br/>') + '</p>';
-        }
+        html += '<div class="section-content">' + parsedSections['mikroskopie'].content + '</div>';
       }
 
       html += '</div>';
@@ -239,31 +178,8 @@ function renderBundle(bundle) {
       html += '<div class="report-section">';
       html += '<h3>Diagnostische Schlussfolgerung</h3>';
 
-      // Tabelle aus section.text.div
       if (parsedSections['diagnostische_schlussfolgerung']) {
-        var diagTable = extractTable(parsedSections['diagnostische_schlussfolgerung'].content);
-        if (diagTable) {
-          html += '<div class="section-table">' + diagTable + '</div>';
-        }
-      }
-
-      // .note des Groupers
-      var diagNote = getNoteText(diagnosticConclusionGrouper);
-      if (diagNote) {
-        html += '<p class="grouper-note">' + diagNote.replace(/\n/g, '<br/>') + '</p>';
-      }
-
-      // Diagnose aus DiagnosticReport.conclusion
-      if (diagnosticReport && diagnosticReport.conclusion) {
-        html += '<p class="diagnosis"><strong>Diagnose:</strong> ' + diagnosticReport.conclusion + '</p>';
-      }
-
-      // Empfehlung (falls in section.text.div vorhanden)
-      if (parsedSections['diagnostische_schlussfolgerung']) {
-        var recommendation = extractTextAfterTable(parsedSections['diagnostische_schlussfolgerung'].content);
-        if (recommendation && recommendation.toLowerCase().indexOf('empfehlung') !== -1) {
-          html += '<div class="recommendation">' + recommendation + '</div>';
-        }
+        html += '<div class="section-content">' + parsedSections['diagnostische_schlussfolgerung'].content + '</div>';
       }
 
       html += '</div>';

@@ -52,7 +52,7 @@ Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. In
     "coding" : [
       {
         "system" : "http://fhir.de/CodeSystem/bfarm/ops",
-        "version" : "2020",
+        "version" : "2025",
         "code" : "5-601",
         "display" : "Transurethrale Exzision und Destruktion von Prostatagewebe"
       },

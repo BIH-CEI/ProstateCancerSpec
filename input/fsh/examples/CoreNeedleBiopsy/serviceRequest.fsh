@@ -6,7 +6,7 @@ Title: "Standardbiopsie Prostata Anforderung"
 Description: "Anforderung für 12-Stanzen Prostatabiopsie"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
 * status = #completed
-* identifier[Placer-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC "Placer ID"
+* identifier[Placer-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC "Placer Identifier"
 * identifier[Placer-ID].system = "http://example.hospital.de/serviceRequest"
 * identifier[Placer-ID].value = "PATH-RPT-2024-001"
 * intent = #order

@@ -26,8 +26,6 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleati
 * hasMember[+] = Reference(TransurethralEnucleationMacroscopicSeminalVesicles)
 * hasMember[+] = Reference(TransurethralEnucleationMacroscopicLymphNodeDissection)
 
-* note.text = "Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
-
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - TUR-PROSTATA
 // =============================================================================
@@ -104,7 +102,7 @@ Description: "Tiefe des Prostata Enucleation Präparats in cm"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
-* code = $loinc#33756-8 "Prostate size"
+* code = $loinc#84894-5 "Dimension [Length] of Specimen"
 * code.text = "Prostata Enucleation Tiefe"
 * subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenPart)

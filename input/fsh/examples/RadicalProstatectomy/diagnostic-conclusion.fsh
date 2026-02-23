@@ -41,10 +41,6 @@ Description: "Grouper for all diagnostic conclusion findings in prostatectomy sp
 * hasMember[+] = Reference(RadicalProstatectomyLymphNodesPositive)
 * hasMember[+] = Reference(RadicalProstatectomyTNMpT)
 * hasMember[+] = Reference(RadicalProstatectomyTNMpN)
-* note.authorReference = Reference(PathologistPractitioner)
-* note.time = "2024-03-20"
-* note.text = "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0."
-
 // Histological Type (ICD-O-3)
 Instance: RadicalProstatectomyHistologicalTypeICDO3
 InstanceOf: $mii-patho-finding
@@ -176,7 +172,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area"
+* code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
@@ -199,7 +195,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code.coding[+] = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+* code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
@@ -258,7 +254,7 @@ Description: "Maximum tumor diameter in millimeters"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#33728-7 "Size.maximum dimension of tumor in Prostate"
+* code = $loinc#33728-7 "Size.maximum dimension in Tumor"
 * code.text = "Maximum tumor diameter"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -281,7 +277,7 @@ Description: "Percentage of prostatic tissue involved by tumour"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#44654-2 "Tissue involvement by tumor as percentage of total tissue examined"
+* code = $loinc#44654-2 "Tissue involved by tumor in Prostate tumor"
 * code.text = "Prostatic tissue involved by tumour"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
@@ -400,7 +396,7 @@ Description: "Status of surgical resection margins"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#44669-0 "Surgical margin involvement by tumor [Identifier] in Prostate Qualitative"
+* code = $loinc#84905-9 "Margin involvement [Type] in Prostate tumor"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
@@ -419,7 +415,7 @@ Description: "Number of lymph nodes examined"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#21894-1 "Regional lymph nodes examined [#] in Cancer specimen"
+* code = $loinc#21894-1 "Regional lymph nodes examined [#] Specimen"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
@@ -440,7 +436,7 @@ Description: "Number of lymph nodes with tumor involvement"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#21893-3 "Regional lymph nodes positive [#] in Cancer specimen by Light microscopy"
+* code = $loinc#21893-3 "Regional lymph nodes positive [#] Specimen"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)

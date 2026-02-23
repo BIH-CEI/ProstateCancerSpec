@@ -51,7 +51,7 @@
       {
         "code": "21894-1",
         "system": "http://loinc.org",
-        "display": "Regional lymph nodes examined [#] in Cancer specimen"
+        "display": "Regional lymph nodes examined [#] Specimen"
       }
     ]
   },

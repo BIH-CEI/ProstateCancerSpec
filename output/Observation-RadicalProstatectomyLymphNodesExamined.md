@@ -14,7 +14,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report final diagnosis Narrative
 
-**code**: Regional lymph nodes examined [#] in Cancer specimen
+**code**: Regional lymph nodes examined [#] Specimen
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -68,7 +68,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
       {
         "system" : "http://loinc.org",
         "code" : "21894-1",
-        "display" : "Regional lymph nodes examined [#] in Cancer specimen"
+        "display" : "Regional lymph nodes examined [#] Specimen"
       }
     ]
   },

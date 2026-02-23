@@ -52,11 +52,6 @@
       "reference": "Observation/RadicalProstatectomyMacroscopicSeminalVesicleLength"
     }
   ],
-  "note": [
-    {
-      "text": "Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm"
-    }
-  ],
   "code": {
     "coding": [
       {

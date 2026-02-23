@@ -22,13 +22,6 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **value**: Makroskopische Messungen aller 12 Prostatastanzen
 
-**note**: 
-
-> 
-
-Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).
-
-
 **bodySite**: Prostatic structure (body structure)
 
 **derivedFrom**: 
@@ -57,18 +50,18 @@ Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 
 * [Observation Total number of cores in Tissue core](Observation-CoreNeedleBiopsyMacroscopicCylinderCount10.md)
 * [Observation Total number of cores in Tissue core](Observation-CoreNeedleBiopsyMacroscopicCylinderCount11.md)
 * [Observation Total number of cores in Tissue core](Observation-CoreNeedleBiopsyMacroscopicCylinderCount12.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality01.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality02.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality03.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality04.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality05.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality06.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality07.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality08.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality09.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality10.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality11.md)
-* [Observation Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality12.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality01.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality02.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality03.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality04.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality05.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality06.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality07.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality08.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality09.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality10.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality11.md)
+* [Observation Anatomic part Laterality](Observation-CoreNeedleBiopsyMacroscopicLaterality12.md)
 
 
 
@@ -112,11 +105,6 @@ Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 
     }
   ],
   "valueString" : "Makroskopische Messungen aller 12 Prostatastanzen",
-  "note" : [
-    {
-      "text" : "Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1.3-1.9 cm, je 1 Zylinder pro Specimen. Stanzen 01-06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07-12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal)."
-    }
-  ],
   "bodySite" : {
     "coding" : [
       {

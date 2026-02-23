@@ -22,13 +22,6 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**note**: By Practitioner/PathologistPractitioner @2024-03-20
-
-> 
-
-Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.
-
-
 **hasMember**: 
 
 * [Observation Histology and Behavior ICD-O-3 Cancer](Observation-RadicalProstatectomyHistologicalTypeICDO3.md)
@@ -37,20 +30,20 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Sc
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-RadicalProstatectomyPrimaryGleasonPattern.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-RadicalProstatectomySecondaryGleasonPattern.md)
 * [Observation Gleason score in Specimen Qualitative](Observation-RadicalProstatectomyGleasonScoreTotal.md)
-* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area](Observation-RadicalProstatectomyPercentageGleason45.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-RadicalProstatectomyGradingGroupISUP.md)
+* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-RadicalProstatectomyPercentageGleason45.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-RadicalProstatectomyGradingGroupISUP.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyIntraductalCarcinoma.md)
 * [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.md)
-* [Observation Size.maximum dimension of tumor in Prostate](Observation-RadicalProstatectomyMaxTumorDiameter.md)
-* [Observation Tissue involvement by tumor as percentage of total tissue examined](Observation-RadicalProstatectomyProstaticTissueInvolved.md)
+* [Observation Size.maximum dimension in Tumor](Observation-RadicalProstatectomyMaxTumorDiameter.md)
+* [Observation Tissue involved by tumor in Prostate tumor](Observation-RadicalProstatectomyProstaticTissueInvolved.md)
 * [Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols](Observation-RadicalProstatectomyExtraprostaticExtension.md)
 * [Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols](Observation-RadicalProstatectomySeminalVesicleInvasion.md)
 * [Observation Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols](Observation-RadicalProstatectomyLymphovascularInvasion.md)
 * [Observation Perineural invasion [Presence] in Cancer specimen](Observation-RadicalProstatectomyPerineuralInfiltration.md)
 * [Observation Bladder neck involvement of Prostate tumor](Observation-RadicalProstatectomyBladderNeckInvasion.md)
-* [Observation Surgical margin involvement by tumor [Identifier] in Prostate Qualitative](Observation-RadicalProstatectomyMarginStatus.md)
-* [Observation Regional lymph nodes examined [#] in Cancer specimen](Observation-RadicalProstatectomyLymphNodesExamined.md)
-* [Observation Regional lymph nodes positive [#] in Cancer specimen by Light microscopy](Observation-RadicalProstatectomyLymphNodesPositive.md)
+* [Observation Margin involvement [Type] in Prostate tumor](Observation-RadicalProstatectomyMarginStatus.md)
+* [Observation Regional lymph nodes examined [#] Specimen](Observation-RadicalProstatectomyLymphNodesExamined.md)
+* [Observation Regional lymph nodes positive [#] Specimen](Observation-RadicalProstatectomyLymphNodesPositive.md)
 * [Observation Primary tumor.pathology Cancer](Observation-RadicalProstatectomyTNMpT.md)
 * [Observation Regional lymph nodes.pathology [Class] Cancer](Observation-RadicalProstatectomyTNMpN.md)
 
@@ -100,15 +93,6 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Sc
   "performer" : [
     {
       "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "note" : [
-    {
-      "authorReference" : {
-        "reference" : "Practitioner/PathologistPractitioner"
-      },
-      "time" : "2024-03-20",
-      "text" : "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0."
     }
   ],
   "hasMember" : [

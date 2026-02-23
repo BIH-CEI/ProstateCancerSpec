@@ -82,7 +82,7 @@ V.a. Prostatakarzinom bei PSA 8,5 ng/ml und PI-RADS 4 Läsion im mpMRT. Biopsie 
     "coding" : [
       {
         "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version" : "2024",
+        "version" : "2025",
         "code" : "C61",
         "display" : "Bösartige Neubildung der Prostata"
       }

@@ -29,7 +29,7 @@
       {
         "code": "44654-2",
         "system": "http://loinc.org",
-        "display": "Tissue involvement by tumor as percentage of total tissue examined"
+        "display": "Tissue involved by tumor in Prostate tumor"
       }
     ],
     "text": "Prostatic tissue involved by tumour"

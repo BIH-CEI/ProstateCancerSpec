@@ -51,7 +51,7 @@
          fhir:l <http://loinc.org>
        ] ;
        fhir:code [ fhir:v "33728-7" ] ;
-       fhir:display [ fhir:v "Size.maximum dimension of tumor in Prostate" ]
+       fhir:display [ fhir:v "Size.maximum dimension in Tumor" ]
      ] ) ;
      fhir:text [ fhir:v "Maximum tumor diameter" ]
   ] ; # 

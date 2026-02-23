@@ -7,6 +7,8 @@ InstanceOf: Bundle
 Usage: #example
 Title: "Document Bundle - TUR-Prostata"
 Description: "FHIR Document Bundle für den vollständigen TUR-P-Befundbericht"
+* identifier.system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
+* identifier.value = "E_24_003"
 * type = #document
 * timestamp = "2024-04-15T08:00:00+01:00"
 
@@ -33,3 +35,11 @@ Description: "FHIR Document Bundle für den vollständigen TUR-P-Befundbericht"
 // Entry 5: MacroscopicGrouper
 * entry[+].fullUrl = "http://prostatecancerspec.org/Observation/TransurethralResectionMacroscopicGrouper"
 * entry[=].resource = TransurethralResectionMacroscopicGrouper
+
+// Entry 6: Encounter
+* entry[+].fullUrl = "http://prostatecancerspec.org/Encounter/TransurethralResectionEncounter"
+* entry[=].resource = TransurethralResectionEncounter
+
+// Entry 7: ServiceRequest
+* entry[+].fullUrl = "http://prostatecancerspec.org/ServiceRequest/TransurethralResectionReportRequest"
+* entry[=].resource = TransurethralResectionReportRequest

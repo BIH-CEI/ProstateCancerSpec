@@ -23,12 +23,10 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report gross observation Narrative](Observation-TransurethralResectionMacroscopicGrouper.md)(Prostatic structure (body structure))
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.
   * **When For**: 2024-04-11 14:00:00+0100
 * **Code**: [Pathology report final diagnosis Narrative](Observation-TransurethralResectionDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Zusammenfassung: Benigne Prostatahyperplasie (BPH) mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.By Practitioner/PathologistPractitioner @2024-04-12
   * **When For**: 2024-04-12
 
 TUR-Prostata: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall.

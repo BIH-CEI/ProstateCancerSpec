@@ -39,10 +39,6 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * hasMember[+] = Reference(CoreNeedleBiopsyASAP)
 * hasMember[+] = Reference(CoreNeedleBiopsyHighGradePIN)
 * hasMember[+] = Reference(CoreNeedleBiopsyGranulomatousProstatiti)
-* note.authorReference = Reference(PathologistPractitioner)
-* note.time = "2023-03-15"
-* note.text = "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). 7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11), prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
-
 // derivedFrom references to microscopy findings
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaerGleason01)
 * derivedFrom[+] = Reference(CoreNeedleBiopsySekundaerGleason01)
@@ -196,7 +192,7 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area"
+* code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
@@ -217,7 +213,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code.coding[+] = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+* code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
@@ -253,11 +249,12 @@ Description: "Number of tissue cores positive for carcinoma on the right side"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $sct#399727003:18720000=251597001 "Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate"
+* code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
+* bodySite = $sct#24028007 "Right (qualifier value)"
 * valueQuantity.value = 4
 
 
@@ -272,11 +269,12 @@ Description: "Number of tissue cores positive for carcinoma on the left side"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $sct#399727003:18720000=251695000 "Number of tissue cores positive for carcinoma where In = Structure of left lateral lobe of prostate"
+* code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
+* bodySite = $sct#7771000 "Left (qualifier value)"
 * valueQuantity.value = 3
 
 // Ratio of Positive to Total Cores
@@ -468,7 +466,7 @@ Description: "Presence of high-grade prostatic intraepithelial neoplasia"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#94666-5 "High grade prostatic intraepithelial neoplasia"
+* code = $loinc#94666-5 "High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
@@ -485,7 +483,7 @@ Description: "Presence of granulomatous prostatitis"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $loinc#94665-7 "Granulomatous prostatitis"
+* code = $loinc#94665-7 "Granulomatous prostatitis [Presence] in Specimen by Microscopy"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)

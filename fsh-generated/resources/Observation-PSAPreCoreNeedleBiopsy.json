@@ -51,7 +51,7 @@
       {
         "code": "2857-1",
         "system": "http://loinc.org",
-        "display": "Prostate specific antigen [Mass/volume] in Serum or Plasma"
+        "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
       }
     ]
   },

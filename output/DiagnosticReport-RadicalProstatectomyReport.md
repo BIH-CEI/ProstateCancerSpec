@@ -23,12 +23,10 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 * **Code**: [Pathology report gross observation Narrative](Observation-RadicalProstatectomyMacroscopicGrouper.md)(Prostatic structure (body structure))
   * **Value**: Makroskopische Messungen des Prostatektomiepräparats
   * **Flags**: Final
-  * **Note**: > Makroskopische Aufarbeitung des Prostatektomiepräparats: Prostata 55g, Breite 4.5cm, Höhe 4.0cm, Tiefe 3.5cm, Lymphknoten bilateral vorhanden, Samenbläschen im Resektat vorhanden, Samenbläschen beidseits 2.5cm
   * **When For**: 2024-03-16 14:00:00+0100
 * **Code**: [Pathology report final diagnosis Narrative](Observation-RadicalProstatectomyDiagnosticConclusionGrouper.md)
   * **Value**: 
   * **Flags**: Final
-  * **Note**: > Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Prozentualer Anteil Gleasonmuster 4 und 5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.By Practitioner/PathologistPractitioner @2024-03-20
   * **When For**: 2024-03-20
 
 Adenokarzinom der Prostata, Gleason Score 3+4=7, pT2 pN0 (0/12) R0. Maximaler Tumordurchmesser 18 mm (ca. 25% der Prostata). Keine extrakapsuläre Extension, keine Samenblaseninvasion, alle Resektionsränder tumorfrei.

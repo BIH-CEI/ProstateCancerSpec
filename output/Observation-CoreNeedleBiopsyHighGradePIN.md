@@ -14,7 +14,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report final diagnosis Narrative
 
-**code**: High grade prostatic intraepithelial neoplasia
+**code**: High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -66,7 +66,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
       {
         "system" : "http://loinc.org",
         "code" : "94666-5",
-        "display" : "High grade prostatic intraepithelial neoplasia"
+        "display" : "High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy"
       }
     ]
   },

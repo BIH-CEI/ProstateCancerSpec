@@ -70,7 +70,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
       {
         "system" : "http://loinc.org",
         "code" : "33728-7",
-        "display" : "Size.maximum dimension of tumor in Prostate"
+        "display" : "Size.maximum dimension in Tumor"
       }
     ],
     "text" : "Maximum tumor diameter"

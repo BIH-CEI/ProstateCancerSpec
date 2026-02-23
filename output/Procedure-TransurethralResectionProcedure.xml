@@ -20,7 +20,7 @@
   <code>
     <coding>
       <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
-      <version value="2020"/>
+      <version value="2025"/>
       <code value="5-601"/>
       <display value="Transurethrale Exzision und Destruktion von Prostatagewebe"/>
     </coding>

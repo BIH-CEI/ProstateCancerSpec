@@ -89,7 +89,7 @@ Prostatakarzinom ISUP Grade Group 5 (höchster Gleason 4+5=9), bioptisch gesiche
     "coding" : [
       {
         "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version" : "2024",
+        "version" : "2025",
         "code" : "C61",
         "display" : "Bösartige Neubildung der Prostata"
       }

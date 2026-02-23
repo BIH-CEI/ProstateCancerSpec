@@ -29,7 +29,7 @@
       {
         "code": "33728-7",
         "system": "http://loinc.org",
-        "display": "Size.maximum dimension of tumor in Prostate"
+        "display": "Size.maximum dimension in Tumor"
       }
     ],
     "text": "Maximum tumor diameter"

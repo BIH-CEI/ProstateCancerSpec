@@ -12,7 +12,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **category**: Laboratory, Pathology report microscopic observation Narrative Other stain
 
-**code**: Prostate cancer grade group [Score] in Prostate tumor Qualitative
+**code**: Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -62,9 +62,9 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "94734-1",
-        "display" : "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+        "system" : "http://snomed.info/sct",
+        "code" : "1812491000004107",
+        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
       },
       {
         "system" : "http://snomed.info/sct",

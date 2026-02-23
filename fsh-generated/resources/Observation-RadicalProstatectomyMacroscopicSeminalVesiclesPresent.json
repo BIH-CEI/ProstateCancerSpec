@@ -27,9 +27,9 @@
   "code": {
     "coding": [
       {
-        "code": "395557000",
-        "system": "http://snomed.info/sct",
-        "display": "Tumor finding"
+        "code": "84895-2",
+        "system": "http://loinc.org",
+        "display": "Seminal vesicles [Presence] in Specimen"
       }
     ],
     "text": "Samenblasen im Resektat"

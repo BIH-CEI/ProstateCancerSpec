@@ -23,8 +23,6 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * hasMember[+] = Reference(TransurethralResectionMacroscopicSeminalVesicles)
 * hasMember[+] = Reference(TransurethralResectionMacroscopicLymphNodeDissection)
 
-* note.text = "Makroskopische Aufarbeitung des TUR-Prostata Präparats: Gewicht 25g. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
-
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - TUR-PROSTATA
 // =============================================================================

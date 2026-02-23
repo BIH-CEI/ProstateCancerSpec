@@ -43,9 +43,9 @@
   "code": {
     "coding": [
       {
-        "code": "33757-6",
+        "code": "84894-5",
         "system": "http://loinc.org",
-        "display": "Seminal vesicle size"
+        "display": "Dimension [Length] of Specimen"
       }
     ]
   },

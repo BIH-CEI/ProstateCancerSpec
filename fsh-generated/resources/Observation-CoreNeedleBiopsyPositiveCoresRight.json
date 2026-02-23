@@ -42,14 +42,23 @@
   "code": {
     "coding": [
       {
-        "code": "399727003:18720000=251597001",
-        "system": "http://snomed.info/sct",
-        "display": "Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate"
+        "code": "44651-8",
+        "system": "http://loinc.org",
+        "display": "Tissue cores.positive.carcinoma in Tissue core"
       }
     ]
   },
   "subject": {
     "reference": "Patient/Patient1"
   },
-  "effectiveDateTime": "2023-03-15"
+  "effectiveDateTime": "2023-03-15",
+  "bodySite": {
+    "coding": [
+      {
+        "code": "24028007",
+        "system": "http://snomed.info/sct",
+        "display": "Right (qualifier value)"
+      }
+    ]
+  }
 }

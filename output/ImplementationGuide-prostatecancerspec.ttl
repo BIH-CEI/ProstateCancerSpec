@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ProstateCancerSpec"] ; # 
   fhir:title [ fhir:v "Prostate Cancer Specification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-13T10:02:55+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-23T14:58:33+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH CEI" ] ;
@@ -9780,6 +9780,25 @@
            fhir:l fhir:tur-resection-specimens.html
          ] ;
          fhir:title [ fhir:v "TUR-Resection Specimens" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "semantic-annotations.html"^^xsd:anyURI ;
+             fhir:l fhir:semantic-annotations.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "semantic-annotations.html"^^xsd:anyURI ;
+           fhir:l fhir:semantic-annotations.html
+         ] ;
+         fhir:title [ fhir:v "Semantic Annotations" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

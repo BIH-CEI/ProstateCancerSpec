@@ -14,7 +14,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report final diagnosis Narrative
 
-**code**: Regional lymph nodes positive [#] in Cancer specimen by Light microscopy
+**code**: Regional lymph nodes positive [#] Specimen
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -68,7 +68,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
       {
         "system" : "http://loinc.org",
         "code" : "21893-3",
-        "display" : "Regional lymph nodes positive [#] in Cancer specimen by Light microscopy"
+        "display" : "Regional lymph nodes positive [#] Specimen"
       }
     ]
   },

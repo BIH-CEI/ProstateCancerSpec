@@ -20,13 +20,6 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**note**: 
-
-> 
-
-Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat.
-
-
 **bodySite**: Prostatic structure (body structure)
 
 **hasMember**: 
@@ -34,7 +27,7 @@ Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, L�
 * [Observation Specimen weight (observable entity)](Observation-TransurethralEnucleationMacroscopicWeight.md)
 * [Observation Dimension [Length] of Specimen](Observation-TransurethralEnucleationMacroscopicLength.md)
 * [Observation Dimension [Length] of Specimen](Observation-TransurethralEnucleationMacroscopicWidth.md)
-* [Observation Prostate size](Observation-TransurethralEnucleationMacroscopicDepth.md)
+* [Observation Dimension [Length] of Specimen](Observation-TransurethralEnucleationMacroscopicDepth.md)
 * [Observation Tumor finding](Observation-TransurethralEnucleationMacroscopicSeminalVesicles.md)
 * [Observation Tumor finding](Observation-TransurethralEnucleationMacroscopicLymphNodeDissection.md)
 
@@ -79,11 +72,6 @@ Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, L�
   "performer" : [
     {
       "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "note" : [
-    {
-      "text" : "Makroskopische Aufarbeitung des Prostata Enucleation Präparats: Gewicht 25g, Länge 3.5cm, Breite 2.8cm, Tiefe 2.2cm. Keine Samenblasen im Resektat. Keine Lymphknoten im Resektat."
     }
   ],
   "bodySite" : {

@@ -70,9 +70,9 @@ Samenblasen im Resektat vorhanden
   "code" : {
     "coding" : [
       {
-        "system" : "http://snomed.info/sct",
-        "code" : "395557000",
-        "display" : "Tumor finding"
+        "system" : "http://loinc.org",
+        "code" : "84895-2",
+        "display" : "Seminal vesicles [Presence] in Specimen"
       }
     ],
     "text" : "Samenblasen im Resektat"

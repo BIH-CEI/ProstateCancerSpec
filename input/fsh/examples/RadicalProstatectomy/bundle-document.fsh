@@ -7,6 +7,8 @@ InstanceOf: Bundle
 Usage: #example
 Title: "Document Bundle - Radikale Prostatektomie"
 Description: "FHIR Document Bundle für den vollständigen Prostatektomie-Befundbericht"
+* identifier.system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
+* identifier.value = "E_24_002"
 * type = #document
 * timestamp = "2024-03-21T08:00:00+01:00"
 
@@ -33,3 +35,11 @@ Description: "FHIR Document Bundle für den vollständigen Prostatektomie-Befund
 // Entry 5: MacroscopicGrouper
 * entry[+].fullUrl = "http://prostatecancerspec.org/Observation/RadicalProstatectomyMacroscopicGrouper"
 * entry[=].resource = RadicalProstatectomyMacroscopicGrouper
+
+// Entry 6: Encounter
+* entry[+].fullUrl = "http://prostatecancerspec.org/Encounter/RadicalProstatectomyEncounter"
+* entry[=].resource = RadicalProstatectomyEncounter
+
+// Entry 7: ServiceRequest
+* entry[+].fullUrl = "http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest"
+* entry[=].resource = RadicalProstatectomyReportRequest

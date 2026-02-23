@@ -27,9 +27,9 @@
   "code": {
     "coding": [
       {
-        "code": "33756-8",
+        "code": "84894-5",
         "system": "http://loinc.org",
-        "display": "Prostate size"
+        "display": "Dimension [Length] of Specimen"
       }
     ],
     "text": "Prostata Höhe"

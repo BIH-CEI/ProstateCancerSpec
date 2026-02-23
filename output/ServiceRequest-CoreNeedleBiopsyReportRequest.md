@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request)
 
-**identifier**: Placer ID/PATH-RPT-2024-001
+**identifier**: Placer Identifier/PATH-RPT-2024-001
 
 **status**: Completed
 
@@ -30,7 +30,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **supportingInfo**: 
 
-* [Observation Prostate specific antigen [Mass/volume] in Serum or Plasma](Observation-PSAPreCoreNeedleBiopsy.md)
+* [Observation Prostate specific Ag [Mass/volume] in Serum or Plasma](Observation-PSAPreCoreNeedleBiopsy.md)
 * [Condition Bösartige Neubildung der Prostata](Condition-CoreNeedleBiopsyDiagnosisSuspicion.md)
 
 **specimen**: 
@@ -68,7 +68,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
           {
             "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
             "code" : "PLAC",
-            "display" : "Placer ID"
+            "display" : "Placer Identifier"
           }
         ]
       },

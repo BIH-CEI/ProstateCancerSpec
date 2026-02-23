@@ -12,7 +12,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **category**: Laboratory, Pathology report gross observation Narrative
 
-**code**: Prostate weight
+**code**: Weight of Tissue
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -71,8 +71,8 @@ Prostatagewicht 55g
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "44668-2",
-        "display" : "Prostate weight"
+        "code" : "29638-4",
+        "display" : "Weight of Tissue"
       }
     ]
   },

@@ -70,7 +70,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
       {
         "system" : "http://loinc.org",
         "code" : "44654-2",
-        "display" : "Tissue involvement by tumor as percentage of total tissue examined"
+        "display" : "Tissue involved by tumor in Prostate tumor"
       }
     ],
     "text" : "Prostatic tissue involved by tumour"

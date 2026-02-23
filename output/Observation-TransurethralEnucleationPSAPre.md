@@ -12,7 +12,7 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
 
 **category**: Laboratory studies (set), Pathology
 
-**code**: Prostate specific antigen [Mass/volume] in Serum or Plasma
+**code**: Prostate specific Ag [Mass/volume] in Serum or Plasma
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
@@ -66,7 +66,7 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
       {
         "system" : "http://loinc.org",
         "code" : "2857-1",
-        "display" : "Prostate specific antigen [Mass/volume] in Serum or Plasma"
+        "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
       }
     ]
   },

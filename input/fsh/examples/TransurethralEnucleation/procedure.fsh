@@ -8,7 +8,7 @@ Description: "Prostata Enucleation zur Behandlung der benignen Prostatahyperplas
 * status = #completed
 * category = $sct#387713003 "Surgical procedure (procedure)"
 * code.coding[ops] = http://fhir.de/CodeSystem/bfarm/ops#5-603 "Enukleation der Prostata"
-* code.coding[ops].version = "2020"
+* code.coding[ops].version = "2025"
 * code.coding[sct] = $sct#236205008 "Simple prostatectomy (procedure)"
 * subject = Reference(Patient3)
 * performedDateTime = "2024-05-10T10:30:00+01:00"

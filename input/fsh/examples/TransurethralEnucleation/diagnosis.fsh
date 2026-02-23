@@ -26,7 +26,7 @@ Description: "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-P
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[icd10-gm].version = "2024"
+* code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
 * subject = Reference(Patient3)

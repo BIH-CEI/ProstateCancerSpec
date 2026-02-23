@@ -8,7 +8,7 @@ Description: "TUR-Prostata Eingriff zur Behandlung der benignen Prostatahyperpla
 * status = #completed
 * category = $sct#387713003 "Surgical procedure (procedure)"
 * code.coding[ops] = http://fhir.de/CodeSystem/bfarm/ops#5-601 "Transurethrale Exzision und Destruktion von Prostatagewebe"
-* code.coding[ops].version = "2020"
+* code.coding[ops].version = "2025"
 * code.coding[sct] = $sct#176258007 "Transurethral resection of prostate (procedure)"
 * subject = Reference(Patient2)
 * performedDateTime = "2024-04-10T10:30:00+01:00"

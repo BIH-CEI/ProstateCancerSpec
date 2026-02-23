@@ -7,6 +7,8 @@ InstanceOf: Bundle
 Usage: #example
 Title: "Document Bundle - Prostatabiopsie"
 Description: "FHIR Document Bundle für den vollständigen Biopsie-Befundbericht"
+* identifier.system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
+* identifier.value = "E_24_001"
 * type = #document
 * timestamp = "2024-01-20T15:30:00+01:00"
 
@@ -37,3 +39,11 @@ Description: "FHIR Document Bundle für den vollständigen Biopsie-Befundbericht
 // Entry 6: MicroscopicGrouper
 * entry[+].fullUrl = "http://prostatecancerspec.org/Observation/CoreNeedleBiopsyMicroscopicGrouper"
 * entry[=].resource = CoreNeedleBiopsyMicroscopicGrouper
+
+// Entry 7: Encounter
+* entry[+].fullUrl = "http://prostatecancerspec.org/Encounter/CoreNeedleBiopsyEncounter"
+* entry[=].resource = CoreNeedleBiopsyEncounter
+
+// Entry 8: ServiceRequest
+* entry[+].fullUrl = "http://prostatecancerspec.org/ServiceRequest/CoreNeedleBiopsyReportRequest"
+* entry[=].resource = CoreNeedleBiopsyReportRequest

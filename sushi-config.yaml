@@ -62,6 +62,8 @@ pages:
     title: TUR-Enucleation Specimens
   tur-resection-specimens.md:
     title: TUR-Resection Specimens
+  semantic-annotations.md:
+    title: Semantic Annotations
   document-viewer.xml:
     title: Befund-Viewer
 #     complexExamples.xml:
@@ -92,6 +94,7 @@ menu:
   Home: index.html
   Clinical Context: clinical-context.html
   Motivation: motivation.html
+  Semantic Annotations: semantic-annotations.html
   Befund-Viewer: document-viewer.html
   Core Needle Biopsy:
     ServiceRequest: ServiceRequest-CoreNeedleBiopsyReportRequest.html

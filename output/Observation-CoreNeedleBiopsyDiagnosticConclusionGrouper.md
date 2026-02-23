@@ -22,13 +22,6 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**note**: By Practitioner/PathologistPractitioner @2023-03-15
-
-> 
-
-Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). 7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11), prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.
-
-
 **hasMember**: 
 
 * [Observation Histology and Behavior ICD-O-3 Cancer](Observation-CoreNeedleBiopsyHistologicalTypeICDO3.md)
@@ -37,11 +30,11 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster 
 * [Observation Gleason pattern.primary in Prostate tumor](Observation-CoreNeedleBiopsyPrimaryGleasonPattern.md)
 * [Observation Gleason pattern.secondary in Prostate tumor](Observation-CoreNeedleBiopsySecondaryGleasonPattern.md)
 * [Observation Gleason score in Specimen Qualitative](Observation-CoreNeedleBiopsyGleasonScoreTotal.md)
-* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area](Observation-CoreNeedleBiopsyPercentageGleason45.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGradingGroupISUP.md)
+* [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyPercentageGleason45.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGradingGroupISUP.md)
 * [Observation Grade Cancer](Observation-CoreNeedleBiopsyHistologicalGradeWHO.md)
-* [Observation Number of tissue cores positive for carcinoma where In = Structure of right lateral lobe of prostate](Observation-CoreNeedleBiopsyPositiveCoresRight.md)
-* [Observation Number of tissue cores positive for carcinoma where In = Structure of left lateral lobe of prostate](Observation-CoreNeedleBiopsyPositiveCoresLeft.md)
+* [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-CoreNeedleBiopsyPositiveCoresRight.md)
+* [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-CoreNeedleBiopsyPositiveCoresLeft.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyRatioPositiveCores.md)
 * [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-CoreNeedleBiopsyPercentageTumorTotal.md)
 * [Observation Total linear mm of carcinoma](Observation-CoreNeedleBiopsyTumorLengthTotal.md)
@@ -52,8 +45,8 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster 
 * [Observation Extraprostatic extension site [Anatomy] of Prostate tumor](Observation-CoreNeedleBiopsyExtraprostaticExtensionLocation.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-CoreNeedleBiopsyIntraductalCarcinoma.md)
 * [Observation Atypical small acinar proliferation of prostate (disorder)](Observation-CoreNeedleBiopsyASAP.md)
-* [Observation High grade prostatic intraepithelial neoplasia](Observation-CoreNeedleBiopsyHighGradePIN.md)
-* [Observation Granulomatous prostatitis](Observation-CoreNeedleBiopsyGranulomatousProstatiti.md)
+* [Observation High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy](Observation-CoreNeedleBiopsyHighGradePIN.md)
+* [Observation Granulomatous prostatitis [Presence] in Specimen by Microscopy](Observation-CoreNeedleBiopsyGranulomatousProstatiti.md)
 
 **derivedFrom**: 
 
@@ -64,7 +57,7 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster 
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason01.md)
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-CoreNeedleBiopsyProzentGleason02.md)
 * [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading01.md)
-* [Observation Prostate cancer grade group [Score] in Prostate tumor Qualitative](Observation-CoreNeedleBiopsyGleasonGrading02.md)
+* [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-CoreNeedleBiopsyGleasonGrading02.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen01.md)
 * [Observation Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)](Observation-CoreNeedleBiopsyVerhaeltnisPositiverStanzen02.md)
 * [Observation Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)](Observation-CoreNeedleBiopsyTumoranteil01.md)
@@ -119,15 +112,6 @@ Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster 
   "performer" : [
     {
       "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "note" : [
-    {
-      "authorReference" : {
-        "reference" : "Practitioner/PathologistPractitioner"
-      },
-      "time" : "2023-03-15",
-      "text" : "Zusammenfassung: Azinäres Adenokarzinom der Prostata (ICD-O 8140/3). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). 7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11), prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes apikal nachgewiesen (Hinweis auf extraprostatische Ausbreitung). Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen."
     }
   ],
   "hasMember" : [

@@ -11,7 +11,7 @@
   <name value="ProstateCancerSpec"/>
   <title value="Prostate Cancer Specification"/>
   <status value="draft"/>
-  <date value="2026-02-13T10:02:55+01:00"/>
+  <date value="2026-02-23T14:58:33+01:00"/>
   <publisher value="BIH CEI"/>
   <contact>
     <name value="BIH CEI"/>
@@ -4879,6 +4879,14 @@
         </extension>
         <nameUrl value="tur-resection-specimens.html"/>
         <title value="TUR-Resection Specimens"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="semantic-annotations.html"/>
+        </extension>
+        <nameUrl value="semantic-annotations.html"/>
+        <title value="Semantic Annotations"/>
         <generation value="markdown"/>
       </page>
       <page>

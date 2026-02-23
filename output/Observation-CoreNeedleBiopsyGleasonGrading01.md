@@ -69,9 +69,9 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
         "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
       },
       {
-        "system" : "http://loinc.org",
-        "code" : "94734-1",
-        "display" : "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
+        "system" : "http://snomed.info/sct",
+        "code" : "1812491000004107",
+        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
       }
     ]
   },

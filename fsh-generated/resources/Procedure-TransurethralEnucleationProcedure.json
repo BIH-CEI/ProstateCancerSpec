@@ -12,7 +12,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-603",
         "display": "Enukleation der Prostata",
-        "version": "2020"
+        "version": "2025"
       },
       {
         "system": "http://snomed.info/sct",

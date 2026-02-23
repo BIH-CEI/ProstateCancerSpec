@@ -52,7 +52,7 @@ Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. I
     "coding" : [
       {
         "system" : "http://fhir.de/CodeSystem/bfarm/ops",
-        "version" : "2020",
+        "version" : "2025",
         "code" : "5-603",
         "display" : "Enukleation der Prostata"
       },

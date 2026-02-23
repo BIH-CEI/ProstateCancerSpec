@@ -10,7 +10,7 @@
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-02-13T10:02:55+01:00",
+  "date" : "2026-02-23T14:58:33+01:00",
   "publisher" : "BIH CEI",
   "contact" : [{
     "name" : "BIH CEI",
@@ -5441,6 +5441,15 @@
         }],
         "nameUrl" : "tur-resection-specimens.html",
         "title" : "TUR-Resection Specimens",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "semantic-annotations.html"
+        }],
+        "nameUrl" : "semantic-annotations.html",
+        "title" : "Semantic Annotations",
         "generation" : "markdown"
       },
       {

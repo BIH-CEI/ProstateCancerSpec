@@ -43,9 +43,9 @@
   "code": {
     "coding": [
       {
-        "code": "272741003",
+        "code": "20228-3",
         "system": "http://loinc.org",
-        "display": "Laterality"
+        "display": "Anatomic part Laterality"
       }
     ]
   },
