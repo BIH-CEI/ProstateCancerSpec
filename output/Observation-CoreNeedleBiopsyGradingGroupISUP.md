@@ -22,7 +22,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)
+**value**: International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)
 
 
 
@@ -33,66 +33,50 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyGradingGroupISUP",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1812491000004107",
+      "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
     },
     {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1812491000004107",
-        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1812491000004107",
-        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "1812491000004107",
+      "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2023-03-15",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1279717008",
-        "display" : "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1279720000",
+      "display" : "International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)"
+    }]
   }
 }
 

@@ -16,7 +16,7 @@ Profile: [MII PR Onkologie TNM M-Kategorie](https://simplifier.net/resolve?scope
 
 **effective**: 2024-01-22 10:00:00+0100
 
-**value**: M0 category
+**value**: M0
 
 **note**: 
 
@@ -34,38 +34,30 @@ Keine Fernmetastasen nachweisbar
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyClinicalMStaging",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "21907-1",
-        "display" : "Distant metastases.clinical [Class] Cancer"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21907-1",
+      "display" : "Distant metastases.clinical [Class] Cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-22T10:00:00+01:00",
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1229973008",
-        "display" : "M0 category"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://www.uicc.org/resources/tnm",
+      "code" : "M0",
+      "display" : "M0"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Keine Fernmetastasen nachweisbar"
-    }
-  ]
+  "note" : [{
+    "text" : "Keine Fernmetastasen nachweisbar"
+  }]
 }
 
 ```

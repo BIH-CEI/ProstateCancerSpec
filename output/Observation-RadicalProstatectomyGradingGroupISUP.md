@@ -22,7 +22,7 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)
+**value**: International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7)
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Tissue section (specimen)](Specimen-RadicalProstatectomySpecimenSlide01A.md)
 
@@ -37,75 +37,57 @@ Profiles: [MII PR Onkologie Prostata Gleason Grade Group](https://simplifier.net
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyGradingGroupISUP",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1812491000004107",
+      "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
     },
     {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1812491000004107",
-        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1812491000004107",
-        "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "1812491000004107",
+      "display" : "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1279715005",
-        "display" : "International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1279714001",
+      "display" : "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7)"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenSlide01A"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

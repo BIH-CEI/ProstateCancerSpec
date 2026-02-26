@@ -55,7 +55,7 @@ Description: "QuestionnaireResponse für transurethrale Resektion der Prostata"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.133"
     * text = "Operatives Verfahren"
-    * answer.valueCoding = $sct#176258007 "Transurethral resection of prostate (procedure)"
+    * answer.valueCoding = $sct#90199006 "Transurethral prostatectomy"
   
   // Untersuchungsmaterial (Macroscopy)
   * item[+]

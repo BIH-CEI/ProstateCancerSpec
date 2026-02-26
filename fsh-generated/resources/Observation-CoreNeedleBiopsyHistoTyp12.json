@@ -60,9 +60,9 @@
   "bodySite": {
     "coding": [
       {
-        "code": "716899003",
+        "code": "716925003",
         "system": "http://snomed.info/sct",
-        "display": "Structure of apex part of anterior fibromuscular zone of prostate (body structure)"
+        "display": "Apical anterior fibromuscular stroma of prostate"
       }
     ]
   },

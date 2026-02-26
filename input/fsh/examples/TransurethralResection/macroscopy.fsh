@@ -15,7 +15,7 @@ Description: "Gruppierung aller makroskopischen Messungen des TUR-Prostata Präp
 * subject = Reference(Patient2)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
 // Referenzen zu makroskopischen Findings
@@ -43,7 +43,7 @@ Description: "Gewicht des TUR-Prostata Präparats"
 * effectiveDateTime = "2024-04-11T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 25 'g' "g"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "TUR-Prostata Gewicht 25g"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
@@ -64,7 +64,7 @@ Description: "Vorhandensein von Samenblasen im TUR-Prostata Präparat"
 * effectiveDateTime = "2024-04-11T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Keine Samenblasen im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)
 
@@ -85,6 +85,6 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im TUR-Prostata Präparat
 * effectiveDateTime = "2024-04-11T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Keine Lymphknoten im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralResection)

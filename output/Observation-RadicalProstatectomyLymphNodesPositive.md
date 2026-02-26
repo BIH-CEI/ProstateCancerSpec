@@ -35,63 +35,47 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyLymphNodesPositive",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "21893-3",
-        "display" : "Regional lymph nodes positive [#] Specimen"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21893-3",
+      "display" : "Regional lymph nodes positive [#] Specimen"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueQuantity" : {
     "value" : 0,
     "unit" : "lymph nodes",
     "system" : "http://unitsofmeasure.org",
     "code" : "{LymphNodes}"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

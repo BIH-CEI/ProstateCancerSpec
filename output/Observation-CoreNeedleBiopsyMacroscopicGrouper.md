@@ -22,7 +22,7 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **value**: Makroskopische Messungen aller 12 Prostatastanzen
 
-**bodySite**: Prostatic structure (body structure)
+**bodySite**: Prostate
 
 **derivedFrom**: 
 
@@ -72,158 +72,144 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyMacroscopicGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22634-0"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-15T14:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueString" : "Makroskopische Messungen aller 12 Prostatastanzen",
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "41216001",
-        "display" : "Prostatic structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
   },
-  "derivedFrom" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength03"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength04"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength05"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength06"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength07"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength08"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength09"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength10"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength11"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength12"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount03"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount04"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount05"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount06"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount07"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount08"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount09"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount10"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount11"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount12"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality03"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality04"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality05"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality06"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality07"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality08"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality09"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality10"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality11"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality12"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength03"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength04"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength05"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength06"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength07"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength08"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength09"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength10"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength11"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLength12"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount03"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount04"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount05"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount06"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount07"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount08"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount09"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount10"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount11"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicCylinderCount12"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality03"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality04"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality05"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality06"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality07"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality08"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality09"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality10"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality11"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicLaterality12"
+  }]
 }
 
 ```

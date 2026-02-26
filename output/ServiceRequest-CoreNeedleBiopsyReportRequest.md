@@ -26,7 +26,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**reasonCode**: Raised prostate specific antigen
+**reasonCode**: Prostate specific antigen above reference range
 
 **supportingInfo**: 
 
@@ -57,46 +57,34 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "resourceType" : "ServiceRequest",
   "id" : "CoreNeedleBiopsyReportRequest",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC",
-            "display" : "Placer Identifier"
-          }
-        ]
-      },
-      "system" : "http://example.hospital.de/serviceRequest",
-      "value" : "PATH-RPT-2024-001"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC",
+        "display" : "Placer Identifier"
+      }]
+    },
+    "system" : "http://example.hospital.de/serviceRequest",
+    "value" : "PATH-RPT-2024-001"
+  }],
   "status" : "completed",
   "intent" : "order",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "726007",
-          "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "726007",
+      "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "66117-3",
-        "display" : "Prostate Pathology biopsy report"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "66117-3",
+      "display" : "Prostate Pathology biopsy report"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
@@ -107,68 +95,58 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "requester" : {
     "reference" : "Practitioner/UrologistPractitioner"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "reasonCode" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "162568004",
-          "display" : "Raised prostate specific antigen"
-        }
-      ]
-    }
-  ],
-  "supportingInfo" : [
-    {
-      "reference" : "Observation/PSAPreCoreNeedleBiopsy"
-    },
-    {
-      "reference" : "Condition/CoreNeedleBiopsyDiagnosisSuspicion"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "396152005",
+      "display" : "Prostate specific antigen above reference range"
+    }]
+  }],
+  "supportingInfo" : [{
+    "reference" : "Observation/PSAPreCoreNeedleBiopsy"
+  },
+  {
+    "reference" : "Condition/CoreNeedleBiopsyDiagnosisSuspicion"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
+  }]
 }
 
 ```

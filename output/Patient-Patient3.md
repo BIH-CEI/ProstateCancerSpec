@@ -18,18 +18,14 @@ Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-
 {
   "resourceType" : "Patient",
   "id" : "Patient3",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/patient-ids",
-      "value" : "PAT-2024-003"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Becker",
-      "given" : ["Klaus"]
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/patient-ids",
+    "value" : "PAT-2024-003"
+  }],
+  "name" : [{
+    "family" : "Becker",
+    "given" : ["Klaus"]
+  }],
   "gender" : "male",
   "birthDate" : "1958-11-10"
 }

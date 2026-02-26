@@ -111,9 +111,9 @@
                           "answer": [
                             {
                               "valueCoding": {
-                                "code": "711323001",
+                                "code": "40013009",
                                 "system": "http://snomed.info/sct",
-                                "display": "Systematic biopsy (procedure)"
+                                "display": "Core needle biopsy of prostate"
                               }
                             }
                           ],

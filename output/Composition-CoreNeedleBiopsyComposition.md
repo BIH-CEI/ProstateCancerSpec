@@ -46,30 +46,26 @@
   "id" : "CoreNeedleBiopsyComposition",
   "identifier" : {
     "type" : {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-          "code" : "ACSN",
-          "display" : "Accession ID"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "ACSN",
+        "display" : "Accession ID"
+      }]
     },
     "system" : "http://example.hospital.de/pathology-reports",
     "value" : "PATH-COMP-2024-001"
   },
   "status" : "final",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
-        "code" : "PATH"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "721967005",
-        "display" : "Tissue pathology biopsy report"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+      "code" : "PATH"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "721967005",
+      "display" : "Tissue pathology biopsy report"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1",
@@ -79,66 +75,48 @@
     "reference" : "Encounter/CoreNeedleBiopsyEncounter"
   },
   "date" : "2024-01-20T15:30:00+01:00",
-  "author" : [
-    {
-      "reference" : "Organization/PathologyLabOrganization",
-      "display" : "Pathologisches Institut"
-    }
-  ],
+  "author" : [{
+    "reference" : "Organization/PathologyLabOrganization",
+    "display" : "Pathologisches Institut"
+  }],
   "title" : "Histopathologischer Befundbericht - Prostatabiopsie",
-  "attester" : [
-    {
-      "mode" : "legal",
-      "party" : {
-        "reference" : "Organization/PathologyLabOrganization"
-      }
+  "attester" : [{
+    "mode" : "legal",
+    "party" : {
+      "reference" : "Organization/PathologyLabOrganization"
     }
-  ],
+  }],
   "custodian" : {
     "reference" : "Organization/PathologyLabOrganization"
   },
-  "event" : [
-    {
-      "code" : [
-        {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-              "code" : "PATREPE"
-            }
-          ]
-        }
-      ],
-      "detail" : [
-        {
-          "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-        }
-      ]
-    }
-  ],
-  "section" : [
-    {
-      "title" : "Pathologiebefundbericht",
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "11526-1",
-            "display" : "Pathology study"
-          }
-        ]
-      },
-      "text" : {
-        "status" : "additional",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (8,5 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung.</p><h3>Makroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th><th>Zylinderanzahl im Gefäß</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td><td>1</td></tr><tr><td>02</td><td>Rechts lateral mid</td><td>1.6</td><td>1</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td><td>1</td></tr><tr><td>04</td><td>Rechts medial basal</td><td>1.9</td><td>1</td></tr><tr><td>05</td><td>Rechts medial mid</td><td>1.4</td><td>1</td></tr><tr><td>06</td><td>Rechts medial apikal</td><td>1.7</td><td>1</td></tr><tr><td>07</td><td>Links lateral basal</td><td>1.6</td><td>1</td></tr><tr><td>08</td><td>Links lateral mid</td><td>1.5</td><td>1</td></tr><tr><td>09</td><td>Links lateral apikal</td><td>1.8</td><td>1</td></tr><tr><td>10</td><td>Links medial basal</td><td>1.3</td><td>1</td></tr><tr><td>11</td><td>Links medial mid</td><td>1.7</td><td>1</td></tr><tr><td>12</td><td>Links medial apikal</td><td>1.4</td><td>1</td></tr></tbody></table><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1,3–1,9 cm, je 1 Zylinder pro Specimen. Stanzen 01–06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07–12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).</p><h3>Mikroskopie</h3><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Befund</th><th>Gleason-Score</th><th>Tumoranteil</th></tr></thead><tbody><tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr><tr><td>02</td><td>Adenokarzinom</td><td>4+3=7</td><td>60%</td></tr><tr><td>03</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>04</td><td>Adenokarzinom</td><td>4+4=8</td><td>80%</td></tr><tr><td>05</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>06</td><td>Adenokarzinom</td><td>3+3=6</td><td>20%</td></tr><tr><td>07</td><td>Adenokarzinom</td><td>4+5=9</td><td>95%</td></tr><tr><td>08</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>09</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr><tr><td>10</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>11</td><td>Adenokarzinom</td><td>3+4=7</td><td>25%</td></tr><tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr></tbody></table><p>Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason-Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.</p><h3>Diagnostische Schlussfolgerung</h3><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tbody><tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr><tr><td>Gleason-Score</td><td>4+5=9 (höchster Score)</td></tr><tr><td>ISUP-Gradgruppe</td><td>5 (WHO 2016)</td></tr><tr><td>Positive Stanzen</td><td>7 von 12 (4 rechts, 3 links)</td></tr><tr><td>Tumoranteil gesamt</td><td>51%</td></tr><tr><td>Tumorlänge gesamt</td><td>52,7 mm</td></tr><tr><td>Anteil Gleason 4/5</td><td>77%</td></tr><tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr><tr><td>Periprostatische Fettinvasion</td><td>Nachgewiesen (apikal)</td></tr><tr><td>Samenblaseninfiltration</td><td>Nicht nachgewiesen</td></tr><tr><td>Lymphovaskuläre Invasion</td><td>Nicht nachgewiesen</td></tr><tr><td>Intraduktales Karzinom</td><td>Nicht nachgewiesen</td></tr><tr><td>ASAP</td><td>Nicht nachgewiesen</td></tr><tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr></tbody></table><p>7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11). Prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration und Infiltration des periprostatischen Fettgewebes apikal nachgewiesen. Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p></div>"
-      },
-      "entry" : [
-        {
-          "reference" : "DiagnosticReport/CoreNeedleBiopsyReport"
-        }
-      ]
-    }
-  ]
+  "event" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "PATREPE"
+      }]
+    }],
+    "detail" : [{
+      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+    }]
+  }],
+  "section" : [{
+    "title" : "Pathologiebefundbericht",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11526-1",
+        "display" : "Pathology study"
+      }]
+    },
+    "text" : {
+      "status" : "additional",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (8,5 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung.</p><h3>Makroskopie</h3><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1,3–1,9 cm, je 1 Zylinder pro Specimen. Stanzen 01–06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07–12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th><th>Zylinderanzahl im Gefäß</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td><td>1</td></tr><tr><td>02</td><td>Rechts lateral mid</td><td>1.6</td><td>1</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td><td>1</td></tr><tr><td>04</td><td>Rechts medial basal</td><td>1.9</td><td>1</td></tr><tr><td>05</td><td>Rechts medial mid</td><td>1.4</td><td>1</td></tr><tr><td>06</td><td>Rechts medial apikal</td><td>1.7</td><td>1</td></tr><tr><td>07</td><td>Links lateral basal</td><td>1.6</td><td>1</td></tr><tr><td>08</td><td>Links lateral mid</td><td>1.5</td><td>1</td></tr><tr><td>09</td><td>Links lateral apikal</td><td>1.8</td><td>1</td></tr><tr><td>10</td><td>Links medial basal</td><td>1.3</td><td>1</td></tr><tr><td>11</td><td>Links medial mid</td><td>1.7</td><td>1</td></tr><tr><td>12</td><td>Links medial apikal</td><td>1.4</td><td>1</td></tr></tbody></table><h3>Mikroskopie</h3><p>Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason-Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Stanze</th><th>Befund</th><th>Gleason-Score</th><th>Tumoranteil</th></tr></thead><tbody><tr><td>01</td><td>Adenokarzinom</td><td>3+4=7</td><td>40%</td></tr><tr><td>02</td><td>Adenokarzinom</td><td>4+3=7</td><td>60%</td></tr><tr><td>03</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>04</td><td>Adenokarzinom</td><td>4+4=8</td><td>80%</td></tr><tr><td>05</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>06</td><td>Adenokarzinom</td><td>3+3=6</td><td>20%</td></tr><tr><td>07</td><td>Adenokarzinom</td><td>4+5=9</td><td>95%</td></tr><tr><td>08</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>09</td><td>Adenokarzinom</td><td>3+4=7</td><td>35%</td></tr><tr><td>10</td><td>Benigne</td><td>-</td><td>-</td></tr><tr><td>11</td><td>Adenokarzinom</td><td>3+4=7</td><td>25%</td></tr><tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr></tbody></table><h3>Diagnostische Schlussfolgerung</h3><p>7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11). Prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration und Infiltration des periprostatischen Fettgewebes apikal nachgewiesen. Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tbody><tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr><tr><td>Gleason-Score</td><td>4+5=9 (höchster Score)</td></tr><tr><td>ISUP-Gradgruppe</td><td>5 (WHO 2016)</td></tr><tr><td>Positive Stanzen</td><td>7 von 12 (4 rechts, 3 links)</td></tr><tr><td>Tumoranteil gesamt</td><td>51%</td></tr><tr><td>Tumorlänge gesamt</td><td>52,7 mm</td></tr><tr><td>Anteil Gleason 4/5</td><td>77%</td></tr><tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr><tr><td>Periprostatische Fettinvasion</td><td>Nachgewiesen (apikal)</td></tr><tr><td>Samenblaseninfiltration</td><td>Nicht nachgewiesen</td></tr><tr><td>Lymphovaskuläre Invasion</td><td>Nicht nachgewiesen</td></tr><tr><td>Intraduktales Karzinom</td><td>Nicht nachgewiesen</td></tr><tr><td>ASAP</td><td>Nicht nachgewiesen</td></tr><tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr></tbody></table><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p></div>"
+    },
+    "entry" : [{
+      "reference" : "DiagnosticReport/CoreNeedleBiopsyReport"
+    }]
+  }]
 }
 
 ```

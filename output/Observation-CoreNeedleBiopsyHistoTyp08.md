@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **value**: No evidence of malignant neoplasm (finding)
 
-**bodySite**: Structure of middle part of transition zone of prostate (body structure)
+**bodySite**: Middle anterior fibromuscular stroma of prostate
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001_H_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Tissue section (specimen)](Specimen-CoreNeedleBiopsySpecimen08Slide.md)
 
@@ -37,73 +37,55 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyHistoTyp08",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22635-7"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22635-7"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "59847-4",
-        "display" : "Histology and Behavior ICD-O-3 Cancer"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59847-4",
+      "display" : "Histology and Behavior ICD-O-3 Cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "110396000",
-        "display" : "No evidence of malignant neoplasm (finding)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "110396000",
+      "display" : "No evidence of malignant neoplasm (finding)"
+    }]
   },
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716908000",
-        "display" : "Structure of middle part of transition zone of prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716908000",
+      "display" : "Middle anterior fibromuscular stroma of prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen08Slide"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle08"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle08"
+  }]
 }
 
 ```

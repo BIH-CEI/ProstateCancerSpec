@@ -38,39 +38,29 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85m
   "resourceType" : "Condition",
   "id" : "TransurethralEnucleationDiagnosisBPH",
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
   "verificationStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code" : "confirmed"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code" : "encounter-diagnosis"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "code" : "N40.0",
-        "display" : "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "code" : "N40.0",
+      "display" : "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
@@ -80,11 +70,9 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85m
   },
   "onsetDateTime" : "2023-06-01",
   "recordedDate" : "2024-02-01",
-  "note" : [
-    {
-      "text" : "Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85ml. IPSS 24. Indikation zur Enukleation gestellt."
-    }
-  ]
+  "note" : [{
+    "text" : "Symptomatische BPH mit obstruktiven Miktionsbeschwerden. Prostatavolumen ca. 85ml. IPSS 24. Indikation zur Enukleation gestellt."
+  }]
 }
 
 ```

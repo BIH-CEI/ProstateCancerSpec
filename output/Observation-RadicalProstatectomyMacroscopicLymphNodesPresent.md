@@ -29,7 +29,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 Lymphknoten im Resektat vorhanden
 
 
-**bodySite**: Prostatic structure (body structure)
+**bodySite**: Prostate
 
 **specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)](Specimen-RadicalProstatectomySpecimenPart.md)
 
@@ -44,79 +44,59 @@ Lymphknoten im Resektat vorhanden
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyMacroscopicLymphNodesPresent",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "395557000",
-        "display" : "Tumor finding"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395557000",
+      "display" : "Tumor finding"
+    }],
     "text" : "Lymphknoten im Resektat"
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-16T14:18:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "52101004",
-        "display" : "Present (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "52101004",
+      "display" : "Present (qualifier value)"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Lymphknoten im Resektat vorhanden"
-    }
-  ],
+  "note" : [{
+    "text" : "Lymphknoten im Resektat vorhanden"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "41216001",
-        "display" : "Prostatic structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

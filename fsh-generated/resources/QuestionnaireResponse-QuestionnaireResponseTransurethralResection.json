@@ -68,9 +68,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "176258007",
+                "code": "90199006",
                 "system": "http://snomed.info/sct",
-                "display": "Transurethral resection of prostate (procedure)"
+                "display": "Transurethral prostatectomy"
               }
             }
           ],

@@ -37,9 +37,9 @@
       "summary": {
         "coding": [
           {
-            "code": "1222594001",
+            "code": "1222805004",
             "system": "http://snomed.info/sct",
-            "display": "American Joint Committee on Cancer stage IIIB (qualifier value)"
+            "display": "IIIB (AJCC)"
           }
         ]
       },

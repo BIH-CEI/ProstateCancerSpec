@@ -33,6 +33,6 @@ Description: "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-P
 * encounter = Reference(TransurethralEnucleationEncounter)
 * onsetDateTime = "2024-02-20"
 * recordedDate = "2024-02-20"
-* stage.summary = $sct#1222594001 "American Joint Committee on Cancer stage IIIB (qualifier value)"
+* stage.summary = $sct#1222805004 "IIIB (AJCC)"
 * stage.type = $sct#260998006 "Clinical staging (qualifier value)"
 * note.text = "Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnter Infiltration, extraprostatischer Extension und Samenblaseninfiltration. Tumoranteil 60%. Klinisches Staging: cT3b cNx cMx. Hochrisiko-Karzinom, weitere Diagnostik und Therapieplanung erforderlich."

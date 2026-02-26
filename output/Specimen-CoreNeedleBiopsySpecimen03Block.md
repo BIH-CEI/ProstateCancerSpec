@@ -14,7 +14,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Tissue block specimen (specimen)
+**type**: General specimen container (physical object)
 
 **subject**: [Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)](Patient-Patient1.md)
 
@@ -25,21 +25,21 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | | | |
 | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** |
-| * | 2024-01-16 10:34:00+0100 | Gross examination and sampling of tissue specimen (procedure) |
+| * | 2024-01-16 10:34:00+0100 | Gross examination and sampling of tissue specimen |
 
 ### Processings
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Extension** | **Description** | **Procedure** | **Time[x]** |
-| * |  | Zuschnitt und Paraffineinbettung | Preparation of formalin fixed paraffin embedded tissue specimen (procedure) | 2024-01-16 08:00:00+0100 |
+| * |  | Zuschnitt und Paraffineinbettung | Preparation of formalin fixed paraffin embedded tissue specimen | 2024-01-16 08:00:00+0100 |
 
 ### Containers
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Additive[x]** |
-| * | Paraffin block (physical object) | Paraffin wax (substance) |
+| * | General specimen container (physical object) | Paraffin wax (substance) |
 
 
 
@@ -50,107 +50,85 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "CoreNeedleBiopsySpecimen03Block",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_001_C_1"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_001_C_1"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_001"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1201985008",
-        "display" : "Tissue block specimen (specimen)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "706053007",
+      "display" : "General specimen container (physical object)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
-  "parent" : [
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
-    }
-  ],
+  "parent" : [{
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+  }],
   "collection" : {
     "collectedDateTime" : "2024-01-16T10:34:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "787377000",
-          "display" : "Gross examination and sampling of tissue specimen (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "787377000",
+        "display" : "Gross examination and sampling of tissue specimen"
+      }]
     }
   },
-  "processing" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
-          "valueRange" : {
-            "low" : {
-              "value" : 2,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            },
-            "high" : {
-              "value" : 8,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            }
-          }
+  "processing" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
         }
-      ],
-      "description" : "Zuschnitt und Paraffineinbettung",
-      "procedure" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "787376009",
-            "display" : "Preparation of formalin fixed paraffin embedded tissue specimen (procedure)"
-          }
-        ]
-      },
-      "timeDateTime" : "2024-01-16T08:00:00+01:00"
-    }
-  ],
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "1003707006",
-            "display" : "Paraffin block (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "311731000",
-            "display" : "Paraffin wax (substance)"
-          }
-        ]
       }
+    }],
+    "description" : "Zuschnitt und Paraffineinbettung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "787376009",
+        "display" : "Preparation of formalin fixed paraffin embedded tissue specimen"
+      }]
+    },
+    "timeDateTime" : "2024-01-16T08:00:00+01:00"
+  }],
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "706053007",
+        "display" : "General specimen container (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "311731000",
+        "display" : "Paraffin wax (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

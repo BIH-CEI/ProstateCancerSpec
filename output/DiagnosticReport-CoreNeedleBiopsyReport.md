@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report)
 
-## Pathology Synoptic report (Surgical Pathology ) 
+## Pathology Synoptic report (Surgical Pathology) 
 
 | | |
 | :--- | :--- |
@@ -20,11 +20,11 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 
 **Report Details**
 
-* **Code**: [Pathology report gross observation Narrative](Observation-CoreNeedleBiopsyMacroscopicGrouper.md)(Prostatic structure (body structure))
+* **Code**: [Pathology report gross observation Narrative](Observation-CoreNeedleBiopsyMacroscopicGrouper.md)(Prostate)
   * **Value**: Makroskopische Messungen aller 12 Prostatastanzen
   * **Flags**: Final
   * **When For**: 2024-01-15 14:00:00+0100
-* **Code**: [Pathology report microscopic observation Narrative Other stain](Observation-CoreNeedleBiopsyMicroscopicGrouper.md)(Prostatic structure (body structure))
+* **Code**: [Pathology report microscopic observation Narrative Other stain](Observation-CoreNeedleBiopsyMicroscopicGrouper.md)(Prostate)
   * **Value**: Mikroskopische Befunde aller 12 Prostatastanzen
   * **Flags**: Final
   * **When For**: 2024-01-17 10:00:00+0100
@@ -44,182 +44,162 @@ Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit peri
   "resourceType" : "DiagnosticReport",
   "id" : "CoreNeedleBiopsyReport",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "ACSN",
-            "display" : "Accession ID"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_001"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "ACSN",
+        "display" : "Accession ID"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_001"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-          "code" : "SP",
-          "display" : "Surgical Pathology"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "SP",
+      "display" : "Surgical Pathology"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "60568-3",
-        "display" : "Pathology Synoptic report"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "60568-3",
+      "display" : "Pathology Synoptic report"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-20T15:00:00+01:00",
   "issued" : "2024-01-20T15:30:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen01Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen02Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen02Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen04Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen04Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen05Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen05Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen06Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen06Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen07Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen07Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen08Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen08Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen09Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen09Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen10Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen10Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen11Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen11Slide"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen12Block"
-    },
-    {
-      "reference" : "Specimen/CoreNeedleBiopsySpecimen12Slide"
-    }
-  ],
-  "result" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMacroscopicGrouper"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMicroscopicGrouper"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen01Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen02Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen02Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen03Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen03Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen04Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen04Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen05Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen05Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen06Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen06Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen07Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen07Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen08Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen08Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen09Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen09Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen10Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen10Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen11Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen11Slide"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen12Block"
+  },
+  {
+    "reference" : "Specimen/CoreNeedleBiopsySpecimen12Slide"
+  }],
+  "result" : [{
+    "reference" : "Observation/CoreNeedleBiopsyMacroscopicGrouper"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMicroscopicGrouper"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"
+  }],
   "conclusion" : "Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall."
 }
 

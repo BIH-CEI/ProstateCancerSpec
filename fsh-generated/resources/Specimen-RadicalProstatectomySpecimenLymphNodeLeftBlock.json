@@ -29,7 +29,7 @@
         {
           "code": "787377000",
           "system": "http://snomed.info/sct",
-          "display": "Gross examination and target selection of tissue specimen (procedure)"
+          "display": "Gross examination and sampling of tissue specimen"
         }
       ]
     }
@@ -60,7 +60,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "787376009",
-            "display": "Preparation of formalin-fixed paraffin-embedded tissue specimen (procedure)"
+            "display": "Preparation of formalin fixed paraffin embedded tissue specimen"
           }
         ]
       },
@@ -73,9 +73,9 @@
       "type": {
         "coding": [
           {
-            "code": "1003707006",
+            "code": "706053007",
             "system": "http://snomed.info/sct",
-            "display": "Paraffin block (physical object)"
+            "display": "General specimen container (physical object)"
           }
         ]
       },
@@ -94,8 +94,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1201985008",
-        "display": "Tissue block specimen (specimen)"
+        "code": "706053007",
+        "display": "General specimen container (physical object)"
       }
     ]
   },

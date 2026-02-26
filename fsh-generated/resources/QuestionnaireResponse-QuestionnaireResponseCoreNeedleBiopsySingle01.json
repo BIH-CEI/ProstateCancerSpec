@@ -92,7 +92,7 @@
                       "valueCoding": {
                         "code": "716902004",
                         "system": "http://snomed.info/sct",
-                        "display": "Structure of basal part of peripheral zone of right half prostate (body structure)"
+                        "display": "Right basal peripheral zone of prostate"
                       }
                     }
                   ],
@@ -126,9 +126,9 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "23727001",
+                        "code": "1187332001",
                         "system": "http://snomed.info/sct",
-                        "display": "Adenocarcinoma (morphologic abnormality)"
+                        "display": "Adenocarcinoma"
                       }
                     }
                   ],

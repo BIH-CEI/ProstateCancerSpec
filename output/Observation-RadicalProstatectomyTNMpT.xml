@@ -42,7 +42,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="1352545001"/>
-      <display value="pT2 category (tumor staging)"/>
+      <display value="pT2 (UICC)"/>
     </coding>
     <text value="pT2 - Organ confined"/>
   </valueCodeableConcept>

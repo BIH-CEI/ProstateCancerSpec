@@ -16,7 +16,7 @@ Description: "Gruppierung aller makroskopischen Messungen der Prostatastanzen"
 * effectiveDateTime = "2024-01-15T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen aller 12 Prostatastanzen"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 
 // Referenzen zu allen Längenmessungen
 * derivedFrom[+] = Reference(CoreNeedleBiopsyMacroscopicLength01)
@@ -85,7 +85,7 @@ Description: "Längenmessung der Prostatastanze 01"
 * effectiveDateTime = "2024-01-15T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.8 'cm' "cm"
-* bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+* bodySite = $sct#716902004 "Right basal peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle01)
 * note.text = "Stanzzylinder Gesamtlänge 1.8cm"
 
@@ -105,7 +105,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 01"
 * effectiveDateTime = "2024-01-15T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
-* bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+* bodySite = $sct#716902004 "Right basal peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle01)
 * note.text = "Ein intakter Stanzzylinder"
 
@@ -305,7 +305,7 @@ Description: "Längenmessung der Prostatastanze 06"
 * effectiveDateTime = "2024-01-15T14:20:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.7 'cm' "cm"
-* bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
+* bodySite = $sct#716909008 "Right middle anterior fibromuscular stroma of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 * note.text = "Stanzzylinder Gesamtlänge 1.7cm"
 
@@ -325,7 +325,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 06"
 * effectiveDateTime = "2024-01-15T14:20:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
-* bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
+* bodySite = $sct#716909008 "Right middle anterior fibromuscular stroma of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 * note.text = "Ein intakter Stanzzylinder"
 
@@ -349,7 +349,7 @@ Description: "Längenmessung der Prostatastanze 07"
 * effectiveDateTime = "2024-01-15T14:22:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.6 'cm' "cm"
-* bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716903009 "Left basal peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle07)
 * note.text = "Stanzzylinder Gesamtlänge 1.6cm"
 
@@ -369,7 +369,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 07"
 * effectiveDateTime = "2024-01-15T14:22:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
-* bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716903009 "Left basal peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle07)
 * note.text = "Ein intakter Stanzzylinder"
 
@@ -437,7 +437,7 @@ Description: "Längenmessung der Prostatastanze 09"
 * effectiveDateTime = "2024-01-15T14:26:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1.8 'cm' "cm"
-* bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
+* bodySite = $sct#716935009 "Left apical peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle09)
 * note.text = "Stanzzylinder Gesamtlänge 1.8cm"
 
@@ -457,7 +457,7 @@ Description: "Anzahl der Stanzzylinder in Specimen 09"
 * effectiveDateTime = "2024-01-15T14:26:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 1 '{count}' "count"
-* bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
+* bodySite = $sct#716935009 "Left apical peripheral zone of prostate"
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle09)
 * note.text = "Ein intakter Stanzzylinder"
 
@@ -618,7 +618,7 @@ Description: "Lateralitätsangabe der Prostatastanze 01"
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#24028007 "Right (qualifier value)"
-* bodySite = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+* bodySite = $sct#716902004 "Right basal peripheral zone of prostate"
 * note.text = "Rechte Prostataregion"
 
 // Seitenangabe für Stanze 02 (Rechts)
@@ -713,7 +713,7 @@ Description: "Lateralitätsangabe der Prostatastanze 06"
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#24028007 "Right (qualifier value)"
-* bodySite = $sct#716909008 "Structure of middle regional part of anterior fibromuscular stroma of right half prostate (body structure)"
+* bodySite = $sct#716909008 "Right middle anterior fibromuscular stroma of prostate"
 * note.text = "Rechte Prostataregion"
 
 // =============================================================================
@@ -736,7 +736,7 @@ Description: "Lateralitätsangabe der Prostatastanze 07"
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#7771000 "Left (qualifier value)"
-* bodySite = $sct#716903009 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716903009 "Left basal peripheral zone of prostate"
 * note.text = "Linke Prostataregion"
 
 // Seitenangabe für Stanze 08 (Links)
@@ -774,7 +774,7 @@ Description: "Lateralitätsangabe der Prostatastanze 09"
 * effectiveDateTime = "2024-01-15T14:05:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#7771000 "Left (qualifier value)"
-* bodySite = $sct#716935009 "Structure of apical part of peripheral zone"
+* bodySite = $sct#716935009 "Left apical peripheral zone of prostate"
 * note.text = "Linke Prostataregion"
 
 // Seitenangabe für Stanze 10 (Links)

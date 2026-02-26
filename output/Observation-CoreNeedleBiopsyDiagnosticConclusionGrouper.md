@@ -77,167 +77,151 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyDiagnosticConclusionGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22637-3"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2023-03-15",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "hasMember" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyHistologicalTypeICDO3"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyMorphologyFreeText"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyICDOVersion"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyGleasonScoreTotal"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPercentageGleason45"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyGradingGroupISUP"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyHistologicalGradeWHO"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPositiveCoresRight"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPositiveCoresLeft"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyRatioPositiveCores"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPercentageTumorTotal"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyTumorLengthTotal"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPerineuralInfiltration"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySeminalVesicleInvasion"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyLymphovascularInvasion"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPeriprostataticFatInvasion"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyIntraductalCarcinoma"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyASAP"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyHighGradePIN"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyGranulomatousProstatiti"
-    }
-  ],
-  "derivedFrom" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyProzentGleason01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyProzentGleason02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyGleasonGrading01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyGleasonGrading02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyTumoranteil01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyTumoranteil02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyHighGradePIN01"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/CoreNeedleBiopsyHistologicalTypeICDO3"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyMorphologyFreeText"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyICDOVersion"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyGleasonScoreTotal"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPercentageGleason45"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyGradingGroupISUP"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyHistologicalGradeWHO"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPositiveCoresRight"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPositiveCoresLeft"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyRatioPositiveCores"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPercentageTumorTotal"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyTumorLengthTotal"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPerineuralInfiltration"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySeminalVesicleInvasion"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyLymphovascularInvasion"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPeriprostataticFatInvasion"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyExtraprostaticExtensionLocation"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyIntraductalCarcinoma"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyASAP"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyHighGradePIN"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyGranulomatousProstatiti"
+  }],
+  "derivedFrom" : [{
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyProzentGleason01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyProzentGleason02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyGleasonGrading01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyGleasonGrading02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyVerhaeltnisPositiverStanzen02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyTumoranteil01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyTumoranteil02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyTumorbefallinLaenge02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPerineuraleInfiltration02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyHighGradePIN01"
+  }]
 }
 
 ```

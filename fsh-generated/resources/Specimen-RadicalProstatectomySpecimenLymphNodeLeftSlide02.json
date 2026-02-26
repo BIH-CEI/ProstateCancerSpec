@@ -60,7 +60,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "434472006",
-            "display": "Sectioning of tissue specimen (procedure)"
+            "display": "Sectioning of tissue block"
           }
         ]
       },
@@ -70,6 +70,20 @@
     {
       "extension": [
         {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 2
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 8
+            }
+          },
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
         }
       ],
@@ -78,7 +92,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "127790008",
-            "display": "Hematoxylin and eosin staining method (procedure)"
+            "display": "Staining method"
           }
         ]
       },

@@ -59,9 +59,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1228937002",
+        "code": "55182004",
         "system": "http://snomed.info/sct",
-        "display": "Surgical margins uninvolved by tumor (finding)"
+        "display": "Surgical margin uninvolved by tumor"
       }
     ]
   }

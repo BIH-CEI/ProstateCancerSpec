@@ -16,7 +16,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **category**: Pathology consultation, comprehensive, records and specimen with report (procedure)
 
-**code**: Simple prostatectomy (procedure)
+**code**: Prostatectomy
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
@@ -34,7 +34,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 * [Procedure Enukleation der Prostata](Procedure-TransurethralEnucleationProcedure.md)
 * [Condition Prostatahyperplasie ohne Beschwerden beim Wasserlassen](Condition-TransurethralEnucleationDiagnosisBPH.md)
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Surgical specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
 
 
 
@@ -45,46 +45,34 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "resourceType" : "ServiceRequest",
   "id" : "TransurethralEnucleationReportRequest",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC",
-            "display" : "Placer Identifier"
-          }
-        ]
-      },
-      "system" : "http://example.hospital.de/serviceRequest",
-      "value" : "PATH-RPT-2024-004"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC",
+        "display" : "Placer Identifier"
+      }]
+    },
+    "system" : "http://example.hospital.de/serviceRequest",
+    "value" : "PATH-RPT-2024-004"
+  }],
   "status" : "completed",
   "intent" : "order",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "726007",
-          "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "726007",
+      "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "236205008",
-        "display" : "Simple prostatectomy (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "90470006",
+      "display" : "Prostatectomy"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
@@ -95,38 +83,28 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "requester" : {
     "reference" : "Practitioner/UrologistPractitioner"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "reasonCode" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "266569009",
-          "display" : "Benign prostatic hyperplasia"
-        }
-      ]
-    }
-  ],
-  "supportingInfo" : [
-    {
-      "reference" : "Observation/TransurethralEnucleationPSAPre"
-    },
-    {
-      "reference" : "Procedure/TransurethralEnucleationProcedure"
-    },
-    {
-      "reference" : "Condition/TransurethralEnucleationDiagnosisBPH"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "266569009",
+      "display" : "Benign prostatic hyperplasia"
+    }]
+  }],
+  "supportingInfo" : [{
+    "reference" : "Observation/TransurethralEnucleationPSAPre"
+  },
+  {
+    "reference" : "Procedure/TransurethralEnucleationProcedure"
+  },
+  {
+    "reference" : "Condition/TransurethralEnucleationDiagnosisBPH"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
+  }]
 }
 
 ```

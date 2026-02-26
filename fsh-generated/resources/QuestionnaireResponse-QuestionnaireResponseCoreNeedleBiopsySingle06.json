@@ -90,9 +90,9 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "716924000",
+                        "code": "716928001",
                         "system": "http://snomed.info/sct",
-                        "display": "Structure of apical part of transition zone of right half prostate (body structure)"
+                        "display": "Right apical transition zone of prostate"
                       }
                     }
                   ],

@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **value**: 1/12
 
-**bodySite**: Structure of basal part of peripheral zone of right half prostate (body structure)
+**bodySite**: Right basal peripheral zone of prostate
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Tissue section (specimen)](Specimen-CoreNeedleBiopsySpecimen01Slide.md)
 
@@ -37,65 +37,49 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyVerhaeltnisPositiverStanzen01",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22635-7"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22635-7"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "372303007",
-        "display" : "Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "372303007",
+      "display" : "Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueString" : "1/12",
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716902004",
-        "display" : "Structure of basal part of peripheral zone of right half prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716902004",
+      "display" : "Right basal peripheral zone of prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen01Slide"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle01"
+  }]
 }
 
 ```

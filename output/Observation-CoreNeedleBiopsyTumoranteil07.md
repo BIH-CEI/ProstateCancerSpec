@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **value**: 95 % (Details: UCUM code% = '%')
 
-**bodySite**: Structure of basal part of transition zone of prostate (body structure)
+**bodySite**: Left anterior basal peripheral zone of prostate
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001_G_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Tissue section (specimen)](Specimen-CoreNeedleBiopsySpecimen07Slide.md)
 
@@ -37,47 +37,35 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyTumoranteil07",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22635-7"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22635-7"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "385396009",
-        "display" : "Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385396009",
+      "display" : "Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueQuantity" : {
     "value" : 95,
     "unit" : "%",
@@ -85,22 +73,18 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
     "code" : "%"
   },
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716905002",
-        "display" : "Structure of basal part of transition zone of prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716905002",
+      "display" : "Left anterior basal peripheral zone of prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen07Slide"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle07"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle07"
+  }]
 }
 
 ```

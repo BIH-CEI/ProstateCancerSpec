@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **value**: Not seen (qualifier value)
 
-**bodySite**: Structure of apex part of peripheral zone of left half prostate (body structure)
+**bodySite**: Left posterolateral basal peripheral zone of prostate
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001_F_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Tissue section (specimen)](Specimen-CoreNeedleBiopsySpecimen06Slide.md)
 
@@ -37,73 +37,55 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyTumornachweisinSamenblase06",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22635-7"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22635-7"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "44626-0",
-        "display" : "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44626-0",
+      "display" : "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "47492008",
-        "display" : "Not seen (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "47492008",
+      "display" : "Not seen (qualifier value)"
+    }]
   },
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716907005",
-        "display" : "Structure of apex part of peripheral zone of left half prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716907005",
+      "display" : "Left posterolateral basal peripheral zone of prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen06Slide"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06"
+  }]
 }
 
 ```

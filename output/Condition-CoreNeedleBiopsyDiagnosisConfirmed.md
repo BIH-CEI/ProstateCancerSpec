@@ -31,7 +31,7 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 | | | |
 | :--- | :--- | :--- |
 | - | **Summary** | **Type** |
-| * | American Joint Committee on Cancer stage IIA (qualifier value) | Clinical staging (qualifier value) |
+| * | IIA (AJCC) | Clinical staging (qualifier value) |
 
 **note**: 
 
@@ -49,51 +49,52 @@ Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachge
   "resourceType" : "Condition",
   "id" : "CoreNeedleBiopsyDiagnosisConfirmed",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
-      "valueDateTime" : "2024-01-17"
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2024-01-17"
+  }],
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
   "verificationStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code" : "confirmed"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code" : "encounter-diagnosis"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version" : "2025",
-        "code" : "C61",
-        "display" : "Bösartige Neubildung der Prostata"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2025",
+      "code" : "C61",
+      "display" : "Bösartige Neubildung der Prostata"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "126906006",
+      "display" : "Neoplasm of prostate (disorder)"
+    },
+    {
+      "system" : "http://id.who.int/icd/release/10",
+      "code" : "C61",
+      "display" : "Malignant neoplasm of prostate"
+    },
+    {
+      "system" : "http://id.who.int/icd/release/11/mms",
+      "code" : "2C82",
+      "display" : "Malignant neoplasms of prostate"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
@@ -103,33 +104,25 @@ Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachge
   },
   "onsetDateTime" : "2024-01-17",
   "recordedDate" : "2024-01-17",
-  "stage" : [
-    {
-      "summary" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "1222593007",
-            "display" : "American Joint Committee on Cancer stage IIA (qualifier value)"
-          }
-        ]
-      },
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "260998006",
-            "display" : "Clinical staging (qualifier value)"
-          }
-        ]
-      }
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1222766008",
+        "display" : "IIA (AJCC)"
+      }]
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
     }
-  ],
-  "note" : [
-    {
-      "text" : "Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachgewiesen. Klinisches Stadium cT2a cN0 cM0. Intermediäres Risiko nach D'Amico."
-    }
-  ]
+  }],
+  "note" : [{
+    "text" : "Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachgewiesen. Klinisches Stadium cT2a cN0 cM0. Intermediäres Risiko nach D'Amico."
+  }]
 }
 
 ```

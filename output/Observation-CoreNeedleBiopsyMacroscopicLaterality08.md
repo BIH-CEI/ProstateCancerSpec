@@ -42,69 +42,51 @@ Linke Prostataregion
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyMacroscopicLaterality08",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "20228-3",
-        "display" : "Anatomic part Laterality"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "20228-3",
+      "display" : "Anatomic part Laterality"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-15T14:05:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "7771000",
-        "display" : "Left (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "7771000",
+      "display" : "Left (qualifier value)"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Linke Prostataregion"
-    }
-  ],
+  "note" : [{
+    "text" : "Linke Prostataregion"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716918005",
-        "display" : "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716918005",
+      "display" : "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"

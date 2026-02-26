@@ -34,44 +34,36 @@ Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. In
   "resourceType" : "Procedure",
   "id" : "TransurethralResectionProcedure",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.0"]
   },
   "status" : "completed",
   "category" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "387713003",
-        "display" : "Surgical procedure (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "387713003",
+      "display" : "Surgical procedure (procedure)"
+    }]
   },
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://fhir.de/CodeSystem/bfarm/ops",
-        "version" : "2025",
-        "code" : "5-601",
-        "display" : "Transurethrale Exzision und Destruktion von Prostatagewebe"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "176258007",
-        "display" : "Transurethral resection of prostate (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+      "version" : "2025",
+      "code" : "5-601",
+      "display" : "Transurethrale Exzision und Destruktion von Prostatagewebe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "90199006",
+      "display" : "Transurethral prostatectomy"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
   "performedDateTime" : "2024-04-10T10:30:00+01:00",
-  "note" : [
-    {
-      "text" : "Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."
-    }
-  ]
+  "note" : [{
+    "text" : "Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. Intraoperativ komplikationsloser Verlauf. Histopathologisch Nachweis eines Adenokarzinoms (Gleason 4+5=9) mit extensiver Tumorinfiltration, extraprostatischer Extension und Samenblaseninvasion."
+  }]
 }
 
 ```

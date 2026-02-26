@@ -25,32 +25,24 @@
 {
   "resourceType" : "Practitioner",
   "id" : "UrologistPractitioner",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/practitioner-ids",
-      "value" : "URO-001"
+  "identifier" : [{
+    "system" : "http://example.hospital.de/practitioner-ids",
+    "value" : "URO-001"
+  }],
+  "name" : [{
+    "family" : "Weber",
+    "given" : ["Andreas"],
+    "prefix" : ["Prof. Dr."]
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "394612005",
+        "display" : "Urology"
+      }]
     }
-  ],
-  "name" : [
-    {
-      "family" : "Weber",
-      "given" : ["Andreas"],
-      "prefix" : ["Prof. Dr."]
-    }
-  ],
-  "qualification" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "394612005",
-            "display" : "Urology"
-          }
-        ]
-      }
-    }
-  ]
+  }]
 }
 
 ```

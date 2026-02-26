@@ -44,75 +44,57 @@ Stanzzylinder Gesamtlänge 1.7cm
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyMacroscopicLength11",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "44619-5",
-        "display" : "Length of tissue core(s)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44619-5",
+      "display" : "Length of tissue core(s)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-15T14:30:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueQuantity" : {
     "value" : 1.7,
     "unit" : "cm",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm"
   },
-  "note" : [
-    {
-      "text" : "Stanzzylinder Gesamtlänge 1.7cm"
-    }
-  ],
+  "note" : [{
+    "text" : "Stanzzylinder Gesamtlänge 1.7cm"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "716912006",
-        "display" : "Structure of middle regional part of transition zone of left half prostate (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "716912006",
+      "display" : "Structure of middle regional part of transition zone of left half prostate (body structure)"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle11"
+  }]
 }
 
 ```

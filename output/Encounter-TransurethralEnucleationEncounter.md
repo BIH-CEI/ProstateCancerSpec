@@ -22,12 +22,10 @@
 {
   "resourceType" : "Encounter",
   "id" : "TransurethralEnucleationEncounter",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/encounters",
-      "value" : "E_24_004"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/encounters",
+    "value" : "E_24_004"
+  }],
   "status" : "finished",
   "class" : {
     "code" : "IMP"

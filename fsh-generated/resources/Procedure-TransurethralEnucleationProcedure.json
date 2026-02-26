@@ -16,8 +16,8 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "236205008",
-        "display": "Simple prostatectomy (procedure)"
+        "code": "90470006",
+        "display": "Prostatectomy"
       }
     ]
   },

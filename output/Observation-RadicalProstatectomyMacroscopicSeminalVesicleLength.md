@@ -44,70 +44,52 @@ Beide Samenbläschen je 2.5 cm lang
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyMacroscopicSeminalVesicleLength",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "84894-5",
-        "display" : "Dimension [Length] of Specimen"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "84894-5",
+      "display" : "Dimension [Length] of Specimen"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-16T14:20:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueString" : "Rechts 2.5 cm, Links 2.5 cm",
-  "note" : [
-    {
-      "text" : "Beide Samenbläschen je 2.5 cm lang"
-    }
-  ],
+  "note" : [{
+    "text" : "Beide Samenbläschen je 2.5 cm lang"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "64739004",
-        "display" : "Seminal vesicle structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "64739004",
+      "display" : "Seminal vesicle structure (body structure)"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

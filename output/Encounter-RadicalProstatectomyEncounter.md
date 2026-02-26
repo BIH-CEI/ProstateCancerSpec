@@ -22,12 +22,10 @@
 {
   "resourceType" : "Encounter",
   "id" : "RadicalProstatectomyEncounter",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/encounters",
-      "value" : "E_24_002"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/encounters",
+    "value" : "E_24_002"
+  }],
   "status" : "finished",
   "class" : {
     "code" : "IMP"

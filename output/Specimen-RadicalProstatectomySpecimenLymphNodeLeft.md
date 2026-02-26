@@ -25,7 +25,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-03-15 10:50:00+0100 | Pelvic lymphadenectomy (procedure) | Structure of pelvic lymph node (body structure) |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-03-15 10:50:00+0100 | Pelvic lymphadenectomy | Pelvic lymph node structure |
 
 ### Containers
 
@@ -43,119 +43,93 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "RadicalProstatectomySpecimenLymphNodeLeft",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC"
-          }
-        ]
-      },
-      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
-      "value" : "OP24_001_C"
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "FILL"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_002_C"
-    }
-  ],
+    "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
+    "value" : "OP24_001_C"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_002_C"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_002"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "397135002",
-        "display" : "Specimen from pelvic lymph node (specimen)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "397135002",
+      "display" : "Specimen from pelvic lymph node (specimen)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
-  "request" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "request" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "collection" : {
     "collector" : {
       "reference" : "Practitioner/UrologistPractitioner"
     },
     "collectedDateTime" : "2024-03-15T10:50:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "79876008",
-          "display" : "Pelvic lymphadenectomy (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "14059008",
+        "display" : "Pelvic lymphadenectomy"
+      }]
     },
     "bodySite" : {
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "http://snomed.info/sct",
-                "code" : "7771000",
-                "display" : "Left (qualifier value)"
-              }
-            ]
-          }
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "7771000",
+            "display" : "Left (qualifier value)"
+          }]
         }
-      ],
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "368550005",
-          "display" : "Structure of pelvic lymph node (body structure)"
-        }
-      ]
+      }],
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "54268001",
+        "display" : "Pelvic lymph node structure"
+      }]
     }
   },
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434746001",
-            "display" : "Specimen vial (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434162003",
-            "display" : "Neutral buffered formalin (substance)"
-          }
-        ]
-      }
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

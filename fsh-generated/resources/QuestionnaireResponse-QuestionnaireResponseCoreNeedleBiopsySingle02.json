@@ -126,9 +126,9 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "23727001",
+                        "code": "1187332001",
                         "system": "http://snomed.info/sct",
-                        "display": "Adenocarcinoma (morphologic abnormality)"
+                        "display": "Adenocarcinoma"
                       }
                     }
                   ],

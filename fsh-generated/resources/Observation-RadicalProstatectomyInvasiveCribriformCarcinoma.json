@@ -27,9 +27,9 @@
   "code": {
     "coding": [
       {
-        "code": "1162816009",
+        "code": "30156004",
         "system": "http://snomed.info/sct",
-        "display": "Invasive cribriform carcinoma (morphologic abnormality)"
+        "display": "Cribriform carcinoma"
       }
     ],
     "text": "Invasive cribriform carcinoma"

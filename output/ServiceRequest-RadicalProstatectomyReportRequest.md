@@ -41,46 +41,34 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "resourceType" : "ServiceRequest",
   "id" : "RadicalProstatectomyReportRequest",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC",
-            "display" : "Placer Identifier"
-          }
-        ]
-      },
-      "system" : "http://example.hospital.de/serviceRequest",
-      "value" : "PATH-RPT-2024-002"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC",
+        "display" : "Placer Identifier"
+      }]
+    },
+    "system" : "http://example.hospital.de/serviceRequest",
+    "value" : "PATH-RPT-2024-002"
+  }],
   "status" : "completed",
   "intent" : "order",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "726007",
-          "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "726007",
+      "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "60568-3",
-        "display" : "Pathology synoptic report"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "60568-3",
+      "display" : "Pathology synoptic report"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
@@ -91,32 +79,22 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "requester" : {
     "reference" : "Practitioner/UrologistPractitioner"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "reasonCode" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "399068003",
-          "display" : "Malignant tumor of prostate"
-        }
-      ]
-    }
-  ],
-  "supportingInfo" : [
-    {
-      "reference" : "Condition/RadicalProstatectomyDiagnosisPreOp"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/RadicalProstatectomySpecimenPart"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399068003",
+      "display" : "Malignant tumor of prostate"
+    }]
+  }],
+  "supportingInfo" : [{
+    "reference" : "Condition/RadicalProstatectomyDiagnosisPreOp"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/RadicalProstatectomySpecimenPart"
+  }]
 }
 
 ```

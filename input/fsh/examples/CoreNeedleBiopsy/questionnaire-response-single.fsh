@@ -96,7 +96,7 @@ Description: "Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makrosk
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
         * text = "Lokalisation der Entnahmestelle"
         * answer
-          * valueCoding = $sct#716902004 "Structure of basal part of peripheral zone of right half prostate (body structure)"
+          * valueCoding = $sct#716902004 "Right basal peripheral zone of prostate"
 
       // Länge der Stanzzylinder
       * item[+]
@@ -117,7 +117,7 @@ Description: "Antworten zum Fragebogen für Prostata-Einzelstanze 01 mit makrosk
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.49"
         * text = "Karzinom vorhanden"
         * answer
-          * valueCoding = $sct#23727001 "Adenocarcinoma (morphologic abnormality)"
+          * valueCoding = $sct#1187332001 "Adenocarcinoma"
 
       // Histologic grade / Gleason Score group
       * item[+]
@@ -284,7 +284,7 @@ Description: "Antworten zum Fragebogen für Prostata-Einzelstanze 02 mit makrosk
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.49"
         * text = "Karzinom vorhanden"
         * answer
-          * valueCoding = $sct#23727001 "Adenocarcinoma (morphologic abnormality)"
+          * valueCoding = $sct#1187332001 "Adenocarcinoma"
 
       // Histologic grade / Gleason Score group
       * item[+]
@@ -411,7 +411,7 @@ Description: "Antworten zum Fragebogen für Prostata-Einzelstanze 03 (benigne)"
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
         * text = "Lokalisation der Entnahmestelle"
-        * answer.valueCoding = $sct#716921008 "Structure of apical part of peripheral zone of right half prostate (body structure)"
+        * answer.valueCoding = $sct#716934008 "Right apical peripheral zone of prostate"
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11244"
         * text = "Länge der Stanzzylinder"
@@ -487,7 +487,7 @@ Description: "Antworten zum Fragebogen für Prostata-Einzelstanze 04 mit makrosk
       * item[=].answer.valueInteger = 1
       * item[+].linkId = "2.16.840.1.113883.3.1937.777.18.2.49"
       * item[=].text = "Karzinom vorhanden"
-      * item[=].answer.valueCoding = $sct#23727001 "Adenocarcinoma (morphologic abnormality)"
+      * item[=].answer.valueCoding = $sct#1187332001 "Adenocarcinoma"
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.54"
         * text = "Histologic grade / Gleason Score (ISUP 2014, WHO 2016)"
@@ -560,7 +560,7 @@ Usage: #example
 * item[=].item[=].item[=].item[=].answer.valueString = "E_24_001_E_1"
 * item[=].item[=].item[=].item[+].linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
 * item[=].item[=].item[=].item[=].text = "Lokalisation der Entnahmestelle"
-* item[=].item[=].item[=].item[=].answer.valueCoding = $sct#716920009 "Structure of middle regional part of transition zone of right half prostate (body structure)"
+* item[=].item[=].item[=].item[=].answer.valueCoding = $sct#716911004 "Right middle transition zone of prostate"
 * item[=].item[=].item[=].item[+].linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11244"
 * item[=].item[=].item[=].item[=].text = "Länge der Stanzzylinder"
 * item[=].item[=].item[=].item[=].answer.valueQuantity = 1.4 'cm' "cm"
@@ -614,7 +614,7 @@ Usage: #example
 * item[=].item[=].item[=].item[=].answer.valueString = "E_24_001_F_1"
 * item[=].item[=].item[=].item[+].linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
 * item[=].item[=].item[=].item[=].text = "Lokalisation der Entnahmestelle"
-* item[=].item[=].item[=].item[=].answer.valueCoding = $sct#716924000 "Structure of apical part of transition zone of right half prostate (body structure)"
+* item[=].item[=].item[=].item[=].answer.valueCoding = $sct#716928001 "Right apical transition zone of prostate"
 * item[=].item[=].item[=].item[+].linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11244"
 * item[=].item[=].item[=].item[=].text = "Länge der Stanzzylinder"
 * item[=].item[=].item[=].item[=].answer.valueQuantity = 1.7 'cm' "cm"
@@ -665,7 +665,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716899007 "Structure of left lateral peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716918005 "Left lateral middle peripheral zone of prostate"
 
   // Macroscopy
   * item[+]
@@ -704,7 +704,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 07 (Gleason 4+5=9
     * item[+]
       * linkId = "2.16.840.1.113883.3.1937.777.18.2.55"
       * text = "Grade Group (ISUP 2014)"
-      * answer.valueCoding = $sct#762269003 "Grade Group 5 (finding)"
+      * answer.valueCoding = $sct#1279720000 "International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)"
 
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11247"
@@ -779,7 +779,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 08 (benigne)"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716901006 "Structure of left medial peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716901006 "Central zone of left half prostate"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
     * text = "Makroskopische Beschreibung"
@@ -834,7 +834,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 09 (benigne)"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716897009 "Structure of left anterior peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716920008 "Left anterior middle peripheral zone of prostate"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
     * text = "Makroskopische Beschreibung"
@@ -889,7 +889,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 10 (benigne)"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716898004 "Structure of right anterior peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716919002 "Right anterior middle peripheral zone of prostate"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
     * text = "Makroskopische Beschreibung"
@@ -944,7 +944,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 11 (benigne)"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716900007 "Structure of right medial peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716900007 "Central zone of right half prostate"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
     * text = "Makroskopische Beschreibung"
@@ -999,7 +999,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie 12 (benigne)"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.75"
     * text = "Prostataanteil"
-    * answer.valueCoding = $sct#716902004 "Structure of right lateral peripheral zone of prostate (body structure)"
+    * answer.valueCoding = $sct#716902004 "Right basal peripheral zone of prostate"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11243"
     * text = "Makroskopische Beschreibung"

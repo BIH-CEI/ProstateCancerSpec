@@ -34,7 +34,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="385377005"/>
-      <display value="Gleason score (observable entity)"/>
+      <display value="Gleason grade finding for prostatic cancer"/>
     </coding>
   </code>
   <subject>

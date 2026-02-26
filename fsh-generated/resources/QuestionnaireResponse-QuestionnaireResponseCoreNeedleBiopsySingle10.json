@@ -44,9 +44,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "716898004",
+                "code": "716919002",
                 "system": "http://snomed.info/sct",
-                "display": "Structure of right anterior peripheral zone of prostate (body structure)"
+                "display": "Right anterior middle peripheral zone of prostate"
               }
             }
           ],

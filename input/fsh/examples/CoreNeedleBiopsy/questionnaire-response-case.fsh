@@ -116,7 +116,7 @@ Description: "QuestionnaireResponse für Prostata-Stanzbiopsie auf Fall-Ebene mi
           * item[+]
             * linkId = "2.16.840.1.113883.3.1937.777.18.2.69"
             * text = "Biopsietyp"
-            * answer.valueCoding = $sct#711323001 "Systematic biopsy (procedure)"
+            * answer.valueCoding = $sct#40013009 "Core needle biopsy of prostate"
 
           * item[+]
             * linkId = "2.16.840.1.113883.3.1937.777.18.2.38"

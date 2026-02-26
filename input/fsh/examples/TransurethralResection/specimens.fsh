@@ -23,15 +23,15 @@ Description: "TUR-Prostata Resektat"
   * value = "E_24_003"
 
 * status = #available
-* type = $sct#118292001 "Surgical specimen"
+* type = $sct#119376003 "Tissue specimen"
 * subject = Reference(Patient2)
 * request = Reference(TransurethralResectionReportRequest)
 
 * collection
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-04-10T10:30:00+01:00"
-  * bodySite = $sct#41216001 "Prostate structure"
-  * method = $sct#176258007 "Transurethral resection of prostate (procedure)"
+  * bodySite = $sct#41216001 "Prostate"
+  * method = $sct#90199006 "Transurethral prostatectomy"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
@@ -55,21 +55,21 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 01"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:30:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-04-11T08:00:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1201985008 "Tissue block specimen (specimen)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -95,10 +95,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
   * collectedDateTime = "2024-04-12T08:00:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:00:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -126,10 +126,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock01)
 * collection
   * collectedDateTime = "2024-04-12T08:05:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:05:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -157,21 +157,21 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 02"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:35:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-04-11T08:05:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1201985008 "Tissue block specimen (specimen)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -197,10 +197,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
   * collectedDateTime = "2024-04-12T08:10:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:10:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -228,10 +228,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock02)
 * collection
   * collectedDateTime = "2024-04-12T08:15:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:15:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -259,21 +259,21 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 03"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:40:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-04-11T08:10:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1201985008 "Tissue block specimen (specimen)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -299,10 +299,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
   * collectedDateTime = "2024-04-12T08:20:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:20:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -330,10 +330,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock03)
 * collection
   * collectedDateTime = "2024-04-12T08:25:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:25:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -361,21 +361,21 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 04"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:45:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-04-11T08:15:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1201985008 "Tissue block specimen (specimen)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -401,10 +401,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
   * collectedDateTime = "2024-04-12T08:30:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:30:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -432,10 +432,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock04)
 * collection
   * collectedDateTime = "2024-04-12T08:35:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:35:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -463,21 +463,21 @@ Description: "Paraffineinbettung des TUR-Prostata Präparats Block 05"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient2)
 * parent = Reference(TransurethralResectionSpecimenPart)
 * collection
   * collectedDateTime = "2024-04-11T10:50:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-04-11T08:20:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1201985008 "Tissue block specimen (specimen)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -503,10 +503,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection
   * collectedDateTime = "2024-04-12T08:40:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:40:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -534,10 +534,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präpar
 * parent = Reference(TransurethralResectionSpecimenBlock05)
 * collection
   * collectedDateTime = "2024-04-12T08:45:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-04-12T09:45:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2

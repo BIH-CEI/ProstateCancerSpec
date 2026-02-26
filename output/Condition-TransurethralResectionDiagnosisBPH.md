@@ -38,39 +38,29 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harn
   "resourceType" : "Condition",
   "id" : "TransurethralResectionDiagnosisBPH",
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
   "verificationStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code" : "confirmed"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code" : "encounter-diagnosis"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "code" : "N40.0",
-        "display" : "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "code" : "N40.0",
+      "display" : "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
@@ -80,11 +70,9 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harn
   },
   "onsetDateTime" : "2023-03-01",
   "recordedDate" : "2024-01-05",
-  "note" : [
-    {
-      "text" : "Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harnwegsinfekten. Prostatavolumen ca. 45ml. IPSS 19. Indikation zur TUR-P gestellt."
-    }
-  ]
+  "note" : [{
+    "text" : "Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harnwegsinfekten. Prostatavolumen ca. 45ml. IPSS 19. Indikation zur TUR-P gestellt."
+  }]
 }
 
 ```

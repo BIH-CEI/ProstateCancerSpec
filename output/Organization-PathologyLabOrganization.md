@@ -18,12 +18,10 @@
 {
   "resourceType" : "Organization",
   "id" : "PathologyLabOrganization",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/organization-ids",
-      "value" : "ORG-PATH-001"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/organization-ids",
+    "value" : "ORG-PATH-001"
+  }],
   "name" : "Pathologielabor"
 }
 

@@ -29,7 +29,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 Prostata Breite: 4.5 cm
 
 
-**bodySite**: Prostatic structure (body structure)
+**bodySite**: Prostate
 
 **specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)](Specimen-RadicalProstatectomySpecimenPart.md)
 
@@ -44,76 +44,58 @@ Prostata Breite: 4.5 cm
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyMacroscopicProstateWidth",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "84894-5",
-        "display" : "Dimension [Length] of Specimen"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "84894-5",
+      "display" : "Dimension [Length] of Specimen"
+    }],
     "text" : "Prostata Breite"
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-16T14:15:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueQuantity" : {
     "value" : 4.5,
     "unit" : "cm",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm"
   },
-  "note" : [
-    {
-      "text" : "Prostata Breite: 4.5 cm"
-    }
-  ],
+  "note" : [{
+    "text" : "Prostata Breite: 4.5 cm"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "41216001",
-        "display" : "Prostatic structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

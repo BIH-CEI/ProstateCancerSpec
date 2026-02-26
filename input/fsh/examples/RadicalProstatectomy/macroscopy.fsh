@@ -16,7 +16,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostatektomieprä
 * effectiveDateTime = "2024-03-16T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Makroskopische Messungen des Prostatektomiepräparats"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // hasMember Referenzen zu makroskopischen Findings
@@ -49,7 +49,7 @@ Description: "Gewicht des Prostatektomiepräparats"
 * effectiveDateTime = "2024-03-16T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 55 'g' "g"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostatagewicht 55g"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -70,7 +70,7 @@ Description: "Breite der Prostata in cm"
 * effectiveDateTime = "2024-03-16T14:15:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 4.5 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Breite: 4.5 cm"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -91,7 +91,7 @@ Description: "Höhe der Prostata in cm"
 * effectiveDateTime = "2024-03-16T14:16:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 4.0 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Höhe: 4.0 cm"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -112,7 +112,7 @@ Description: "Tiefe der Prostata in cm"
 * effectiveDateTime = "2024-03-16T14:17:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 3.5 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Tiefe: 3.5 cm"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -133,7 +133,7 @@ Description: "Vorhandensein von Lymphknoten im Prostatektomiepräparat"
 * effectiveDateTime = "2024-03-16T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Lymphknoten im Resektat vorhanden"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -152,8 +152,8 @@ Description: "Seitenangabe der Lymphknoten im Prostatektomiepräparat"
 * specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-16T14:18:30+01:00"
 * performer = Reference(PathologistPractitioner)
-* valueCodeableConcept = $sct#51440002 "Bilateral (qualifier value)"
-* bodySite = $sct#245357009 "Pelvic lymph node"
+* valueCodeableConcept = $sct#51440002 "Right and left"
+* bodySite = $sct#54268001 "Pelvic lymph node structure"
 * note.text = "Lymphknoten bilateral vorhanden"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -174,7 +174,7 @@ Description: "Vorhandensein von Samenblasen im Prostatektomiepräparat"
 * effectiveDateTime = "2024-03-16T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Samenblasen im Resektat vorhanden"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 

@@ -36,39 +36,29 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
   "resourceType" : "Observation",
   "id" : "PSAPreCoreNeedleBiopsy",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "26436-6",
-          "display" : "Laboratory studies (set)"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "LP7839-6",
-          "display" : "Pathology"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP7839-6",
+      "display" : "Pathology"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "2857-1",
-        "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2857-1",
+      "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
@@ -80,19 +70,17 @@ Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.ne
     "system" : "http://unitsofmeasure.org",
     "code" : "ng/mL"
   },
-  "referenceRange" : [
-    {
-      "low" : {
-        "value" : 0,
-        "unit" : "ng/ml"
-      },
-      "high" : {
-        "value" : 3,
-        "unit" : "ng/ml"
-      },
-      "text" : "Normbereich für Männer über 50 Jahre"
-    }
-  ]
+  "referenceRange" : [{
+    "low" : {
+      "value" : 0,
+      "unit" : "ng/ml"
+    },
+    "high" : {
+      "value" : 3,
+      "unit" : "ng/ml"
+    },
+    "text" : "Normbereich für Männer über 50 Jahre"
+  }]
 }
 
 ```

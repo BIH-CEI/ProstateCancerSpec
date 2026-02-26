@@ -68,9 +68,9 @@
           "answer": [
             {
               "valueCoding": {
-                "code": "236205008",
+                "code": "90470006",
                 "system": "http://snomed.info/sct",
-                "display": "Simple prostatectomy (procedure)"
+                "display": "Prostatectomy"
               }
             }
           ],

@@ -37,53 +37,39 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyProstaticTissueInvolved",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "44654-2",
-        "display" : "Tissue involved by tumor in Prostate tumor"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44654-2",
+      "display" : "Tissue involved by tumor in Prostate tumor"
+    }],
     "text" : "Prostatic tissue involved by tumour"
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueQuantity" : {
     "value" : 25,
     "unit" : "%",
@@ -93,11 +79,9 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "specimen" : {
     "reference" : "Specimen/RadicalProstatectomySpecimenPart"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

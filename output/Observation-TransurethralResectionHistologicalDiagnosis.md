@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
+**basedOn**: [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md)
 
 **status**: Final
 
@@ -37,61 +37,45 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "TransurethralResectionHistologicalDiagnosis",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralResectionReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "33731-1",
-        "display" : "Histology type in Cancer specimen Narrative"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "33731-1",
+      "display" : "Histology type in Cancer specimen Narrative"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-12",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueString" : "Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie. Kein Anhalt für Malignität. Keine high-grade PIN. Keine ASAP.",
   "specimen" : {
     "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+  }]
 }
 
 ```

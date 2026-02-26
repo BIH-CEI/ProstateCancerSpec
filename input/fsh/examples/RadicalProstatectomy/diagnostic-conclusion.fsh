@@ -116,7 +116,7 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#369771005 "Gleason Pattern 3 (finding)"
+* valueCodeableConcept = $sct#369771005 "Gleason Pattern 2 (finding)"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Secondary Gleason Pattern
@@ -152,7 +152,7 @@ Description: "Total Gleason score in prostatectomy specimen"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
-* code.coding[+] = $sct#385377005 "Gleason score (observable entity)"
+* code.coding[+] = $sct#385377005 "Gleason grade finding for prostatic cancer"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
 * effectiveDateTime = "2024-03-20"
@@ -202,7 +202,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#1279715005 "International Society of Urological Pathology grade group 2 (Gleason score 7) (qualifier value)"
+* valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7)"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Intraductal Carcinoma of the Prostate (IDC-P)
@@ -234,7 +234,7 @@ Description: "Presence of invasive cribriform carcinoma"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $sct#1162816009 "Invasive cribriform carcinoma (morphologic abnormality)"
+* code = $sct#30156004 "Cribriform carcinoma"
 * code.text = "Invasive cribriform carcinoma"
 * subject = Reference(Patient1)
 * specimen = Reference(RadicalProstatectomySpecimenSlide01A)
@@ -402,7 +402,7 @@ Description: "Status of surgical resection margins"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#1228937002 "Surgical margins uninvolved by tumor (finding)"
+* valueCodeableConcept = $sct#55182004 "Surgical margin uninvolved by tumor"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
 // Lymph Nodes Examined
@@ -463,7 +463,7 @@ Description: "Pathological primary tumor stage according to TNM classification"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#1352545001 "pT2 category (tumor staging)"
+* valueCodeableConcept = $sct#1352545001 "pT2 (UICC)"
 * valueCodeableConcept.text = "pT2 - Organ confined"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)
 
@@ -482,6 +482,6 @@ Description: "Pathological regional lymph node stage according to TNM classifica
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = $sct#1229951005 "American Joint Committee on Cancer pN0 (qualifier value)"
+* valueCodeableConcept = $sct#1229947003 "pN0 (AJCC)"
 * valueCodeableConcept.text = "pN0 - No regional lymph node metastasis"
 * derivedFrom = Reference(QuestionnaireResponseRadicalProstatectomy)

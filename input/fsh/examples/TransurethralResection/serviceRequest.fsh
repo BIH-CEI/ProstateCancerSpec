@@ -11,7 +11,7 @@ Description: "Anforderung für pathologische Aufarbeitung nach TUR-Prostata"
 * identifier[Placer-ID].value = "PATH-RPT-2024-003"
 * intent = #order
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-* code = $sct#176258007 "Transurethral resection of prostate (procedure)"
+* code = $sct#90199006 "Transurethral prostatectomy"
 * encounter = Reference(TransurethralResectionEncounter)
 * subject = Reference(Patient2)
 * requester = Reference(UrologistPractitioner)

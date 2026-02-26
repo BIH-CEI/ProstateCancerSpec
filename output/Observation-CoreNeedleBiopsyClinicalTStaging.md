@@ -16,7 +16,7 @@ Profile: [MII PR Onkologie TNM T-Kategorie](https://simplifier.net/resolve?scope
 
 **effective**: 2024-01-22 10:00:00+0100
 
-**value**: T2a category
+**value**: T2a
 
 **note**: 
 
@@ -34,38 +34,30 @@ Tumor tastbar, weniger als die Hälfte eines Lappens befallend
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyClinicalTStaging",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "21905-5",
-        "display" : "Primary tumor.clinical [Class] Cancer"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21905-5",
+      "display" : "Primary tumor.clinical [Class] Cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-22T10:00:00+01:00",
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1222595000",
-        "display" : "T2a category"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://www.uicc.org/resources/tnm",
+      "code" : "T2a",
+      "display" : "T2a"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Tumor tastbar, weniger als die Hälfte eines Lappens befallend"
-    }
-  ]
+  "note" : [{
+    "text" : "Tumor tastbar, weniger als die Hälfte eines Lappens befallend"
+  }]
 }
 
 ```

@@ -36,39 +36,29 @@ Exzellente biochemische Remission, PSA nicht nachweisbar
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyPSAPostoperative",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "26436-6",
-          "display" : "Laboratory studies (set)"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "LP7839-6",
-          "display" : "Pathology"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP7839-6",
+      "display" : "Pathology"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "2857-1",
-        "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2857-1",
+      "display" : "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
@@ -80,11 +70,9 @@ Exzellente biochemische Remission, PSA nicht nachweisbar
     "system" : "http://unitsofmeasure.org",
     "code" : "ng/mL"
   },
-  "note" : [
-    {
-      "text" : "Exzellente biochemische Remission, PSA nicht nachweisbar"
-    }
-  ]
+  "note" : [{
+    "text" : "Exzellente biochemische Remission, PSA nicht nachweisbar"
+  }]
 }
 
 ```

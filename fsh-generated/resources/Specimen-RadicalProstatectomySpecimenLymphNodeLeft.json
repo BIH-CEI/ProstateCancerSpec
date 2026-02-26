@@ -60,9 +60,9 @@
       ],
       "coding": [
         {
-          "code": "368550005",
+          "code": "54268001",
           "system": "http://snomed.info/sct",
-          "display": "Structure of pelvic lymph node (body structure)"
+          "display": "Pelvic lymph node structure"
         }
       ]
     },
@@ -73,9 +73,9 @@
     "method": {
       "coding": [
         {
-          "code": "79876008",
+          "code": "14059008",
           "system": "http://snomed.info/sct",
-          "display": "Pelvic lymphadenectomy (procedure)"
+          "display": "Pelvic lymphadenectomy"
         }
       ]
     }

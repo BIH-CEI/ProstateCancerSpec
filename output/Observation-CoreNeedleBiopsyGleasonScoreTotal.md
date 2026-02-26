@@ -38,75 +38,57 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyGleasonScoreTotal",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "35266-6",
+      "display" : "Gleason score in Specimen Qualitative"
     },
     {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "35266-6",
-        "display" : "Gleason score in Specimen Qualitative"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "385377005",
-        "display" : "Gleason score (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "385377005",
+      "display" : "Gleason grade finding for prostatic cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2023-03-15",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010",
-        "code" : "C_999009",
-        "display" : "Gleason grade (Score) 9"
-      }
-    ]
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010",
+      "code" : "C_999009",
+      "display" : "Gleason grade (Score) 9"
+    }]
   },
-  "derivedFrom" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "Observation/CoreNeedleBiopsyPrimaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySecondaryGleasonPattern"
+  }]
 }
 
 ```

@@ -18,18 +18,14 @@ Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT
 {
   "resourceType" : "Patient",
   "id" : "Patient2",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/patient-ids",
-      "value" : "PAT-2024-002"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Schmidt",
-      "given" : ["Peter"]
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/patient-ids",
+    "value" : "PAT-2024-002"
+  }],
+  "name" : [{
+    "family" : "Schmidt",
+    "given" : ["Peter"]
+  }],
   "gender" : "male",
   "birthDate" : "1960-03-22"
 }

@@ -25,32 +25,24 @@
 {
   "resourceType" : "Practitioner",
   "id" : "PathologistPractitioner",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/practitioner-ids",
-      "value" : "PATH-001"
+  "identifier" : [{
+    "system" : "http://example.hospital.de/practitioner-ids",
+    "value" : "PATH-001"
+  }],
+  "name" : [{
+    "family" : "Schneider",
+    "given" : ["Maria"],
+    "prefix" : ["Dr."]
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "394595002",
+        "display" : "Pathology"
+      }]
     }
-  ],
-  "name" : [
-    {
-      "family" : "Schneider",
-      "given" : ["Maria"],
-      "prefix" : ["Dr."]
-    }
-  ],
-  "qualification" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "394595002",
-            "display" : "Pathology"
-          }
-        ]
-      }
-    }
-  ]
+  }]
 }
 
 ```

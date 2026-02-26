@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report)
 
-## Pathology Synoptic report (Surgical Pathology ) 
+## Pathology Synoptic report (Surgical Pathology) 
 
 | | |
 | :--- | :--- |
@@ -20,7 +20,7 @@ Profile: [MII PR Patho Reportversion: null2026.0.0)](https://simplifier.net/reso
 
 **Report Details**
 
-* **Code**: [Pathology report gross observation Narrative](Observation-TransurethralResectionMacroscopicGrouper.md)(Prostatic structure (body structure))
+* **Code**: [Pathology report gross observation Narrative](Observation-TransurethralResectionMacroscopicGrouper.md)(Prostate)
   * **Value**: 
   * **Flags**: Final
   * **When For**: 2024-04-11 14:00:00+0100
@@ -40,119 +40,99 @@ TUR-Prostata: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5),
   "resourceType" : "DiagnosticReport",
   "id" : "TransurethralResectionReport",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "ACSN",
-            "display" : "Accession ID"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_003"
-    }
-  ],
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "ACSN",
+        "display" : "Accession ID"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_003"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralResectionReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-          "code" : "SP",
-          "display" : "Surgical Pathology"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "SP",
+      "display" : "Surgical Pathology"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "60568-3",
-        "display" : "Pathology Synoptic report"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "60568-3",
+      "display" : "Pathology Synoptic report"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-12T17:00:00+01:00",
   "issued" : "2024-04-13T08:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenPart"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock01"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide01B"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock02"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide02A"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide02B"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock03"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide03A"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide03B"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock04"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide04A"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide04B"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock05"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide05A"
-    },
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenSlide05B"
-    }
-  ],
-  "result" : [
-    {
-      "reference" : "Observation/TransurethralResectionMacroscopicGrouper"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionDiagnosticConclusionGrouper"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/TransurethralResectionSpecimenPart"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock01"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide01B"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock02"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide02A"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide02B"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock03"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide03A"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide03B"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock04"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide04A"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide04B"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock05"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide05A"
+  },
+  {
+    "reference" : "Specimen/TransurethralResectionSpecimenSlide05B"
+  }],
+  "result" : [{
+    "reference" : "Observation/TransurethralResectionMacroscopicGrouper"
+  },
+  {
+    "reference" : "Observation/TransurethralResectionDiagnosticConclusionGrouper"
+  }],
   "conclusion" : "TUR-Prostata: Azinäres Adenokarzinom, Gleason Score 4+5=9 (ISUP Grade Group 5), mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration (60% des Gewebes) mit extraprostatischer Extension, Samenblaseninvasion, perineuralem und lymphovaskulärem Befall."
 }
 

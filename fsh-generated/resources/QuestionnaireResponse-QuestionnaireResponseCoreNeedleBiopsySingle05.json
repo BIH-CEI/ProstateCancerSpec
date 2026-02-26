@@ -90,9 +90,9 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "716920009",
+                        "code": "716911004",
                         "system": "http://snomed.info/sct",
-                        "display": "Structure of middle regional part of transition zone of right half prostate (body structure)"
+                        "display": "Right middle transition zone of prostate"
                       }
                     }
                   ],

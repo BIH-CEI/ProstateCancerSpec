@@ -16,7 +16,7 @@ Description: "Anforderung für 12-Stanzen Prostatabiopsie"
 * subject = Reference(Patient1)
 * requester = Reference(UrologistPractitioner)
 * performer = Reference(PathologistPractitioner)
-* reasonCode = $sct#162568004 "Raised prostate specific antigen"
+* reasonCode = $sct#396152005 "Prostate specific antigen above reference range"
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen01Part)
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen02Part)
 * specimen[+] = Reference(CoreNeedleBiopsySpecimen03Part)

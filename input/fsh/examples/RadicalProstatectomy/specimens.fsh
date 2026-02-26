@@ -30,8 +30,8 @@ Description: "Vollständiges Prostatektomiepräparat mit Samenbläschen"
 * collection
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-03-15T10:30:00+01:00"
-  * bodySite = $sct#41216001 "Prostate structure"
-  * method = $sct#176106009 "Radical prostatectomy"
+  * bodySite = $sct#41216001 "Prostate"
+  * method = $sct#26294005 "Radical prostatectomy"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
@@ -55,21 +55,21 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 01"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_002"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:30:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-03-16T08:00:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -95,10 +95,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock01)
 * collection
   * collectedDateTime = "2024-03-17T08:00:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:00:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -126,10 +126,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock01)
 * collection
   * collectedDateTime = "2024-03-17T08:05:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:05:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -156,21 +156,21 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 02"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_002"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:35:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-03-16T08:05:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -196,10 +196,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock02)
 * collection
   * collectedDateTime = "2024-03-17T08:10:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:10:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -227,10 +227,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock02)
 * collection
   * collectedDateTime = "2024-03-17T08:15:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:15:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -257,21 +257,21 @@ Description: "Paraffineinbettung des Prostatektomiepräparats Block 03"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_002"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenPart)
 * collection
   * collectedDateTime = "2024-03-16T10:40:00+01:00"
-  * method = $sct#434472006 "Fixation of tissue (procedure)"
+  * method = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
 * processing[+]
   * description = "Formalinfixierung und Paraffineinbettung"
-  * procedure = $sct#434472006 "Fixation of tissue (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-03-16T08:10:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -297,10 +297,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock03)
 * collection
   * collectedDateTime = "2024-03-17T08:20:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:20:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -328,10 +328,10 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des Prostatektomiepräpa
 * parent = Reference(RadicalProstatectomySpecimenBlock03)
 * collection
   * collectedDateTime = "2024-03-17T08:25:00+01:00"
-  * method = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * method = $sct#127790008 "Staining method"
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:25:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
@@ -372,10 +372,10 @@ Description: "Pelvine Lymphknoten rechts aus der Lymphadenektomie"
 * collection
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-03-15T10:45:00+01:00"
-  * bodySite = $sct#368550005 "Structure of pelvic lymph node (body structure)"
+  * bodySite = $sct#54268001 "Pelvic lymph node structure"
     * extension[+].url = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"
     * extension[=].valueCodeableConcept = $sct#24028007 "Right (qualifier value)"
-  * method = $sct#79876008 "Pelvic lymphadenectomy (procedure)"
+  * method = $sct#14059008 "Pelvic lymphadenectomy"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
@@ -399,21 +399,21 @@ Description: "Paraffineinbettung der pelvinen Lymphknoten rechts"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_002"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenLymphNodeRight)
 * collection
   * collectedDateTime = "2024-03-16T11:00:00+01:00"
-  * method = $sct#787377000 "Gross examination and target selection of tissue specimen (procedure)"
+  * method = $sct#787377000 "Gross examination and sampling of tissue specimen"
 * processing[+]
   * description = "Zuschnitt und Paraffineinbettung"
-  * procedure = $sct#787376009 "Preparation of formalin-fixed paraffin-embedded tissue specimen (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-03-16T09:00:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -442,14 +442,14 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rec
   * method = $sct#13283003 "Tissue processing technique (procedure)"
 * processing[+]
   * description = "Schnittherstellung"
-  * procedure = $sct#434472006 "Sectioning of tissue specimen (procedure)"
+  * procedure = $sct#434472006 "Sectioning of tissue block"
   * timeDateTime = "2024-03-17T09:30:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:45:00+01:00"
 * container
   * type = $sct#433466003 "Microscope slide (physical object)"
@@ -477,15 +477,18 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rec
   * method = $sct#13283003 "Tissue processing technique (procedure)"
 * processing[+]
   * description = "Schnittherstellung"
-  * procedure = $sct#434472006 "Sectioning of tissue specimen (procedure)"
+  * procedure = $sct#434472006 "Sectioning of tissue block"
   * timeDateTime = "2024-03-17T09:35:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:50:00+01:00"
+  * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+  * extension[temperaturbedingungen].valueRange.low.value = 2
+  * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
   * type = $sct#433466003 "Microscope slide (physical object)"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
@@ -522,10 +525,10 @@ Description: "Pelvine Lymphknoten links aus der Lymphadenektomie"
 * collection
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-03-15T10:50:00+01:00"
-  * bodySite = $sct#368550005 "Structure of pelvic lymph node (body structure)"
+  * bodySite = $sct#54268001 "Pelvic lymph node structure"
     * extension[+].url = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"
     * extension[=].valueCodeableConcept = $sct#7771000 "Left (qualifier value)"
-  * method = $sct#79876008 "Pelvic lymphadenectomy (procedure)"
+  * method = $sct#14059008 "Pelvic lymphadenectomy"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
@@ -549,21 +552,21 @@ Description: "Paraffineinbettung der pelvinen Lymphknoten links"
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_002"
 * status = #available
-* type = $sct#1201985008 "Tissue block specimen (specimen)"
+* type = $sct#706053007 "General specimen container (physical object)"
 * subject = Reference(Patient1)
 * parent = Reference(RadicalProstatectomySpecimenLymphNodeLeft)
 * collection
   * collectedDateTime = "2024-03-16T11:05:00+01:00"
-  * method = $sct#787377000 "Gross examination and target selection of tissue specimen (procedure)"
+  * method = $sct#787377000 "Gross examination and sampling of tissue specimen"
 * processing[+]
   * description = "Zuschnitt und Paraffineinbettung"
-  * procedure = $sct#787376009 "Preparation of formalin-fixed paraffin-embedded tissue specimen (procedure)"
+  * procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
   * timeDateTime = "2024-03-16T09:05:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
-  * type = $sct#1003707006 "Paraffin block (physical object)"
+  * type = $sct#706053007 "General specimen container (physical object)"
   * additiveCodeableConcept = $sct#311731000 "Paraffin wax (substance)"
 
 // =============================================================================
@@ -592,15 +595,18 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten lin
   * method = $sct#13283003 "Tissue processing technique (procedure)"
 * processing[+]
   * description = "Schnittherstellung"
-  * procedure = $sct#434472006 "Sectioning of tissue specimen (procedure)"
+  * procedure = $sct#434472006 "Sectioning of tissue block"
   * timeDateTime = "2024-03-17T09:40:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:55:00+01:00"
+  * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+  * extension[temperaturbedingungen].valueRange.low.value = 2
+  * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
   * type = $sct#433466003 "Microscope slide (physical object)"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
@@ -627,15 +633,18 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten lin
   * method = $sct#13283003 "Tissue processing technique (procedure)"
 * processing[+]
   * description = "Schnittherstellung"
-  * procedure = $sct#434472006 "Sectioning of tissue specimen (procedure)"
+  * procedure = $sct#434472006 "Sectioning of tissue block"
   * timeDateTime = "2024-03-17T09:45:00+01:00"
   * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
   * extension[temperaturbedingungen].valueRange.low.value = 2
   * extension[temperaturbedingungen].valueRange.high.value = 8
 * processing[+]
   * description = "HE-Färbung"
-  * procedure = $sct#127790008 "Hematoxylin and eosin staining method (procedure)"
+  * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T10:00:00+01:00"
+  * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+  * extension[temperaturbedingungen].valueRange.low.value = 2
+  * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
   * type = $sct#433466003 "Microscope slide (physical object)"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"

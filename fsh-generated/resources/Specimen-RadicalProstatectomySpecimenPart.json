@@ -52,14 +52,14 @@
         {
           "code": "41216001",
           "system": "http://snomed.info/sct",
-          "display": "Prostate structure"
+          "display": "Prostate"
         }
       ]
     },
     "method": {
       "coding": [
         {
-          "code": "176106009",
+          "code": "26294005",
           "system": "http://snomed.info/sct",
           "display": "Radical prostatectomy"
         }

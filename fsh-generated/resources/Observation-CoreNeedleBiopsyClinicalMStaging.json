@@ -27,9 +27,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1229973008",
-        "system": "http://snomed.info/sct",
-        "display": "M0 category"
+        "code": "M0",
+        "system": "https://www.uicc.org/resources/tnm",
+        "display": "M0"
       }
     ]
   },

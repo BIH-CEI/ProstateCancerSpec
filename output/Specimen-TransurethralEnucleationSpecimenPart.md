@@ -14,18 +14,18 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Surgical specimen
+**type**: Tissue specimen
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
-**request**: [ServiceRequest Simple prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md)
+**request**: [ServiceRequest Prostatectomy](ServiceRequest-TransurethralEnucleationReportRequest.md)
 
 ### Collections
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-05-10 10:30:00+0100 | Simple prostatectomy (procedure) | Prostate structure |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-05-10 10:30:00+0100 | Prostatectomy | Prostate |
 
 ### Containers
 
@@ -43,105 +43,83 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "TransurethralEnucleationSpecimenPart",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC"
-          }
-        ]
-      },
-      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
-      "value" : "ENUC24_001_A"
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "FILL"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_004_A"
-    }
-  ],
+    "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
+    "value" : "ENUC24_001_A"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_004_A"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_004"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "118292001",
-        "display" : "Surgical specimen"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "119376003",
+      "display" : "Tissue specimen"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
-  "request" : [
-    {
-      "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
-    }
-  ],
+  "request" : [{
+    "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
+  }],
   "collection" : {
     "collector" : {
       "reference" : "Practitioner/UrologistPractitioner"
     },
     "collectedDateTime" : "2024-05-10T10:30:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "236205008",
-          "display" : "Simple prostatectomy (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "90470006",
+        "display" : "Prostatectomy"
+      }]
     },
     "bodySite" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "41216001",
-          "display" : "Prostate structure"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "41216001",
+        "display" : "Prostate"
+      }]
     }
   },
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434746001",
-            "display" : "Specimen vial (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434162003",
-            "display" : "Neutral buffered formalin (substance)"
-          }
-        ]
-      }
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

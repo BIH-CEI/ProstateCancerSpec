@@ -143,7 +143,7 @@
                       "valueCoding": {
                         "code": "51440002",
                         "system": "http://snomed.info/sct",
-                        "display": "Bilateral (qualifier value)"
+                        "display": "Right and left"
                       }
                     }
                   ],
@@ -241,7 +241,7 @@
                       "valueCoding": {
                         "code": "1279715000",
                         "system": "http://snomed.info/sct",
-                        "display": "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
+                        "display": "International Society of Urological Pathology grade group 1 (Gleason score 3 + 3 = 6)"
                       }
                     }
                   ],

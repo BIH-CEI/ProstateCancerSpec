@@ -16,7 +16,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **category**: Pathology consultation, comprehensive, records and specimen with report (procedure)
 
-**code**: Transurethral resection of prostate (procedure)
+**code**: Transurethral prostatectomy
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
@@ -34,7 +34,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 * [Procedure Transurethrale Exzision und Destruktion von Prostatagewebe](Procedure-TransurethralResectionProcedure.md)
 * [Condition Prostatahyperplasie ohne Beschwerden beim Wasserlassen](Condition-TransurethralResectionDiagnosisBPH.md)
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Surgical specimen](Specimen-TransurethralResectionSpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Tissue specimen](Specimen-TransurethralResectionSpecimenPart.md)
 
 
 
@@ -45,46 +45,34 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "resourceType" : "ServiceRequest",
   "id" : "TransurethralResectionReportRequest",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC",
-            "display" : "Placer Identifier"
-          }
-        ]
-      },
-      "system" : "http://example.hospital.de/serviceRequest",
-      "value" : "PATH-RPT-2024-003"
-    }
-  ],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC",
+        "display" : "Placer Identifier"
+      }]
+    },
+    "system" : "http://example.hospital.de/serviceRequest",
+    "value" : "PATH-RPT-2024-003"
+  }],
   "status" : "completed",
   "intent" : "order",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "726007",
-          "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "726007",
+      "display" : "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "176258007",
-        "display" : "Transurethral resection of prostate (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "90199006",
+      "display" : "Transurethral prostatectomy"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
@@ -95,38 +83,28 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
   "requester" : {
     "reference" : "Practitioner/UrologistPractitioner"
   },
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "reasonCode" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "266569009",
-          "display" : "Benign prostatic hyperplasia"
-        }
-      ]
-    }
-  ],
-  "supportingInfo" : [
-    {
-      "reference" : "Observation/TransurethralResectionPSAPre"
-    },
-    {
-      "reference" : "Procedure/TransurethralResectionProcedure"
-    },
-    {
-      "reference" : "Condition/TransurethralResectionDiagnosisBPH"
-    }
-  ],
-  "specimen" : [
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenPart"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "266569009",
+      "display" : "Benign prostatic hyperplasia"
+    }]
+  }],
+  "supportingInfo" : [{
+    "reference" : "Observation/TransurethralResectionPSAPre"
+  },
+  {
+    "reference" : "Procedure/TransurethralResectionProcedure"
+  },
+  {
+    "reference" : "Condition/TransurethralResectionDiagnosisBPH"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/TransurethralResectionSpecimenPart"
+  }]
 }
 
 ```

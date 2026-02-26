@@ -36,6 +36,7 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <p>Z.n. Prostata-Stanzbiopsie mit Nachweis eines Prostatakarzinoms (höchster Gleason 4+5=9, ISUP-Gradgruppe 5). Radikale Prostatektomie mit pelviner Lymphadenektomie.</p>
 
 <h3>Makroskopie</h3>
+<p>Prostatektomiepräparat 55 g, Maße 4,5 × 4,0 × 3,5 cm. Samenbläschen beidseits 2,5 cm. Lymphknoten bilateral vorhanden.</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Präparat</td><td>Radikale Prostatektomie mit Samenblasen und pelvinen Lymphknoten</td></tr>
@@ -45,13 +46,13 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <tr><td>Lymphknoten</td><td>Bilateral vorhanden</td></tr>
 </tbody>
 </table>
-<p>Prostatektomiepräparat 55 g, Maße 4,5 × 4,0 × 3,5 cm. Samenbläschen beidseits 2,5 cm. Lymphknoten bilateral vorhanden.</p>
 
 <h3>Mikroskopie</h3>
-<p>Konventionelles Adenokarzinom der Prostata mit gemischten Gleason-Mustern. Tumor bilateral nachweisbar.</p>
+<p>Azinäres Adenokarzinom der Prostata mit gemischten, überwiegend klein- bis mitteltubulären, mäßig irregulären Drüsen sowie einem geringeren Anteil an kribriformen Wachstumsmustern. Tumorgewebe in beiden Seitenlappen nachweisbar. Kein kapselüberschreitendes Wachstum. Samenblasen und Lymphknoten tumorgewebsfrei.</p>
 
 <h3>Diagnostische Schlussfolgerung</h3>
-<p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p>
+<p>Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Anteil Gleasonmuster 4/5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.</p>
+
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom (8140/3)</td></tr>
@@ -74,5 +75,5 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <tr><td>pN-Stadium</td><td>pN0</td></tr>
 </tbody>
 </table>
-<p>Gleason-Score 3+4=7, ISUP-Gradgruppe 2 (WHO 2016). Maximaler Tumordurchmesser 18 mm, 25% des Prostatagewebes tumorbefallen. Anteil Gleasonmuster 4/5: 30%. Kein intraduktales Karzinom, kein invasives kribriformes Karzinom. Keine extraprostatische Ausbreitung, keine Samenblaseninfiltration, keine lymphovaskuläre Invasion, keine perineurale Infiltration, keine Blasenhalsinvasion. Absetzungsränder tumorfrei (R0). 12 Lymphknoten untersucht, 0 positiv. Staging: pT2 pN0.</p>
+<p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3)</p>
 </div>"

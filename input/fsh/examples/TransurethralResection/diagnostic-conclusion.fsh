@@ -71,7 +71,7 @@ Description: "Begleitende chronische Prostatitis"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $sct#9713002 "Chronic prostatitis (disorder)"
+* code = $sct#9713002 "Prostatitis"
 * code.text = "Chronische Entzündung"
 * subject = Reference(Patient2)
 * specimen = Reference(TransurethralResectionSpecimenSlide01A)

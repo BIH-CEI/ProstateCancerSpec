@@ -1,9 +1,7 @@
-[
-  {
-    "id" : "prostatecancerspec",
-    "type" : "ImplementationGuide",
-    "url" : "http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec",
-    "version" : "0.1.0",
-    "name" : "ProstateCancerSpec"
-  }
-]
+[{
+  "id" : "prostatecancerspec",
+  "type" : "ImplementationGuide",
+  "url" : "http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec",
+  "version" : "0.1.0",
+  "name" : "ProstateCancerSpec"
+}]

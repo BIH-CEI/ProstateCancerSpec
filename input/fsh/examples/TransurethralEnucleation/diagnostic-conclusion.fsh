@@ -125,7 +125,7 @@ Description: "Total Gleason score in Enucleation specimens"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
-* code.coding[+] = $sct#385377005 "Gleason score (observable entity)"
+* code.coding[+] = $sct#385377005 "Gleason grade finding for prostatic cancer"
 * subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)
 * effectiveDateTime = "2024-05-12"
@@ -175,7 +175,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * effectiveDateTime = "2024-05-12"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationReportRequest)
-* valueCodeableConcept = $sct#1279718003 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
+* valueCodeableConcept = $sct#1279720000 "International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Intraductal Carcinoma of the Prostate (IDC-P)
@@ -207,7 +207,7 @@ Description: "Presence of invasive cribriform carcinoma"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
-* code = $sct#1162816009 "Invasive cribriform carcinoma (morphologic abnormality)"
+* code = $sct#30156004 "Cribriform carcinoma"
 * code.text = "Invasive cribriform carcinoma"
 * subject = Reference(Patient3)
 * specimen = Reference(TransurethralEnucleationSpecimenSlide01A)

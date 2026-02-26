@@ -21,7 +21,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 10"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
-* bodySite = $sct#716898006 "Structure of basal part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716891004 "Basal anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen10Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 
@@ -40,7 +40,7 @@ Description: "Morphologie Freitext für Stanze 10"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Benigne fibröse und glatte Muskulatur mit spärlichen Prostatadrüsen. Stromareiche Zone. Keine malignen Veränderungen."
-* bodySite = $sct#716898006 "Structure of basal part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716891004 "Basal anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen10Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle10)
 
@@ -59,7 +59,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -78,7 +78,7 @@ Description: "Morphologie Freitext für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Azinäres Adenokarzinom mit vorwiegend Gleason Pattern 3, gering fokal Gleason Pattern 4. Mäßig differenziertes Karzinom."
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -99,7 +99,7 @@ Description: "Primäres Gleason Muster für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -120,7 +120,7 @@ Description: "Sekundäres Gleason Muster für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -139,7 +139,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 15 '%' "%"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -160,7 +160,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#860743003 "Gleason grade group 2 (finding)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -179,7 +179,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "7/12"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -198,7 +198,7 @@ Description: "Prozentualer Tumoranteil für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 25 '%' "%"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -217,7 +217,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 2.8 'mm' "mm"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -236,7 +236,7 @@ Description: "Perineurale Infiltration für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -255,7 +255,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -274,7 +274,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -293,7 +293,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -312,7 +312,7 @@ Description: "Intraduktales Karzinom für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 
 // ASAP
@@ -330,7 +330,7 @@ Description: "ASAP für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -349,7 +349,7 @@ Description: "Begleitende High-grade-PIN für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 
 // Granulomatöse Prostatitis
@@ -367,7 +367,7 @@ Description: "Granulomatöse Prostatitis für Stanze 11"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716900003 "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716908000 "Middle anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen11Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle11)
 
@@ -390,7 +390,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 12"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
-* bodySite = $sct#716899003 "Structure of apex part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716925003 "Apical anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen12Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle12)
 
@@ -409,6 +409,6 @@ Description: "Morphologie Freitext für Stanze 12"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Fibröse und glatte Muskulatur mit vereinzelten benignen Prostatadrüsen. Keine Atypien oder malignen Veränderungen."
-* bodySite = $sct#716899003 "Structure of apex part of anterior fibromuscular zone of prostate (body structure)"
+* bodySite = $sct#716925003 "Apical anterior fibromuscular stroma of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen12Slide)
 

@@ -36,6 +36,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 <p>Obstruktive Miktionsbeschwerden bei bekannter Prostatahyperplasie. PSA 4,2 ng/ml. Transurethrale Resektion der Prostata (TUR-P).</p>
 
 <h3>Makroskopie</h3>
+<p>TUR-Prostata-Präparat 25 g. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Präparat</td><td>TUR-Prostata-Späne</td></tr>
@@ -44,12 +45,14 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Lymphknoten</td><td>Nicht im Resektat</td></tr>
 </tbody>
 </table>
-<p>TUR-Prostata-Präparat 25 g. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
+
 
 <h3>Mikroskopie</h3>
 <p>Prostatastanzgewebe mit ausgeprägter nodulärer glandulärer und stromaler Hyperplasie. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität.</p>
 
 <h3>Diagnostische Schlussfolgerung</h3>
+<p>Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>
+
 <p><b>Diagnose:</b> Benigne Prostatahyperplasie (BPH)</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
@@ -61,5 +64,4 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>High-grade-PIN</td><td>Nicht nachgewiesen</td></tr>
 </tbody>
 </table>
-<p>Benigne Prostatahyperplasie mit glandulärer und stromaler Hyperplasie. Ausgeprägte noduläre Hyperplasie mit überwiegend glandulären Anteilen. Fokale chronisch-lymphozytäre Prostatitis. Kein Anhalt für Malignität, kein ASAP, keine High-grade-PIN.</p>
 </div>"

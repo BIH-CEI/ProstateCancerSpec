@@ -39,7 +39,7 @@
       {
         "code": "1352545001",
         "system": "http://snomed.info/sct",
-        "display": "pT2 category (tumor staging)"
+        "display": "pT2 (UICC)"
       }
     ],
     "text": "pT2 - Organ confined"

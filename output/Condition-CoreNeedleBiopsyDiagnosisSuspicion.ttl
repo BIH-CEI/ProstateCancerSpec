@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -17,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition CoreNeedleBiopsyDiagnosisSuspicion</b></p><a name=\"CoreNeedleBiopsyDiagnosisSuspicion\"> </a><a name=\"hcCoreNeedleBiopsyDiagnosisSuspicion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor\">MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)</a></p></div><p><b>Condition Asserted Date</b>: 2024-01-10</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C61}\">Bösartige Neubildung der Prostata</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)</a></p><p><b>onset</b>: 2024-01-10</p><p><b>recordedDate</b>: 2024-01-10</p><p><b>note</b>: </p><blockquote><div><p>V.a. Prostatakarzinom bei PSA 8,5 ng/ml und PI-RADS 4 Läsion im mpMRT. Biopsie zur Diagnosesicherung indiziert.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition CoreNeedleBiopsyDiagnosisSuspicion</b></p><a name=\"CoreNeedleBiopsyDiagnosisSuspicion\"> </a><a name=\"hcCoreNeedleBiopsyDiagnosisSuspicion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor\">MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)</a></p></div><p><b>Condition Asserted Date</b>: 2024-01-10</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C61}, {http://snomed.info/sct 126906006}, {http://id.who.int/icd/release/10 C61}, {http://id.who.int/icd/release/11/mms 2C82}\">Bösartige Neubildung der Prostata</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)</a></p><p><b>onset</b>: 2024-01-10</p><p><b>recordedDate</b>: 2024-01-10</p><p><b>note</b>: </p><blockquote><div><p>V.a. Prostatakarzinom bei PSA 8,5 ng/ml und PI-RADS 4 Läsion im mpMRT. Biopsie zur Diagnosesicherung indiziert.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
@@ -65,6 +66,28 @@
        fhir:version [ fhir:v "2025" ] ;
        fhir:code [ fhir:v "C61" ] ;
        fhir:display [ fhir:v "Bösartige Neubildung der Prostata" ]
+     ] [
+       a sct:126906006 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "126906006" ] ;
+       fhir:display [ fhir:v "Neoplasm of prostate (disorder)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://id.who.int/icd/release/10"^^xsd:anyURI ;
+         fhir:l <http://id.who.int/icd/release/10>
+       ] ;
+       fhir:code [ fhir:v "C61" ] ;
+       fhir:display [ fhir:v "Malignant neoplasm of prostate" ]
+     ] [
+       fhir:system [
+         fhir:v "http://id.who.int/icd/release/11/mms"^^xsd:anyURI ;
+         fhir:l <http://id.who.int/icd/release/11/mms>
+       ] ;
+       fhir:code [ fhir:v "2C82" ] ;
+       fhir:display [ fhir:v "Malignant neoplasms of prostate" ]
      ] )
   ] ; # 
   fhir:subject [

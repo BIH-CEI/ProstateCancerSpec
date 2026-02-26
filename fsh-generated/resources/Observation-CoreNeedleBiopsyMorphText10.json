@@ -52,9 +52,9 @@
   "bodySite": {
     "coding": [
       {
-        "code": "716898006",
+        "code": "716891004",
         "system": "http://snomed.info/sct",
-        "display": "Structure of basal part of anterior fibromuscular zone of prostate (body structure)"
+        "display": "Basal anterior fibromuscular stroma of prostate"
       }
     ]
   },

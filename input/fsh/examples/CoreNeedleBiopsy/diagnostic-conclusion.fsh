@@ -173,7 +173,7 @@ Description: "Total Gleason score in biopsy specimens"
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
-* code.coding[+] = $sct#385377005 "Gleason score (observable entity)"
+* code.coding[+] = $sct#385377005 "Gleason grade finding for prostatic cancer"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
@@ -219,7 +219,7 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueCodeableConcept = $sct#1279717008 "International Society of Urological Pathology grade group 5 (Gleason score 9 or 10) (qualifier value)"
+* valueCodeableConcept = $sct#1279720000 "International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)"
 
 // Histological Grade WHO
 Instance: CoreNeedleBiopsyHistologicalGradeWHO

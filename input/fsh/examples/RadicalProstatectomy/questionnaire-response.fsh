@@ -109,7 +109,7 @@ Description: "QuestionnaireResponse für radikale Prostatektomie mit makroskopis
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11219"
         * text = "Seitenangabe Lymphknoten"
-        * answer.valueCoding = $sct#51440002 "Bilateral (qualifier value)"
+        * answer.valueCoding = $sct#51440002 "Right and left"
 
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.11218"
@@ -163,4 +163,4 @@ Description: "QuestionnaireResponse für radikale Prostatektomie mit makroskopis
       * item[+]
         * linkId = "2.16.840.1.113883.3.1937.777.18.2.4.10690"
         * text = "Gradinggruppe nach ISUP 2014/WHO 2016"
-        * answer.valueCoding = $sct#1279715000 "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
+        * answer.valueCoding = $sct#1279715000 "International Society of Urological Pathology grade group 1 (Gleason score 3 + 3 = 6)"

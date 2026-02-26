@@ -16,7 +16,7 @@ Profile: [MII PR Onkologie TNM N-Kategorie](https://simplifier.net/resolve?scope
 
 **effective**: 2024-01-22 10:00:00+0100
 
-**value**: N0 category
+**value**: N0
 
 **note**: 
 
@@ -34,38 +34,30 @@ Keine regionalen Lymphknotenmetastasen nachweisbar
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyClinicalNStaging",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "21906-3",
-        "display" : "Regional lymph nodes.clinical [Class] Cancer"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21906-3",
+      "display" : "Regional lymph nodes.clinical [Class] Cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-01-22T10:00:00+01:00",
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1229901006",
-        "display" : "N0 category"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://www.uicc.org/resources/tnm",
+      "code" : "N0",
+      "display" : "N0"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Keine regionalen Lymphknotenmetastasen nachweisbar"
-    }
-  ]
+  "note" : [{
+    "text" : "Keine regionalen Lymphknotenmetastasen nachweisbar"
+  }]
 }
 
 ```

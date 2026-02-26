@@ -41,9 +41,9 @@
     {
       "coding": [
         {
-          "code": "162568004",
+          "code": "396152005",
           "system": "http://snomed.info/sct",
-          "display": "Raised prostate specific antigen"
+          "display": "Prostate specific antigen above reference range"
         }
       ]
     }

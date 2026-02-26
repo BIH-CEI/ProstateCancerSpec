@@ -17,7 +17,7 @@
               {
                 "code": "716935009",
                 "system": "http://snomed.info/sct",
-                "display": "Structure of apical part of peripheral zone"
+                "display": "Left apical peripheral zone of prostate"
               }
             ]
           }
@@ -84,7 +84,7 @@
         {
           "code": "716935009",
           "system": "http://snomed.info/sct",
-          "display": "Structure of apical part of peripheral zone"
+          "display": "Left apical peripheral zone of prostate"
         }
       ]
     }

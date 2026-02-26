@@ -76,7 +76,7 @@
          fhir:l <http://snomed.info/sct>
        ] ;
        fhir:code [ fhir:v "1352545001" ] ;
-       fhir:display [ fhir:v "pT2 category (tumor staging)" ]
+       fhir:display [ fhir:v "pT2 (UICC)" ]
      ] ) ;
      fhir:text [ fhir:v "pT2 - Organ confined" ]
   ] ; # 

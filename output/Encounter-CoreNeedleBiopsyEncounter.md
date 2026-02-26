@@ -22,12 +22,10 @@
 {
   "resourceType" : "Encounter",
   "id" : "CoreNeedleBiopsyEncounter",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/encounters",
-      "value" : "E_24_001"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/encounters",
+    "value" : "E_24_001"
+  }],
   "status" : "finished",
   "class" : {
     "code" : "IMB"

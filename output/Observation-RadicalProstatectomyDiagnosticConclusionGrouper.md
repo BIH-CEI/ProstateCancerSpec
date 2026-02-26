@@ -33,7 +33,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-RadicalProstatectomyPercentageGleason45.md)
 * [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-RadicalProstatectomyGradingGroupISUP.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyIntraductalCarcinoma.md)
-* [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.md)
+* [Observation Cribriform carcinoma](Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.md)
 * [Observation Size.maximum dimension in Tumor](Observation-RadicalProstatectomyMaxTumorDiameter.md)
 * [Observation Tissue involved by tumor in Prostate tumor](Observation-RadicalProstatectomyProstaticTissueInvolved.md)
 * [Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols](Observation-RadicalProstatectomyExtraprostaticExtension.md)
@@ -58,116 +58,100 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   "resourceType" : "Observation",
   "id" : "RadicalProstatectomyDiagnosticConclusionGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22637-3"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2024-03-20",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "hasMember" : [
-    {
-      "reference" : "Observation/RadicalProstatectomyHistologicalTypeICDO3"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyMorphologyFreeText"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyICDOVersion"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyPrimaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomySecondaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyGleasonScoreTotal"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyPercentageGleason45"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyGradingGroupISUP"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyIntraductalCarcinoma"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyMaxTumorDiameter"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyExtraprostaticExtension"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomySeminalVesicleInvasion"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyLymphovascularInvasion"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyPerineuralInfiltration"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyBladderNeckInvasion"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyMarginStatus"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyLymphNodesExamined"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyLymphNodesPositive"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyTNMpT"
-    },
-    {
-      "reference" : "Observation/RadicalProstatectomyTNMpN"
-    }
-  ],
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/RadicalProstatectomyHistologicalTypeICDO3"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyMorphologyFreeText"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyICDOVersion"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyPrimaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomySecondaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyGleasonScoreTotal"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyPercentageGleason45"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyGradingGroupISUP"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyIntraductalCarcinoma"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyInvasiveCribriformCarcinoma"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyMaxTumorDiameter"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyProstaticTissueInvolved"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyExtraprostaticExtension"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomySeminalVesicleInvasion"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyLymphovascularInvasion"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyPerineuralInfiltration"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyBladderNeckInvasion"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyMarginStatus"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyLymphNodesExamined"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyLymphNodesPositive"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyTNMpT"
+  },
+  {
+    "reference" : "Observation/RadicalProstatectomyTNMpN"
+  }],
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseRadicalProstatectomy"
+  }]
 }
 
 ```

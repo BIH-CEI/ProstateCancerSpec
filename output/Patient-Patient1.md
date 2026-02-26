@@ -18,18 +18,14 @@ Hans Mueller Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-
 {
   "resourceType" : "Patient",
   "id" : "Patient1",
-  "identifier" : [
-    {
-      "system" : "http://example.hospital.de/patient-ids",
-      "value" : "PAT-2024-001"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Mueller",
-      "given" : ["Hans"]
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://example.hospital.de/patient-ids",
+    "value" : "PAT-2024-001"
+  }],
+  "name" : [{
+    "family" : "Mueller",
+    "given" : ["Hans"]
+  }],
   "gender" : "male",
   "birthDate" : "1955-08-15"
 }

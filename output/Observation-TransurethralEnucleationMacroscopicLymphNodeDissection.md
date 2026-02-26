@@ -29,9 +29,9 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 Keine Lymphknoten im Resektat
 
 
-**bodySite**: Prostatic structure (body structure)
+**bodySite**: Prostate
 
-**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Surgical specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
+**specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
 
 **derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)'](QuestionnaireResponse-QuestionnaireResponseTransurethralEnucleation.md)
 
@@ -44,79 +44,59 @@ Keine Lymphknoten im Resektat
   "resourceType" : "Observation",
   "id" : "TransurethralEnucleationMacroscopicLymphNodeDissection",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22634-0"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "395557000",
-        "display" : "Tumor finding"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395557000",
+      "display" : "Tumor finding"
+    }],
     "text" : "Lymphknoten-Dissektion Präparat"
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-04-11T14:19:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "52101004",
-        "display" : "Present (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "52101004",
+      "display" : "Present (qualifier value)"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Keine Lymphknoten im Resektat"
-    }
-  ],
+  "note" : [{
+    "text" : "Keine Lymphknoten im Resektat"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "41216001",
-        "display" : "Prostatic structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+  }]
 }
 
 ```

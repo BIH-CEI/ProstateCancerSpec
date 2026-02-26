@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
+**basedOn**: [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md)
 
 **status**: Final
 
@@ -44,75 +44,55 @@ Fokal chronisch-lymphozytäre Prostatitis
   "resourceType" : "Observation",
   "id" : "TransurethralResectionInflammation",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralResectionReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "9713002",
-        "display" : "Chronic prostatitis (disorder)"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "9713002",
+      "display" : "Prostatitis"
+    }],
     "text" : "Chronische Entzündung"
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-12",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "52101004",
-        "display" : "Present (qualifier value)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "52101004",
+      "display" : "Present (qualifier value)"
+    }]
   },
-  "note" : [
-    {
-      "text" : "Fokal chronisch-lymphozytäre Prostatitis"
-    }
-  ],
+  "note" : [{
+    "text" : "Fokal chronisch-lymphozytäre Prostatitis"
+  }],
   "specimen" : {
     "reference" : "Specimen/TransurethralResectionSpecimenSlide01A"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+  }]
 }
 
 ```

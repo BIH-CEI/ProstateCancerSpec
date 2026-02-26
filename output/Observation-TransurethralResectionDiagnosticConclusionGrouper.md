@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Transurethral resection of prostate (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
+**basedOn**: [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md)
 
 **status**: Final
 
@@ -26,7 +26,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 
 * [Observation Histology type in Cancer specimen Narrative](Observation-TransurethralResectionHistologicalDiagnosis.md)
 * [Observation Benign prostatic hyperplasia (disorder)](Observation-TransurethralResectionBPHNodularity.md)
-* [Observation Chronic prostatitis (disorder)](Observation-TransurethralResectionInflammation.md)
+* [Observation Prostatitis](Observation-TransurethralResectionInflammation.md)
 
 **derivedFrom**: [Response to Questionnaire 'https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435' about '->Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)'](QuestionnaireResponse-QuestionnaireResponseTransurethralResection.md)
 
@@ -39,59 +39,43 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   "resourceType" : "Observation",
   "id" : "TransurethralResectionDiagnosticConclusionGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralResectionReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralResectionReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22637-3"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
   "effectiveDateTime" : "2024-04-12",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "hasMember" : [
-    {
-      "reference" : "Observation/TransurethralResectionHistologicalDiagnosis"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionBPHNodularity"
-    },
-    {
-      "reference" : "Observation/TransurethralResectionInflammation"
-    }
-  ],
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/TransurethralResectionHistologicalDiagnosis"
+  },
+  {
+    "reference" : "Observation/TransurethralResectionBPHNodularity"
+  },
+  {
+    "reference" : "Observation/TransurethralResectionInflammation"
+  }],
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralResection"
+  }]
 }
 
 ```

@@ -18,21 +18,21 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_2; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Tissue block specimen (specimen)](Specimen-TransurethralResectionSpecimenBlock02.md)
+**parent**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003_A_2; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = General specimen container (physical object)](Specimen-TransurethralResectionSpecimenBlock02.md)
 
 ### Collections
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** |
-| * | 2024-04-12 08:10:00+0100 | Hematoxylin and eosin staining method (procedure) |
+| * | 2024-04-12 08:10:00+0100 | Staining method |
 
 ### Processings
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Extension** | **Description** | **Procedure** | **Time[x]** |
-| * |  | HE-Färbung | Hematoxylin and eosin staining method (procedure) | 2024-04-12 09:10:00+0100 |
+| * |  | HE-Färbung | Staining method | 2024-04-12 09:10:00+0100 |
 
 ### Containers
 
@@ -50,107 +50,85 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "TransurethralResectionSpecimenSlide02A",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_003_A_2_1HE"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_003_A_2_1HE"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_003"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "430856003",
-        "display" : "Tissue section (specimen)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "430856003",
+      "display" : "Tissue section (specimen)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient2"
   },
-  "parent" : [
-    {
-      "reference" : "Specimen/TransurethralResectionSpecimenBlock02"
-    }
-  ],
+  "parent" : [{
+    "reference" : "Specimen/TransurethralResectionSpecimenBlock02"
+  }],
   "collection" : {
     "collectedDateTime" : "2024-04-12T08:10:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "127790008",
-          "display" : "Hematoxylin and eosin staining method (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "127790008",
+        "display" : "Staining method"
+      }]
     }
   },
-  "processing" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
-          "valueRange" : {
-            "low" : {
-              "value" : 2,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            },
-            "high" : {
-              "value" : 8,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            }
-          }
+  "processing" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
         }
-      ],
-      "description" : "HE-Färbung",
-      "procedure" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "127790008",
-            "display" : "Hematoxylin and eosin staining method (procedure)"
-          }
-        ]
-      },
-      "timeDateTime" : "2024-04-12T09:10:00+01:00"
-    }
-  ],
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "433466003",
-            "display" : "Microscope slide (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "430862008",
-            "display" : "Microscope slide mounting medium (substance)"
-          }
-        ]
       }
+    }],
+    "description" : "HE-Färbung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "127790008",
+        "display" : "Staining method"
+      }]
+    },
+    "timeDateTime" : "2024-04-12T09:10:00+01:00"
+  }],
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "433466003",
+        "display" : "Microscope slide (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "430862008",
+        "display" : "Microscope slide mounting medium (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

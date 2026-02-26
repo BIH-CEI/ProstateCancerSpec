@@ -43,90 +43,72 @@ Profiles: [MII PR Onkologie Prostata Gleason Primär](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsySecondaryGleasonPattern",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44642-7",
+      "display" : "Gleason pattern.secondary in Prostate tumor"
     },
     {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "44642-7",
-        "display" : "Gleason pattern.secondary in Prostate tumor"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "384995005",
-        "display" : "Secondary Gleason pattern (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "384995005",
+      "display" : "Secondary Gleason pattern (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2023-03-15",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "369773008",
-        "display" : "Gleason Pattern 4 (finding)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "369773008",
+      "display" : "Gleason Pattern 4 (finding)"
+    }]
   },
-  "derivedFrom" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason04"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason06"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason07"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason09"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsySekundaerGleason11"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason04"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason06"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason07"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason09"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsySekundaerGleason11"
+  }]
 }
 
 ```

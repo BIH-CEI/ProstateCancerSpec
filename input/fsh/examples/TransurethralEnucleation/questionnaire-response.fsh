@@ -55,7 +55,7 @@ Description: "QuestionnaireResponse für Prostata-Enukleation"
   * item[+]
     * linkId = "2.16.840.1.113883.3.1937.777.18.2.133"
     * text = "Operatives Verfahren"
-    * answer.valueCoding = $sct#236205008 "Simple prostatectomy (procedure)"
+    * answer.valueCoding = $sct#90470006 "Prostatectomy"
   
   // Untersuchungsmaterial (Macroscopy)
   * item[+]

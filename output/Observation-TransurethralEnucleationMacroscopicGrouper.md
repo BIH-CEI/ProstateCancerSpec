@@ -20,7 +20,7 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**bodySite**: Prostatic structure (body structure)
+**bodySite**: Prostate
 
 **hasMember**: 
 
@@ -42,72 +42,56 @@ Profile: [MII PR Patho Macroscopic Grouperversion: null2026.0.0)](https://simpli
   "resourceType" : "Observation",
   "id" : "TransurethralEnucleationMacroscopicGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22634-0"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22634-0"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-04-11T14:00:00+01:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "41216001",
-        "display" : "Prostatic structure (body structure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
   },
-  "hasMember" : [
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicWeight"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicLength"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicWidth"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicDepth"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicSeminalVesicles"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMacroscopicLymphNodeDissection"
-    }
-  ],
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
-    }
-  ]
+  "hasMember" : [{
+    "reference" : "Observation/TransurethralEnucleationMacroscopicWeight"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMacroscopicLength"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMacroscopicWidth"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMacroscopicDepth"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMacroscopicSeminalVesicles"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMacroscopicLymphNodeDissection"
+  }],
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+  }]
 }
 
 ```

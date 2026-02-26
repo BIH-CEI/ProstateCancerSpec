@@ -13,6 +13,9 @@ Description: "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auff
 * code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
+* code.coding[sct] = $sct#126906006 "Neoplasm of prostate (disorder)"
+* code.coding[+] = http://id.who.int/icd/release/10#C61 "Malignant neoplasm of prostate"
+* code.coding[+] = http://id.who.int/icd/release/11/mms#2C82 "Malignant neoplasms of prostate"
 * subject = Reference(Patient1)
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * onsetDateTime = "2024-01-10"
@@ -34,10 +37,13 @@ Description: "Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie"
 * code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
+* code.coding[sct] = $sct#126906006 "Neoplasm of prostate (disorder)"
+* code.coding[+] = http://id.who.int/icd/release/10#C61 "Malignant neoplasm of prostate"
+* code.coding[+] = http://id.who.int/icd/release/11/mms#2C82 "Malignant neoplasms of prostate"
 * subject = Reference(Patient1)
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * onsetDateTime = "2024-01-17"
 * recordedDate = "2024-01-17"
-* stage.summary = $sct#1222593007 "American Joint Committee on Cancer stage IIA (qualifier value)"
+* stage.summary = $sct#1222766008 "IIA (AJCC)"
 * stage.type = $sct#260998006 "Clinical staging (qualifier value)"
 * note.text = "Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachgewiesen. Klinisches Stadium cT2a cN0 cM0. Intermediäres Risiko nach D'Amico."

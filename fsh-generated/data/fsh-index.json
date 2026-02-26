@@ -68,8 +68,8 @@
     "fshName": "CoreNeedleBiopsyDiagnosisConfirmed",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnosis.fsh",
-    "startLine": 23,
-    "endLine": 43
+    "startLine": 26,
+    "endLine": 49
   },
   {
     "outputFile": "Condition-CoreNeedleBiopsyDiagnosisSuspicion.json",
@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnosis.fsh",
     "startLine": 2,
-    "endLine": 20
+    "endLine": 23
   },
   {
     "outputFile": "Condition-RadicalProstatectomyDiagnosisPreOp.json",
@@ -85,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnosis.fsh",
     "startLine": 2,
-    "endLine": 22
+    "endLine": 25
   },
   {
     "outputFile": "Condition-TransurethralEnucleationDiagnosisBPH.json",
@@ -2796,32 +2796,32 @@
     "fshName": "RadicalProstatectomySpecimenLymphNodeLeft",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 497,
-    "endLine": 532
+    "startLine": 500,
+    "endLine": 535
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenLymphNodeLeftBlock.json",
     "fshName": "RadicalProstatectomySpecimenLymphNodeLeftBlock",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 538,
-    "endLine": 567
+    "startLine": 541,
+    "endLine": 570
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide01.json",
     "fshName": "RadicalProstatectomySpecimenLymphNodeLeftSlide01",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 573,
-    "endLine": 606
+    "startLine": 576,
+    "endLine": 612
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenLymphNodeLeftSlide02.json",
     "fshName": "RadicalProstatectomySpecimenLymphNodeLeftSlide02",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
-    "startLine": 608,
-    "endLine": 641
+    "startLine": 614,
+    "endLine": 650
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenLymphNodeRight.json",
@@ -2853,7 +2853,7 @@
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/specimens.fsh",
     "startLine": 458,
-    "endLine": 491
+    "endLine": 494
   },
   {
     "outputFile": "Specimen-RadicalProstatectomySpecimenPart.json",

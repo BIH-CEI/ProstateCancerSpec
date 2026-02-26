@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
 
-**basedOn**: [ServiceRequest Simple prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md)
+**basedOn**: [ServiceRequest Prostatectomy](ServiceRequest-TransurethralEnucleationReportRequest.md)
 
 **status**: Final
 
@@ -37,69 +37,51 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "TransurethralEnucleationHistologicalTypeICDO3",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "59847-4",
-        "display" : "Histology and Behavior ICD-O-3 Cancer"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59847-4",
+      "display" : "Histology and Behavior ICD-O-3 Cancer"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-05-12",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "urn:oid:2.16.840.1.113883.6.43.1",
-        "code" : "8140/3",
-        "display" : "Azinäres Adenokarzinom"
-      }
-    ]
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.43.1",
+      "code" : "8140/3",
+      "display" : "Azinäres Adenokarzinom"
+    }]
   },
   "specimen" : {
     "reference" : "Specimen/TransurethralEnucleationSpecimenSlide01A"
   },
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+  }]
 }
 
 ```

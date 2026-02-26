@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Simple prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md)
+**basedOn**: [ServiceRequest Prostatectomy](ServiceRequest-TransurethralEnucleationReportRequest.md)
 
 **status**: Final
 
@@ -32,7 +32,7 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
 * [Observation Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy](Observation-TransurethralEnucleationPercentageGleason45.md)
 * [Observation Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)](Observation-TransurethralEnucleationGradingGroupISUP.md)
 * [Observation Non-infiltrating intraductal carcinoma (morphologic abnormality)](Observation-TransurethralEnucleationIntraductalCarcinoma.md)
-* [Observation Invasive cribriform carcinoma (morphologic abnormality)](Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.md)
+* [Observation Cribriform carcinoma](Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.md)
 * [Observation Tissue cores.positive.carcinoma in Tissue core](Observation-TransurethralEnucleationProstaticTissueInvolved.md)
 * [Observation Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols](Observation-TransurethralEnucleationExtraprostaticExtension.md)
 * [Observation Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols](Observation-TransurethralEnucleationSeminalVesicleInvasion.md)
@@ -50,92 +50,76 @@ Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](http
   "resourceType" : "Observation",
   "id" : "TransurethralEnucleationDiagnosticConclusionGrouper",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TransurethralEnucleationReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "22637-3"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
   "effectiveDateTime" : "2024-05-12",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
-  "hasMember" : [
-    {
-      "reference" : "Observation/TransurethralEnucleationHistologicalTypeICDO3"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationMorphologyFreeText"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationPrimaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationSecondaryGleasonPattern"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationGleasonScoreTotal"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationPercentageGleason45"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationGradingGroupISUP"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationIntraductalCarcinoma"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationProstaticTissueInvolved"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationExtraprostaticExtension"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationSeminalVesicleInvasion"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationLymphovascularInvasion"
-    },
-    {
-      "reference" : "Observation/TransurethralEnucleationPerineuralInfiltration"
-    }
-  ],
-  "derivedFrom" : [
-    {
-      "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
-    }
-  ]
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/TransurethralEnucleationHistologicalTypeICDO3"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationMorphologyFreeText"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPrimaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationSecondaryGleasonPattern"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationGleasonScoreTotal"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPercentageGleason45"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationGradingGroupISUP"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationIntraductalCarcinoma"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationInvasiveCribriformCarcinoma"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationProstaticTissueInvolved"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationExtraprostaticExtension"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationSeminalVesicleInvasion"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationLymphovascularInvasion"
+  },
+  {
+    "reference" : "Observation/TransurethralEnucleationPerineuralInfiltration"
+  }],
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/QuestionnaireResponseTransurethralEnucleation"
+  }]
 }
 
 ```

@@ -16,7 +16,7 @@ Description: "Gruppierung aller mikroskopischen Befunde der Prostatastanzen"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Mikroskopische Befunde aller 12 Prostatastanzen"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 
 * derivedFrom[+] = Reference(CoreNeedleBiopsyHistoTyp01)
 * derivedFrom[+] = Reference(CoreNeedleBiopsyMorphText01)

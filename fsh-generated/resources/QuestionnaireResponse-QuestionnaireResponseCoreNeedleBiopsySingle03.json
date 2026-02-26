@@ -90,9 +90,9 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "716921008",
+                        "code": "716934008",
                         "system": "http://snomed.info/sct",
-                        "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+                        "display": "Right apical peripheral zone of prostate"
                       }
                     }
                   ],

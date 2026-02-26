@@ -63,7 +63,7 @@
          fhir:l <http://snomed.info/sct>
        ] ;
        fhir:code [ fhir:v "385377005" ] ;
-       fhir:display [ fhir:v "Gleason score (observable entity)" ]
+       fhir:display [ fhir:v "Gleason grade finding for prostatic cancer" ]
      ] )
   ] ; # 
   fhir:subject [

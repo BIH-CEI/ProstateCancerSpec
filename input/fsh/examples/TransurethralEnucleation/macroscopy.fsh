@@ -15,7 +15,7 @@ Description: "Gruppierung aller makroskopischen Messungen des Prostata Enucleati
 * subject = Reference(Patient3)
 * effectiveDateTime = "2024-04-11T14:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
 // Referenzen zu makroskopischen Findings
@@ -46,7 +46,7 @@ Description: "Gewicht des Prostata Enucleation Präparats"
 * effectiveDateTime = "2024-04-11T14:10:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 25 'g' "g"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Enucleation Gewicht 25g"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
@@ -67,7 +67,7 @@ Description: "Länge des Prostata Enucleation Präparats in cm"
 * effectiveDateTime = "2024-04-11T14:15:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 3.5 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Enucleation Länge: 3.5 cm"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
@@ -88,7 +88,7 @@ Description: "Breite des Prostata Enucleation Präparats in cm"
 * effectiveDateTime = "2024-04-11T14:16:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 2.8 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Enucleation Breite: 2.8 cm"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
@@ -109,7 +109,7 @@ Description: "Tiefe des Prostata Enucleation Präparats in cm"
 * effectiveDateTime = "2024-04-11T14:17:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 2.2 'cm' "cm"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Prostata Enucleation Tiefe: 2.2 cm"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
@@ -130,7 +130,7 @@ Description: "Vorhandensein von Samenblasen im Prostata Enucleation Präparat"
 * effectiveDateTime = "2024-04-11T14:18:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Keine Samenblasen im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)
 
@@ -151,6 +151,6 @@ Description: "Vorhandensein von Lymphknoten-Dissektion im Prostata Enucleation P
 * effectiveDateTime = "2024-04-11T14:19:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#41216001 "Prostatic structure (body structure)"
+* bodySite = $sct#41216001 "Prostate"
 * note.text = "Keine Lymphknoten im Resektat"
 * derivedFrom = Reference(QuestionnaireResponseTransurethralEnucleation)

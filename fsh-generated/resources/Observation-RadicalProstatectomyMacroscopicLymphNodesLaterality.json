@@ -61,16 +61,16 @@
       {
         "code": "51440002",
         "system": "http://snomed.info/sct",
-        "display": "Bilateral (qualifier value)"
+        "display": "Right and left"
       }
     ]
   },
   "bodySite": {
     "coding": [
       {
-        "code": "245357009",
+        "code": "54268001",
         "system": "http://snomed.info/sct",
-        "display": "Pelvic lymph node"
+        "display": "Pelvic lymph node structure"
       }
     ]
   }

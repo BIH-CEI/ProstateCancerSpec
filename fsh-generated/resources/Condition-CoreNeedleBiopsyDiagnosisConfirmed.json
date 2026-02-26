@@ -29,6 +29,21 @@
         "version": "2025",
         "code": "C61",
         "display": "Bösartige Neubildung der Prostata"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "126906006",
+        "display": "Neoplasm of prostate (disorder)"
+      },
+      {
+        "code": "C61",
+        "system": "http://id.who.int/icd/release/10",
+        "display": "Malignant neoplasm of prostate"
+      },
+      {
+        "code": "2C82",
+        "system": "http://id.who.int/icd/release/11/mms",
+        "display": "Malignant neoplasms of prostate"
       }
     ]
   },
@@ -37,9 +52,9 @@
       "summary": {
         "coding": [
           {
-            "code": "1222593007",
+            "code": "1222766008",
             "system": "http://snomed.info/sct",
-            "display": "American Joint Committee on Cancer stage IIA (qualifier value)"
+            "display": "IIA (AJCC)"
           }
         ]
       },

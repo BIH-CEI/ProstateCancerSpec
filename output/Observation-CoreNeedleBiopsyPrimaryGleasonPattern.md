@@ -43,90 +43,72 @@ Profiles: [MII PR Onkologie Prostata Gleason Primär](https://simplifier.net/res
   "resourceType" : "Observation",
   "id" : "CoreNeedleBiopsyPrimaryGleasonPattern",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"]
   },
-  "basedOn" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "laboratory"
-        }
-      ]
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "44641-9",
+      "display" : "Gleason pattern.primary in Prostate tumor"
     },
     {
-      "coding" : [
-        {
-          "system" : "http://loinc.org",
-          "code" : "22637-3"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "44641-9",
-        "display" : "Gleason pattern.primary in Prostate tumor"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "384994009",
-        "display" : "Primary Gleason pattern (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "384994009",
+      "display" : "Primary Gleason pattern (observable entity)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
   "effectiveDateTime" : "2023-03-15",
-  "performer" : [
-    {
-      "reference" : "Practitioner/PathologistPractitioner"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/PathologistPractitioner"
+  }],
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "369772003",
-        "display" : "Gleason Pattern 3 (finding)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "369772003",
+      "display" : "Gleason Pattern 3 (finding)"
+    }]
   },
-  "derivedFrom" : [
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason04"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason06"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason07"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason09"
-    },
-    {
-      "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason11"
-    }
-  ]
+  "derivedFrom" : [{
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason01"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason02"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason04"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason06"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason07"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason09"
+  },
+  {
+    "reference" : "Observation/CoreNeedleBiopsyPrimaerGleason11"
+  }]
 }
 
 ```

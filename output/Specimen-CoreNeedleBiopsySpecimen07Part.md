@@ -9,7 +9,7 @@
 Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen), [MII PR Biobank Specimen Bioprobe Coreversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore)
 
 > **MII EX Biobank Feature R5**
-* type: Structure of basal part of peripheral zone of left half prostate (body structure)
+* type: Left basal peripheral zone of prostate
 * description: Markiert mit rosa Tinte
 
 **identifier**: Placer Identifier/BX24_001_07_A, Filler Identifier/E_24_001_G
@@ -29,7 +29,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-01-15 10:42:00+0100 | Tru-cut biopsy of prostate (procedure) | Structure of basal part of peripheral zone of left half prostate (body structure) |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-01-15 10:42:00+0100 | Tru-cut biopsy of prostate (procedure) | Left basal peripheral zone of prostate |
 
 ### Containers
 
@@ -47,128 +47,100 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "CoreNeedleBiopsySpecimen07Part",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "type",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "http://snomed.info/sct",
-                "code" : "716903009",
-                "display" : "Structure of basal part of peripheral zone of left half prostate (body structure)"
-              }
-            ]
-          }
-        },
-        {
-          "url" : "description",
-          "valueString" : "Markiert mit rosa Tinte"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
-    }
-  ],
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC"
-          }
-        ]
-      },
-      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
-      "value" : "BX24_001_07_A"
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "716903009",
+          "display" : "Left basal peripheral zone of prostate"
+        }]
+      }
     },
     {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "FILL"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_001_G"
-    }
-  ],
+      "url" : "description",
+      "valueString" : "Markiert mit rosa Tinte"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
+    },
+    "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
+    "value" : "BX24_001_07_A"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_001_G"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_001"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "309134005",
-        "display" : "Prostate tru-cut biopsy sample"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "309134005",
+      "display" : "Prostate tru-cut biopsy sample"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
-  "request" : [
-    {
-      "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
-    }
-  ],
+  "request" : [{
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  }],
   "collection" : {
     "collector" : {
       "reference" : "Practitioner/UrologistPractitioner"
     },
     "collectedDateTime" : "2024-01-15T10:42:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "301759007",
-          "display" : "Tru-cut biopsy of prostate (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "301759007",
+        "display" : "Tru-cut biopsy of prostate (procedure)"
+      }]
     },
     "bodySite" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "716903009",
-          "display" : "Structure of basal part of peripheral zone of left half prostate (body structure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "716903009",
+        "display" : "Left basal peripheral zone of prostate"
+      }]
     }
   },
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434746001",
-            "display" : "Specimen vial (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434162003",
-            "display" : "Neutral buffered formalin (substance)"
-          }
-        ]
-      }
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

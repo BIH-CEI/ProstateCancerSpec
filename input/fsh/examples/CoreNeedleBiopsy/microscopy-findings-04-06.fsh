@@ -21,7 +21,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -40,7 +40,7 @@ Description: "Morphologie Freitext für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Azinäres Adenokarzinom mit vorwiegend Gleason Pattern 4, cribriform pattern mit Comedonecrosis. Hochaggressives Karzinom."
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -61,7 +61,7 @@ Description: "Primäres Gleason Muster für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -82,7 +82,7 @@ Description: "Sekundäres Gleason Muster für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -101,7 +101,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 100 '%' "%"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -122,7 +122,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#860745005 "Gleason grade group 4 (finding)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -141,7 +141,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "3/12"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -160,7 +160,7 @@ Description: "Prozentualer Tumoranteil für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 80 '%' "%"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -179,7 +179,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 12.8 'mm' "mm"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -198,7 +198,7 @@ Description: "Perineurale Infiltration für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -217,7 +217,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -236,7 +236,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -255,7 +255,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -274,7 +274,7 @@ Description: "Intraduktales Karzinom für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -293,7 +293,7 @@ Description: "ASAP für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -312,7 +312,7 @@ Description: "Begleitende High-grade-PIN für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 
 // Granulomatöse Prostatitis
@@ -330,7 +330,7 @@ Description: "Granulomatöse Prostatitis für Stanze 04"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716901006 "Structure of basal part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716901006 "Central zone of left half prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen04Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle04)
 
@@ -353,7 +353,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 05"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#110396000 "No evidence of malignant neoplasm (finding)"
-* bodySite = $sct#716906001 "Structure of middle part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716906001 "Right posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen05Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle05)
 
@@ -372,7 +372,7 @@ Description: "Morphologie Freitext für Stanze 05"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Benigne Prostatadrüsen mit regelrechter azinärer Architektur. Minimale chronische Entzündung. Keine malignen Veränderungen."
-* bodySite = $sct#716906001 "Structure of middle part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716906001 "Right posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen05Slide)
 
 // STANZE 06 - Mikroskopische Befunde (Maligne - Gleason 3+3=6)
@@ -390,7 +390,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -409,7 +409,7 @@ Description: "Morphologie Freitext für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "Azinäres Adenokarzinom mit ausschließlich Gleason Pattern 3. Kleine, uniforme Drüsen mit erhaltener Basalmembran. Niedrig aggressives Karzinom."
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 
 // Primäres Gleason Muster
@@ -429,7 +429,7 @@ Description: "Primäres Gleason Muster für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -450,7 +450,7 @@ Description: "Sekundäres Gleason Muster für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 
 // Prozentualer Anteil Gleasonmuster 4/5 - 0% für Gleason 3+3
@@ -468,7 +468,7 @@ Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 0 '%' "%"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -489,7 +489,7 @@ Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#860742008 "Gleason grade group 1 (finding)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 
 // Verhältnis positiver zu allen Stanzen
@@ -507,7 +507,7 @@ Description: "Verhältnis positiver zu allen Stanzen für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueString = "4/12"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -526,7 +526,7 @@ Description: "Prozentualer Tumoranteil für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 20 '%' "%"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -545,7 +545,7 @@ Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueQuantity = 3.1 'mm' "mm"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -564,7 +564,7 @@ Description: "Perineurale Infiltration für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -583,7 +583,7 @@ Description: "Tumornachweis in Samenblasen für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -602,7 +602,7 @@ Description: "Lymphovaskuläre Invasion für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -621,7 +621,7 @@ Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stan
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -640,7 +640,7 @@ Description: "Intraduktales Karzinom für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -659,7 +659,7 @@ Description: "ASAP für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -678,7 +678,7 @@ Description: "Begleitende High-grade-PIN für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)
 * derivedFrom = Reference(QuestionnaireResponseCoreNeedleBiopsySingle06)
 
@@ -697,5 +697,5 @@ Description: "Granulomatöse Prostatitis für Stanze 06"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(PathologistPractitioner)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
-* bodySite = $sct#716907005 "Structure of apex part of peripheral zone of left half prostate (body structure)"
+* bodySite = $sct#716907005 "Left posterolateral basal peripheral zone of prostate"
 * specimen = Reference(CoreNeedleBiopsySpecimen06Slide)

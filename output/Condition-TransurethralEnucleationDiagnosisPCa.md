@@ -31,7 +31,7 @@ Profile: [MII PR Onkologie Diagnose Primärtumorversion: null2026.0.0)](https://
 | | | |
 | :--- | :--- | :--- |
 | - | **Summary** | **Type** |
-| * | American Joint Committee on Cancer stage IIIB (qualifier value) | Clinical staging (qualifier value) |
+| * | IIIB (AJCC) | Clinical staging (qualifier value) |
 
 **note**: 
 
@@ -49,51 +49,37 @@ Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnt
   "resourceType" : "Condition",
   "id" : "TransurethralEnucleationDiagnosisPCa",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
-      "valueDateTime" : "2024-02-20"
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2024-02-20"
+  }],
   "clinicalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code" : "active"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
   "verificationStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code" : "confirmed"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code" : "encounter-diagnosis"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version" : "2025",
-        "code" : "C61",
-        "display" : "Bösartige Neubildung der Prostata"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2025",
+      "code" : "C61",
+      "display" : "Bösartige Neubildung der Prostata"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
@@ -103,33 +89,25 @@ Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnt
   },
   "onsetDateTime" : "2024-02-20",
   "recordedDate" : "2024-02-20",
-  "stage" : [
-    {
-      "summary" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "1222594001",
-            "display" : "American Joint Committee on Cancer stage IIIB (qualifier value)"
-          }
-        ]
-      },
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "260998006",
-            "display" : "Clinical staging (qualifier value)"
-          }
-        ]
-      }
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1222805004",
+        "display" : "IIIB (AJCC)"
+      }]
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
     }
-  ],
-  "note" : [
-    {
-      "text" : "Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnter Infiltration, extraprostatischer Extension und Samenblaseninfiltration. Tumoranteil 60%. Klinisches Staging: cT3b cNx cMx. Hochrisiko-Karzinom, weitere Diagnostik und Therapieplanung erforderlich."
-    }
-  ]
+  }],
+  "note" : [{
+    "text" : "Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnter Infiltration, extraprostatischer Extension und Samenblaseninfiltration. Tumoranteil 60%. Klinisches Staging: cT3b cNx cMx. Hochrisiko-Karzinom, weitere Diagnostik und Therapieplanung erforderlich."
+  }]
 }
 
 ```

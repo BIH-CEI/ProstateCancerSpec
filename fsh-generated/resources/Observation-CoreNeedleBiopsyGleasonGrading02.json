@@ -52,9 +52,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "1279716006",
+        "code": "1279716004",
         "system": "http://snomed.info/sct",
-        "display": "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7) (qualifier value)"
+        "display": "International Society of Urological Pathology grade group 3 (Gleason score 4 + 3 = 7)"
       }
     ]
   },
@@ -63,7 +63,7 @@
       {
         "code": "716903009",
         "system": "http://snomed.info/sct",
-        "display": "Structure of middle part of peripheral zone of right half prostate (body structure)"
+        "display": "Left basal peripheral zone of prostate"
       }
     ]
   },

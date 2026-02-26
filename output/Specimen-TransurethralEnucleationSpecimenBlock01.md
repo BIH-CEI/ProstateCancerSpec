@@ -14,32 +14,32 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **status**: Available
 
-**type**: Tissue block specimen (specimen)
+**type**: General specimen container (physical object)
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
-**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Surgical specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
+**parent**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue specimen](Specimen-TransurethralEnucleationSpecimenPart.md)
 
 ### Collections
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** |
-| * | 2024-04-11 10:30:00+0100 | Fixation of tissue (procedure) |
+| * | 2024-04-11 10:30:00+0100 | Preparation of formalin fixed paraffin embedded tissue specimen |
 
 ### Processings
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Extension** | **Description** | **Procedure** | **Time[x]** |
-| * |  | Formalinfixierung und Paraffineinbettung | Fixation of tissue (procedure) | 2024-04-11 08:00:00+0100 |
+| * |  | Formalinfixierung und Paraffineinbettung | Preparation of formalin fixed paraffin embedded tissue specimen | 2024-04-11 08:00:00+0100 |
 
 ### Containers
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Additive[x]** |
-| * | Tissue block specimen (specimen) | Paraffin wax (substance) |
+| * | General specimen container (physical object) | Paraffin wax (substance) |
 
 
 
@@ -50,107 +50,85 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "TransurethralEnucleationSpecimenBlock01",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_004_A_1"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_004_A_1"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_004"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1201985008",
-        "display" : "Tissue block specimen (specimen)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "706053007",
+      "display" : "General specimen container (physical object)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient3"
   },
-  "parent" : [
-    {
-      "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
-    }
-  ],
+  "parent" : [{
+    "reference" : "Specimen/TransurethralEnucleationSpecimenPart"
+  }],
   "collection" : {
     "collectedDateTime" : "2024-04-11T10:30:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "434472006",
-          "display" : "Fixation of tissue (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "787376009",
+        "display" : "Preparation of formalin fixed paraffin embedded tissue specimen"
+      }]
     }
   },
-  "processing" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
-          "valueRange" : {
-            "low" : {
-              "value" : 2,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            },
-            "high" : {
-              "value" : 8,
-              "unit" : "°C",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "Cel"
-            }
-          }
+  "processing" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
         }
-      ],
-      "description" : "Formalinfixierung und Paraffineinbettung",
-      "procedure" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434472006",
-            "display" : "Fixation of tissue (procedure)"
-          }
-        ]
-      },
-      "timeDateTime" : "2024-04-11T08:00:00+01:00"
-    }
-  ],
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "1201985008",
-            "display" : "Tissue block specimen (specimen)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "311731000",
-            "display" : "Paraffin wax (substance)"
-          }
-        ]
       }
+    }],
+    "description" : "Formalinfixierung und Paraffineinbettung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "787376009",
+        "display" : "Preparation of formalin fixed paraffin embedded tissue specimen"
+      }]
+    },
+    "timeDateTime" : "2024-04-11T08:00:00+01:00"
+  }],
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "706053007",
+        "display" : "General specimen container (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "311731000",
+        "display" : "Paraffin wax (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

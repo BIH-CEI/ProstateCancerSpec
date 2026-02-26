@@ -25,7 +25,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-03-15 10:30:00+0100 | Radical prostatectomy | Prostate structure |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-03-15 10:30:00+0100 | Radical prostatectomy | Prostate |
 
 ### Containers
 
@@ -43,105 +43,83 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   "resourceType" : "Specimen",
   "id" : "RadicalProstatectomySpecimenPart",
   "meta" : {
-    "profile" : [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
-    ]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"]
   },
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "PLAC"
-          }
-        ]
-      },
-      "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
-      "value" : "OP24_001_A"
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "FILL"
-          }
-        ]
-      },
-      "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
-      "value" : "E_24_002_A"
-    }
-  ],
+    "system" : "https://urologie.example-hospital.de/fhir/specimen/placer",
+    "value" : "OP24_001_A"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
+    "value" : "E_24_002_A"
+  }],
   "accessionIdentifier" : {
     "system" : "https://pathologie.example-hospital.de/fhir/fn/befundbericht",
     "value" : "E_24_002"
   },
   "status" : "available",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "122725003",
-        "display" : "Specimen from prostate obtained by radical prostatectomy (specimen)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "122725003",
+      "display" : "Specimen from prostate obtained by radical prostatectomy (specimen)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/Patient1"
   },
-  "request" : [
-    {
-      "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
-    }
-  ],
+  "request" : [{
+    "reference" : "ServiceRequest/RadicalProstatectomyReportRequest"
+  }],
   "collection" : {
     "collector" : {
       "reference" : "Practitioner/UrologistPractitioner"
     },
     "collectedDateTime" : "2024-03-15T10:30:00+01:00",
     "method" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "176106009",
-          "display" : "Radical prostatectomy"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26294005",
+        "display" : "Radical prostatectomy"
+      }]
     },
     "bodySite" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "41216001",
-          "display" : "Prostate structure"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "41216001",
+        "display" : "Prostate"
+      }]
     }
   },
-  "container" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434746001",
-            "display" : "Specimen vial (physical object)"
-          }
-        ]
-      },
-      "additiveCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "434162003",
-            "display" : "Neutral buffered formalin (substance)"
-          }
-        ]
-      }
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
     }
-  ]
+  }]
 }
 
 ```

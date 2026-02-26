@@ -36,6 +36,8 @@ Description: "FHIR Composition for structured TUR pathology report"
 <p>Obstruktive Miktionsbeschwerden. PSA 12,5 ng/ml. Prostata-Enukleation (HoLEP/ThuLEP). V.a. Prostatakarzinom.</p>
 
 <h3>Makroskopie</h3>
+<p>Enukleationspräparat 25 g, Maße 3,5 × 2,8 × 2,2 cm. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
+
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Präparat</td><td>Prostata-Enukleationspräparat</td></tr>
@@ -45,13 +47,13 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Lymphknoten</td><td>Nicht im Resektat</td></tr>
 </tbody>
 </table>
-<p>Enukleationspräparat 25 g, Maße 3,5 × 2,8 × 2,2 cm. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
 
 <h3>Mikroskopie</h3>
 <p>Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall.</p>
 
 <h3>Diagnostische Schlussfolgerung</h3>
-<p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) – High-grade</p>
+<p>Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Anteil Gleasonmuster 4/5: 90%. Tumorinfiltration ca. 60% des Prostatagewebes. Intraduktales Karzinom und invasive kribriforme Anteile nachgewiesen. Extraprostatische Ausbreitung, Samenblaseninvasion, lymphovaskuläre Invasion und perineurale Infiltration nachgewiesen.</p>
+
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
 <tbody>
 <tr><td>Histologischer Typ</td><td>Azinäres Adenokarzinom mit invasiven kribriformen Anteilen (8140/3)</td></tr>
@@ -67,6 +69,6 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Perineurale Infiltration</td><td>Nachgewiesen</td></tr>
 </tbody>
 </table>
-<p>Gleason-Score 4+5=9, ISUP-Gradgruppe 5 (WHO 2016). Anteil Gleasonmuster 4/5: 90%. Tumorinfiltration ca. 60% des Prostatagewebes. Intraduktales Karzinom und invasive kribriforme Anteile nachgewiesen. Extraprostatische Ausbreitung, Samenblaseninvasion, lymphovaskuläre Invasion und perineurale Infiltration nachgewiesen.</p>
+<p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3) – High-grade</p>
 <p><b>Empfehlung:</b> Staging-Untersuchungen und interdisziplinäre Tumorkonferenz.</p>
 </div>"

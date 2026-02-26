@@ -57,9 +57,9 @@
   "bodySite": {
     "coding": [
       {
-        "code": "716900003",
+        "code": "716908000",
         "system": "http://snomed.info/sct",
-        "display": "Structure of middle part of anterior fibromuscular zone of prostate (body structure)"
+        "display": "Middle anterior fibromuscular stroma of prostate"
       }
     ]
   },
