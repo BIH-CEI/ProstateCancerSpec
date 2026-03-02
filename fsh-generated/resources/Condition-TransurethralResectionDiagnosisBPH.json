@@ -35,9 +35,9 @@
   "code": {
     "coding": [
       {
-        "code": "N40.0",
+        "code": "N40",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+        "display": "Prostatahyperplasie"
       }
     ]
   },

@@ -76,7 +76,7 @@ Prostatakarzinom mit ISUP Grade Group 2-3, multifokal in 6 von 12 Stanzen nachge
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-      "version" : "2025",
+      "version" : "2026",
       "code" : "C61",
       "display" : "Bösartige Neubildung der Prostata"
     },

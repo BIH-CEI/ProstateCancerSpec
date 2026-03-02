@@ -27,7 +27,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="90199006"/>
-      <display value="Transurethral prostatectomy"/>
+      <display value="Transurethral prostatectomy (procedure)"/>
     </coding>
   </code>
   <subject>

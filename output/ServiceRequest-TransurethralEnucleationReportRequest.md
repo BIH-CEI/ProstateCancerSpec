@@ -16,7 +16,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **category**: Pathology consultation, comprehensive, records and specimen with report (procedure)
 
-**code**: Prostatectomy
+**code**: Prostatectomy (procedure)
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
@@ -71,7 +71,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "90470006",
-      "display" : "Prostatectomy"
+      "display" : "Prostatectomy (procedure)"
     }]
   },
   "subject" : {

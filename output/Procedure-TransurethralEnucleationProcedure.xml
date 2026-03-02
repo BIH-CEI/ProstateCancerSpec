@@ -27,7 +27,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="90470006"/>
-      <display value="Prostatectomy"/>
+      <display value="Prostatectomy (procedure)"/>
     </coding>
   </code>
   <subject>

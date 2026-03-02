@@ -115,7 +115,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Primary Gleason Pattern (Epstein 2005) - Biopsy"
 Description: "Primary Gleason pattern according to Epstein 2005"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
+// TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
@@ -141,7 +141,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Secondary Gleason Pattern (Epstein 2005) - Biopsy"
 Description: "Secondary Gleason pattern according to Epstein 2005"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
+// TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
@@ -244,7 +244,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Number of Positive Cores Right Side - Biopsy"
 Description: "Number of tissue cores positive for carcinoma on the right side"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-positive-stanzen"
+// TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-positive-stanzen"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
@@ -264,7 +264,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Number of Positive Cores Left Side - Biopsy"
 Description: "Number of tissue cores positive for carcinoma on the left side"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-positive-stanzen"
+// TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-positive-stanzen"
 * meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory

@@ -48,7 +48,7 @@
          fhir:l <http://snomed.info/sct>
        ] ;
        fhir:code [ fhir:v "90470006" ] ;
-       fhir:display [ fhir:v "Prostatectomy" ]
+       fhir:display [ fhir:v "Prostatectomy (procedure)" ]
      ] )
   ] ; # 
   fhir:subject [

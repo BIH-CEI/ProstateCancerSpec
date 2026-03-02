@@ -18,14 +18,14 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
-**request**: [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md)
+**request**: [ServiceRequest Transurethral prostatectomy (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
 
 ### Collections
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-04-10 10:30:00+0100 | Transurethral prostatectomy | Prostate |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-04-10 10:30:00+0100 | Transurethral prostatectomy (procedure) | Prostate |
 
 ### Containers
 
@@ -93,7 +93,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
       "coding" : [{
         "system" : "http://snomed.info/sct",
         "code" : "90199006",
-        "display" : "Transurethral prostatectomy"
+        "display" : "Transurethral prostatectomy (procedure)"
       }]
     },
     "bodySite" : {

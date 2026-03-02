@@ -54,7 +54,7 @@ Transurethrale Resektion der Prostata zur Behandlung der symptomatischen BPH. In
     {
       "system" : "http://snomed.info/sct",
       "code" : "90199006",
-      "display" : "Transurethral prostatectomy"
+      "display" : "Transurethral prostatectomy (procedure)"
     }]
   },
   "subject" : {

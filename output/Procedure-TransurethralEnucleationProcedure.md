@@ -54,7 +54,7 @@ Suprapubische Enucleation der Prostata zur Behandlung der symptomatischen BPH. I
     {
       "system" : "http://snomed.info/sct",
       "code" : "90470006",
-      "display" : "Prostatectomy"
+      "display" : "Prostatectomy (procedure)"
     }]
   },
   "subject" : {

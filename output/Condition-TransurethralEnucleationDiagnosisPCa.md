@@ -76,7 +76,7 @@ Inzidentelles Prostatakarzinom ISUP Grade Group 5 (Gleason 4+5=9) mit ausgedehnt
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-      "version" : "2025",
+      "version" : "2026",
       "code" : "C61",
       "display" : "Bösartige Neubildung der Prostata"
     }]

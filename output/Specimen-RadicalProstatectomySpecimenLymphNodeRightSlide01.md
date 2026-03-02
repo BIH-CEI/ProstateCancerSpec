@@ -29,7 +29,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 > **processing****MII EX Biobank Temperaturbedingungen**: 2-8 °C**description**: Schnittherstellung**procedure**: Sectioning of tissue block**time**: 2024-03-17 09:30:00+0100
 
-> **processing****description**: HE-Färbung**procedure**: Staining method**time**: 2024-03-17 09:45:00+0100
+> **processing****MII EX Biobank Temperaturbedingungen**: 2-8 °C**description**: HE-Färbung**procedure**: Staining method**time**: 2024-03-17 09:45:00+0100
 
 ### Containers
 
@@ -112,7 +112,21 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
   },
   {
     "extension" : [{
-      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "valueRange" : {
+        "low" : {
+          "value" : 2,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        },
+        "high" : {
+          "value" : 8,
+          "unit" : "°C",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "Cel"
+        }
+      }
     }],
     "description" : "HE-Färbung",
     "procedure" : {

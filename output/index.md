@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-03-02 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -127,7 +127,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-02-26T15:48:09+01:00",
+  "date" : "2026-03-02T12:07:59+01:00",
   "publisher" : "BIH CEI",
   "contact" : [{
     "name" : "BIH CEI",

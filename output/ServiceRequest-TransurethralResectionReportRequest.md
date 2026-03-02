@@ -16,7 +16,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 **category**: Pathology consultation, comprehensive, records and specimen with report (procedure)
 
-**code**: Transurethral prostatectomy
+**code**: Transurethral prostatectomy (procedure)
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
@@ -32,7 +32,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
 
 * [Observation Prostate specific Ag [Mass/volume] in Serum or Plasma](Observation-TransurethralResectionPSAPre.md)
 * [Procedure Transurethrale Exzision und Destruktion von Prostatagewebe](Procedure-TransurethralResectionProcedure.md)
-* [Condition Prostatahyperplasie ohne Beschwerden beim Wasserlassen](Condition-TransurethralResectionDiagnosisBPH.md)
+* [Condition Prostatahyperplasie](Condition-TransurethralResectionDiagnosisBPH.md)
 
 **specimen**: [Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_003; status = available; type = Tissue specimen](Specimen-TransurethralResectionSpecimenPart.md)
 
@@ -71,7 +71,7 @@ Profile: [MII PR Patho Service Requestversion: null2026.0.0)](https://simplifier
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "90199006",
-      "display" : "Transurethral prostatectomy"
+      "display" : "Transurethral prostatectomy (procedure)"
     }]
   },
   "subject" : {

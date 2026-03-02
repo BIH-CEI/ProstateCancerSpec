@@ -11,7 +11,7 @@ Description: "Anforderung für pathologische Aufarbeitung nach Prostata Enucleat
 * identifier[Placer-ID].value = "PATH-RPT-2024-004"
 * intent = #order
 * category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
-* code = $sct#90470006 "Prostatectomy"
+* code = $sct#90470006 "Prostatectomy (procedure)"
 * encounter = Reference(TransurethralEnucleationEncounter)
 * subject = Reference(Patient3)
 * requester = Reference(UrologistPractitioner)

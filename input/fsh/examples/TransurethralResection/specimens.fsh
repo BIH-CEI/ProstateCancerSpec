@@ -31,7 +31,7 @@ Description: "TUR-Prostata Resektat"
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-04-10T10:30:00+01:00"
   * bodySite = $sct#41216001 "Prostate"
-  * method = $sct#90199006 "Transurethral prostatectomy"
+  * method = $sct#90199006 "Transurethral prostatectomy (procedure)"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"

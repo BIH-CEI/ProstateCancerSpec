@@ -18,14 +18,14 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
 
 **subject**: [Klaus Becker Male, DoB: 1958-11-10 ( http://example.hospital.de/patient-ids#PAT-2024-003)](Patient-Patient3.md)
 
-**request**: [ServiceRequest Prostatectomy](ServiceRequest-TransurethralEnucleationReportRequest.md)
+**request**: [ServiceRequest Prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md)
 
 ### Collections
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **Collector** | **Collected[x]** | **Method** | **BodySite** |
-| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-05-10 10:30:00+0100 | Prostatectomy | Prostate |
+| * | [Practitioner Andreas Weber ](Practitioner-UrologistPractitioner.md) | 2024-05-10 10:30:00+0100 | Prostatectomy (procedure) | Prostate |
 
 ### Containers
 
@@ -93,7 +93,7 @@ Profiles: [MII PR Patho Specimenversion: null2026.0.0)](https://simplifier.net/r
       "coding" : [{
         "system" : "http://snomed.info/sct",
         "code" : "90470006",
-        "display" : "Prostatectomy"
+        "display" : "Prostatectomy (procedure)"
       }]
     },
     "bodySite" : {

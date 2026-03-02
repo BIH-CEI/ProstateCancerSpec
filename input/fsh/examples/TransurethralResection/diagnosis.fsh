@@ -7,7 +7,7 @@ Description: "Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
-* code = $icd-10-gm#N40.0 "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+* code = $icd-10-gm#N40 "Prostatahyperplasie"
 * subject = Reference(Patient2)
 * encounter = Reference(TransurethralResectionEncounter)
 * onsetDateTime = "2023-03-01"

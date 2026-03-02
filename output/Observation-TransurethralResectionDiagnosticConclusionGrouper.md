@@ -8,7 +8,7 @@
 
 Profile: [MII PR Patho Diagnostic Conclusion Grouperversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper)
 
-**basedOn**: [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md)
+**basedOn**: [ServiceRequest Transurethral prostatectomy (procedure)](ServiceRequest-TransurethralResectionReportRequest.md)
 
 **status**: Final
 

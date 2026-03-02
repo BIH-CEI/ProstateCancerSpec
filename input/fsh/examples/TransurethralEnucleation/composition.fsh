@@ -11,8 +11,8 @@ Description: "FHIR Composition for structured TUR pathology report"
 * identifier.value = "PATH-COMP-2024-004"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
 * status = #final
-* type.coding[0] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH
-* type.coding[+] = $sct#721967005 "Tissue pathology biopsy report"
+* type.coding[0] = $loinc#11526-1 "Pathology study"
+* type.coding[+] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH 
 * subject = Reference(Patient3)
 * subject.display = "Klaus Becker, geb. 10.11.1958 (PAT-2024-003)"
 * date = "2024-04-15T08:00:00+01:00"

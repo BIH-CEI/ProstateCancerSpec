@@ -34,7 +34,7 @@
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Detail** |
-| * | pathology report entry task | [ServiceRequest Transurethral prostatectomy](ServiceRequest-TransurethralResectionReportRequest.md) |
+| * | pathology report entry task | [ServiceRequest Transurethral prostatectomy (procedure)](ServiceRequest-TransurethralResectionReportRequest.md) |
 
 
 

@@ -1,5 +1,30 @@
 ## Code Memories
 
+**Letzte Session: 02.03.2026**
+
+### ARBEITSREGELN (WICHTIG)
+- **Niemals mehr machen als explizit gefragt!** Wenn unklar, nachfragen.
+- Keine zusätzlichen Dateien/Zeilen ändern, die nicht konkret genannt wurden.
+
+### QA False Positives (02.03.2026)
+Folgende QA-Fehler sind **false positives** durch Server-Diskrepanz zwischen tx.fhir.org (IG Publisher) und MII TermServ:
+- `ICD-10-GM#C61` → MII TermServ: ✅ gültig; tx.fhir.org: ❌ (Version 2025 unbekannt)
+- `ICD-10-GM#N40` (vormals N40.0, korrigiert) → MII TermServ: ✅ gültig
+- `SCT#126906006` (Neoplasm of prostate) → MII TermServ: ✅ gültig; tx.fhir.org: ❌ (ValueSet-Stand abweichend)
+
+OPS-Codes (5-601, 5-603) ebenfalls false positives: tx.fhir.org kennt Version 2025 nicht.
+
+### Profilharmonisierung ausstehend (02.03.2026)
+Folgende MII-Onko-Profile sind mit den Patho-Profilen noch nicht harmonisiert — Widersprüche existieren:
+- `mii-pr-onko-prostate-gleason-patterns` → ValueSet `MII_VS_Onko_Prostata_Gleason_PrimarySecondaryTertiary` akzeptiert LOINC 44641-9 / 44642-7 nicht
+- `mii-pr-onko-prostate-anzahl-positive-stanzen` → erwartet `integer`, Instanzen verwenden `Quantity`/`decimal`
+
+**Maßnahme**: `meta.profile`-Zeilen für beide Profile in allen FSH-Beispieldateien auskommentiert (`// TODO Profilharmonisierung ausstehend:`). Betrifft 22 Zeilen in:
+- `CoreNeedleBiopsy/microscopy-findings-01-03/04-06/07-09/10-12.fsh`
+- `CoreNeedleBiopsy/diagnostic-conclusion.fsh`
+- `RadicalProstatectomy/diagnostic-conclusion.fsh`
+- `TransurethralEnucleation/diagnostic-conclusion.fsh`
+
 **Letzte Session: 10.02.2026**
 - CoreNeedleBiopsy Narrative vs. Instanzen abgeglichen ✅
 - 7 maligne Stanzen korrekt identifiziert (01, 02, 04, 06, 07, 09, 11)

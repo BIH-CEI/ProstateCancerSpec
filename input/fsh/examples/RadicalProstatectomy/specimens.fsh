@@ -451,6 +451,9 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der pelvinen Lymphknoten rec
   * description = "HE-Färbung"
   * procedure = $sct#127790008 "Staining method"
   * timeDateTime = "2024-03-17T09:45:00+01:00"
+  * extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+  * extension[temperaturbedingungen].valueRange.low.value = 2
+  * extension[temperaturbedingungen].valueRange.high.value = 8
 * container
   * type = $sct#433466003 "Microscope slide (physical object)"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"

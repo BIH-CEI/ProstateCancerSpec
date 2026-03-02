@@ -12,7 +12,7 @@
 
 **category**: Encounter Diagnosis
 
-**code**: Prostatahyperplasie ohne Beschwerden beim Wasserlassen
+**code**: Prostatahyperplasie
 
 **subject**: [Peter Schmidt Male, DoB: 1960-03-22 ( http://example.hospital.de/patient-ids#PAT-2024-002)](Patient-Patient2.md)
 
@@ -58,8 +58,8 @@ Symptomatische BPH mit obstruktiven Miktionsbeschwerden und rezidivierenden Harn
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-      "code" : "N40.0",
-      "display" : "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+      "code" : "N40",
+      "display" : "Prostatahyperplasie"
     }]
   },
   "subject" : {

@@ -48,7 +48,7 @@
          fhir:l <http://snomed.info/sct>
        ] ;
        fhir:code [ fhir:v "90199006" ] ;
-       fhir:display [ fhir:v "Transurethral prostatectomy" ]
+       fhir:display [ fhir:v "Transurethral prostatectomy (procedure)" ]
      ] )
   ] ; # 
   fhir:subject [

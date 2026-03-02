@@ -31,7 +31,7 @@ Description: "Prostata Enucleation Resektat"
   * collector = Reference(UrologistPractitioner)
   * collectedDateTime = "2024-05-10T10:30:00+01:00"
   * bodySite = $sct#41216001 "Prostate"
-  * method = $sct#90470006 "Prostatectomy"
+  * method = $sct#90470006 "Prostatectomy (procedure)"
 
 * container
   * type = $sct#434746001 "Specimen vial (physical object)"
