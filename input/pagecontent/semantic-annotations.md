@@ -32,160 +32,289 @@ This section lists common diagnoses and differential diagnoses in prostate patho
 
 ---
 
+### Patient Data
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Last name | FHIR Patient.name.family | String |
+| First name | FHIR Patient.name.given | String |
+| Date of birth | FHIR Patient.birthDate | Date |
+| Patient identifier | FHIR Patient.identifier | Identifier |
+| Placer order number | FHIR ServiceRequest.requisition | String |
+| Accession number | FHIR DiagnosticReport.identifier | String |
+
+---
+
+### Clinical Information
+
+#### General
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Specimen limited by absent clinical information | LOINC 84862-2 Specimen adequacy [Type] | Code |
+| Specimen collection date | FHIR Specimen.collection.collectedDateTime | Date |
+| Previous history of prostate cancer | LOINC 11329-0 History general Narrative | Text |
+| Previous biopsies | LOINC 8684-6 Pathology study | Text |
+| Pre-operative treatment | SCT 243120004 Preceding treatment | Code |
+
+#### Previous Therapy
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Previous chemotherapy | SCT 416608005 Drug therapy | Code |
+| Previous radiotherapy | SCT 229070002 Radiation therapy | Code |
+| Previous androgen deprivation therapy | SCT 276745004 Androgen deprivation therapy | Code |
+
+#### Clinical Context
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Pre-biopsy / pre-procedure serum PSA | LOINC 2857-1 PSA [Mass/volume] in Serum or Plasma | Quantity (ng/mL) |
+| Clinical stage | LOINC 21908-9 Stage group.clinical Cancer | Text |
+| Biopsy type | SCT 116147009 Biopsy procedure | Code |
+| Surgical procedure | SCT 52765003 Prostatectomy | Code |
+| Specimen / material category | LOINC 66117-3 Prostate Pathology report | Code |
+| Lymph node groups removed | SCT 234262008 Lymph node group excision | Text |
+
+#### Specimen Details
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Specimen ID | FHIR Specimen.identifier | Identifier |
+| Biopsy site location | LOINC 72369-2 Site of biopsy in Specimen | Code |
+| Number of cores per container | LOINC 44652-6 Total number of cores in Tissue core | Count |
+| Core length | LOINC 44619-5 Length of tissue core(s) | Quantity (mm) |
+| Laterality | LOINC 20228-3 Anatomic part Laterality | Code |
+
+---
+
 ### Core Needle Biopsy
 
-#### Macroscopy (per core)
+#### Findings per Core
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Core length | LOINC 44619-5 Length of tissue core(s) | Decimal (cm) |
-| Number of cores | LOINC 44652-6 Total number of cores in Tissue core | Integer |
-| Location / laterality | LOINC 20228-3 Anatomic part Laterality | <details><summary>▾</summary>SCT 24028007 Right · SCT 7771000 Left · SCT 51440002 Bilateral</details> |
+| Histological tumor type (ICD-O-3) | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | Code |
+| Morphology narrative | LOINC 33731-1 Histology type in Cancer specimen Narrative | Text |
+| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | Code |
+| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | Code |
+| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by ISUP technique | Code |
+| Proportion Gleason pattern 4 | LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] | Quantity (%) |
+| Proportion Gleason pattern 5 | LOINC 94735-8 | Quantity (%) |
+| Intraductal carcinoma of prostate (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | Code |
+| Invasive cribriform carcinoma (ICC) | SCT 1162816009 Invasive cribriform carcinoma | Code |
+| Ratio of positive to total cores | SCT 372303007 Ratio of blocks with prostate tumor to total number of blocks obtained | Fraction |
+| Proportion of tumor-involved tissue per core | SCT 385396009 Percentage of prostatic tissue obtained by needle biopsy involved by carcinoma | Quantity (%) |
+| Tumor length per core | LOINC 44618-7 Total linear mm of carcinoma | Quantity (mm) |
+| Extraprostatic extension | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | Code |
+| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | Code |
+| Concomitant high-grade PIN | LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy | Code |
+| Atypical small acinar proliferation (ASAP) | SCT 16294321000119104 Atypical small acinar proliferation of prostate | Code |
+| Granulomatous prostatitis | LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy | Code |
 
-#### Microscopy (per core)
+#### Case-Level Findings
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Histological tumor type | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | <details>ICD-O 8140/3 Adenocarcinoma, NOS · ICD-O 8490/3 Signet ring cell carcinoma · ICD-O 8572/3 Adenocarcinoma with spindle cell metaplasia · ICD-O 8148/2 Glandular intraepithelial neoplasia, high grade · ICD-O 8500/3 Infiltrating duct carcinoma, NOS · ICD-O 8070/3 Squamous cell carcinoma, NOS · ICD-O 8560/3 Adenosquamous carcinoma · ICD-O 8147/3 Basal cell adenocarcinoma · ICD-O 8574/3 Adenocarcinoma with neuroendocrine differentiation · ICD-O 8935/1 Stromal tumor of uncertain malignant potential · ICD-O 8935/3 Stromal sarcoma · ICD-O 8440/0 Cystadenoma, NOS · ICD-O 8500/2 Intraductal carcinoma, noninfiltrating</details> |
-| Morphology (narrative) | LOINC 33731-1 Histology type in Cancer specimen Narrative | Free text |
-| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Proportion Gleason pattern 4+5 | LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy | Decimal (%) |
-| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique | <details><summary>▾</summary>SCT 860767001 Grade Group 1 · SCT 860768006 Grade Group 2 · SCT 860769003 Grade Group 3 · SCT 860770002 Grade Group 4 · SCT 860771003 Grade Group 5</details> |
-| Ratio of positive cores | SCT 372303007 Ratio of blocks with prostate tumor to total number of blocks obtained | Fraction (e.g. 7/12) |
-| Tumor involvement (%) | SCT 385396009 Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma | Decimal (%) |
-| Tumor length (mm) | LOINC 44618-7 Total linear mm of carcinoma | Decimal (mm) |
-| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Periprostatic fat invasion | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Intraductal carcinoma (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| ASAP (Atypical Small Acinar Proliferation) | SCT 16294321000119104 Atypical small acinar proliferation of prostate | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Concomitant high-grade PIN | LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Granulomatous prostatitis | LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Number of cores, right | LOINC 44652-6 Total number of cores in Tissue core | Count |
+| Number of cores, left | LOINC 44652-6 | Count |
+| Histological tumor type (ICD-O-3) | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | Code |
+| Morphology narrative | LOINC 33731-1 Histology type in Cancer specimen Narrative | Text |
+| ICD-O version | SCT 397005006 World Health Organization tumor classification | Text |
+| Highest grade – Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | Code |
+| Highest grade – Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | Code |
+| Highest grade – Grade group | SCT 1812491000004107 | Code |
+| Highest grade – Proportion Gleason pattern 4/5 | LOINC 94735-8 | Quantity (%) |
+| Overall grade – Primary Gleason pattern | LOINC 44641-9 | Code |
+| Overall grade – Secondary Gleason pattern | LOINC 44642-7 | Code |
+| Overall Gleason score | LOINC 35266-6 Gleason score in Specimen Qualitative | Code |
+| Overall grade – Grade group | SCT 1812491000004107 | Code |
+| Overall grade – Proportion Gleason pattern 4/5 | LOINC 94735-8 | Quantity (%) |
+| WHO histological differentiation grade | LOINC 21858-6 Grade Cancer | Code |
+| Intraductal carcinoma of prostate (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | Code |
+| Invasive cribriform carcinoma (ICC) | SCT 1162816009 | Code |
+| Number of positive cores, total | LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core | Count |
+| Number of positive cores, right | LOINC 44651-8 | Count |
+| Number of positive cores, left | LOINC 44651-8 | Count |
+| Ratio of positive to total cores | SCT 372303007 | Fraction |
+| Total tumor involvement | LOINC 44654-2 Tissue involved by tumor in Prostate tumor | Quantity (%) |
+| Total tumor length | LOINC 44618-7 Total linear mm of carcinoma | Quantity (mm) |
+| Total core length | LOINC 44619-5 Length of tissue core(s) | Quantity (mm) |
+| Extraprostatic extension | LOINC 44625-2 | Code |
+| Extraprostatic extension site | LOINC 84902-6 Extraprostatic extension site [Anatomy] of Prostate tumor | Code |
+| Seminal vesicle invasion | LOINC 44626-0 | Code |
+| Lymphovascular invasion | LOINC 33761-8 | Code |
+| Perineural invasion | LOINC 92837-4 | Code |
+| Atypical small acinar proliferation (ASAP) | SCT 16294321000119104 | Code |
+| Concomitant high-grade PIN | LOINC 94666-5 | Code |
+| Granulomatous prostatitis | LOINC 94665-7 | Code |
+| Regression grade after previous therapy | LOINC 85319-2 Tumor regression grade [Type] in Cancer | Code |
 
-#### Diagnostic Conclusion (case-level)
+---
 
-| Data Element | Semantic Annotation | Value Domain |
+### Transurethral Resection
+
+#### Specimen
+
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Histological tumor type | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | <details><summary>▾</summary>ICD-O 8140/3 Acinar adenocarcinoma · ICD-O 8500/3 Ductal adenocarcinoma · ICD-O 8120/3 Urothelial carcinoma</details> |
-| Morphology (narrative) | LOINC 33731-1 Histology type in Cancer specimen Narrative | Free text |
-| ICD-O version | SCT 397005006 World Health Organization tumor classification | Free text (e.g. 5th edition 2022) |
-| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Overall Gleason score | LOINC 35266-6 Gleason score in Specimen Qualitative | <details><summary>▾</summary>6 (3+3) · 7a (3+4) · 7b (4+3) · 8 (4+4 / 3+5 / 5+3) · 9 (4+5 / 5+4) · 10 (5+5)</details> |
-| Proportion Gleason pattern 4+5 | LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy | Decimal (%) |
-| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique | <details><summary>▾</summary>SCT 860767001 Grade Group 1 · SCT 860768006 Grade Group 2 · SCT 860769003 Grade Group 3 · SCT 860770002 Grade Group 4 · SCT 860771003 Grade Group 5</details> |
-| Histological differentiation grade (WHO) | LOINC 21858-6 Grade Cancer | <details><summary>▾</summary>G1 Well differentiated · G2 Moderately differentiated · G3 Poorly differentiated · G4 Undifferentiated</details> |
-| Number of positive cores (right) | LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core | Integer |
-| Number of positive cores (left) | LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core | Integer |
-| Ratio of positive cores | SCT 372303007 Ratio of blocks with prostate tumor to total number of blocks obtained | Fraction (e.g. 7/12) |
-| Total tumor involvement (%) | LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core | Decimal (%) |
-| Total tumor length (mm) | LOINC 44618-7 Total linear mm of carcinoma | Decimal (mm) |
-| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Extraprostatic extension (periprostatic fat) | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Location of extraprostatic extension | LOINC 84902-6 Extraprostatic extension site [Anatomy] of Prostate tumor | <details><summary>▾</summary>Apical · Anterior · Posterior · Basal · Lateral</details> |
-| Intraductal carcinoma (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| ASAP (Atypical Small Acinar Proliferation) | SCT 16294321000119104 Atypical small acinar proliferation of prostate | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Concomitant high-grade PIN | LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Granulomatous prostatitis | LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Specimen weight | SCT 371506001 Specimen weight | Quantity (g) |
+| Specimen dimensions | LOINC 84894-5 Dimension [Length] of Specimen | Quantity (mm) |
+| Proportion of chips embedded | LOINC 44654-2 Tissue involved by tumor in Prostate tumor | Quantity (%) |
+| Number of blocks | LOINC 44671-6 Blocks submitted [#] in Specimen by CAP cancer protocols | Count |
+| Seminal vesicles present in specimen | LOINC 84895-2 Seminal vesicles [Presence] in Specimen | Code |
+
+#### Histology and Findings
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| Histological tumor type (ICD-O-3) | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | Code |
+| ICD-O version | SCT 397005006 World Health Organization tumor classification | Text |
+| Morphology narrative | LOINC 33731-1 Histology type in Cancer specimen Narrative | Text |
+| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | Code |
+| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | Code |
+| Gleason score (ISUP 2014, WHO 2016) | LOINC 35266-6 Gleason score in Specimen Qualitative | Code |
+| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 | Code |
+| Proportion Gleason pattern 4/5 | LOINC 94735-8 | Quantity (%) |
+| WHO histological differentiation grade | LOINC 21858-6 Grade Cancer | Code |
+| Intraductal carcinoma of prostate (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | Code |
+| Invasive cribriform carcinoma (ICC) | SCT 1162816009 Invasive cribriform carcinoma | Code |
+| Tumor extent by area | LOINC 44654-2 Tissue involved by tumor in Prostate tumor | Quantity (%) |
+| Tumor extent by chips | LOINC 44654-2 | Quantity (%) |
+| Extraprostatic extension | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | Code |
+| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | Code |
+| Concomitant high-grade PIN | LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy | Code |
+| Intraductal carcinoma | SCT 1162814007 | Code |
+| Regression grade after previous therapy | LOINC 85319-2 Tumor regression grade [Type] in Cancer | Code |
+| Granulomatous prostatitis | LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy | Code |
 
 ---
 
 ### Radical Prostatectomy
 
-#### Macroscopy
+#### Specimen
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Specimen weight | LOINC 29638-4 Weight of Tissue | Decimal (g) |
-| Prostate height | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Prostate width | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Prostate depth | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Lymph nodes present in specimen | SCT 395557000 Tumor finding | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Laterality of lymph nodes | LOINC 20228-3 Anatomic part Laterality | <details><summary>▾</summary>SCT 24028007 Right · SCT 7771000 Left · SCT 51440002 Bilateral</details> |
-| Seminal vesicles present in specimen | LOINC 84895-2 Seminal vesicles [Presence] in Specimen | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Seminal vesicle length | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
+| Specimen weight | LOINC 29638-4 Weight of Tissue | Quantity (g) |
+| Prostate height | LOINC 84894-5 Dimension [Length] of Specimen | Quantity (mm) |
+| Prostate width | LOINC 84894-5 | Quantity (mm) |
+| Prostate depth | LOINC 84894-5 | Quantity (mm) |
+| Number of blocks | LOINC 44671-6 Blocks submitted [#] in Specimen by CAP cancer protocols | Count |
+| Number of large-format blocks | LOINC 44671-6 | Count |
+| Seminal vesicles present in specimen | LOINC 84895-2 Seminal vesicles [Presence] in Specimen | Code |
+| Lymph nodes present in specimen | SCT 395557000 Tumor finding | Code |
+| Laterality of lymph nodes | LOINC 20228-3 Anatomic part Laterality | Code |
 
-#### Diagnostic Conclusion
+#### Histology and Tumor Extent
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Histological tumor type | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | <details><summary>▾</summary>ICD-O 8140/3 Acinar adenocarcinoma · ICD-O 8500/3 Ductal adenocarcinoma · ICD-O 8120/3 Urothelial carcinoma</details> |
-| Morphology (narrative) | LOINC 33731-1 Histology type in Cancer specimen Narrative | Free text |
-| ICD-O version | SCT 397005006 World Health Organization tumor classification | Free text (e.g. 5th edition 2022) |
-| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Overall Gleason score | LOINC 35266-6 Gleason score in Specimen Qualitative | <details><summary>▾</summary>6 (3+3) · 7a (3+4) · 7b (4+3) · 8 (4+4 / 3+5 / 5+3) · 9 (4+5 / 5+4) · 10 (5+5)</details> |
-| Proportion Gleason pattern 4+5 | LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy | Decimal (%) |
-| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique | <details><summary>▾</summary>SCT 860767001 Grade Group 1 · SCT 860768006 Grade Group 2 · SCT 860769003 Grade Group 3 · SCT 860770002 Grade Group 4 · SCT 860771003 Grade Group 5</details> |
-| Intraductal carcinoma (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Invasive cribriform carcinoma (ICC) | SCT 1162816009 Invasive cribriform carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Maximum tumor diameter | LOINC 33728-7 Size.maximum dimension in Tumor | Decimal (mm) |
-| Proportion of tumor-involved prostatic tissue | LOINC 44654-2 Tissue involved by tumor in Prostate tumor | Decimal (%) |
-| Extraprostatic extension | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Bladder neck invasion | LOINC 84906-7 Bladder neck involvement of Prostate tumor | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Surgical margin status | LOINC 84905-9 Margin involvement [Type] in Prostate tumor | <details><summary>▾</summary>R0 Negative · R1 Positive</details> |
-| Number of examined lymph nodes | LOINC 21894-1 Regional lymph nodes examined [#] Specimen | Integer |
-| Number of positive lymph nodes | LOINC 21893-3 Regional lymph nodes positive [#] Specimen | Integer |
-| Pathological T stage (pT) | LOINC 21899-0 Primary tumor.pathology Cancer | <details><summary>▾</summary>pT2 · pT3a · pT3b · pT4</details> |
-| Pathological N stage (pN) | LOINC 21900-6 Regional lymph nodes.pathology [Class] Cancer | <details><summary>▾</summary>pN0 · pN1</details> |
+| Tumor location | SCT 363698007 Finding site | Code |
+| Histological tumor type (ICD-O-3) | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | Code |
+| ICD-O version | SCT 397005006 World Health Organization tumor classification | Text |
+| Morphology narrative | LOINC 33731-1 Histology type in Cancer specimen Narrative | Text |
+| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | Code |
+| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | Code |
+| Gleason score (ISUP 2014, WHO 2016) | LOINC 35266-6 Gleason score in Specimen Qualitative | Code |
+| Gleason score – how reported | SCT 397005006 | Code |
+| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 | Code |
+| ISUP grade – how reported | SCT 1812491000004107 | Code |
+| Proportion Gleason pattern 4/5 | LOINC 94735-8 | Quantity (%) |
+| WHO histological differentiation grade | LOINC 21858-6 Grade Cancer | Code |
+| Intraductal carcinoma of prostate (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | Code |
+| Invasive cribriform carcinoma (ICC) | SCT 1162816009 Invasive cribriform carcinoma | Code |
+| Intraprostatic tumor extent – qualitative | LOINC 44654-2 Tissue involved by tumor in Prostate tumor | Code |
+| Intraprostatic tumor extent – proportion | LOINC 44654-2 | Quantity (%) |
+| Maximum tumor diameter | LOINC 33728-7 Size.maximum dimension in Tumor | Quantity (mm) |
+| Extraprostatic extension | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Extent of extraprostatic extension | LOINC 84902-6 Extraprostatic extension site [Anatomy] of Prostate tumor | Code |
+| Extraprostatic extension site | LOINC 84902-6 | Code |
+| Bladder neck invasion | LOINC 84906-7 Bladder neck involvement of Prostate tumor | Code |
+| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | Code |
+| Number of histologically confirmed distant metastases | SCT 128462008 Metastatic neoplasm | Count |
+| Distant metastasis site | LOINC 21907-3 Metastatic site | Code |
+| Regression grade after previous therapy | LOINC 85319-2 Tumor regression grade [Type] in Cancer | Code |
+| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | Code |
+| Lymphatic vessel invasion | LOINC 33761-8 | Code |
+| Venous invasion | LOINC 33761-8 | Code |
+| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | Code |
+| Intraductal carcinoma of prostate (IDC-P) | SCT 1162814007 | Code |
+| Concomitant high-grade PIN | LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy | Code |
 
----
+#### Macroscopic Resection Margins
 
-### Transurethral Enucleation
-
-#### Macroscopy
-
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Specimen weight | SCT 371506001 Specimen weight | Decimal (g) |
-| Specimen length | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Specimen width | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Specimen depth | LOINC 84894-5 Dimension [Length] of Specimen | Decimal (mm) |
-| Seminal vesicles present in specimen | SCT 395557000 Tumor finding | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymph node dissection present in specimen | SCT 395557000 Tumor finding | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Capsular margin distance | LOINC 33729-5 Distance of margin from tumor [Length] in Specimen | Quantity (mm) |
+| Posterior margin distance | LOINC 33729-5 | Quantity (mm) |
+| Posterolateral margin distance | LOINC 33729-5 | Quantity (mm) |
+| Apical margin distance | LOINC 33729-5 | Quantity (mm) |
+| Proximal-vesical margin distance | LOINC 33729-5 | Quantity (mm) |
+| Distal-urethral margin distance | LOINC 33729-5 | Quantity (mm) |
 
-#### Diagnostic Conclusion
+#### Microscopic Resection Margins
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Histological tumor type | LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer | <details><summary>▾</summary>ICD-O 8140/3 Acinar adenocarcinoma · ICD-O 8500/3 Ductal adenocarcinoma · ICD-O 8120/3 Urothelial carcinoma</details> |
-| Morphology (narrative) | LOINC 33731-1 Histology type in Cancer specimen Narrative | Free text |
-| Primary Gleason pattern | LOINC 44641-9 Gleason pattern.primary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Secondary Gleason pattern | LOINC 44642-7 Gleason pattern.secondary in Prostate tumor | <details><summary>▾</summary>1 · 2 · 3 · 4 · 5</details> |
-| Overall Gleason score | LOINC 35266-6 Gleason score in Specimen Qualitative | <details><summary>▾</summary>6 (3+3) · 7a (3+4) · 7b (4+3) · 8 (4+4 / 3+5 / 5+3) · 9 (4+5 / 5+4) · 10 (5+5)</details> |
-| Proportion Gleason pattern 4+5 | LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy | Decimal (%) |
-| Grade group (ISUP 2014 / WHO 2016) | SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique | <details><summary>▾</summary>SCT 860767001 Grade Group 1 · SCT 860768006 Grade Group 2 · SCT 860769003 Grade Group 3 · SCT 860770002 Grade Group 4 · SCT 860771003 Grade Group 5</details> |
-| Intraductal carcinoma (IDC-P) | SCT 1162814007 Non-infiltrating intraductal carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Invasive cribriform carcinoma (ICC) | SCT 1162816009 Invasive cribriform carcinoma | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Proportion of tumor-involved tissue | LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core | Decimal (%) |
-| Extraprostatic extension | LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Seminal vesicle invasion | LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymphovascular invasion | LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Perineural invasion | LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Capsular margin distance | LOINC 33729-5 Distance of margin from tumor [Length] in Specimen | Quantity (mm) |
+| Posterior margin distance | LOINC 33729-5 | Quantity (mm) |
+| Posterolateral margin distance | LOINC 33729-5 | Quantity (mm) |
+| Apical margin distance | LOINC 33729-5 | Quantity (mm) |
+| Proximal-vesical margin distance | LOINC 33729-5 | Quantity (mm) |
+| Distal-urethral margin distance | LOINC 33729-5 | Quantity (mm) |
 
----
+#### Surgical Margin Status
 
-### Transurethral Resection (TUR-P, benign finding)
-
-#### Macroscopy
-
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Specimen weight | SCT 371506001 Specimen weight | Decimal (g) |
-| Seminal vesicles present in specimen | SCT 395557000 Tumor finding | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Lymph nodes present in specimen | SCT 395557000 Tumor finding | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Overall margin status | LOINC 84905-9 Margin involvement [Type] in Prostate tumor | Code |
+| Positive margin site | LOINC 84905-9 | Code |
+| Margin positivity type | LOINC 84905-9 | Code |
+| Capsular margin status | LOINC 84905-9 | Code |
+| Posterior margin status | LOINC 84905-9 | Code |
+| Posterolateral margin status | LOINC 84905-9 | Code |
+| Anterior margin status | LOINC 84905-9 | Code |
+| Apical margin status | LOINC 84905-9 | Code |
+| Proximal-vesical margin status | LOINC 84905-9 | Code |
+| Distal-urethral margin status | LOINC 84905-9 | Code |
+| Extent of capsular penetration | LOINC 84903-4 Capsular penetration extent [Type] of Prostate tumor | Code |
+| Gleason pattern at surgical margin | LOINC 44641-9 | Code |
+| Capsule present | SCT 395557000 Tumor finding | Code |
+| R classification | SCT 385389009 Residual tumor classification | Code |
 
-#### Diagnostic Conclusion
+#### Regional Lymph Nodes
 
-| Data Element | Semantic Annotation | Value Domain |
+| Data Element | Semantic Annotation | Datatype |
 |---|---|---|
-| Histological diagnosis (narrative) | LOINC 33731-1 Histology type in Cancer specimen Narrative | Free text |
-| Benign prostatic hyperplasia (BPH) | SCT 266569009 Benign prostatic hyperplasia | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
-| Chronic prostatitis | SCT 9713002 Chronic prostatitis | <details><summary>▾</summary>SCT 52101004 Present · SCT 2667000 Absent</details> |
+| Overall lymph node status | SCT 395557000 Tumor finding | Code |
+| Number of examined regional lymph nodes | LOINC 21894-1 Regional lymph nodes examined [#] Specimen | Count |
+| Number of positive regional lymph nodes | LOINC 21893-3 Regional lymph nodes positive [#] Specimen | Count |
+| Obturator lymph node status, right | SCT 68171009 Lymph node group finding | Code |
+| Obturator lymph node status, left | SCT 68171009 | Code |
+| Internal iliac lymph node status, right | SCT 68171009 | Code |
+| Internal iliac lymph node status, left | SCT 68171009 | Code |
+| External iliac lymph node status, right | SCT 68171009 | Code |
+| External iliac lymph node status, left | SCT 68171009 | Code |
+| Presacral lymph node status | SCT 68171009 | Code |
+| Common iliac lymph node involvement | SCT 68171009 | Code |
+| Hypogastric lymph node involvement | SCT 68171009 | Code |
+| Obturator lymph node involvement | SCT 68171009 | Code |
+| External iliac lymph node involvement | SCT 68171009 | Code |
+| Internal iliac lymph node involvement | SCT 68171009 | Code |
+| Sacral lymph node involvement | SCT 68171009 | Code |
+| Promontory lymph node involvement | SCT 68171009 | Code |
+| Extent of largest metastatic deposit | LOINC 33728-7 Size.maximum dimension in Tumor | Quantity (mm) |
+
+#### Pathological TNM Staging (UICC 8th ed.)
+
+| Data Element | Semantic Annotation | Datatype |
+|---|---|---|
+| TNM descriptors | SCT 1162421007 Pathologic TNM stage descriptor | Code |
+| pT category | LOINC 21899-0 Primary tumor.pathology Cancer | Code |
+| pN category | LOINC 21900-6 Regional lymph nodes.pathology [Class] Cancer | Code |
+| pM category | LOINC 21901-4 Distant metastases.pathology [Class] Cancer | Code |

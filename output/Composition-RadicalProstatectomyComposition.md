@@ -10,7 +10,7 @@
 
 **status**: Final
 
-**type**: Tissue pathology biopsy report
+**type**: Pathology study
 
 **encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)](Encounter-RadicalProstatectomyEncounter.md)
 
@@ -58,13 +58,13 @@
   "status" : "final",
   "type" : {
     "coding" : [{
-      "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
-      "code" : "PATH"
+      "system" : "http://loinc.org",
+      "code" : "11526-1",
+      "display" : "Pathology study"
     },
     {
-      "system" : "http://snomed.info/sct",
-      "code" : "721967005",
-      "display" : "Tissue pathology biopsy report"
+      "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+      "code" : "PATH"
     }]
   },
   "subject" : {

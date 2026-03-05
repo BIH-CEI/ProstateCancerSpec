@@ -1,18 +1,18 @@
 ProstateCancerSpec : Validation Results
 =========================================
 
-err = 15, warn = 547, info = 1549
+err = 15, warn = 546, info = 1541
 $--
 Generated $--. FHIR version $-- for prostatecancerspec#$-- (canonical = http://prostatecancerspec.org)
- Build Errors : 1 / 7 / 0
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-CoreNeedleBiopsyDocument : 0 / 10 / 443
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-RadicalProstatectomyDocument : 0 / 9 / 73
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-TransurethralEnucleationDocument : 0 / 9 / 63
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-TransurethralResectionDocument : 0 / 9 / 49
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-CoreNeedleBiopsyComposition : 0 / 1 / 2
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-RadicalProstatectomyComposition : 0 / 1 / 2
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-TransurethralEnucleationComposition : 0 / 1 / 2
- /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-TransurethralResectionComposition : 0 / 1 / 2
+ Build Errors : 1 / 6 / 0
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-CoreNeedleBiopsyDocument : 0 / 10 / 442
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-RadicalProstatectomyDocument : 0 / 9 / 72
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-TransurethralEnucleationDocument : 0 / 9 / 62
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-TransurethralResectionDocument : 0 / 9 / 48
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-CoreNeedleBiopsyComposition : 0 / 1 / 1
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-RadicalProstatectomyComposition : 0 / 1 / 1
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-TransurethralEnucleationComposition : 0 / 1 / 1
+ /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Composition-TransurethralResectionComposition : 0 / 1 / 1
  /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Condition-CoreNeedleBiopsyDiagnosisConfirmed : 3 / 3 / 4
  /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Condition-CoreNeedleBiopsyDiagnosisSuspicion : 2 / 2 / 4
  /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Condition-RadicalProstatectomyDiagnosisPreOp : 3 / 3 / 4
@@ -407,7 +407,6 @@ Generated $--. FHIR version $-- for prostatecancerspec#$-- (canonical = http://p
 ERROR: ImplementationGuide/prostatecancerspec: This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle05.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/QuestionnaireResponseCoreNeedleBiopsySingle06.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/output/semantic-annotations.html: Illegal HTML: illegal html element: details (<summary>▾</summary>SCT 24028007 Right · SCT 7771000 Left · SCT 51440002 Bilateral)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -415,7 +414,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Bundle-CoreNeedleBiopsyDocument.json ==
 WARNING: Bundle/CoreNeedleBiopsyDocument: Bundle.identifier.system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
 WARNING: Bundle/CoreNeedleBiopsyDocument: Bundle.entry[0].resource/*Composition/CoreNeedleBiopsyComposition*/.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Bundle/CoreNeedleBiopsyDocument: Bundle.entry[0].resource/*Composition/CoreNeedleBiopsyComposition*/.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 WARNING: Bundle/CoreNeedleBiopsyDocument: Bundle.entry[1].resource/*Patient/Patient1*/.identifier[0].system: URL-Wert 'http://example.hospital.de/patient-ids' löst nicht auf
 WARNING: Bundle/CoreNeedleBiopsyDocument: Bundle.entry[2].resource/*Organization/PathologyLabOrganization*/.identifier[0].system: URL-Wert 'http://example.hospital.de/organization-ids' löst nicht auf
 WARNING: Bundle/CoreNeedleBiopsyDocument: Bundle.entry[3].resource/*DiagnosticReport/CoreNeedleBiopsyReport*/.identifier[0].system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
@@ -854,7 +852,6 @@ INFORMATION: Bundle/CoreNeedleBiopsyDocument: Bundle: Can't find 'Specimen/CoreN
 == fsh-generated/resources/Bundle-RadicalProstatectomyDocument.json ==
 WARNING: Bundle/RadicalProstatectomyDocument: Bundle.identifier.system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
 WARNING: Bundle/RadicalProstatectomyDocument: Bundle.entry[0].resource/*Composition/RadicalProstatectomyComposition*/.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Bundle/RadicalProstatectomyDocument: Bundle.entry[0].resource/*Composition/RadicalProstatectomyComposition*/.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 WARNING: Bundle/RadicalProstatectomyDocument: Bundle.entry[1].resource/*Patient/Patient1*/.identifier[0].system: URL-Wert 'http://example.hospital.de/patient-ids' löst nicht auf
 WARNING: Bundle/RadicalProstatectomyDocument: Bundle.entry[2].resource/*Organization/PathologyLabOrganization*/.identifier[0].system: URL-Wert 'http://example.hospital.de/organization-ids' löst nicht auf
 WARNING: Bundle/RadicalProstatectomyDocument: Bundle.entry[3].resource/*DiagnosticReport/RadicalProstatectomyReport*/.identifier[0].system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
@@ -924,7 +921,6 @@ INFORMATION: Bundle/RadicalProstatectomyDocument: Bundle: Can't find 'Specimen/R
 == fsh-generated/resources/Bundle-TransurethralEnucleationDocument.json ==
 WARNING: Bundle/TransurethralEnucleationDocument: Bundle.identifier.system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
 WARNING: Bundle/TransurethralEnucleationDocument: Bundle.entry[0].resource/*Composition/TransurethralEnucleationComposition*/.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Bundle/TransurethralEnucleationDocument: Bundle.entry[0].resource/*Composition/TransurethralEnucleationComposition*/.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 WARNING: Bundle/TransurethralEnucleationDocument: Bundle.entry[1].resource/*Patient/Patient3*/.identifier[0].system: URL-Wert 'http://example.hospital.de/patient-ids' löst nicht auf
 WARNING: Bundle/TransurethralEnucleationDocument: Bundle.entry[2].resource/*Organization/PathologyLabOrganization*/.identifier[0].system: URL-Wert 'http://example.hospital.de/organization-ids' löst nicht auf
 WARNING: Bundle/TransurethralEnucleationDocument: Bundle.entry[3].resource/*DiagnosticReport/TransurethralEnucleationReport*/.identifier[0].system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
@@ -984,7 +980,6 @@ INFORMATION: Bundle/TransurethralEnucleationDocument: Bundle: Can't find 'Specim
 == fsh-generated/resources/Bundle-TransurethralResectionDocument.json ==
 WARNING: Bundle/TransurethralResectionDocument: Bundle.identifier.system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
 WARNING: Bundle/TransurethralResectionDocument: Bundle.entry[0].resource/*Composition/TransurethralResectionComposition*/.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Bundle/TransurethralResectionDocument: Bundle.entry[0].resource/*Composition/TransurethralResectionComposition*/.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 WARNING: Bundle/TransurethralResectionDocument: Bundle.entry[1].resource/*Patient/Patient2*/.identifier[0].system: URL-Wert 'http://example.hospital.de/patient-ids' löst nicht auf
 WARNING: Bundle/TransurethralResectionDocument: Bundle.entry[2].resource/*Organization/PathologyLabOrganization*/.identifier[0].system: URL-Wert 'http://example.hospital.de/organization-ids' löst nicht auf
 WARNING: Bundle/TransurethralResectionDocument: Bundle.entry[3].resource/*DiagnosticReport/TransurethralResectionReport*/.identifier[0].system: URL-Wert 'https://pathologie.example-hospital.de/fhir/fn/befundbericht' löst nicht auf
@@ -1029,16 +1024,12 @@ INFORMATION: Bundle/TransurethralResectionDocument: Bundle: Can't find 'Conditio
 INFORMATION: Bundle/TransurethralResectionDocument: Bundle: Can't find 'Specimen/TransurethralResectionSpecimenPart' in the bundle (Bundle.entry[7].resource.specimen[0])
 == fsh-generated/resources/Composition-CoreNeedleBiopsyComposition.json ==
 WARNING: Composition/CoreNeedleBiopsyComposition: Composition.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Composition/CoreNeedleBiopsyComposition: Composition.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 == fsh-generated/resources/Composition-RadicalProstatectomyComposition.json ==
 WARNING: Composition/RadicalProstatectomyComposition: Composition.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Composition/RadicalProstatectomyComposition: Composition.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 == fsh-generated/resources/Composition-TransurethralEnucleationComposition.json ==
 WARNING: Composition/TransurethralEnucleationComposition: Composition.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Composition/TransurethralEnucleationComposition: Composition.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 == fsh-generated/resources/Composition-TransurethralResectionComposition.json ==
 WARNING: Composition/TransurethralResectionComposition: Composition.identifier.system: URL-Wert 'http://example.hospital.de/pathology-reports' löst nicht auf
-INFORMATION: Composition/TransurethralResectionComposition: Composition.type: Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden) (Codes = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH, http://snomed.info/sct#721967005)
 == fsh-generated/resources/Condition-CoreNeedleBiopsyDiagnosisConfirmed.json ==
 WARNING: Condition/CoreNeedleBiopsyDiagnosisConfirmed: Condition.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2026' could not be found, so the code cannot be validated. No versions of this code system are known
 INFORMATION: Condition/CoreNeedleBiopsyDiagnosisConfirmed: Condition.code.coding[2]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0 überein.

@@ -6,6 +6,17 @@
 - **Niemals mehr machen als explizit gefragt!** Wenn unklar, nachfragen.
 - Keine zusätzlichen Dateien/Zeilen ändern, die nicht konkret genannt wurden.
 
+### FHIR-Version-Mismatch subscriptions-backport (02.03.2026)
+QA-Fehler: "This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0"
+
+Ursache (transitive Dependency-Kette):
+  ProstateCancerSpec
+    → de.medizininformatikinitiative.kerndatensatz.patho (2026.0.0)
+      → de.gematik.isik (5.1.0)
+        → hl7.fhir.uv.subscriptions-backport.r4 (1.1.0) [für FHIR 4.0.0]
+
+**Nicht behebbar** ohne Änderung am gematik ISiK-Paket. Bekannter Konflikt, als false positive akzeptieren.
+
 ### QA False Positives (02.03.2026)
 Folgende QA-Fehler sind **false positives** durch Server-Diskrepanz zwischen tx.fhir.org (IG Publisher) und MII TermServ:
 - `ICD-10-GM#C61` → MII TermServ: ✅ gültig; tx.fhir.org: ❌ (Version 2025 unbekannt)

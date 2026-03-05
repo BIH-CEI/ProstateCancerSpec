@@ -10,7 +10,7 @@
 
 **status**: Final
 
-**type**: Tissue pathology biopsy report
+**type**: Pathology study
 
 **encounter**: [Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)](Encounter-CoreNeedleBiopsyEncounter.md)
 
@@ -58,6 +58,11 @@
   "status" : "final",
   "type" : {
     "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11526-1",
+      "display" : "Pathology study"
+    },
+    {
       "system" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
       "code" : "PATH"
     },

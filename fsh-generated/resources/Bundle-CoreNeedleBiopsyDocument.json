@@ -27,6 +27,11 @@
         "type": {
           "coding": [
             {
+              "code": "11526-1",
+              "system": "http://loinc.org",
+              "display": "Pathology study"
+            },
+            {
               "code": "PATH",
               "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
             },

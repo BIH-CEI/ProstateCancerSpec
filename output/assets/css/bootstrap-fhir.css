@@ -2276,7 +2276,7 @@ button.close {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #da0c23;
+  color: #ea5451;
   background-color: #ffffff;
   border: 1px solid #955159;
   border-bottom-color: transparent;
@@ -2374,7 +2374,7 @@ button.close {
   margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #da0c23;
+  background-color: #ea5451;
   border-radius: 4px;
 }
 .navbar:before,
@@ -2543,7 +2543,7 @@ button.close {
   right: 0;
 }
 .navbar-inverse {
-  background-color: #ad1f2f;
+  background-color: #003754;
 }
 .navbar-inverse .navbar-brand {
   color: #e6e6e6;
@@ -2568,7 +2568,7 @@ button.close {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #da0c23;
+  background-color: #ea5451;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -2589,7 +2589,7 @@ button.close {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #da0c23;
+  background-color: #ea5451;
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -5155,7 +5155,7 @@ ul.icons li [class*=" icon-"] {
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
   background-color: transparent;
-  color: #da0c23;
+  color: #ea5451;
   text-shadow: none;
 }
 .nav-list > .active a {
@@ -5264,7 +5264,7 @@ h4 small {
 }
 .page-header h1 {
   font-size: 28px;
-  color: #da0c23;
+  color: #ea5451;
 }
 p {
   padding-bottom: 5px;

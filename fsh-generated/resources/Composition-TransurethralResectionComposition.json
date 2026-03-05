@@ -17,13 +17,13 @@
   "type": {
     "coding": [
       {
-        "code": "PATH",
-        "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+        "code": "11526-1",
+        "system": "http://loinc.org",
+        "display": "Pathology study"
       },
       {
-        "code": "721967005",
-        "system": "http://snomed.info/sct",
-        "display": "Tissue pathology biopsy report"
+        "code": "PATH",
+        "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
       }
     ]
   },
