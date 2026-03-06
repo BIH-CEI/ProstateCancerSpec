@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-03-05 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-03-06 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -62,6 +62,10 @@ Transurethral resection (TUR-P) with benign findings:
 * Benign prostatic hyperplasia (BPH), no carcinoma
 * 5 blocks and 10 slides from TUR chips
 * Macroscopic and diagnostic findings from resection tissue
+
+### Structure of the Scenarios
+
+The diagram above uses the Core Needle Biopsy scenario as a representative example. The other scenarios (Radical Prostatectomy, Transurethral Enucleation, Transurethral Resection) follow an analogous structure, differing primarily in the number and type of specimens, the applicable microscopic findings, and the diagnostic conclusion observations.
 
 ### Resource Organization
 
@@ -127,7 +131,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-03-05T11:52:07+01:00",
+  "date" : "2026-03-06T13:57:31+01:00",
   "publisher" : "BIH CEI",
   "contact" : [{
     "name" : "BIH CEI",

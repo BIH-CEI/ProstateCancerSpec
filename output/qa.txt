@@ -3,7 +3,7 @@ ProstateCancerSpec : Validation Results
 
 err = 15, warn = 546, info = 1541
 IG Publisher Version: 2.1.2
-Generated Thu Mar 05 11:53:48 CET 2026. FHIR version 4.0.1 for prostatecancerspec#0.1.0 (canonical = http://prostatecancerspec.org)
+Generated Fri Mar 06 13:59:15 CET 2026. FHIR version 4.0.1 for prostatecancerspec#0.1.0 (canonical = http://prostatecancerspec.org)
  Build Errors : 1 / 6 / 0
  /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-CoreNeedleBiopsyDocument : 0 / 10 / 442
  /Users/thimo/Desktop/Charite/Arbeit/ProstateCancerSpec/ProstateCancerSpec/fsh-generated/resources/Bundle-RadicalProstatectomyDocument : 0 / 9 / 72

@@ -45,6 +45,12 @@ Transurethral resection (TUR-P) with benign findings:
 - 5 blocks and 10 slides from TUR chips
 - Macroscopic and diagnostic findings from resection tissue
 
+### Structure of the Scenarios
+
+{% include img.html img="CoreNeedleBiopsy_Structure.png" %}
+
+The diagram above uses the Core Needle Biopsy scenario as a representative example. The other scenarios (Radical Prostatectomy, Transurethral Enucleation, Transurethral Resection) follow an analogous structure, differing primarily in the number and type of specimens, the applicable microscopic findings, and the diagnostic conclusion observations.
+
 ### Resource Organization
 
 Each example scenario is organized with the following structure:

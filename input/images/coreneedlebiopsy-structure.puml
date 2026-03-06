@@ -1,0 +1,132 @@
+@startuml CoreNeedleBiopsy_Structure
+' layout: default (GraphViz)
+title Core Needle Biopsy – FHIR Resource Structure
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+skinparam ArrowColor #555555
+skinparam ArrowThickness 1.2
+skinparam nodesep 30
+skinparam ranksep 40
+skinparam padding 5
+
+skinparam rectangle {
+  RoundCorner 8
+  BorderThickness 1.5
+}
+
+' ====================================================================
+' TOP: Administrative resources (above DiagnosticReport)
+' ====================================================================
+together {
+  rectangle "**Patient**\nPatient1\nHans Mueller\ngeb. 1955-08-15" as PAT #D6D6D6
+  rectangle "**Practitioner**\nPathologistPractitioner\nPathology dept." as PRAC #D6D6D6
+  rectangle "**Organization**\nPathologyLabOrganization\nPathology institute" as ORG #D6D6D6
+  rectangle "**Encounter**\nCoreNeedleBiopsyEncounter\n2024-01-15" as ENC #D6D6D6
+}
+
+' ====================================================================
+' CENTER: DiagnosticReport
+' ====================================================================
+rectangle "**DiagnosticReport**\nCoreNeedleBiopsyReport\n────────────────────\ncode: LOINC 60568-3\nidentifier: E_24_001  |  status: final\neffective: 2024-01-20" as DR #C6EFCE
+
+PAT  <-- DR : subject
+PRAC <-- DR : performer
+ORG  <-- DR : (organization)
+ENC  <-- DR : encounter
+
+' ====================================================================
+' ServiceRequest
+' ====================================================================
+rectangle "**ServiceRequest**\nCoreNeedleBiopsyReportRequest\n────────────\ncode: LOINC 66117-3\nProstate Pathology biopsy report\nplacer-ID: PATH-RPT-2024-001" as SR #BDD7EE
+
+' ====================================================================
+' PSA Observation (supportingInfo of ServiceRequest)
+' ====================================================================
+rectangle "**Observation**\nCoreNeedleBiopsyPSALevel\n────────────\nLOINC 2857-1\nPSA [Mass/volume]\nvalue: 8.5 ng/mL\neffective: 2024-01-10" as PSA #FFF2CC
+
+' ====================================================================
+' Specimens (grouped)
+' ====================================================================
+rectangle "Specimens" as COL_SPEC #FEF5EC {
+  rectangle "**Part Specimen** (01–12)\nBX24_001_01_A – _12_L\ntype: prostate core\nadditive: formalin" as SPART #FCE4D6
+
+  rectangle "**Block Specimen** (01–12)\nE_24_001_*_1\ntype: FFPE block\nadditive: paraffin" as SBLOCK #FCE4D6
+
+  rectangle "**Slide Specimen** (01–12)\nE_24_001_*_1_1HE\ntype: tissue section\nprocessing: HE stain" as SSLIDE #FCE4D6
+
+  SPART -[hidden]down-> SBLOCK
+  SBLOCK -[hidden]down-> SSLIDE
+  SSLIDE -up-> SBLOCK : parent
+  SBLOCK -up-> SPART : parent
+}
+
+DR --> SR       : basedOn
+DR --> COL_SPEC : specimen
+SR --> PSA      : supportingInfo
+
+' ====================================================================
+' Macroscopy-Grouper
+' ====================================================================
+rectangle "**Macroscopy-Grouper**\nCoreNeedleBiopsyMacroscopicGrouper\n────────────\nLOINC 22634-0\nresult[macroscopic-observations]" as MACG #E8F4FD {
+
+  rectangle "**Findings**\nMacroscopicLength 01–12\n(LOINC 44619-5  core length)\n\nMacroscopicCylinderCount 01–12\n(LOINC 44652-6  number of cores)\n\nMacroscopicLaterality 01–12\n(LOINC 20228-3  laterality)" as MOBS #E2D0F0
+}
+
+DR --> MACG : result
+
+' ====================================================================
+' Microscopy-Grouper
+' ====================================================================
+rectangle "**Microscopy-Grouper**\nCoreNeedleBiopsyMicroscopicGrouper\n────────────\nLOINC 22635-7\nresult[microscopic-observations]" as MICG #EEE8F8 {
+
+  rectangle "**Findings**\nGleasonPrimary 01–12  (LOINC 44641-9)\nGleasonSecondary 01–12  (LOINC 44642-7)\nGradeGroup 01–12  (SCT 1812491000004107)\nTumorLength 01–12  (LOINC 44618-7)\nPerineuralInvasion 01–12  (LOINC 92837-4)\nTumorInvolvementRatio 01–12\nTumorInvolvementPercentage 01–12  (LOINC 44654-2)\nIntraductalCarcinoma 01–12  (SCT 1162814007)\nHGPIN 01–12  (LOINC 94666-5)\nASAP 01–12  (LOINC 94667-3)" as MICOBS #E2D0F0
+}
+
+DR -down-> MICG : result
+
+' ====================================================================
+' DiagnosticConclusion-Grouper
+' ====================================================================
+rectangle "**DiagnosticConclusion-Grouper**\nCoreNeedleBiopsyDiagnosticConclusionGrouper\n────────────\nLOINC 22637-3\nresult[diagnostic-conclusion]" as DCG #FEF0E7 {
+
+  rectangle "**Findings**\nHistologicalType  (LOINC 59847-4)\nMorphologyFreeText  (LOINC 33731-1)\nICDO Version\nPrimaryGleason  (LOINC 44641-9)\nSecondaryGleason  (LOINC 44642-7)\nGleasonScoreTotal  (LOINC 35266-6)\nGradingGroupISUP  (SCT 1812491000004107)\nHistologicalGradeWHO  (LOINC 21858-6)\nPositiveCores R/L  (LOINC 44651-8)\nRatioPositiveCores\nPercentageTumorTotal  (LOINC 44654-2)\nTumorLengthTotal  (LOINC 44618-7)\nPerineuralInfiltration  (LOINC 92837-4)\nSeminalVesicleInvasion  (LOINC 44626-0)\nLymphovascularInvasion  (LOINC 33761-8)\nPeriprostataticFatInvasion  (LOINC 44625-2)\nEPE Location  (LOINC 84902-6)\nIntraductalCarcinoma  (SCT 1162814007)\nASAP · HGPIN · Granulomatous Prostatitis\nICD-10 Diagnosis: C61" as DCOBS #FFF2CC
+}
+
+DR --> DCG : result
+
+' ====================================================================
+' Composition
+' ====================================================================
+rectangle "**Composition**\nCoreNeedleBiopsyComposition\n────────────────────\ntype: LOINC 11526-1 (Pathology study)\ntitle: Histopathologischer Befundbericht\nauthor: PathologyLabOrganization\nsection.entry → CoreNeedleBiopsyReport\nevent.detail → ServiceRequest" as COMP #C6EFCE
+
+COMP --> DR : section.entry
+
+' ====================================================================
+' Bundle
+' ====================================================================
+rectangle "**Bundle**\nCoreNeedleBiopsyDocument\n────────────────────\ntype: document\nidentifier: E_24_001\ntimestamp: 2024-01-20\n\nentry[0]: Composition\nentry[1]: Patient\nentry[2]: Organization\nentry[3]: DiagnosticReport\nentry[4]: DiagConclusionGrouper\nentry[5]: MacroscopicGrouper\nentry[6]: MicroscopicGrouper\nentry[7]: Encounter\nentry[8]: ServiceRequest\n..." as BUNDLE #EEEEEE
+
+BUNDLE --> COMP : entry[0]
+
+' ====================================================================
+' QuestionnaireResponses
+' ====================================================================
+rectangle "**QuestionnaireResponse**\nCoreNeedleBiopsySingle 01–12\n────────────\nQuestionnaireCoreNeedleBiopsySingle\n(per specimen)" as QR1 #FFF2CC
+
+rectangle "**QuestionnaireResponse**\nCoreNeedleBiopsyCase\n────────────\nQuestionnaireCoreNeedleBiopsyCase\n(whole case)" as QR2 #FFF2CC
+
+MOBS   --> QR1 : derivedFrom
+MICOBS --> QR1 : derivedFrom
+DCOBS  --> QR2 : derivedFrom
+
+' ====================================================================
+' Layout ordering
+' ====================================================================
+SR       -[hidden]right-> COL_SPEC
+COL_SPEC -[hidden]right-> MACG
+MACG     -[hidden]right-> MICG
+MICG     -[hidden]right-> DCG
+
+@enduml
