@@ -6,7 +6,7 @@
 
 ## Example Observation: PSA vor Biopsie
 
-Profile: [MII PR Onkologie PSA-Wertversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa)
+Profile: [MII PR Onkologie PSA-Wert](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa) version: 2026.0.0
 
 **status**: Final
 

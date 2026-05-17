@@ -131,7 +131,9 @@ Description: "Total Gleason score in Enucleation specimens"
 * effectiveDateTime = "2024-05-12"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(TransurethralEnucleationReportRequest)
-* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
+// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
+// → SNOMED CT 58925000 "Gleason grade score 9 out of 10" (kontrolliert gegen TermServ, 2026-05-17)
+* valueCodeableConcept = $sct#58925000 "Gleason grade score 9 out of 10"
 * derivedFrom[0] = Reference(TransurethralEnucleationPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(TransurethralEnucleationSecondaryGleasonPattern)
 

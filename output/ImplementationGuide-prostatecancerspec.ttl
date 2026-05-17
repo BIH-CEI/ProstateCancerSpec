@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ProstateCancerSpec"] ; # 
   fhir:title [ fhir:v "Prostate Cancer Specification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-06T13:57:31+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-17T11:35:36+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH CEI" ] ;
@@ -51,7 +51,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.1" ]
+     fhir:version [ fhir:v "7.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -69,7 +69,7 @@
        fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0" ]
   ] [
      fhir:id [ fhir:v "de_medizininformatikinitiative_kerndatensatz_onkologie" ] ;
      fhir:uri [
@@ -711,7 +711,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
+         fhir:v "hl7.fhir.uv.tools.r4#1.1.2"
        ]
      ] [
        fhir:extension ( [
@@ -1814,6 +1814,27 @@
        ] ;
        fhir:name [ fhir:v "BPH-Diagnose vor TUR-P" ] ;
        fhir:description [ fhir:v "Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Task/RadicalProstatectomyTask> ;
+         fhir:reference [ fhir:v "Task/RadicalProstatectomyTask" ]
+       ] ;
+       fhir:name [ fhir:v "Coordination Task Prostatektomie" ] ;
+       fhir:description [ fhir:v "Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -8775,6 +8796,90 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Task/CoreNeedleBiopsyTaskV1Requested> ;
+         fhir:reference [ fhir:v "Task/CoreNeedleBiopsyTaskV1Requested" ]
+       ] ;
+       fhir:name [ fhir:v "Task V1 – Auftrag erstellt (requested)" ] ;
+       fhir:description [ fhir:v "Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Task/CoreNeedleBiopsyTaskV2Accepted> ;
+         fhir:reference [ fhir:v "Task/CoreNeedleBiopsyTaskV2Accepted" ]
+       ] ;
+       fhir:name [ fhir:v "Task V2 – Auftrag angenommen (accepted)" ] ;
+       fhir:description [ fhir:v "Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Task/CoreNeedleBiopsyTaskV3InProgress> ;
+         fhir:reference [ fhir:v "Task/CoreNeedleBiopsyTaskV3InProgress" ]
+       ] ;
+       fhir:name [ fhir:v "Task V3 – In Bearbeitung (in-progress)" ] ;
+       fhir:description [ fhir:v "Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://prostatecancerspec.org/Task/CoreNeedleBiopsyTaskV4Completed> ;
+         fhir:reference [ fhir:v "Task/CoreNeedleBiopsyTaskV4Completed" ]
+       ] ;
+       fhir:name [ fhir:v "Task V4 – Abgeschlossen (completed)" ] ;
+       fhir:description [ fhir:v "Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -9780,6 +9885,25 @@
            fhir:l fhir:tur-resection-specimens.html
          ] ;
          fhir:title [ fhir:v "TUR-Resection Specimens" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "workflow-scenarios.html"^^xsd:anyURI ;
+             fhir:l fhir:workflow-scenarios.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "workflow-scenarios.html"^^xsd:anyURI ;
+           fhir:l fhir:workflow-scenarios.html
+         ] ;
+         fhir:title [ fhir:v "Workflow Scenarios" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

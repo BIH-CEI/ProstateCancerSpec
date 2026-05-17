@@ -1,0 +1,82 @@
+@startuml CoreNeedleBiopsy_Workflow_ReflexTesting
+title Szenario 3: Nachforderung / Reflex-Untersuchung\nCore Needle Biopsy – IHC nach ASAP-Befund
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam sequenceArrowThickness 1.5
+skinparam sequenceLifeLineBorderColor #555555
+skinparam sequenceParticipantBorderColor #555555
+skinparam sequenceGroupBorderColor #AAAAAA
+skinparam sequenceGroupFontSize 11
+skinparam noteFontSize 10
+skinparam noteBackgroundColor #FFF8DC
+
+participant "**Placer (KIS)**\nUrologie" as Placer #BDD7EE
+participant "**Filler (LIS)**\nPathologie" as Filler #C6EFCE
+
+== Auftragserstellung (2024-01-15, 08:00) ==
+
+Placer -> Filler : POST Bundle (type: **transaction**)\n  Patient\n  ServiceRequest (status: **active**)\n  Specimen [x12] (status: **available**)\n  Task (status: **requested**, code: fulfill)
+activate Filler
+Filler --> Placer : Bundle (type: **transaction-response**)\n  201 Created
+deactivate Filler
+
+note over Placer, Filler : **Coordination Task V1: requested**
+
+== Probenempfang & Annahme (2024-01-15, 14:00) ==
+
+Filler -> Placer : PUT Task (status: **accepted**)
+
+note over Placer, Filler : **Coordination Task V2: accepted**
+
+== Bearbeitung beginnt (2024-01-16, 08:00) ==
+
+Filler -> Placer : PUT Task (status: **in-progress**)
+
+note over Placer, Filler : **Coordination Task V3: in-progress**
+
+group Pathologische Aufarbeitung
+  Filler -> Filler : Makroskopie
+  Filler -> Filler : Mikroskopie (HE)
+end
+
+== ASAP-Befund – IHC erforderlich (2024-01-18, 10:00) ==
+
+note over Filler : Stanze 03: Atypische\nDrusenproliferation (ASAP)\n\nEntscheidung: p63/AMACR-\nDoppelfaerbung zur Abklaerung
+
+Filler -> Filler : Neuer ServiceRequest erstellen\n(code: IHC p63/AMACR\nbasedOn: Original-ServiceRequest\nstatus: **active**)
+
+Filler -> Filler : Aliquot-Specimen erstellen\n(type: Tissue section\nparent: Block03\nprocessing: p63/AMACR immunostain)
+
+Filler -> Filler : Interner Task\n(status: **requested**\nfocus: IHC-ServiceRequest\ninput: Aliquot-Specimen)
+
+note over Filler #E8F4FD : **Reflex-Untersuchung laeuft intern**\nFiller ist Placer UND Filler\nfuer die IHC-Zusatzuntersuchung
+
+group IHC-Aufarbeitung [1-2 Tage]
+  Filler -> Filler : Schnittherstellung\n(vom Block03)
+  Filler -> Filler : p63/AMACR-Doppelfaerbung
+  Filler -> Filler : Mikroskopische Beurteilung\nErgebnis: AMACR positiv,\np63 negativ -> Karzinom bestaetigt
+end
+
+== Gesamtbefund & Abschluss (2024-01-20, 15:30) ==
+
+Filler -> Filler : DiagnosticReport erstellen\n(inkl. IHC-Ergebnis fuer Stanze 03)
+
+Filler -> Placer : POST Bundle (type: **document**, signed)\n  Composition\n  DiagnosticReport (status: **final**)\n  Patient, ServiceRequest, Specimen\n  Observations (inkl. IHC-Findings)
+activate Placer
+Placer --> Filler : 201 Created
+deactivate Placer
+
+Filler -> Placer : PUT Task\n(status: **completed**\noutput: Bundle)
+activate Placer
+Placer --> Filler : 200 OK
+deactivate Placer
+
+note over Placer, Filler : **Coordination Task V4: completed**\nBefund enthaelt HE + IHC Ergebnisse
+
+Placer -> Placer : ServiceRequest\n(status: **completed**)
+
+note over Placer : Befund im KIS:\nAdenokarzinom in Stanze 03\ndurch IHC bestaetigt\n(AMACR+, p63-)
+
+@enduml

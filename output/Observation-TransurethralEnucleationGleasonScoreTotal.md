@@ -6,7 +6,7 @@
 
 ## Example Observation: Total Gleason Score - Enucleation
 
-Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score), [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
+Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score), [MII PR Patho Finding](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding) version: 2026.0.0
 
 **basedOn**: [ServiceRequest Prostatectomy (procedure)](ServiceRequest-TransurethralEnucleationReportRequest.md)
 
@@ -22,7 +22,7 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Gleason grade (Score) 9
+**value**: Gleason grade score 9 out of 10
 
 **specimen**: [Specimen: identifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004_A_1_1HE; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_004; status = available; type = Tissue section (specimen)](Specimen-TransurethralEnucleationSpecimenSlide01A.md)
 
@@ -80,9 +80,9 @@ Profiles: [https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Struc
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010",
-      "code" : "C_999009",
-      "display" : "Gleason grade (Score) 9"
+      "system" : "http://snomed.info/sct",
+      "code" : "58925000",
+      "display" : "Gleason grade score 9 out of 10"
     }]
   },
   "specimen" : {

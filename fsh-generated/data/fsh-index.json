@@ -180,8 +180,8 @@
     "fshName": "CoreNeedleBiopsyASAP",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 443,
-    "endLine": 457
+    "startLine": 447,
+    "endLine": 461
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyASAP01.json",
@@ -276,8 +276,8 @@
     "fshName": "CoreNeedleBiopsyExtraprostaticExtensionLocation",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 409,
-    "endLine": 423
+    "startLine": 413,
+    "endLine": 427
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyGleasonGrading01.json",
@@ -341,15 +341,15 @@
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
     "startLine": 165,
-    "endLine": 183
+    "endLine": 185
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyGradingGroupISUP.json",
     "fshName": "CoreNeedleBiopsyGradingGroupISUP",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 206,
-    "endLine": 222
+    "startLine": 208,
+    "endLine": 224
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyGranulomatoeseProstatitis01.json",
@@ -412,16 +412,16 @@
     "fshName": "CoreNeedleBiopsyGranulomatousProstatiti",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 477,
-    "endLine": 491
+    "startLine": 481,
+    "endLine": 495
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN.json",
     "fshName": "CoreNeedleBiopsyHighGradePIN",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 460,
-    "endLine": 474
+    "startLine": 464,
+    "endLine": 478
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyHighGradePIN01.json",
@@ -580,8 +580,8 @@
     "fshName": "CoreNeedleBiopsyHistologicalGradeWHO",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 225,
-    "endLine": 239
+    "startLine": 227,
+    "endLine": 243
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyHistologicalTypeICDO3.json",
@@ -604,8 +604,8 @@
     "fshName": "CoreNeedleBiopsyIntraductalCarcinoma",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 426,
-    "endLine": 440
+    "startLine": 430,
+    "endLine": 444
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyIntraduktalesKarzinom01.json",
@@ -668,8 +668,8 @@
     "fshName": "CoreNeedleBiopsyLymphovascularInvasion",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 375,
-    "endLine": 389
+    "startLine": 379,
+    "endLine": 393
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyLymphovaskulaereInvasion01.json",
@@ -1140,24 +1140,24 @@
     "fshName": "CoreNeedleBiopsyPercentageGleason45",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 186,
-    "endLine": 203
+    "startLine": 188,
+    "endLine": 205
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPercentageTumorTotal.json",
     "fshName": "CoreNeedleBiopsyPercentageTumorTotal",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 301,
-    "endLine": 318
+    "startLine": 305,
+    "endLine": 322
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPerineuralInfiltration.json",
     "fshName": "CoreNeedleBiopsyPerineuralInfiltration",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 341,
-    "endLine": 355
+    "startLine": 345,
+    "endLine": 359
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPerineuraleInfiltration01.json",
@@ -1220,24 +1220,24 @@
     "fshName": "CoreNeedleBiopsyPeriprostataticFatInvasion",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 392,
-    "endLine": 406
+    "startLine": 396,
+    "endLine": 410
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPositiveCoresLeft.json",
     "fshName": "CoreNeedleBiopsyPositiveCoresLeft",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 262,
-    "endLine": 278
+    "startLine": 266,
+    "endLine": 282
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPositiveCoresRight.json",
     "fshName": "CoreNeedleBiopsyPositiveCoresRight",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 242,
-    "endLine": 258
+    "startLine": 246,
+    "endLine": 262
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyPrimaerGleason01.json",
@@ -1364,8 +1364,8 @@
     "fshName": "CoreNeedleBiopsyRatioPositiveCores",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 281,
-    "endLine": 298
+    "startLine": 285,
+    "endLine": 302
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsySecondaryGleasonPattern.json",
@@ -1436,16 +1436,16 @@
     "fshName": "CoreNeedleBiopsySeminalVesicleInvasion",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 358,
-    "endLine": 372
+    "startLine": 362,
+    "endLine": 376
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyTumorLengthTotal.json",
     "fshName": "CoreNeedleBiopsyTumorLengthTotal",
     "fshType": "Instance",
     "fshFile": "examples/CoreNeedleBiopsy/diagnostic-conclusion.fsh",
-    "startLine": 321,
-    "endLine": 338
+    "startLine": 325,
+    "endLine": 342
   },
   {
     "outputFile": "Observation-CoreNeedleBiopsyTumoranteil01.json",
@@ -1740,8 +1740,8 @@
     "fshName": "RadicalProstatectomyBladderNeckInvasion",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 371,
-    "endLine": 387
+    "startLine": 373,
+    "endLine": 389
   },
   {
     "outputFile": "Observation-RadicalProstatectomyDiagnosticConclusionGrouper.json",
@@ -1756,8 +1756,8 @@
     "fshName": "RadicalProstatectomyExtraprostaticExtension",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 294,
-    "endLine": 311
+    "startLine": 296,
+    "endLine": 313
   },
   {
     "outputFile": "Observation-RadicalProstatectomyGleasonScoreTotal.json",
@@ -1765,15 +1765,15 @@
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
     "startLine": 144,
-    "endLine": 163
+    "endLine": 165
   },
   {
     "outputFile": "Observation-RadicalProstatectomyGradingGroupISUP.json",
     "fshName": "RadicalProstatectomyGradingGroupISUP",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 188,
-    "endLine": 206
+    "startLine": 190,
+    "endLine": 208
   },
   {
     "outputFile": "Observation-RadicalProstatectomyHistologicalTypeICDO3.json",
@@ -1796,40 +1796,40 @@
     "fshName": "RadicalProstatectomyIntraductalCarcinoma",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 209,
-    "endLine": 225
+    "startLine": 211,
+    "endLine": 227
   },
   {
     "outputFile": "Observation-RadicalProstatectomyInvasiveCribriformCarcinoma.json",
     "fshName": "RadicalProstatectomyInvasiveCribriformCarcinoma",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 228,
-    "endLine": 245
+    "startLine": 230,
+    "endLine": 247
   },
   {
     "outputFile": "Observation-RadicalProstatectomyLymphNodesExamined.json",
     "fshName": "RadicalProstatectomyLymphNodesExamined",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 409,
-    "endLine": 427
+    "startLine": 411,
+    "endLine": 429
   },
   {
     "outputFile": "Observation-RadicalProstatectomyLymphNodesPositive.json",
     "fshName": "RadicalProstatectomyLymphNodesPositive",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 430,
-    "endLine": 448
+    "startLine": 432,
+    "endLine": 450
   },
   {
     "outputFile": "Observation-RadicalProstatectomyLymphovascularInvasion.json",
     "fshName": "RadicalProstatectomyLymphovascularInvasion",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 333,
-    "endLine": 349
+    "startLine": 335,
+    "endLine": 351
   },
   {
     "outputFile": "Observation-RadicalProstatectomyMacroscopicGrouper.json",
@@ -1908,16 +1908,16 @@
     "fshName": "RadicalProstatectomyMarginStatus",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 390,
-    "endLine": 406
+    "startLine": 392,
+    "endLine": 408
   },
   {
     "outputFile": "Observation-RadicalProstatectomyMaxTumorDiameter.json",
     "fshName": "RadicalProstatectomyMaxTumorDiameter",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 248,
-    "endLine": 268
+    "startLine": 250,
+    "endLine": 270
   },
   {
     "outputFile": "Observation-RadicalProstatectomyMorphologyFreeText.json",
@@ -1940,16 +1940,16 @@
     "fshName": "RadicalProstatectomyPercentageGleason45",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 166,
-    "endLine": 185
+    "startLine": 168,
+    "endLine": 187
   },
   {
     "outputFile": "Observation-RadicalProstatectomyPerineuralInfiltration.json",
     "fshName": "RadicalProstatectomyPerineuralInfiltration",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 352,
-    "endLine": 368
+    "startLine": 354,
+    "endLine": 370
   },
   {
     "outputFile": "Observation-RadicalProstatectomyPrimaryGleasonPattern.json",
@@ -1964,8 +1964,8 @@
     "fshName": "RadicalProstatectomyProstaticTissueInvolved",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 271,
-    "endLine": 291
+    "startLine": 273,
+    "endLine": 293
   },
   {
     "outputFile": "Observation-RadicalProstatectomySecondaryGleasonPattern.json",
@@ -1980,24 +1980,24 @@
     "fshName": "RadicalProstatectomySeminalVesicleInvasion",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 314,
-    "endLine": 330
+    "startLine": 316,
+    "endLine": 332
   },
   {
     "outputFile": "Observation-RadicalProstatectomyTNMpN.json",
     "fshName": "RadicalProstatectomyTNMpN",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 471,
-    "endLine": 487
+    "startLine": 473,
+    "endLine": 489
   },
   {
     "outputFile": "Observation-RadicalProstatectomyTNMpT.json",
     "fshName": "RadicalProstatectomyTNMpT",
     "fshType": "Instance",
     "fshFile": "examples/RadicalProstatectomy/diagnostic-conclusion.fsh",
-    "startLine": 451,
-    "endLine": 468
+    "startLine": 453,
+    "endLine": 470
   },
   {
     "outputFile": "Observation-TransurethralEnucleationDiagnosticConclusionGrouper.json",
@@ -2012,8 +2012,8 @@
     "fshName": "TransurethralEnucleationExtraprostaticExtension",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 244,
-    "endLine": 261
+    "startLine": 246,
+    "endLine": 263
   },
   {
     "outputFile": "Observation-TransurethralEnucleationGleasonScoreTotal.json",
@@ -2021,15 +2021,15 @@
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
     "startLine": 117,
-    "endLine": 136
+    "endLine": 138
   },
   {
     "outputFile": "Observation-TransurethralEnucleationGradingGroupISUP.json",
     "fshName": "TransurethralEnucleationGradingGroupISUP",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 161,
-    "endLine": 179
+    "startLine": 163,
+    "endLine": 181
   },
   {
     "outputFile": "Observation-TransurethralEnucleationHistologicalTypeICDO3.json",
@@ -2044,24 +2044,24 @@
     "fshName": "TransurethralEnucleationIntraductalCarcinoma",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 182,
-    "endLine": 198
+    "startLine": 184,
+    "endLine": 200
   },
   {
     "outputFile": "Observation-TransurethralEnucleationInvasiveCribriformCarcinoma.json",
     "fshName": "TransurethralEnucleationInvasiveCribriformCarcinoma",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 201,
-    "endLine": 218
+    "startLine": 203,
+    "endLine": 220
   },
   {
     "outputFile": "Observation-TransurethralEnucleationLymphovascularInvasion.json",
     "fshName": "TransurethralEnucleationLymphovascularInvasion",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 283,
-    "endLine": 299
+    "startLine": 285,
+    "endLine": 301
   },
   {
     "outputFile": "Observation-TransurethralEnucleationMacroscopicDepth.json",
@@ -2140,16 +2140,16 @@
     "fshName": "TransurethralEnucleationPercentageGleason45",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 139,
-    "endLine": 158
+    "startLine": 141,
+    "endLine": 160
   },
   {
     "outputFile": "Observation-TransurethralEnucleationPerineuralInfiltration.json",
     "fshName": "TransurethralEnucleationPerineuralInfiltration",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 302,
-    "endLine": 318
+    "startLine": 304,
+    "endLine": 320
   },
   {
     "outputFile": "Observation-TransurethralEnucleationPrimaryGleasonPattern.json",
@@ -2164,8 +2164,8 @@
     "fshName": "TransurethralEnucleationProstaticTissueInvolved",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 221,
-    "endLine": 241
+    "startLine": 223,
+    "endLine": 243
   },
   {
     "outputFile": "Observation-TransurethralEnucleationSecondaryGleasonPattern.json",
@@ -2180,8 +2180,8 @@
     "fshName": "TransurethralEnucleationSeminalVesicleInvasion",
     "fshType": "Instance",
     "fshFile": "examples/TransurethralEnucleation/diagnostic-conclusion.fsh",
-    "startLine": 264,
-    "endLine": 280
+    "startLine": 266,
+    "endLine": 282
   },
   {
     "outputFile": "Observation-TransurethralResectionBPHNodularity.json",
@@ -3166,5 +3166,45 @@
     "fshFile": "examples/TransurethralResection/specimens.fsh",
     "startLine": 518,
     "endLine": 547
+  },
+  {
+    "outputFile": "Task-CoreNeedleBiopsyTaskV1Requested.json",
+    "fshName": "CoreNeedleBiopsyTaskV1Requested",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/task.fsh",
+    "startLine": 24,
+    "endLine": 80
+  },
+  {
+    "outputFile": "Task-CoreNeedleBiopsyTaskV2Accepted.json",
+    "fshName": "CoreNeedleBiopsyTaskV2Accepted",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/task.fsh",
+    "startLine": 89,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Task-CoreNeedleBiopsyTaskV3InProgress.json",
+    "fshName": "CoreNeedleBiopsyTaskV3InProgress",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/task.fsh",
+    "startLine": 155,
+    "endLine": 212
+  },
+  {
+    "outputFile": "Task-CoreNeedleBiopsyTaskV4Completed.json",
+    "fshName": "CoreNeedleBiopsyTaskV4Completed",
+    "fshType": "Instance",
+    "fshFile": "examples/CoreNeedleBiopsy/task.fsh",
+    "startLine": 222,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Task-RadicalProstatectomyTask.json",
+    "fshName": "RadicalProstatectomyTask",
+    "fshType": "Instance",
+    "fshFile": "examples/RadicalProstatectomy/task.fsh",
+    "startLine": 13,
+    "endLine": 53
   }
 ]

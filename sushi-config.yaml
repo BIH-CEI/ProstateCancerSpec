@@ -62,6 +62,8 @@ pages:
     title: TUR-Enucleation Specimens
   tur-resection-specimens.md:
     title: TUR-Resection Specimens
+  workflow-scenarios.md:
+    title: Workflow Scenarios
   semantic-annotations.md:
     title: Semantic Annotations
   document-viewer.xml:
@@ -104,6 +106,7 @@ menu:
     DiagnosticConclusionGrouper: Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html
     DiagnosticReport: DiagnosticReport-CoreNeedleBiopsyReport.html
     Composition: Composition-CoreNeedleBiopsyComposition.html
+    Workflow Scenarios: workflow-scenarios.html
   Prostatectomy:
     ServiceRequest: ServiceRequest-RadicalProstatectomyReportRequest.html
     Specimens: prostatectomy-specimens.html

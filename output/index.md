@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://prostatecancerspec.org/ImplementationGuide/prostatecancerspec | *Version*:0.1.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ProstateCancerSpec |
+| Draft as of 2026-05-17 | *Computable Name*:ProstateCancerSpec |
 
 This Implementation Guide defines FHIR examples for prostate cancer pathology reporting based on the German Medical Informatics Initiative (MII) core datasets for pathology and oncology.
 
@@ -131,7 +131,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
   "name" : "ProstateCancerSpec",
   "title" : "Prostate Cancer Specification",
   "status" : "draft",
-  "date" : "2026-03-06T13:57:31+01:00",
+  "date" : "2026-05-17T11:35:36+02:00",
   "publisher" : "BIH CEI",
   "contact" : [{
     "name" : "BIH CEI",
@@ -152,7 +152,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -162,7 +162,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "de_medizininformatikinitiative_kerndatensatz_onkologie",
@@ -466,7 +466,7 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -1029,6 +1029,18 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
       },
       "name" : "BPH-Diagnose vor TUR-P",
       "description" : "Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/RadicalProstatectomyTask"
+      },
+      "name" : "Coordination Task Prostatektomie",
+      "description" : "Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path)",
       "exampleBoolean" : true
     },
     {
@@ -5004,6 +5016,54 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/CoreNeedleBiopsyTaskV1Requested"
+      },
+      "name" : "Task V1 – Auftrag erstellt (requested)",
+      "description" : "Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie).",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/CoreNeedleBiopsyTaskV2Accepted"
+      },
+      "name" : "Task V2 – Auftrag angenommen (accepted)",
+      "description" : "Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/CoreNeedleBiopsyTaskV3InProgress"
+      },
+      "name" : "Task V3 – In Bearbeitung (in-progress)",
+      "description" : "Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/CoreNeedleBiopsyTaskV4Completed"
+      },
+      "name" : "Task V4 – Abgeschlossen (completed)",
+      "description" : "Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -5562,6 +5622,15 @@ All three datasets were updated in 2024 to align with the 2022 WHO Classificatio
         }],
         "nameUrl" : "tur-resection-specimens.html",
         "title" : "TUR-Resection Specimens",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "workflow-scenarios.html"
+        }],
+        "nameUrl" : "workflow-scenarios.html",
+        "title" : "Workflow Scenarios",
         "generation" : "markdown"
       },
       {

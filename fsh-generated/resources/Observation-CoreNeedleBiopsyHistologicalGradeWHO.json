@@ -51,9 +51,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "4",
-        "system": "urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010",
-        "display": "Undifferenziert"
+        "code": "1155702002",
+        "system": "http://snomed.info/sct",
+        "display": "G4: Undifferentiated"
       }
     ]
   }

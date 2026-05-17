@@ -10,6 +10,7 @@
 * [TUR-Enucleation Specimens](tur-enucleation-specimens.md)
 * [Biopsy Specimens](biopsy-specimens.md)
 * [Prostatectomy Specimens](prostatectomy-specimens.md)
+* [Workflow Scenarios](workflow-scenarios.md)
 * [TUR-Resection Specimens](tur-resection-specimens.md)
 * [Semantic Annotations](semantic-annotations.md)
 
@@ -417,3 +418,8 @@
 * [TransurethralResectionSpecimenSlide04B (Specimen)](Specimen-TransurethralResectionSpecimenSlide04B.md)
 * [TransurethralResectionSpecimenSlide05A (Specimen)](Specimen-TransurethralResectionSpecimenSlide05A.md)
 * [TransurethralResectionSpecimenSlide05B (Specimen)](Specimen-TransurethralResectionSpecimenSlide05B.md)
+* [CoreNeedleBiopsyTaskV1Requested (Task)](Task-CoreNeedleBiopsyTaskV1Requested.md)
+* [CoreNeedleBiopsyTaskV2Accepted (Task)](Task-CoreNeedleBiopsyTaskV2Accepted.md)
+* [CoreNeedleBiopsyTaskV3InProgress (Task)](Task-CoreNeedleBiopsyTaskV3InProgress.md)
+* [CoreNeedleBiopsyTaskV4Completed (Task)](Task-CoreNeedleBiopsyTaskV4Completed.md)
+* [RadicalProstatectomyTask (Task)](Task-RadicalProstatectomyTask.md)

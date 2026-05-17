@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "prostatecancerspec",
   "ig-ver" : "0.1.0",
-  "date" : "Fri, 06 Mar, 2026 13:57:31 +0100",
-  "dateISO8601" : "2026-03-06T13:57:31+01:00",
-  "errs" : 15,
-  "warnings" : 546,
-  "hints" : 1541,
+  "date" : "Sun, 17 May, 2026 11:35:36 +0200",
+  "dateISO8601" : "2026-05-17T11:35:36+02:00",
+  "errs" : 4,
+  "warnings" : 554,
+  "hints" : 1890,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1953792328
+  "maxMemory" : 2019653272
 }

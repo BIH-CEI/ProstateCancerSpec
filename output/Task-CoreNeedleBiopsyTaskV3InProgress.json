@@ -1,0 +1,182 @@
+{
+  "resourceType" : "Task",
+  "id" : "CoreNeedleBiopsyTaskV3InProgress",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task CoreNeedleBiopsyTaskV3InProgress</b></p><a name=\"CoreNeedleBiopsyTaskV3InProgress\"> </a><a name=\"hcCoreNeedleBiopsyTaskV3InProgress\"> </a><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/CodeSystem/task-code fulfill}\">Fulfill the focal request</span></p><p><b>description</b>: Pathologische Aufarbeitung und Befunderstellung fuer 12 Prostatastanzbiopsien</p><p><b>focus</b>: <a href=\"ServiceRequest-CoreNeedleBiopsyReportRequest.html\">ServiceRequest Prostate Pathology biopsy report</a></p><p><b>for</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-CoreNeedleBiopsyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_001; status = finished; class = IMB (IMB)</a></p><p><b>executionPeriod</b>: 2024-01-15 14:00:00+0100 --&gt; (ongoing)</p><p><b>authoredOn</b>: 2024-01-15 08:00:00+0100</p><p><b>lastModified</b>: 2024-01-16 08:00:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-UrologistPractitioner.html\">Practitioner Andreas Weber </a></p><p><b>owner</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen01Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen02Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen03Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen04Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen05Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen06Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen07Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen08Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen09Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen10Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen11Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-CoreNeedleBiopsySpecimen12Part.html\">Specimen: extension = ; identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_001; status = available; type = Prostate tru-cut biopsy sample</a></p></blockquote></div>"
+  },
+  "status" : "in-progress",
+  "intent" : "order",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/task-code",
+      "code" : "fulfill",
+      "display" : "Fulfill the focal request"
+    }]
+  },
+  "description" : "Pathologische Aufarbeitung und Befunderstellung fuer 12 Prostatastanzbiopsien",
+  "focus" : {
+    "reference" : "ServiceRequest/CoreNeedleBiopsyReportRequest"
+  },
+  "for" : {
+    "reference" : "Patient/Patient1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/CoreNeedleBiopsyEncounter"
+  },
+  "executionPeriod" : {
+    "start" : "2024-01-15T14:00:00+01:00"
+  },
+  "authoredOn" : "2024-01-15T08:00:00+01:00",
+  "lastModified" : "2024-01-16T08:00:00+01:00",
+  "requester" : {
+    "reference" : "Practitioner/UrologistPractitioner"
+  },
+  "owner" : {
+    "reference" : "Practitioner/PathologistPractitioner"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen01Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen02Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen03Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen04Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen05Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen06Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen07Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen08Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen09Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen10Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen11Part"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123038009",
+        "display" : "Specimen (specimen)"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Specimen/CoreNeedleBiopsySpecimen12Part"
+    }
+  }]
+}

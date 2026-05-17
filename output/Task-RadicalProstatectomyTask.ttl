@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://prostatecancerspec.org/Task/RadicalProstatectomyTask> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadicalProstatectomyTask"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task RadicalProstatectomyTask</b></p><a name=\"RadicalProstatectomyTask\"> </a><a name=\"hcRadicalProstatectomyTask\"> </a><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/CodeSystem/task-code fulfill}\">Fulfill the focal request</span></p><p><b>description</b>: Pathologische Aufarbeitung und Befunderstellung fuer radikales Prostatektomiepraeparat mit pelviner Lymphadenektomie beidseits</p><p><b>focus</b>: <a href=\"ServiceRequest-RadicalProstatectomyReportRequest.html\">ServiceRequest Pathology synoptic report</a></p><p><b>for</b>: <a href=\"Patient-Patient1.html\">Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-RadicalProstatectomyEncounter.html\">Encounter: identifier = http://example.hospital.de/encounters#E_24_002; status = finished; class = IMP (IMP)</a></p><p><b>executionPeriod</b>: 2024-03-15 14:00:00+0100 --&gt; 2024-03-21 08:00:00+0100</p><p><b>authoredOn</b>: 2024-03-15 10:30:00+0100</p><p><b>lastModified</b>: 2024-03-21 08:00:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-UrologistPractitioner.html\">Practitioner Andreas Weber </a></p><p><b>owner</b>: <a href=\"Practitioner-PathologistPractitioner.html\">Practitioner Maria Schneider </a></p><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-RadicalProstatectomySpecimenPart.html\">Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from prostate obtained by radical prostatectomy (specimen)</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-RadicalProstatectomySpecimenLymphNodeRight.html\">Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from pelvic lymph node (specimen)</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 123038009}\">Specimen (specimen)</span></p><p><b>value</b>: <a href=\"Specimen-RadicalProstatectomySpecimenLymphNodeLeft.html\">Specimen: identifier = Placer Identifier,Filler Identifier; accessionIdentifier = https://pathologie.example-hospital.de/fhir/fn/befundbericht#E_24_002; status = available; type = Specimen from pelvic lymph node (specimen)</a></p></blockquote><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 60568-3}\">Pathology Synoptic report</span></td><td><a href=\"DiagnosticReport-RadicalProstatectomyReport.html\">Diagnostic Report for 'Pathology Synoptic report' for '-&gt;Hans Mueller  Male, DoB: 1955-08-15 ( http://example.hospital.de/patient-ids#PAT-2024-001)'</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/CodeSystem/task-code"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/CodeSystem/task-code>
+       ] ;
+       fhir:code [ fhir:v "fulfill" ] ;
+       fhir:display [ fhir:v "Fulfill the focal request" ]
+     ] )
+  ] ; # 
+  fhir:description [ fhir:v "Pathologische Aufarbeitung und Befunderstellung fuer radikales Prostatektomiepraeparat mit pelviner Lymphadenektomie beidseits"] ; # 
+  fhir:focus [
+     fhir:l <http://prostatecancerspec.org/ServiceRequest/RadicalProstatectomyReportRequest> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadicalProstatectomyReportRequest" ]
+  ] ; # 
+  fhir:for [
+     fhir:l <http://prostatecancerspec.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://prostatecancerspec.org/Encounter/RadicalProstatectomyEncounter> ;
+     fhir:reference [ fhir:v "Encounter/RadicalProstatectomyEncounter" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2024-03-15T14:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-03-21T08:00:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-03-15T10:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:lastModified [ fhir:v "2024-03-21T08:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:l <http://prostatecancerspec.org/Practitioner/UrologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/UrologistPractitioner" ]
+  ] ; # 
+  fhir:owner [
+     fhir:l <http://prostatecancerspec.org/Practitioner/PathologistPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/PathologistPractitioner" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         a sct:123038009 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "123038009" ] ;
+         fhir:display [ fhir:v "Specimen (specimen)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenPart> ;
+       fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenPart" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:123038009 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "123038009" ] ;
+         fhir:display [ fhir:v "Specimen (specimen)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeRight> ;
+       fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeRight" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:123038009 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "123038009" ] ;
+         fhir:display [ fhir:v "Specimen (specimen)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/Specimen/RadicalProstatectomySpecimenLymphNodeLeft> ;
+       fhir:reference [ fhir:v "Specimen/RadicalProstatectomySpecimenLymphNodeLeft" ]
+     ]
+  ] ) ; # 
+  fhir:output ( [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:60568-3 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "60568-3" ] ;
+         fhir:display [ fhir:v "Pathology Synoptic report" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://prostatecancerspec.org/DiagnosticReport/RadicalProstatectomyReport> ;
+       fhir:reference [ fhir:v "DiagnosticReport/RadicalProstatectomyReport" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -178,7 +178,9 @@ Description: "Total Gleason score in biopsy specimens"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
+// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
+// → SNOMED CT 58925000 "Gleason grade score 9 out of 10" (kontrolliert gegen TermServ, 2026-05-17)
+* valueCodeableConcept = $sct#58925000 "Gleason grade score 9 out of 10"
 * derivedFrom[0] = Reference(CoreNeedleBiopsyPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(CoreNeedleBiopsySecondaryGleasonPattern)
 
@@ -236,7 +238,9 @@ Description: "Histological differentiation grade according to WHO"
 * effectiveDateTime = "2023-03-15"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(CoreNeedleBiopsyReportRequest)
-* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010#4 "Undifferenziert"
+// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010#4 "Undifferenziert"
+// → SNOMED CT 1155702002 "G4: Undifferentiated" (kontrolliert gegen TermServ, 2026-05-17)
+* valueCodeableConcept = $sct#1155702002 "G4: Undifferentiated"
 
 // Number of Positive Cores Right
 Instance: CoreNeedleBiopsyPositiveCoresRight

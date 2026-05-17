@@ -11,7 +11,7 @@
   <name value="ProstateCancerSpec"/>
   <title value="Prostate Cancer Specification"/>
   <status value="draft"/>
-  <date value="2026-03-06T13:57:31+01:00"/>
+  <date value="2026-05-17T11:35:36+02:00"/>
   <publisher value="BIH CEI"/>
   <contact>
     <name value="BIH CEI"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.1"/>
+    <version value="7.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -38,7 +38,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_onkologie">
     <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie"/>
@@ -262,7 +262,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -726,6 +726,17 @@
       </reference>
       <name value="BPH-Diagnose vor TUR-P"/>
       <description value="Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/RadicalProstatectomyTask"/>
+      </reference>
+      <name value="Coordination Task Prostatektomie"/>
+      <description value="Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path)"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -4369,6 +4380,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/CoreNeedleBiopsyTaskV1Requested"/>
+      </reference>
+      <name value="Task V1 – Auftrag erstellt (requested)"/>
+      <description value="Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/CoreNeedleBiopsyTaskV2Accepted"/>
+      </reference>
+      <name value="Task V2 – Auftrag angenommen (accepted)"/>
+      <description value="Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/CoreNeedleBiopsyTaskV3InProgress"/>
+      </reference>
+      <name value="Task V3 – In Bearbeitung (in-progress)"/>
+      <description value="Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/CoreNeedleBiopsyTaskV4Completed"/>
+      </reference>
+      <name value="Task V4 – Abgeschlossen (completed)"/>
+      <description value="Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -4879,6 +4934,14 @@
         </extension>
         <nameUrl value="tur-resection-specimens.html"/>
         <title value="TUR-Resection Specimens"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="workflow-scenarios.html"/>
+        </extension>
+        <nameUrl value="workflow-scenarios.html"/>
+        <title value="Workflow Scenarios"/>
         <generation value="markdown"/>
       </page>
       <page>

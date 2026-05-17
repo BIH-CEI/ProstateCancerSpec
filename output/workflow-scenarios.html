@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Workflow Scenarios - Prostate Cancer Specification v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prostate Cancer Specification</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="clinical-context.html">Clinical Context</a>
+  </li>
+  <li>
+    <a href="motivation.html">Motivation</a>
+  </li>
+  <li>
+    <a href="semantic-annotations.html">Semantic Annotations</a>
+  </li>
+  <li>
+    <a href="document-viewer.html">Befund-Viewer</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Needle Biopsy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-CoreNeedleBiopsyReportRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="biopsy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyMicroscopicGrouper.html">MicroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-CoreNeedleBiopsyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+      <li>
+        <a href="workflow-scenarios.html">Workflow Scenarios</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Prostatectomy
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-RadicalProstatectomyReportRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="prostatectomy-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-RadicalProstatectomyReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-RadicalProstatectomyComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Enucleation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralEnucleationReportRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-enucleation-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralEnucleationReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralEnucleationComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">TUR Resection
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ServiceRequest-TransurethralResectionReportRequest.html">ServiceRequest</a>
+      </li>
+      <li>
+        <a href="tur-resection-specimens.html">Specimens</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionMacroscopicGrouper.html">MacroscopyGrouper</a>
+      </li>
+      <li>
+        <a href="Observation-TransurethralResectionDiagnosticConclusionGrouper.html">DiagnosticConclusionGrouper</a>
+      </li>
+      <li>
+        <a href="DiagnosticReport-TransurethralResectionReport.html">DiagnosticReport</a>
+      </li>
+      <li>
+        <a href="Composition-TransurethralResectionComposition.html">Composition</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Workflow Scenarios</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prostate Cancer Specification - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://prostatecancerspec.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Workflow Scenarios</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="workflow-scenarios">Workflow Scenarios</h3>
+
+<p>Diese Seite beschreibt die Sendeszenarien fuer Pathologie-Auftraege basierend auf dem <a href="https://build.fhir.org/ig/HL7/fhir-cow-ig/en/">Clinical Order Workflows (COW) IG</a> (v1.0.0-ballot). Der Fokus liegt auf der Kommunikation zwischen Placer (KIS/Urologie) und Filler (LIS/Pathologie) ueber Coordination Tasks.</p>
+
+<ul class="nav nav-tabs" id="workflowTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab">1 Happy Path</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">2 Probenabweisung</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">3 Nachforderung</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab">4 Ablehnung</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab5a-tab" data-toggle="tab" href="#tab5a" role="tab">5a Stornierung (vor)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab5b-tab" data-toggle="tab" href="#tab5b" role="tab">5b Stornierung (waehrend)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab">6 Gruppiert</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab">7 Info-Anforderung</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="workflowTabContent">
+
+<div class="tab-pane active in" id="tab1" role="tabpanel">
+<h4>Szenario 1: Einfacher Pathologie-Auftrag (Happy Path)</h4>
+<p>Der Standardfall: Kliniker sendet 12 Prostatastanzen zur histologischen Untersuchung, Pathologie erstellt Befund.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Placer sendet Transaction Bundle (Patient, ServiceRequest, Specimen, Task) an Filler</li>
+<li>Filler akzeptiert den Auftrag (Task: accepted)</li>
+<li>Filler beginnt Bearbeitung (Task: in-progress)</li>
+<li>Filler stellt Befund fertig und sendet Document Bundle zurueck (Task: completed)</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 1: Happy Path</strong></figcaption><img src="coreneedlebiopsy-workflow-happyPath.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 1" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab2" role="tabpanel">
+<h4>Szenario 2: Probenabweisung</h4>
+<p>Eine Stanze enthaelt kein verwertbares Prostatagewebe (nur Blut/Fett). Filler meldet Specimen als unsatisfactory.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag wird normal gesendet und angenommen</li>
+<li>Bei Makroskopie: Probe ist ungeeignet</li>
+<li>Filler setzt Specimen.status auf "unsatisfactory" mit condition</li>
+<li>Task wird auf "failed" gesetzt — kein DiagnosticReport erstellt</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 2: Probenabweisung</strong></figcaption><img src="coreneedlebiopsy-workflow-rejected-specimen.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 2" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab3" role="tabpanel">
+<h4>Szenario 3: Nachforderung / Reflex-Untersuchung</h4>
+<p>Initiale HE-Mikroskopie zeigt eine atypische Drusenproliferation (ASAP) in einer Stanze. Pathologe ordnet eigenstaendig Immunhistochemie (p63/AMACR) an, um Karzinom zu bestaetigen oder auszuschliessen.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag laeuft normal bis Mikroskopie</li>
+<li>Filler erstellt intern neuen ServiceRequest (basedOn: Original-SR) + Aliquot-Specimen (parent: Block)</li>
+<li>IHC-Aufarbeitung laeuft Filler-intern</li>
+<li>Gesamtbefund (HE + IHC) wird als Document Bundle zurueckgesendet</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 3: Nachforderung (IHC nach ASAP)</strong></figcaption><img src="coreneedlebiopsy-workflow-reflex-testing.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 3" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab4" role="tabpanel">
+<h4>Szenario 4: Auftragsablehnung durch Filler</h4>
+<p>Proben sind in Alkohol statt Formalin fixiert. Pathologie kann keine zuverlaessige Histologie durchfuehren und lehnt den Auftrag ab.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag wird gesendet (Task: requested)</li>
+<li>Filler prueft Proben bei Eingang — falsche Fixierung erkannt</li>
+<li>Filler setzt Task auf "rejected" mit statusReason</li>
+<li>Placer muss ggf. erneute Biopsie mit korrekter Fixierung veranlassen</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 4: Auftragsablehnung</strong></figcaption><img src="coreneedlebiopsy-workflow-order-declined.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 4" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab5a" role="tabpanel">
+<h4>Szenario 5a: Stornierung vor Arbeitsbeginn</h4>
+<p>Probenverwechslung erkannt. Placer storniert den Auftrag bevor der Filler mit der Bearbeitung begonnen hat.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag wird gesendet (Task: requested)</li>
+<li>Placer setzt Task direkt auf "cancelled" — kein formaler Cancellation-Request noetig</li>
+<li>ServiceRequest wird auf "revoked" gesetzt</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 5a: Stornierung vor Arbeitsbeginn</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-before.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 5a" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab5b" role="tabpanel">
+<h4>Szenario 5b: Stornierung waehrend laufender Arbeit</h4>
+<p>Patient verstirbt waehrend der Aufarbeitung. Placer fragt Stornierung an, Filler entscheidet ob Abbruch noch moeglich ist.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag laeuft bereits (Task: in-progress)</li>
+<li>Placer sendet einen Cancellation-Request-Task (code: abort, intent: proposal)</li>
+<li>Filler entscheidet:
+<ul>
+<li><strong>Akzeptiert:</strong> Coordination Task wird cancelled, ServiceRequest revoked</li>
+<li><strong>Abgelehnt:</strong> Workflow geht weiter wie Happy Path</li>
+</ul>
+</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 5b: Stornierung waehrend laufender Arbeit</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-during.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 5b" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab6" role="tabpanel">
+<h4>Szenario 6: Gruppierter Auftrag</h4>
+<p>Urologe bestellt gleichzeitig Standard-Histologie und molekularpathologisches BRCA1/2-Panel fuer dieselbe Biopsie-Einsendung. Zwei ServiceRequests mit gemeinsamer Requisition, zwei Tasks laufen parallel.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Placer sendet zwei ServiceRequests mit gleichem requisition-Identifier (G24-001)</li>
+<li>Filler bearbeitet beide parallel — Histologie (3-5 Tage) und MolPath (7-14 Tage)</li>
+<li>Histologie-Befund wird zuerst fertig (Task-A: completed)</li>
+<li>MolPath-Befund folgt spaeter (Task-B: completed)</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 6: Gruppierter Auftrag (Histologie + MolPath)</strong></figcaption><img src="coreneedlebiopsy-workflow-grouped-order.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 6" /></figure></div>
+</div>
+
+<div class="tab-pane" id="tab7" role="tabpanel">
+<h4>Szenario 7: Info-Anforderung</h4>
+<p>Pathologie erhaelt die Stanzen, aber klinische Angaben fehlen (PSA-Wert, MRT/PI-RADS, Vorbiopsie). Filler pausiert den Workflow und fordert Informationen an.</p>
+<p><strong>Ablauf:</strong></p>
+<ol>
+<li>Auftrag wird gesendet (Task: requested)</li>
+<li>Filler setzt Task.businessStatus auf "Awaiting Information"</li>
+<li>Filler sendet Communication mit konkreter Nachfrage</li>
+<li>Placer liefert Informationen (Observation, DocumentReference, Communication)</li>
+<li>Filler setzt Workflow fort (Task: accepted -&gt; in-progress -&gt; completed)</li>
+</ol>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 7: Info-Anforderung</strong></figcaption><img src="coreneedlebiopsy-workflow-info-request.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 7" /></figure></div>
+</div>
+
+</div>
+
+<script>
+$(function() {
+  $('#workflowTabs a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+});
+</script>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 17, 2026 11:35+0200">2026-05-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

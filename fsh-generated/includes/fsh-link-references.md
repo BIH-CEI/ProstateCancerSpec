@@ -22,6 +22,7 @@
 [TransurethralResectionBPHNodularity]: Observation-TransurethralResectionBPHNodularity.html
 [TransurethralEnucleationDiagnosisBPH]: Condition-TransurethralEnucleationDiagnosisBPH.html
 [TransurethralResectionDiagnosisBPH]: Condition-TransurethralResectionDiagnosisBPH.html
+[RadicalProstatectomyTask]: Task-RadicalProstatectomyTask.html
 [CoreNeedleBiopsyDiagnosticConclusionGrouper]: Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.html
 [TransurethralEnucleationDiagnosticConclusionGrouper]: Observation-TransurethralEnucleationDiagnosticConclusionGrouper.html
 [RadicalProstatectomyDiagnosticConclusionGrouper]: Observation-RadicalProstatectomyDiagnosticConclusionGrouper.html
@@ -353,6 +354,10 @@
 [TransurethralEnucleationSeminalVesicleInvasion]: Observation-TransurethralEnucleationSeminalVesicleInvasion.html
 [RadicalProstatectomySeminalVesicleInvasion]: Observation-RadicalProstatectomySeminalVesicleInvasion.html
 [CoreNeedleBiopsyReportRequest]: ServiceRequest-CoreNeedleBiopsyReportRequest.html
+[CoreNeedleBiopsyTaskV1Requested]: Task-CoreNeedleBiopsyTaskV1Requested.html
+[CoreNeedleBiopsyTaskV2Accepted]: Task-CoreNeedleBiopsyTaskV2Accepted.html
+[CoreNeedleBiopsyTaskV3InProgress]: Task-CoreNeedleBiopsyTaskV3InProgress.html
+[CoreNeedleBiopsyTaskV4Completed]: Task-CoreNeedleBiopsyTaskV4Completed.html
 [RadicalProstatectomyTNMpT]: Observation-RadicalProstatectomyTNMpT.html
 [RadicalProstatectomyTNMpN]: Observation-RadicalProstatectomyTNMpN.html
 [CoreNeedleBiopsyGleasonScoreTotal]: Observation-CoreNeedleBiopsyGleasonScoreTotal.html

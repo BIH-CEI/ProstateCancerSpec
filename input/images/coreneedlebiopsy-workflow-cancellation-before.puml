@@ -1,0 +1,42 @@
+@startuml CoreNeedleBiopsy_Workflow_CancellationBefore
+title Szenario 5a: Stornierung vor Arbeitsbeginn\nCore Needle Biopsy – Placer zieht Auftrag zurueck
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam sequenceArrowThickness 1.5
+skinparam sequenceLifeLineBorderColor #555555
+skinparam sequenceParticipantBorderColor #555555
+skinparam sequenceGroupBorderColor #AAAAAA
+skinparam sequenceGroupFontSize 11
+skinparam noteFontSize 10
+skinparam noteBackgroundColor #FFF8DC
+
+participant "**Placer (KIS)**\nUrologie" as Placer #BDD7EE
+participant "**Filler (LIS)**\nPathologie" as Filler #C6EFCE
+
+== Auftragserstellung (2024-01-15, 08:00) ==
+
+Placer -> Filler : POST Bundle (type: **transaction**)\n  Patient\n  ServiceRequest (status: **active**)\n  Specimen [x12] (status: **available**)\n  Task (status: **requested**, code: fulfill)
+activate Filler
+Filler --> Placer : Bundle (type: **transaction-response**)\n  201 Created
+deactivate Filler
+
+note over Placer, Filler : **Task V1: requested**
+
+== Stornierung vor Arbeitsbeginn (2024-01-15, 10:00) ==
+
+note over Placer : Klinische Entscheidung:\nz.B. Verwechslung der Proben,\nPatient zieht Einwilligung zurueck,\noder falsches Anforderungsformular
+
+Placer -> Filler : PUT Task\n(status: **cancelled**\nstatusReason: "Auftrag storniert\ndurch Auftraggeber")
+activate Filler
+Filler --> Placer : 200 OK
+deactivate Filler
+
+note over Placer, Filler #FFD7D7 : **Task V2: cancelled**\nAuftrag wurde zurueckgezogen\nbevor Filler mit Arbeit begonnen hat
+
+Placer -> Placer : ServiceRequest\n(status: **revoked**)
+
+note over Placer : Auftrag storniert.\nProben werden ggf.\nzurueckgesendet oder verworfen.
+
+@enduml

@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -123,6 +123,9 @@
       </li>
       <li>
         <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+      <li>
+        <a href="workflow-scenarios.html">Workflow Scenarios</a>
       </li>
     </ul>
   </li>
@@ -255,17 +258,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#diagnoses-and-differential-diagnoses" id="markdown-toc-diagnoses-and-differential-diagnoses">Diagnoses and Differential Diagnoses</a></li>
-  <li><a href="#patient-data" id="markdown-toc-patient-data">Patient Data</a></li>
-  <li><a href="#clinical-information" id="markdown-toc-clinical-information">Clinical Information</a></li>
-  <li><a href="#core-needle-biopsy" id="markdown-toc-core-needle-biopsy">Core Needle Biopsy</a></li>
-  <li><a href="#transurethral-resection" id="markdown-toc-transurethral-resection">Transurethral Resection</a></li>
-  <li><a href="#radical-prostatectomy" id="markdown-toc-radical-prostatectomy">Radical Prostatectomy</a></li>
+  <li><a href="#macroscopy" id="markdown-toc-macroscopy">Macroscopy</a></li>
+  <li><a href="#microscopy--histology--grading" id="markdown-toc-microscopy--histology--grading">Microscopy – Histology &amp; Grading</a></li>
+  <li><a href="#microscopy--tumor-extent-per-core" id="markdown-toc-microscopy--tumor-extent-per-core">Microscopy – Tumor Extent per Core</a></li>
+  <li><a href="#diagnostic-conclusion--invasions" id="markdown-toc-diagnostic-conclusion--invasions">Diagnostic Conclusion – Invasions</a></li>
+  <li><a href="#diagnostic-conclusion--tumor-quantification" id="markdown-toc-diagnostic-conclusion--tumor-quantification">Diagnostic Conclusion – Tumor Quantification</a></li>
+  <li><a href="#diagnostic-conclusion--resection-margins-rp-only" id="markdown-toc-diagnostic-conclusion--resection-margins-rp-only">Diagnostic Conclusion – Resection Margins (RP only)</a></li>
+  <li><a href="#diagnostic-conclusion--lymph-nodes-rp-only" id="markdown-toc-diagnostic-conclusion--lymph-nodes-rp-only">Diagnostic Conclusion – Lymph Nodes (RP only)</a></li>
+  <li><a href="#tnm-staging" id="markdown-toc-tnm-staging">TNM Staging</a></li>
+  <li><a href="#valuesets-known-codes" id="markdown-toc-valuesets-known-codes">ValueSets (Known Codes)</a>    <ul>
+      <li><a href="#vs-laterality" id="markdown-toc-vs-laterality">VS Laterality</a></li>
+      <li><a href="#vs-present--absent" id="markdown-toc-vs-present--absent">VS Present / Absent</a></li>
+      <li><a href="#vs-present--not-seen" id="markdown-toc-vs-present--not-seen">VS Present / Not seen</a></li>
+      <li><a href="#vs-yes--no" id="markdown-toc-vs-yes--no">VS Yes / No</a></li>
+      <li><a href="#vs-icd-o-3-morphology-prostate" id="markdown-toc-vs-icd-o-3-morphology-prostate">VS ICD-O-3 Morphology (Prostate)</a></li>
+      <li><a href="#vs-gleason-pattern" id="markdown-toc-vs-gleason-pattern">VS Gleason Pattern</a></li>
+      <li><a href="#vs-gleason-score" id="markdown-toc-vs-gleason-score">VS Gleason Score</a></li>
+      <li><a href="#vs-isup-grade-group" id="markdown-toc-vs-isup-grade-group">VS ISUP Grade Group</a></li>
+      <li><a href="#vs-who-differentiation-grade" id="markdown-toc-vs-who-differentiation-grade">VS WHO Differentiation Grade</a></li>
+      <li><a href="#vs-epe-location-standard" id="markdown-toc-vs-epe-location-standard">VS EPE Location (Standard)</a></li>
+      <li><a href="#vs-epe-location-granular-with-laterality" id="markdown-toc-vs-epe-location-granular-with-laterality">VS EPE Location (Granular, with Laterality)</a></li>
+      <li><a href="#vs-margin-status" id="markdown-toc-vs-margin-status">VS Margin Status</a></li>
+    </ul>
+  </li>
 </ul>
 
 </div>
-<h3 id="diagnoses-and-differential-diagnoses">Diagnoses and Differential Diagnoses</h3>
 
-<p>This section lists common diagnoses and differential diagnoses in prostate pathology with their respective ICD-O-3 morphology codes and SNOMED CT concept identifiers.</p>
+<p>This page lists all Observation.code elements used across the scenarios along with their value types and possible answers. For coded answers (valueCodeableConcept), the known codes are listed in separate tables below.</p>
+
+<p><strong>Abbreviations:</strong> CNB = Core Needle Biopsy, RP = Radical Prostatectomy, TUR = Transurethral Resection, ENUC = Transurethral Enucleation</p>
+
+<hr />
+
+<h3 id="diagnoses-and-differential-diagnoses">Diagnoses and Differential Diagnoses</h3>
 
 <h4 id="malignant-diagnoses">Malignant Diagnoses</h4>
 
@@ -274,47 +300,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <th>Diagnosis</th>
       <th>ICD-O-3</th>
-      <th>SNOMED CT</th>
+      <th>SCT Disorder</th>
+      <th>SCT Morphology</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Acinar adenocarcinoma</td>
       <td>8140/3</td>
-      <td>SCT 254900004</td>
+      <td>399490008</td>
+      <td>45410002</td>
     </tr>
     <tr>
       <td>Ductal adenocarcinoma</td>
       <td>8500/3</td>
-      <td>—</td>
+      <td>823017009</td>
+      <td>82711006</td>
     </tr>
     <tr>
-      <td>Intraductal carcinoma of the prostate (IDC-P)</td>
+      <td>Intraductal carcinoma (IDC-P)</td>
       <td>8500/2</td>
-      <td>SCT 1162814007</td>
+      <td>—</td>
+      <td>1162814007</td>
     </tr>
     <tr>
       <td>Invasive cribriform carcinoma (ICC)</td>
       <td>8201/3</td>
-      <td>SCT 1162816009</td>
+      <td>—</td>
+      <td>30156004</td>
     </tr>
     <tr>
       <td>Small cell carcinoma</td>
       <td>8041/3</td>
-      <td>—</td>
+      <td>1208457007</td>
+      <td>74364000</td>
     </tr>
     <tr>
       <td>Squamous cell carcinoma</td>
       <td>8070/3</td>
-      <td>—</td>
+      <td>399590005</td>
+      <td>1162767002</td>
     </tr>
     <tr>
       <td>Urothelial carcinoma</td>
       <td>8120/3</td>
       <td>—</td>
+      <td>27090000</td>
     </tr>
   </tbody>
 </table>
+
+<p><strong>Notes:</strong></p>
+<ul>
+  <li><em>SCT Disorder</em> = prostate-specific SNOMED CT concept (Site+Morphology), <em>SCT Morphology</em> = morphology only</li>
+  <li>IDC-P, ICC, urothelial carcinoma: no prostate-specific disorder code in SCT INT; post-coordination may be required</li>
+  <li>Acinar adenocarcinoma: alternatively <code class="language-plaintext highlighter-rouge">1259672003</code> (Primary adenocarcinoma of prostate)</li>
+  <li>Squamous cell carcinoma: <code class="language-plaintext highlighter-rouge">1162767002</code> is the active replacement for inactive <code class="language-plaintext highlighter-rouge">28899001</code></li>
+</ul>
 
 <h4 id="pre-malignant--borderline-entities">Pre-malignant / Borderline Entities</h4>
 
@@ -330,7 +372,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>High-grade prostatic intraepithelial neoplasia (HGPIN)</td>
       <td>8148/2</td>
-      <td>SCT 446747002</td>
+      <td>SCT 446711009</td>
     </tr>
     <tr>
       <td>Atypical small acinar proliferation (ASAP)</td>
@@ -359,1214 +401,907 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Chronic prostatitis</td>
       <td>—</td>
-      <td>SCT 9713002</td>
+      <td>SCT 19905009</td>
     </tr>
     <tr>
       <td>Granulomatous prostatitis</td>
       <td>—</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Normal prostatic tissue</td>
-      <td>—</td>
-      <td>—</td>
+      <td>SCT 61500009</td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<h3 id="patient-data">Patient Data</h3>
+<h3 id="macroscopy">Macroscopy</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
+      <th>Scenario</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Last name</td>
-      <td>FHIR Patient.name.family</td>
-      <td>String</td>
+      <td>LOINC 44619-5</td>
+      <td>Length of tissue core(s)</td>
+      <td>valueQuantity</td>
+      <td>cm</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>First name</td>
-      <td>FHIR Patient.name.given</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>Date of birth</td>
-      <td>FHIR Patient.birthDate</td>
-      <td>Date</td>
-    </tr>
-    <tr>
-      <td>Patient identifier</td>
-      <td>FHIR Patient.identifier</td>
-      <td>Identifier</td>
-    </tr>
-    <tr>
-      <td>Placer order number</td>
-      <td>FHIR ServiceRequest.requisition</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>Accession number</td>
-      <td>FHIR DiagnosticReport.identifier</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h3 id="clinical-information">Clinical Information</h3>
-
-<h4 id="general">General</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Specimen limited by absent clinical information</td>
-      <td>LOINC 84862-2 Specimen adequacy [Type]</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Specimen collection date</td>
-      <td>FHIR Specimen.collection.collectedDateTime</td>
-      <td>Date</td>
-    </tr>
-    <tr>
-      <td>Previous history of prostate cancer</td>
-      <td>LOINC 11329-0 History general Narrative</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Previous biopsies</td>
-      <td>LOINC 8684-6 Pathology study</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Pre-operative treatment</td>
-      <td>SCT 243120004 Preceding treatment</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="previous-therapy">Previous Therapy</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Previous chemotherapy</td>
-      <td>SCT 416608005 Drug therapy</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Previous radiotherapy</td>
-      <td>SCT 229070002 Radiation therapy</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Previous androgen deprivation therapy</td>
-      <td>SCT 276745004 Androgen deprivation therapy</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="clinical-context">Clinical Context</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pre-biopsy / pre-procedure serum PSA</td>
-      <td>LOINC 2857-1 PSA [Mass/volume] in Serum or Plasma</td>
-      <td>Quantity (ng/mL)</td>
-    </tr>
-    <tr>
-      <td>Clinical stage</td>
-      <td>LOINC 21908-9 Stage group.clinical Cancer</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Biopsy type</td>
-      <td>SCT 116147009 Biopsy procedure</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Surgical procedure</td>
-      <td>SCT 52765003 Prostatectomy</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Specimen / material category</td>
-      <td>LOINC 66117-3 Prostate Pathology report</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymph node groups removed</td>
-      <td>SCT 234262008 Lymph node group excision</td>
-      <td>Text</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="specimen-details">Specimen Details</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Specimen ID</td>
-      <td>FHIR Specimen.identifier</td>
-      <td>Identifier</td>
-    </tr>
-    <tr>
-      <td>Biopsy site location</td>
-      <td>LOINC 72369-2 Site of biopsy in Specimen</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Number of cores per container</td>
-      <td>LOINC 44652-6 Total number of cores in Tissue core</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Core length</td>
-      <td>LOINC 44619-5 Length of tissue core(s)</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Laterality</td>
-      <td>LOINC 20228-3 Anatomic part Laterality</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h3 id="core-needle-biopsy">Core Needle Biopsy</h3>
-
-<h4 id="findings-per-core">Findings per Core</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Histological tumor type (ICD-O-3)</td>
-      <td>LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Morphology narrative</td>
-      <td>LOINC 33731-1 Histology type in Cancer specimen Narrative</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Primary Gleason pattern</td>
-      <td>LOINC 44641-9 Gleason pattern.primary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Secondary Gleason pattern</td>
-      <td>LOINC 44642-7 Gleason pattern.secondary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Grade group (ISUP 2014 / WHO 2016)</td>
-      <td>SCT 1812491000004107 Histologic grade of primary malignant neoplasm of prostate by ISUP technique</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Proportion Gleason pattern 4</td>
-      <td>LOINC 94735-8 Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction]</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Proportion Gleason pattern 5</td>
-      <td>LOINC 94735-8</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Intraductal carcinoma of prostate (IDC-P)</td>
-      <td>SCT 1162814007 Non-infiltrating intraductal carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Invasive cribriform carcinoma (ICC)</td>
-      <td>SCT 1162816009 Invasive cribriform carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Ratio of positive to total cores</td>
-      <td>SCT 372303007 Ratio of blocks with prostate tumor to total number of blocks obtained</td>
-      <td>Fraction</td>
-    </tr>
-    <tr>
-      <td>Proportion of tumor-involved tissue per core</td>
-      <td>SCT 385396009 Percentage of prostatic tissue obtained by needle biopsy involved by carcinoma</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Tumor length per core</td>
-      <td>LOINC 44618-7 Total linear mm of carcinoma</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension</td>
-      <td>LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Seminal vesicle invasion</td>
-      <td>LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymphovascular invasion</td>
-      <td>LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Perineural invasion</td>
-      <td>LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Concomitant high-grade PIN</td>
-      <td>LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Atypical small acinar proliferation (ASAP)</td>
-      <td>SCT 16294321000119104 Atypical small acinar proliferation of prostate</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Granulomatous prostatitis</td>
-      <td>LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="case-level-findings">Case-Level Findings</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Number of cores, right</td>
-      <td>LOINC 44652-6 Total number of cores in Tissue core</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Number of cores, left</td>
       <td>LOINC 44652-6</td>
-      <td>Count</td>
+      <td>Total number of cores in Tissue core</td>
+      <td>valueQuantity</td>
+      <td>{count}</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>Histological tumor type (ICD-O-3)</td>
-      <td>LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer</td>
-      <td>Code</td>
+      <td>LOINC 20228-3</td>
+      <td>Anatomic part Laterality</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-laterality">VS Laterality</a></td>
+      <td>CNB, RP</td>
     </tr>
     <tr>
-      <td>Morphology narrative</td>
-      <td>LOINC 33731-1 Histology type in Cancer specimen Narrative</td>
-      <td>Text</td>
+      <td>LOINC 29638-4</td>
+      <td>Weight of Tissue</td>
+      <td>valueQuantity</td>
+      <td>g</td>
+      <td>RP, TUR, ENUC</td>
     </tr>
     <tr>
-      <td>ICD-O version</td>
-      <td>SCT 397005006 World Health Organization tumor classification</td>
-      <td>Text</td>
+      <td>LOINC 84894-5</td>
+      <td>Dimension [Length] of Specimen</td>
+      <td>valueQuantity</td>
+      <td>cm</td>
+      <td>RP, TUR, ENUC</td>
     </tr>
     <tr>
-      <td>Highest grade – Primary Gleason pattern</td>
-      <td>LOINC 44641-9 Gleason pattern.primary in Prostate tumor</td>
-      <td>Code</td>
+      <td>SCT 395557000</td>
+      <td>Tumor finding</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-absent">VS Present/Absent</a></td>
+      <td>RP</td>
     </tr>
     <tr>
-      <td>Highest grade – Secondary Gleason pattern</td>
-      <td>LOINC 44642-7 Gleason pattern.secondary in Prostate tumor</td>
-      <td>Code</td>
+      <td>LOINC 84895-2</td>
+      <td>Seminal vesicles [Presence] in Specimen</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-absent">VS Present/Absent</a></td>
+      <td>RP</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="microscopy--histology--grading">Microscopy – Histology &amp; Grading</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
+      <th>Scenario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LOINC 59847-4</td>
+      <td>Histology and Behavior ICD-O-3 Cancer</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-icdo3">VS ICD-O-3 Morphology</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Highest grade – Grade group</td>
-      <td>SCT 1812491000004107</td>
-      <td>Code</td>
+      <td>LOINC 33731-1</td>
+      <td>Histology type in Cancer specimen Narrative</td>
+      <td>valueString</td>
+      <td>Free text</td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Highest grade – Proportion Gleason pattern 4/5</td>
-      <td>LOINC 94735-8</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Overall grade – Primary Gleason pattern</td>
       <td>LOINC 44641-9</td>
-      <td>Code</td>
+      <td>Gleason pattern.primary in Prostate tumor</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-gleason-pattern">VS Gleason Pattern</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Overall grade – Secondary Gleason pattern</td>
       <td>LOINC 44642-7</td>
-      <td>Code</td>
+      <td>Gleason pattern.secondary in Prostate tumor</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-gleason-pattern">VS Gleason Pattern</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Overall Gleason score</td>
-      <td>LOINC 35266-6 Gleason score in Specimen Qualitative</td>
-      <td>Code</td>
+      <td>LOINC 35266-6</td>
+      <td>Gleason score in Specimen Qualitative</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-gleason-score">VS Gleason Score</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Overall grade – Grade group</td>
-      <td>SCT 1812491000004107</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Overall grade – Proportion Gleason pattern 4/5</td>
       <td>LOINC 94735-8</td>
-      <td>Quantity (%)</td>
+      <td>Prostate tumor area with Gleason pattern 4+5 [Area Fraction]</td>
+      <td>valueQuantity</td>
+      <td>%</td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>WHO histological differentiation grade</td>
-      <td>LOINC 21858-6 Grade Cancer</td>
-      <td>Code</td>
+      <td>SCT 1812491000004107</td>
+      <td>Histologic grade by ISUP technique</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-isup-grade-group">VS ISUP Grade Group</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Intraductal carcinoma of prostate (IDC-P)</td>
-      <td>SCT 1162814007 Non-infiltrating intraductal carcinoma</td>
-      <td>Code</td>
+      <td>LOINC 21858-6</td>
+      <td>Grade Cancer</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-who-grade">VS WHO Differentiation Grade</a></td>
+      <td>All</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="microscopy--tumor-extent-per-core">Microscopy – Tumor Extent per Core</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
+      <th>Scenario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LOINC 44618-7</td>
+      <td>Total linear mm of carcinoma</td>
+      <td>valueQuantity</td>
+      <td>mm</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>Invasive cribriform carcinoma (ICC)</td>
-      <td>SCT 1162816009</td>
-      <td>Code</td>
+      <td>LOINC 44654-2</td>
+      <td>Tissue involved by tumor in Prostate tumor</td>
+      <td>valueQuantity</td>
+      <td>%</td>
+      <td>CNB, RP, TUR, ENUC</td>
     </tr>
     <tr>
-      <td>Number of positive cores, total</td>
-      <td>LOINC 44651-8 Tissue cores.positive.carcinoma in Tissue core</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Number of positive cores, right</td>
-      <td>LOINC 44651-8</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Number of positive cores, left</td>
-      <td>LOINC 44651-8</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Ratio of positive to total cores</td>
-      <td>SCT 372303007</td>
-      <td>Fraction</td>
-    </tr>
-    <tr>
-      <td>Total tumor involvement</td>
-      <td>LOINC 44654-2 Tissue involved by tumor in Prostate tumor</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Total tumor length</td>
-      <td>LOINC 44618-7 Total linear mm of carcinoma</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Total core length</td>
-      <td>LOINC 44619-5 Length of tissue core(s)</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension</td>
-      <td>LOINC 44625-2</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension site</td>
-      <td>LOINC 84902-6 Extraprostatic extension site [Anatomy] of Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Seminal vesicle invasion</td>
-      <td>LOINC 44626-0</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymphovascular invasion</td>
-      <td>LOINC 33761-8</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Perineural invasion</td>
       <td>LOINC 92837-4</td>
-      <td>Code</td>
+      <td>Perineural invasion [Presence] in Cancer specimen</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Atypical small acinar proliferation (ASAP)</td>
-      <td>SCT 16294321000119104</td>
-      <td>Code</td>
+      <td>SCT 1162814007</td>
+      <td>Non-infiltrating intraductal carcinoma</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Concomitant high-grade PIN</td>
       <td>LOINC 94666-5</td>
-      <td>Code</td>
+      <td>High grade prostatic intraepithelial neoplasia [Presence]</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Granulomatous prostatitis</td>
+      <td>LOINC 94667-3</td>
+      <td>Atypical small acinar proliferation [Presence]</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-yes-no">VS Yes/No</a></td>
+      <td>CNB</td>
+    </tr>
+    <tr>
       <td>LOINC 94665-7</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Regression grade after previous therapy</td>
-      <td>LOINC 85319-2 Tumor regression grade [Type] in Cancer</td>
-      <td>Code</td>
+      <td>Granulomatous prostatitis [Presence]</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<h3 id="transurethral-resection">Transurethral Resection</h3>
-
-<h4 id="specimen">Specimen</h4>
+<h3 id="diagnostic-conclusion--invasions">Diagnostic Conclusion – Invasions</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
+      <th>Scenario</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Specimen weight</td>
-      <td>SCT 371506001 Specimen weight</td>
-      <td>Quantity (g)</td>
+      <td>LOINC 44625-2</td>
+      <td>Periprostatic fat invasion</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Specimen dimensions</td>
-      <td>LOINC 84894-5 Dimension [Length] of Specimen</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Proportion of chips embedded</td>
-      <td>LOINC 44654-2 Tissue involved by tumor in Prostate tumor</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Number of blocks</td>
-      <td>LOINC 44671-6 Blocks submitted [#] in Specimen by CAP cancer protocols</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Seminal vesicles present in specimen</td>
-      <td>LOINC 84895-2 Seminal vesicles [Presence] in Specimen</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="histology-and-findings">Histology and Findings</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Histological tumor type (ICD-O-3)</td>
-      <td>LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>ICD-O version</td>
-      <td>SCT 397005006 World Health Organization tumor classification</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Morphology narrative</td>
-      <td>LOINC 33731-1 Histology type in Cancer specimen Narrative</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Primary Gleason pattern</td>
-      <td>LOINC 44641-9 Gleason pattern.primary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Secondary Gleason pattern</td>
-      <td>LOINC 44642-7 Gleason pattern.secondary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Gleason score (ISUP 2014, WHO 2016)</td>
-      <td>LOINC 35266-6 Gleason score in Specimen Qualitative</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Grade group (ISUP 2014 / WHO 2016)</td>
-      <td>SCT 1812491000004107</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Proportion Gleason pattern 4/5</td>
-      <td>LOINC 94735-8</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>WHO histological differentiation grade</td>
-      <td>LOINC 21858-6 Grade Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraductal carcinoma of prostate (IDC-P)</td>
-      <td>SCT 1162814007 Non-infiltrating intraductal carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Invasive cribriform carcinoma (ICC)</td>
-      <td>SCT 1162816009 Invasive cribriform carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Tumor extent by area</td>
-      <td>LOINC 44654-2 Tissue involved by tumor in Prostate tumor</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Tumor extent by chips</td>
-      <td>LOINC 44654-2</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension</td>
-      <td>LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Seminal vesicle invasion</td>
-      <td>LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymphovascular invasion</td>
-      <td>LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Perineural invasion</td>
-      <td>LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Concomitant high-grade PIN</td>
-      <td>LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraductal carcinoma</td>
-      <td>SCT 1162814007</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Regression grade after previous therapy</td>
-      <td>LOINC 85319-2 Tumor regression grade [Type] in Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Granulomatous prostatitis</td>
-      <td>LOINC 94665-7 Granulomatous prostatitis [Presence] in Specimen by Microscopy</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h3 id="radical-prostatectomy">Radical Prostatectomy</h3>
-
-<h4 id="specimen-1">Specimen</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Specimen weight</td>
-      <td>LOINC 29638-4 Weight of Tissue</td>
-      <td>Quantity (g)</td>
-    </tr>
-    <tr>
-      <td>Prostate height</td>
-      <td>LOINC 84894-5 Dimension [Length] of Specimen</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Prostate width</td>
-      <td>LOINC 84894-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Prostate depth</td>
-      <td>LOINC 84894-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Number of blocks</td>
-      <td>LOINC 44671-6 Blocks submitted [#] in Specimen by CAP cancer protocols</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Number of large-format blocks</td>
-      <td>LOINC 44671-6</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Seminal vesicles present in specimen</td>
-      <td>LOINC 84895-2 Seminal vesicles [Presence] in Specimen</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymph nodes present in specimen</td>
-      <td>SCT 395557000 Tumor finding</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Laterality of lymph nodes</td>
-      <td>LOINC 20228-3 Anatomic part Laterality</td>
-      <td>Code</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="histology-and-tumor-extent">Histology and Tumor Extent</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Tumor location</td>
-      <td>SCT 363698007 Finding site</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Histological tumor type (ICD-O-3)</td>
-      <td>LOINC 59847-4 Histology and Behavior ICD-O-3 Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>ICD-O version</td>
-      <td>SCT 397005006 World Health Organization tumor classification</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Morphology narrative</td>
-      <td>LOINC 33731-1 Histology type in Cancer specimen Narrative</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Primary Gleason pattern</td>
-      <td>LOINC 44641-9 Gleason pattern.primary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Secondary Gleason pattern</td>
-      <td>LOINC 44642-7 Gleason pattern.secondary in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Gleason score (ISUP 2014, WHO 2016)</td>
-      <td>LOINC 35266-6 Gleason score in Specimen Qualitative</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Gleason score – how reported</td>
-      <td>SCT 397005006</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Grade group (ISUP 2014 / WHO 2016)</td>
-      <td>SCT 1812491000004107</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>ISUP grade – how reported</td>
-      <td>SCT 1812491000004107</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Proportion Gleason pattern 4/5</td>
-      <td>LOINC 94735-8</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>WHO histological differentiation grade</td>
-      <td>LOINC 21858-6 Grade Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraductal carcinoma of prostate (IDC-P)</td>
-      <td>SCT 1162814007 Non-infiltrating intraductal carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Invasive cribriform carcinoma (ICC)</td>
-      <td>SCT 1162816009 Invasive cribriform carcinoma</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraprostatic tumor extent – qualitative</td>
-      <td>LOINC 44654-2 Tissue involved by tumor in Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraprostatic tumor extent – proportion</td>
-      <td>LOINC 44654-2</td>
-      <td>Quantity (%)</td>
-    </tr>
-    <tr>
-      <td>Maximum tumor diameter</td>
-      <td>LOINC 33728-7 Size.maximum dimension in Tumor</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension</td>
-      <td>LOINC 44625-2 Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Extent of extraprostatic extension</td>
-      <td>LOINC 84902-6 Extraprostatic extension site [Anatomy] of Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Extraprostatic extension site</td>
       <td>LOINC 84902-6</td>
-      <td>Code</td>
+      <td>Extraprostatic extension site [Anatomy]</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-epe-location">VS EPE Location</a></td>
+      <td>CNB, RP</td>
     </tr>
     <tr>
-      <td>Bladder neck invasion</td>
-      <td>LOINC 84906-7 Bladder neck involvement of Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
+      <td>LOINC 44626-0</td>
       <td>Seminal vesicle invasion</td>
-      <td>LOINC 44626-0 Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Number of histologically confirmed distant metastases</td>
-      <td>SCT 128462008 Metastatic neoplasm</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Distant metastasis site</td>
-      <td>LOINC 21907-3 Metastatic site</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Regression grade after previous therapy</td>
-      <td>LOINC 85319-2 Tumor regression grade [Type] in Cancer</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymphovascular invasion</td>
-      <td>LOINC 33761-8 Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Lymphatic vessel invasion</td>
       <td>LOINC 33761-8</td>
-      <td>Code</td>
+      <td>Venous + Lymphatic small vessel invasion</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>All</td>
     </tr>
     <tr>
-      <td>Venous invasion</td>
-      <td>LOINC 33761-8</td>
-      <td>Code</td>
+      <td>LOINC 84906-7</td>
+      <td>Bladder neck involvement of Prostate tumor</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>RP</td>
     </tr>
     <tr>
-      <td>Perineural invasion</td>
-      <td>LOINC 92837-4 Perineural invasion [Presence] in Cancer specimen</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Intraductal carcinoma of prostate (IDC-P)</td>
-      <td>SCT 1162814007</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Concomitant high-grade PIN</td>
-      <td>LOINC 94666-5 High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy</td>
-      <td>Code</td>
+      <td>SCT 30156004</td>
+      <td>Cribriform carcinoma (invasive)</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-present-not-seen">VS Present/Not seen</a></td>
+      <td>RP</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="macroscopic-resection-margins">Macroscopic Resection Margins</h4>
+<hr />
+
+<h3 id="diagnostic-conclusion--tumor-quantification">Diagnostic Conclusion – Tumor Quantification</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
+      <th>Scenario</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Capsular margin distance</td>
-      <td>LOINC 33729-5 Distance of margin from tumor [Length] in Specimen</td>
-      <td>Quantity (mm)</td>
+      <td>LOINC 44651-8</td>
+      <td>Tissue cores.positive.carcinoma in Tissue core</td>
+      <td>valueQuantity</td>
+      <td>{count}</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>Posterior margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
+      <td>SCT 372303007</td>
+      <td>Ratio of blocks with prostate tumor to total</td>
+      <td>valueRatio</td>
+      <td>Ratio</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>Posterolateral margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
+      <td>LOINC 44618-7</td>
+      <td>Total linear mm of carcinoma</td>
+      <td>valueQuantity</td>
+      <td>mm</td>
+      <td>CNB</td>
     </tr>
     <tr>
-      <td>Apical margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
+      <td>LOINC 33728-7</td>
+      <td>Size.maximum dimension in Tumor</td>
+      <td>valueQuantity</td>
+      <td>mm</td>
+      <td>RP</td>
     </tr>
     <tr>
-      <td>Proximal-vesical margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Distal-urethral margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
+      <td>LOINC 44654-2</td>
+      <td>Tissue involved by tumor in Prostate tumor</td>
+      <td>valueQuantity</td>
+      <td>%</td>
+      <td>RP, TUR, ENUC</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="microscopic-resection-margins">Microscopic Resection Margins</h4>
+<hr />
+
+<h3 id="diagnostic-conclusion--resection-margins-rp-only">Diagnostic Conclusion – Resection Margins (RP only)</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Capsular margin distance</td>
-      <td>LOINC 33729-5 Distance of margin from tumor [Length] in Specimen</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Posterior margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Posterolateral margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Apical margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Proximal-vesical margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
-    </tr>
-    <tr>
-      <td>Distal-urethral margin distance</td>
-      <td>LOINC 33729-5</td>
-      <td>Quantity (mm)</td>
+      <td>LOINC 84905-9</td>
+      <td>Margin involvement [Type] in Prostate tumor</td>
+      <td>valueCodeableConcept</td>
+      <td>→ <a href="#vs-margin-status">VS Margin Status</a></td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="surgical-margin-status">Surgical Margin Status</h4>
+<hr />
+
+<h3 id="diagnostic-conclusion--lymph-nodes-rp-only">Diagnostic Conclusion – Lymph Nodes (RP only)</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Observation.code</th>
+      <th>Display</th>
+      <th>value[x]</th>
+      <th>Value Domain</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Overall margin status</td>
-      <td>LOINC 84905-9 Margin involvement [Type] in Prostate tumor</td>
-      <td>Code</td>
+      <td>LOINC 21894-1</td>
+      <td>Regional lymph nodes examined [#] Specimen</td>
+      <td>valueQuantity</td>
+      <td>{count}</td>
     </tr>
     <tr>
-      <td>Positive margin site</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Margin positivity type</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Capsular margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Posterior margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Posterolateral margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Anterior margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Apical margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Proximal-vesical margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Distal-urethral margin status</td>
-      <td>LOINC 84905-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Extent of capsular penetration</td>
-      <td>LOINC 84903-4 Capsular penetration extent [Type] of Prostate tumor</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Gleason pattern at surgical margin</td>
-      <td>LOINC 44641-9</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Capsule present</td>
-      <td>SCT 395557000 Tumor finding</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>R classification</td>
-      <td>SCT 385389009 Residual tumor classification</td>
-      <td>Code</td>
+      <td>LOINC 21893-3</td>
+      <td>Regional lymph nodes positive [#] Specimen</td>
+      <td>valueQuantity</td>
+      <td>{count}</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="regional-lymph-nodes">Regional Lymph Nodes</h4>
+<hr />
+
+<h3 id="tnm-staging">TNM Staging</h3>
+
+<p>TNM is represented using <strong>MII Oncology profiles</strong> (not as Patho-Findings):</p>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Profile</th>
+      <th>Description</th>
+      <th>Scenario</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Overall lymph node status</td>
-      <td>SCT 395557000 Tumor finding</td>
-      <td>Code</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-onko-tnm-t-kategorie</code></td>
+      <td>Primary tumor (cT / pT)</td>
+      <td>CNB (cT), RP, TUR, ENUC (pT)</td>
     </tr>
     <tr>
-      <td>Number of examined regional lymph nodes</td>
-      <td>LOINC 21894-1 Regional lymph nodes examined [#] Specimen</td>
-      <td>Count</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-onko-tnm-n-kategorie</code></td>
+      <td>Regional lymph nodes (cN / pN)</td>
+      <td>CNB (cN), RP (pN)</td>
     </tr>
     <tr>
-      <td>Number of positive regional lymph nodes</td>
-      <td>LOINC 21893-3 Regional lymph nodes positive [#] Specimen</td>
-      <td>Count</td>
-    </tr>
-    <tr>
-      <td>Obturator lymph node status, right</td>
-      <td>SCT 68171009 Lymph node group finding</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Obturator lymph node status, left</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Internal iliac lymph node status, right</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Internal iliac lymph node status, left</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>External iliac lymph node status, right</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>External iliac lymph node status, left</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Presacral lymph node status</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Common iliac lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Hypogastric lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Obturator lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>External iliac lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Internal iliac lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Sacral lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Promontory lymph node involvement</td>
-      <td>SCT 68171009</td>
-      <td>Code</td>
-    </tr>
-    <tr>
-      <td>Extent of largest metastatic deposit</td>
-      <td>LOINC 33728-7 Size.maximum dimension in Tumor</td>
-      <td>Quantity (mm)</td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-onko-tnm-m-kategorie</code></td>
+      <td>Distant metastases (cM / pM)</td>
+      <td>CNB (cM), RP (pM)</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="pathological-tnm-staging-uicc-8th-ed">Pathological TNM Staging (UICC 8th ed.)</h4>
+<p>Codes and ValueSets are defined in the <a href="https://simplifier.net/medizininformatikinitiative-modulonkologie">MII Oncology IG</a> (CodeSystem: <code class="language-plaintext highlighter-rouge">https://www.uicc.org/resources/tnm</code>).</p>
+
+<hr />
+
+<hr />
+
+<h2 id="valuesets-known-codes">ValueSets (Known Codes)</h2>
+
+<p><a id="vs-laterality"></a></p>
+<h3 id="vs-laterality">VS Laterality</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Data Element</th>
-      <th>Semantic Annotation</th>
-      <th>Datatype</th>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>TNM descriptors</td>
-      <td>SCT 1162421007 Pathologic TNM stage descriptor</td>
-      <td>Code</td>
+      <td>24028007</td>
+      <td>SNOMED CT</td>
+      <td>Right (qualifier value)</td>
     </tr>
     <tr>
-      <td>pT category</td>
-      <td>LOINC 21899-0 Primary tumor.pathology Cancer</td>
-      <td>Code</td>
+      <td>7771000</td>
+      <td>SNOMED CT</td>
+      <td>Left (qualifier value)</td>
     </tr>
     <tr>
-      <td>pN category</td>
-      <td>LOINC 21900-6 Regional lymph nodes.pathology [Class] Cancer</td>
-      <td>Code</td>
+      <td>51440002</td>
+      <td>SNOMED CT</td>
+      <td>Right and left (qualifier value)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-present-absent"></a></p>
+<h3 id="vs-present--absent">VS Present / Absent</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>52101004</td>
+      <td>SNOMED CT</td>
+      <td>Present (qualifier value)</td>
     </tr>
     <tr>
-      <td>pM category</td>
-      <td>LOINC 21901-4 Distant metastases.pathology [Class] Cancer</td>
-      <td>Code</td>
+      <td>2667000</td>
+      <td>SNOMED CT</td>
+      <td>Absent (qualifier value)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-present-not-seen"></a></p>
+<h3 id="vs-present--not-seen">VS Present / Not seen</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>52101004</td>
+      <td>SNOMED CT</td>
+      <td>Present (qualifier value)</td>
+    </tr>
+    <tr>
+      <td>47492008</td>
+      <td>SNOMED CT</td>
+      <td>Not seen (qualifier value)</td>
+    </tr>
+    <tr>
+      <td>2667000</td>
+      <td>SNOMED CT</td>
+      <td>Absent (qualifier value)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-yes-no"></a></p>
+<h3 id="vs-yes--no">VS Yes / No</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>373066001</td>
+      <td>SNOMED CT</td>
+      <td>Yes (qualifier value)</td>
+    </tr>
+    <tr>
+      <td>373067005</td>
+      <td>SNOMED CT</td>
+      <td>No (qualifier value)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-icdo3"></a></p>
+<h3 id="vs-icd-o-3-morphology-prostate">VS ICD-O-3 Morphology (Prostate)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display (Prostate context)</th>
+      <th>BfArM Display (official)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8140/3</td>
+      <td>ICD-O-3</td>
+      <td>Acinar adenocarcinoma</td>
+      <td>Adenokarzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8500/3</td>
+      <td>ICD-O-3</td>
+      <td>Ductal adenocarcinoma</td>
+      <td>Invasives duktales Karzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8500/2</td>
+      <td>ICD-O-3</td>
+      <td>Intraductal carcinoma</td>
+      <td>Nichtinfiltrierendes intraduktales Karzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8201/3</td>
+      <td>ICD-O-3</td>
+      <td>Cribriform carcinoma</td>
+      <td>Kribriformes Karzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8041/3</td>
+      <td>ICD-O-3</td>
+      <td>Small cell carcinoma</td>
+      <td>Kleinzelliges Karzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8070/3</td>
+      <td>ICD-O-3</td>
+      <td>Squamous cell carcinoma</td>
+      <td>Plattenepithelkarzinom o.n.A.</td>
+    </tr>
+    <tr>
+      <td>8120/3</td>
+      <td>ICD-O-3</td>
+      <td>Urothelial carcinoma</td>
+      <td>Uebergangszellkarzinom o.n.A.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-gleason-pattern"></a></p>
+<h3 id="vs-gleason-pattern">VS Gleason Pattern</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>369770006</td>
+      <td>SNOMED CT</td>
+      <td>Gleason Pattern 1 (finding)</td>
+    </tr>
+    <tr>
+      <td>369771005</td>
+      <td>SNOMED CT</td>
+      <td>Gleason Pattern 2 (finding)</td>
+    </tr>
+    <tr>
+      <td>369772003</td>
+      <td>SNOMED CT</td>
+      <td>Gleason Pattern 3 (finding)</td>
+    </tr>
+    <tr>
+      <td>369773008</td>
+      <td>SNOMED CT</td>
+      <td>Gleason Pattern 4 (finding)</td>
+    </tr>
+    <tr>
+      <td>369774004</td>
+      <td>SNOMED CT</td>
+      <td>Gleason Pattern 5 (finding)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-gleason-score"></a></p>
+<h3 id="vs-gleason-score">VS Gleason Score</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>49878003</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 2 out of 10</td>
+    </tr>
+    <tr>
+      <td>46677009</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 3 out of 10</td>
+    </tr>
+    <tr>
+      <td>18430005</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 4 out of 10</td>
+    </tr>
+    <tr>
+      <td>74013009</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 5 out of 10</td>
+    </tr>
+    <tr>
+      <td>84556003</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 6 out of 10</td>
+    </tr>
+    <tr>
+      <td>57403001</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 7 out of 10</td>
+    </tr>
+    <tr>
+      <td>33013007</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 8 out of 10</td>
+    </tr>
+    <tr>
+      <td>58925000</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 9 out of 10</td>
+    </tr>
+    <tr>
+      <td>24514009</td>
+      <td>SNOMED CT</td>
+      <td>Gleason grade score 10 out of 10</td>
+    </tr>
+    <tr>
+      <td>860741001</td>
+      <td>SNOMED CT</td>
+      <td>Gleason score X (indeterminate)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-isup-grade-group"></a></p>
+<h3 id="vs-isup-grade-group">VS ISUP Grade Group</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1279715000</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 1 (Gleason score 3 + 3 = 6)</td>
+    </tr>
+    <tr>
+      <td>1279714001</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 2 (Gleason score 3 + 4 = 7)</td>
+    </tr>
+    <tr>
+      <td>1279716004</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 3 (Gleason score 4 + 3 = 7)</td>
+    </tr>
+    <tr>
+      <td>1279717008</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 4 (Gleason score 4 + 4 = 8)</td>
+    </tr>
+    <tr>
+      <td>1279718003</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 4 (Gleason score 3 + 5 = 8)</td>
+    </tr>
+    <tr>
+      <td>1279719006</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 4 (Gleason score 5 + 3 = 8)</td>
+    </tr>
+    <tr>
+      <td>1279720000</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 5 (Gleason score 4 + 5 = 9)</td>
+    </tr>
+    <tr>
+      <td>1279721001</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 5 (Gleason score 5 + 4 = 9)</td>
+    </tr>
+    <tr>
+      <td>1279722008</td>
+      <td>SNOMED CT</td>
+      <td>ISUP grade group 5 (Gleason score 5 + 5 = 10)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-who-grade"></a></p>
+<h3 id="vs-who-differentiation-grade">VS WHO Differentiation Grade</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1155701009</td>
+      <td>SNOMED CT</td>
+      <td>G1: Well differentiated</td>
+    </tr>
+    <tr>
+      <td>1155703007</td>
+      <td>SNOMED CT</td>
+      <td>G2: Moderately differentiated</td>
+    </tr>
+    <tr>
+      <td>1155704001</td>
+      <td>SNOMED CT</td>
+      <td>G3: Poorly differentiated</td>
+    </tr>
+    <tr>
+      <td>1155702002</td>
+      <td>SNOMED CT</td>
+      <td>G4: Undifferentiated</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-epe-location"></a></p>
+<h3 id="vs-epe-location-standard">VS EPE Location (Standard)</h3>
+
+<p>Anatomical location of extraprostatic extension (EPE). Note: "posterolateral" (neurovascular bundle region) maps to SCT 25800008 "Structure of inferolateral surface of prostate" — SNOMED CT uses the anatomically more precise term "inferolateral".</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>68756004</td>
+      <td>SNOMED CT</td>
+      <td>Structure of apex of prostate</td>
+    </tr>
+    <tr>
+      <td>36082003</td>
+      <td>SNOMED CT</td>
+      <td>Base of prostate</td>
+    </tr>
+    <tr>
+      <td>70371002</td>
+      <td>SNOMED CT</td>
+      <td>Structure of anterior surface of prostate</td>
+    </tr>
+    <tr>
+      <td>5026003</td>
+      <td>SNOMED CT</td>
+      <td>Structure of posterior surface of prostate</td>
+    </tr>
+    <tr>
+      <td>25800008</td>
+      <td>SNOMED CT</td>
+      <td>Structure of inferolateral surface of prostate</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="vs-epe-location-granular-with-laterality">VS EPE Location (Granular, with Laterality)</h3>
+
+<p>Use only when pathology reports provide this level of granularity (e.g. RP specimens with quadrant mapping).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>716938006</td>
+      <td>SNOMED CT</td>
+      <td>Right posterolateral apical peripheral zone of prostate</td>
+    </tr>
+    <tr>
+      <td>716939003</td>
+      <td>SNOMED CT</td>
+      <td>Left posterolateral apical peripheral zone of prostate</td>
+    </tr>
+    <tr>
+      <td>716906001</td>
+      <td>SNOMED CT</td>
+      <td>Right posterolateral basal peripheral zone of prostate</td>
+    </tr>
+    <tr>
+      <td>716907005</td>
+      <td>SNOMED CT</td>
+      <td>Left posterolateral basal peripheral zone of prostate</td>
+    </tr>
+    <tr>
+      <td>716921007</td>
+      <td>SNOMED CT</td>
+      <td>Right posterolateral middle peripheral zone of prostate</td>
+    </tr>
+    <tr>
+      <td>716922000</td>
+      <td>SNOMED CT</td>
+      <td>Left posterolateral middle peripheral zone of prostate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a id="vs-margin-status"></a></p>
+<h3 id="vs-margin-status">VS Margin Status</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>System</th>
+      <th>Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>55182004</td>
+      <td>SNOMED CT</td>
+      <td>Surgical margin uninvolved by tumor</td>
+    </tr>
+    <tr>
+      <td>61026006</td>
+      <td>SNOMED CT</td>
+      <td>Surgical margin involved by tumor</td>
     </tr>
   </tbody>
 </table>
@@ -1590,7 +1325,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 13:57+0100">2026-03-06</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 17, 2026 11:35+0200">2026-05-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

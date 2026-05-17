@@ -6,7 +6,7 @@
 
 ## Example Observation: Histological Differentiation Grade WHO - Biopsy
 
-Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding)
+Profile: [MII PR Patho Finding](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding) version: 2026.0.0
 
 **basedOn**: [ServiceRequest Prostate Pathology biopsy report](ServiceRequest-CoreNeedleBiopsyReportRequest.md)
 
@@ -22,7 +22,7 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
 
 **performer**: [Practitioner Maria Schneider ](Practitioner-PathologistPractitioner.md)
 
-**value**: Undifferenziert
+**value**: G4: Undifferentiated
 
 
 
@@ -67,9 +67,9 @@ Profile: [MII PR Patho Findingversion: null2026.0.0)](https://simplifier.net/res
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010",
-      "code" : "4",
-      "display" : "Undifferenziert"
+      "system" : "http://snomed.info/sct",
+      "code" : "1155702002",
+      "display" : "G4: Undifferentiated"
     }]
   }
 }

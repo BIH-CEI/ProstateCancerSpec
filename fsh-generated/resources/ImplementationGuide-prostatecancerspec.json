@@ -245,6 +245,14 @@
       },
       {
         "reference": {
+          "reference": "Task/RadicalProstatectomyTask"
+        },
+        "name": "Coordination Task Prostatektomie",
+        "description": "Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/CoreNeedleBiopsyDiagnosticConclusionGrouper"
         },
         "name": "Diagnostic Conclusion Grouper - Biopsy",
@@ -2891,6 +2899,38 @@
       },
       {
         "reference": {
+          "reference": "Task/CoreNeedleBiopsyTaskV1Requested"
+        },
+        "name": "Task V1 – Auftrag erstellt (requested)",
+        "description": "Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/CoreNeedleBiopsyTaskV2Accepted"
+        },
+        "name": "Task V2 – Auftrag angenommen (accepted)",
+        "description": "Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/CoreNeedleBiopsyTaskV3InProgress"
+        },
+        "name": "Task V3 – In Bearbeitung (in-progress)",
+        "description": "Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/CoreNeedleBiopsyTaskV4Completed"
+        },
+        "name": "Task V4 – Abgeschlossen (completed)",
+        "description": "Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/RadicalProstatectomyTNMpT"
         },
         "name": "TNM Primary Tumor (pT) - Prostatectomy",
@@ -3256,6 +3296,11 @@
         {
           "nameUrl": "tur-resection-specimens.html",
           "title": "TUR-Resection Specimens",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "workflow-scenarios.html",
+          "title": "Workflow Scenarios",
           "generation": "markdown"
         },
         {

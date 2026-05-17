@@ -158,7 +158,9 @@ Description: "Total Gleason score in prostatectomy specimen"
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
-* valueCodeableConcept = urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999007 "Gleason grade (Score) 7"
+// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999007 "Gleason grade (Score) 7"
+// → SNOMED CT 57403001 "Gleason grade score 7 out of 10" (kontrolliert gegen TermServ, 2026-05-17)
+* valueCodeableConcept = $sct#57403001 "Gleason grade score 7 out of 10"
 * derivedFrom[0] = Reference(RadicalProstatectomyPrimaryGleasonPattern)
 * derivedFrom[+] = Reference(RadicalProstatectomySecondaryGleasonPattern)
 

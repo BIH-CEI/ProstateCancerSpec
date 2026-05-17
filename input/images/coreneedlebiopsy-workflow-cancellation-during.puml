@@ -1,0 +1,80 @@
+@startuml CoreNeedleBiopsy_Workflow_CancellationDuring
+title Szenario 5b: Stornierung waehrend laufender Arbeit\nCore Needle Biopsy – Formaler Cancellation Request
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam sequenceArrowThickness 1.5
+skinparam sequenceLifeLineBorderColor #555555
+skinparam sequenceParticipantBorderColor #555555
+skinparam sequenceGroupBorderColor #AAAAAA
+skinparam sequenceGroupFontSize 11
+skinparam noteFontSize 10
+skinparam noteBackgroundColor #FFF8DC
+
+participant "**Placer (KIS)**\nUrologie" as Placer #BDD7EE
+participant "**Filler (LIS)**\nPathologie" as Filler #C6EFCE
+
+== Auftragserstellung (2024-01-15, 08:00) ==
+
+Placer -> Filler : POST Bundle (type: **transaction**)\n  Patient\n  ServiceRequest (status: **active**)\n  Specimen [x12] (status: **available**)\n  Task (status: **requested**, code: fulfill)
+activate Filler
+Filler --> Placer : Bundle (type: **transaction-response**)\n  201 Created
+deactivate Filler
+
+note over Placer, Filler : **Coordination Task V1: requested**
+
+== Probenempfang & Annahme (2024-01-15, 14:00) ==
+
+Filler -> Placer : PUT Task (status: **accepted**)
+
+note over Placer, Filler : **Coordination Task V2: accepted**
+
+== Bearbeitung beginnt (2024-01-16, 08:00) ==
+
+Filler -> Placer : PUT Task (status: **in-progress**)
+
+note over Placer, Filler : **Coordination Task V3: in-progress**\nFiller hat mit Makroskopie begonnen
+
+== Stornierungsanfrage (2024-01-17, 09:00) ==
+
+note over Placer : Klinische Entscheidung:\nz.B. Patient verstorben,\noder Doppelbefundung erkannt
+
+Placer -> Filler : POST Task **(Cancellation-Request)**\n(status: **requested**\nintent: **proposal**\ncode: **abort**\nfocus: Coordination-Task\nstatusReason: "Stornierung\nangefragt durch Auftraggeber")
+activate Filler
+Filler --> Placer : 201 Created
+deactivate Filler
+
+note over Placer, Filler : **Neuer Task: Cancellation-Request**\nDer Filler entscheidet ob\ndie Stornierung moeglich ist
+
+== Filler entscheidet ==
+
+alt Stornierung akzeptiert
+  Filler -> Filler : Arbeit kann\nabgebrochen werden\n(z.B. Schnitte noch\nnicht angefertigt)
+
+  Filler -> Placer : PUT Cancellation-Request-Task\n(status: **accepted**)
+  activate Placer
+  Placer --> Filler : 200 OK
+  deactivate Placer
+
+  Filler -> Placer : PUT Coordination-Task\n(status: **cancelled**\nstatusReason: "Storniert\nauf Wunsch des Auftraggebers")
+  activate Placer
+  Placer --> Filler : 200 OK
+  deactivate Placer
+
+  Placer -> Placer : ServiceRequest\n(status: **revoked**)
+
+  note over Placer, Filler #FFD7D7 : **Coordination Task: cancelled**\nAuftrag wurde abgebrochen.\nKein Befund erstellt.
+
+else Stornierung abgelehnt
+  Filler -> Filler : Arbeit bereits\nzu weit fortgeschritten\n(Schnitte angefertigt,\nMikroskopie laeuft)
+
+  Filler -> Placer : PUT Cancellation-Request-Task\n(status: **rejected**\nstatusReason: "Arbeit bereits\nweit fortgeschritten,\nBefund wird fertiggestellt")
+  activate Placer
+  Placer --> Filler : 200 OK
+  deactivate Placer
+
+  note over Placer, Filler #FFFFCC : **Cancellation-Request: rejected**\nFiller setzt Arbeit fort.\nWorkflow geht weiter\nwie Happy Path (Szenario 1).
+end
+
+@enduml

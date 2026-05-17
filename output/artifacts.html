@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10"}
-    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -123,6 +123,9 @@
       </li>
       <li>
         <a href="Composition-CoreNeedleBiopsyComposition.html">Composition</a>
+      </li>
+      <li>
+        <a href="workflow-scenarios.html">Workflow Scenarios</a>
       </li>
     </ul>
   </li>
@@ -476,6 +479,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Microscopic urinary bladder neck invasion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-RadicalProstatectomyTask.html"
+                  title="Task/RadicalProstatectomyTask">Coordination Task Prostatektomie</a>
+            </td>
+            <td>
+<p>Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path)</p>
 </td>
          </tr>
          <tr>
@@ -3510,6 +3522,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Task-CoreNeedleBiopsyTaskV1Requested.html"
+                  title="Task/CoreNeedleBiopsyTaskV1Requested">Task V1 – Auftrag erstellt (requested)</a>
+            </td>
+            <td>
+<p>Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-CoreNeedleBiopsyTaskV2Accepted.html"
+                  title="Task/CoreNeedleBiopsyTaskV2Accepted">Task V2 – Auftrag angenommen (accepted)</a>
+            </td>
+            <td>
+<p>Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-CoreNeedleBiopsyTaskV3InProgress.html"
+                  title="Task/CoreNeedleBiopsyTaskV3InProgress">Task V3 – In Bearbeitung (in-progress)</a>
+            </td>
+            <td>
+<p>Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-CoreNeedleBiopsyTaskV4Completed.html"
+                  title="Task/CoreNeedleBiopsyTaskV4Completed">Task V4 – Abgeschlossen (completed)</a>
+            </td>
+            <td>
+<p>Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-CoreNeedleBiopsyGleasonScoreTotal.html"
                   title="Observation/CoreNeedleBiopsyGleasonScoreTotal">Total Gleason Score - Biopsy</a>
             </td>
@@ -3843,7 +3891,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 13:57+0100">2026-03-06</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH CEI</a>.  Package prostatecancerspec#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 17, 2026 11:35+0200">2026-05-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

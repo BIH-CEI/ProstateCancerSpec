@@ -37,6 +37,7 @@ These are example instances that show what data produced and consumed by systems
 | [BPH-Diagnose vor Enukleation](Condition-TransurethralEnucleationDiagnosisBPH.md) | Symptomatische benigne Prostatahyperplasie als Indikation zur Enukleation |
 | [BPH-Diagnose vor TUR-P](Condition-TransurethralResectionDiagnosisBPH.md) | Symptomatische benigne Prostatahyperplasie als Indikation zur TUR-P |
 | [Bladder Neck Invasion - Prostatectomy](Observation-RadicalProstatectomyBladderNeckInvasion.md) | Microscopic urinary bladder neck invasion |
+| [Coordination Task Prostatektomie](Task-RadicalProstatectomyTask.md) | Coordination Task fuer die pathologische Aufarbeitung nach radikaler Prostatektomie mit pelviner Lymphadenektomie (COW IG Szenario 1: Happy Path) |
 | [Diagnostic Conclusion Grouper - Biopsy](Observation-CoreNeedleBiopsyDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in biopsy specimens |
 | [Diagnostic Conclusion Grouper - Prostata Enucleation](Observation-TransurethralEnucleationDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in Prostata Enucleation specimens |
 | [Diagnostic Conclusion Grouper - Prostatectomy](Observation-RadicalProstatectomyDiagnosticConclusionGrouper.md) | Grouper for all diagnostic conclusion findings in prostatectomy specimens |
@@ -374,6 +375,10 @@ These are example instances that show what data produced and consumed by systems
 | [TUR-Prostata Anforderung](ServiceRequest-TransurethralResectionReportRequest.md) | Anforderung für pathologische Aufarbeitung nach TUR-Prostata |
 | [TUR-Prostata Gewicht](Observation-TransurethralResectionMacroscopicWeight.md) | Gewicht des TUR-Prostata Präparats |
 | [TUR-Prostata Präparat (Einsendespecimen)](Specimen-TransurethralResectionSpecimenPart.md) | TUR-Prostata Resektat |
+| [Task V1 – Auftrag erstellt (requested)](Task-CoreNeedleBiopsyTaskV1Requested.md) | Placer (Urologie) erstellt den Coordination Task und sendet ihn zusammen mit ServiceRequest und Specimens an den Filler (Pathologie). |
+| [Task V2 – Auftrag angenommen (accepted)](Task-CoreNeedleBiopsyTaskV2Accepted.md) | Filler (Pathologie) hat die Proben empfangen, den Auftrag geprueft und akzeptiert. |
+| [Task V3 – In Bearbeitung (in-progress)](Task-CoreNeedleBiopsyTaskV3InProgress.md) | Filler (Pathologie) hat mit der Aufarbeitung begonnen. Makroskopie, Einbettung und Mikroskopie laufen. |
+| [Task V4 – Abgeschlossen (completed)](Task-CoreNeedleBiopsyTaskV4Completed.md) | Filler (Pathologie) hat den Befund fertiggestellt. Der DiagnosticReport ist als Output referenziert. Der Placer kann den Befund abrufen. |
 | [Total Gleason Score - Biopsy](Observation-CoreNeedleBiopsyGleasonScoreTotal.md) | Total Gleason score in biopsy specimens |
 | [Total Gleason Score - Enucleation](Observation-TransurethralEnucleationGleasonScoreTotal.md) | Total Gleason score in Enucleation specimens |
 | [Total Gleason Score - Prostatectomy](Observation-RadicalProstatectomyGleasonScoreTotal.md) | Total Gleason score in prostatectomy specimen |

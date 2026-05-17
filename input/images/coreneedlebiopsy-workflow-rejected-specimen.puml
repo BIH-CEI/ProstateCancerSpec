@@ -1,0 +1,67 @@
+@startuml CoreNeedleBiopsy_Workflow_RejectedSpecimen
+title Szenario 2: Probenabweisung\nCore Needle Biopsy – Unzureichendes Material
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam sequenceArrowThickness 1.5
+skinparam sequenceLifeLineBorderColor #555555
+skinparam sequenceParticipantBorderColor #555555
+skinparam sequenceGroupBorderColor #AAAAAA
+skinparam sequenceGroupFontSize 11
+skinparam noteFontSize 10
+skinparam noteBackgroundColor #FFF8DC
+
+participant "**Placer (KIS)**\nUrologie" as Placer #BDD7EE
+participant "**Filler (LIS)**\nPathologie" as Filler #C6EFCE
+
+== Auftragserstellung (2024-01-15, 08:00) ==
+
+Placer -> Filler : POST Bundle (type: **transaction**)\n  Patient\n  ServiceRequest (status: **active**)\n  Specimen [x12] (status: **available**)\n  Task (status: **requested**, code: fulfill)
+activate Filler
+Filler --> Placer : Bundle (type: **transaction-response**)\n  201 Created
+deactivate Filler
+
+note over Placer, Filler : **Task V1: requested**
+
+== Probenempfang & Annahme (2024-01-15, 14:00) ==
+
+Filler -> Placer : PUT Task\n(status: **accepted**)
+activate Placer
+Placer --> Filler : 200 OK
+deactivate Placer
+
+note over Placer, Filler : **Task V2: accepted**
+
+== Bearbeitung beginnt (2024-01-16, 08:00) ==
+
+Filler -> Placer : PUT Task\n(status: **in-progress**)
+activate Placer
+Placer --> Filler : 200 OK
+deactivate Placer
+
+note over Placer, Filler : **Task V3: in-progress**
+
+== Probenabweisung (2024-01-16, 09:00) ==
+
+Filler -> Filler : Makroskopie:\nStanze 05 enthaelt\nkein verwertbares Gewebe\n(nur Blut/Fett)
+
+Filler -> Placer : PUT Specimen[05]\n(status: **unsatisfactory**\ncondition: insufficient)
+activate Placer
+Placer --> Filler : 200 OK
+deactivate Placer
+
+Filler -> Placer : PUT Task\n(status: **failed**\nstatusReason: "Specimen 05\nunzureichendes Material"\noutput: Specimen[05])
+activate Placer
+Placer --> Filler : 200 OK
+deactivate Placer
+
+note over Placer, Filler #FFD7D7 : **Task V4: failed**\nKein DiagnosticReport erstellt\nSpecimen.status: unsatisfactory\nSpecimen.condition: insufficient
+
+== Reaktion des Placers ==
+
+Placer -> Placer : ServiceRequest\n(status: **ended**)
+
+note over Placer : Kein Befund moeglich.\nOption: Erneute Biopsie\nplanen (neues Szenario 1).
+
+@enduml
