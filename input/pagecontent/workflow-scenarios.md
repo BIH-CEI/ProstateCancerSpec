@@ -1,142 +1,141 @@
-### Workflow Scenarios
 
-Diese Seite beschreibt die Sendeszenarien fuer Pathologie-Auftraege basierend auf dem [Clinical Order Workflows (COW) IG](https://build.fhir.org/ig/HL7/fhir-cow-ig/en/) (v1.0.0-ballot). Der Fokus liegt auf der Kommunikation zwischen Placer (KIS/Urologie) und Filler (LIS/Pathologie) ueber Coordination Tasks.
+This page describes the messaging scenarios for pathology orders based on the [Clinical Order Workflows (COW) IG](https://build.fhir.org/ig/HL7/fhir-cow-ig/en/) (v1.0.0-ballot). The focus is on the communication between Placer (HIS/Urology) and Filler (LIS/Pathology) via Coordination Tasks.
 
 <ul class="nav nav-tabs" id="workflowTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab">1 Happy Path</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">2 Probenabweisung</a>
+    <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab">2 Specimen Rejection</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">3 Nachforderung</a>
+    <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab">3 Reflex Testing</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab">4 Ablehnung</a>
+    <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab">4 Order Declined</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab5a-tab" data-toggle="tab" href="#tab5a" role="tab">5a Stornierung (vor)</a>
+    <a class="nav-link" id="tab5a-tab" data-toggle="tab" href="#tab5a" role="tab">5a Cancellation (before)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab5b-tab" data-toggle="tab" href="#tab5b" role="tab">5b Stornierung (waehrend)</a>
+    <a class="nav-link" id="tab5b-tab" data-toggle="tab" href="#tab5b" role="tab">5b Cancellation (during)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab">6 Gruppiert</a>
+    <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab">6 Grouped Order</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab">7 Info-Anforderung</a>
+    <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab">7 Info Request</a>
   </li>
 </ul>
 
 <div class="tab-content" id="workflowTabContent">
 
 <div class="tab-pane active in" id="tab1" role="tabpanel">
-<h4>Szenario 1: Einfacher Pathologie-Auftrag (Happy Path)</h4>
-<p>Der Standardfall: Kliniker sendet 12 Prostatastanzen zur histologischen Untersuchung, Pathologie erstellt Befund.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 1: Simple Pathology Order (Happy Path)</h4>
+<p>Standard case: Clinician sends 12 prostate core biopsies for histological examination, pathology produces the report.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Placer sendet Transaction Bundle (Patient, ServiceRequest, Specimen, Task) an Filler</li>
-<li>Filler akzeptiert den Auftrag (Task: accepted)</li>
-<li>Filler beginnt Bearbeitung (Task: in-progress)</li>
-<li>Filler stellt Befund fertig und sendet Document Bundle zurueck (Task: completed)</li>
+<li>Placer sends Transaction Bundle (Patient, ServiceRequest, Specimen, Task) to Filler</li>
+<li>Filler accepts the order (Task: accepted)</li>
+<li>Filler begins processing (Task: in-progress)</li>
+<li>Filler completes the report and sends Document Bundle back (Task: completed)</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 1: Happy Path</strong></figcaption><img src="coreneedlebiopsy-workflow-happyPath.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 1"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 1: Happy Path</strong></figcaption><img src="coreneedlebiopsy-workflow-happyPath.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 1"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab2" role="tabpanel">
-<h4>Szenario 2: Probenabweisung</h4>
-<p>Eine Stanze enthaelt kein verwertbares Prostatagewebe (nur Blut/Fett). Filler meldet Specimen als unsatisfactory.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 2: Specimen Rejection</h4>
+<p>A core contains no usable prostatic tissue (only blood/fat). Filler reports the Specimen as unsatisfactory.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag wird normal gesendet und angenommen</li>
-<li>Bei Makroskopie: Probe ist ungeeignet</li>
-<li>Filler setzt Specimen.status auf "unsatisfactory" mit condition</li>
-<li>Task wird auf "failed" gesetzt — kein DiagnosticReport erstellt</li>
+<li>Order is sent and accepted normally</li>
+<li>During macroscopy: specimen is inadequate</li>
+<li>Filler sets Specimen.status to "unsatisfactory" with condition</li>
+<li>Task is set to "failed" — no DiagnosticReport created</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 2: Probenabweisung</strong></figcaption><img src="coreneedlebiopsy-workflow-rejected-specimen.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 2"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 2: Specimen Rejection</strong></figcaption><img src="coreneedlebiopsy-workflow-rejected-specimen.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 2"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab3" role="tabpanel">
-<h4>Szenario 3: Nachforderung / Reflex-Untersuchung</h4>
-<p>Initiale HE-Mikroskopie zeigt eine atypische Drusenproliferation (ASAP) in einer Stanze. Pathologe ordnet eigenstaendig Immunhistochemie (p63/AMACR) an, um Karzinom zu bestaetigen oder auszuschliessen.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 3: Reflex Testing</h4>
+<p>Initial H&amp;E microscopy reveals an atypical small acinar proliferation (ASAP) in one core. The pathologist independently orders immunohistochemistry (p63/AMACR) to confirm or rule out carcinoma.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag laeuft normal bis Mikroskopie</li>
-<li>Filler erstellt intern neuen ServiceRequest (basedOn: Original-SR) + Aliquot-Specimen (parent: Block)</li>
-<li>IHC-Aufarbeitung laeuft Filler-intern</li>
-<li>Gesamtbefund (HE + IHC) wird als Document Bundle zurueckgesendet</li>
+<li>Order proceeds normally through microscopy</li>
+<li>Filler creates an internal new ServiceRequest (basedOn: original SR) + aliquot Specimen (parent: Block)</li>
+<li>IHC processing runs internally within the Filler</li>
+<li>Combined report (H&amp;E + IHC) is sent back as Document Bundle</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 3: Nachforderung (IHC nach ASAP)</strong></figcaption><img src="coreneedlebiopsy-workflow-reflex-testing.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 3"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 3: Reflex Testing (IHC after ASAP)</strong></figcaption><img src="coreneedlebiopsy-workflow-reflex-testing.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 3"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab4" role="tabpanel">
-<h4>Szenario 4: Auftragsablehnung durch Filler</h4>
-<p>Proben sind in Alkohol statt Formalin fixiert. Pathologie kann keine zuverlaessige Histologie durchfuehren und lehnt den Auftrag ab.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 4: Order Declined by Filler</h4>
+<p>Specimens are fixed in alcohol instead of formalin. Pathology cannot perform reliable histology and declines the order.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag wird gesendet (Task: requested)</li>
-<li>Filler prueft Proben bei Eingang — falsche Fixierung erkannt</li>
-<li>Filler setzt Task auf "rejected" mit statusReason</li>
-<li>Placer muss ggf. erneute Biopsie mit korrekter Fixierung veranlassen</li>
+<li>Order is sent (Task: requested)</li>
+<li>Filler checks specimens on receipt — incorrect fixation detected</li>
+<li>Filler sets Task to "rejected" with statusReason</li>
+<li>Placer may need to arrange a repeat biopsy with correct fixation</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 4: Auftragsablehnung</strong></figcaption><img src="coreneedlebiopsy-workflow-order-declined.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 4"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 4: Order Declined</strong></figcaption><img src="coreneedlebiopsy-workflow-order-declined.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 4"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab5a" role="tabpanel">
-<h4>Szenario 5a: Stornierung vor Arbeitsbeginn</h4>
-<p>Probenverwechslung erkannt. Placer storniert den Auftrag bevor der Filler mit der Bearbeitung begonnen hat.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 5a: Cancellation Before Work Begins</h4>
+<p>Specimen mix-up detected. Placer cancels the order before the Filler has started processing.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag wird gesendet (Task: requested)</li>
-<li>Placer setzt Task direkt auf "cancelled" — kein formaler Cancellation-Request noetig</li>
-<li>ServiceRequest wird auf "revoked" gesetzt</li>
+<li>Order is sent (Task: requested)</li>
+<li>Placer sets Task directly to "cancelled" — no formal Cancellation-Request needed</li>
+<li>ServiceRequest is set to "revoked"</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 5a: Stornierung vor Arbeitsbeginn</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-before.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 5a"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 5a: Cancellation Before Work Begins</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-before.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 5a"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab5b" role="tabpanel">
-<h4>Szenario 5b: Stornierung waehrend laufender Arbeit</h4>
-<p>Patient verstirbt waehrend der Aufarbeitung. Placer fragt Stornierung an, Filler entscheidet ob Abbruch noch moeglich ist.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 5b: Cancellation During Active Work</h4>
+<p>Patient dies during processing. Placer requests cancellation, Filler decides whether the work can still be stopped.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag laeuft bereits (Task: in-progress)</li>
-<li>Placer sendet einen Cancellation-Request-Task (code: abort, intent: proposal)</li>
-<li>Filler entscheidet:
+<li>Order is already in progress (Task: in-progress)</li>
+<li>Placer sends a Cancellation-Request-Task (code: abort, intent: proposal)</li>
+<li>Filler decides:
 <ul>
-<li><strong>Akzeptiert:</strong> Coordination Task wird cancelled, ServiceRequest revoked</li>
-<li><strong>Abgelehnt:</strong> Workflow geht weiter wie Happy Path</li>
+<li><strong>Accepted:</strong> Coordination Task is set to cancelled, ServiceRequest to revoked</li>
+<li><strong>Rejected:</strong> Workflow continues as Happy Path</li>
 </ul>
 </li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 5b: Stornierung waehrend laufender Arbeit</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-during.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 5b"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 5b: Cancellation During Active Work</strong></figcaption><img src="coreneedlebiopsy-workflow-cancellation-during.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 5b"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab6" role="tabpanel">
-<h4>Szenario 6: Gruppierter Auftrag</h4>
-<p>Urologe bestellt gleichzeitig Standard-Histologie und molekularpathologisches BRCA1/2-Panel fuer dieselbe Biopsie-Einsendung. Zwei ServiceRequests mit gemeinsamer Requisition, zwei Tasks laufen parallel.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 6: Grouped Order</h4>
+<p>Urologist simultaneously orders standard histology and a molecular pathology BRCA1/2 panel for the same biopsy submission. Two ServiceRequests with a shared requisition identifier, two Tasks running in parallel.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Placer sendet zwei ServiceRequests mit gleichem requisition-Identifier (G24-001)</li>
-<li>Filler bearbeitet beide parallel — Histologie (3-5 Tage) und MolPath (7-14 Tage)</li>
-<li>Histologie-Befund wird zuerst fertig (Task-A: completed)</li>
-<li>MolPath-Befund folgt spaeter (Task-B: completed)</li>
+<li>Placer sends two ServiceRequests with the same requisition identifier (G24-001)</li>
+<li>Filler processes both in parallel — histology (3-5 days) and molecular pathology (7-14 days)</li>
+<li>Histology report is completed first (Task-A: completed)</li>
+<li>Molecular pathology report follows later (Task-B: completed)</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 6: Gruppierter Auftrag (Histologie + MolPath)</strong></figcaption><img src="coreneedlebiopsy-workflow-grouped-order.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 6"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 6: Grouped Order (Histology + Molecular Pathology)</strong></figcaption><img src="coreneedlebiopsy-workflow-grouped-order.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 6"></figure></div>
 </div>
 
 <div class="tab-pane" id="tab7" role="tabpanel">
-<h4>Szenario 7: Info-Anforderung</h4>
-<p>Pathologie erhaelt die Stanzen, aber klinische Angaben fehlen (PSA-Wert, MRT/PI-RADS, Vorbiopsie). Filler pausiert den Workflow und fordert Informationen an.</p>
-<p><strong>Ablauf:</strong></p>
+<h4>Scenario 7: Information Request</h4>
+<p>Pathology receives the cores but clinical information is missing (PSA value, MRI/PI-RADS, prior biopsy). Filler pauses the workflow and requests the information.</p>
+<p><strong>Workflow:</strong></p>
 <ol>
-<li>Auftrag wird gesendet (Task: requested)</li>
-<li>Filler setzt Task.businessStatus auf "Awaiting Information"</li>
-<li>Filler sendet Communication mit konkreter Nachfrage</li>
-<li>Placer liefert Informationen (Observation, DocumentReference, Communication)</li>
-<li>Filler setzt Workflow fort (Task: accepted -> in-progress -> completed)</li>
+<li>Order is sent (Task: requested)</li>
+<li>Filler sets Task.businessStatus to "Awaiting Information"</li>
+<li>Filler sends Communication with specific request</li>
+<li>Placer provides information (Observation, DocumentReference, Communication)</li>
+<li>Filler resumes workflow (Task: accepted -> in-progress -> completed)</li>
 </ol>
-<div><figure class="figure"><figcaption class="figure-caption"><strong>Szenario 7: Info-Anforderung</strong></figcaption><img src="coreneedlebiopsy-workflow-info-request.png" class="figure-img img-responsive img-rounded center-block" alt="Szenario 7"></figure></div>
+<div><figure class="figure"><figcaption class="figure-caption"><strong>Scenario 7: Information Request</strong></figcaption><img src="coreneedlebiopsy-workflow-info-request.png" class="figure-img img-responsive img-rounded center-block" alt="Scenario 7"></figure></div>
 </div>
 
 </div>
