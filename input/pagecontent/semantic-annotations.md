@@ -11,7 +11,7 @@ This page lists all Observation.code elements used across the scenarios along wi
 
 | Diagnosis | ICD-O-3 | SCT Disorder | SCT Morphology |
 |---|---|---|---|
-| Acinar adenocarcinoma | 8140/3 | 399490008 | 45410002 |
+| Acinar adenocarcinoma | 8140/3 | 399490008 | 1187332001 |
 | Ductal adenocarcinoma | 8500/3 | 823017009 | 82711006 |
 | Intraductal carcinoma (IDC-P) | 8500/2 | — | 1162814007 |
 | Invasive cribriform carcinoma (ICC) | 8201/3 | — | 30156004 |
