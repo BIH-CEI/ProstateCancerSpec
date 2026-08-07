@@ -5,6 +5,19 @@
 ### ARBEITSREGELN (WICHTIG)
 - **Niemals mehr machen als explizit gefragt!** Wenn unklar, nachfragen.
 - Keine zusätzlichen Dateien/Zeilen ändern, die nicht konkret genannt wurden.
+- **NIEMALS GitHub-Issues beantworten, kommentieren oder schließen!** Keine Ausnahme, auch nicht
+  nach Rückfrage. Issues werden ausschließlich vom Nutzer selbst beantwortet. Aufgabe ist nur:
+  Issue-Inhalt analysieren, Code/Doku im Repo korrigieren, Ergebnis hier berichten.
+
+### MII Patho 2027.0.0 — Migrationsanalyse (05.08.2026)
+Analyse der Release Notes aus Branch `dev/v2027` des MII-Patho-Repos:
+**→ `docs/MII-Patho-2027-Migration.md`** (Änderungen, betroffene Stellen, Umsetzungsplan)
+
+Kernpunkte: R5-BodyStructure-Backport statt mCODE bei `Specimen.collection.bodySite` (#259),
+neues VS für `DiagnosticReport.code` (#166), EU-Lab-Angleichung mit DR↔Composition-Extensions und
+optionalen Composition-Section-Slices (#262/#263), `Composition.event` neu definiert (#258).
+**Status: 2027.0.0 noch nicht veröffentlicht** — Umsetzung erst nach Release des Pakets.
+Dieser IG wird ab 2027.0.0 im MII-Modul als Referenzimplementierung verlinkt.
 
 ### FHIR-Version-Mismatch subscriptions-backport (02.03.2026)
 QA-Fehler: "This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0"

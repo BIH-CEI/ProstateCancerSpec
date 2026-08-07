@@ -28,7 +28,7 @@ Description: "FHIR Composition for structured TUR pathology report"
 
 // Sektion für Pathologiebefundbericht
 * section.title = "Pathologiebefundbericht"
-* section.code = $loinc#11526-1 "Pathology study"
+* section.code = $loinc#60567-5 "Comprehensive pathology report panel"
 * section.entry = Reference(TransurethralEnucleationReport)
 * section.text.status = #additional
 * section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">

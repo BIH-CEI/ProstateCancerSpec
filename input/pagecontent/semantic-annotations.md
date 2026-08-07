@@ -202,7 +202,7 @@ Codes and ValueSets are defined in the [MII Oncology IG](https://simplifier.net/
 | 369771005 | SNOMED CT | Gleason Pattern 2 (finding) |
 | 369772003 | SNOMED CT | Gleason Pattern 3 (finding) |
 | 369773008 | SNOMED CT | Gleason Pattern 4 (finding) |
-| 369774004 | SNOMED CT | Gleason Pattern 5 (finding) |
+| 369774002 | SNOMED CT | Gleason Pattern 5 (finding) |
 
 <a id="vs-gleason-score"></a>
 ### VS Gleason Score
