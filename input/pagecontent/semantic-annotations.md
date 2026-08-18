@@ -183,15 +183,78 @@ Codes and ValueSets are defined in the [MII Oncology IG](https://simplifier.net/
 <a id="vs-icdo3"></a>
 ### VS ICD-O-3 Morphology (Prostate)
 
-| Code | System | Display (Prostate context) | BfArM Display (official) |
-|---|---|---|---|
-| 8140/3 | ICD-O-3 | Acinar adenocarcinoma | Adenokarzinom o.n.A. |
-| 8500/3 | ICD-O-3 | Ductal adenocarcinoma | Invasives duktales Karzinom o.n.A. |
-| 8500/2 | ICD-O-3 | Intraductal carcinoma | Nichtinfiltrierendes intraduktales Karzinom o.n.A. |
-| 8201/3 | ICD-O-3 | Cribriform carcinoma | Kribriformes Karzinom o.n.A. |
-| 8041/3 | ICD-O-3 | Small cell carcinoma | Kleinzelliges Karzinom o.n.A. |
-| 8070/3 | ICD-O-3 | Squamous cell carcinoma | Plattenepithelkarzinom o.n.A. |
-| 8120/3 | ICD-O-3 | Urothelial carcinoma | Uebergangszellkarzinom o.n.A. |
+Histologic types of prostate tumours, grouped according to the **WHO Classification of Tumours,
+5th edition (2022), Urinary and Male Genital Tumours**. All codes are ICD-O-3.
+
+**Source column:** `IG` = code used in the examples and diagnosis tables of this Implementation
+Guide · `ICCR` = element of the ICCR prostate datasets (see [Clinical Context](clinical-context.html))
+but not currently instantiated here.
+
+**SCT Morphology** gives the SNOMED CT morphologic abnormality, verified against SNOMED CT
+International Edition 20260701. Entries marked ⚠ are not an exact ICD-O-3 equivalent — see notes.
+
+#### Acinar adenocarcinoma and precursors
+
+| Code | Type | SCT Morphology | BfArM Display (official) | Source |
+|---|---|---|---|---|
+| 8140/3 | Acinar adenocarcinoma, NOS | 1187332001 Adenocarcinoma | Adenokarzinom o.n.A. | IG |
+| 8490/3 | Signet ring cell(-like) carcinoma | 87737001 Signet ring cell carcinoma | — | ICCR |
+| 8572/3 | Sarcomatoid carcinoma (spindle cell diff.) | ⚠ 65692009 Spindle cell carcinoma | — | ICCR |
+| 8201/3 | Invasive cribriform carcinoma (ICC) | 30156004 Cribriform carcinoma | Kribriformes Karzinom o.n.A. | IG |
+| 8500/2 | Intraductal carcinoma (IDC-P) | 1162814007 Intraductal carcinoma | Nichtinfiltrierendes intraduktales Karzinom o.n.A. | IG |
+| 8148/2 | High-grade prostatic intraepithelial neoplasia (HGPIN) | ⚠ see note | — | ICCR |
+
+#### Ductal, squamous and basal cell tumours
+
+| Code | Type | SCT Morphology | BfArM Display (official) | Source |
+|---|---|---|---|---|
+| 8500/3 | Ductal adenocarcinoma | 82711006 Infiltrating duct carcinoma | Invasives duktales Karzinom o.n.A. | IG |
+| 8560/3 | Adenosquamous carcinoma | 59367005 Adenosquamous carcinoma | — | ICCR |
+| 8070/3 | Squamous cell carcinoma | 1162767002 Squamous cell carcinoma | Plattenepithelkarzinom o.n.A. | IG |
+| 8147/3 | Adenoid cystic (basal cell) carcinoma | 34603009 Basal cell adenocarcinoma | — | ICCR |
+
+#### Urothelial tumours
+
+| Code | Type | SCT Morphology | BfArM Display (official) | Source |
+|---|---|---|---|---|
+| 8120/3 | Urothelial carcinoma | 27090000 Transitional cell carcinoma | Uebergangszellkarzinom o.n.A. | IG |
+
+#### Neuroendocrine tumours
+
+| Code | Type | SCT Morphology | BfArM Display (official) | Source |
+|---|---|---|---|---|
+| 8574/3 | Adenocarcinoma with neuroendocrine differentiation | 128704005 Adenocarcinoma with neuroendocrine differentiation | — | ICCR |
+| 8041/3 | Small cell neuroendocrine carcinoma | 74364000 Small cell carcinoma | Kleinzelliges Karzinom o.n.A. | IG |
+
+#### Mesenchymal / stromal tumours
+
+| Code | Type | SCT Morphology | BfArM Display (official) | Source |
+|---|---|---|---|---|
+| 8935/1 | Stromal tumour of uncertain malignant potential (STUMP) | ⚠ see note | — | ICCR |
+| 8935/3 | Stromal sarcoma | 128753005 Stromal sarcoma | — | ICCR |
+| 8440/0 | Cystadenoma (benign) | 47620003 Cystadenoma | — | ICCR |
+
+**Notes:**
+- **8572/3** — SNOMED `65692009 Spindle cell carcinoma` is the closest active morphologic
+  abnormality, but its ICD-O-3 equivalent is 8032/3, not 8572/3. Post-coordination or a more
+  specific concept may be required.
+- **8148/2 (HGPIN)** — SNOMED has no active *morphologic abnormality* for HGPIN. `446711009 High
+  grade prostatic intraepithelial neoplasia` is a **(disorder)**, and the historic morphology code
+  `128640002 Glandular intraepithelial neoplasia, grade III` is **inactive**. This IG therefore
+  records HGPIN as a disorder — see the table *Pre-malignant / Borderline Entities* above.
+- **8935/1 (STUMP)** — no SNOMED morphologic abnormality could be identified. The only
+  prostate-specific related concept is `1260182007 Phyllodes tumor of prostate`, which is a
+  **(disorder)** and covers a different entity. Open.
+- **8147/3** — `34603009` matches the ICD-O-3 code exactly (basal cell adenocarcinoma). If the
+  adenoid cystic pattern is to be coded instead, `11671000 Adenoid cystic carcinoma` corresponds to
+  ICD-O-3 8200/3.
+- **8440/0** — `47620003` is the generic cystadenoma concept; SNOMED has no prostate-specific
+  cystadenoma.
+- **BfArM Display** is only filled where it has been verified against the official German ICD-O-3
+  catalogue. The remaining entries still need to be checked.
+- Three further WHO 2022 types are **not** included here because they are not part of the ICCR
+  datasets: 8480/3 mucinous (colloid) adenocarcinoma, 8240/3 well-differentiated neuroendocrine
+  tumour, 8013/3 large cell neuroendocrine carcinoma.
 
 <a id="vs-gleason-pattern"></a>
 ### VS Gleason Pattern

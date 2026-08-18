@@ -11,7 +11,7 @@ InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse - Transurethral Resection (TURP)"
 Description: "QuestionnaireResponse für transurethrale Resektion der Prostata"
-* questionnaire = "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.20--20250115134435"
+* questionnaire = "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.18.27.22--20251014150033"
 * status = #completed
 * subject = Reference(Patient2)
 * authored = "2024-04-11T14:30:00+01:00"
