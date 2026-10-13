@@ -7,8 +7,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "TUR-Prostata Präparat (Einsendespecimen)"
 Description: "TUR-Prostata Resektat"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier[+]
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
   * system = "https://urologie.example-hospital.de/fhir/specimen/placer"
@@ -46,8 +46,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock 01 TUR-Prostata"
 Description: "Paraffineinbettung des TUR-Prostata Präparats Block 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_1"
@@ -81,8 +81,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 01A TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 01A des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_1_1HE"
@@ -112,8 +112,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 01B TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 01B des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_1_2HE"
@@ -148,8 +148,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock 02 TUR-Prostata"
 Description: "Paraffineinbettung des TUR-Prostata Präparats Block 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_2"
@@ -183,8 +183,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 02A TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 02A des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_2_1HE"
@@ -214,8 +214,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 02B TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 02B des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_2_2HE"
@@ -250,8 +250,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock 03 TUR-Prostata"
 Description: "Paraffineinbettung des TUR-Prostata Präparats Block 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_3"
@@ -285,8 +285,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 03A TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 03A des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_3_1HE"
@@ -316,8 +316,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 03B TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 03B des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_3_2HE"
@@ -352,8 +352,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock 04 TUR-Prostata"
 Description: "Paraffineinbettung des TUR-Prostata Präparats Block 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_4"
@@ -387,8 +387,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 04A TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 04A des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_4_1HE"
@@ -418,8 +418,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 04B TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 04B des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_4_2HE"
@@ -454,8 +454,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock 05 TUR-Prostata"
 Description: "Paraffineinbettung des TUR-Prostata Präparats Block 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_5"
@@ -489,8 +489,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 05A TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 05A des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_5_1HE"
@@ -520,8 +520,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt 05B TUR-Prostata"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt 05B des TUR-Prostata Präparats"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_003_A_5_2HE"

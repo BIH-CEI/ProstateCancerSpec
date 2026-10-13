@@ -7,7 +7,7 @@ Description: "Symptomatische benigne Prostatahyperplasie als Indikation zur Enuk
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
-* code = $icd-10-gm#N40.0 "Prostatahyperplasie ohne Beschwerden beim Wasserlassen"
+* code = $icd-10-gm#N40 "Prostatahyperplasie"
 * subject = Reference(Patient3)
 * encounter = Reference(TransurethralEnucleationEncounter)
 * onsetDateTime = "2023-06-01"
@@ -20,11 +20,12 @@ InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
 Usage: #example
 Title: "Inzidentelles Prostatakarzinom nach Enukleation"
 Description: "Zufällig entdecktes high-grade Prostatakarzinom in Enukleations-Präparat"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2027.0.0-ballot"
 * extension[Feststellungsdatum].valueDateTime = "2024-02-20"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
+* category[onkologie] = $sct#55342001 "Neoplastic disease"
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[icd10-gm].version = "2026"
 * code.coding[icd10-gm].code = #C61

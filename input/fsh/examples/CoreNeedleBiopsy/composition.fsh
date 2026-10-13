@@ -7,6 +7,8 @@ InstanceOf: Composition
 Usage: #example
 Title: "Prostate Biopsy Pathology Report Composition"
 Description: "FHIR Composition for structured prostate biopsy pathology report"
+* extension[+].url = $eu-composition-diagnosticreport
+* extension[=].valueReference = Reference(CoreNeedleBiopsyReport)
 * identifier.system = "http://example.hospital.de/pathology-reports"
 * identifier.value = "PATH-COMP-2024-001"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
@@ -25,17 +27,25 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 * attester.party = Reference(PathologyLabOrganization)
 * custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
-* event.detail = Reference(CoreNeedleBiopsyReportRequest)
+* event.period.start = "2024-01-16T08:00:00+01:00"
+* event.period.end = "2024-01-20T15:30:00+01:00"
 
 // Sektion für Pathologiebefundbericht
-* section.title = "Pathologiebefundbericht"
-* section.code = $loinc#60567-5 "Comprehensive pathology report panel"
-* section.entry = Reference(CoreNeedleBiopsyReport)
-* section.text.status = #additional
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "Pathologiebefundbericht"
+* section[=].code = $loinc#60567-5 "Comprehensive pathology report panel"
+* section[=].entry = Reference(CoreNeedleBiopsyReport)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Klinische Angaben</h3>
 <p>Erhöhter PSA-Wert (8,5 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung.</p>
+</div>"
 
+// Sektion Makroskopie (MII Patho 2027, #263) - referenziert denselben Grouper wie DiagnosticReport.result
+* section[+].title = "Makroskopie"
+* section[=].code = $loinc#22634-0 "Pathology report gross observation Narrative"
+* section[=].entry = Reference(CoreNeedleBiopsyMacroscopicGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Makroskopie</h3>
 <p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1,3–1,9 cm, je 1 Zylinder pro Specimen. Stanzen 01–06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07–12 aus linker Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal).</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
@@ -57,7 +67,14 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>12</td><td>Links medial apikal</td><td>1.4</td><td>1</td></tr>
 </tbody>
 </table>
+</div>"
 
+// Sektion Mikroskopie (MII Patho 2027, #263)
+* section[+].title = "Mikroskopie"
+* section[=].code = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
+* section[=].entry = Reference(CoreNeedleBiopsyMicroscopicGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Mikroskopie</h3>
 <p>Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason-Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
@@ -79,7 +96,14 @@ Description: "FHIR Composition for structured prostate biopsy pathology report"
 <tr><td>12</td><td>Benigne</td><td>-</td><td>-</td></tr>
 </tbody>
 </table>
+</div>"
 
+// Sektion Diagnostische Schlussfolgerung (MII Patho 2027, #263)
+* section[+].title = "Diagnostische Schlussfolgerung"
+* section[=].code = $loinc#22637-3 "Pathology report final diagnosis Narrative"
+* section[=].entry = Reference(CoreNeedleBiopsyDiagnosticConclusionGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Diagnostische Schlussfolgerung</h3>
 <p>7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11). Prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration und Infiltration des periprostatischen Fettgewebes apikal nachgewiesen. Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p>
 

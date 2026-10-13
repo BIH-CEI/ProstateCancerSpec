@@ -4,11 +4,12 @@ InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
 Usage: #example
 Title: "Prostatakarzinom-Diagnose vor Prostatektomie"
 Description: "Gesicherte Diagnose eines Prostatakarzinoms nach Biopsie, Indikation zur radikalen Prostatektomie"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2027.0.0-ballot"
 * extension[Feststellungsdatum].valueDateTime = "2024-02-10"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
+* category[onkologie] = $sct#55342001 "Neoplastic disease"
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[icd10-gm].version = "2026"
 * code.coding[icd10-gm].code = #C61

@@ -7,6 +7,8 @@ InstanceOf: Composition
 Usage: #example
 Title: "Prostatectomy Pathology Report Composition"
 Description: "FHIR Composition for structured prostatectomy pathology report"
+* extension[+].url = $eu-composition-diagnosticreport
+* extension[=].valueReference = Reference(RadicalProstatectomyReport)
 * identifier.system = "http://example.hospital.de/pathology-reports"
 * identifier.value = "PATH-COMP-2024-002"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
@@ -24,17 +26,25 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 * attester.party = Reference(PathologyLabOrganization)
 * custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
-* event.detail = Reference(RadicalProstatectomyReportRequest)
+* event.period.start = "2024-03-16T08:00:00+01:00"
+* event.period.end = "2024-03-21T08:00:00+01:00"
 
 // Sektion für Pathologiebefundbericht
-* section.title = "Pathologiebefundbericht"
-* section.code = $loinc#60567-5 "Comprehensive pathology report panel"
-* section.entry = Reference(RadicalProstatectomyReport)
-* section.text.status = #additional
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "Pathologiebefundbericht"
+* section[=].code = $loinc#60567-5 "Comprehensive pathology report panel"
+* section[=].entry = Reference(RadicalProstatectomyReport)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Klinische Angaben</h3>
 <p>Z.n. Prostata-Stanzbiopsie mit Nachweis eines Prostatakarzinoms (höchster Gleason 4+5=9, ISUP-Gradgruppe 5). Radikale Prostatektomie mit pelviner Lymphadenektomie.</p>
+</div>"
 
+// Sektion Makroskopie (MII Patho 2027, #263) - referenziert denselben Grouper wie DiagnosticReport.result
+* section[+].title = "Makroskopie"
+* section[=].code = $loinc#22634-0 "Pathology report gross observation Narrative"
+* section[=].entry = Reference(RadicalProstatectomyMacroscopicGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Makroskopie</h3>
 <p>Prostatektomiepräparat 55 g, Maße 4,5 × 4,0 × 3,5 cm. Samenbläschen beidseits 2,5 cm. Lymphknoten bilateral vorhanden.</p>
 <table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">
@@ -46,7 +56,14 @@ Description: "FHIR Composition for structured prostatectomy pathology report"
 <tr><td>Lymphknoten</td><td>Bilateral vorhanden</td></tr>
 </tbody>
 </table>
+</div>"
 
+// Sektion Diagnostische Schlussfolgerung (MII Patho 2027, #263)
+* section[+].title = "Diagnostische Schlussfolgerung"
+* section[=].code = $loinc#22637-3 "Pathology report final diagnosis Narrative"
+* section[=].entry = Reference(RadicalProstatectomyDiagnosticConclusionGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Mikroskopie</h3>
 <p>Azinäres Adenokarzinom der Prostata mit gemischten, überwiegend klein- bis mitteltubulären, mäßig irregulären Drüsen sowie einem geringeren Anteil an kribriformen Wachstumsmustern. Tumorgewebe in beiden Seitenlappen nachweisbar. Kein kapselüberschreitendes Wachstum. Samenblasen und Lymphknoten tumorgewebsfrei.</p>
 

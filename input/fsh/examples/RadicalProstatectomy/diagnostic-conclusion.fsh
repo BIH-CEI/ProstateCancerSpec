@@ -8,7 +8,7 @@ InstanceOf: MII_PR_Patho_Diagnostic_Conclusion_Grouper
 Usage: #example
 Title: "Diagnostic Conclusion Grouper - Prostatectomy"
 Description: "Grouper for all diagnostic conclusion findings in prostatectomy specimens"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22637-3
@@ -47,13 +47,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Histological Type ICD-O-3 - Prostatectomy"
 Description: "Histological type according to ICD-O-3 classification"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#59847-4 "Histology and Behavior ICD-O-3 Cancer"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -66,13 +66,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Morphology Free Text Description - Prostatectomy"
 Description: "Free text description of tumor morphology"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33731-1 "Histology type in Cancer specimen Narrative"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -85,13 +85,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "ICD-O Version - Prostatectomy"
 Description: "Version of ICD-O classification used"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $sct#397005006 "World Health Organization tumor classification (observable entity)"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -105,14 +105,14 @@ Usage: #example
 Title: "Primary Gleason Pattern (Epstein 2005) - Prostatectomy"
 Description: "Primary Gleason pattern according to Epstein 2005"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44641-9 "Gleason pattern.primary in Prostate tumor"
 * code.coding[+] = $sct#384994009 "Primary Gleason pattern (observable entity)"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -126,14 +126,14 @@ Usage: #example
 Title: "Secondary Gleason Pattern (Epstein 2005) - Prostatectomy"
 Description: "Secondary Gleason pattern according to Epstein 2005"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#44642-7 "Gleason pattern.secondary in Prostate tumor"
 * code.coding[+] = $sct#384995005 "Secondary Gleason pattern (observable entity)"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -147,14 +147,14 @@ Usage: #example
 Title: "Total Gleason Score - Prostatectomy"
 Description: "Total Gleason score in prostatectomy specimen"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
 * code.coding[+] = $sct#385377005 "Gleason grade finding for prostatic cancer"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -170,13 +170,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Percentage of Gleason Pattern 4/5 - Prostatectomy"
 Description: "Percentage of tumor area with Gleason pattern 4 and 5"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -193,14 +193,13 @@ Usage: #example
 Title: "Grading Group according to ISUP 2014/WHO 2016 - Prostatectomy"
 Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
-* code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -213,13 +212,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Intraductal Carcinoma - Prostatectomy"
 Description: "Presence of intraductal carcinoma of the prostate"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162814007 "Non-infiltrating intraductal carcinoma (morphologic abnormality)"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -232,14 +231,14 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Invasive Cribriform Carcinoma - Prostatectomy"
 Description: "Presence of invasive cribriform carcinoma"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $sct#30156004 "Cribriform carcinoma"
 * code.text = "Invasive cribriform carcinoma"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -252,7 +251,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Maximum Tumor Diameter - Prostatectomy"
 Description: "Maximum tumor diameter in millimeters"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -275,7 +274,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Prostatic Tissue Involved by Tumour - Prostatectomy"
 Description: "Percentage of prostatic tissue involved by tumour"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -298,14 +297,14 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Extraprostatic Extension - Prostatectomy"
 Description: "Presence of extraprostatic extension"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44625-2 "Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols"
 * code.text = "Extraprostatic extension"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -318,13 +317,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seminal Vesicle Invasion - Prostatectomy"
 Description: "Tumor invasion into seminal vesicles"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44626-0 "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -337,13 +336,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Lymphovascular Invasion - Prostatectomy"
 Description: "Lymphatic and vascular invasion in cancer specimen"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33761-8 "Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -356,13 +355,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Perineural Infiltration - Prostatectomy"
 Description: "Presence of perineural invasion in cancer specimen"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#92837-4 "Perineural invasion [Presence] in Cancer specimen"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -375,13 +374,13 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Bladder Neck Invasion - Prostatectomy"
 Description: "Microscopic urinary bladder neck invasion"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
 * code = $loinc#84906-7 "Bladder neck involvement of Prostate tumor"
 * subject = Reference(Patient1)
-* specimen = Reference(RadicalProstatectomySpecimenSlide01A)
+* specimen = Reference(RadicalProstatectomySpecimenPart)
 * effectiveDateTime = "2024-03-20"
 * performer = Reference(PathologistPractitioner)
 * basedOn = Reference(RadicalProstatectomyReportRequest)
@@ -394,7 +393,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Margin Status - Prostatectomy"
 Description: "Status of surgical resection margins"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -413,7 +412,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Lymph Nodes Examined - Prostatectomy"
 Description: "Number of lymph nodes examined"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -434,7 +433,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Lymph Nodes Positive - Prostatectomy"
 Description: "Number of lymph nodes with tumor involvement"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -455,7 +454,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "TNM Primary Tumor (pT) - Prostatectomy"
 Description: "Pathological primary tumor stage according to TNM classification"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3
@@ -475,7 +474,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "TNM Regional Lymph Nodes (pN) - Prostatectomy"
 Description: "Pathological regional lymph node stage according to TNM classification"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22637-3

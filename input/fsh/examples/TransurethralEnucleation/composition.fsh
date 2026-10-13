@@ -7,6 +7,8 @@ InstanceOf: Composition
 Usage: #example
 Title: "Enucleation Pathology Report Composition"
 Description: "FHIR Composition for structured TUR pathology report"
+* extension[+].url = $eu-composition-diagnosticreport
+* extension[=].valueReference = Reference(TransurethralEnucleationReport)
 * identifier.system = "http://example.hospital.de/pathology-reports"
 * identifier.value = "PATH-COMP-2024-004"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
@@ -24,17 +26,25 @@ Description: "FHIR Composition for structured TUR pathology report"
 * attester.party = Reference(PathologyLabOrganization)
 * custodian = Reference(PathologyLabOrganization)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActCode#PATREPE
-* event.detail = Reference(TransurethralEnucleationReportRequest)
+* event.period.start = "2024-05-10T10:30:00+01:00"
+* event.period.end = "2024-05-13T08:00:00+01:00"
 
 // Sektion für Pathologiebefundbericht
-* section.title = "Pathologiebefundbericht"
-* section.code = $loinc#60567-5 "Comprehensive pathology report panel"
-* section.entry = Reference(TransurethralEnucleationReport)
-* section.text.status = #additional
-* section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "Pathologiebefundbericht"
+* section[=].code = $loinc#60567-5 "Comprehensive pathology report panel"
+* section[=].entry = Reference(TransurethralEnucleationReport)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Klinische Angaben</h3>
 <p>Obstruktive Miktionsbeschwerden. PSA 12,5 ng/ml. Prostata-Enukleation (HoLEP/ThuLEP). V.a. Prostatakarzinom.</p>
+</div>"
 
+// Sektion Makroskopie (MII Patho 2027, #263) - referenziert denselben Grouper wie DiagnosticReport.result
+* section[+].title = "Makroskopie"
+* section[=].code = $loinc#22634-0 "Pathology report gross observation Narrative"
+* section[=].entry = Reference(TransurethralEnucleationMacroscopicGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Makroskopie</h3>
 <p>Enukleationspräparat 25 g, Maße 3,5 × 2,8 × 2,2 cm. Keine Samenblasen, keine Lymphknoten im Resektat.</p>
 
@@ -47,7 +57,14 @@ Description: "FHIR Composition for structured TUR pathology report"
 <tr><td>Lymphknoten</td><td>Nicht im Resektat</td></tr>
 </tbody>
 </table>
+</div>"
 
+// Sektion Diagnostische Schlussfolgerung (MII Patho 2027, #263)
+* section[+].title = "Diagnostische Schlussfolgerung"
+* section[=].code = $loinc#22637-3 "Pathology report final diagnosis Narrative"
+* section[=].entry = Reference(TransurethralEnucleationDiagnosticConclusionGrouper)
+* section[=].text.status = #additional
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 <h3>Mikroskopie</h3>
 <p>Azinäres Adenokarzinom der Prostata mit invasiven cribriformen Anteilen und intraduktalem Karzinom. Extensive Tumorinfiltration mit perineuralem und lymphovaskulärem Befall.</p>
 

@@ -7,8 +7,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 01 - Rechts lateral basal"
 Description: "Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716902004 "Right basal peripheral zone of prostate"
@@ -50,8 +50,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 01"
 Description: "Paraffineinbettung der Prostatastanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_A_1"
@@ -82,8 +82,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 01"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_A_1_1HE"
@@ -124,8 +124,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 02 - Rechts lateral mid"
 Description: "Tru-cut Biopsie aus der rechten lateralen Mitte (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716917000 "Structure of lateral middle regional part of peripheral zone of right half prostate (body structure)"
@@ -167,8 +167,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 02"
 Description: "Paraffineinbettung der Prostatastanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_B_1"
@@ -199,8 +199,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 02"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_B_1_1HE"
@@ -241,8 +241,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 03 - Rechts lateral apikal"
 Description: "Tru-cut Biopsie aus der rechten lateralen Apex (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716934008 "Structure of apical part of peripheral zone of right half prostate (body structure)"
@@ -284,8 +284,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 03"
 Description: "Paraffineinbettung der Prostatastanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_C_1"
@@ -316,8 +316,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 03"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_C_1_1HE"
@@ -358,8 +358,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 04 - Rechts medial basal"
 Description: "Tru-cut Biopsie aus der rechten medialen Basis (Übergangszone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716892006 "Structure of basal part of anterior fibromuscular stroma of right half prostate (body structure)"
@@ -401,8 +401,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 04"
 Description: "Paraffineinbettung der Prostatastanze 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_D_1"
@@ -433,8 +433,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 04"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_D_1_1HE"
@@ -475,8 +475,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 05 - Rechts medial mid"
 Description: "Tru-cut Biopsie aus der rechten medialen Mitte (Übergangszone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716911004 "Structure of middle regional part of transition zone of right half prostate (body structure)"
@@ -517,8 +517,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 05"
 Description: "Paraffineinbettung der Prostatastanze 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_E_1"
@@ -549,8 +549,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 05"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_E_1_1HE"
@@ -591,8 +591,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 06 - Rechts medial apikal"
 Description: "Tru-cut Biopsie aus der rechten medialen Apex (anteriores fibromuskuläres Stroma)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716909008 "Right middle anterior fibromuscular stroma of prostate"
@@ -633,8 +633,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 06"
 Description: "Paraffineinbettung der Prostatastanze 06"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_F_1"
@@ -665,8 +665,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 06"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 06"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_F_1_1HE"
@@ -707,8 +707,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 07 - Links lateral basal"
 Description: "Tru-cut Biopsie aus der linken lateralen Basis (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716903009 "Left basal peripheral zone of prostate"
@@ -749,8 +749,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 07"
 Description: "Paraffineinbettung der Prostatastanze 07"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_G_1"
@@ -781,8 +781,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 07"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 07"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_G_1_1HE"
@@ -823,8 +823,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 08 - Links lateral mid"
 Description: "Tru-cut Biopsie aus der linken lateralen Mitte (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716918005 "Structure of lateral middle regional part of peripheral zone of left half prostate (body structure)"
@@ -865,8 +865,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 08"
 Description: "Paraffineinbettung der Prostatastanze 08"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_H_1"
@@ -897,8 +897,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 08"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 08"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_H_1_1HE"
@@ -939,8 +939,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 09 - Links lateral apikal"
 Description: "Tru-cut Biopsie aus der linken lateralen Apex (periphere Zone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716935009 "Left apical peripheral zone of prostate"
@@ -981,8 +981,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 09"
 Description: "Paraffineinbettung der Prostatastanze 09"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_I_1"
@@ -1013,8 +1013,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 09"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 09"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_I_1_1HE"
@@ -1055,8 +1055,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 10 - Links medial basal"
 Description: "Tru-cut Biopsie aus der linken medialen Basis (anteriores fibromuskuläres Stroma)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716893001 "Structure of basal part of anterior fibromuscular stroma of left half prostate (body structure)"
@@ -1097,8 +1097,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 10"
 Description: "Paraffineinbettung der Prostatastanze 10"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_J_1"
@@ -1129,8 +1129,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 10"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 10"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_J_1_1HE"
@@ -1171,8 +1171,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 11 - Links medial mid"
 Description: "Tru-cut Biopsie aus der linken medialen Mitte (Übergangszone)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716912006 "Structure of middle regional part of transition zone of left half prostate (body structure)"
@@ -1213,8 +1213,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 11"
 Description: "Paraffineinbettung der Prostatastanze 11"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_K_1"
@@ -1245,8 +1245,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 11"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 11"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_K_1_1HE"
@@ -1287,8 +1287,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Prostatastanze 12 - Links medial apikal"
 Description: "Tru-cut Biopsie aus der linken medialen Apex (anteriores fibromuskuläres Stroma)"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = $sct#716910003 "Structure of middle regional part of anterior fibromuscular stroma of left half prostate (body structure)"
@@ -1329,8 +1329,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "Paraffinblock Stanze 12"
 Description: "Paraffineinbettung der Prostatastanze 12"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_L_1"
@@ -1361,8 +1361,8 @@ InstanceOf: $mii-patho-specimen
 Usage: #example
 Title: "HE-Schnitt Stanze 12"
 Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 12"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2026.0.0"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen|2027.0.0-ballot"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|2027.0.0-ballot"
 * identifier
   * system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
   * value = "E_24_001_L_1_1HE"

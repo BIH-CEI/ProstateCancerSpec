@@ -12,7 +12,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Histologischer Typ Stanze 01"
 Description: "Histologischer Typ ICD-O-3 für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -31,7 +31,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Morphologie Freitext Stanze 01"
 Description: "Morphologie Freitext für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -51,7 +51,7 @@ Usage: #example
 Title: "Primäres Gleason Muster Stanze 01"
 Description: "Primäres Gleason Muster für Stanze 01"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -72,7 +72,7 @@ Usage: #example
 Title: "Sekundäres Gleason Muster Stanze 01"
 Description: "Sekundäres Gleason Muster für Stanze 01"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -92,7 +92,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Prozentualer Anteil Gleasonmuster 4/5 Stanze 01"
 Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -112,11 +112,10 @@ Usage: #example
 Title: "Gradinggruppe ISUP Stanze 01"
 Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 01"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
-* code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
@@ -132,7 +131,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Verhältnis positiver Stanzen 01"
 Description: "Verhältnis positiver zu allen Stanzen für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -151,7 +150,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Prozentualer Tumoranteil Stanze 01"
 Description: "Prozentualer Tumoranteil für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -170,7 +169,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumorbefall in Länge Stanze 01"
 Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -189,7 +188,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Perineurale Infiltration Stanze 01"
 Description: "Perineurale Infiltration für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -208,7 +207,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumornachweis Samenblasen Stanze 01"
 Description: "Tumornachweis in Samenblasen für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -227,7 +226,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Lymphovaskuläre Invasion Stanze 01"
 Description: "Lymphovaskuläre Invasion für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -246,7 +245,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumornachweis Fettgewebe Stanze 01"
 Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -265,7 +264,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Intraduktales Karzinom Stanze 01"
 Description: "Intraduktales Karzinom für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -284,7 +283,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "ASAP Stanze 01"
 Description: "ASAP für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -303,7 +302,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "High-grade PIN Stanze 01"
 Description: "Begleitende High-grade-PIN für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -321,7 +320,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Granulomatöse Prostatitis Stanze 01"
 Description: "Granulomatöse Prostatitis für Stanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -344,7 +343,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Histologischer Typ Stanze 02"
 Description: "Histologischer Typ ICD-O-3 für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -363,7 +362,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Morphologie Freitext Stanze 02"
 Description: "Morphologie Freitext für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -382,7 +381,7 @@ Usage: #example
 Title: "Primäres Gleason Muster Stanze 02"
 Description: "Primäres Gleason Muster für Stanze 02"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -403,7 +402,7 @@ Usage: #example
 Title: "Sekundäres Gleason Muster Stanze 02"
 Description: "Sekundäres Gleason Muster für Stanze 02"
 // TODO Profilharmonisierung ausstehend: * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -422,7 +421,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Prozentualer Anteil Gleasonmuster 4/5 Stanze 02"
 Description: "Prozentualer Anteil Gleasonmuster 4/5 für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -442,11 +441,10 @@ Usage: #example
 Title: "Gradinggruppe ISUP Stanze 02"
 Description: "Gradinggruppe nach ISUP 2014/WHO 2016 für Stanze 02"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
-* code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(Patient1)
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
@@ -461,7 +459,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Verhältnis positiver Stanzen 02"
 Description: "Verhältnis positiver zu allen Stanzen für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -480,7 +478,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Prozentualer Tumoranteil Stanze 02"
 Description: "Prozentualer Tumoranteil für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -499,7 +497,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumorbefall in Länge Stanze 02"
 Description: "Tumorbefall für befallene Stanze in Länge in mm für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -518,7 +516,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Perineurale Infiltration Stanze 02"
 Description: "Perineurale Infiltration für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -537,7 +535,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumornachweis Samenblasen Stanze 02"
 Description: "Tumornachweis in Samenblasen für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -556,7 +554,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Lymphovaskuläre Invasion Stanze 02"
 Description: "Lymphovaskuläre Invasion für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -575,7 +573,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Tumornachweis Fettgewebe Stanze 02"
 Description: "Tumornachweis in periprostatischem Binde- und Fettgewebe für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -594,7 +592,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Intraduktales Karzinom Stanze 02"
 Description: "Intraduktales Karzinom für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -613,7 +611,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "ASAP Stanze 02"
 Description: "ASAP für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -632,7 +630,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "High-grade PIN Stanze 02"
 Description: "Begleitende High-grade-PIN für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -651,7 +649,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Granulomatöse Prostatitis Stanze 02"
 Description: "Granulomatöse Prostatitis für Stanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -674,7 +672,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Histologischer Typ Stanze 03"
 Description: "Histologischer Typ ICD-O-3 für Stanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7
@@ -693,7 +691,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Morphologie Freitext Stanze 03"
 Description: "Morphologie Freitext für Stanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22635-7

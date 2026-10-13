@@ -8,7 +8,7 @@ InstanceOf: MII_PR_Patho_Microscopic_Grouper
 Usage: #example
 Title: "Mikroskopische Befunde Grouper"
 Description: "Gruppierung aller mikroskopischen Befunde der Prostatastanzen" 
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22635-7

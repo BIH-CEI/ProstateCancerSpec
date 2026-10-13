@@ -4,7 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/Stru
 Usage: #example
 Title: "PSA vor TUR-Prostata"
 Description: "PSA-Wert vor der TUR-Prostata"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa|2027.0.0-ballot"
 * status = #final
 * category[+] = $loinc#26436-6 "Laboratory studies (set)"
 * category[+] = $loinc#LP7839-6 "Pathology"

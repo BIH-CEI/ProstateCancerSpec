@@ -25,10 +25,15 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.patho:
+    id: miiigmodulpatho
+    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ImplementationGuide/mii-ig-modul-patho
+    version: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.base: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.biobank: 2027.0.0-ballot
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  hl7.fhir.eu.extensions.r4: 1.3.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode

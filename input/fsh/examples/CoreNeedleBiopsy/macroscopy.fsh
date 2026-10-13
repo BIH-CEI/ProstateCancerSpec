@@ -8,7 +8,7 @@ InstanceOf: MII_PR_Patho_Macroscopic_Grouper
 Usage: #example
 Title: "Makroskopische Befunde Grouper"
 Description: "Gruppierung aller makroskopischen Messungen der Prostatastanzen"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22634-0
@@ -75,7 +75,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 01"
 Description: "Längenmessung der Prostatastanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -95,7 +95,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 01"
 Description: "Anzahl der Stanzzylinder in Specimen 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -119,7 +119,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 02"
 Description: "Längenmessung der Prostatastanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -139,7 +139,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 02"
 Description: "Anzahl der Stanzzylinder in Specimen 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -163,7 +163,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 03"
 Description: "Längenmessung der Prostatastanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -183,7 +183,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 03"
 Description: "Anzahl der Stanzzylinder in Specimen 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -207,7 +207,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 04"
 Description: "Längenmessung der Prostatastanze 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -227,7 +227,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 04"
 Description: "Anzahl der Stanzzylinder in Specimen 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -251,7 +251,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 05"
 Description: "Längenmessung der Prostatastanze 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -271,7 +271,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 05"
 Description: "Anzahl der Stanzzylinder in Specimen 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -295,7 +295,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 06"
 Description: "Längenmessung der Prostatastanze 06"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -315,7 +315,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 06"
 Description: "Anzahl der Stanzzylinder in Specimen 06"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -339,7 +339,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 07"
 Description: "Längenmessung der Prostatastanze 07"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -359,7 +359,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 07"
 Description: "Anzahl der Stanzzylinder in Specimen 07"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -383,7 +383,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 08"
 Description: "Längenmessung der Prostatastanze 08"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -403,7 +403,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 08"
 Description: "Anzahl der Stanzzylinder in Specimen 08"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -427,7 +427,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 09"
 Description: "Längenmessung der Prostatastanze 09"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -447,7 +447,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 09"
 Description: "Anzahl der Stanzzylinder in Specimen 09"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -471,7 +471,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 10"
 Description: "Längenmessung der Prostatastanze 10"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -491,7 +491,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 10"
 Description: "Anzahl der Stanzzylinder in Specimen 10"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -515,7 +515,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 11"
 Description: "Längenmessung der Prostatastanze 11"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -535,7 +535,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 11"
 Description: "Anzahl der Stanzzylinder in Specimen 11"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -559,7 +559,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Makroskopische Länge Stanze 12"
 Description: "Längenmessung der Prostatastanze 12"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -579,7 +579,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Anzahl Zylinder Stanze 12"
 Description: "Anzahl der Stanzzylinder in Specimen 12"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -608,7 +608,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 01"
 Description: "Lateralitätsangabe der Prostatastanze 01"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -627,7 +627,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 02"
 Description: "Lateralitätsangabe der Prostatastanze 02"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -646,7 +646,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 03"
 Description: "Lateralitätsangabe der Prostatastanze 03"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -665,7 +665,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 04"
 Description: "Lateralitätsangabe der Prostatastanze 04"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -684,7 +684,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 05"
 Description: "Lateralitätsangabe der Prostatastanze 05"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -703,7 +703,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 06"
 Description: "Lateralitätsangabe der Prostatastanze 06"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -726,7 +726,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 07"
 Description: "Lateralitätsangabe der Prostatastanze 07"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -745,7 +745,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 08"
 Description: "Lateralitätsangabe der Prostatastanze 08"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -764,7 +764,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 09"
 Description: "Lateralitätsangabe der Prostatastanze 09"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -783,7 +783,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 10"
 Description: "Lateralitätsangabe der Prostatastanze 10"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -802,7 +802,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 11"
 Description: "Lateralitätsangabe der Prostatastanze 11"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0
@@ -821,7 +821,7 @@ InstanceOf: $mii-patho-finding
 Usage: #example
 Title: "Seitenangabe Stanze 12"
 Description: "Lateralitätsangabe der Prostatastanze 12"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|2027.0.0-ballot"
 * status = #final
 * category[laboratory-category] = $observation-category#laboratory
 * category[section-type] = $loinc#22634-0

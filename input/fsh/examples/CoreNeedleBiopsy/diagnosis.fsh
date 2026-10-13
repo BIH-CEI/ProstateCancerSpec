@@ -4,11 +4,12 @@ InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
 Usage: #example
 Title: "Verdachtsdiagnose Prostatakarzinom vor Biopsie"
 Description: "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auffälligem MRT-Befund"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2027.0.0-ballot"
 * extension[Feststellungsdatum].valueDateTime = "2024-01-10"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional
 * category = $condition-category#encounter-diagnosis
+* category[onkologie] = $sct#55342001 "Neoplastic disease"
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].code = #C61
@@ -28,11 +29,12 @@ InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
 Usage: #example
 Title: "Gesicherte Prostatakarzinom-Diagnose nach Biopsie"
 Description: "Gesicherte Diagnose eines Prostatakarzinoms nach 12-Core-Biopsie"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor|2027.0.0-ballot"
 * extension[Feststellungsdatum].valueDateTime = "2024-01-17"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#encounter-diagnosis
+* category[onkologie] = $sct#55342001 "Neoplastic disease"
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[icd10-gm].version = "2026"
 * code.coding[icd10-gm].code = #C61

@@ -4,13 +4,17 @@ InstanceOf: MII_PR_Patho_Service_Request
 Usage: #example
 Title: "Standardbiopsie Prostata Anforderung"
 Description: "Anforderung für 12-Stanzen Prostatabiopsie"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2027.0.0-ballot"
 * status = #completed
 * identifier[Placer-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC "Placer Identifier"
 * identifier[Placer-ID].system = "http://example.hospital.de/serviceRequest"
 * identifier[Placer-ID].value = "PATH-RPT-2024-001"
+// Auftragsgruppe/Fall (Placer Order Group, MII Patho 2027 #253)
+* requisition.type = http://terminology.hl7.org/CodeSystem/v2-0203#PGN "Placer Group Number"
+* requisition.system = "https://urologie.example-hospital.de/fhir/servicerequest/requisition"
+* requisition.value = "BX24_001"
 * intent = #order
-* category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+* category = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report"
 * code = $loinc#66117-3 "Prostate Pathology biopsy report"
 * encounter = Reference(CoreNeedleBiopsyEncounter)
 * subject = Reference(Patient1)

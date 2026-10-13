@@ -4,7 +4,8 @@ InstanceOf: $mii-patho-report
 Usage: #example
 Title: "Pathologiebericht Prostata Enucleation"
 Description: "Umfangreicher Pathologiebericht nach Prostata Enucleation"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2026.0.0"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report|2027.0.0-ballot"
+* extension[composition].valueReference = Reference(TransurethralEnucleationComposition)
 * identifier[Set-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
 * identifier[Set-ID].system = "https://pathologie.example-hospital.de/fhir/fn/befundbericht"
 * identifier[Set-ID].value = "E_24_004"

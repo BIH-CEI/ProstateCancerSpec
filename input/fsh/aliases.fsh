@@ -12,6 +12,12 @@ Alias: $mii-tnm-n = https://www.medizininformatik-initiative.de/fhir/ext/modul-o
 Alias: $mii-tnm-m = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie
 Alias: $mii-operation = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-operation
 
+// R5 Cross-Version Extensions (hl7.fhir.uv.xver-r5.r4) und EU Extensions (hl7.fhir.eu.extensions.r4) — MII Patho 2027
+Alias: $r5-specimen-collection-bodysite = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite
+Alias: $r5-bodystructure-included-structure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure
+Alias: $r5-diagnosticreport-composition = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
+Alias: $eu-composition-diagnosticreport = http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference
+
 // Standard Terminologies
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
